@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:simpleType name="TankContainer_InspectionScopes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Empty" />	
+      <xs:enumeration value="2.5YearTest" />
+      <xs:enumeration value="5YearTest" />  
+      <xs:enumeration value="InternalInspection" />  
+      <xs:enumeration value="ExternalInspection" />  
+      <xs:enumeration value="HydraulicTest" />  
+      <xs:enumeration value="LeakproofnessTest" />  
+      <xs:enumeration value="VacuumMeasurement" />  
+      <xs:enumeration value="HeaterPressureTest" />  
+      <xs:enumeration value="ValveSettingsCheck" />  
+      <xs:enumeration value="ServiceEquipmentCheck" />  
+      <xs:enumeration value="FrameExamination" />  
+      <xs:enumeration value="MarkingExamination" />  
+      <xs:enumeration value="AirTest" />  
+      <xs:enumeration value="HydrostaticTest" /> 
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

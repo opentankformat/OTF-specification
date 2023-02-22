@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="Common_MessageHeaderInfo.xsd"/>
+  <xs:include schemaLocation="Common_Remarks.xsd"/>   
+  <xs:include schemaLocation="TankContainerInfo.xsd"/>
+  <xs:include schemaLocation="TankContainer_Inspection.xsd"/>  
+  <xs:include schemaLocation="TankContainer_InspectionScopes.xsd"/>    
+  <xs:element name="Message_TankContainer_InspectionReport">
+    <xs:complexType>
+      <xs:sequence>
+	    <xs:element ref="MessageHeaderInfo"/>
+		<xs:element name="HardCopyInfo">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="HardCopyURL" type="xs:string" minOccurs="0" />		
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>	
+		<xs:element name="InspectionOrderInfo">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="SupplierID" type="xs:string" />		
+					<xs:element name="SupplierInspectionReference" type="xs:string" minOccurs="0" />		
+					<xs:element name="SupplierInspectionRevision" type="xs:string" minOccurs="0" />
+					<xs:element name="SupplierInspectionRevisionRemarks" type="Remarks" minOccurs="0" />
+					<xs:element name="SupplierTermsAndConditions" type="xs:string" minOccurs="0" />						
+					<xs:element name="InspectionScope" minOccurs="0" >
+						<xs:simpleType>
+							<xs:restriction base="TankContainer_InspectionScopes" />
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="InspectionScopeDescription" type="xs:string" minOccurs="0" />
+					<xs:element name="ClientID" type="xs:string" />		
+					<xs:element name="ClientInspectionReference" type="xs:string" minOccurs="0" />
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>		
+		<xs:element name="InspectionResultsInfo">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="InspectionLocationID" type="xs:string" minOccurs="0" />
+					<xs:element name="InspectionCenterID" type="xs:string" minOccurs="0" />
+					<xs:element name="InspectionDate" type="xs:dateTime" />
+					<xs:element name="InspectorName" type="xs:string" />
+					<xs:element name="OperatorID" type="xs:string" minOccurs="0" />	
+					<xs:element name="TankContainerMarkings" type="Remarks" minOccurs="0" />	
+					<xs:element name="TankContainerRegulationsApplicableAccordingToMarkingsInfo">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="IMDG" type="xs:string" minOccurs="0" /> 
+								<xs:element name="RID_ADR" type="xs:string" minOccurs="0" /> 
+								<xs:element name="CSC" type="xs:string" minOccurs="0" /> 
+								<xs:element name="USDOT" type="xs:string" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element ref="TankContainerInfo"/>
+					<xs:element name="Inspections">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="InternalInspection" minOccurs="0" >
+									<xs:complexType>
+										<xs:sequence>									
+											<xs:element ref="TankContainer_Inspection"/>
+										</xs:sequence>									
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="ExternalInspection" minOccurs="0" >
+									<xs:complexType>
+										<xs:sequence>									
+											<xs:element ref="TankContainer_Inspection"/>
+										</xs:sequence>									
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="ThicknessMeasurements" minOccurs="0" >
+									<xs:complexType>
+										<xs:sequence>									
+											<xs:element ref="TankContainer_Inspection"/>
+										</xs:sequence>									
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="HydraulicTest" minOccurs="0" >
+									<xs:complexType>
+										<xs:sequence>									
+											<xs:element ref="TankContainer_Inspection"/>
+										</xs:sequence>									
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="LeakproofnessTest" minOccurs="0" >
+									<xs:complexType>
+										<xs:sequence>									
+											<xs:element ref="TankContainer_Inspection"/>
+										</xs:sequence>									
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="VacuumMeasurement" minOccurs="0" >
+									<xs:complexType>
+										<xs:sequence>									
+											<xs:element ref="TankContainer_Inspection"/>
+										</xs:sequence>									
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="HeaterPressureTest" minOccurs="0" >
+									<xs:complexType>
+										<xs:sequence>									
+											<xs:element ref="TankContainer_Inspection"/>
+										</xs:sequence>									
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="ValveSettingsCheck" minOccurs="0" >
+									<xs:complexType>
+										<xs:sequence>									
+											<xs:element ref="TankContainer_Inspection"/>
+										</xs:sequence>									
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="ServiceEquipmentCheck" minOccurs="0" >
+									<xs:complexType>
+										<xs:sequence>									
+											<xs:element ref="TankContainer_Inspection"/>
+										</xs:sequence>									
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="FrameExamination" minOccurs="0" >
+									<xs:complexType>
+										<xs:sequence>									
+											<xs:element ref="TankContainer_Inspection"/>
+										</xs:sequence>									
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="MarkingExamination" minOccurs="0" >
+									<xs:complexType>
+										<xs:sequence>									
+											<xs:element ref="TankContainer_Inspection"/>
+										</xs:sequence>									
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="RefOfMeasurementInstrumentsUsed" type="xs:string" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>						
+					<xs:element name="Remarks" type="Remarks" minOccurs="0"/>					
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>	 
+		<xs:element name="InspectionVerification" minOccurs="0" >
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="VerificationDate" type="xs:dateTime" />					
+					<xs:element name="VerificatorName" type="xs:string" minOccurs="0" />
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

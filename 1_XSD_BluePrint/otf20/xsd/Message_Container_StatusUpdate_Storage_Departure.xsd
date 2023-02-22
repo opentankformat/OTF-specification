@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="Common_MessageHeaderInfo.xsd"/>
+  <xs:include schemaLocation="Common_OrderInfo.xsd"/>
+  <xs:include schemaLocation="ContainerInfo.xsd"/>
+  <xs:element name="Message_Container_StatusUpdate_Storage_Departure">
+    <xs:complexType>
+      <xs:sequence>
+	    <xs:element ref="MessageHeaderInfo"/>
+	    <xs:element ref="OrderInfo"/> 
+	    <xs:element ref="ContainerInfo"/>
+        <xs:element name="ContainerStorageDepartureInfo">
+          <xs:complexType>
+            <xs:sequence>
+			  <xs:element name="ClientReleaseReference" type="xs:string" minOccurs="0" />
+              <xs:element name="ContainerReleaseDate" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
