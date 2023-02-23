@@ -1,8 +1,9 @@
 INSTRUCTION - HOW TO USE OTF VERSION
 
+Please find the Message Implementation Guide (MIG) for the proper OTF version in Release folder
 
 GENERATING OTF FILES FROM CLASSES
-Check the sample C# project in folder 2_Solution.
+Check the sample C# project in Solution folder.
 
 Import the C# or DLL file into your project.
 It has a namespace based on the OTF version which makes it easy to support backward compatibility.
@@ -11,7 +12,7 @@ Create classes and serialize them into XML or JSON.
 
 
 IMPORT OTF FILES INTO CLASSES
-Check the sample C# project in folder 2_Solution.
+Check the sample C# project in Solution folder.
 
 Import the C# or DLL file into your project.
 It has a namespace based on the OTF version which makes it easy to support backward compatibility.
