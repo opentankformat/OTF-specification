@@ -14,24 +14,24 @@ namespace otfSampleDataGenerator.sampleClasses
 		public static void GenerateSampleMessages(string targetFolder)
         {
 			//PreNotification flow
-			Utils.GenerateSamples(sample_Message_Container_PreNotification(), string.Format("{0}{1}", targetFolder, "sample_Message_Container_PreNotification"));
-			Utils.GenerateSamples(sample_Message_Container_PreNotification_StatusUpdate(), string.Format("{0}{1}", targetFolder, "sample_Message_Container_PreNotification_StatusUpdate"));
+			Utils.GenerateSamples(sample_Message_Container_PreNotification(), targetFolder, "sample_Message_Container_PreNotification");
+			Utils.GenerateSamples(sample_Message_Container_PreNotification_StatusUpdate(), targetFolder, "sample_Message_Container_PreNotification_StatusUpdate");
 
 			//Status updates
-			Utils.GenerateSamples(sample_Message_Container_StatusUpdate_Storage_Arrival(), string.Format("{0}{1}", targetFolder, "sample_Message_Container_StatusUpdate_Storage_Arrival"));
-			Utils.GenerateSamples(sample_Message_Container_StatusUpdate_Storage_Available(), string.Format("{0}{1}", targetFolder, "sample_Message_Container_StatusUpdate_Storage_Available"));
-			Utils.GenerateSamples(sample_Message_Container_StatusUpdate_Storage_Departure(), string.Format("{0}{1}", targetFolder, "sample_Message_Container_StatusUpdate_Storage_Departure"));
-			Utils.GenerateSamples(sample_Message_TankContainer_StatusUpdate_Cleaning(), string.Format("{0}{1}", targetFolder, "sample_Message_TankContainer_StatusUpdate_Cleaning"));
-			Utils.GenerateSamples(sample_Message_TankContainer_StatusUpdate_Heating(), string.Format("{0}{1}", targetFolder, "sample_Message_TankContainer_StatusUpdate_Heating"));
-			Utils.GenerateSamples(sample_Message_TankContainer_StatusUpdate_Inspection(), string.Format("{0}{1}", targetFolder, "sample_Message_TankContainer_StatusUpdate_Inspection"));
-			Utils.GenerateSamples(sample_Message_TankContainer_StatusUpdate_Transhipment(), string.Format("{0}{1}", targetFolder, "sample_Message_TankContainer_StatusUpdate_Transhipment"));
+			Utils.GenerateSamples(sample_Message_Container_StatusUpdate_Storage_Arrival(), targetFolder, "sample_Message_Container_StatusUpdate_Storage_Arrival");
+			Utils.GenerateSamples(sample_Message_Container_StatusUpdate_Storage_Available(), targetFolder, "sample_Message_Container_StatusUpdate_Storage_Available");
+			Utils.GenerateSamples(sample_Message_Container_StatusUpdate_Storage_Departure(), targetFolder, "sample_Message_Container_StatusUpdate_Storage_Departure");
+			Utils.GenerateSamples(sample_Message_TankContainer_StatusUpdate_Cleaning(), targetFolder, "sample_Message_TankContainer_StatusUpdate_Cleaning");
+			Utils.GenerateSamples(sample_Message_TankContainer_StatusUpdate_Heating(), targetFolder, "sample_Message_TankContainer_StatusUpdate_Heating");
+			Utils.GenerateSamples(sample_Message_TankContainer_StatusUpdate_Inspection(), targetFolder, "sample_Message_TankContainer_StatusUpdate_Inspection");
+			Utils.GenerateSamples(sample_Message_TankContainer_StatusUpdate_Transhipment(), targetFolder, "sample_Message_TankContainer_StatusUpdate_Transhipment");
 
 			//Work flow
-			Utils.GenerateSamples(sample_Message_Container_Work_Estimate(), string.Format("{0}{1}", targetFolder, "sample_Message_Container_Work_Estimate"));
-			Utils.GenerateSamples(sample_Message_Container_StatusUpdate_Work(), string.Format("{0}{1}", targetFolder, "sample_Message_Container_StatusUpdate_Work"));
+			Utils.GenerateSamples(sample_Message_Container_Work_Estimate(), targetFolder, "sample_Message_Container_Work_Estimate");
+			Utils.GenerateSamples(sample_Message_Container_StatusUpdate_Work(), targetFolder, "sample_Message_Container_StatusUpdate_Work");
 
 			//Inspection Certificates
-			Utils.GenerateSamples(sample_Message_TankContainer_InspectionReport(), string.Format("{0}{1}", targetFolder, "sample_Message_TankContainer_InspectionReport"));
+			Utils.GenerateSamples(sample_Message_TankContainer_InspectionReport(), targetFolder, "sample_Message_TankContainer_InspectionReport");
 		}
 
 		#region "PreNotification"

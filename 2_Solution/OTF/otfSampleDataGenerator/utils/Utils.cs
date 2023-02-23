@@ -10,10 +10,21 @@ namespace otfSampleDataGenerator.utils
 {
     public static class Utils
     {
-        public static void GenerateSamples(object o, string targetfilename)
+        public static void GenerateSamples(object o, string targetfolder, string targetfilename)
         {
-            XMLExporter(o, targetfilename);
-            jsonExporter(o, targetfilename);
+            string targetfolderXml = string.Format("{0}\\{1}\\", targetfolder, "xml");
+            if (!Directory.Exists(targetfolderXml))
+            {
+                Directory.CreateDirectory(targetfolderXml);
+            }
+            string targetfolderJson = string.Format("{0}\\{1}\\", targetfolder, "json");
+            if (!Directory.Exists(targetfolderJson))
+            {
+                Directory.CreateDirectory(targetfolderJson);
+            }
+
+            XMLExporter(o, string.Format("{0}{1}", targetfolderXml, targetfilename));
+            jsonExporter(o, string.Format("{0}{1}", targetfolderJson, targetfilename));
         }
 
         public static void XMLExporter(object obj, string targetfilename)

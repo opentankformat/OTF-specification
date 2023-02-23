@@ -1,0 +1,40 @@
+{
+  "MessageHeaderInfo": {
+    "MessageID": "1e72f620-9fb9-4cf0-a330-cee6150fbbc7",
+    "ConversationID": null,
+    "OTFVersion": 1,
+    "SenderID": "Depot name or identifier",
+    "RecipientID": "Lessee name or identifier",
+    "ContactName": "Arthur Fonzarelli",
+    "SentDate": "2000-01-01T11:30:00+01:00",
+    "MessageType": 0
+  },
+  "OrderInfo": {
+    "SupplierID": "Depot name or identifier",
+    "SupplierLocationID": "Depot location identifier",
+    "SupplierProformaReference": null,
+    "SupplierOrderReference": "D230101.0001",
+    "OrderStatusInfo": {
+      "OrderStatusDescription": "ON HEAT"
+    },
+    "ClientID": "Lessor name or identifier",
+    "ClientOrderReference": "XX2251"
+  },
+  "ContainerInfo": {
+    "ContainerNumber": "ABCD-123456-0",
+    "ContainerType": "20TC"
+  },
+  "Container_ServiceProgressInfo": {
+    "SupplierReference": "D230101.0001.H1",
+    "Container_ServiceProgress_AuthorizationInfo": null,
+    "Container_ServiceProgress_DateInfo": {
+      "PlannedSpecified": false,
+      "PlannedBy": null,
+      "PlannedToTakePlaceOnSpecified": false,
+      "StartedSpecified": false,
+      "FinishedSpecified": false,
+      "CancelledSpecified": false
+    }
+  },
+  "TankContainerHeatingInfo": null
+}
