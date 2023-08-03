@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message_TankContainer_PreNotification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MessageHeaderInfo>
+    <MessageID>380d2c85-23cb-4ff6-8676-526910d504c9</MessageID>
+    <ConversationID>d372cada-f69a-49fd-b090-31ed032f5b1a</ConversationID>
+    <OTFVersion>OTF20</OTFVersion>
+    <SenderID>Lessee name or identifier</SenderID>
+    <RecipientID>Depot name or identifier</RecipientID>
+    <ContactInfo>
+      <ContactInfo>
+        <Name>Arthur Fonzarelli</Name>
+      </ContactInfo>
+    </ContactInfo>
+    <SentDate>2000-01-01T06:52:00+01:00</SentDate>
+    <MessageType>New</MessageType>
+  </MessageHeaderInfo>
+  <ContainerPreNotificationType>Redelivery</ContainerPreNotificationType>
+  <OrderInfo>
+    <SupplierID>Depot name or identifier</SupplierID>
+    <SupplierLocationID>Depot location identifier</SupplierLocationID>
+    <ClientID>Lessor name or identifier</ClientID>
+    <ClientOrderReference>XX2251</ClientOrderReference>
+  </OrderInfo>
+  <TankContainerInfo>
+    <ContainerInfo>
+      <ContainerNumber>ABCD-123456-0</ContainerNumber>
+      <ContainerType>20TC</ContainerType>
+    </ContainerInfo>
+  </TankContainerInfo>
+  <ArrivalInfo>
+    <RedeliveryReference>REL5556</RedeliveryReference>
+    <Container_HaulierInfo>
+      <HaulierName>Who Transport Ltd.</HaulierName>
+      <TruckDriverName>Keith Moon</TruckDriverName>
+      <TruckLicensePlate>AA-11-BB</TruckLicensePlate>
+    </Container_HaulierInfo>
+    <TankContainer_StateInfo>
+      <IsLoaded>false</IsLoaded>
+      <FullLoadedAmountUnit>L</FullLoadedAmountUnit>
+      <IsClean>false</IsClean>
+      <IsPressurized>true</IsPressurized>
+      <IsNitrogen>false</IsNitrogen>
+      <Compartments>
+        <TankContainer_Compartment>
+          <CompartmentNumber>1</CompartmentNumber>
+          <CurrentProduct>
+            <ProductInfo>
+              <MainName>Acid Oil</MainName>
+              <TradeName>BLACK OIL 1013</TradeName>
+            </ProductInfo>
+            <LoadedAmountUnit>L</LoadedAmountUnit>
+          </CurrentProduct>
+          <PreviousProduct1>
+            <ProductInfo>
+              <MainName>Acid Oil</MainName>
+              <TradeName>BLACK OIL 1013</TradeName>
+            </ProductInfo>
+          </PreviousProduct1>
+          <PreviousProduct2>
+            <ProductInfo>
+              <MainName>Acid Oil</MainName>
+              <TradeName>BLACK OIL 1013</TradeName>
+            </ProductInfo>
+          </PreviousProduct2>
+          <PreviousProduct3>
+            <ProductInfo>
+              <MainName>Acid Oil</MainName>
+              <TradeName>BLACK OIL 1013</TradeName>
+            </ProductInfo>
+          </PreviousProduct3>
+        </TankContainer_Compartment>
+        <TankContainer_Compartment>
+          <CompartmentNumber>2</CompartmentNumber>
+          <CurrentProduct>
+            <ProductInfo>
+              <MainName>Acid Oil</MainName>
+            </ProductInfo>
+            <LoadedAmountUnit>L</LoadedAmountUnit>
+          </CurrentProduct>
+          <PreviousProduct1>
+            <ProductInfo>
+              <MainName>Acid Oil</MainName>
+              <TradeName>BLACK OIL 1013</TradeName>
+            </ProductInfo>
+          </PreviousProduct1>
+          <PreviousProduct2>
+            <ProductInfo>
+              <MainName>Acid Oil</MainName>
+              <TradeName>BLACK OIL 1013</TradeName>
+            </ProductInfo>
+          </PreviousProduct2>
+          <PreviousProduct3>
+            <ProductInfo>
+              <MainName>Acid Oil</MainName>
+              <TradeName>BLACK OIL 1013</TradeName>
+            </ProductInfo>
+          </PreviousProduct3>
+        </TankContainer_Compartment>
+      </Compartments>
+    </TankContainer_StateInfo>
+  </ArrivalInfo>
+  <ServicesRequestInfo>
+    <Container_ServiceRequest_Storage>
+      <Container_ServiceRequestInfo>
+        <IsRequested>true</IsRequested>
+      </Container_ServiceRequestInfo>
+    </Container_ServiceRequest_Storage>
+    <TankContainer_ServiceRequest_Cleaning>
+      <Container_ServiceRequestInfo>
+        <IsRequested>true</IsRequested>
+        <ClientAuthorizationReference>AA23055-C</ClientAuthorizationReference>
+      </Container_ServiceRequestInfo>
+      <AdditionalCleaningActions>
+        <TankContainer_CleaningAction>
+          <CompartmentNumber>1</CompartmentNumber>
+          <ActionID>E90</ActionID>
+        </TankContainer_CleaningAction>
+      </AdditionalCleaningActions>
+    </TankContainer_ServiceRequest_Cleaning>
+    <Container_ServiceRequest_Work_Repair>
+      <IsRequested>true</IsRequested>
+      <LessorID>Lessor name or identifier</LessorID>
+      <LessorAuthorizationReference>REP5559</LessorAuthorizationReference>
+      <LesseeID>Lessee name or identifier</LesseeID>
+      <LesseeAuthorizationReference />
+    </Container_ServiceRequest_Work_Repair>
+  </ServicesRequestInfo>
+  <DepartureInfo>
+    <ReleaseReference />
+    <ContainerDestination>935 Pennsylvania Avenue NW, Washington D.C.</ContainerDestination>
+    <Container_HaulierInfo>
+      <HaulierName>Gilnitz Transports Ltd.</HaulierName>
+      <TruckDriverName>C.G.B. Spender</TruckDriverName>
+      <TruckLicensePlate>10-13-X</TruckLicensePlate>
+    </Container_HaulierInfo>
+  </DepartureInfo>
+  <Remarks>
+    <Remark>
+      <RemarkID>8ea3d430-06e8-4d42-a98f-1eb984f08ff2</RemarkID>
+      <RemarkAuthor>Arthur Fonzarelli</RemarkAuthor>
+      <RemarkText>Ayyyyyy!</RemarkText>
+    </Remark>
+  </Remarks>
+</Message_TankContainer_PreNotification>

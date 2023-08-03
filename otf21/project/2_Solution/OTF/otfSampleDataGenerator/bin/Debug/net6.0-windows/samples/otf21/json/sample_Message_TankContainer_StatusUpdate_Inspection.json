@@ -1,0 +1,42 @@
+{
+  "MessageHeaderInfo": {
+    "MessageID": "9dacc705-e77f-4c49-890d-d66bfbec04eb",
+    "ConversationID": null,
+    "OTFVersion": 1,
+    "SenderID": "Depot name or identifier",
+    "RecipientID": "Lessor name or identifier",
+    "ContactInfo": null,
+    "SentDate": "2000-01-04T14:21:00+01:00",
+    "MessageType": 0
+  },
+  "OrderInfo": {
+    "SupplierID": "Depot name or identifier",
+    "SupplierLocationID": "Depot location identifier",
+    "SupplierProformaReference": null,
+    "SupplierOrderReference": "D230101.0001",
+    "OrderStatusInfo": {
+      "OrderStatusDescription": "IN Inspection"
+    },
+    "ClientID": "Lessor name or identifier",
+    "ClientOrderReference": "XX2251"
+  },
+  "ContainerInfo": {
+    "ContainerNumber": "ABCD-123456-0",
+    "ContainerType": "20TC"
+  },
+  "Container_ServiceProgressInfo": {
+    "SupplierReference": "D230101.0001.A1",
+    "ClientPurchaseOrderReference": null,
+    "Container_ServiceProgress_AuthorizationInfo": null,
+    "Container_ServiceProgress_DateInfo": {
+      "PlannedSpecified": false,
+      "PlannedBy": null,
+      "PlannedToTakePlaceOnSpecified": false,
+      "StartedSpecified": false,
+      "FinishedSpecified": false,
+      "CancelledSpecified": false
+    }
+  },
+  "Remarks": null,
+  "Attachments": null
+}

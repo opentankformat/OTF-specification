@@ -1,0 +1,76 @@
+{
+  "MessageHeaderInfo": {
+    "MessageID": "ad47590-acd7-4f7d-b8b1-9d422f00b994",
+    "ConversationID": "3e818a60-5941-4615-911e-e1f540d6f314",
+    "OTFVersion": 1,
+    "SenderID": "Depot name or identifier",
+    "RecipientID": "Lessor name or identifier",
+    "ContactInfo": null,
+    "SentDate": "2000-01-03T08:55:00+01:00",
+    "MessageType": 0
+  },
+  "OrderInfo": {
+    "SupplierID": "Depot name or identifier",
+    "SupplierLocationID": "Depot location identifier",
+    "SupplierProformaReference": null,
+    "SupplierOrderReference": "D230101.0001",
+    "OrderStatusInfo": {
+      "OrderStatusDescription": "IN REPAIR"
+    },
+    "ClientID": "Lessor name or identifier",
+    "ClientOrderReference": "XX2251"
+  },
+  "TankContainerInfo": {
+    "ContainerInfo": {
+      "ContainerNumber": "ABCD-123456-0",
+      "ContainerType": "20TC"
+    },
+    "OwnerID": null,
+    "TankContainerSuitabilityInfo": null,
+    "TankContainerCharacteristicsInfo": null,
+    "TankContainerTankInfo": null,
+    "TankContainerEquipmentInfo": null,
+    "TankContainerLiningInfo": null,
+    "InspectionDates": null
+  },
+  "SupplierReference": "D230101.0001.R1",
+  "ClientPurchaseOrderReference": null,
+  "Container_Work_EstimateStatusInfo": {
+    "ContainerWorkEstimateStatusInfo": {
+      "Version": "V1",
+      "Container_ServiceProgress_DateInfo": {
+        "PlannedSpecified": false,
+        "PlannedBy": null,
+        "PlannedToTakePlaceOnSpecified": false,
+        "StartedSpecified": false,
+        "FinishedSpecified": false,
+        "CancelledSpecified": false
+      }
+    },
+    "ContainerWorkAuthorizationInfo": {
+      "ContainerWorkLessorAuthorizationInfo": {
+        "LessorID": "Lessor name or identifier",
+        "Container_ServiceProgress_AuthorizationInfo": {
+          "Authorized": "2000-01-02T17:23:00+01:00",
+          "AuthorizedBy": null,
+          "AuthorizationReference": "REP5559",
+          "AuthorizationAmount": null
+        },
+        "AuthorizationAcceptedBySupplierSpecified": false
+      },
+      "ContainerWorkLesseeAuthorizationInfo": null
+    }
+  },
+  "Container_Work_WorkStatusInfo": {
+    "Container_ServiceProgress_DateInfo": {
+      "PlannedSpecified": false,
+      "PlannedBy": null,
+      "PlannedToTakePlaceOnSpecified": false,
+      "StartedSpecified": false,
+      "FinishedSpecified": false,
+      "CancelledSpecified": false
+    }
+  },
+  "Remarks": null,
+  "Attachments": null
+}

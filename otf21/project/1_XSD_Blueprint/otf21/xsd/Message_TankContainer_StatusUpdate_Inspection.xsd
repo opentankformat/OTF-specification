@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="Common_MessageHeaderInfo.xsd"/>
+  <xs:include schemaLocation="Common_Remarks.xsd"/> 
+  <xs:include schemaLocation="Common_Attachments.xsd"/>   
+  <xs:include schemaLocation="Common_OrderInfo.xsd"/>
+  <xs:include schemaLocation="ContainerInfo.xsd"/>
+  <xs:include schemaLocation="Container_ServiceProgressInfo.xsd"/>
+  <xs:element name="Message_TankContainer_StatusUpdate_Inspection">
+    <xs:complexType>
+      <xs:sequence>
+	    <xs:element ref="MessageHeaderInfo"/>
+	    <xs:element ref="OrderInfo"/> 
+	    <xs:element ref="ContainerInfo"/>	
+	    <xs:element ref="Container_ServiceProgressInfo"/>	
+		<xs:element name="Remarks" type="Remarks" minOccurs="0" />
+		<xs:element name="Attachments" type="Attachments" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

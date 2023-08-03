@@ -1,0 +1,33 @@
+{
+  "MessageHeaderInfo": {
+    "MessageID": "83cabe25-bdaa-4bc0-aa52-24526edc4ac1",
+    "ConversationID": null,
+    "OTFVersion": 1,
+    "SenderID": "Depot name or identifier",
+    "RecipientID": "Lessor name or identifier",
+    "ContactInfo": null,
+    "SentDate": "2000-01-05T16:00:00+01:00",
+    "MessageType": 0
+  },
+  "OrderInfo": {
+    "SupplierID": "Depot name or identifier",
+    "SupplierLocationID": "Depot location identifier",
+    "SupplierProformaReference": null,
+    "SupplierOrderReference": "D230101.0001",
+    "OrderStatusInfo": {
+      "OrderStatusDescription": "AV"
+    },
+    "ClientID": "Lessor name or identifier",
+    "ClientOrderReference": "XX2251"
+  },
+  "ContainerInfo": {
+    "ContainerNumber": "ABCD-123456-0",
+    "ContainerType": "20TC"
+  },
+  "Container_StatusUpdate_Storage_Available": {
+    "ClientPurchaseOrderReference": null,
+    "ContainerAvailableDate": "2000-01-05T16:00:00+01:00"
+  },
+  "Remarks": null,
+  "Attachments": null
+}

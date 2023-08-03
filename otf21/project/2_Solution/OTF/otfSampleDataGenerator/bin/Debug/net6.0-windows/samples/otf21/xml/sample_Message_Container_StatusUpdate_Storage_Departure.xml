@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message_Container_StatusUpdate_Storage_Departure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MessageHeaderInfo>
+    <MessageID>25b1b798-308c-4ed8-92e4-60b3935a09e0</MessageID>
+    <OTFVersion>OTF20</OTFVersion>
+    <SenderID>Depot name or identifier</SenderID>
+    <RecipientID>Lessor name or identifier</RecipientID>
+    <SentDate>2000-01-09T09:00:00+01:00</SentDate>
+    <MessageType>New</MessageType>
+  </MessageHeaderInfo>
+  <OrderInfo>
+    <SupplierID>Depot name or identifier</SupplierID>
+    <SupplierLocationID>Depot location identifier</SupplierLocationID>
+    <SupplierOrderReference>D230101.0001</SupplierOrderReference>
+    <OrderStatusInfo>
+      <OrderStatusDescription>OUT</OrderStatusDescription>
+    </OrderStatusInfo>
+    <ClientID>Lessor name or identifier</ClientID>
+    <ClientOrderReference>XX2251</ClientOrderReference>
+  </OrderInfo>
+  <ContainerInfo>
+    <ContainerNumber>ABCD-123456-0</ContainerNumber>
+    <ContainerType>20TC</ContainerType>
+  </ContainerInfo>
+  <Container_StatusUpdate_Storage_Departure>
+    <ClientReleaseReference />
+    <ContainerReleaseDate>2000-01-09T09:00:00+01:00</ContainerReleaseDate>
+  </Container_StatusUpdate_Storage_Departure>
+</Message_Container_StatusUpdate_Storage_Departure>

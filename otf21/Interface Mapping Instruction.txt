@@ -1,0 +1,7 @@
+INTERFACE MAPPING INSTRUCTION
+
+Please find the Message Implementation Guide (MIG) for the proper OTF version in Release folder
+
+Use the XSD files in the release\bin folder for mapping.
+
+Use the sample files in the release\samples folder for testing.

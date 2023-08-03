@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="Common_MessageHeaderInfo.xsd"/>
+  <xs:include schemaLocation="Common_Remarks.xsd"/>  
+  <xs:include schemaLocation="Container_PreNotificationTypes.xsd"/> 
+  <xs:include schemaLocation="Common_OrderInfo.xsd"/> 
+  <xs:include schemaLocation="TankContainerInfo.xsd"/>
+  <xs:include schemaLocation="Container_HaulierInfo.xsd"/>
+  <xs:include schemaLocation="TankContainer_StateInfo.xsd"/>  
+  <xs:include schemaLocation="Container_ServiceRequest_Storage.xsd"/>
+  <xs:include schemaLocation="TankContainer_ServiceRequest_Heating.xsd"/>
+  <xs:include schemaLocation="TankContainer_ServiceRequest_Cleaning.xsd"/>
+  <xs:include schemaLocation="Container_ServiceRequest_Work_Modification.xsd"/>
+  <xs:include schemaLocation="Container_ServiceRequest_Work_Repair.xsd"/>
+  <xs:include schemaLocation="TankContainer_ServiceRequest_Inspection.xsd"/>
+  <xs:element name="Message_TankContainer_PreNotification">
+    <xs:complexType>
+      <xs:sequence>
+	    <xs:element ref="MessageHeaderInfo"/>
+		<xs:element name="ContainerPreNotificationType" >
+			<xs:simpleType>
+				<xs:restriction base="Container_PreNotificationTypes" />
+			</xs:simpleType>
+		</xs:element>		
+	    <xs:element ref="OrderInfo"/>
+	    <xs:element ref="TankContainerInfo"/>
+		<xs:element name="ArrivalInfo" minOccurs="0" >
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="ETA" type="xs:dateTime" minOccurs="0" />
+					<xs:element name="RedeliveryReference" type="xs:string" minOccurs="0" />
+					<xs:element name="ContainerOrigin" type="xs:string" minOccurs="0" />
+					<xs:element ref="Container_HaulierInfo"  minOccurs="0" />
+					<xs:element ref="TankContainer_StateInfo" minOccurs="0" />					
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+        <xs:element name="ServicesRequestInfo" >
+          <xs:complexType>
+            <xs:sequence>
+  				<xs:element ref="Container_ServiceRequest_Storage" minOccurs="0" />
+  				<xs:element ref="TankContainer_ServiceRequest_Heating" minOccurs="0" />
+  				<xs:element ref="TankContainer_ServiceRequest_Cleaning" minOccurs="0" />
+  				<xs:element ref="Container_ServiceRequest_Work_Modification" minOccurs="0" />
+  				<xs:element ref="Container_ServiceRequest_Work_Repair" minOccurs="0" />
+  				<xs:element ref="TankContainer_ServiceRequest_Inspection" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>		
+		<xs:element name="DepartureInfo" minOccurs="0" >
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="ETD" type="xs:dateTime" minOccurs="0" />
+					<xs:element name="ReleaseReference" type="xs:string" minOccurs="0" />
+					<xs:element name="ContainerDestination" type="xs:string" minOccurs="0" />
+					<xs:element ref="Container_HaulierInfo" minOccurs="0" />
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		<xs:element name="Remarks" type="Remarks" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+

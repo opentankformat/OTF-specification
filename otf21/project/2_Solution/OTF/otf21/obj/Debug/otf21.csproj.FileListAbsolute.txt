@@ -1,0 +1,12 @@
+C:\repositories\OTF-design\Solution\OTF\otf21\bin\Debug\otf21.dll
+C:\repositories\OTF-design\Solution\OTF\otf21\bin\Debug\otf21.pdb
+C:\repositories\OTF-design\Solution\OTF\otf21\obj\Debug\otf21.csproj.AssemblyReference.cache
+C:\repositories\OTF-design\Solution\OTF\otf21\obj\Debug\otf21.csproj.CoreCompileInputs.cache
+C:\repositories\OTF-design\Solution\OTF\otf21\obj\Debug\otf21.dll
+C:\repositories\OTF-design\Solution\OTF\otf21\obj\Debug\otf21.pdb
+C:\repositories\OTF-design\otf21\project\2_Solution\OTF\otf21\bin\Debug\otf21.dll
+C:\repositories\OTF-design\otf21\project\2_Solution\OTF\otf21\bin\Debug\otf21.pdb
+C:\repositories\OTF-design\otf21\project\2_Solution\OTF\otf21\obj\Debug\otf21.csproj.AssemblyReference.cache
+C:\repositories\OTF-design\otf21\project\2_Solution\OTF\otf21\obj\Debug\otf21.csproj.CoreCompileInputs.cache
+C:\repositories\OTF-design\otf21\project\2_Solution\OTF\otf21\obj\Debug\otf21.dll
+C:\repositories\OTF-design\otf21\project\2_Solution\OTF\otf21\obj\Debug\otf21.pdb
