@@ -9,6 +9,7 @@
               <xs:element minOccurs="0" maxOccurs="1" name="MessageID" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="ConversationID" type="xs:string" />
               <xs:element minOccurs="1" maxOccurs="1" name="OTFVersion" type="MessageHeaderInfoOTFVersion" />
+              <xs:element minOccurs="1" maxOccurs="1" name="OTFMessage" type="MessageHeaderInfoOTFMessage" />
               <xs:element minOccurs="0" maxOccurs="1" name="SenderID" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="RecipientID" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
@@ -69,129 +70,19 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element minOccurs="0" maxOccurs="1" name="TankContainerInfo">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element minOccurs="0" maxOccurs="1" name="ContainerInfo">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContainerNumber" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContainerType" type="xs:string" />
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element minOccurs="0" maxOccurs="1" name="OwnerID" type="xs:string" />
-              <xs:element minOccurs="0" maxOccurs="1" name="TankContainerSuitabilityInfo">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="PortableTankType" type="TankContainerInfoTankContainerSuitabilityInfoPortableTankType" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="PortableTankTypeDescription" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="IMOType_Deprecated" type="TankContainerInfoTankContainerSuitabilityInfoIMOType_Deprecated" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="IMOTypeDescription_Deprecated" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="RID_ADRCode" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="SubstancesSuitableForTransport" type="ArrayOfTankContainerInfo_SubstancesSuitableForTransportTankContainerInfo_SubstanceSuitableForTransport" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="SpecialProvisions" type="ArrayOfTankContainerInfo_SpecialProvisionsTankContainerInfo_SpecialProvision" />
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element minOccurs="0" maxOccurs="1" name="TankContainerCharacteristicsInfo">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="Manufacturer" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="ManufacturerCountry" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="ManufacturerSerialNumber" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="BuildingYearMonth" type="xs:dateTime" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="ISO6346SizeTypeCode" type="TankContainerInfoTankContainerCharacteristicsInfoISO6346SizeTypeCode" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="ISO6346SizeTypeCodeDescription" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="DimensionsXMillimeter" type="xs:int" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="DimensionsYMillimeter" type="xs:int" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="DimensionsZMillimeter" type="xs:int" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="MaxGrossMass" type="xs:double" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="Payload" type="xs:double" />
-                    <xs:element minOccurs="0" maxOccurs="1" default="kg" name="PayloadUnit" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="Tare" type="xs:double" />
-                    <xs:element minOccurs="0" maxOccurs="1" default="kg" name="TareUnit" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="Capacity" type="xs:double" />
-                    <xs:element minOccurs="0" maxOccurs="1" default="L" name="CapacityUnit" type="xs:string" />
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element minOccurs="0" maxOccurs="1" name="TankContainerTankInfo">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="CompartmentQuantity" type="xs:int" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="ShellMaterial" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="ShellEquivalentThicknessRefSteelMillimeter" type="xs:double" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="SurgePlates" type="xs:boolean" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="SurgePlatesCapacityBetweenIsLowerThan7500L" type="xs:boolean" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="WorkPressureMaximumBar" type="xs:double" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="DesignPressureExternalBar" type="xs:double" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="TestPressureHydraulicBar" type="xs:double" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="DesignTemperatureMinimum" type="xs:double" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="DesignTemperatureMaximum" type="xs:double" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="DesignTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element minOccurs="0" maxOccurs="1" name="TankContainerEquipmentInfo">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="TopDischarge" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="TopQuantityOfEnclosuresInSeries" type="xs:int" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="BottomDischarge" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="BottomQuantityOfEnclosuresInSeries" type="xs:int" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="Heater" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="HeaterWorkingPressureBar" type="xs:double" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="ReliefValveQuantity" type="xs:int" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="ReliefValves" type="ArrayOfTankContainerInfo_ReliefValvesTankContainerInfo_ReliefValve" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="RuptureDiscQuantity" type="xs:int" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="RuptureDiscs" type="ArrayOfTankContainerInfo_RuptureDiscsTankContainerInfo_RuptureDisc" />
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element minOccurs="0" maxOccurs="1" name="TankContainerLiningInfo">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="InternalCoating" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="Insulation" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="Material" type="xs:string" />
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element minOccurs="0" maxOccurs="1" name="InspectionDates">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="ACEP" type="xs:dateTime" />
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
         <xs:element minOccurs="0" maxOccurs="1" name="Container_Work_EstimateStatusInfo">
           <xs:complexType>
             <xs:sequence>
-              <xs:element minOccurs="0" maxOccurs="1" name="ContainerWorkEstimateStatusInfo">
+              <xs:element minOccurs="0" maxOccurs="1" name="Version" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_DateInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="Version" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_DateInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Planned" type="xs:dateTime" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="PlannedBy" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="PlannedToTakePlaceOn" type="xs:dateTime" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Started" type="xs:dateTime" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Finished" type="xs:dateTime" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Cancelled" type="xs:dateTime" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Planned" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="PlannedBy" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="PlannedToTakePlaceOn" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Started" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Finished" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Cancelled" type="xs:dateTime" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -279,6 +170,8 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Category" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="LaborRate" type="xs:double" />
         <xs:element minOccurs="0" maxOccurs="1" name="EstimateLines" type="ArrayOfContainer_Work_EstimateLinesContainer_Work_EstimateLine" />
         <xs:element minOccurs="0" maxOccurs="1" name="Remarks" type="ArrayOfRemarksRemark" />
         <xs:element minOccurs="0" maxOccurs="1" name="Attachments" type="ArrayOfAttachmentsAttachment" />
@@ -292,215 +185,34 @@
       <xs:enumeration value="OTF21" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="MessageHeaderInfoOTFMessage">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Message_Container_PreNotification" />
+      <xs:enumeration value="Message_Container_PreNotification_StatusUpdate" />
+      <xs:enumeration value="Message_Container_StatusUpdate_Storage_Arrival" />
+      <xs:enumeration value="Message_Container_StatusUpdate_Storage_Available" />
+      <xs:enumeration value="Message_Container_StatusUpdate_Storage_Departure" />
+      <xs:enumeration value="Message_Container_StatusUpdate_Work" />
+      <xs:enumeration value="Message_Container_Work_Estimate" />
+      <xs:enumeration value="Message_TankContainer_InspectionReport" />
+      <xs:enumeration value="Message_TankContainer_PreNotification" />
+      <xs:enumeration value="Message_TankContainer_PreNotification_StatusUpdate" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Cleaning" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Heating" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Inspection" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Storage_Arrival" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Storage_Available" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Storage_Departure" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Transhipment" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Work" />
+      <xs:enumeration value="Message_TankContainer_Work_Estimate" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="MessageHeaderInfoMessageType">
     <xs:restriction base="xs:string">
       <xs:enumeration value="New" />
       <xs:enumeration value="Update" />
       <xs:enumeration value="Cancellation" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="TankContainerInfoTankContainerSuitabilityInfoPortableTankType">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="Empty" />
-      <xs:enumeration value="T1" />
-      <xs:enumeration value="T2" />
-      <xs:enumeration value="T3" />
-      <xs:enumeration value="T4" />
-      <xs:enumeration value="T5" />
-      <xs:enumeration value="T6" />
-      <xs:enumeration value="T7" />
-      <xs:enumeration value="T8" />
-      <xs:enumeration value="T9" />
-      <xs:enumeration value="T10" />
-      <xs:enumeration value="T11" />
-      <xs:enumeration value="T12" />
-      <xs:enumeration value="T13" />
-      <xs:enumeration value="T14" />
-      <xs:enumeration value="T15" />
-      <xs:enumeration value="T16" />
-      <xs:enumeration value="T17" />
-      <xs:enumeration value="T18" />
-      <xs:enumeration value="T19" />
-      <xs:enumeration value="T20" />
-      <xs:enumeration value="T21" />
-      <xs:enumeration value="T22" />
-      <xs:enumeration value="T23" />
-      <xs:enumeration value="T50" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="TankContainerInfoTankContainerSuitabilityInfoIMOType_Deprecated">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="Empty" />
-      <xs:enumeration value="IMO1" />
-      <xs:enumeration value="IMO2" />
-      <xs:enumeration value="IMO3" />
-      <xs:enumeration value="IMO4" />
-      <xs:enumeration value="IMO5" />
-      <xs:enumeration value="IMO6" />
-      <xs:enumeration value="IMO7" />
-      <xs:enumeration value="IMO8" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="ArrayOfTankContainerInfo_SubstancesSuitableForTransportTankContainerInfo_SubstanceSuitableForTransport">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="TankContainerInfo_SubstanceSuitableForTransport">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="1" name="UNNumber" type="xs:string" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="ArrayOfTankContainerInfo_SpecialProvisionsTankContainerInfo_SpecialProvision">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="TankContainerInfo_SpecialProvision">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="1" name="SortOrder" type="xs:integer" />
-            <xs:element minOccurs="0" maxOccurs="1" name="SpecialProvision" type="xs:string" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:simpleType name="TankContainerInfoTankContainerCharacteristicsInfoISO6346SizeTypeCode">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="Empty" />
-      <xs:enumeration value="20G0" />
-      <xs:enumeration value="20G1" />
-      <xs:enumeration value="20H0" />
-      <xs:enumeration value="20P1" />
-      <xs:enumeration value="20T3" />
-      <xs:enumeration value="20T4" />
-      <xs:enumeration value="20T5" />
-      <xs:enumeration value="20T6" />
-      <xs:enumeration value="20T7" />
-      <xs:enumeration value="20T8" />
-      <xs:enumeration value="20T0" />
-      <xs:enumeration value="20T1" />
-      <xs:enumeration value="20T2" />
-      <xs:enumeration value="22B0" />
-      <xs:enumeration value="22G0" />
-      <xs:enumeration value="22G1" />
-      <xs:enumeration value="22H0" />
-      <xs:enumeration value="22P3" />
-      <xs:enumeration value="22P8" />
-      <xs:enumeration value="22P9" />
-      <xs:enumeration value="22P1" />
-      <xs:enumeration value="22P7" />
-      <xs:enumeration value="22R9" />
-      <xs:enumeration value="22R7" />
-      <xs:enumeration value="22R1" />
-      <xs:enumeration value="22S1" />
-      <xs:enumeration value="22T3" />
-      <xs:enumeration value="22T4" />
-      <xs:enumeration value="22T5" />
-      <xs:enumeration value="22T6" />
-      <xs:enumeration value="22T7" />
-      <xs:enumeration value="22T8" />
-      <xs:enumeration value="22T0" />
-      <xs:enumeration value="22T1" />
-      <xs:enumeration value="22T2" />
-      <xs:enumeration value="22U6" />
-      <xs:enumeration value="22U1" />
-      <xs:enumeration value="22V0" />
-      <xs:enumeration value="22V2" />
-      <xs:enumeration value="22V3" />
-      <xs:enumeration value="25G0" />
-      <xs:enumeration value="26G0" />
-      <xs:enumeration value="26H0" />
-      <xs:enumeration value="28T8" />
-      <xs:enumeration value="28U1" />
-      <xs:enumeration value="28V0" />
-      <xs:enumeration value="29P0" />
-      <xs:enumeration value="2EG0" />
-      <xs:enumeration value="42G0" />
-      <xs:enumeration value="42G1" />
-      <xs:enumeration value="42H0" />
-      <xs:enumeration value="42P3" />
-      <xs:enumeration value="42P8" />
-      <xs:enumeration value="42P9" />
-      <xs:enumeration value="42P1" />
-      <xs:enumeration value="42P6" />
-      <xs:enumeration value="42R9" />
-      <xs:enumeration value="42R3" />
-      <xs:enumeration value="42R1" />
-      <xs:enumeration value="42S1" />
-      <xs:enumeration value="42T5" />
-      <xs:enumeration value="42T6" />
-      <xs:enumeration value="42T8" />
-      <xs:enumeration value="42T2" />
-      <xs:enumeration value="42U6" />
-      <xs:enumeration value="42U1" />
-      <xs:enumeration value="45B3" />
-      <xs:enumeration value="45G0" />
-      <xs:enumeration value="45G1" />
-      <xs:enumeration value="45P3" />
-      <xs:enumeration value="45P8" />
-      <xs:enumeration value="45R9" />
-      <xs:enumeration value="45R1" />
-      <xs:enumeration value="45U1" />
-      <xs:enumeration value="45U6" />
-      <xs:enumeration value="46H0" />
-      <xs:enumeration value="48T8" />
-      <xs:enumeration value="49P0" />
-      <xs:enumeration value="4CG0" />
-      <xs:enumeration value="L0G1" />
-      <xs:enumeration value="L2G1" />
-      <xs:enumeration value="L5G1" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="Celcius" />
-      <xs:enumeration value="Fahrenheit" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="ArrayOfTankContainerInfo_ReliefValvesTankContainerInfo_ReliefValve">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="TankContainerInfo_ReliefValve">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="1" name="Manufacturer" type="xs:string" />
-            <xs:element minOccurs="0" maxOccurs="1" name="SerialNumber" type="xs:string" />
-            <xs:element minOccurs="0" maxOccurs="1" name="SettingMinus" type="xs:double" />
-            <xs:element minOccurs="0" maxOccurs="1" name="SettingPlus" type="xs:double" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="ArrayOfTankContainerInfo_RuptureDiscsTankContainerInfo_RuptureDisc">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="TankContainerInfo_RuptureDisc">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="1" name="Manufacturer" type="xs:string" />
-            <xs:element minOccurs="0" maxOccurs="1" name="SerialNumber" type="xs:string" />
-            <xs:element minOccurs="0" maxOccurs="1" name="Setting" type="xs:double" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:simpleType name="TankContainerInfoInspectionDatesLastInspectionScope">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="Empty" />
-      <xs:enumeration value="2.5YearTest" />
-      <xs:enumeration value="5YearTest" />
-      <xs:enumeration value="InternalInspection" />
-      <xs:enumeration value="ExternalInspection" />
-      <xs:enumeration value="HydraulicTest" />
-      <xs:enumeration value="LeakproofnessTest" />
-      <xs:enumeration value="VacuumMeasurement" />
-      <xs:enumeration value="HeaterPressureTest" />
-      <xs:enumeration value="ValveSettingsCheck" />
-      <xs:enumeration value="ServiceEquipmentCheck" />
-      <xs:enumeration value="FrameExamination" />
-      <xs:enumeration value="MarkingExamination" />
-      <xs:enumeration value="AirTest" />
-      <xs:enumeration value="HydrostaticTest" />
     </xs:restriction>
   </xs:simpleType>
   <xs:complexType name="ArrayOfContainer_Work_EstimateLinesContainer_Work_EstimateLine">
@@ -595,16 +307,16 @@
                   <xs:element minOccurs="0" maxOccurs="1" name="Container_Work_EstimateLineProposal">
                     <xs:complexType>
                       <xs:sequence>
-                        <xs:element minOccurs="0" maxOccurs="1" name="LaborRate" type="xs:double" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="LaborRate" type="xs:double" />
                         <xs:element minOccurs="1" maxOccurs="1" name="LaborHours" type="xs:double" />
                         <xs:element minOccurs="1" maxOccurs="1" name="LaborPrice" type="xs:double" />
                         <xs:element minOccurs="1" maxOccurs="1" name="MaterialPrice" type="xs:double" />
-                        <xs:element minOccurs="0" maxOccurs="1" name="LumpSumPrice" type="xs:double" />
-                        <xs:element minOccurs="0" maxOccurs="1" name="LineSubtotal" type="xs:double" />
-                        <xs:element minOccurs="0" maxOccurs="1" name="Quantity" type="xs:integer" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="LumpSumPrice" type="xs:double" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="LineSubtotal" type="xs:double" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="Quantity" type="xs:double" />
                         <xs:element minOccurs="1" maxOccurs="1" name="DoAction" type="xs:boolean" />
                         <xs:element minOccurs="0" maxOccurs="1" default="false" name="ThirdParty" type="xs:boolean" />
-                        <xs:element minOccurs="0" maxOccurs="1" name="LineTotal" type="xs:double" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="LineTotal" type="xs:double" />
                         <xs:element minOccurs="0" maxOccurs="1" name="Remarks" type="ArrayOfRemarksRemark" />
                       </xs:sequence>
                     </xs:complexType>
@@ -618,16 +330,16 @@
                   <xs:element minOccurs="0" maxOccurs="1" name="Container_Work_EstimateLineProposal">
                     <xs:complexType>
                       <xs:sequence>
-                        <xs:element minOccurs="0" maxOccurs="1" name="LaborRate" type="xs:double" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="LaborRate" type="xs:double" />
                         <xs:element minOccurs="1" maxOccurs="1" name="LaborHours" type="xs:double" />
                         <xs:element minOccurs="1" maxOccurs="1" name="LaborPrice" type="xs:double" />
                         <xs:element minOccurs="1" maxOccurs="1" name="MaterialPrice" type="xs:double" />
-                        <xs:element minOccurs="0" maxOccurs="1" name="LumpSumPrice" type="xs:double" />
-                        <xs:element minOccurs="0" maxOccurs="1" name="LineSubtotal" type="xs:double" />
-                        <xs:element minOccurs="0" maxOccurs="1" name="Quantity" type="xs:integer" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="LumpSumPrice" type="xs:double" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="LineSubtotal" type="xs:double" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="Quantity" type="xs:double" />
                         <xs:element minOccurs="1" maxOccurs="1" name="DoAction" type="xs:boolean" />
                         <xs:element minOccurs="0" maxOccurs="1" default="false" name="ThirdParty" type="xs:boolean" />
-                        <xs:element minOccurs="0" maxOccurs="1" name="LineTotal" type="xs:double" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="LineTotal" type="xs:double" />
                         <xs:element minOccurs="0" maxOccurs="1" name="Remarks" type="ArrayOfRemarksRemark" />
                       </xs:sequence>
                     </xs:complexType>

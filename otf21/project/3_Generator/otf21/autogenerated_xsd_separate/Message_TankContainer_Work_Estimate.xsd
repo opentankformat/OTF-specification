@@ -9,6 +9,7 @@
               <xs:element minOccurs="0" maxOccurs="1" name="MessageID" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="ConversationID" type="xs:string" />
               <xs:element minOccurs="1" maxOccurs="1" name="OTFVersion" type="MessageHeaderInfoOTFVersion" />
+              <xs:element minOccurs="1" maxOccurs="1" name="OTFMessage" type="MessageHeaderInfoOTFMessage" />
               <xs:element minOccurs="0" maxOccurs="1" name="SenderID" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="RecipientID" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
@@ -168,22 +169,16 @@
         <xs:element minOccurs="0" maxOccurs="1" name="Container_Work_EstimateStatusInfo">
           <xs:complexType>
             <xs:sequence>
-              <xs:element minOccurs="0" maxOccurs="1" name="ContainerWorkEstimateStatusInfo">
+              <xs:element minOccurs="0" maxOccurs="1" name="Version" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_DateInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="Version" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_DateInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Planned" type="xs:dateTime" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="PlannedBy" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="PlannedToTakePlaceOn" type="xs:dateTime" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Started" type="xs:dateTime" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Finished" type="xs:dateTime" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Cancelled" type="xs:dateTime" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Planned" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="PlannedBy" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="PlannedToTakePlaceOn" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Started" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Finished" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Cancelled" type="xs:dateTime" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -285,6 +280,29 @@
       <xs:enumeration value="Unknown" />
       <xs:enumeration value="OTF20" />
       <xs:enumeration value="OTF21" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="MessageHeaderInfoOTFMessage">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Message_Container_PreNotification" />
+      <xs:enumeration value="Message_Container_PreNotification_StatusUpdate" />
+      <xs:enumeration value="Message_Container_StatusUpdate_Storage_Arrival" />
+      <xs:enumeration value="Message_Container_StatusUpdate_Storage_Available" />
+      <xs:enumeration value="Message_Container_StatusUpdate_Storage_Departure" />
+      <xs:enumeration value="Message_Container_StatusUpdate_Work" />
+      <xs:enumeration value="Message_Container_Work_Estimate" />
+      <xs:enumeration value="Message_TankContainer_InspectionReport" />
+      <xs:enumeration value="Message_TankContainer_PreNotification" />
+      <xs:enumeration value="Message_TankContainer_PreNotification_StatusUpdate" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Cleaning" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Heating" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Inspection" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Storage_Arrival" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Storage_Available" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Storage_Departure" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Transhipment" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Work" />
+      <xs:enumeration value="Message_TankContainer_Work_Estimate" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="MessageHeaderInfoMessageType">
@@ -590,16 +608,16 @@
                   <xs:element minOccurs="0" maxOccurs="1" name="Container_Work_EstimateLineProposal">
                     <xs:complexType>
                       <xs:sequence>
-                        <xs:element minOccurs="0" maxOccurs="1" name="LaborRate" type="xs:double" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="LaborRate" type="xs:double" />
                         <xs:element minOccurs="1" maxOccurs="1" name="LaborHours" type="xs:double" />
                         <xs:element minOccurs="1" maxOccurs="1" name="LaborPrice" type="xs:double" />
                         <xs:element minOccurs="1" maxOccurs="1" name="MaterialPrice" type="xs:double" />
-                        <xs:element minOccurs="0" maxOccurs="1" name="LumpSumPrice" type="xs:double" />
-                        <xs:element minOccurs="0" maxOccurs="1" name="LineSubtotal" type="xs:double" />
-                        <xs:element minOccurs="0" maxOccurs="1" name="Quantity" type="xs:integer" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="LumpSumPrice" type="xs:double" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="LineSubtotal" type="xs:double" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="Quantity" type="xs:double" />
                         <xs:element minOccurs="1" maxOccurs="1" name="DoAction" type="xs:boolean" />
                         <xs:element minOccurs="0" maxOccurs="1" default="false" name="ThirdParty" type="xs:boolean" />
-                        <xs:element minOccurs="0" maxOccurs="1" name="LineTotal" type="xs:double" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="LineTotal" type="xs:double" />
                         <xs:element minOccurs="0" maxOccurs="1" name="Remarks" type="ArrayOfRemarksRemark" />
                       </xs:sequence>
                     </xs:complexType>
@@ -613,16 +631,16 @@
                   <xs:element minOccurs="0" maxOccurs="1" name="Container_Work_EstimateLineProposal">
                     <xs:complexType>
                       <xs:sequence>
-                        <xs:element minOccurs="0" maxOccurs="1" name="LaborRate" type="xs:double" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="LaborRate" type="xs:double" />
                         <xs:element minOccurs="1" maxOccurs="1" name="LaborHours" type="xs:double" />
                         <xs:element minOccurs="1" maxOccurs="1" name="LaborPrice" type="xs:double" />
                         <xs:element minOccurs="1" maxOccurs="1" name="MaterialPrice" type="xs:double" />
-                        <xs:element minOccurs="0" maxOccurs="1" name="LumpSumPrice" type="xs:double" />
-                        <xs:element minOccurs="0" maxOccurs="1" name="LineSubtotal" type="xs:double" />
-                        <xs:element minOccurs="0" maxOccurs="1" name="Quantity" type="xs:integer" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="LumpSumPrice" type="xs:double" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="LineSubtotal" type="xs:double" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="Quantity" type="xs:double" />
                         <xs:element minOccurs="1" maxOccurs="1" name="DoAction" type="xs:boolean" />
                         <xs:element minOccurs="0" maxOccurs="1" default="false" name="ThirdParty" type="xs:boolean" />
-                        <xs:element minOccurs="0" maxOccurs="1" name="LineTotal" type="xs:double" />
+                        <xs:element minOccurs="1" maxOccurs="1" name="LineTotal" type="xs:double" />
                         <xs:element minOccurs="0" maxOccurs="1" name="Remarks" type="ArrayOfRemarksRemark" />
                       </xs:sequence>
                     </xs:complexType>

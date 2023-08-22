@@ -88,6 +88,8 @@ namespace otf21 {
         
         private MessageHeaderInfoOTFVersion oTFVersionField;
         
+        private MessageHeaderInfoOTFMessage oTFMessageField;
+        
         private string senderIDField;
         
         private string recipientIDField;
@@ -99,7 +101,7 @@ namespace otf21 {
         private MessageHeaderInfoMessageType messageTypeField;
         
         public MessageHeaderInfo() {
-            this.oTFVersionField = MessageHeaderInfoOTFVersion.OTF20;
+            this.oTFVersionField = MessageHeaderInfoOTFVersion.OTF21;
             this.messageTypeField = MessageHeaderInfoMessageType.New;
         }
         
@@ -130,6 +132,16 @@ namespace otf21 {
             }
             set {
                 this.oTFVersionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public MessageHeaderInfoOTFMessage OTFMessage {
+            get {
+                return this.oTFMessageField;
+            }
+            set {
+                this.oTFMessageField = value;
             }
         }
         
@@ -197,6 +209,69 @@ namespace otf21 {
         
         /// <remarks/>
         OTF21,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    public enum MessageHeaderInfoOTFMessage {
+        
+        /// <remarks/>
+        Message_Container_PreNotification,
+        
+        /// <remarks/>
+        Message_Container_PreNotification_StatusUpdate,
+        
+        /// <remarks/>
+        Message_Container_StatusUpdate_Storage_Arrival,
+        
+        /// <remarks/>
+        Message_Container_StatusUpdate_Storage_Available,
+        
+        /// <remarks/>
+        Message_Container_StatusUpdate_Storage_Departure,
+        
+        /// <remarks/>
+        Message_Container_StatusUpdate_Work,
+        
+        /// <remarks/>
+        Message_Container_Work_Estimate,
+        
+        /// <remarks/>
+        Message_TankContainer_InspectionReport,
+        
+        /// <remarks/>
+        Message_TankContainer_PreNotification,
+        
+        /// <remarks/>
+        Message_TankContainer_PreNotification_StatusUpdate,
+        
+        /// <remarks/>
+        Message_TankContainer_StatusUpdate_Cleaning,
+        
+        /// <remarks/>
+        Message_TankContainer_StatusUpdate_Heating,
+        
+        /// <remarks/>
+        Message_TankContainer_StatusUpdate_Inspection,
+        
+        /// <remarks/>
+        Message_TankContainer_StatusUpdate_Storage_Arrival,
+        
+        /// <remarks/>
+        Message_TankContainer_StatusUpdate_Storage_Available,
+        
+        /// <remarks/>
+        Message_TankContainer_StatusUpdate_Storage_Departure,
+        
+        /// <remarks/>
+        Message_TankContainer_StatusUpdate_Transhipment,
+        
+        /// <remarks/>
+        Message_TankContainer_StatusUpdate_Work,
+        
+        /// <remarks/>
+        Message_TankContainer_Work_Estimate,
     }
     
     /// <remarks/>
@@ -1960,42 +2035,11 @@ namespace otf21 {
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
     public partial class Container_Work_EstimateStatusInfo {
         
-        private Container_Work_EstimateStatusInfoContainerWorkEstimateStatusInfo containerWorkEstimateStatusInfoField;
-        
-        private Container_Work_EstimateStatusInfoContainerWorkAuthorizationInfo containerWorkAuthorizationInfoField;
-        
-        /// <remarks/>
-        public Container_Work_EstimateStatusInfoContainerWorkEstimateStatusInfo ContainerWorkEstimateStatusInfo {
-            get {
-                return this.containerWorkEstimateStatusInfoField;
-            }
-            set {
-                this.containerWorkEstimateStatusInfoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Container_Work_EstimateStatusInfoContainerWorkAuthorizationInfo ContainerWorkAuthorizationInfo {
-            get {
-                return this.containerWorkAuthorizationInfoField;
-            }
-            set {
-                this.containerWorkAuthorizationInfoField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    public partial class Container_Work_EstimateStatusInfoContainerWorkEstimateStatusInfo {
-        
         private string versionField;
         
         private Container_ServiceProgress_DateInfo container_ServiceProgress_DateInfoField;
+        
+        private Container_Work_EstimateStatusInfoContainerWorkAuthorizationInfo containerWorkAuthorizationInfoField;
         
         /// <remarks/>
         public string Version {
@@ -2014,6 +2058,16 @@ namespace otf21 {
             }
             set {
                 this.container_ServiceProgress_DateInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Container_Work_EstimateStatusInfoContainerWorkAuthorizationInfo ContainerWorkAuthorizationInfo {
+            get {
+                return this.containerWorkAuthorizationInfoField;
+            }
+            set {
+                this.containerWorkAuthorizationInfoField = value;
             }
         }
     }
@@ -2304,6 +2358,795 @@ namespace otf21 {
             }
             set {
                 this.container_ServiceProgress_DateInfoField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public partial class Code {
+        
+        private string valueField;
+        
+        private string descriptionField;
+        
+        /// <remarks/>
+        public string Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public partial class Container_Work_EstimateLineProposal {
+        
+        private double laborRateField;
+        
+        private double laborHoursField;
+        
+        private double laborPriceField;
+        
+        private double materialPriceField;
+        
+        private double lumpSumPriceField;
+        
+        private double lineSubtotalField;
+        
+        private double quantityField;
+        
+        private bool doActionField;
+        
+        private bool thirdPartyField;
+        
+        private double lineTotalField;
+        
+        private RemarksRemark[] remarksField;
+        
+        public Container_Work_EstimateLineProposal() {
+            this.quantityField = 1D;
+            this.doActionField = true;
+            this.thirdPartyField = false;
+        }
+        
+        /// <remarks/>
+        public double LaborRate {
+            get {
+                return this.laborRateField;
+            }
+            set {
+                this.laborRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double LaborHours {
+            get {
+                return this.laborHoursField;
+            }
+            set {
+                this.laborHoursField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double LaborPrice {
+            get {
+                return this.laborPriceField;
+            }
+            set {
+                this.laborPriceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double MaterialPrice {
+            get {
+                return this.materialPriceField;
+            }
+            set {
+                this.materialPriceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double LumpSumPrice {
+            get {
+                return this.lumpSumPriceField;
+            }
+            set {
+                this.lumpSumPriceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double LineSubtotal {
+            get {
+                return this.lineSubtotalField;
+            }
+            set {
+                this.lineSubtotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Quantity {
+            get {
+                return this.quantityField;
+            }
+            set {
+                this.quantityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool DoAction {
+            get {
+                return this.doActionField;
+            }
+            set {
+                this.doActionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.ComponentModel.DefaultValueAttribute(false)]
+        public bool ThirdParty {
+            get {
+                return this.thirdPartyField;
+            }
+            set {
+                this.thirdPartyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double LineTotal {
+            get {
+                return this.lineTotalField;
+            }
+            set {
+                this.lineTotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Remark", IsNullable=false)]
+        public RemarksRemark[] Remarks {
+            get {
+                return this.remarksField;
+            }
+            set {
+                this.remarksField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public partial class Message_Container_Work_Estimate {
+        
+        private MessageHeaderInfo messageHeaderInfoField;
+        
+        private OrderInfo orderInfoField;
+        
+        private LocalizationInfo localizationInfoField;
+        
+        private ContainerInfo containerInfoField;
+        
+        private Container_Work_EstimateStatusInfo container_Work_EstimateStatusInfoField;
+        
+        private Message_Container_Work_EstimateContainerStorageArrivalInfo containerStorageArrivalInfoField;
+        
+        private string categoryField;
+        
+        private double laborRateField;
+        
+        private Container_Work_EstimateLinesContainer_Work_EstimateLine[] estimateLinesField;
+        
+        private RemarksRemark[] remarksField;
+        
+        private AttachmentsAttachment[] attachmentsField;
+        
+        /// <remarks/>
+        public MessageHeaderInfo MessageHeaderInfo {
+            get {
+                return this.messageHeaderInfoField;
+            }
+            set {
+                this.messageHeaderInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public OrderInfo OrderInfo {
+            get {
+                return this.orderInfoField;
+            }
+            set {
+                this.orderInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public LocalizationInfo LocalizationInfo {
+            get {
+                return this.localizationInfoField;
+            }
+            set {
+                this.localizationInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public ContainerInfo ContainerInfo {
+            get {
+                return this.containerInfoField;
+            }
+            set {
+                this.containerInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Container_Work_EstimateStatusInfo Container_Work_EstimateStatusInfo {
+            get {
+                return this.container_Work_EstimateStatusInfoField;
+            }
+            set {
+                this.container_Work_EstimateStatusInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Message_Container_Work_EstimateContainerStorageArrivalInfo ContainerStorageArrivalInfo {
+            get {
+                return this.containerStorageArrivalInfoField;
+            }
+            set {
+                this.containerStorageArrivalInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Category {
+            get {
+                return this.categoryField;
+            }
+            set {
+                this.categoryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double LaborRate {
+            get {
+                return this.laborRateField;
+            }
+            set {
+                this.laborRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Container_Work_EstimateLine", IsNullable=false)]
+        public Container_Work_EstimateLinesContainer_Work_EstimateLine[] EstimateLines {
+            get {
+                return this.estimateLinesField;
+            }
+            set {
+                this.estimateLinesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Remark", IsNullable=false)]
+        public RemarksRemark[] Remarks {
+            get {
+                return this.remarksField;
+            }
+            set {
+                this.remarksField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Attachment", IsNullable=false)]
+        public AttachmentsAttachment[] Attachments {
+            get {
+                return this.attachmentsField;
+            }
+            set {
+                this.attachmentsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    public partial class Message_Container_Work_EstimateContainerStorageArrivalInfo {
+        
+        private System.DateTime containerDeliveryDateField;
+        
+        private bool containerDeliveryDateFieldSpecified;
+        
+        /// <remarks/>
+        public System.DateTime ContainerDeliveryDate {
+            get {
+                return this.containerDeliveryDateField;
+            }
+            set {
+                this.containerDeliveryDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ContainerDeliveryDateSpecified {
+            get {
+                return this.containerDeliveryDateFieldSpecified;
+            }
+            set {
+                this.containerDeliveryDateFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLine {
+        
+        private string lineIDField;
+        
+        private string originIDField;
+        
+        private int sortOrderField;
+        
+        private bool sortOrderFieldSpecified;
+        
+        private string descriptionField;
+        
+        private Container_Work_EstimateLinesContainer_Work_EstimateLineCategoryCode categoryCodeField;
+        
+        private Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodes generalCodesField;
+        
+        private ComplexCodesComplexCode[] complexCodesField;
+        
+        private Container_Work_EstimateLinesContainer_Work_EstimateLineProposal proposalField;
+        
+        private Container_Work_EstimateLinesContainer_Work_EstimateLineCounterProposal counterProposalField;
+        
+        private Container_Work_EstimateLinesContainer_Work_EstimateLineClientAuthorization clientAuthorizationField;
+        
+        private AttachmentsAttachment[] attachmentsField;
+        
+        /// <remarks/>
+        public string LineID {
+            get {
+                return this.lineIDField;
+            }
+            set {
+                this.lineIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string OriginID {
+            get {
+                return this.originIDField;
+            }
+            set {
+                this.originIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int SortOrder {
+            get {
+                return this.sortOrderField;
+            }
+            set {
+                this.sortOrderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool SortOrderSpecified {
+            get {
+                return this.sortOrderFieldSpecified;
+            }
+            set {
+                this.sortOrderFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Container_Work_EstimateLinesContainer_Work_EstimateLineCategoryCode CategoryCode {
+            get {
+                return this.categoryCodeField;
+            }
+            set {
+                this.categoryCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodes GeneralCodes {
+            get {
+                return this.generalCodesField;
+            }
+            set {
+                this.generalCodesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("ComplexCode", IsNullable=false)]
+        public ComplexCodesComplexCode[] ComplexCodes {
+            get {
+                return this.complexCodesField;
+            }
+            set {
+                this.complexCodesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Container_Work_EstimateLinesContainer_Work_EstimateLineProposal Proposal {
+            get {
+                return this.proposalField;
+            }
+            set {
+                this.proposalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Container_Work_EstimateLinesContainer_Work_EstimateLineCounterProposal CounterProposal {
+            get {
+                return this.counterProposalField;
+            }
+            set {
+                this.counterProposalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Container_Work_EstimateLinesContainer_Work_EstimateLineClientAuthorization ClientAuthorization {
+            get {
+                return this.clientAuthorizationField;
+            }
+            set {
+                this.clientAuthorizationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Attachment", IsNullable=false)]
+        public AttachmentsAttachment[] Attachments {
+            get {
+                return this.attachmentsField;
+            }
+            set {
+                this.attachmentsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineCategoryCode {
+        
+        private Code codeField;
+        
+        /// <remarks/>
+        public Code Code {
+            get {
+                return this.codeField;
+            }
+            set {
+                this.codeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodes {
+        
+        private Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesLocationCode locationCodeField;
+        
+        private Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesDamageCode damageCodeField;
+        
+        private Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesRepairCode repairCodeField;
+        
+        private Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesComponentCode componentCodeField;
+        
+        /// <remarks/>
+        public Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesLocationCode LocationCode {
+            get {
+                return this.locationCodeField;
+            }
+            set {
+                this.locationCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesDamageCode DamageCode {
+            get {
+                return this.damageCodeField;
+            }
+            set {
+                this.damageCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesRepairCode RepairCode {
+            get {
+                return this.repairCodeField;
+            }
+            set {
+                this.repairCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesComponentCode ComponentCode {
+            get {
+                return this.componentCodeField;
+            }
+            set {
+                this.componentCodeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesLocationCode {
+        
+        private Code codeField;
+        
+        /// <remarks/>
+        public Code Code {
+            get {
+                return this.codeField;
+            }
+            set {
+                this.codeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesDamageCode {
+        
+        private Code codeField;
+        
+        /// <remarks/>
+        public Code Code {
+            get {
+                return this.codeField;
+            }
+            set {
+                this.codeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesRepairCode {
+        
+        private Code codeField;
+        
+        /// <remarks/>
+        public Code Code {
+            get {
+                return this.codeField;
+            }
+            set {
+                this.codeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesComponentCode {
+        
+        private Code codeField;
+        
+        /// <remarks/>
+        public Code Code {
+            get {
+                return this.codeField;
+            }
+            set {
+                this.codeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    public partial class ComplexCodesComplexCode {
+        
+        private string parentCodeCatalogNameField;
+        
+        private string valueField;
+        
+        private string descriptionField;
+        
+        /// <remarks/>
+        public string ParentCodeCatalogName {
+            get {
+                return this.parentCodeCatalogNameField;
+            }
+            set {
+                this.parentCodeCatalogNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineProposal {
+        
+        private Container_Work_EstimateLineProposal container_Work_EstimateLineProposalField;
+        
+        /// <remarks/>
+        public Container_Work_EstimateLineProposal Container_Work_EstimateLineProposal {
+            get {
+                return this.container_Work_EstimateLineProposalField;
+            }
+            set {
+                this.container_Work_EstimateLineProposalField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineCounterProposal {
+        
+        private Container_Work_EstimateLineProposal container_Work_EstimateLineProposalField;
+        
+        /// <remarks/>
+        public Container_Work_EstimateLineProposal Container_Work_EstimateLineProposal {
+            get {
+                return this.container_Work_EstimateLineProposalField;
+            }
+            set {
+                this.container_Work_EstimateLineProposalField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineClientAuthorization {
+        
+        private Container_ServiceProgress_AuthorizationInfo container_ServiceProgress_AuthorizationInfoField;
+        
+        /// <remarks/>
+        public Container_ServiceProgress_AuthorizationInfo Container_ServiceProgress_AuthorizationInfo {
+            get {
+                return this.container_ServiceProgress_AuthorizationInfoField;
+            }
+            set {
+                this.container_ServiceProgress_AuthorizationInfoField = value;
             }
         }
     }
@@ -4227,835 +5070,6 @@ namespace otf21 {
         
         /// <remarks/>
         HydrostaticTest,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public partial class Code {
-        
-        private string valueField;
-        
-        private string descriptionField;
-        
-        /// <remarks/>
-        public string Value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Description {
-            get {
-                return this.descriptionField;
-            }
-            set {
-                this.descriptionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public partial class Container_Work_EstimateLineProposal {
-        
-        private double laborRateField;
-        
-        private bool laborRateFieldSpecified;
-        
-        private double laborHoursField;
-        
-        private double laborPriceField;
-        
-        private double materialPriceField;
-        
-        private double lumpSumPriceField;
-        
-        private bool lumpSumPriceFieldSpecified;
-        
-        private double lineSubtotalField;
-        
-        private bool lineSubtotalFieldSpecified;
-        
-        private string quantityField;
-        
-        private bool doActionField;
-        
-        private bool thirdPartyField;
-        
-        private double lineTotalField;
-        
-        private bool lineTotalFieldSpecified;
-        
-        private RemarksRemark[] remarksField;
-        
-        public Container_Work_EstimateLineProposal() {
-            this.doActionField = true;
-            this.thirdPartyField = false;
-        }
-        
-        /// <remarks/>
-        public double LaborRate {
-            get {
-                return this.laborRateField;
-            }
-            set {
-                this.laborRateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool LaborRateSpecified {
-            get {
-                return this.laborRateFieldSpecified;
-            }
-            set {
-                this.laborRateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public double LaborHours {
-            get {
-                return this.laborHoursField;
-            }
-            set {
-                this.laborHoursField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public double LaborPrice {
-            get {
-                return this.laborPriceField;
-            }
-            set {
-                this.laborPriceField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public double MaterialPrice {
-            get {
-                return this.materialPriceField;
-            }
-            set {
-                this.materialPriceField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public double LumpSumPrice {
-            get {
-                return this.lumpSumPriceField;
-            }
-            set {
-                this.lumpSumPriceField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool LumpSumPriceSpecified {
-            get {
-                return this.lumpSumPriceFieldSpecified;
-            }
-            set {
-                this.lumpSumPriceFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public double LineSubtotal {
-            get {
-                return this.lineSubtotalField;
-            }
-            set {
-                this.lineSubtotalField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool LineSubtotalSpecified {
-            get {
-                return this.lineSubtotalFieldSpecified;
-            }
-            set {
-                this.lineSubtotalFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="integer")]
-        public string Quantity {
-            get {
-                return this.quantityField;
-            }
-            set {
-                this.quantityField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool DoAction {
-            get {
-                return this.doActionField;
-            }
-            set {
-                this.doActionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.ComponentModel.DefaultValueAttribute(false)]
-        public bool ThirdParty {
-            get {
-                return this.thirdPartyField;
-            }
-            set {
-                this.thirdPartyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public double LineTotal {
-            get {
-                return this.lineTotalField;
-            }
-            set {
-                this.lineTotalField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool LineTotalSpecified {
-            get {
-                return this.lineTotalFieldSpecified;
-            }
-            set {
-                this.lineTotalFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Remark", IsNullable=false)]
-        public RemarksRemark[] Remarks {
-            get {
-                return this.remarksField;
-            }
-            set {
-                this.remarksField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public partial class Message_Container_Work_Estimate {
-        
-        private MessageHeaderInfo messageHeaderInfoField;
-        
-        private OrderInfo orderInfoField;
-        
-        private LocalizationInfo localizationInfoField;
-        
-        private ContainerInfo containerInfoField;
-        
-        private TankContainerInfo tankContainerInfoField;
-        
-        private Container_Work_EstimateStatusInfo container_Work_EstimateStatusInfoField;
-        
-        private Message_Container_Work_EstimateContainerStorageArrivalInfo containerStorageArrivalInfoField;
-        
-        private Container_Work_EstimateLinesContainer_Work_EstimateLine[] estimateLinesField;
-        
-        private RemarksRemark[] remarksField;
-        
-        private AttachmentsAttachment[] attachmentsField;
-        
-        /// <remarks/>
-        public MessageHeaderInfo MessageHeaderInfo {
-            get {
-                return this.messageHeaderInfoField;
-            }
-            set {
-                this.messageHeaderInfoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public OrderInfo OrderInfo {
-            get {
-                return this.orderInfoField;
-            }
-            set {
-                this.orderInfoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public LocalizationInfo LocalizationInfo {
-            get {
-                return this.localizationInfoField;
-            }
-            set {
-                this.localizationInfoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public ContainerInfo ContainerInfo {
-            get {
-                return this.containerInfoField;
-            }
-            set {
-                this.containerInfoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public TankContainerInfo TankContainerInfo {
-            get {
-                return this.tankContainerInfoField;
-            }
-            set {
-                this.tankContainerInfoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Container_Work_EstimateStatusInfo Container_Work_EstimateStatusInfo {
-            get {
-                return this.container_Work_EstimateStatusInfoField;
-            }
-            set {
-                this.container_Work_EstimateStatusInfoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Message_Container_Work_EstimateContainerStorageArrivalInfo ContainerStorageArrivalInfo {
-            get {
-                return this.containerStorageArrivalInfoField;
-            }
-            set {
-                this.containerStorageArrivalInfoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Container_Work_EstimateLine", IsNullable=false)]
-        public Container_Work_EstimateLinesContainer_Work_EstimateLine[] EstimateLines {
-            get {
-                return this.estimateLinesField;
-            }
-            set {
-                this.estimateLinesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Remark", IsNullable=false)]
-        public RemarksRemark[] Remarks {
-            get {
-                return this.remarksField;
-            }
-            set {
-                this.remarksField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Attachment", IsNullable=false)]
-        public AttachmentsAttachment[] Attachments {
-            get {
-                return this.attachmentsField;
-            }
-            set {
-                this.attachmentsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    public partial class Message_Container_Work_EstimateContainerStorageArrivalInfo {
-        
-        private System.DateTime containerDeliveryDateField;
-        
-        private bool containerDeliveryDateFieldSpecified;
-        
-        /// <remarks/>
-        public System.DateTime ContainerDeliveryDate {
-            get {
-                return this.containerDeliveryDateField;
-            }
-            set {
-                this.containerDeliveryDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ContainerDeliveryDateSpecified {
-            get {
-                return this.containerDeliveryDateFieldSpecified;
-            }
-            set {
-                this.containerDeliveryDateFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLine {
-        
-        private string lineIDField;
-        
-        private string originIDField;
-        
-        private int sortOrderField;
-        
-        private bool sortOrderFieldSpecified;
-        
-        private string descriptionField;
-        
-        private Container_Work_EstimateLinesContainer_Work_EstimateLineCategoryCode categoryCodeField;
-        
-        private Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodes generalCodesField;
-        
-        private ComplexCodesComplexCode[] complexCodesField;
-        
-        private Container_Work_EstimateLinesContainer_Work_EstimateLineProposal proposalField;
-        
-        private Container_Work_EstimateLinesContainer_Work_EstimateLineCounterProposal counterProposalField;
-        
-        private Container_Work_EstimateLinesContainer_Work_EstimateLineClientAuthorization clientAuthorizationField;
-        
-        private AttachmentsAttachment[] attachmentsField;
-        
-        /// <remarks/>
-        public string LineID {
-            get {
-                return this.lineIDField;
-            }
-            set {
-                this.lineIDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string OriginID {
-            get {
-                return this.originIDField;
-            }
-            set {
-                this.originIDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int SortOrder {
-            get {
-                return this.sortOrderField;
-            }
-            set {
-                this.sortOrderField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool SortOrderSpecified {
-            get {
-                return this.sortOrderFieldSpecified;
-            }
-            set {
-                this.sortOrderFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Description {
-            get {
-                return this.descriptionField;
-            }
-            set {
-                this.descriptionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Container_Work_EstimateLinesContainer_Work_EstimateLineCategoryCode CategoryCode {
-            get {
-                return this.categoryCodeField;
-            }
-            set {
-                this.categoryCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodes GeneralCodes {
-            get {
-                return this.generalCodesField;
-            }
-            set {
-                this.generalCodesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("ComplexCode", IsNullable=false)]
-        public ComplexCodesComplexCode[] ComplexCodes {
-            get {
-                return this.complexCodesField;
-            }
-            set {
-                this.complexCodesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Container_Work_EstimateLinesContainer_Work_EstimateLineProposal Proposal {
-            get {
-                return this.proposalField;
-            }
-            set {
-                this.proposalField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Container_Work_EstimateLinesContainer_Work_EstimateLineCounterProposal CounterProposal {
-            get {
-                return this.counterProposalField;
-            }
-            set {
-                this.counterProposalField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Container_Work_EstimateLinesContainer_Work_EstimateLineClientAuthorization ClientAuthorization {
-            get {
-                return this.clientAuthorizationField;
-            }
-            set {
-                this.clientAuthorizationField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Attachment", IsNullable=false)]
-        public AttachmentsAttachment[] Attachments {
-            get {
-                return this.attachmentsField;
-            }
-            set {
-                this.attachmentsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineCategoryCode {
-        
-        private Code codeField;
-        
-        /// <remarks/>
-        public Code Code {
-            get {
-                return this.codeField;
-            }
-            set {
-                this.codeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodes {
-        
-        private Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesLocationCode locationCodeField;
-        
-        private Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesDamageCode damageCodeField;
-        
-        private Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesRepairCode repairCodeField;
-        
-        private Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesComponentCode componentCodeField;
-        
-        /// <remarks/>
-        public Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesLocationCode LocationCode {
-            get {
-                return this.locationCodeField;
-            }
-            set {
-                this.locationCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesDamageCode DamageCode {
-            get {
-                return this.damageCodeField;
-            }
-            set {
-                this.damageCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesRepairCode RepairCode {
-            get {
-                return this.repairCodeField;
-            }
-            set {
-                this.repairCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesComponentCode ComponentCode {
-            get {
-                return this.componentCodeField;
-            }
-            set {
-                this.componentCodeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesLocationCode {
-        
-        private Code codeField;
-        
-        /// <remarks/>
-        public Code Code {
-            get {
-                return this.codeField;
-            }
-            set {
-                this.codeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesDamageCode {
-        
-        private Code codeField;
-        
-        /// <remarks/>
-        public Code Code {
-            get {
-                return this.codeField;
-            }
-            set {
-                this.codeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesRepairCode {
-        
-        private Code codeField;
-        
-        /// <remarks/>
-        public Code Code {
-            get {
-                return this.codeField;
-            }
-            set {
-                this.codeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesComponentCode {
-        
-        private Code codeField;
-        
-        /// <remarks/>
-        public Code Code {
-            get {
-                return this.codeField;
-            }
-            set {
-                this.codeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    public partial class ComplexCodesComplexCode {
-        
-        private string parentCodeCatalogNameField;
-        
-        private string valueField;
-        
-        private string descriptionField;
-        
-        /// <remarks/>
-        public string ParentCodeCatalogName {
-            get {
-                return this.parentCodeCatalogNameField;
-            }
-            set {
-                this.parentCodeCatalogNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Description {
-            get {
-                return this.descriptionField;
-            }
-            set {
-                this.descriptionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineProposal {
-        
-        private Container_Work_EstimateLineProposal container_Work_EstimateLineProposalField;
-        
-        /// <remarks/>
-        public Container_Work_EstimateLineProposal Container_Work_EstimateLineProposal {
-            get {
-                return this.container_Work_EstimateLineProposalField;
-            }
-            set {
-                this.container_Work_EstimateLineProposalField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineCounterProposal {
-        
-        private Container_Work_EstimateLineProposal container_Work_EstimateLineProposalField;
-        
-        /// <remarks/>
-        public Container_Work_EstimateLineProposal Container_Work_EstimateLineProposal {
-            get {
-                return this.container_Work_EstimateLineProposalField;
-            }
-            set {
-                this.container_Work_EstimateLineProposalField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    public partial class Container_Work_EstimateLinesContainer_Work_EstimateLineClientAuthorization {
-        
-        private Container_ServiceProgress_AuthorizationInfo container_ServiceProgress_AuthorizationInfoField;
-        
-        /// <remarks/>
-        public Container_ServiceProgress_AuthorizationInfo Container_ServiceProgress_AuthorizationInfo {
-            get {
-                return this.container_ServiceProgress_AuthorizationInfoField;
-            }
-            set {
-                this.container_ServiceProgress_AuthorizationInfoField = value;
-            }
-        }
     }
     
     /// <remarks/>
@@ -10384,7 +10398,7 @@ namespace otf21 {
         
         private OrderInfo orderInfoField;
         
-        private ContainerInfo containerInfoField;
+        private TankContainerInfo tankContainerInfoField;
         
         private Container_ServiceProgressInfo container_ServiceProgressInfoField;
         
@@ -10415,12 +10429,12 @@ namespace otf21 {
         }
         
         /// <remarks/>
-        public ContainerInfo ContainerInfo {
+        public TankContainerInfo TankContainerInfo {
             get {
-                return this.containerInfoField;
+                return this.tankContainerInfoField;
             }
             set {
-                this.containerInfoField = value;
+                this.tankContainerInfoField = value;
             }
         }
         
@@ -10501,7 +10515,7 @@ namespace otf21 {
         
         private OrderInfo orderInfoField;
         
-        private ContainerInfo containerInfoField;
+        private TankContainerInfo tankContainerInfoField;
         
         private Container_ServiceProgressInfo container_ServiceProgressInfoField;
         
@@ -10532,12 +10546,12 @@ namespace otf21 {
         }
         
         /// <remarks/>
-        public ContainerInfo ContainerInfo {
+        public TankContainerInfo TankContainerInfo {
             get {
-                return this.containerInfoField;
+                return this.tankContainerInfoField;
             }
             set {
-                this.containerInfoField = value;
+                this.tankContainerInfoField = value;
             }
         }
         
@@ -10618,7 +10632,7 @@ namespace otf21 {
         
         private OrderInfo orderInfoField;
         
-        private ContainerInfo containerInfoField;
+        private TankContainerInfo tankContainerInfoField;
         
         private Container_ServiceProgressInfo container_ServiceProgressInfoField;
         
@@ -10647,12 +10661,12 @@ namespace otf21 {
         }
         
         /// <remarks/>
-        public ContainerInfo ContainerInfo {
+        public TankContainerInfo TankContainerInfo {
             get {
-                return this.containerInfoField;
+                return this.tankContainerInfoField;
             }
             set {
-                this.containerInfoField = value;
+                this.tankContainerInfoField = value;
             }
         }
         
@@ -10954,7 +10968,7 @@ namespace otf21 {
         
         private OrderInfo orderInfoField;
         
-        private ContainerInfo containerInfoField;
+        private TankContainerInfo tankContainerInfoField;
         
         private Container_ServiceProgressInfo container_ServiceProgressInfoField;
         
@@ -10983,12 +10997,12 @@ namespace otf21 {
         }
         
         /// <remarks/>
-        public ContainerInfo ContainerInfo {
+        public TankContainerInfo TankContainerInfo {
             get {
-                return this.containerInfoField;
+                return this.tankContainerInfoField;
             }
             set {
-                this.containerInfoField = value;
+                this.tankContainerInfoField = value;
             }
         }
         

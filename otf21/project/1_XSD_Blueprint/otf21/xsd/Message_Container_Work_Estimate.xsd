@@ -6,7 +6,6 @@
   <xs:include schemaLocation="Common_OrderInfo.xsd"/>
   <xs:include schemaLocation="Common_LocalizationInfo.xsd"/>
   <xs:include schemaLocation="ContainerInfo.xsd"/>
-   <xs:include schemaLocation="TankContainerInfo.xsd"/> 
   <xs:include schemaLocation="Container_Work_EstimateStatusInfo.xsd"/>
   <xs:include schemaLocation="Container_Work_EstimateLines.xsd"/>
   <xs:element name="Message_Container_Work_Estimate">
@@ -15,8 +14,7 @@
 	    <xs:element ref="MessageHeaderInfo"/>
 	    <xs:element ref="OrderInfo"/>  		
 	    <xs:element ref="LocalizationInfo"/>
-	    <xs:element ref="ContainerInfo" minOccurs="0" />
-	    <xs:element ref="TankContainerInfo" minOccurs="0" />		
+	    <xs:element ref="ContainerInfo" minOccurs="0" />	
 	    <xs:element ref="Container_Work_EstimateStatusInfo"/>	
         <xs:element name="ContainerStorageArrivalInfo">
           <xs:complexType>
@@ -25,6 +23,8 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+	 	<xs:element name="Category" type="xs:string" minOccurs="0" />
+	 	<xs:element name="LaborRate" type="xs:double" />
 	 	<xs:element name="EstimateLines" type="Container_Work_EstimateLines" />	
 		<xs:element name="Remarks" type="Remarks" minOccurs="0" />
 		<xs:element name="Attachments" type="Attachments" minOccurs="0" />		

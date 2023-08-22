@@ -5,7 +5,6 @@
   <xs:include schemaLocation="Common_Attachments.xsd"/>   
   <xs:include schemaLocation="Common_OrderInfo.xsd"/>
   <xs:include schemaLocation="Common_LocalizationInfo.xsd"/>
-  <xs:include schemaLocation="ContainerInfo.xsd"/>
    <xs:include schemaLocation="TankContainerInfo.xsd"/> 
   <xs:include schemaLocation="Container_Work_EstimateStatusInfo.xsd"/>
   <xs:include schemaLocation="Container_Work_EstimateLines.xsd"/>

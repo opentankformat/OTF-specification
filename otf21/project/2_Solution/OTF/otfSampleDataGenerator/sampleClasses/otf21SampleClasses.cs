@@ -11,6 +11,8 @@ namespace otfSampleDataGenerator.sampleClasses
 {
     public static class otf21SampleClasses
     {
+		const MessageHeaderInfoOTFVersion OTFVersion = MessageHeaderInfoOTFVersion.OTF21;
+
 		public static void GenerateSampleMessages(string targetFolder)
         {
 			//PreNotification flow
@@ -54,6 +56,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_Container_PreNotification_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_Container_PreNotification,
 					ConversationID = SampleData.MessageIdentifier_Container_PreNotification_ConversationID,
 					SenderID = SampleData.Lessee_ID,
 					RecipientID = SampleData.Depot_ID,
@@ -145,6 +149,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_Container_PreNotification_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_PreNotification,
 					ConversationID = SampleData.MessageIdentifier_Container_PreNotification_ConversationID,
 					SenderID = SampleData.Lessee_ID,
 					RecipientID = SampleData.Depot_ID,
@@ -347,6 +353,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_Container_PreNotificationStatusUpdate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_Container_PreNotification_StatusUpdate,
 					ConversationID = SampleData.MessageIdentifier_Container_PreNotification_ConversationID,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessee_ID,
@@ -389,6 +397,9 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_Container_PreNotificationStatusUpdate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_PreNotification_StatusUpdate,
+
 					ConversationID = SampleData.MessageIdentifier_Container_PreNotification_ConversationID,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessee_ID,
@@ -436,6 +447,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_Container_GateInStatusUpdate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_Container_StatusUpdate_Storage_Arrival,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessee_ID,
 					ContactInfo = new MessageHeaderInfoContactInfo
@@ -481,6 +494,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_Container_GateInStatusUpdate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_StatusUpdate_Storage_Arrival,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessee_ID,
 					ContactInfo = new MessageHeaderInfoContactInfo
@@ -530,6 +545,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_Container_AvailableStatusUpdate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_Container_StatusUpdate_Storage_Available,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessor_ID,
 					SentDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Available_ByDepot),
@@ -566,6 +583,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_Container_AvailableStatusUpdate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_StatusUpdate_Storage_Available,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessor_ID,
 					SentDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Available_ByDepot),
@@ -606,6 +625,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_Container_GateOutStatusUpdate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_Container_StatusUpdate_Storage_Departure,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessor_ID,
 					SentDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_GateOut_ByDepot),
@@ -643,6 +664,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_Container_GateOutStatusUpdate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_StatusUpdate_Storage_Departure,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessor_ID,
 					SentDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_GateOut_ByDepot),
@@ -684,6 +707,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_TankContainer_CleaningStatusUpdate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_StatusUpdate_Cleaning,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessee_ID,
 					ContactInfo = new MessageHeaderInfoContactInfo
@@ -708,10 +733,13 @@ namespace otfSampleDataGenerator.sampleClasses
 					ClientID = SampleData.Lessor_ID,
 					ClientOrderReference = SampleData.Lessor_OrderReference
 				},
-				ContainerInfo = new ContainerInfo
-				{
-					ContainerNumber = SampleData.ContainerNumber,
-					ContainerType = SampleData.ContainerType
+				TankContainerInfo = new TankContainerInfo
+                {
+					ContainerInfo = new ContainerInfo
+					{
+						ContainerNumber = SampleData.ContainerNumber,
+						ContainerType = SampleData.ContainerType
+					},
 				},
 				Container_ServiceProgressInfo = new Container_ServiceProgressInfo
 				{
@@ -741,6 +769,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_TankContainer_HeatingStatusUpdate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_StatusUpdate_Heating,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessee_ID,
 					ContactInfo = new MessageHeaderInfoContactInfo
@@ -765,10 +795,14 @@ namespace otfSampleDataGenerator.sampleClasses
 					ClientID = SampleData.Lessor_ID,
 					ClientOrderReference = SampleData.Lessor_OrderReference
 				},
-				ContainerInfo = new ContainerInfo
+				TankContainerInfo = new TankContainerInfo
 				{
-					ContainerNumber = SampleData.ContainerNumber,
-					ContainerType = SampleData.ContainerType
+
+					ContainerInfo = new ContainerInfo
+					{
+						ContainerNumber = SampleData.ContainerNumber,
+						ContainerType = SampleData.ContainerType
+					},
 				},
 				Container_ServiceProgressInfo = new Container_ServiceProgressInfo
 				{
@@ -789,6 +823,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_TankContainer_InspectionStatusUpdate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_StatusUpdate_Inspection,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessor_ID,
 					SentDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Inspection_ByDepot_Started),
@@ -806,10 +842,14 @@ namespace otfSampleDataGenerator.sampleClasses
 					ClientID = SampleData.Lessor_ID,
 					ClientOrderReference = SampleData.Lessor_OrderReference
 				},
-				ContainerInfo = new ContainerInfo
+				TankContainerInfo = new TankContainerInfo
 				{
-					ContainerNumber = SampleData.ContainerNumber,
-					ContainerType = SampleData.ContainerType
+
+					ContainerInfo = new ContainerInfo
+					{
+						ContainerNumber = SampleData.ContainerNumber,
+						ContainerType = SampleData.ContainerType
+					},
 				},
 				Container_ServiceProgressInfo = new Container_ServiceProgressInfo
 				{
@@ -830,6 +870,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_TankContainer_TranshipmentStatusUpdate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_StatusUpdate_Transhipment,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessee_ID,
 					ContactInfo = new MessageHeaderInfoContactInfo
@@ -854,10 +896,13 @@ namespace otfSampleDataGenerator.sampleClasses
 					ClientID = SampleData.Lessor_ID,
 					ClientOrderReference = SampleData.Lessor_OrderReference
 				},
-				ContainerInfo = new ContainerInfo
+				TankContainerInfo = new TankContainerInfo
 				{
-					ContainerNumber = SampleData.ContainerNumber,
-					ContainerType = SampleData.ContainerType
+					ContainerInfo = new ContainerInfo
+					{
+						ContainerNumber = SampleData.ContainerNumber,
+						ContainerType = SampleData.ContainerType
+					},
 				},
 				Container_ServiceProgressInfo = new Container_ServiceProgressInfo
 				{
@@ -884,6 +929,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_Container_Work_Repair_Estimate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_Container_Work_Estimate,
 					ConversationID = SampleData.MessageIdentifier_Container_Work_Repair_ConversationID,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessor_ID,
@@ -904,39 +951,24 @@ namespace otfSampleDataGenerator.sampleClasses
 				},
 				LocalizationInfo = new LocalizationInfo()
 				{
-					CurrencyISO = SampleData.Depot_Localization_CurrencyISO
+					CurrencyISO = SampleData.Depot_Localization_CurrencyISO,
+					ExchangeRate = SampleData.Depot_Localization_CurrencyExchangeRate,
 				},
-				TankContainerInfo = new TankContainerInfo
+
+				ContainerInfo = new ContainerInfo
 				{
-					ContainerInfo = new ContainerInfo
-					{
-						ContainerNumber = SampleData.ContainerNumber,
-						ContainerType = SampleData.ContainerType
-					},
-					TankContainerCharacteristicsInfo = new TankContainerInfoTankContainerCharacteristicsInfo
-					{
-						Manufacturer = SampleData.ContainerManufacturer,
-						BuildingYearMonth = DateTime.Parse(SampleData.ContainerBuildingYear),
-						Capacity = SampleData.ContainerCapacity,
-					},
-					InspectionDates = new TankContainerInfoInspectionDates
-					{
-						LastInspectionDate = DateTime.Parse(SampleData.LastTestDate),
-						LastInspectionScopeDescription = SampleData.LastTestType,
-						CSCValidityDate = DateTime.Parse(SampleData.CSCDate)
-					}
+					ContainerNumber = SampleData.ContainerNumber,
+					ContainerType = SampleData.ContainerType
 				},
+
 				Container_Work_EstimateStatusInfo = new Container_Work_EstimateStatusInfo
 				{
-					ContainerWorkEstimateStatusInfo = new Container_Work_EstimateStatusInfoContainerWorkEstimateStatusInfo
-					{
-						Version = SampleData.Orderflow_Container_Work_Repair_ByDepot_Version,
-						Container_ServiceProgress_DateInfo = new Container_ServiceProgress_DateInfo
-						{
-							Finished = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Work_ByDepot_Estimate_Finished)
-						}
-					},
 
+					Version = SampleData.Orderflow_Container_Work_Repair_ByDepot_Version,
+					Container_ServiceProgress_DateInfo = new Container_ServiceProgress_DateInfo
+					{
+						Finished = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Work_ByDepot_Estimate_Finished)
+					},
 					ContainerWorkAuthorizationInfo = new Container_Work_EstimateStatusInfoContainerWorkAuthorizationInfo
 					{
 						ContainerWorkLessorAuthorizationInfo = new Container_Work_EstimateStatusInfoContainerWorkAuthorizationInfoContainerWorkLessorAuthorizationInfo
@@ -954,6 +986,7 @@ namespace otfSampleDataGenerator.sampleClasses
 				{
 					ContainerDeliveryDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_GateIn_ByDepot)
 				},
+				LaborRate = SampleData.Depot_Pricing_MandR_LaborRate,
 				EstimateLines = new Container_Work_EstimateLinesContainer_Work_EstimateLine[]
 				{
 					 new Container_Work_EstimateLinesContainer_Work_EstimateLine
@@ -1001,12 +1034,16 @@ namespace otfSampleDataGenerator.sampleClasses
 						 },
 						 Proposal = new Container_Work_EstimateLinesContainer_Work_EstimateLineProposal
 						 {
+							 
 							  Container_Work_EstimateLineProposal = new Container_Work_EstimateLineProposal
 							  {
 								  LaborRate = SampleData.Depot_Pricing_MandR_LaborRate,
 								  LaborHours = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours,
+								  LaborPrice = (SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours),
 								  MaterialPrice = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MaterialPrice,
-								  LineTotal = ((SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours)+SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MaterialPrice),
+								  LineSubtotal = ((SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours)+SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MaterialPrice),
+								  Quantity = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_Quantity,
+								  LineTotal = ((SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours)+SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MaterialPrice)*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_Quantity,
 								  DoAction = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_DoAction,
 							  }
 						 }	
@@ -1060,9 +1097,12 @@ namespace otfSampleDataGenerator.sampleClasses
 							  {
 								  LaborRate = SampleData.Depot_Pricing_MandR_LaborRate,
 								  LaborHours = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LaborHours,
+								  LaborPrice = (SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LaborHours),
 								  MaterialPrice = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_MaterialPrice,
 								  LumpSumPrice = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LumpSumPrice,
-								  LineTotal = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LumpSumPrice,
+								  LineSubtotal = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LumpSumPrice,
+								  Quantity = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_Quantity,
+								  LineTotal = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LumpSumPrice*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_Quantity,
 								  DoAction = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_DoAction,
 							  }
 						 }
@@ -1089,6 +1129,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_Container_Work_Repair_Estimate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_Work_Estimate,
 					ConversationID = SampleData.MessageIdentifier_Container_Work_Repair_ConversationID,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessor_ID,
@@ -1109,7 +1151,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				},
 				LocalizationInfo = new LocalizationInfo()
 				{
-					CurrencyISO = SampleData.Depot_Localization_CurrencyISO
+					CurrencyISO = SampleData.Depot_Localization_CurrencyISO,
+					ExchangeRate = SampleData.Depot_Localization_CurrencyExchangeRate,
 				},
 				TankContainerInfo = new TankContainerInfo
 				{
@@ -1118,6 +1161,7 @@ namespace otfSampleDataGenerator.sampleClasses
 						ContainerNumber = SampleData.ContainerNumber,
 						ContainerType = SampleData.ContainerType
 					},
+					OwnerID = SampleData.Lessor_ID,
 					TankContainerCharacteristicsInfo = new TankContainerInfoTankContainerCharacteristicsInfo
 					{
 						Manufacturer = SampleData.ContainerManufacturer,
@@ -1133,13 +1177,10 @@ namespace otfSampleDataGenerator.sampleClasses
 				},
 				Container_Work_EstimateStatusInfo = new Container_Work_EstimateStatusInfo
 				{
-					ContainerWorkEstimateStatusInfo = new Container_Work_EstimateStatusInfoContainerWorkEstimateStatusInfo
+					Version = SampleData.Orderflow_Container_Work_Repair_ByDepot_Version,
+					Container_ServiceProgress_DateInfo = new Container_ServiceProgress_DateInfo
 					{
-						Version = SampleData.Orderflow_Container_Work_Repair_ByDepot_Version,
-						Container_ServiceProgress_DateInfo = new Container_ServiceProgress_DateInfo
-						{
-							Finished = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Work_ByDepot_Estimate_Finished)
-						}
+						Finished = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Work_ByDepot_Estimate_Finished)
 					},
 
 					ContainerWorkAuthorizationInfo = new Container_Work_EstimateStatusInfoContainerWorkAuthorizationInfo
@@ -1159,6 +1200,7 @@ namespace otfSampleDataGenerator.sampleClasses
 				{
 					ContainerDeliveryDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_GateIn_ByDepot)
 				},
+				LaborRate = SampleData.Depot_Pricing_MandR_LaborRate,
 				EstimateLines = new Container_Work_EstimateLinesContainer_Work_EstimateLine[]
 				{
 					 new Container_Work_EstimateLinesContainer_Work_EstimateLine
@@ -1210,8 +1252,11 @@ namespace otfSampleDataGenerator.sampleClasses
 							  {
 								  LaborRate = SampleData.Depot_Pricing_MandR_LaborRate,
 								  LaborHours = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours,
+								  LaborPrice = (SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours),
 								  MaterialPrice = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MaterialPrice,
-								  LineTotal = ((SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours)+SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MaterialPrice),
+								  LineSubtotal = ((SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours)+SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MaterialPrice),
+								  Quantity = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_Quantity,
+								  LineTotal = ((SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours)+SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MaterialPrice)*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_Quantity,
 								  DoAction = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_DoAction,
 							  }
 						 }
@@ -1265,9 +1310,12 @@ namespace otfSampleDataGenerator.sampleClasses
 							  {
 								  LaborRate = SampleData.Depot_Pricing_MandR_LaborRate,
 								  LaborHours = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LaborHours,
+								  LaborPrice = (SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LaborHours),
 								  MaterialPrice = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_MaterialPrice,
 								  LumpSumPrice = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LumpSumPrice,
-								  LineTotal = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LumpSumPrice,
+								  LineSubtotal = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LumpSumPrice,
+								  Quantity = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_Quantity,
+								  LineTotal = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LumpSumPrice*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_Quantity,
 								  DoAction = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_DoAction,
 							  }
 						 }
@@ -1294,6 +1342,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_Container_Work_Repair_StatusUpdate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_Container_StatusUpdate_Work,
 					ConversationID = SampleData.MessageIdentifier_Container_Work_Repair_ConversationID,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessor_ID,
@@ -1320,13 +1370,10 @@ namespace otfSampleDataGenerator.sampleClasses
 				SupplierReference = SampleData.Depot_OrderReference_Work,
 				Container_Work_EstimateStatusInfo = new Container_Work_EstimateStatusInfo
 				{
-					ContainerWorkEstimateStatusInfo = new Container_Work_EstimateStatusInfoContainerWorkEstimateStatusInfo
-					{
-						Version = SampleData.Orderflow_Container_Work_Repair_ByDepot_Version,
-						Container_ServiceProgress_DateInfo = new Container_ServiceProgress_DateInfo
-                        {
-							Finished = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Work_ByDepot_Estimate_Finished)
-						}
+					Version = SampleData.Orderflow_Container_Work_Repair_ByDepot_Version,
+					Container_ServiceProgress_DateInfo = new Container_ServiceProgress_DateInfo
+                    {
+						Finished = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Work_ByDepot_Estimate_Finished)
                     },
 					ContainerWorkAuthorizationInfo = new Container_Work_EstimateStatusInfoContainerWorkAuthorizationInfo
                     {
@@ -1359,6 +1406,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_Container_Work_Repair_StatusUpdate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_StatusUpdate_Work,
 					ConversationID = SampleData.MessageIdentifier_Container_Work_Repair_ConversationID,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessor_ID,
@@ -1388,13 +1437,10 @@ namespace otfSampleDataGenerator.sampleClasses
 				SupplierReference = SampleData.Depot_OrderReference_Work,
 				Container_Work_EstimateStatusInfo = new Container_Work_EstimateStatusInfo
 				{
-					ContainerWorkEstimateStatusInfo = new Container_Work_EstimateStatusInfoContainerWorkEstimateStatusInfo
+					Version = SampleData.Orderflow_Container_Work_Repair_ByDepot_Version,
+					Container_ServiceProgress_DateInfo = new Container_ServiceProgress_DateInfo
 					{
-						Version = SampleData.Orderflow_Container_Work_Repair_ByDepot_Version,
-						Container_ServiceProgress_DateInfo = new Container_ServiceProgress_DateInfo
-						{
-							Finished = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Work_ByDepot_Estimate_Finished)
-						}
+						Finished = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Work_ByDepot_Estimate_Finished)
 					},
 					ContainerWorkAuthorizationInfo = new Container_Work_EstimateStatusInfoContainerWorkAuthorizationInfo
 					{
@@ -1429,6 +1475,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				MessageHeaderInfo = new MessageHeaderInfo
 				{
 					MessageID = SampleData.MessageIdentifier_TankContainer_Inspection_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_InspectionReport,
 					SenderID = SampleData.InspectionBureauID,
 					RecipientID = SampleData.Lessor_ID,
 					SentDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Inspection_ByDepot_Started),

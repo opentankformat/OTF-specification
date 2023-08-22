@@ -4,14 +4,8 @@
   <xs:element name="Container_Work_EstimateStatusInfo">
     <xs:complexType>
       <xs:sequence>
-		<xs:element name="ContainerWorkEstimateStatusInfo">
-			<xs:complexType>
-				<xs:sequence>
-					<xs:element name="Version" type="xs:string" minOccurs="0" />			
-					<xs:element ref="Container_ServiceProgress_DateInfo" />		
-				</xs:sequence>
-			</xs:complexType>
-		</xs:element>
+		<xs:element name="Version" type="xs:string" minOccurs="0" />			
+		<xs:element ref="Container_ServiceProgress_DateInfo" />		
 		<xs:element name="ContainerWorkAuthorizationInfo" minOccurs="0" >
 			<xs:complexType>
 				<xs:sequence>

@@ -94,6 +94,8 @@ namespace OTF.SampleGenerator
         public static string Depot_ID = "Depot name or identifier";
         public static string Depot_LocationID = "Depot location identifier";
         public static string Depot_Localization_CurrencyISO = "EUR";
+        public static double Depot_Localization_CurrencyExchangeRate = 1;
+
         public static bool Depot_Localization_RoundingPerLine = true;
         public static double Depot_Pricing_MandR_LaborRate = 35.50;
 
@@ -192,7 +194,7 @@ namespace OTF.SampleGenerator
         public static double Orderflow_Container_Work_Repair_EstimateLineInfo2_LaborHours = 3;
         public static double Orderflow_Container_Work_Repair_EstimateLineInfo2_MaterialPrice = 20.00;
         public static double Orderflow_Container_Work_Repair_EstimateLineInfo2_LumpSumPrice = 50;
-        public static double Orderflow_Container_Work_Repair_EstimateLineInfo2_Quantity = 1;
+        public static double Orderflow_Container_Work_Repair_EstimateLineInfo2_Quantity = 2;
         public static bool Orderflow_Container_Work_Repair_EstimateLineInfo2_DoAction = true;
         public static bool Orderflow_Container_Work_Repair_EstimateLineInfo2_ThirdParty = false;
 

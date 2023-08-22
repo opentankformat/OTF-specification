@@ -4,16 +4,16 @@
   <xs:element name="Container_Work_EstimateLineProposal">
     <xs:complexType>
       <xs:sequence>
-		<xs:element name="LaborRate" type="xs:double" minOccurs="0" />
+		<xs:element name="LaborRate" type="xs:double" />
 		<xs:element name="LaborHours" type="xs:double" />
 		<xs:element name="LaborPrice" type="xs:double" />
 		<xs:element name="MaterialPrice" type="xs:double" />
-		<xs:element name="LumpSumPrice" type="xs:double" minOccurs="0" />	
-		<xs:element name="LineSubtotal" type="xs:double" minOccurs="0" />
-		<xs:element name="Quantity" type="xs:integer" minOccurs="0" />
+		<xs:element name="LumpSumPrice" type="xs:double" />	
+		<xs:element name="LineSubtotal" type="xs:double" />
+		<xs:element name="Quantity" type="xs:double" default="1" />
 		<xs:element name="DoAction" type="xs:boolean" default = "true" />
 		<xs:element name="ThirdParty" type="xs:boolean" default = "false" minOccurs="0" />
-		<xs:element name="LineTotal" type="xs:double" minOccurs="0" />
+		<xs:element name="LineTotal" type="xs:double" />
 		<xs:element name="Remarks" type="Remarks" minOccurs="0" />
       </xs:sequence>
     </xs:complexType>

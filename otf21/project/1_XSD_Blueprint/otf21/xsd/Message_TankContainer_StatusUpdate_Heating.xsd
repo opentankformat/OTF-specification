@@ -4,14 +4,14 @@
   <xs:include schemaLocation="Common_Remarks.xsd"/> 
   <xs:include schemaLocation="Common_Attachments.xsd"/>   
   <xs:include schemaLocation="Common_OrderInfo.xsd"/>
-  <xs:include schemaLocation="ContainerInfo.xsd"/>
+  <xs:include schemaLocation="TankContainerInfo.xsd"/>
   <xs:include schemaLocation="Container_ServiceProgressInfo.xsd"/>
   <xs:element name="Message_TankContainer_StatusUpdate_Heating">
     <xs:complexType>
       <xs:sequence>
 	    <xs:element ref="MessageHeaderInfo"/>
 	    <xs:element ref="OrderInfo"/> 		
-	    <xs:element ref="ContainerInfo"/>
+	    <xs:element ref="TankContainerInfo"/>
 	    <xs:element ref="Container_ServiceProgressInfo"/>		
         <xs:element name="TankContainerHeatingInfo">
           <xs:complexType>
