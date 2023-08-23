@@ -2,13 +2,13 @@
   "MessageHeaderInfo": {
     "MessageID": "ad47590-acd7-4f7d-b8b1-9d422f00b994",
     "ConversationID": "3e818a60-5941-4615-911e-e1f540d6f314",
-    "OTFVersion": 2,
-    "OTFMessage": 5,
+    "OTFVersion": "OTF21",
+    "OTFMessage": "Message_Container_StatusUpdate_Work",
     "SenderID": "Depot name or identifier",
     "RecipientID": "Lessor name or identifier",
     "ContactInfo": null,
     "SentDate": "2000-01-03T08:55:00+01:00",
-    "MessageType": 0
+    "MessageType": "New"
   },
   "OrderInfo": {
     "SupplierID": "Depot name or identifier",

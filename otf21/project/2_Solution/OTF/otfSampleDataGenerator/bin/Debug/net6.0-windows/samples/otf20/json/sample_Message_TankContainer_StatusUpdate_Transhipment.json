@@ -2,12 +2,12 @@
   "MessageHeaderInfo": {
     "MessageID": "35b0fcd5-b5d2-4112-836f-d18923b7c849",
     "ConversationID": null,
-    "OTFVersion": 1,
+    "OTFVersion": "OTF20",
     "SenderID": "Depot name or identifier",
     "RecipientID": "Lessee name or identifier",
     "ContactName": "Arthur Fonzarelli",
     "SentDate": "2000-01-01T21:14:00+01:00",
-    "MessageType": 0
+    "MessageType": "New"
   },
   "OrderInfo": {
     "SupplierID": "Depot name or identifier",

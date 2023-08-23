@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,8 +38,25 @@ namespace otfSampleDataGenerator.utils
 
         public static void jsonExporter(object obj, string targetfilename)
         {
-            string json = JsonConvert.SerializeObject(obj, Formatting.Indented);
+            var jsonSettings = JsonSerializationConfig.DefaultSettings();
+
+            string json = JsonConvert.SerializeObject(obj, jsonSettings);
             File.WriteAllText(string.Format("{0}.json", targetfilename), json);
         }
+    }
+    public static class JsonSerializationConfig
+    {
+        public static JsonSerializerSettings DefaultSettings()
+        {
+            var settings = new JsonSerializerSettings
+            {
+                Formatting = Formatting.Indented
+            };
+
+            settings.Converters.Add(new StringEnumConverter());
+
+            return settings;
+        }
+
     }
 }

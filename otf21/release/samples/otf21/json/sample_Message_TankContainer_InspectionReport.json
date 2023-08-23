@@ -2,13 +2,13 @@
   "MessageHeaderInfo": {
     "MessageID": "56c03e52-2436-4573-927a-641662d4124d",
     "ConversationID": null,
-    "OTFVersion": 2,
-    "OTFMessage": 7,
+    "OTFVersion": "OTF21",
+    "OTFMessage": "Message_TankContainer_InspectionReport",
     "SenderID": "Inspection Bureau Name",
     "RecipientID": "Lessor name or identifier",
     "ContactInfo": null,
     "SentDate": "2000-01-04T14:21:00+01:00",
-    "MessageType": 0
+    "MessageType": "New"
   },
   "HardCopyInfo": {
     "HardCopyURL": "https://dummyInspectionBureay/credentials/order/inspectionreport.pdf"
@@ -128,77 +128,77 @@
     "Inspections": {
       "InternalInspection": {
         "TankContainer_Inspection": {
-          "InspectionResult": 2,
+          "InspectionResult": "SatisfactoryWithRemark",
           "InspectionRemark": "Inspection remark",
           "InspectionDateSpecified": false
         }
       },
       "ExternalInspection": {
         "TankContainer_Inspection": {
-          "InspectionResult": 1,
+          "InspectionResult": "Satisfactory",
           "InspectionRemark": null,
           "InspectionDateSpecified": false
         }
       },
       "ThicknessMeasurements": {
         "TankContainer_Inspection": {
-          "InspectionResult": 3,
+          "InspectionResult": "Remark",
           "InspectionRemark": "Another remark",
           "InspectionDateSpecified": false
         }
       },
       "HydraulicTest": {
         "TankContainer_Inspection": {
-          "InspectionResult": 0,
+          "InspectionResult": "NotApplicable",
           "InspectionRemark": null,
           "InspectionDateSpecified": false
         }
       },
       "LeakproofnessTest": {
         "TankContainer_Inspection": {
-          "InspectionResult": 0,
+          "InspectionResult": "NotApplicable",
           "InspectionRemark": null,
           "InspectionDateSpecified": false
         }
       },
       "VacuumMeasurement": {
         "TankContainer_Inspection": {
-          "InspectionResult": 0,
+          "InspectionResult": "NotApplicable",
           "InspectionRemark": null,
           "InspectionDateSpecified": false
         }
       },
       "HeaterPressureTest": {
         "TankContainer_Inspection": {
-          "InspectionResult": 0,
+          "InspectionResult": "NotApplicable",
           "InspectionRemark": null,
           "InspectionDateSpecified": false
         }
       },
       "ValveSettingsCheck": {
         "TankContainer_Inspection": {
-          "InspectionResult": 0,
+          "InspectionResult": "NotApplicable",
           "InspectionRemark": null,
           "InspectionDateSpecified": false
         }
       },
       "ServiceEquipmentCheck": {
         "TankContainer_Inspection": {
-          "InspectionResult": 0,
+          "InspectionResult": "NotApplicable",
           "InspectionRemark": null,
           "InspectionDateSpecified": false
         }
       },
       "FrameExamination": {
         "TankContainer_Inspection": {
-          "InspectionResult": 0,
+          "InspectionResult": "NotApplicable",
           "InspectionRemark": null,
           "InspectionDateSpecified": false
         }
       },
       "MarkingExamination": {
         "TankContainer_Inspection": {
-          "InspectionResult": 0,
+          "InspectionResult": "NotApplicable",
           "InspectionRemark": null,
           "InspectionDateSpecified": false
         }
@@ -208,7 +208,7 @@
     "Remarks": null
   },
   "InspectionVerification": {
-    "VerificationDate": "2023-08-22T09:42:05.6989385+02:00",
+    "VerificationDate": "2023-08-23T17:42:07.8255911+02:00",
     "VerificatorName": "Guybrush Threepwood"
   },
   "Remarks": null,

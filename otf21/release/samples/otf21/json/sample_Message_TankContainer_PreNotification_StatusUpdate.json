@@ -2,8 +2,8 @@
   "MessageHeaderInfo": {
     "MessageID": "35fabb51-b415-46b9-8b24-51b4822cf740",
     "ConversationID": "d372cada-f69a-49fd-b090-31ed032f5b1a",
-    "OTFVersion": 2,
-    "OTFMessage": 9,
+    "OTFVersion": "OTF21",
+    "OTFMessage": "Message_TankContainer_PreNotification_StatusUpdate",
     "SenderID": "Depot name or identifier",
     "RecipientID": "Lessee name or identifier",
     "ContactInfo": {
@@ -15,7 +15,7 @@
       }
     },
     "SentDate": "2000-01-01T06:54:00+01:00",
-    "MessageType": 0
+    "MessageType": "New"
   },
   "OrderInfo": {
     "SupplierID": "Depot name or identifier",
@@ -40,7 +40,7 @@
     "InspectionDates": null
   },
   "PreNotificationStatus": {
-    "Status": 2,
+    "Status": "Approved",
     "Remark": null
   }
 }

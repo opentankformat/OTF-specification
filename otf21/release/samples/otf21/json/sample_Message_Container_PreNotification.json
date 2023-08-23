@@ -2,8 +2,8 @@
   "MessageHeaderInfo": {
     "MessageID": "380d2c85-23cb-4ff6-8676-526910d504c9",
     "ConversationID": "d372cada-f69a-49fd-b090-31ed032f5b1a",
-    "OTFVersion": 2,
-    "OTFMessage": 0,
+    "OTFVersion": "OTF21",
+    "OTFMessage": "Message_Container_PreNotification",
     "SenderID": "Lessee name or identifier",
     "RecipientID": "Depot name or identifier",
     "ContactInfo": {
@@ -15,9 +15,9 @@
       }
     },
     "SentDate": "2000-01-01T06:52:00+01:00",
-    "MessageType": 0
+    "MessageType": "New"
   },
-  "ContainerPreNotificationType": 1,
+  "ContainerPreNotificationType": "Redelivery",
   "OrderInfo": {
     "SupplierID": "Depot name or identifier",
     "SupplierLocationID": "Depot location identifier",
