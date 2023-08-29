@@ -1,0 +1,216 @@
+{
+  "MessageHeaderInfo": {
+    "MessageID": "56c03e52-2436-4573-927a-641662d4124d",
+    "ConversationID": null,
+    "OTFVersion": "OTF21",
+    "OTFMessage": "Message_TankContainer_InspectionReport",
+    "SenderID": "Inspection Bureau Name",
+    "RecipientID": "Lessor name or identifier",
+    "ContactInfo": null,
+    "SentDate": "2000-01-04T14:21:00+01:00",
+    "MessageType": "New"
+  },
+  "HardCopyInfo": {
+    "HardCopyURL": "https://dummyInspectionBureay/credentials/order/inspectionreport.pdf"
+  },
+  "InspectionOrderInfo": {
+    "SupplierID": "Inspection Bureau Name",
+    "SupplierInspectionReference": "",
+    "SupplierInspectionRevision": "",
+    "SupplierInspectionRevisionRemarks": [],
+    "SupplierTermsAndConditions": "",
+    "InspectionScope": "Item5YearTest",
+    "InspectionScopeDescription": null,
+    "ClientID": "Lessor name or identifier",
+    "ClientInspectionReference": "XX2251"
+  },
+  "InspectionResultsInfo": {
+    "InspectionLocationID": "Depot location identifier",
+    "InspectionCenterID": "",
+    "InspectionDate": "2000-01-04T14:21:00+01:00",
+    "InspectorName": "",
+    "OperatorID": "Lessee name or identifier",
+    "TankContainerMarkings": [],
+    "TankContainerRegulationsApplicableAccordingToMarkingsInfo": {
+      "IMDG": "GB/IMO/LR 10277",
+      "RID_ADR": "GB/TC/LR 10277",
+      "CSC": "GB/LR 10277-02/00",
+      "USDOT": "IM 101"
+    },
+    "TankContainerInfo": {
+      "ContainerInfo": {
+        "ContainerNumber": "ABCD-123456-0",
+        "ContainerType": "20TC"
+      },
+      "OwnerID": "Lessor name or identifier",
+      "TankContainerSuitabilityInfo": {
+        "PortableTankType": "T11",
+        "PortableTankTypeDescription": null,
+        "IMOType_Deprecated": "Empty",
+        "IMOTypeDescription_Deprecated": null,
+        "RID_ADRCode": "L4BN",
+        "SubstancesSuitableForTransport": [
+          {
+            "UNNumber": ""
+          }
+        ],
+        "SpecialProvisions": [
+          {
+            "SortOrder": null,
+            "SpecialProvision": ""
+          }
+        ]
+      },
+      "TankContainerCharacteristicsInfo": {
+        "Manufacturer": "MillenniuM Tanks Inc.",
+        "ManufacturerCountry": null,
+        "ManufacturerSerialNumber": null,
+        "BuildingYearMonth": "1996-11-25T20:30:00+01:00",
+        "ISO6346SizeTypeCode": "Item20G0",
+        "ISO6346SizeTypeCodeDescription": "",
+        "DimensionsXMillimeter": 0,
+        "DimensionsYMillimeter": 0,
+        "DimensionsZMillimeter": 0,
+        "MaxGrossMass": 0.0,
+        "Payload": 0.0,
+        "PayloadUnit": "kg",
+        "Tare": 3280.0,
+        "TareUnit": "kg",
+        "Capacity": 20080.0,
+        "CapacityUnit": "L"
+      },
+      "TankContainerTankInfo": {
+        "CompartmentQuantity": 1,
+        "ShellMaterial": "",
+        "ShellEquivalentThicknessRefSteelMillimeter": 0.0,
+        "SurgePlates": false,
+        "SurgePlatesCapacityBetweenIsLowerThan7500L": true,
+        "WorkPressureMaximumBar": 0.0,
+        "DesignPressureExternalBar": 0.0,
+        "TestPressureHydraulicBar": 0.0,
+        "DesignTemperatureMinimum": 0.0,
+        "DesignTemperatureMaximum": 0.0,
+        "DesignTemperatureUnit": "Celcius"
+      },
+      "TankContainerEquipmentInfo": {
+        "TopDischarge": "",
+        "TopQuantityOfEnclosuresInSeries": 0,
+        "BottomDischarge": "",
+        "BottomQuantityOfEnclosuresInSeries": 0,
+        "Heater": "",
+        "HeaterWorkingPressureBar": 0.0,
+        "ReliefValveQuantity": 0,
+        "ReliefValves": [
+          {
+            "Manufacturer": "Perolo Superventix",
+            "SerialNumber": "015400",
+            "SettingMinus": 0.0,
+            "SettingPlus": 4.4
+          }
+        ],
+        "RuptureDiscQuantity": 0,
+        "RuptureDiscs": null
+      },
+      "TankContainerLiningInfo": {
+        "InternalCoating": "",
+        "Insulation": "",
+        "Material": ""
+      },
+      "InspectionDates": {
+        "LastInspectionDate": "1998-06-20T01:00:00+02:00",
+        "LastInspectionScope": "Empty",
+        "LastInspectionScopeDescription": "H",
+        "NextInspectionDate": "0001-01-01T00:00:00",
+        "CSCValidityDate": "1999-01-01T00:00:00+01:00",
+        "ACEP": "0001-01-01T00:00:00"
+      }
+    },
+    "Inspections": {
+      "InternalInspection": {
+        "TankContainer_Inspection": {
+          "InspectionResult": "SatisfactoryWithRemark",
+          "InspectionRemark": "Inspection remark",
+          "InspectionDate": "2023-08-29T15:16:10.6947595+02:00"
+        }
+      },
+      "ExternalInspection": {
+        "TankContainer_Inspection": {
+          "InspectionResult": "Satisfactory",
+          "InspectionRemark": null,
+          "InspectionDate": "0001-01-01T00:00:00"
+        }
+      },
+      "ThicknessMeasurements": {
+        "TankContainer_Inspection": {
+          "InspectionResult": "Remark",
+          "InspectionRemark": "Another remark",
+          "InspectionDate": "0001-01-01T00:00:00"
+        }
+      },
+      "HydraulicTest": {
+        "TankContainer_Inspection": {
+          "InspectionResult": "NotApplicable",
+          "InspectionRemark": null,
+          "InspectionDate": "0001-01-01T00:00:00"
+        }
+      },
+      "LeakproofnessTest": {
+        "TankContainer_Inspection": {
+          "InspectionResult": "NotApplicable",
+          "InspectionRemark": null,
+          "InspectionDate": "0001-01-01T00:00:00"
+        }
+      },
+      "VacuumMeasurement": {
+        "TankContainer_Inspection": {
+          "InspectionResult": "NotApplicable",
+          "InspectionRemark": null,
+          "InspectionDate": "0001-01-01T00:00:00"
+        }
+      },
+      "HeaterPressureTest": {
+        "TankContainer_Inspection": {
+          "InspectionResult": "NotApplicable",
+          "InspectionRemark": null,
+          "InspectionDate": "0001-01-01T00:00:00"
+        }
+      },
+      "ValveSettingsCheck": {
+        "TankContainer_Inspection": {
+          "InspectionResult": "NotApplicable",
+          "InspectionRemark": null,
+          "InspectionDate": "0001-01-01T00:00:00"
+        }
+      },
+      "ServiceEquipmentCheck": {
+        "TankContainer_Inspection": {
+          "InspectionResult": "NotApplicable",
+          "InspectionRemark": null,
+          "InspectionDate": "0001-01-01T00:00:00"
+        }
+      },
+      "FrameExamination": {
+        "TankContainer_Inspection": {
+          "InspectionResult": "NotApplicable",
+          "InspectionRemark": null,
+          "InspectionDate": "0001-01-01T00:00:00"
+        }
+      },
+      "MarkingExamination": {
+        "TankContainer_Inspection": {
+          "InspectionResult": "NotApplicable",
+          "InspectionRemark": null,
+          "InspectionDate": "0001-01-01T00:00:00"
+        }
+      },
+      "RefOfMeasurementInstrumentsUsed": ""
+    },
+    "Remarks": null
+  },
+  "InspectionVerification": {
+    "VerificationDate": "2023-08-29T15:16:10.6953603+02:00",
+    "VerificatorName": "Guybrush Threepwood"
+  },
+  "Remarks": null,
+  "Attachments": null
+}

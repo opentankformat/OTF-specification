@@ -1,0 +1,66 @@
+{
+  "MessageHeaderInfo": {
+    "MessageID": "ad47590-acd7-4f7d-b8b1-9d422f00b994",
+    "ConversationID": "3e818a60-5941-4615-911e-e1f540d6f314",
+    "OTFVersion": "OTF21",
+    "OTFMessage": "Message_Container_StatusUpdate_Work",
+    "SenderID": "Depot name or identifier",
+    "RecipientID": "Lessor name or identifier",
+    "ContactInfo": null,
+    "SentDate": "2000-01-03T08:55:00+01:00",
+    "MessageType": "New"
+  },
+  "OrderInfo": {
+    "SupplierID": "Depot name or identifier",
+    "SupplierLocationID": "Depot location identifier",
+    "SupplierProformaReference": null,
+    "SupplierOrderReference": "D230101.0001",
+    "OrderStatusInfo": {
+      "OrderStatusDescription": "IN REPAIR"
+    },
+    "ClientID": "Lessor name or identifier",
+    "ClientOrderReference": "XX2251"
+  },
+  "ContainerInfo": {
+    "ContainerNumber": "ABCD-123456-0",
+    "ContainerType": "20TC"
+  },
+  "SupplierReference": "D230101.0001.R1",
+  "ClientPurchaseOrderReference": null,
+  "Container_Work_EstimateStatusInfo": {
+    "Version": "V1",
+    "Container_ServiceProgress_DateInfo": {
+      "Planned": "0001-01-01T00:00:00",
+      "PlannedBy": null,
+      "PlannedToTakePlaceOn": "0001-01-01T00:00:00",
+      "Started": "0001-01-01T00:00:00",
+      "Finished": "2000-01-02T16:23:00+01:00",
+      "Cancelled": "0001-01-01T00:00:00"
+    },
+    "ContainerWorkAuthorizationInfo": {
+      "ContainerWorkLessorAuthorizationInfo": {
+        "LessorID": "Lessor name or identifier",
+        "Container_ServiceProgress_AuthorizationInfo": {
+          "Authorized": "2000-01-02T17:23:00+01:00",
+          "AuthorizedBy": null,
+          "AuthorizationReference": "REP5559",
+          "AuthorizationAmount": null
+        },
+        "AuthorizationAcceptedBySupplier": "0001-01-01T00:00:00"
+      },
+      "ContainerWorkLesseeAuthorizationInfo": null
+    }
+  },
+  "Container_Work_WorkStatusInfo": {
+    "Container_ServiceProgress_DateInfo": {
+      "Planned": "0001-01-01T00:00:00",
+      "PlannedBy": null,
+      "PlannedToTakePlaceOn": "0001-01-01T00:00:00",
+      "Started": "2000-01-03T08:55:00+01:00",
+      "Finished": "0001-01-01T00:00:00",
+      "Cancelled": "0001-01-01T00:00:00"
+    }
+  },
+  "Remarks": null,
+  "Attachments": null
+}

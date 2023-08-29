@@ -1,0 +1,439 @@
+{
+  "MessageHeaderInfo": {
+    "MessageID": "DummyString",
+    "ConversationID": "DummyString",
+    "OTFVersion": "OTF21",
+    "OTFMessage": "Message_Container_PreNotification",
+    "SenderID": "DummyString",
+    "RecipientID": "DummyString",
+    "ContactInfo": {
+      "ContactInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString"
+      }
+    },
+    "SentDate": "2023-08-29T15:16:09.9802547+02:00",
+    "MessageType": "New"
+  },
+  "OrderInfo": {
+    "SupplierID": "DummyString",
+    "SupplierLocationID": "DummyString",
+    "SupplierProformaReference": "DummyString",
+    "SupplierOrderReference": "DummyString",
+    "OrderStatusInfo": {
+      "OrderStatusDescription": "DummyString"
+    },
+    "ClientID": "DummyString",
+    "ClientOrderReference": "DummyString"
+  },
+  "LocalizationInfo": {
+    "CurrencyISO": "DummyString",
+    "ExchangeRate": 1.0,
+    "ExchangeRateDate": "2023-08-29T15:16:09.9802613+02:00",
+    "RoundingPerLine": true
+  },
+  "ContainerInfo": {
+    "ContainerNumber": "DummyString",
+    "ContainerType": "DummyString"
+  },
+  "Container_Work_EstimateStatusInfo": {
+    "Version": "DummyString",
+    "Container_ServiceProgress_DateInfo": {
+      "Planned": "2023-08-29T15:16:09.9802675+02:00",
+      "PlannedBy": "DummyString",
+      "PlannedToTakePlaceOn": "2023-08-29T15:16:09.9802681+02:00",
+      "Started": "2023-08-29T15:16:09.9802686+02:00",
+      "Finished": "2023-08-29T15:16:09.9802689+02:00",
+      "Cancelled": "2023-08-29T15:16:09.9802693+02:00"
+    },
+    "ContainerWorkAuthorizationInfo": {
+      "ContainerWorkLessorAuthorizationInfo": {
+        "LessorID": "DummyString",
+        "Container_ServiceProgress_AuthorizationInfo": {
+          "Authorized": "2023-08-29T15:16:09.9802742+02:00",
+          "AuthorizedBy": "DummyString",
+          "AuthorizationReference": "DummyString",
+          "AuthorizationAmount": {
+            "LocalizationInfo": {
+              "CurrencyISO": "DummyString",
+              "ExchangeRate": 1.0,
+              "ExchangeRateDate": "2023-08-29T15:16:09.9802757+02:00",
+              "RoundingPerLine": true
+            },
+            "AuthorizationAmount": 1.0
+          }
+        },
+        "AuthorizationAcceptedBySupplier": "2023-08-29T15:16:09.9802768+02:00"
+      },
+      "ContainerWorkLesseeAuthorizationInfo": {
+        "LesseeID": "DummyString",
+        "Container_ServiceProgress_AuthorizationInfo": {
+          "Authorized": "2023-08-29T15:16:09.9803223+02:00",
+          "AuthorizedBy": "DummyString",
+          "AuthorizationReference": "DummyString",
+          "AuthorizationAmount": {
+            "LocalizationInfo": {
+              "CurrencyISO": "DummyString",
+              "ExchangeRate": 1.0,
+              "ExchangeRateDate": "2023-08-29T15:16:09.9803245+02:00",
+              "RoundingPerLine": true
+            },
+            "AuthorizationAmount": 1.0
+          }
+        },
+        "AuthorizationAcceptedBySupplier": "2023-08-29T15:16:09.9803255+02:00"
+      }
+    }
+  },
+  "ContainerStorageArrivalInfo": {
+    "ContainerDeliveryDate": "2023-08-29T15:16:09.9803284+02:00"
+  },
+  "Category": "DummyString",
+  "LaborRate": 1.0,
+  "EstimateLines": [
+    {
+      "LineID": "DummyString",
+      "OriginID": "DummyString",
+      "SortOrder": 1,
+      "Description": "DummyString",
+      "CategoryCode": {
+        "Code": {
+          "Value": "DummyString",
+          "Description": "DummyString"
+        }
+      },
+      "GeneralCodes": {
+        "LocationCode": {
+          "Code": {
+            "Value": "DummyString",
+            "Description": "DummyString"
+          }
+        },
+        "DamageCode": {
+          "Code": {
+            "Value": "DummyString",
+            "Description": "DummyString"
+          }
+        },
+        "RepairCode": {
+          "Code": {
+            "Value": "DummyString",
+            "Description": "DummyString"
+          }
+        },
+        "ComponentCode": {
+          "Code": {
+            "Value": "DummyString",
+            "Description": "DummyString"
+          }
+        }
+      },
+      "ComplexCodes": [
+        {
+          "ParentCodeCatalogName": "DummyString",
+          "Value": "DummyString",
+          "Description": "DummyString"
+        },
+        {
+          "ParentCodeCatalogName": "DummyString",
+          "Value": "DummyString",
+          "Description": "DummyString"
+        }
+      ],
+      "Proposal": {
+        "Container_Work_EstimateLineProposal": {
+          "LaborRate": 1.0,
+          "LaborHours": 1.0,
+          "LaborPrice": 1.0,
+          "MaterialPrice": 1.0,
+          "LumpSumPrice": 1.0,
+          "LineSubtotal": 1.0,
+          "Quantity": 1.0,
+          "DoAction": true,
+          "ThirdParty": true,
+          "LineTotal": 1.0,
+          "Remarks": [
+            {
+              "RemarkID": "DummyString",
+              "RemarkDate": "2023-08-29T15:16:09.9804356+02:00",
+              "RemarkAuthor": "DummyString",
+              "RemarkText": "DummyString"
+            },
+            {
+              "RemarkID": "DummyString",
+              "RemarkDate": "2023-08-29T15:16:09.980438+02:00",
+              "RemarkAuthor": "DummyString",
+              "RemarkText": "DummyString"
+            }
+          ]
+        }
+      },
+      "CounterProposal": {
+        "Container_Work_EstimateLineProposal": {
+          "LaborRate": 1.0,
+          "LaborHours": 1.0,
+          "LaborPrice": 1.0,
+          "MaterialPrice": 1.0,
+          "LumpSumPrice": 1.0,
+          "LineSubtotal": 1.0,
+          "Quantity": 1.0,
+          "DoAction": true,
+          "ThirdParty": true,
+          "LineTotal": 1.0,
+          "Remarks": [
+            {
+              "RemarkID": "DummyString",
+              "RemarkDate": "2023-08-29T15:16:09.9804719+02:00",
+              "RemarkAuthor": "DummyString",
+              "RemarkText": "DummyString"
+            },
+            {
+              "RemarkID": "DummyString",
+              "RemarkDate": "2023-08-29T15:16:09.9804735+02:00",
+              "RemarkAuthor": "DummyString",
+              "RemarkText": "DummyString"
+            }
+          ]
+        }
+      },
+      "ClientAuthorization": {
+        "Container_ServiceProgress_AuthorizationInfo": {
+          "Authorized": "2023-08-29T15:16:09.9805061+02:00",
+          "AuthorizedBy": "DummyString",
+          "AuthorizationReference": "DummyString",
+          "AuthorizationAmount": {
+            "LocalizationInfo": {
+              "CurrencyISO": "DummyString",
+              "ExchangeRate": 1.0,
+              "ExchangeRateDate": "2023-08-29T15:16:09.9805085+02:00",
+              "RoundingPerLine": true
+            },
+            "AuthorizationAmount": 1.0
+          }
+        }
+      },
+      "Attachments": [
+        {
+          "Name": "DummyString",
+          "URL": "DummyString",
+          "ExternalID": "DummyString",
+          "Tags": [
+            {
+              "Tag": "DummyString"
+            },
+            {
+              "Tag": "DummyString"
+            }
+          ]
+        },
+        {
+          "Name": "DummyString",
+          "URL": "DummyString",
+          "ExternalID": "DummyString",
+          "Tags": [
+            {
+              "Tag": "DummyString"
+            },
+            {
+              "Tag": "DummyString"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "LineID": "DummyString",
+      "OriginID": "DummyString",
+      "SortOrder": 1,
+      "Description": "DummyString",
+      "CategoryCode": {
+        "Code": {
+          "Value": "DummyString",
+          "Description": "DummyString"
+        }
+      },
+      "GeneralCodes": {
+        "LocationCode": {
+          "Code": {
+            "Value": "DummyString",
+            "Description": "DummyString"
+          }
+        },
+        "DamageCode": {
+          "Code": {
+            "Value": "DummyString",
+            "Description": "DummyString"
+          }
+        },
+        "RepairCode": {
+          "Code": {
+            "Value": "DummyString",
+            "Description": "DummyString"
+          }
+        },
+        "ComponentCode": {
+          "Code": {
+            "Value": "DummyString",
+            "Description": "DummyString"
+          }
+        }
+      },
+      "ComplexCodes": [
+        {
+          "ParentCodeCatalogName": "DummyString",
+          "Value": "DummyString",
+          "Description": "DummyString"
+        },
+        {
+          "ParentCodeCatalogName": "DummyString",
+          "Value": "DummyString",
+          "Description": "DummyString"
+        }
+      ],
+      "Proposal": {
+        "Container_Work_EstimateLineProposal": {
+          "LaborRate": 1.0,
+          "LaborHours": 1.0,
+          "LaborPrice": 1.0,
+          "MaterialPrice": 1.0,
+          "LumpSumPrice": 1.0,
+          "LineSubtotal": 1.0,
+          "Quantity": 1.0,
+          "DoAction": true,
+          "ThirdParty": true,
+          "LineTotal": 1.0,
+          "Remarks": [
+            {
+              "RemarkID": "DummyString",
+              "RemarkDate": "2023-08-29T15:16:09.980523+02:00",
+              "RemarkAuthor": "DummyString",
+              "RemarkText": "DummyString"
+            },
+            {
+              "RemarkID": "DummyString",
+              "RemarkDate": "2023-08-29T15:16:09.980524+02:00",
+              "RemarkAuthor": "DummyString",
+              "RemarkText": "DummyString"
+            }
+          ]
+        }
+      },
+      "CounterProposal": {
+        "Container_Work_EstimateLineProposal": {
+          "LaborRate": 1.0,
+          "LaborHours": 1.0,
+          "LaborPrice": 1.0,
+          "MaterialPrice": 1.0,
+          "LumpSumPrice": 1.0,
+          "LineSubtotal": 1.0,
+          "Quantity": 1.0,
+          "DoAction": true,
+          "ThirdParty": true,
+          "LineTotal": 1.0,
+          "Remarks": [
+            {
+              "RemarkID": "DummyString",
+              "RemarkDate": "2023-08-29T15:16:09.9805276+02:00",
+              "RemarkAuthor": "DummyString",
+              "RemarkText": "DummyString"
+            },
+            {
+              "RemarkID": "DummyString",
+              "RemarkDate": "2023-08-29T15:16:09.9805287+02:00",
+              "RemarkAuthor": "DummyString",
+              "RemarkText": "DummyString"
+            }
+          ]
+        }
+      },
+      "ClientAuthorization": {
+        "Container_ServiceProgress_AuthorizationInfo": {
+          "Authorized": "2023-08-29T15:16:09.9805299+02:00",
+          "AuthorizedBy": "DummyString",
+          "AuthorizationReference": "DummyString",
+          "AuthorizationAmount": {
+            "LocalizationInfo": {
+              "CurrencyISO": "DummyString",
+              "ExchangeRate": 1.0,
+              "ExchangeRateDate": "2023-08-29T15:16:09.9805312+02:00",
+              "RoundingPerLine": true
+            },
+            "AuthorizationAmount": 1.0
+          }
+        }
+      },
+      "Attachments": [
+        {
+          "Name": "DummyString",
+          "URL": "DummyString",
+          "ExternalID": "DummyString",
+          "Tags": [
+            {
+              "Tag": "DummyString"
+            },
+            {
+              "Tag": "DummyString"
+            }
+          ]
+        },
+        {
+          "Name": "DummyString",
+          "URL": "DummyString",
+          "ExternalID": "DummyString",
+          "Tags": [
+            {
+              "Tag": "DummyString"
+            },
+            {
+              "Tag": "DummyString"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Remarks": [
+    {
+      "RemarkID": "DummyString",
+      "RemarkDate": "2023-08-29T15:16:09.9805356+02:00",
+      "RemarkAuthor": "DummyString",
+      "RemarkText": "DummyString"
+    },
+    {
+      "RemarkID": "DummyString",
+      "RemarkDate": "2023-08-29T15:16:09.9805366+02:00",
+      "RemarkAuthor": "DummyString",
+      "RemarkText": "DummyString"
+    }
+  ],
+  "Attachments": [
+    {
+      "Name": "DummyString",
+      "URL": "DummyString",
+      "ExternalID": "DummyString",
+      "Tags": [
+        {
+          "Tag": "DummyString"
+        },
+        {
+          "Tag": "DummyString"
+        }
+      ]
+    },
+    {
+      "Name": "DummyString",
+      "URL": "DummyString",
+      "ExternalID": "DummyString",
+      "Tags": [
+        {
+          "Tag": "DummyString"
+        },
+        {
+          "Tag": "DummyString"
+        }
+      ]
+    }
+  ]
+}

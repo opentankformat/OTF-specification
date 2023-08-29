@@ -2,12 +2,12 @@
   "MessageHeaderInfo": {
     "MessageID": "31a40ee4-9f12-4411-8ac2-a70f22c530c2",
     "ConversationID": null,
-    "OTFVersion": 1,
+    "OTFVersion": "OTF20",
     "SenderID": "Depot name or identifier",
     "RecipientID": "Lessee name or identifier",
     "ContactName": "Arthur Fonzarelli",
     "SentDate": "2000-01-01T12:23:00+01:00",
-    "MessageType": 0
+    "MessageType": "New"
   },
   "OrderInfo": {
     "SupplierID": "Depot name or identifier",
@@ -33,12 +33,12 @@
       "AuthorizationAmount": null
     },
     "Container_ServiceProgress_DateInfo": {
-      "PlannedSpecified": false,
+      "Planned": "0001-01-01T00:00:00",
       "PlannedBy": null,
-      "PlannedToTakePlaceOnSpecified": false,
-      "StartedSpecified": false,
-      "FinishedSpecified": false,
-      "CancelledSpecified": false
+      "PlannedToTakePlaceOn": "0001-01-01T00:00:00",
+      "Started": "2000-01-01T12:01:00+01:00",
+      "Finished": "2000-01-01T12:23:00+01:00",
+      "Cancelled": "0001-01-01T00:00:00"
     }
   },
   "TankContainerCleaningInfo": {

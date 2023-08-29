@@ -1,0 +1,59 @@
+{
+  "MessageHeaderInfo": {
+    "MessageID": "35b0fcd5-b5d2-4112-836f-d18923b7c849",
+    "ConversationID": null,
+    "OTFVersion": "OTF21",
+    "OTFMessage": "Message_TankContainer_StatusUpdate_Transhipment",
+    "SenderID": "Depot name or identifier",
+    "RecipientID": "Lessee name or identifier",
+    "ContactInfo": {
+      "ContactInfo": {
+        "Name": "Arthur Fonzarelli",
+        "ExternalID": null,
+        "Phone": null,
+        "Email": null
+      }
+    },
+    "SentDate": "2000-01-01T21:14:00+01:00",
+    "MessageType": "New"
+  },
+  "OrderInfo": {
+    "SupplierID": "Depot name or identifier",
+    "SupplierLocationID": "Depot location identifier",
+    "SupplierProformaReference": null,
+    "SupplierOrderReference": "D230101.0001",
+    "OrderStatusInfo": {
+      "OrderStatusDescription": "EMPTY UNCLEAN"
+    },
+    "ClientID": "Lessor name or identifier",
+    "ClientOrderReference": "XX2251"
+  },
+  "TankContainerInfo": {
+    "ContainerInfo": {
+      "ContainerNumber": "ABCD-123456-0",
+      "ContainerType": "20TC"
+    },
+    "OwnerID": null,
+    "TankContainerSuitabilityInfo": null,
+    "TankContainerCharacteristicsInfo": null,
+    "TankContainerTankInfo": null,
+    "TankContainerEquipmentInfo": null,
+    "TankContainerLiningInfo": null,
+    "InspectionDates": null
+  },
+  "Container_ServiceProgressInfo": {
+    "SupplierReference": "D230101.0001.T1",
+    "ClientPurchaseOrderReference": null,
+    "Container_ServiceProgress_AuthorizationInfo": null,
+    "Container_ServiceProgress_DateInfo": {
+      "Planned": "2000-01-01T09:33:00+01:00",
+      "PlannedBy": null,
+      "PlannedToTakePlaceOn": "2000-01-01T19:00:00+01:00",
+      "Started": "2000-01-01T20:46:00+01:00",
+      "Finished": "2000-01-01T21:14:00+01:00",
+      "Cancelled": "0001-01-01T00:00:00"
+    }
+  },
+  "Remarks": null,
+  "Attachments": null
+}

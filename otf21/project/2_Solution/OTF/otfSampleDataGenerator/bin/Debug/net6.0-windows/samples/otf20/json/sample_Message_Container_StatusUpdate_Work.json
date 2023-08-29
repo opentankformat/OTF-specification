@@ -29,12 +29,12 @@
     "ContainerWorkEstimateStatusInfo": {
       "Version": "V1",
       "Container_ServiceProgress_DateInfo": {
-        "PlannedSpecified": false,
+        "Planned": "0001-01-01T00:00:00",
         "PlannedBy": null,
-        "PlannedToTakePlaceOnSpecified": false,
-        "StartedSpecified": false,
-        "FinishedSpecified": false,
-        "CancelledSpecified": false
+        "PlannedToTakePlaceOn": "0001-01-01T00:00:00",
+        "Started": "0001-01-01T00:00:00",
+        "Finished": "2000-01-02T16:23:00+01:00",
+        "Cancelled": "0001-01-01T00:00:00"
       }
     },
     "ContainerWorkAuthorizationInfo": {
@@ -46,19 +46,19 @@
           "AuthorizationReference": "REP5559",
           "AuthorizationAmount": null
         },
-        "AuthorizationAcceptedBySupplierSpecified": false
+        "AuthorizationAcceptedBySupplier": "0001-01-01T00:00:00"
       },
       "ContainerWorkLesseeAuthorizationInfo": null
     }
   },
   "Container_Work_WorkStatusInfo": {
     "Container_ServiceProgress_DateInfo": {
-      "PlannedSpecified": false,
+      "Planned": "0001-01-01T00:00:00",
       "PlannedBy": null,
-      "PlannedToTakePlaceOnSpecified": false,
-      "StartedSpecified": false,
-      "FinishedSpecified": false,
-      "CancelledSpecified": false
+      "PlannedToTakePlaceOn": "0001-01-01T00:00:00",
+      "Started": "2000-01-03T08:55:00+01:00",
+      "Finished": "0001-01-01T00:00:00",
+      "Cancelled": "0001-01-01T00:00:00"
     }
   }
 }

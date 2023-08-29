@@ -1,0 +1,39 @@
+{
+  "MessageHeaderInfo": {
+    "MessageID": "DummyString",
+    "ConversationID": "DummyString",
+    "OTFVersion": "OTF21",
+    "OTFMessage": "Message_Container_PreNotification",
+    "SenderID": "DummyString",
+    "RecipientID": "DummyString",
+    "ContactInfo": {
+      "ContactInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString"
+      }
+    },
+    "SentDate": "2023-08-29T15:16:08.445977+02:00",
+    "MessageType": "New"
+  },
+  "OrderInfo": {
+    "SupplierID": "DummyString",
+    "SupplierLocationID": "DummyString",
+    "SupplierProformaReference": "DummyString",
+    "SupplierOrderReference": "DummyString",
+    "OrderStatusInfo": {
+      "OrderStatusDescription": "DummyString"
+    },
+    "ClientID": "DummyString",
+    "ClientOrderReference": "DummyString"
+  },
+  "ContainerInfo": {
+    "ContainerNumber": "DummyString",
+    "ContainerType": "DummyString"
+  },
+  "PreNotificationStatus": {
+    "Status": "Empty",
+    "Remark": "DummyString"
+  }
+}

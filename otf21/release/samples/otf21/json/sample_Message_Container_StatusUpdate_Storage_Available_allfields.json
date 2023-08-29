@@ -1,0 +1,81 @@
+{
+  "MessageHeaderInfo": {
+    "MessageID": "DummyString",
+    "ConversationID": "DummyString",
+    "OTFVersion": "OTF21",
+    "OTFMessage": "Message_Container_PreNotification",
+    "SenderID": "DummyString",
+    "RecipientID": "DummyString",
+    "ContactInfo": {
+      "ContactInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString"
+      }
+    },
+    "SentDate": "2023-08-29T15:16:08.8892193+02:00",
+    "MessageType": "New"
+  },
+  "OrderInfo": {
+    "SupplierID": "DummyString",
+    "SupplierLocationID": "DummyString",
+    "SupplierProformaReference": "DummyString",
+    "SupplierOrderReference": "DummyString",
+    "OrderStatusInfo": {
+      "OrderStatusDescription": "DummyString"
+    },
+    "ClientID": "DummyString",
+    "ClientOrderReference": "DummyString"
+  },
+  "ContainerInfo": {
+    "ContainerNumber": "DummyString",
+    "ContainerType": "DummyString"
+  },
+  "Container_StatusUpdate_Storage_Available": {
+    "ClientPurchaseOrderReference": "DummyString",
+    "ContainerAvailableDate": "2023-08-29T15:16:08.8892288+02:00"
+  },
+  "Remarks": [
+    {
+      "RemarkID": "DummyString",
+      "RemarkDate": "2023-08-29T15:16:08.8892309+02:00",
+      "RemarkAuthor": "DummyString",
+      "RemarkText": "DummyString"
+    },
+    {
+      "RemarkID": "DummyString",
+      "RemarkDate": "2023-08-29T15:16:08.8892325+02:00",
+      "RemarkAuthor": "DummyString",
+      "RemarkText": "DummyString"
+    }
+  ],
+  "Attachments": [
+    {
+      "Name": "DummyString",
+      "URL": "DummyString",
+      "ExternalID": "DummyString",
+      "Tags": [
+        {
+          "Tag": "DummyString"
+        },
+        {
+          "Tag": "DummyString"
+        }
+      ]
+    },
+    {
+      "Name": "DummyString",
+      "URL": "DummyString",
+      "ExternalID": "DummyString",
+      "Tags": [
+        {
+          "Tag": "DummyString"
+        },
+        {
+          "Tag": "DummyString"
+        }
+      ]
+    }
+  ]
+}

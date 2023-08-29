@@ -1,0 +1,1642 @@
+{
+  "MessageHeaderInfo": {
+    "MessageID": "DummyString",
+    "ConversationID": "DummyString",
+    "OTFVersion": "OTF21",
+    "OTFMessage": "Message_Container_PreNotification",
+    "SenderID": "DummyString",
+    "RecipientID": "DummyString",
+    "ContactInfo": {
+      "ContactInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString"
+      }
+    },
+    "SentDate": "2023-08-29T15:16:08.0578343+02:00",
+    "MessageType": "New"
+  },
+  "ContainerPreNotificationType": "Empty",
+  "OrderInfo": {
+    "SupplierID": "DummyString",
+    "SupplierLocationID": "DummyString",
+    "SupplierProformaReference": "DummyString",
+    "SupplierOrderReference": "DummyString",
+    "OrderStatusInfo": {
+      "OrderStatusDescription": "DummyString"
+    },
+    "ClientID": "DummyString",
+    "ClientOrderReference": "DummyString"
+  },
+  "TankContainerInfo": {
+    "ContainerInfo": {
+      "ContainerNumber": "DummyString",
+      "ContainerType": "DummyString"
+    },
+    "OwnerID": "DummyString",
+    "TankContainerSuitabilityInfo": {
+      "PortableTankType": "Empty",
+      "PortableTankTypeDescription": "DummyString",
+      "IMOType_Deprecated": "Empty",
+      "IMOTypeDescription_Deprecated": "DummyString",
+      "RID_ADRCode": "DummyString",
+      "SubstancesSuitableForTransport": [
+        {
+          "UNNumber": "DummyString"
+        },
+        {
+          "UNNumber": "DummyString"
+        }
+      ],
+      "SpecialProvisions": [
+        {
+          "SortOrder": "DummyString",
+          "SpecialProvision": "DummyString"
+        },
+        {
+          "SortOrder": "DummyString",
+          "SpecialProvision": "DummyString"
+        }
+      ]
+    },
+    "TankContainerCharacteristicsInfo": {
+      "Manufacturer": "DummyString",
+      "ManufacturerCountry": "DummyString",
+      "ManufacturerSerialNumber": "DummyString",
+      "BuildingYearMonth": "2023-08-29T15:16:08.0581648+02:00",
+      "ISO6346SizeTypeCode": "Empty",
+      "ISO6346SizeTypeCodeDescription": "DummyString",
+      "DimensionsXMillimeter": 1,
+      "DimensionsYMillimeter": 1,
+      "DimensionsZMillimeter": 1,
+      "MaxGrossMass": 1.0,
+      "Payload": 1.0,
+      "PayloadUnit": "DummyString",
+      "Tare": 1.0,
+      "TareUnit": "DummyString",
+      "Capacity": 1.0,
+      "CapacityUnit": "DummyString"
+    },
+    "TankContainerTankInfo": {
+      "CompartmentQuantity": 1,
+      "ShellMaterial": "DummyString",
+      "ShellEquivalentThicknessRefSteelMillimeter": 1.0,
+      "SurgePlates": true,
+      "SurgePlatesCapacityBetweenIsLowerThan7500L": true,
+      "WorkPressureMaximumBar": 1.0,
+      "DesignPressureExternalBar": 1.0,
+      "TestPressureHydraulicBar": 1.0,
+      "DesignTemperatureMinimum": 1.0,
+      "DesignTemperatureMaximum": 1.0,
+      "DesignTemperatureUnit": "Celcius"
+    },
+    "TankContainerEquipmentInfo": {
+      "TopDischarge": "DummyString",
+      "TopQuantityOfEnclosuresInSeries": 1,
+      "BottomDischarge": "DummyString",
+      "BottomQuantityOfEnclosuresInSeries": 1,
+      "Heater": "DummyString",
+      "HeaterWorkingPressureBar": 1.0,
+      "ReliefValveQuantity": 1,
+      "ReliefValves": [
+        {
+          "Manufacturer": "DummyString",
+          "SerialNumber": "DummyString",
+          "SettingMinus": 1.0,
+          "SettingPlus": 1.0
+        },
+        {
+          "Manufacturer": "DummyString",
+          "SerialNumber": "DummyString",
+          "SettingMinus": 1.0,
+          "SettingPlus": 1.0
+        }
+      ],
+      "RuptureDiscQuantity": 1,
+      "RuptureDiscs": [
+        {
+          "Manufacturer": "DummyString",
+          "SerialNumber": "DummyString",
+          "Setting": 1.0
+        },
+        {
+          "Manufacturer": "DummyString",
+          "SerialNumber": "DummyString",
+          "Setting": 1.0
+        }
+      ]
+    },
+    "TankContainerLiningInfo": {
+      "InternalCoating": "DummyString",
+      "Insulation": "DummyString",
+      "Material": "DummyString"
+    },
+    "InspectionDates": {
+      "LastInspectionDate": "2023-08-29T15:16:08.0585264+02:00",
+      "LastInspectionScope": "Empty",
+      "LastInspectionScopeDescription": "DummyString",
+      "NextInspectionDate": "2023-08-29T15:16:08.0585335+02:00",
+      "CSCValidityDate": "2023-08-29T15:16:08.0585343+02:00",
+      "ACEP": "2023-08-29T15:16:08.0585355+02:00"
+    }
+  },
+  "ArrivalInfo": {
+    "ETA": "2023-08-29T15:16:08.0585398+02:00",
+    "RedeliveryReference": "DummyString",
+    "ContainerOrigin": "DummyString",
+    "Container_HaulierInfo": {
+      "HaulierName": "DummyString",
+      "TruckDriverName": "DummyString",
+      "TruckLicensePlate": "DummyString",
+      "ChassisLicensePlate": "DummyString"
+    },
+    "TankContainer_StateInfo": {
+      "IsLoaded": true,
+      "FullLoadedAmount": 1.0,
+      "FullLoadedAmountUnit": "DummyString",
+      "IsClean": true,
+      "IsPressurized": true,
+      "IsNitrogen": true,
+      "Compartments": [
+        {
+          "CompartmentNumber": 1,
+          "CurrentProduct": {
+            "ProductInfo": {
+              "MainName": "DummyString",
+              "TradeName": "DummyString",
+              "ExternalID": "DummyString",
+              "ProductDetails": {
+                "Manufacturer": "DummyString",
+                "SDSURL": "DummyString",
+                "CommonProductGroupDescription": "DummyString",
+                "PureProductDetails": {
+                  "PIN": "DummyString",
+                  "CASNumber": "DummyString",
+                  "AlternativeNames": [
+                    {
+                      "AlternativeName": "DummyString"
+                    },
+                    {
+                      "AlternativeName": "DummyString"
+                    }
+                  ]
+                },
+                "MixtureProductDetails": [
+                  {
+                    "TradeName": "DummyString"
+                  },
+                  {
+                    "TradeName": "DummyString"
+                  }
+                ],
+                "HazardousProductSafetyClassifications": {
+                  "UN_DangerousGoodsList": {
+                    "PSN": "DummyString",
+                    "UNNumber": "DummyString",
+                    "ADRClass": "Item1",
+                    "ADRClassDescription": "DummyString",
+                    "UNPackingGroup": "I",
+                    "UNPackingGroupDescription": "DummyString",
+                    "KemlerCode": "DummyString"
+                  },
+                  "UN_GHS": {
+                    "HazardStatements": [
+                      {
+                        "HazardStatementCode": "H200",
+                        "HazardStatementCodeDescription": "DummyString",
+                        "HazardStatementDescription": "DummyString"
+                      },
+                      {
+                        "HazardStatementCode": "H200",
+                        "HazardStatementCodeDescription": "DummyString",
+                        "HazardStatementDescription": "DummyString"
+                      }
+                    ],
+                    "PrecautionaryStatements": [
+                      {
+                        "PrecautionaryStatementCode": "P101",
+                        "PrecautionaryStatementCodeDescription": "DummyString",
+                        "PrecautionaryStatementDescription": "DummyString"
+                      },
+                      {
+                        "PrecautionaryStatementCode": "P101",
+                        "PrecautionaryStatementCodeDescription": "DummyString",
+                        "PrecautionaryStatementDescription": "DummyString"
+                      }
+                    ],
+                    "HazardPictograms": [
+                      {
+                        "HazardPictogram": "GHS01",
+                        "HazardPictogramDescription": "DummyString"
+                      },
+                      {
+                        "HazardPictogram": "GHS01",
+                        "HazardPictogramDescription": "DummyString"
+                      }
+                    ],
+                    "CustomizedStatements": [
+                      {
+                        "Code": "DummyString",
+                        "Description": "DummyString",
+                        "Category": "DummyString"
+                      },
+                      {
+                        "Code": "DummyString",
+                        "Description": "DummyString",
+                        "Category": "DummyString"
+                      }
+                    ],
+                    "CNCode": "DummyString"
+                  },
+                  "IMO_IMDG": {
+                    "IMDGClass": "Item1",
+                    "IMDGClassDescription": "DummyString",
+                    "SegregationGroup": "SGG1",
+                    "SegregationGroupDescription": "DummyString"
+                  },
+                  "EU_REACH": {
+                    "ECNumber": "DummyString"
+                  }
+                },
+                "PhysicalChemicalPropertiesInfo": {
+                  "ChemicalName": "DummyString",
+                  "ChemicalFamily": "DummyString",
+                  "ChemicalFormula": "DummyString",
+                  "PhysicalState": "DummyString",
+                  "Odor": "DummyString",
+                  "Appearance": "DummyString",
+                  "VaporPressure": 1.0,
+                  "VaporPressureUnit": "DummyString",
+                  "VaporPressureAtTemperature": 1.0,
+                  "VaporPressureAtTemperatureUnit": "DummyString",
+                  "VaporDensity": 1.0,
+                  "VaporDensityUnit": "DummyString",
+                  "VaporDensityAtTemperature": 1.0,
+                  "VaporDensityAtTemperatureUnit": "DummyString",
+                  "MeltingPointTemperature": 1.0,
+                  "MeltingPointTemperatureUnit": "DummyString",
+                  "BoilingPointTemperature": 1.0,
+                  "BoilingPointTemperatureUnit": "DummyString",
+                  "FreezingPointTemperature": 1.0,
+                  "FreezingPointTemperatureUnit": "DummyString",
+                  "CriticalTemperature": 1.0,
+                  "CriticalTemperatureUnit": "DummyString",
+                  "pH": "DummyString",
+                  "SpecificGravity": "DummyString",
+                  "SolubilityInWater": "DummyString",
+                  "Viscosity": 1.0,
+                  "ViscosityUnit": "DummyString",
+                  "ViscosityAtTemperature": 1.0,
+                  "ViscosityAtTemperatureUnit": "DummyString",
+                  "MolarMass": 1.0,
+                  "MolarMassUnit": "DummyString",
+                  "PolymerInfo": {
+                    "IsPolymer": true,
+                    "SelfAcceleratingPolymerizationTemperature": 1.0,
+                    "SelfAcceleratingPolymerizationTemperatureUnit": "DummyString",
+                    "SelfAcceleratingDecompositionTemperature": 1.0,
+                    "SelfAcceleratingDecompositionTemperatureUnit": "DummyString"
+                  }
+                },
+                "FireAndExplosionDataInfo": {
+                  "FlashPointTestMethod": "ClosedCup",
+                  "FlashPointTestMethodDescription": "DummyString",
+                  "FlashPointTemperature": 1.0,
+                  "FlashPointTemperatureUnit": "DummyString",
+                  "AutoIgnitionTemperature": 1.0,
+                  "AutoIgnitionTemperatureUnit": "DummyString",
+                  "UELPercentage": 1.0,
+                  "LELPercentage": 1.0
+                },
+                "EmergencyContactInfo": {
+                  "ContactInfo": {
+                    "ContactInfo": {
+                      "Name": "DummyString",
+                      "ExternalID": "DummyString",
+                      "Phone": "DummyString",
+                      "Email": "DummyString"
+                    }
+                  }
+                }
+              }
+            },
+            "LoadedAmount": 1.0,
+            "LoadedAmountUnit": "DummyString"
+          },
+          "PreviousProduct1": {
+            "ProductInfo": {
+              "MainName": "DummyString",
+              "TradeName": "DummyString",
+              "ExternalID": "DummyString",
+              "ProductDetails": {
+                "Manufacturer": "DummyString",
+                "SDSURL": "DummyString",
+                "CommonProductGroupDescription": "DummyString",
+                "PureProductDetails": {
+                  "PIN": "DummyString",
+                  "CASNumber": "DummyString",
+                  "AlternativeNames": [
+                    {
+                      "AlternativeName": "DummyString"
+                    },
+                    {
+                      "AlternativeName": "DummyString"
+                    }
+                  ]
+                },
+                "MixtureProductDetails": [
+                  {
+                    "TradeName": "DummyString"
+                  },
+                  {
+                    "TradeName": "DummyString"
+                  }
+                ],
+                "HazardousProductSafetyClassifications": {
+                  "UN_DangerousGoodsList": {
+                    "PSN": "DummyString",
+                    "UNNumber": "DummyString",
+                    "ADRClass": "Item1",
+                    "ADRClassDescription": "DummyString",
+                    "UNPackingGroup": "I",
+                    "UNPackingGroupDescription": "DummyString",
+                    "KemlerCode": "DummyString"
+                  },
+                  "UN_GHS": {
+                    "HazardStatements": [
+                      {
+                        "HazardStatementCode": "H200",
+                        "HazardStatementCodeDescription": "DummyString",
+                        "HazardStatementDescription": "DummyString"
+                      },
+                      {
+                        "HazardStatementCode": "H200",
+                        "HazardStatementCodeDescription": "DummyString",
+                        "HazardStatementDescription": "DummyString"
+                      }
+                    ],
+                    "PrecautionaryStatements": [
+                      {
+                        "PrecautionaryStatementCode": "P101",
+                        "PrecautionaryStatementCodeDescription": "DummyString",
+                        "PrecautionaryStatementDescription": "DummyString"
+                      },
+                      {
+                        "PrecautionaryStatementCode": "P101",
+                        "PrecautionaryStatementCodeDescription": "DummyString",
+                        "PrecautionaryStatementDescription": "DummyString"
+                      }
+                    ],
+                    "HazardPictograms": [
+                      {
+                        "HazardPictogram": "GHS01",
+                        "HazardPictogramDescription": "DummyString"
+                      },
+                      {
+                        "HazardPictogram": "GHS01",
+                        "HazardPictogramDescription": "DummyString"
+                      }
+                    ],
+                    "CustomizedStatements": [
+                      {
+                        "Code": "DummyString",
+                        "Description": "DummyString",
+                        "Category": "DummyString"
+                      },
+                      {
+                        "Code": "DummyString",
+                        "Description": "DummyString",
+                        "Category": "DummyString"
+                      }
+                    ],
+                    "CNCode": "DummyString"
+                  },
+                  "IMO_IMDG": {
+                    "IMDGClass": "Item1",
+                    "IMDGClassDescription": "DummyString",
+                    "SegregationGroup": "SGG1",
+                    "SegregationGroupDescription": "DummyString"
+                  },
+                  "EU_REACH": {
+                    "ECNumber": "DummyString"
+                  }
+                },
+                "PhysicalChemicalPropertiesInfo": {
+                  "ChemicalName": "DummyString",
+                  "ChemicalFamily": "DummyString",
+                  "ChemicalFormula": "DummyString",
+                  "PhysicalState": "DummyString",
+                  "Odor": "DummyString",
+                  "Appearance": "DummyString",
+                  "VaporPressure": 1.0,
+                  "VaporPressureUnit": "DummyString",
+                  "VaporPressureAtTemperature": 1.0,
+                  "VaporPressureAtTemperatureUnit": "DummyString",
+                  "VaporDensity": 1.0,
+                  "VaporDensityUnit": "DummyString",
+                  "VaporDensityAtTemperature": 1.0,
+                  "VaporDensityAtTemperatureUnit": "DummyString",
+                  "MeltingPointTemperature": 1.0,
+                  "MeltingPointTemperatureUnit": "DummyString",
+                  "BoilingPointTemperature": 1.0,
+                  "BoilingPointTemperatureUnit": "DummyString",
+                  "FreezingPointTemperature": 1.0,
+                  "FreezingPointTemperatureUnit": "DummyString",
+                  "CriticalTemperature": 1.0,
+                  "CriticalTemperatureUnit": "DummyString",
+                  "pH": "DummyString",
+                  "SpecificGravity": "DummyString",
+                  "SolubilityInWater": "DummyString",
+                  "Viscosity": 1.0,
+                  "ViscosityUnit": "DummyString",
+                  "ViscosityAtTemperature": 1.0,
+                  "ViscosityAtTemperatureUnit": "DummyString",
+                  "MolarMass": 1.0,
+                  "MolarMassUnit": "DummyString",
+                  "PolymerInfo": {
+                    "IsPolymer": true,
+                    "SelfAcceleratingPolymerizationTemperature": 1.0,
+                    "SelfAcceleratingPolymerizationTemperatureUnit": "DummyString",
+                    "SelfAcceleratingDecompositionTemperature": 1.0,
+                    "SelfAcceleratingDecompositionTemperatureUnit": "DummyString"
+                  }
+                },
+                "FireAndExplosionDataInfo": {
+                  "FlashPointTestMethod": "ClosedCup",
+                  "FlashPointTestMethodDescription": "DummyString",
+                  "FlashPointTemperature": 1.0,
+                  "FlashPointTemperatureUnit": "DummyString",
+                  "AutoIgnitionTemperature": 1.0,
+                  "AutoIgnitionTemperatureUnit": "DummyString",
+                  "UELPercentage": 1.0,
+                  "LELPercentage": 1.0
+                },
+                "EmergencyContactInfo": {
+                  "ContactInfo": {
+                    "ContactInfo": {
+                      "Name": "DummyString",
+                      "ExternalID": "DummyString",
+                      "Phone": "DummyString",
+                      "Email": "DummyString"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "PreviousProduct2": {
+            "ProductInfo": {
+              "MainName": "DummyString",
+              "TradeName": "DummyString",
+              "ExternalID": "DummyString",
+              "ProductDetails": {
+                "Manufacturer": "DummyString",
+                "SDSURL": "DummyString",
+                "CommonProductGroupDescription": "DummyString",
+                "PureProductDetails": {
+                  "PIN": "DummyString",
+                  "CASNumber": "DummyString",
+                  "AlternativeNames": [
+                    {
+                      "AlternativeName": "DummyString"
+                    },
+                    {
+                      "AlternativeName": "DummyString"
+                    }
+                  ]
+                },
+                "MixtureProductDetails": [
+                  {
+                    "TradeName": "DummyString"
+                  },
+                  {
+                    "TradeName": "DummyString"
+                  }
+                ],
+                "HazardousProductSafetyClassifications": {
+                  "UN_DangerousGoodsList": {
+                    "PSN": "DummyString",
+                    "UNNumber": "DummyString",
+                    "ADRClass": "Item1",
+                    "ADRClassDescription": "DummyString",
+                    "UNPackingGroup": "I",
+                    "UNPackingGroupDescription": "DummyString",
+                    "KemlerCode": "DummyString"
+                  },
+                  "UN_GHS": {
+                    "HazardStatements": [
+                      {
+                        "HazardStatementCode": "H200",
+                        "HazardStatementCodeDescription": "DummyString",
+                        "HazardStatementDescription": "DummyString"
+                      },
+                      {
+                        "HazardStatementCode": "H200",
+                        "HazardStatementCodeDescription": "DummyString",
+                        "HazardStatementDescription": "DummyString"
+                      }
+                    ],
+                    "PrecautionaryStatements": [
+                      {
+                        "PrecautionaryStatementCode": "P101",
+                        "PrecautionaryStatementCodeDescription": "DummyString",
+                        "PrecautionaryStatementDescription": "DummyString"
+                      },
+                      {
+                        "PrecautionaryStatementCode": "P101",
+                        "PrecautionaryStatementCodeDescription": "DummyString",
+                        "PrecautionaryStatementDescription": "DummyString"
+                      }
+                    ],
+                    "HazardPictograms": [
+                      {
+                        "HazardPictogram": "GHS01",
+                        "HazardPictogramDescription": "DummyString"
+                      },
+                      {
+                        "HazardPictogram": "GHS01",
+                        "HazardPictogramDescription": "DummyString"
+                      }
+                    ],
+                    "CustomizedStatements": [
+                      {
+                        "Code": "DummyString",
+                        "Description": "DummyString",
+                        "Category": "DummyString"
+                      },
+                      {
+                        "Code": "DummyString",
+                        "Description": "DummyString",
+                        "Category": "DummyString"
+                      }
+                    ],
+                    "CNCode": "DummyString"
+                  },
+                  "IMO_IMDG": {
+                    "IMDGClass": "Item1",
+                    "IMDGClassDescription": "DummyString",
+                    "SegregationGroup": "SGG1",
+                    "SegregationGroupDescription": "DummyString"
+                  },
+                  "EU_REACH": {
+                    "ECNumber": "DummyString"
+                  }
+                },
+                "PhysicalChemicalPropertiesInfo": {
+                  "ChemicalName": "DummyString",
+                  "ChemicalFamily": "DummyString",
+                  "ChemicalFormula": "DummyString",
+                  "PhysicalState": "DummyString",
+                  "Odor": "DummyString",
+                  "Appearance": "DummyString",
+                  "VaporPressure": 1.0,
+                  "VaporPressureUnit": "DummyString",
+                  "VaporPressureAtTemperature": 1.0,
+                  "VaporPressureAtTemperatureUnit": "DummyString",
+                  "VaporDensity": 1.0,
+                  "VaporDensityUnit": "DummyString",
+                  "VaporDensityAtTemperature": 1.0,
+                  "VaporDensityAtTemperatureUnit": "DummyString",
+                  "MeltingPointTemperature": 1.0,
+                  "MeltingPointTemperatureUnit": "DummyString",
+                  "BoilingPointTemperature": 1.0,
+                  "BoilingPointTemperatureUnit": "DummyString",
+                  "FreezingPointTemperature": 1.0,
+                  "FreezingPointTemperatureUnit": "DummyString",
+                  "CriticalTemperature": 1.0,
+                  "CriticalTemperatureUnit": "DummyString",
+                  "pH": "DummyString",
+                  "SpecificGravity": "DummyString",
+                  "SolubilityInWater": "DummyString",
+                  "Viscosity": 1.0,
+                  "ViscosityUnit": "DummyString",
+                  "ViscosityAtTemperature": 1.0,
+                  "ViscosityAtTemperatureUnit": "DummyString",
+                  "MolarMass": 1.0,
+                  "MolarMassUnit": "DummyString",
+                  "PolymerInfo": {
+                    "IsPolymer": true,
+                    "SelfAcceleratingPolymerizationTemperature": 1.0,
+                    "SelfAcceleratingPolymerizationTemperatureUnit": "DummyString",
+                    "SelfAcceleratingDecompositionTemperature": 1.0,
+                    "SelfAcceleratingDecompositionTemperatureUnit": "DummyString"
+                  }
+                },
+                "FireAndExplosionDataInfo": {
+                  "FlashPointTestMethod": "ClosedCup",
+                  "FlashPointTestMethodDescription": "DummyString",
+                  "FlashPointTemperature": 1.0,
+                  "FlashPointTemperatureUnit": "DummyString",
+                  "AutoIgnitionTemperature": 1.0,
+                  "AutoIgnitionTemperatureUnit": "DummyString",
+                  "UELPercentage": 1.0,
+                  "LELPercentage": 1.0
+                },
+                "EmergencyContactInfo": {
+                  "ContactInfo": {
+                    "ContactInfo": {
+                      "Name": "DummyString",
+                      "ExternalID": "DummyString",
+                      "Phone": "DummyString",
+                      "Email": "DummyString"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "PreviousProduct3": {
+            "ProductInfo": {
+              "MainName": "DummyString",
+              "TradeName": "DummyString",
+              "ExternalID": "DummyString",
+              "ProductDetails": {
+                "Manufacturer": "DummyString",
+                "SDSURL": "DummyString",
+                "CommonProductGroupDescription": "DummyString",
+                "PureProductDetails": {
+                  "PIN": "DummyString",
+                  "CASNumber": "DummyString",
+                  "AlternativeNames": [
+                    {
+                      "AlternativeName": "DummyString"
+                    },
+                    {
+                      "AlternativeName": "DummyString"
+                    }
+                  ]
+                },
+                "MixtureProductDetails": [
+                  {
+                    "TradeName": "DummyString"
+                  },
+                  {
+                    "TradeName": "DummyString"
+                  }
+                ],
+                "HazardousProductSafetyClassifications": {
+                  "UN_DangerousGoodsList": {
+                    "PSN": "DummyString",
+                    "UNNumber": "DummyString",
+                    "ADRClass": "Item1",
+                    "ADRClassDescription": "DummyString",
+                    "UNPackingGroup": "I",
+                    "UNPackingGroupDescription": "DummyString",
+                    "KemlerCode": "DummyString"
+                  },
+                  "UN_GHS": {
+                    "HazardStatements": [
+                      {
+                        "HazardStatementCode": "H200",
+                        "HazardStatementCodeDescription": "DummyString",
+                        "HazardStatementDescription": "DummyString"
+                      },
+                      {
+                        "HazardStatementCode": "H200",
+                        "HazardStatementCodeDescription": "DummyString",
+                        "HazardStatementDescription": "DummyString"
+                      }
+                    ],
+                    "PrecautionaryStatements": [
+                      {
+                        "PrecautionaryStatementCode": "P101",
+                        "PrecautionaryStatementCodeDescription": "DummyString",
+                        "PrecautionaryStatementDescription": "DummyString"
+                      },
+                      {
+                        "PrecautionaryStatementCode": "P101",
+                        "PrecautionaryStatementCodeDescription": "DummyString",
+                        "PrecautionaryStatementDescription": "DummyString"
+                      }
+                    ],
+                    "HazardPictograms": [
+                      {
+                        "HazardPictogram": "GHS01",
+                        "HazardPictogramDescription": "DummyString"
+                      },
+                      {
+                        "HazardPictogram": "GHS01",
+                        "HazardPictogramDescription": "DummyString"
+                      }
+                    ],
+                    "CustomizedStatements": [
+                      {
+                        "Code": "DummyString",
+                        "Description": "DummyString",
+                        "Category": "DummyString"
+                      },
+                      {
+                        "Code": "DummyString",
+                        "Description": "DummyString",
+                        "Category": "DummyString"
+                      }
+                    ],
+                    "CNCode": "DummyString"
+                  },
+                  "IMO_IMDG": {
+                    "IMDGClass": "Item1",
+                    "IMDGClassDescription": "DummyString",
+                    "SegregationGroup": "SGG1",
+                    "SegregationGroupDescription": "DummyString"
+                  },
+                  "EU_REACH": {
+                    "ECNumber": "DummyString"
+                  }
+                },
+                "PhysicalChemicalPropertiesInfo": {
+                  "ChemicalName": "DummyString",
+                  "ChemicalFamily": "DummyString",
+                  "ChemicalFormula": "DummyString",
+                  "PhysicalState": "DummyString",
+                  "Odor": "DummyString",
+                  "Appearance": "DummyString",
+                  "VaporPressure": 1.0,
+                  "VaporPressureUnit": "DummyString",
+                  "VaporPressureAtTemperature": 1.0,
+                  "VaporPressureAtTemperatureUnit": "DummyString",
+                  "VaporDensity": 1.0,
+                  "VaporDensityUnit": "DummyString",
+                  "VaporDensityAtTemperature": 1.0,
+                  "VaporDensityAtTemperatureUnit": "DummyString",
+                  "MeltingPointTemperature": 1.0,
+                  "MeltingPointTemperatureUnit": "DummyString",
+                  "BoilingPointTemperature": 1.0,
+                  "BoilingPointTemperatureUnit": "DummyString",
+                  "FreezingPointTemperature": 1.0,
+                  "FreezingPointTemperatureUnit": "DummyString",
+                  "CriticalTemperature": 1.0,
+                  "CriticalTemperatureUnit": "DummyString",
+                  "pH": "DummyString",
+                  "SpecificGravity": "DummyString",
+                  "SolubilityInWater": "DummyString",
+                  "Viscosity": 1.0,
+                  "ViscosityUnit": "DummyString",
+                  "ViscosityAtTemperature": 1.0,
+                  "ViscosityAtTemperatureUnit": "DummyString",
+                  "MolarMass": 1.0,
+                  "MolarMassUnit": "DummyString",
+                  "PolymerInfo": {
+                    "IsPolymer": true,
+                    "SelfAcceleratingPolymerizationTemperature": 1.0,
+                    "SelfAcceleratingPolymerizationTemperatureUnit": "DummyString",
+                    "SelfAcceleratingDecompositionTemperature": 1.0,
+                    "SelfAcceleratingDecompositionTemperatureUnit": "DummyString"
+                  }
+                },
+                "FireAndExplosionDataInfo": {
+                  "FlashPointTestMethod": "ClosedCup",
+                  "FlashPointTestMethodDescription": "DummyString",
+                  "FlashPointTemperature": 1.0,
+                  "FlashPointTemperatureUnit": "DummyString",
+                  "AutoIgnitionTemperature": 1.0,
+                  "AutoIgnitionTemperatureUnit": "DummyString",
+                  "UELPercentage": 1.0,
+                  "LELPercentage": 1.0
+                },
+                "EmergencyContactInfo": {
+                  "ContactInfo": {
+                    "ContactInfo": {
+                      "Name": "DummyString",
+                      "ExternalID": "DummyString",
+                      "Phone": "DummyString",
+                      "Email": "DummyString"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "CompartmentNumber": 1,
+          "CurrentProduct": {
+            "ProductInfo": {
+              "MainName": "DummyString",
+              "TradeName": "DummyString",
+              "ExternalID": "DummyString",
+              "ProductDetails": {
+                "Manufacturer": "DummyString",
+                "SDSURL": "DummyString",
+                "CommonProductGroupDescription": "DummyString",
+                "PureProductDetails": {
+                  "PIN": "DummyString",
+                  "CASNumber": "DummyString",
+                  "AlternativeNames": [
+                    {
+                      "AlternativeName": "DummyString"
+                    },
+                    {
+                      "AlternativeName": "DummyString"
+                    }
+                  ]
+                },
+                "MixtureProductDetails": [
+                  {
+                    "TradeName": "DummyString"
+                  },
+                  {
+                    "TradeName": "DummyString"
+                  }
+                ],
+                "HazardousProductSafetyClassifications": {
+                  "UN_DangerousGoodsList": {
+                    "PSN": "DummyString",
+                    "UNNumber": "DummyString",
+                    "ADRClass": "Item1",
+                    "ADRClassDescription": "DummyString",
+                    "UNPackingGroup": "I",
+                    "UNPackingGroupDescription": "DummyString",
+                    "KemlerCode": "DummyString"
+                  },
+                  "UN_GHS": {
+                    "HazardStatements": [
+                      {
+                        "HazardStatementCode": "H200",
+                        "HazardStatementCodeDescription": "DummyString",
+                        "HazardStatementDescription": "DummyString"
+                      },
+                      {
+                        "HazardStatementCode": "H200",
+                        "HazardStatementCodeDescription": "DummyString",
+                        "HazardStatementDescription": "DummyString"
+                      }
+                    ],
+                    "PrecautionaryStatements": [
+                      {
+                        "PrecautionaryStatementCode": "P101",
+                        "PrecautionaryStatementCodeDescription": "DummyString",
+                        "PrecautionaryStatementDescription": "DummyString"
+                      },
+                      {
+                        "PrecautionaryStatementCode": "P101",
+                        "PrecautionaryStatementCodeDescription": "DummyString",
+                        "PrecautionaryStatementDescription": "DummyString"
+                      }
+                    ],
+                    "HazardPictograms": [
+                      {
+                        "HazardPictogram": "GHS01",
+                        "HazardPictogramDescription": "DummyString"
+                      },
+                      {
+                        "HazardPictogram": "GHS01",
+                        "HazardPictogramDescription": "DummyString"
+                      }
+                    ],
+                    "CustomizedStatements": [
+                      {
+                        "Code": "DummyString",
+                        "Description": "DummyString",
+                        "Category": "DummyString"
+                      },
+                      {
+                        "Code": "DummyString",
+                        "Description": "DummyString",
+                        "Category": "DummyString"
+                      }
+                    ],
+                    "CNCode": "DummyString"
+                  },
+                  "IMO_IMDG": {
+                    "IMDGClass": "Item1",
+                    "IMDGClassDescription": "DummyString",
+                    "SegregationGroup": "SGG1",
+                    "SegregationGroupDescription": "DummyString"
+                  },
+                  "EU_REACH": {
+                    "ECNumber": "DummyString"
+                  }
+                },
+                "PhysicalChemicalPropertiesInfo": {
+                  "ChemicalName": "DummyString",
+                  "ChemicalFamily": "DummyString",
+                  "ChemicalFormula": "DummyString",
+                  "PhysicalState": "DummyString",
+                  "Odor": "DummyString",
+                  "Appearance": "DummyString",
+                  "VaporPressure": 1.0,
+                  "VaporPressureUnit": "DummyString",
+                  "VaporPressureAtTemperature": 1.0,
+                  "VaporPressureAtTemperatureUnit": "DummyString",
+                  "VaporDensity": 1.0,
+                  "VaporDensityUnit": "DummyString",
+                  "VaporDensityAtTemperature": 1.0,
+                  "VaporDensityAtTemperatureUnit": "DummyString",
+                  "MeltingPointTemperature": 1.0,
+                  "MeltingPointTemperatureUnit": "DummyString",
+                  "BoilingPointTemperature": 1.0,
+                  "BoilingPointTemperatureUnit": "DummyString",
+                  "FreezingPointTemperature": 1.0,
+                  "FreezingPointTemperatureUnit": "DummyString",
+                  "CriticalTemperature": 1.0,
+                  "CriticalTemperatureUnit": "DummyString",
+                  "pH": "DummyString",
+                  "SpecificGravity": "DummyString",
+                  "SolubilityInWater": "DummyString",
+                  "Viscosity": 1.0,
+                  "ViscosityUnit": "DummyString",
+                  "ViscosityAtTemperature": 1.0,
+                  "ViscosityAtTemperatureUnit": "DummyString",
+                  "MolarMass": 1.0,
+                  "MolarMassUnit": "DummyString",
+                  "PolymerInfo": {
+                    "IsPolymer": true,
+                    "SelfAcceleratingPolymerizationTemperature": 1.0,
+                    "SelfAcceleratingPolymerizationTemperatureUnit": "DummyString",
+                    "SelfAcceleratingDecompositionTemperature": 1.0,
+                    "SelfAcceleratingDecompositionTemperatureUnit": "DummyString"
+                  }
+                },
+                "FireAndExplosionDataInfo": {
+                  "FlashPointTestMethod": "ClosedCup",
+                  "FlashPointTestMethodDescription": "DummyString",
+                  "FlashPointTemperature": 1.0,
+                  "FlashPointTemperatureUnit": "DummyString",
+                  "AutoIgnitionTemperature": 1.0,
+                  "AutoIgnitionTemperatureUnit": "DummyString",
+                  "UELPercentage": 1.0,
+                  "LELPercentage": 1.0
+                },
+                "EmergencyContactInfo": {
+                  "ContactInfo": {
+                    "ContactInfo": {
+                      "Name": "DummyString",
+                      "ExternalID": "DummyString",
+                      "Phone": "DummyString",
+                      "Email": "DummyString"
+                    }
+                  }
+                }
+              }
+            },
+            "LoadedAmount": 1.0,
+            "LoadedAmountUnit": "DummyString"
+          },
+          "PreviousProduct1": {
+            "ProductInfo": {
+              "MainName": "DummyString",
+              "TradeName": "DummyString",
+              "ExternalID": "DummyString",
+              "ProductDetails": {
+                "Manufacturer": "DummyString",
+                "SDSURL": "DummyString",
+                "CommonProductGroupDescription": "DummyString",
+                "PureProductDetails": {
+                  "PIN": "DummyString",
+                  "CASNumber": "DummyString",
+                  "AlternativeNames": [
+                    {
+                      "AlternativeName": "DummyString"
+                    },
+                    {
+                      "AlternativeName": "DummyString"
+                    }
+                  ]
+                },
+                "MixtureProductDetails": [
+                  {
+                    "TradeName": "DummyString"
+                  },
+                  {
+                    "TradeName": "DummyString"
+                  }
+                ],
+                "HazardousProductSafetyClassifications": {
+                  "UN_DangerousGoodsList": {
+                    "PSN": "DummyString",
+                    "UNNumber": "DummyString",
+                    "ADRClass": "Item1",
+                    "ADRClassDescription": "DummyString",
+                    "UNPackingGroup": "I",
+                    "UNPackingGroupDescription": "DummyString",
+                    "KemlerCode": "DummyString"
+                  },
+                  "UN_GHS": {
+                    "HazardStatements": [
+                      {
+                        "HazardStatementCode": "H200",
+                        "HazardStatementCodeDescription": "DummyString",
+                        "HazardStatementDescription": "DummyString"
+                      },
+                      {
+                        "HazardStatementCode": "H200",
+                        "HazardStatementCodeDescription": "DummyString",
+                        "HazardStatementDescription": "DummyString"
+                      }
+                    ],
+                    "PrecautionaryStatements": [
+                      {
+                        "PrecautionaryStatementCode": "P101",
+                        "PrecautionaryStatementCodeDescription": "DummyString",
+                        "PrecautionaryStatementDescription": "DummyString"
+                      },
+                      {
+                        "PrecautionaryStatementCode": "P101",
+                        "PrecautionaryStatementCodeDescription": "DummyString",
+                        "PrecautionaryStatementDescription": "DummyString"
+                      }
+                    ],
+                    "HazardPictograms": [
+                      {
+                        "HazardPictogram": "GHS01",
+                        "HazardPictogramDescription": "DummyString"
+                      },
+                      {
+                        "HazardPictogram": "GHS01",
+                        "HazardPictogramDescription": "DummyString"
+                      }
+                    ],
+                    "CustomizedStatements": [
+                      {
+                        "Code": "DummyString",
+                        "Description": "DummyString",
+                        "Category": "DummyString"
+                      },
+                      {
+                        "Code": "DummyString",
+                        "Description": "DummyString",
+                        "Category": "DummyString"
+                      }
+                    ],
+                    "CNCode": "DummyString"
+                  },
+                  "IMO_IMDG": {
+                    "IMDGClass": "Item1",
+                    "IMDGClassDescription": "DummyString",
+                    "SegregationGroup": "SGG1",
+                    "SegregationGroupDescription": "DummyString"
+                  },
+                  "EU_REACH": {
+                    "ECNumber": "DummyString"
+                  }
+                },
+                "PhysicalChemicalPropertiesInfo": {
+                  "ChemicalName": "DummyString",
+                  "ChemicalFamily": "DummyString",
+                  "ChemicalFormula": "DummyString",
+                  "PhysicalState": "DummyString",
+                  "Odor": "DummyString",
+                  "Appearance": "DummyString",
+                  "VaporPressure": 1.0,
+                  "VaporPressureUnit": "DummyString",
+                  "VaporPressureAtTemperature": 1.0,
+                  "VaporPressureAtTemperatureUnit": "DummyString",
+                  "VaporDensity": 1.0,
+                  "VaporDensityUnit": "DummyString",
+                  "VaporDensityAtTemperature": 1.0,
+                  "VaporDensityAtTemperatureUnit": "DummyString",
+                  "MeltingPointTemperature": 1.0,
+                  "MeltingPointTemperatureUnit": "DummyString",
+                  "BoilingPointTemperature": 1.0,
+                  "BoilingPointTemperatureUnit": "DummyString",
+                  "FreezingPointTemperature": 1.0,
+                  "FreezingPointTemperatureUnit": "DummyString",
+                  "CriticalTemperature": 1.0,
+                  "CriticalTemperatureUnit": "DummyString",
+                  "pH": "DummyString",
+                  "SpecificGravity": "DummyString",
+                  "SolubilityInWater": "DummyString",
+                  "Viscosity": 1.0,
+                  "ViscosityUnit": "DummyString",
+                  "ViscosityAtTemperature": 1.0,
+                  "ViscosityAtTemperatureUnit": "DummyString",
+                  "MolarMass": 1.0,
+                  "MolarMassUnit": "DummyString",
+                  "PolymerInfo": {
+                    "IsPolymer": true,
+                    "SelfAcceleratingPolymerizationTemperature": 1.0,
+                    "SelfAcceleratingPolymerizationTemperatureUnit": "DummyString",
+                    "SelfAcceleratingDecompositionTemperature": 1.0,
+                    "SelfAcceleratingDecompositionTemperatureUnit": "DummyString"
+                  }
+                },
+                "FireAndExplosionDataInfo": {
+                  "FlashPointTestMethod": "ClosedCup",
+                  "FlashPointTestMethodDescription": "DummyString",
+                  "FlashPointTemperature": 1.0,
+                  "FlashPointTemperatureUnit": "DummyString",
+                  "AutoIgnitionTemperature": 1.0,
+                  "AutoIgnitionTemperatureUnit": "DummyString",
+                  "UELPercentage": 1.0,
+                  "LELPercentage": 1.0
+                },
+                "EmergencyContactInfo": {
+                  "ContactInfo": {
+                    "ContactInfo": {
+                      "Name": "DummyString",
+                      "ExternalID": "DummyString",
+                      "Phone": "DummyString",
+                      "Email": "DummyString"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "PreviousProduct2": {
+            "ProductInfo": {
+              "MainName": "DummyString",
+              "TradeName": "DummyString",
+              "ExternalID": "DummyString",
+              "ProductDetails": {
+                "Manufacturer": "DummyString",
+                "SDSURL": "DummyString",
+                "CommonProductGroupDescription": "DummyString",
+                "PureProductDetails": {
+                  "PIN": "DummyString",
+                  "CASNumber": "DummyString",
+                  "AlternativeNames": [
+                    {
+                      "AlternativeName": "DummyString"
+                    },
+                    {
+                      "AlternativeName": "DummyString"
+                    }
+                  ]
+                },
+                "MixtureProductDetails": [
+                  {
+                    "TradeName": "DummyString"
+                  },
+                  {
+                    "TradeName": "DummyString"
+                  }
+                ],
+                "HazardousProductSafetyClassifications": {
+                  "UN_DangerousGoodsList": {
+                    "PSN": "DummyString",
+                    "UNNumber": "DummyString",
+                    "ADRClass": "Item1",
+                    "ADRClassDescription": "DummyString",
+                    "UNPackingGroup": "I",
+                    "UNPackingGroupDescription": "DummyString",
+                    "KemlerCode": "DummyString"
+                  },
+                  "UN_GHS": {
+                    "HazardStatements": [
+                      {
+                        "HazardStatementCode": "H200",
+                        "HazardStatementCodeDescription": "DummyString",
+                        "HazardStatementDescription": "DummyString"
+                      },
+                      {
+                        "HazardStatementCode": "H200",
+                        "HazardStatementCodeDescription": "DummyString",
+                        "HazardStatementDescription": "DummyString"
+                      }
+                    ],
+                    "PrecautionaryStatements": [
+                      {
+                        "PrecautionaryStatementCode": "P101",
+                        "PrecautionaryStatementCodeDescription": "DummyString",
+                        "PrecautionaryStatementDescription": "DummyString"
+                      },
+                      {
+                        "PrecautionaryStatementCode": "P101",
+                        "PrecautionaryStatementCodeDescription": "DummyString",
+                        "PrecautionaryStatementDescription": "DummyString"
+                      }
+                    ],
+                    "HazardPictograms": [
+                      {
+                        "HazardPictogram": "GHS01",
+                        "HazardPictogramDescription": "DummyString"
+                      },
+                      {
+                        "HazardPictogram": "GHS01",
+                        "HazardPictogramDescription": "DummyString"
+                      }
+                    ],
+                    "CustomizedStatements": [
+                      {
+                        "Code": "DummyString",
+                        "Description": "DummyString",
+                        "Category": "DummyString"
+                      },
+                      {
+                        "Code": "DummyString",
+                        "Description": "DummyString",
+                        "Category": "DummyString"
+                      }
+                    ],
+                    "CNCode": "DummyString"
+                  },
+                  "IMO_IMDG": {
+                    "IMDGClass": "Item1",
+                    "IMDGClassDescription": "DummyString",
+                    "SegregationGroup": "SGG1",
+                    "SegregationGroupDescription": "DummyString"
+                  },
+                  "EU_REACH": {
+                    "ECNumber": "DummyString"
+                  }
+                },
+                "PhysicalChemicalPropertiesInfo": {
+                  "ChemicalName": "DummyString",
+                  "ChemicalFamily": "DummyString",
+                  "ChemicalFormula": "DummyString",
+                  "PhysicalState": "DummyString",
+                  "Odor": "DummyString",
+                  "Appearance": "DummyString",
+                  "VaporPressure": 1.0,
+                  "VaporPressureUnit": "DummyString",
+                  "VaporPressureAtTemperature": 1.0,
+                  "VaporPressureAtTemperatureUnit": "DummyString",
+                  "VaporDensity": 1.0,
+                  "VaporDensityUnit": "DummyString",
+                  "VaporDensityAtTemperature": 1.0,
+                  "VaporDensityAtTemperatureUnit": "DummyString",
+                  "MeltingPointTemperature": 1.0,
+                  "MeltingPointTemperatureUnit": "DummyString",
+                  "BoilingPointTemperature": 1.0,
+                  "BoilingPointTemperatureUnit": "DummyString",
+                  "FreezingPointTemperature": 1.0,
+                  "FreezingPointTemperatureUnit": "DummyString",
+                  "CriticalTemperature": 1.0,
+                  "CriticalTemperatureUnit": "DummyString",
+                  "pH": "DummyString",
+                  "SpecificGravity": "DummyString",
+                  "SolubilityInWater": "DummyString",
+                  "Viscosity": 1.0,
+                  "ViscosityUnit": "DummyString",
+                  "ViscosityAtTemperature": 1.0,
+                  "ViscosityAtTemperatureUnit": "DummyString",
+                  "MolarMass": 1.0,
+                  "MolarMassUnit": "DummyString",
+                  "PolymerInfo": {
+                    "IsPolymer": true,
+                    "SelfAcceleratingPolymerizationTemperature": 1.0,
+                    "SelfAcceleratingPolymerizationTemperatureUnit": "DummyString",
+                    "SelfAcceleratingDecompositionTemperature": 1.0,
+                    "SelfAcceleratingDecompositionTemperatureUnit": "DummyString"
+                  }
+                },
+                "FireAndExplosionDataInfo": {
+                  "FlashPointTestMethod": "ClosedCup",
+                  "FlashPointTestMethodDescription": "DummyString",
+                  "FlashPointTemperature": 1.0,
+                  "FlashPointTemperatureUnit": "DummyString",
+                  "AutoIgnitionTemperature": 1.0,
+                  "AutoIgnitionTemperatureUnit": "DummyString",
+                  "UELPercentage": 1.0,
+                  "LELPercentage": 1.0
+                },
+                "EmergencyContactInfo": {
+                  "ContactInfo": {
+                    "ContactInfo": {
+                      "Name": "DummyString",
+                      "ExternalID": "DummyString",
+                      "Phone": "DummyString",
+                      "Email": "DummyString"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "PreviousProduct3": {
+            "ProductInfo": {
+              "MainName": "DummyString",
+              "TradeName": "DummyString",
+              "ExternalID": "DummyString",
+              "ProductDetails": {
+                "Manufacturer": "DummyString",
+                "SDSURL": "DummyString",
+                "CommonProductGroupDescription": "DummyString",
+                "PureProductDetails": {
+                  "PIN": "DummyString",
+                  "CASNumber": "DummyString",
+                  "AlternativeNames": [
+                    {
+                      "AlternativeName": "DummyString"
+                    },
+                    {
+                      "AlternativeName": "DummyString"
+                    }
+                  ]
+                },
+                "MixtureProductDetails": [
+                  {
+                    "TradeName": "DummyString"
+                  },
+                  {
+                    "TradeName": "DummyString"
+                  }
+                ],
+                "HazardousProductSafetyClassifications": {
+                  "UN_DangerousGoodsList": {
+                    "PSN": "DummyString",
+                    "UNNumber": "DummyString",
+                    "ADRClass": "Item1",
+                    "ADRClassDescription": "DummyString",
+                    "UNPackingGroup": "I",
+                    "UNPackingGroupDescription": "DummyString",
+                    "KemlerCode": "DummyString"
+                  },
+                  "UN_GHS": {
+                    "HazardStatements": [
+                      {
+                        "HazardStatementCode": "H200",
+                        "HazardStatementCodeDescription": "DummyString",
+                        "HazardStatementDescription": "DummyString"
+                      },
+                      {
+                        "HazardStatementCode": "H200",
+                        "HazardStatementCodeDescription": "DummyString",
+                        "HazardStatementDescription": "DummyString"
+                      }
+                    ],
+                    "PrecautionaryStatements": [
+                      {
+                        "PrecautionaryStatementCode": "P101",
+                        "PrecautionaryStatementCodeDescription": "DummyString",
+                        "PrecautionaryStatementDescription": "DummyString"
+                      },
+                      {
+                        "PrecautionaryStatementCode": "P101",
+                        "PrecautionaryStatementCodeDescription": "DummyString",
+                        "PrecautionaryStatementDescription": "DummyString"
+                      }
+                    ],
+                    "HazardPictograms": [
+                      {
+                        "HazardPictogram": "GHS01",
+                        "HazardPictogramDescription": "DummyString"
+                      },
+                      {
+                        "HazardPictogram": "GHS01",
+                        "HazardPictogramDescription": "DummyString"
+                      }
+                    ],
+                    "CustomizedStatements": [
+                      {
+                        "Code": "DummyString",
+                        "Description": "DummyString",
+                        "Category": "DummyString"
+                      },
+                      {
+                        "Code": "DummyString",
+                        "Description": "DummyString",
+                        "Category": "DummyString"
+                      }
+                    ],
+                    "CNCode": "DummyString"
+                  },
+                  "IMO_IMDG": {
+                    "IMDGClass": "Item1",
+                    "IMDGClassDescription": "DummyString",
+                    "SegregationGroup": "SGG1",
+                    "SegregationGroupDescription": "DummyString"
+                  },
+                  "EU_REACH": {
+                    "ECNumber": "DummyString"
+                  }
+                },
+                "PhysicalChemicalPropertiesInfo": {
+                  "ChemicalName": "DummyString",
+                  "ChemicalFamily": "DummyString",
+                  "ChemicalFormula": "DummyString",
+                  "PhysicalState": "DummyString",
+                  "Odor": "DummyString",
+                  "Appearance": "DummyString",
+                  "VaporPressure": 1.0,
+                  "VaporPressureUnit": "DummyString",
+                  "VaporPressureAtTemperature": 1.0,
+                  "VaporPressureAtTemperatureUnit": "DummyString",
+                  "VaporDensity": 1.0,
+                  "VaporDensityUnit": "DummyString",
+                  "VaporDensityAtTemperature": 1.0,
+                  "VaporDensityAtTemperatureUnit": "DummyString",
+                  "MeltingPointTemperature": 1.0,
+                  "MeltingPointTemperatureUnit": "DummyString",
+                  "BoilingPointTemperature": 1.0,
+                  "BoilingPointTemperatureUnit": "DummyString",
+                  "FreezingPointTemperature": 1.0,
+                  "FreezingPointTemperatureUnit": "DummyString",
+                  "CriticalTemperature": 1.0,
+                  "CriticalTemperatureUnit": "DummyString",
+                  "pH": "DummyString",
+                  "SpecificGravity": "DummyString",
+                  "SolubilityInWater": "DummyString",
+                  "Viscosity": 1.0,
+                  "ViscosityUnit": "DummyString",
+                  "ViscosityAtTemperature": 1.0,
+                  "ViscosityAtTemperatureUnit": "DummyString",
+                  "MolarMass": 1.0,
+                  "MolarMassUnit": "DummyString",
+                  "PolymerInfo": {
+                    "IsPolymer": true,
+                    "SelfAcceleratingPolymerizationTemperature": 1.0,
+                    "SelfAcceleratingPolymerizationTemperatureUnit": "DummyString",
+                    "SelfAcceleratingDecompositionTemperature": 1.0,
+                    "SelfAcceleratingDecompositionTemperatureUnit": "DummyString"
+                  }
+                },
+                "FireAndExplosionDataInfo": {
+                  "FlashPointTestMethod": "ClosedCup",
+                  "FlashPointTestMethodDescription": "DummyString",
+                  "FlashPointTemperature": 1.0,
+                  "FlashPointTemperatureUnit": "DummyString",
+                  "AutoIgnitionTemperature": 1.0,
+                  "AutoIgnitionTemperatureUnit": "DummyString",
+                  "UELPercentage": 1.0,
+                  "LELPercentage": 1.0
+                },
+                "EmergencyContactInfo": {
+                  "ContactInfo": {
+                    "ContactInfo": {
+                      "Name": "DummyString",
+                      "ExternalID": "DummyString",
+                      "Phone": "DummyString",
+                      "Email": "DummyString"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "Seals": [
+        {
+          "Seal": "DummyString"
+        },
+        {
+          "Seal": "DummyString"
+        }
+      ]
+    }
+  },
+  "ServicesRequestInfo": {
+    "Container_ServiceRequest_Storage": {
+      "Container_ServiceRequestInfo": {
+        "IsRequested": true,
+        "ClientPurchaseOrderReference": "DummyString",
+        "ClientAuthorizationReference": "DummyString",
+        "Remarks": [
+          {
+            "RemarkID": "DummyString",
+            "RemarkDate": "2023-08-29T15:16:08.0596377+02:00",
+            "RemarkAuthor": "DummyString",
+            "RemarkText": "DummyString"
+          },
+          {
+            "RemarkID": "DummyString",
+            "RemarkDate": "2023-08-29T15:16:08.0596405+02:00",
+            "RemarkAuthor": "DummyString",
+            "RemarkText": "DummyString"
+          }
+        ]
+      }
+    },
+    "TankContainer_ServiceRequest_Heating": {
+      "Container_ServiceRequestInfo": {
+        "IsRequested": true,
+        "ClientPurchaseOrderReference": "DummyString",
+        "ClientAuthorizationReference": "DummyString",
+        "Remarks": [
+          {
+            "RemarkID": "DummyString",
+            "RemarkDate": "2023-08-29T15:16:08.0597189+02:00",
+            "RemarkAuthor": "DummyString",
+            "RemarkText": "DummyString"
+          },
+          {
+            "RemarkID": "DummyString",
+            "RemarkDate": "2023-08-29T15:16:08.0597209+02:00",
+            "RemarkAuthor": "DummyString",
+            "RemarkText": "DummyString"
+          }
+        ]
+      },
+      "RequestedHeatingMethod": "Electric",
+      "RequestedHeatingMethodDescription": "DummyString",
+      "RequiredHeatingTemperatureMeasurementMethod": "Dipstick",
+      "RequiredHeatingTemperatureMeasurementMethodDescription": "DummyString",
+      "TargetTemperature": 1.0,
+      "TargetTemperatureUnit": "DummyString",
+      "MaximumPressure": 1.0,
+      "MaximumPressureUnit": "DummyString",
+      "MaximumContactTemperature": 1.0,
+      "MaximumContactTemperatureUnit": "DummyString",
+      "MinimumTemperature": 1.0,
+      "MinimumTemperatureUnit": "DummyString",
+      "MaximumTemperature": 1.0,
+      "MaximumTemperatureUnit": "DummyString"
+    },
+    "TankContainer_ServiceRequest_Cleaning": {
+      "Container_ServiceRequestInfo": {
+        "IsRequested": true,
+        "ClientPurchaseOrderReference": "DummyString",
+        "ClientAuthorizationReference": "DummyString",
+        "Remarks": [
+          {
+            "RemarkID": "DummyString",
+            "RemarkDate": "2023-08-29T15:16:08.0597396+02:00",
+            "RemarkAuthor": "DummyString",
+            "RemarkText": "DummyString"
+          },
+          {
+            "RemarkID": "DummyString",
+            "RemarkDate": "2023-08-29T15:16:08.0597407+02:00",
+            "RemarkAuthor": "DummyString",
+            "RemarkText": "DummyString"
+          }
+        ]
+      },
+      "RequestPolymerCleaning": true,
+      "SpecialInstructionID": "DummyString",
+      "AdditionalCleaningActions": [
+        {
+          "CompartmentNumber": 1,
+          "ActionID": "DummyString",
+          "Quantity": 1
+        },
+        {
+          "CompartmentNumber": 1,
+          "ActionID": "DummyString",
+          "Quantity": 1
+        }
+      ]
+    },
+    "Container_ServiceRequest_Work_Modification": {
+      "Container_ServiceRequestInfo": {
+        "IsRequested": true,
+        "ClientPurchaseOrderReference": "DummyString",
+        "ClientAuthorizationReference": "DummyString",
+        "Remarks": [
+          {
+            "RemarkID": "DummyString",
+            "RemarkDate": "2023-08-29T15:16:08.0597488+02:00",
+            "RemarkAuthor": "DummyString",
+            "RemarkText": "DummyString"
+          },
+          {
+            "RemarkID": "DummyString",
+            "RemarkDate": "2023-08-29T15:16:08.0597499+02:00",
+            "RemarkAuthor": "DummyString",
+            "RemarkText": "DummyString"
+          }
+        ]
+      },
+      "SpecialInstructionID": "DummyString"
+    },
+    "Container_ServiceRequest_Work_Repair": {
+      "IsRequested": true,
+      "LessorID": "DummyString",
+      "LessorAuthorizationReference": "DummyString",
+      "LesseeID": "DummyString",
+      "LesseeAuthorizationReference": "DummyString",
+      "SpecialInstructionID": "DummyString"
+    },
+    "TankContainer_ServiceRequest_Inspection": {
+      "Container_ServiceRequestInfo": {
+        "IsRequested": true,
+        "ClientPurchaseOrderReference": "DummyString",
+        "ClientAuthorizationReference": "DummyString",
+        "Remarks": [
+          {
+            "RemarkID": "DummyString",
+            "RemarkDate": "2023-08-29T15:16:08.0597963+02:00",
+            "RemarkAuthor": "DummyString",
+            "RemarkText": "DummyString"
+          },
+          {
+            "RemarkID": "DummyString",
+            "RemarkDate": "2023-08-29T15:16:08.0597979+02:00",
+            "RemarkAuthor": "DummyString",
+            "RemarkText": "DummyString"
+          }
+        ]
+      },
+      "InspectionScope": "Empty",
+      "InspectionScopeDescription": "DummyString"
+    }
+  },
+  "DepartureInfo": {
+    "ETD": "2023-08-29T15:16:08.0598033+02:00",
+    "ReleaseReference": "DummyString",
+    "ContainerDestination": "DummyString",
+    "Container_HaulierInfo": {
+      "HaulierName": "DummyString",
+      "TruckDriverName": "DummyString",
+      "TruckLicensePlate": "DummyString",
+      "ChassisLicensePlate": "DummyString"
+    }
+  },
+  "Remarks": [
+    {
+      "RemarkID": "DummyString",
+      "RemarkDate": "2023-08-29T15:16:08.059807+02:00",
+      "RemarkAuthor": "DummyString",
+      "RemarkText": "DummyString"
+    },
+    {
+      "RemarkID": "DummyString",
+      "RemarkDate": "2023-08-29T15:16:08.0598082+02:00",
+      "RemarkAuthor": "DummyString",
+      "RemarkText": "DummyString"
+    }
+  ]
+}
