@@ -3,10 +3,6 @@ Open Tank Format (OTF) is an open file format for data exchange related to the t
 
 Please check [www.opentankformat.org](http://www.opentankformat.org "www.opentankformat.org") for more information.
 
-#Table of Contents
-
-[TOC]
-
 #License
 OTF is owned and copyrighted by Lucrasoft Solutions B.V. (known for their DEPOT Software and SYNDA brands). This commercial dependency ensures that OTF will continuously be updated and expanded according to market demands. 
 
