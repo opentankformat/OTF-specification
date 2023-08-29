@@ -9921,6 +9921,8 @@ namespace otf21 {
         
         private RemarksRemark[] remarksField;
         
+        private AttachmentsAttachment[] attachmentsField;
+        
         /// <remarks/>
         public MessageHeaderInfo MessageHeaderInfo {
             get {
@@ -9999,6 +10001,17 @@ namespace otf21 {
             }
             set {
                 this.remarksField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Attachment", IsNullable=false)]
+        public AttachmentsAttachment[] Attachments {
+            get {
+                return this.attachmentsField;
+            }
+            set {
+                this.attachmentsField = value;
             }
         }
     }

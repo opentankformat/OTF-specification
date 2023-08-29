@@ -14,7 +14,7 @@
         "Email": "DummyString"
       }
     },
-    "SentDate": "2023-08-29T15:16:08.9602654+02:00",
+    "SentDate": "2023-08-29T16:57:09.0316649+02:00",
     "MessageType": "New"
   },
   "OrderInfo": {
@@ -63,7 +63,7 @@
       "Manufacturer": "DummyString",
       "ManufacturerCountry": "DummyString",
       "ManufacturerSerialNumber": "DummyString",
-      "BuildingYearMonth": "2023-08-29T15:16:08.9602779+02:00",
+      "BuildingYearMonth": "2023-08-29T16:57:09.0317098+02:00",
       "ISO6346SizeTypeCode": "Empty",
       "ISO6346SizeTypeCodeDescription": "DummyString",
       "DimensionsXMillimeter": 1,
@@ -132,28 +132,28 @@
       "Material": "DummyString"
     },
     "InspectionDates": {
-      "LastInspectionDate": "2023-08-29T15:16:08.9602966+02:00",
+      "LastInspectionDate": "2023-08-29T16:57:09.0317282+02:00",
       "LastInspectionScope": "Empty",
       "LastInspectionScopeDescription": "DummyString",
-      "NextInspectionDate": "2023-08-29T15:16:08.9602975+02:00",
-      "CSCValidityDate": "2023-08-29T15:16:08.9602978+02:00",
-      "ACEP": "2023-08-29T15:16:08.9602981+02:00"
+      "NextInspectionDate": "2023-08-29T16:57:09.031729+02:00",
+      "CSCValidityDate": "2023-08-29T16:57:09.0317294+02:00",
+      "ACEP": "2023-08-29T16:57:09.0317298+02:00"
     }
   },
   "Container_StatusUpdate_Storage_Available": {
     "ClientPurchaseOrderReference": "DummyString",
-    "ContainerAvailableDate": "2023-08-29T15:16:08.9602995+02:00"
+    "ContainerAvailableDate": "2023-08-29T16:57:09.0317313+02:00"
   },
   "Remarks": [
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-08-29T15:16:08.960301+02:00",
+      "RemarkDate": "2023-08-29T16:57:09.0317329+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     },
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-08-29T15:16:08.9603021+02:00",
+      "RemarkDate": "2023-08-29T16:57:09.0317346+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     }

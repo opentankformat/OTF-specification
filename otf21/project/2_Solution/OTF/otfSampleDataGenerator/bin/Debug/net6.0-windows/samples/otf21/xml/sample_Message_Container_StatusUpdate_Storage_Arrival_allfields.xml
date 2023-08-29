@@ -15,7 +15,7 @@
         <Email>DummyString</Email>
       </ContactInfo>
     </ContactInfo>
-    <SentDate>2023-08-29T15:16:08.656905+02:00</SentDate>
+    <SentDate>2023-08-29T16:57:08.6954981+02:00</SentDate>
     <MessageType>New</MessageType>
   </MessageHeaderInfo>
   <OrderInfo>
@@ -36,7 +36,7 @@
   <Container_StatusUpdate_Storage_Arrival>
     <ClientPurchaseOrderReference>DummyString</ClientPurchaseOrderReference>
     <ClientDeliveryReference>DummyString</ClientDeliveryReference>
-    <ContainerDeliveryDate>2023-08-29T15:16:08.6569156+02:00</ContainerDeliveryDate>
+    <ContainerDeliveryDate>2023-08-29T16:57:08.6955231+02:00</ContainerDeliveryDate>
     <Container_HaulierInfo>
       <HaulierName>DummyString</HaulierName>
       <TruckDriverName>DummyString</TruckDriverName>
@@ -47,13 +47,13 @@
   <Remarks>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-08-29T15:16:08.6569202+02:00</RemarkDate>
+      <RemarkDate>2023-08-29T16:57:08.6955295+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
     </Remark>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-08-29T15:16:08.6569221+02:00</RemarkDate>
+      <RemarkDate>2023-08-29T16:57:08.6955324+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
     </Remark>

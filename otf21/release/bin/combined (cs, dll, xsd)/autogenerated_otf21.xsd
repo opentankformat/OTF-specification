@@ -7749,6 +7749,7 @@
           </xs:complexType>
         </xs:element>
         <xs:element minOccurs="0" maxOccurs="1" name="Remarks" type="ArrayOfRemarksRemark" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Attachments" type="ArrayOfAttachmentsAttachment" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

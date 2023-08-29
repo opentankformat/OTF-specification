@@ -334,6 +334,7 @@
           </xs:complexType>
         </xs:element>
         <xs:element minOccurs="0" maxOccurs="1" name="Remarks" type="ArrayOfRemarksRemark" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Attachments" type="ArrayOfAttachmentsAttachment" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -1898,6 +1899,26 @@
             <xs:element minOccurs="1" maxOccurs="1" name="CompartmentNumber" type="xs:int" />
             <xs:element minOccurs="0" maxOccurs="1" name="ActionID" type="xs:string" />
             <xs:element minOccurs="0" maxOccurs="1" default="1" name="Quantity" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfAttachmentsAttachment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Attachment">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="URL" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="Tags">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element minOccurs="0" maxOccurs="1" name="Tag" type="xs:string" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
           </xs:sequence>
         </xs:complexType>
       </xs:element>

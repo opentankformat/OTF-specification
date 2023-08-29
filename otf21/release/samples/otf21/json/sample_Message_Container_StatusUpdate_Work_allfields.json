@@ -14,7 +14,7 @@
         "Email": "DummyString"
       }
     },
-    "SentDate": "2023-08-29T15:16:10.3656344+02:00",
+    "SentDate": "2023-08-29T16:57:10.4820168+02:00",
     "MessageType": "New"
   },
   "OrderInfo": {
@@ -37,72 +37,72 @@
   "Container_Work_EstimateStatusInfo": {
     "Version": "DummyString",
     "Container_ServiceProgress_DateInfo": {
-      "Planned": "2023-08-29T15:16:10.3656443+02:00",
+      "Planned": "2023-08-29T16:57:10.4820244+02:00",
       "PlannedBy": "DummyString",
-      "PlannedToTakePlaceOn": "2023-08-29T15:16:10.3656451+02:00",
-      "Started": "2023-08-29T15:16:10.3656456+02:00",
-      "Finished": "2023-08-29T15:16:10.3656459+02:00",
-      "Cancelled": "2023-08-29T15:16:10.3656463+02:00"
+      "PlannedToTakePlaceOn": "2023-08-29T16:57:10.4820253+02:00",
+      "Started": "2023-08-29T16:57:10.4820257+02:00",
+      "Finished": "2023-08-29T16:57:10.4820261+02:00",
+      "Cancelled": "2023-08-29T16:57:10.4820265+02:00"
     },
     "ContainerWorkAuthorizationInfo": {
       "ContainerWorkLessorAuthorizationInfo": {
         "LessorID": "DummyString",
         "Container_ServiceProgress_AuthorizationInfo": {
-          "Authorized": "2023-08-29T15:16:10.3656479+02:00",
+          "Authorized": "2023-08-29T16:57:10.482028+02:00",
           "AuthorizedBy": "DummyString",
           "AuthorizationReference": "DummyString",
           "AuthorizationAmount": {
             "LocalizationInfo": {
               "CurrencyISO": "DummyString",
               "ExchangeRate": 1.0,
-              "ExchangeRateDate": "2023-08-29T15:16:10.36565+02:00",
+              "ExchangeRateDate": "2023-08-29T16:57:10.4820306+02:00",
               "RoundingPerLine": true
             },
             "AuthorizationAmount": 1.0
           }
         },
-        "AuthorizationAcceptedBySupplier": "2023-08-29T15:16:10.3656511+02:00"
+        "AuthorizationAcceptedBySupplier": "2023-08-29T16:57:10.4820315+02:00"
       },
       "ContainerWorkLesseeAuthorizationInfo": {
         "LesseeID": "DummyString",
         "Container_ServiceProgress_AuthorizationInfo": {
-          "Authorized": "2023-08-29T15:16:10.3656523+02:00",
+          "Authorized": "2023-08-29T16:57:10.4820327+02:00",
           "AuthorizedBy": "DummyString",
           "AuthorizationReference": "DummyString",
           "AuthorizationAmount": {
             "LocalizationInfo": {
               "CurrencyISO": "DummyString",
               "ExchangeRate": 1.0,
-              "ExchangeRateDate": "2023-08-29T15:16:10.3656536+02:00",
+              "ExchangeRateDate": "2023-08-29T16:57:10.482034+02:00",
               "RoundingPerLine": true
             },
             "AuthorizationAmount": 1.0
           }
         },
-        "AuthorizationAcceptedBySupplier": "2023-08-29T15:16:10.3656543+02:00"
+        "AuthorizationAcceptedBySupplier": "2023-08-29T16:57:10.4820347+02:00"
       }
     }
   },
   "Container_Work_WorkStatusInfo": {
     "Container_ServiceProgress_DateInfo": {
-      "Planned": "2023-08-29T15:16:10.3656587+02:00",
+      "Planned": "2023-08-29T16:57:10.4820393+02:00",
       "PlannedBy": "DummyString",
-      "PlannedToTakePlaceOn": "2023-08-29T15:16:10.3656593+02:00",
-      "Started": "2023-08-29T15:16:10.3656597+02:00",
-      "Finished": "2023-08-29T15:16:10.3656601+02:00",
-      "Cancelled": "2023-08-29T15:16:10.3656604+02:00"
+      "PlannedToTakePlaceOn": "2023-08-29T16:57:10.4820399+02:00",
+      "Started": "2023-08-29T16:57:10.4820402+02:00",
+      "Finished": "2023-08-29T16:57:10.4820406+02:00",
+      "Cancelled": "2023-08-29T16:57:10.4820409+02:00"
     }
   },
   "Remarks": [
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-08-29T15:16:10.3656631+02:00",
+      "RemarkDate": "2023-08-29T16:57:10.4820434+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     },
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-08-29T15:16:10.3656645+02:00",
+      "RemarkDate": "2023-08-29T16:57:10.4820448+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     }

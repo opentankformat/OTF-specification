@@ -14,7 +14,7 @@
         "Email": "DummyString"
       }
     },
-    "SentDate": "2023-08-29T15:16:09.1710914+02:00",
+    "SentDate": "2023-08-29T16:57:09.2817391+02:00",
     "MessageType": "New"
   },
   "OrderInfo": {
@@ -63,7 +63,7 @@
       "Manufacturer": "DummyString",
       "ManufacturerCountry": "DummyString",
       "ManufacturerSerialNumber": "DummyString",
-      "BuildingYearMonth": "2023-08-29T15:16:09.1711154+02:00",
+      "BuildingYearMonth": "2023-08-29T16:57:09.2817539+02:00",
       "ISO6346SizeTypeCode": "Empty",
       "ISO6346SizeTypeCodeDescription": "DummyString",
       "DimensionsXMillimeter": 1,
@@ -132,18 +132,18 @@
       "Material": "DummyString"
     },
     "InspectionDates": {
-      "LastInspectionDate": "2023-08-29T15:16:09.1711338+02:00",
+      "LastInspectionDate": "2023-08-29T16:57:09.2817794+02:00",
       "LastInspectionScope": "Empty",
       "LastInspectionScopeDescription": "DummyString",
-      "NextInspectionDate": "2023-08-29T15:16:09.1711346+02:00",
-      "CSCValidityDate": "2023-08-29T15:16:09.171135+02:00",
-      "ACEP": "2023-08-29T15:16:09.1711353+02:00"
+      "NextInspectionDate": "2023-08-29T16:57:09.2817802+02:00",
+      "CSCValidityDate": "2023-08-29T16:57:09.2817806+02:00",
+      "ACEP": "2023-08-29T16:57:09.281781+02:00"
     }
   },
   "Container_StatusUpdate_Storage_Departure": {
     "ClientPurchaseOrderReference": "DummyString",
     "ClientReleaseReference": "DummyString",
-    "ContainerReleaseDate": "2023-08-29T15:16:09.1711367+02:00",
+    "ContainerReleaseDate": "2023-08-29T16:57:09.2817826+02:00",
     "Container_HaulierInfo": {
       "HaulierName": "DummyString",
       "TruckDriverName": "DummyString",
@@ -154,13 +154,13 @@
   "Remarks": [
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-08-29T15:16:09.1711394+02:00",
+      "RemarkDate": "2023-08-29T16:57:09.2817861+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     },
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-08-29T15:16:09.1711405+02:00",
+      "RemarkDate": "2023-08-29T16:57:09.2817873+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     }
