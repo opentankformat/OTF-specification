@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Message_Container_PreNotification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MessageHeaderInfo>
-    <MessageID>DummyString</MessageID>
-    <ConversationID>DummyString</ConversationID>
     <OTFVersion>OTF21</OTFVersion>
     <OTFMessage>Message_Container_PreNotification</OTFMessage>
+    <MessageID>DummyString</MessageID>
+    <ConversationID>DummyString</ConversationID>
     <SenderID>DummyString</SenderID>
     <RecipientID>DummyString</RecipientID>
     <ContactInfo>
-      <ContactInfo>
-        <Name>DummyString</Name>
-        <ExternalID>DummyString</ExternalID>
-        <Phone>DummyString</Phone>
-        <Email>DummyString</Email>
-      </ContactInfo>
+      <Name>DummyString</Name>
+      <ExternalID>DummyString</ExternalID>
+      <Phone>DummyString</Phone>
+      <Email>DummyString</Email>
     </ContactInfo>
-    <SentDate>2023-08-29T16:57:07.8490204+02:00</SentDate>
+    <SentDate>2023-08-30T12:29:31.0863428+02:00</SentDate>
     <MessageType>New</MessageType>
   </MessageHeaderInfo>
   <ContainerPreNotificationType>Empty</ContainerPreNotificationType>
@@ -35,7 +33,7 @@
     <ContainerType>DummyString</ContainerType>
   </ContainerInfo>
   <ArrivalInfo>
-    <ETA>2023-08-29T16:57:07.8493078+02:00</ETA>
+    <ETA>2023-08-30T12:29:31.0864076+02:00</ETA>
     <RedeliveryReference>DummyString</RedeliveryReference>
     <ContainerOrigin>DummyString</ContainerOrigin>
     <Container_HaulierInfo>
@@ -54,13 +52,13 @@
         <Remarks>
           <Remark>
             <RemarkID>DummyString</RemarkID>
-            <RemarkDate>2023-08-29T16:57:07.8493216+02:00</RemarkDate>
+            <RemarkDate>2023-08-30T12:29:31.0864263+02:00</RemarkDate>
             <RemarkAuthor>DummyString</RemarkAuthor>
             <RemarkText>DummyString</RemarkText>
           </Remark>
           <Remark>
             <RemarkID>DummyString</RemarkID>
-            <RemarkDate>2023-08-29T16:57:07.8493397+02:00</RemarkDate>
+            <RemarkDate>2023-08-30T12:29:31.086442+02:00</RemarkDate>
             <RemarkAuthor>DummyString</RemarkAuthor>
             <RemarkText>DummyString</RemarkText>
           </Remark>
@@ -75,13 +73,13 @@
         <Remarks>
           <Remark>
             <RemarkID>DummyString</RemarkID>
-            <RemarkDate>2023-08-29T16:57:07.849384+02:00</RemarkDate>
+            <RemarkDate>2023-08-30T12:29:31.0864828+02:00</RemarkDate>
             <RemarkAuthor>DummyString</RemarkAuthor>
             <RemarkText>DummyString</RemarkText>
           </Remark>
           <Remark>
             <RemarkID>DummyString</RemarkID>
-            <RemarkDate>2023-08-29T16:57:07.8493855+02:00</RemarkDate>
+            <RemarkDate>2023-08-30T12:29:31.0864844+02:00</RemarkDate>
             <RemarkAuthor>DummyString</RemarkAuthor>
             <RemarkText>DummyString</RemarkText>
           </Remark>
@@ -99,7 +97,7 @@
     </Container_ServiceRequest_Work_Repair>
   </ServicesRequestInfo>
   <DepartureInfo>
-    <ETD>2023-08-29T16:57:07.8493956+02:00</ETD>
+    <ETD>2023-08-30T12:29:31.0864919+02:00</ETD>
     <ReleaseReference>DummyString</ReleaseReference>
     <ContainerDestination>DummyString</ContainerDestination>
     <Container_HaulierInfo>
@@ -112,13 +110,13 @@
   <Remarks>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-08-29T16:57:07.8493986+02:00</RemarkDate>
+      <RemarkDate>2023-08-30T12:29:31.086495+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
     </Remark>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-08-29T16:57:07.8493998+02:00</RemarkDate>
+      <RemarkDate>2023-08-30T12:29:31.0864962+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
     </Remark>

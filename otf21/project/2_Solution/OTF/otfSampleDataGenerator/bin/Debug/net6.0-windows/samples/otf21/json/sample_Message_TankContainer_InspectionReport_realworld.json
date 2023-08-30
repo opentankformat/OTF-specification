@@ -1,9 +1,9 @@
 {
   "MessageHeaderInfo": {
-    "MessageID": "56c03e52-2436-4573-927a-641662d4124d",
-    "ConversationID": null,
     "OTFVersion": "OTF21",
     "OTFMessage": "Message_TankContainer_InspectionReport",
+    "MessageID": "56c03e52-2436-4573-927a-641662d4124d",
+    "ConversationID": null,
     "SenderID": "Inspection Bureau Name",
     "RecipientID": "Lessor name or identifier",
     "ContactInfo": null,
@@ -130,7 +130,7 @@
         "TankContainer_Inspection": {
           "InspectionResult": "SatisfactoryWithRemark",
           "InspectionRemark": "Inspection remark",
-          "InspectionDate": "2023-08-29T16:57:10.7576106+02:00"
+          "InspectionDate": "2023-08-30T12:29:33.881175+02:00"
         }
       },
       "ExternalInspection": {
@@ -208,7 +208,7 @@
     "Remarks": null
   },
   "InspectionVerification": {
-    "VerificationDate": "2023-08-29T16:57:10.7582091+02:00",
+    "VerificationDate": "2023-08-30T12:29:33.8818142+02:00",
     "VerificatorName": "Guybrush Threepwood"
   },
   "Remarks": null,

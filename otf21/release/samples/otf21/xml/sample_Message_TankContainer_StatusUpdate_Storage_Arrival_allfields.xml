@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Message_TankContainer_StatusUpdate_Storage_Arrival xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MessageHeaderInfo>
+    <OTFVersion>OTF21</OTFVersion>
+    <OTFMessage>Message_TankContainer_StatusUpdate_Storage_Arrival</OTFMessage>
     <MessageID>DummyString</MessageID>
     <ConversationID>DummyString</ConversationID>
-    <OTFVersion>OTF21</OTFVersion>
-    <OTFMessage>Message_Container_PreNotification</OTFMessage>
     <SenderID>DummyString</SenderID>
     <RecipientID>DummyString</RecipientID>
     <ContactInfo>
-      <ContactInfo>
-        <Name>DummyString</Name>
-        <ExternalID>DummyString</ExternalID>
-        <Phone>DummyString</Phone>
-        <Email>DummyString</Email>
-      </ContactInfo>
+      <Name>DummyString</Name>
+      <ExternalID>DummyString</ExternalID>
+      <Phone>DummyString</Phone>
+      <Email>DummyString</Email>
     </ContactInfo>
-    <SentDate>2023-08-29T16:57:08.7890555+02:00</SentDate>
+    <SentDate>2023-08-30T12:29:31.9495637+02:00</SentDate>
     <MessageType>New</MessageType>
   </MessageHeaderInfo>
   <OrderInfo>
@@ -64,7 +62,7 @@
       <Manufacturer>DummyString</Manufacturer>
       <ManufacturerCountry>DummyString</ManufacturerCountry>
       <ManufacturerSerialNumber>DummyString</ManufacturerSerialNumber>
-      <BuildingYearMonth>2023-08-29T16:57:08.7890788+02:00</BuildingYearMonth>
+      <BuildingYearMonth>2023-08-30T12:29:31.9495784+02:00</BuildingYearMonth>
       <ISO6346SizeTypeCode>Empty</ISO6346SizeTypeCode>
       <ISO6346SizeTypeCodeDescription>DummyString</ISO6346SizeTypeCodeDescription>
       <DimensionsXMillimeter>1</DimensionsXMillimeter>
@@ -133,18 +131,18 @@
       <Material>DummyString</Material>
     </TankContainerLiningInfo>
     <InspectionDates>
-      <LastInspectionDate>2023-08-29T16:57:08.7891109+02:00</LastInspectionDate>
+      <LastInspectionDate>2023-08-30T12:29:31.9495977+02:00</LastInspectionDate>
       <LastInspectionScope>Empty</LastInspectionScope>
       <LastInspectionScopeDescription>DummyString</LastInspectionScopeDescription>
-      <NextInspectionDate>2023-08-29T16:57:08.7891125+02:00</NextInspectionDate>
-      <CSCValidityDate>2023-08-29T16:57:08.7891133+02:00</CSCValidityDate>
-      <ACEP>2023-08-29T16:57:08.789114+02:00</ACEP>
+      <NextInspectionDate>2023-08-30T12:29:31.9495986+02:00</NextInspectionDate>
+      <CSCValidityDate>2023-08-30T12:29:31.9495989+02:00</CSCValidityDate>
+      <ACEP>2023-08-30T12:29:31.9495993+02:00</ACEP>
     </InspectionDates>
   </TankContainerInfo>
   <Container_StatusUpdate_Storage_Arrival>
     <ClientPurchaseOrderReference>DummyString</ClientPurchaseOrderReference>
     <ClientDeliveryReference>DummyString</ClientDeliveryReference>
-    <ContainerDeliveryDate>2023-08-29T16:57:08.7891167+02:00</ContainerDeliveryDate>
+    <ContainerDeliveryDate>2023-08-30T12:29:31.9496008+02:00</ContainerDeliveryDate>
     <Container_HaulierInfo>
       <HaulierName>DummyString</HaulierName>
       <TruckDriverName>DummyString</TruckDriverName>
@@ -155,13 +153,13 @@
   <Remarks>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-08-29T16:57:08.7891211+02:00</RemarkDate>
+      <RemarkDate>2023-08-30T12:29:31.9496035+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
     </Remark>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-08-29T16:57:08.7891232+02:00</RemarkDate>
+      <RemarkDate>2023-08-30T12:29:31.9496046+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
     </Remark>

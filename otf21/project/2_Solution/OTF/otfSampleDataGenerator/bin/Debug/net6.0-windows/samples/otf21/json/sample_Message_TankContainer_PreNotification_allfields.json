@@ -1,20 +1,18 @@
 {
   "MessageHeaderInfo": {
+    "OTFVersion": "OTF21",
+    "OTFMessage": "Message_TankContainer_PreNotification",
     "MessageID": "DummyString",
     "ConversationID": "DummyString",
-    "OTFVersion": "OTF21",
-    "OTFMessage": "Message_Container_PreNotification",
     "SenderID": "DummyString",
     "RecipientID": "DummyString",
     "ContactInfo": {
-      "ContactInfo": {
-        "Name": "DummyString",
-        "ExternalID": "DummyString",
-        "Phone": "DummyString",
-        "Email": "DummyString"
-      }
+      "Name": "DummyString",
+      "ExternalID": "DummyString",
+      "Phone": "DummyString",
+      "Email": "DummyString"
     },
-    "SentDate": "2023-08-29T16:57:08.0338205+02:00",
+    "SentDate": "2023-08-30T12:29:31.2882393+02:00",
     "MessageType": "New"
   },
   "ContainerPreNotificationType": "Empty",
@@ -64,7 +62,7 @@
       "Manufacturer": "DummyString",
       "ManufacturerCountry": "DummyString",
       "ManufacturerSerialNumber": "DummyString",
-      "BuildingYearMonth": "2023-08-29T16:57:08.0341326+02:00",
+      "BuildingYearMonth": "2023-08-30T12:29:31.2885437+02:00",
       "ISO6346SizeTypeCode": "Empty",
       "ISO6346SizeTypeCodeDescription": "DummyString",
       "DimensionsXMillimeter": 1,
@@ -133,16 +131,16 @@
       "Material": "DummyString"
     },
     "InspectionDates": {
-      "LastInspectionDate": "2023-08-29T16:57:08.0347677+02:00",
+      "LastInspectionDate": "2023-08-30T12:29:31.2888965+02:00",
       "LastInspectionScope": "Empty",
       "LastInspectionScopeDescription": "DummyString",
-      "NextInspectionDate": "2023-08-29T16:57:08.034777+02:00",
-      "CSCValidityDate": "2023-08-29T16:57:08.0347779+02:00",
-      "ACEP": "2023-08-29T16:57:08.0347786+02:00"
+      "NextInspectionDate": "2023-08-30T12:29:31.2889036+02:00",
+      "CSCValidityDate": "2023-08-30T12:29:31.2889044+02:00",
+      "ACEP": "2023-08-30T12:29:31.2889052+02:00"
     }
   },
   "ArrivalInfo": {
-    "ETA": "2023-08-29T16:57:08.0347825+02:00",
+    "ETA": "2023-08-30T12:29:31.2889099+02:00",
     "RedeliveryReference": "DummyString",
     "ContainerOrigin": "DummyString",
     "Container_HaulierInfo": {
@@ -1477,13 +1475,13 @@
         "Remarks": [
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-08-29T16:57:08.0358748+02:00",
+            "RemarkDate": "2023-08-30T12:29:31.2901095+02:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString"
           },
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-08-29T16:57:08.0358773+02:00",
+            "RemarkDate": "2023-08-30T12:29:31.2901127+02:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString"
           }
@@ -1498,13 +1496,13 @@
         "Remarks": [
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-08-29T16:57:08.0359539+02:00",
+            "RemarkDate": "2023-08-30T12:29:31.2901939+02:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString"
           },
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-08-29T16:57:08.0359556+02:00",
+            "RemarkDate": "2023-08-30T12:29:31.2901956+02:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString"
           }
@@ -1533,13 +1531,13 @@
         "Remarks": [
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-08-29T16:57:08.0359725+02:00",
+            "RemarkDate": "2023-08-30T12:29:31.2902137+02:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString"
           },
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-08-29T16:57:08.0359736+02:00",
+            "RemarkDate": "2023-08-30T12:29:31.2902149+02:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString"
           }
@@ -1568,13 +1566,13 @@
         "Remarks": [
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-08-29T16:57:08.0359815+02:00",
+            "RemarkDate": "2023-08-30T12:29:31.2902233+02:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString"
           },
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-08-29T16:57:08.0359826+02:00",
+            "RemarkDate": "2023-08-30T12:29:31.2902244+02:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString"
           }
@@ -1598,13 +1596,13 @@
         "Remarks": [
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-08-29T16:57:08.0360233+02:00",
+            "RemarkDate": "2023-08-30T12:29:31.2902651+02:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString"
           },
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-08-29T16:57:08.0360248+02:00",
+            "RemarkDate": "2023-08-30T12:29:31.2902666+02:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString"
           }
@@ -1615,7 +1613,7 @@
     }
   },
   "DepartureInfo": {
-    "ETD": "2023-08-29T16:57:08.0360293+02:00",
+    "ETD": "2023-08-30T12:29:31.2902719+02:00",
     "ReleaseReference": "DummyString",
     "ContainerDestination": "DummyString",
     "Container_HaulierInfo": {
@@ -1628,13 +1626,13 @@
   "Remarks": [
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-08-29T16:57:08.0360323+02:00",
+      "RemarkDate": "2023-08-30T12:29:31.2902753+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     },
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-08-29T16:57:08.0360334+02:00",
+      "RemarkDate": "2023-08-30T12:29:31.2902763+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     }

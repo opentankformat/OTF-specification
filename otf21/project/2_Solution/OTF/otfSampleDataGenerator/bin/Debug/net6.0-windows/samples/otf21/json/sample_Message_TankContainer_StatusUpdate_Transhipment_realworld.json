@@ -1,18 +1,16 @@
 {
   "MessageHeaderInfo": {
-    "MessageID": "35b0fcd5-b5d2-4112-836f-d18923b7c849",
-    "ConversationID": null,
     "OTFVersion": "OTF21",
     "OTFMessage": "Message_TankContainer_StatusUpdate_Transhipment",
+    "MessageID": "35b0fcd5-b5d2-4112-836f-d18923b7c849",
+    "ConversationID": null,
     "SenderID": "Depot name or identifier",
     "RecipientID": "Lessee name or identifier",
     "ContactInfo": {
-      "ContactInfo": {
-        "Name": "Arthur Fonzarelli",
-        "ExternalID": null,
-        "Phone": null,
-        "Email": null
-      }
+      "Name": "Arthur Fonzarelli",
+      "ExternalID": null,
+      "Phone": null,
+      "Email": null
     },
     "SentDate": "2000-01-01T21:14:00+01:00",
     "MessageType": "New"

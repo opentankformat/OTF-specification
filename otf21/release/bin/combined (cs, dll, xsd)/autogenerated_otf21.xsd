@@ -22,16 +22,10 @@
         <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
           <xs:complexType>
             <xs:sequence>
-              <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
+              <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -79,22 +73,6 @@
   </xs:simpleType>
   <xs:element name="MessageHeaderInfoOTFVersion" type="MessageHeaderInfoOTFVersion" />
   <xs:element name="MessageHeaderInfoOTFMessage" type="MessageHeaderInfoOTFMessage" />
-  <xs:element name="MessageHeaderInfoContactInfo" nillable="true">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-              <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-              <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-              <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
   <xs:element name="MessageHeaderInfoMessageType" type="MessageHeaderInfoMessageType" />
   <xs:element name="OrderStatusInfo">
     <xs:complexType>
@@ -234,16 +212,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -535,16 +507,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -645,16 +611,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -737,16 +697,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -829,16 +783,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -1213,16 +1161,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -1434,16 +1376,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -2641,16 +2577,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -7430,16 +7360,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -7944,16 +7868,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -8165,16 +8083,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -8386,16 +8298,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -8607,16 +8513,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -8814,16 +8714,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -8994,16 +8888,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -9163,16 +9051,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -9343,16 +9225,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -9550,16 +9426,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -9842,16 +9712,10 @@
               <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>

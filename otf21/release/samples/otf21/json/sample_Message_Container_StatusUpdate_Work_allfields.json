@@ -1,20 +1,18 @@
 {
   "MessageHeaderInfo": {
+    "OTFVersion": "OTF21",
+    "OTFMessage": "Message_Container_StatusUpdate_Work",
     "MessageID": "DummyString",
     "ConversationID": "DummyString",
-    "OTFVersion": "OTF21",
-    "OTFMessage": "Message_Container_PreNotification",
     "SenderID": "DummyString",
     "RecipientID": "DummyString",
     "ContactInfo": {
-      "ContactInfo": {
-        "Name": "DummyString",
-        "ExternalID": "DummyString",
-        "Phone": "DummyString",
-        "Email": "DummyString"
-      }
+      "Name": "DummyString",
+      "ExternalID": "DummyString",
+      "Phone": "DummyString",
+      "Email": "DummyString"
     },
-    "SentDate": "2023-08-29T16:57:10.4820168+02:00",
+    "SentDate": "2023-08-30T12:29:33.6137314+02:00",
     "MessageType": "New"
   },
   "OrderInfo": {
@@ -37,72 +35,72 @@
   "Container_Work_EstimateStatusInfo": {
     "Version": "DummyString",
     "Container_ServiceProgress_DateInfo": {
-      "Planned": "2023-08-29T16:57:10.4820244+02:00",
+      "Planned": "2023-08-30T12:29:33.6137404+02:00",
       "PlannedBy": "DummyString",
-      "PlannedToTakePlaceOn": "2023-08-29T16:57:10.4820253+02:00",
-      "Started": "2023-08-29T16:57:10.4820257+02:00",
-      "Finished": "2023-08-29T16:57:10.4820261+02:00",
-      "Cancelled": "2023-08-29T16:57:10.4820265+02:00"
+      "PlannedToTakePlaceOn": "2023-08-30T12:29:33.6137414+02:00",
+      "Started": "2023-08-30T12:29:33.6137419+02:00",
+      "Finished": "2023-08-30T12:29:33.6137423+02:00",
+      "Cancelled": "2023-08-30T12:29:33.6137426+02:00"
     },
     "ContainerWorkAuthorizationInfo": {
       "ContainerWorkLessorAuthorizationInfo": {
         "LessorID": "DummyString",
         "Container_ServiceProgress_AuthorizationInfo": {
-          "Authorized": "2023-08-29T16:57:10.482028+02:00",
+          "Authorized": "2023-08-30T12:29:33.6137442+02:00",
           "AuthorizedBy": "DummyString",
           "AuthorizationReference": "DummyString",
           "AuthorizationAmount": {
             "LocalizationInfo": {
               "CurrencyISO": "DummyString",
               "ExchangeRate": 1.0,
-              "ExchangeRateDate": "2023-08-29T16:57:10.4820306+02:00",
+              "ExchangeRateDate": "2023-08-30T12:29:33.6137469+02:00",
               "RoundingPerLine": true
             },
             "AuthorizationAmount": 1.0
           }
         },
-        "AuthorizationAcceptedBySupplier": "2023-08-29T16:57:10.4820315+02:00"
+        "AuthorizationAcceptedBySupplier": "2023-08-30T12:29:33.6137478+02:00"
       },
       "ContainerWorkLesseeAuthorizationInfo": {
         "LesseeID": "DummyString",
         "Container_ServiceProgress_AuthorizationInfo": {
-          "Authorized": "2023-08-29T16:57:10.4820327+02:00",
+          "Authorized": "2023-08-30T12:29:33.6137491+02:00",
           "AuthorizedBy": "DummyString",
           "AuthorizationReference": "DummyString",
           "AuthorizationAmount": {
             "LocalizationInfo": {
               "CurrencyISO": "DummyString",
               "ExchangeRate": 1.0,
-              "ExchangeRateDate": "2023-08-29T16:57:10.482034+02:00",
+              "ExchangeRateDate": "2023-08-30T12:29:33.6137505+02:00",
               "RoundingPerLine": true
             },
             "AuthorizationAmount": 1.0
           }
         },
-        "AuthorizationAcceptedBySupplier": "2023-08-29T16:57:10.4820347+02:00"
+        "AuthorizationAcceptedBySupplier": "2023-08-30T12:29:33.6137513+02:00"
       }
     }
   },
   "Container_Work_WorkStatusInfo": {
     "Container_ServiceProgress_DateInfo": {
-      "Planned": "2023-08-29T16:57:10.4820393+02:00",
+      "Planned": "2023-08-30T12:29:33.6137561+02:00",
       "PlannedBy": "DummyString",
-      "PlannedToTakePlaceOn": "2023-08-29T16:57:10.4820399+02:00",
-      "Started": "2023-08-29T16:57:10.4820402+02:00",
-      "Finished": "2023-08-29T16:57:10.4820406+02:00",
-      "Cancelled": "2023-08-29T16:57:10.4820409+02:00"
+      "PlannedToTakePlaceOn": "2023-08-30T12:29:33.6137568+02:00",
+      "Started": "2023-08-30T12:29:33.6137572+02:00",
+      "Finished": "2023-08-30T12:29:33.6137576+02:00",
+      "Cancelled": "2023-08-30T12:29:33.613758+02:00"
     }
   },
   "Remarks": [
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-08-29T16:57:10.4820434+02:00",
+      "RemarkDate": "2023-08-30T12:29:33.6137606+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     },
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-08-29T16:57:10.4820448+02:00",
+      "RemarkDate": "2023-08-30T12:29:33.613762+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     }

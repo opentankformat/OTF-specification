@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Message_Container_Work_Estimate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MessageHeaderInfo>
-    <MessageID>3995e18b-73a7-46e0-b92b-381d2b5aa527</MessageID>
-    <ConversationID>3e818a60-5941-4615-911e-e1f540d6f314</ConversationID>
     <OTFVersion>OTF21</OTFVersion>
     <OTFMessage>Message_Container_Work_Estimate</OTFMessage>
+    <MessageID>3995e18b-73a7-46e0-b92b-381d2b5aa527</MessageID>
+    <ConversationID>3e818a60-5941-4615-911e-e1f540d6f314</ConversationID>
     <SenderID>Depot name or identifier</SenderID>
     <RecipientID>Lessor name or identifier</RecipientID>
     <SentDate>2000-01-02T16:23:00+01:00</SentDate>

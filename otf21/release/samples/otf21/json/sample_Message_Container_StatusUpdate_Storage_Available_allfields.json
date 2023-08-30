@@ -1,20 +1,18 @@
 {
   "MessageHeaderInfo": {
+    "OTFVersion": "OTF21",
+    "OTFMessage": "Message_Container_StatusUpdate_Storage_Available",
     "MessageID": "DummyString",
     "ConversationID": "DummyString",
-    "OTFVersion": "OTF21",
-    "OTFMessage": "Message_Container_PreNotification",
     "SenderID": "DummyString",
     "RecipientID": "DummyString",
     "ContactInfo": {
-      "ContactInfo": {
-        "Name": "DummyString",
-        "ExternalID": "DummyString",
-        "Phone": "DummyString",
-        "Email": "DummyString"
-      }
+      "Name": "DummyString",
+      "ExternalID": "DummyString",
+      "Phone": "DummyString",
+      "Email": "DummyString"
     },
-    "SentDate": "2023-08-29T16:57:08.9554431+02:00",
+    "SentDate": "2023-08-30T12:29:32.0922532+02:00",
     "MessageType": "New"
   },
   "OrderInfo": {
@@ -34,18 +32,18 @@
   },
   "Container_StatusUpdate_Storage_Available": {
     "ClientPurchaseOrderReference": "DummyString",
-    "ContainerAvailableDate": "2023-08-29T16:57:08.9554525+02:00"
+    "ContainerAvailableDate": "2023-08-30T12:29:32.0922628+02:00"
   },
   "Remarks": [
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-08-29T16:57:08.9554552+02:00",
+      "RemarkDate": "2023-08-30T12:29:32.0922655+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     },
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-08-29T16:57:08.9554568+02:00",
+      "RemarkDate": "2023-08-30T12:29:32.0922672+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     }

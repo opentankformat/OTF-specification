@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Message_TankContainer_StatusUpdate_Inspection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MessageHeaderInfo>
-    <MessageID>9dacc705-e77f-4c49-890d-d66bfbec04eb</MessageID>
     <OTFVersion>OTF21</OTFVersion>
     <OTFMessage>Message_TankContainer_StatusUpdate_Inspection</OTFMessage>
+    <MessageID>9dacc705-e77f-4c49-890d-d66bfbec04eb</MessageID>
     <SenderID>Depot name or identifier</SenderID>
     <RecipientID>Lessor name or identifier</RecipientID>
     <SentDate>2000-01-04T14:21:00+01:00</SentDate>

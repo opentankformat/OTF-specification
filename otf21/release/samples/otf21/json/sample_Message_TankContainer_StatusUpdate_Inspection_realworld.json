@@ -1,9 +1,9 @@
 {
   "MessageHeaderInfo": {
-    "MessageID": "9dacc705-e77f-4c49-890d-d66bfbec04eb",
-    "ConversationID": null,
     "OTFVersion": "OTF21",
     "OTFMessage": "Message_TankContainer_StatusUpdate_Inspection",
+    "MessageID": "9dacc705-e77f-4c49-890d-d66bfbec04eb",
+    "ConversationID": null,
     "SenderID": "Depot name or identifier",
     "RecipientID": "Lessor name or identifier",
     "ContactInfo": null,

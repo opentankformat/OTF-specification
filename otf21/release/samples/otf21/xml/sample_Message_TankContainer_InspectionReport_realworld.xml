@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Message_TankContainer_InspectionReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MessageHeaderInfo>
-    <MessageID>56c03e52-2436-4573-927a-641662d4124d</MessageID>
     <OTFVersion>OTF21</OTFVersion>
     <OTFMessage>Message_TankContainer_InspectionReport</OTFMessage>
+    <MessageID>56c03e52-2436-4573-927a-641662d4124d</MessageID>
     <SenderID>Inspection Bureau Name</SenderID>
     <RecipientID>Lessor name or identifier</RecipientID>
     <SentDate>2000-01-04T14:21:00+01:00</SentDate>
@@ -142,7 +142,7 @@
     </Inspections>
   </InspectionResultsInfo>
   <InspectionVerification>
-    <VerificationDate>2023-08-29T16:57:10.7582091+02:00</VerificationDate>
+    <VerificationDate>2023-08-30T12:29:33.8818142+02:00</VerificationDate>
     <VerificatorName>Guybrush Threepwood</VerificatorName>
   </InspectionVerification>
 </Message_TankContainer_InspectionReport>

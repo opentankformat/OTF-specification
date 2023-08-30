@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Message_TankContainer_StatusUpdate_Storage_Arrival xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MessageHeaderInfo>
-    <MessageID>50bbfe89-751e-4a99-aa49-65ea265c2fb2</MessageID>
     <OTFVersion>OTF21</OTFVersion>
     <OTFMessage>Message_TankContainer_StatusUpdate_Storage_Arrival</OTFMessage>
+    <MessageID>50bbfe89-751e-4a99-aa49-65ea265c2fb2</MessageID>
     <SenderID>Depot name or identifier</SenderID>
     <RecipientID>Lessee name or identifier</RecipientID>
     <ContactInfo>
-      <ContactInfo>
-        <Name>Arthur Fonzarelli</Name>
-      </ContactInfo>
+      <Name>Arthur Fonzarelli</Name>
     </ContactInfo>
     <SentDate>2000-01-01T11:04:00+01:00</SentDate>
     <MessageType>New</MessageType>

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OTF.SampleGenerator;
+﻿using OTF.SampleGenerator;
 using otf21;
 using otfSampleDataGenerator.utils;
 
@@ -17,35 +12,35 @@ namespace otfSampleDataGenerator.sampleClasses
         public static void GenerateSampleMessages(string targetFolder)
         {
 			//PreNotification Flow
-			GenerateSampleMessages<Message_Container_PreNotification>(targetFolder, typeof(Message_Container_PreNotification).Name, sample_Message_Container_PreNotification(), DummyDataGenerator.GenerateDummyData<Message_Container_PreNotification>());
-			GenerateSampleMessages<Message_TankContainer_PreNotification>(targetFolder, typeof(Message_TankContainer_PreNotification).Name, sample_Message_TankContainer_PreNotification(), DummyDataGenerator.GenerateDummyData<Message_TankContainer_PreNotification>());
-			GenerateSampleMessages<Message_Container_PreNotification_StatusUpdate>(targetFolder, typeof(Message_Container_PreNotification_StatusUpdate).Name, sample_Message_Container_PreNotification_StatusUpdate(), DummyDataGenerator.GenerateDummyData<Message_Container_PreNotification_StatusUpdate>());
-			GenerateSampleMessages<Message_TankContainer_PreNotification_StatusUpdate>(targetFolder, typeof(Message_TankContainer_PreNotification_StatusUpdate).Name, sample_Message_TankContainer_PreNotification_StatusUpdate(), DummyDataGenerator.GenerateDummyData<Message_TankContainer_PreNotification_StatusUpdate>());
+			GenerateSampleMessages<Message_Container_PreNotification>(targetFolder, typeof(Message_Container_PreNotification).Name, sample_Message_Container_PreNotification(), GenerateDummyData<Message_Container_PreNotification>());
+			GenerateSampleMessages<Message_TankContainer_PreNotification>(targetFolder, typeof(Message_TankContainer_PreNotification).Name, sample_Message_TankContainer_PreNotification(), GenerateDummyData<Message_TankContainer_PreNotification>());
+			GenerateSampleMessages<Message_Container_PreNotification_StatusUpdate>(targetFolder, typeof(Message_Container_PreNotification_StatusUpdate).Name, sample_Message_Container_PreNotification_StatusUpdate(), GenerateDummyData<Message_Container_PreNotification_StatusUpdate>());
+			GenerateSampleMessages<Message_TankContainer_PreNotification_StatusUpdate>(targetFolder, typeof(Message_TankContainer_PreNotification_StatusUpdate).Name, sample_Message_TankContainer_PreNotification_StatusUpdate(), GenerateDummyData<Message_TankContainer_PreNotification_StatusUpdate>());
 
 			//Status Updates
-			GenerateSampleMessages<Message_Container_StatusUpdate_Storage_Arrival>(targetFolder, typeof(Message_Container_StatusUpdate_Storage_Arrival).Name, sample_Message_Container_StatusUpdate_Storage_Arrival(), DummyDataGenerator.GenerateDummyData<Message_Container_StatusUpdate_Storage_Arrival>());
-			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Storage_Arrival>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Storage_Arrival).Name, sample_Message_TankContainer_StatusUpdate_Storage_Arrival(), DummyDataGenerator.GenerateDummyData<Message_TankContainer_StatusUpdate_Storage_Arrival>());
+			GenerateSampleMessages<Message_Container_StatusUpdate_Storage_Arrival>(targetFolder, typeof(Message_Container_StatusUpdate_Storage_Arrival).Name, sample_Message_Container_StatusUpdate_Storage_Arrival(), GenerateDummyData<Message_Container_StatusUpdate_Storage_Arrival>());
+			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Storage_Arrival>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Storage_Arrival).Name, sample_Message_TankContainer_StatusUpdate_Storage_Arrival(), GenerateDummyData<Message_TankContainer_StatusUpdate_Storage_Arrival>());
 
-			GenerateSampleMessages<Message_Container_StatusUpdate_Storage_Available>(targetFolder, typeof(Message_Container_StatusUpdate_Storage_Available).Name, sample_Message_Container_StatusUpdate_Storage_Available(), DummyDataGenerator.GenerateDummyData<Message_Container_StatusUpdate_Storage_Available>());
-			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Storage_Available>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Storage_Available).Name, sample_Message_TankContainer_StatusUpdate_Storage_Available(), DummyDataGenerator.GenerateDummyData<Message_TankContainer_StatusUpdate_Storage_Available>());
+			GenerateSampleMessages<Message_Container_StatusUpdate_Storage_Available>(targetFolder, typeof(Message_Container_StatusUpdate_Storage_Available).Name, sample_Message_Container_StatusUpdate_Storage_Available(), GenerateDummyData<Message_Container_StatusUpdate_Storage_Available>());
+			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Storage_Available>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Storage_Available).Name, sample_Message_TankContainer_StatusUpdate_Storage_Available(), GenerateDummyData<Message_TankContainer_StatusUpdate_Storage_Available>());
 
-			GenerateSampleMessages<Message_Container_StatusUpdate_Storage_Departure>(targetFolder, typeof(Message_Container_StatusUpdate_Storage_Departure).Name, sample_Message_Container_StatusUpdate_Storage_Departure(), DummyDataGenerator.GenerateDummyData<Message_Container_StatusUpdate_Storage_Departure>());
-			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Storage_Departure>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Storage_Departure).Name, sample_Message_TankContainer_StatusUpdate_Storage_Departure(), DummyDataGenerator.GenerateDummyData<Message_TankContainer_StatusUpdate_Storage_Departure>());
+			GenerateSampleMessages<Message_Container_StatusUpdate_Storage_Departure>(targetFolder, typeof(Message_Container_StatusUpdate_Storage_Departure).Name, sample_Message_Container_StatusUpdate_Storage_Departure(), GenerateDummyData<Message_Container_StatusUpdate_Storage_Departure>());
+			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Storage_Departure>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Storage_Departure).Name, sample_Message_TankContainer_StatusUpdate_Storage_Departure(), GenerateDummyData<Message_TankContainer_StatusUpdate_Storage_Departure>());
 
-			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Cleaning>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Cleaning).Name, sample_Message_TankContainer_StatusUpdate_Cleaning(), DummyDataGenerator.GenerateDummyData<Message_TankContainer_StatusUpdate_Cleaning>());
-			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Heating>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Heating).Name, sample_Message_TankContainer_StatusUpdate_Heating(), DummyDataGenerator.GenerateDummyData<Message_TankContainer_StatusUpdate_Heating>());
-			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Inspection>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Inspection).Name, sample_Message_TankContainer_StatusUpdate_Inspection(), DummyDataGenerator.GenerateDummyData<Message_TankContainer_StatusUpdate_Inspection>());
-			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Transhipment>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Transhipment).Name, sample_Message_TankContainer_StatusUpdate_Transhipment(), DummyDataGenerator.GenerateDummyData<Message_TankContainer_StatusUpdate_Transhipment>());
+			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Cleaning>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Cleaning).Name, sample_Message_TankContainer_StatusUpdate_Cleaning(), GenerateDummyData<Message_TankContainer_StatusUpdate_Cleaning>());
+			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Heating>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Heating).Name, sample_Message_TankContainer_StatusUpdate_Heating(), GenerateDummyData<Message_TankContainer_StatusUpdate_Heating>());
+			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Inspection>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Inspection).Name, sample_Message_TankContainer_StatusUpdate_Inspection(), GenerateDummyData<Message_TankContainer_StatusUpdate_Inspection>());
+			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Transhipment>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Transhipment).Name, sample_Message_TankContainer_StatusUpdate_Transhipment(), GenerateDummyData<Message_TankContainer_StatusUpdate_Transhipment>());
 
 			//Workflow
-			GenerateSampleMessages<Message_Container_Work_Estimate>(targetFolder, typeof(Message_Container_Work_Estimate).Name, sample_Message_Container_Work_Estimate(), DummyDataGenerator.GenerateDummyData<Message_Container_Work_Estimate>());
-			GenerateSampleMessages<Message_TankContainer_Work_Estimate>(targetFolder, typeof(Message_TankContainer_Work_Estimate).Name, sample_Message_TankContainer_Work_Estimate(), DummyDataGenerator.GenerateDummyData<Message_TankContainer_Work_Estimate>());
+			GenerateSampleMessages<Message_Container_Work_Estimate>(targetFolder, typeof(Message_Container_Work_Estimate).Name, sample_Message_Container_Work_Estimate(), GenerateDummyData<Message_Container_Work_Estimate>());
+			GenerateSampleMessages<Message_TankContainer_Work_Estimate>(targetFolder, typeof(Message_TankContainer_Work_Estimate).Name, sample_Message_TankContainer_Work_Estimate(), GenerateDummyData<Message_TankContainer_Work_Estimate>());
 
-			GenerateSampleMessages<Message_Container_StatusUpdate_Work>(targetFolder, typeof(Message_Container_StatusUpdate_Work).Name, sample_Message_Container_StatusUpdate_Work(), DummyDataGenerator.GenerateDummyData<Message_Container_StatusUpdate_Work>());
-			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Work>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Work).Name, sample_Message_TankContainer_StatusUpdate_Work(), DummyDataGenerator.GenerateDummyData<Message_TankContainer_StatusUpdate_Work>());
+			GenerateSampleMessages<Message_Container_StatusUpdate_Work>(targetFolder, typeof(Message_Container_StatusUpdate_Work).Name, sample_Message_Container_StatusUpdate_Work(), GenerateDummyData<Message_Container_StatusUpdate_Work>());
+			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Work>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Work).Name, sample_Message_TankContainer_StatusUpdate_Work(), GenerateDummyData<Message_TankContainer_StatusUpdate_Work>());
 
 			//Inspections
-			GenerateSampleMessages<Message_TankContainer_InspectionReport>(targetFolder, typeof(Message_TankContainer_InspectionReport).Name, sample_Message_TankContainer_InspectionReport(), DummyDataGenerator.GenerateDummyData<Message_TankContainer_InspectionReport>());
+			GenerateSampleMessages<Message_TankContainer_InspectionReport>(targetFolder, typeof(Message_TankContainer_InspectionReport).Name, sample_Message_TankContainer_InspectionReport(), GenerateDummyData<Message_TankContainer_InspectionReport>());
 
 		}
 		static void GenerateSampleMessages<T>(string targetFolder, string fileName, object realworldMessage, object allfieldsMessage)
@@ -57,7 +52,34 @@ namespace otfSampleDataGenerator.sampleClasses
 			DeserializeTestXml<T>(ExportSampleFileXml(allfieldsMessage, targetFolder, String.Format("sample_{0}_allfields", fileName)));
 			DeserializeTestJson<T>(ExportSampleFileJson(allfieldsMessage, targetFolder, String.Format("sample_{0}_allfields", fileName)));
 		}
+
+		static T GenerateDummyData<T>() where T : new()
+		{
+			 var o = DummyDataGenerator.GenerateDummyData<T>();
+			 return SetOTFDefaults(o);
+		}
+
+		static T SetOTFDefaults<T>(T instance)
+		{
+			var messageHeaderInfoProperty = typeof(T).GetProperty("MessageHeaderInfo");
+			var messageHeader = messageHeaderInfoProperty.GetValue(instance) as MessageHeaderInfo;
+
+			//Set OTF version
+			var otfVersionProperty = typeof(MessageHeaderInfo).GetProperty("OTFVersion");
+			otfVersionProperty.SetValue(messageHeader, OTFVersion);
+
+			//Set OTF message type
+			Enum.TryParse(typeof(T).Name, out MessageHeaderInfoOTFMessage mt);
+
+			var otfMessageProperty = typeof(MessageHeaderInfo).GetProperty("OTFMessage");
+			otfMessageProperty.SetValue(messageHeader, mt);	
+
+			return instance;
+        }
+
 		#endregion
+
+
 
 		#region "Deserialization Tests"
 		static void DeserializeTestXml<T>(string fileName)
@@ -117,12 +139,9 @@ namespace otfSampleDataGenerator.sampleClasses
 					ConversationID = SampleData.MessageIdentifier_Container_PreNotification_ConversationID,
 					SenderID = SampleData.Lessee_ID,
 					RecipientID = SampleData.Depot_ID,
-					ContactInfo = new MessageHeaderInfoContactInfo
+					ContactInfo = new ContactInfo
 					{
-						ContactInfo = new ContactInfo
-						{
-							Name = SampleData.Lessee_ContactName
-						}
+						Name = SampleData.Lessee_ContactName
 					},
 					SentDate = DateTime.Parse(SampleData.Orderflow_Container_PreNotification_ByLessee),
 					MessageType = MessageHeaderInfoMessageType.New,
@@ -210,12 +229,9 @@ namespace otfSampleDataGenerator.sampleClasses
 					ConversationID = SampleData.MessageIdentifier_Container_PreNotification_ConversationID,
 					SenderID = SampleData.Lessee_ID,
 					RecipientID = SampleData.Depot_ID,
-					ContactInfo = new MessageHeaderInfoContactInfo
+					ContactInfo = new ContactInfo
 					{
-						ContactInfo = new ContactInfo
-						{
-							Name = SampleData.Lessee_ContactName
-						}
+						Name = SampleData.Lessee_ContactName
 					},
 					SentDate = DateTime.Parse(SampleData.Orderflow_Container_PreNotification_ByLessee),
 					MessageType = MessageHeaderInfoMessageType.New,
@@ -414,12 +430,9 @@ namespace otfSampleDataGenerator.sampleClasses
 					ConversationID = SampleData.MessageIdentifier_Container_PreNotification_ConversationID,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessee_ID,
-					ContactInfo = new MessageHeaderInfoContactInfo
+					ContactInfo = new ContactInfo
 					{
-						ContactInfo = new ContactInfo
-						{
-							Name = SampleData.Lessee_ContactName
-						}
+						Name = SampleData.Lessee_ContactName
 					},
 					SentDate = DateTime.Parse(SampleData.Orderflow_Container_PreNotification_StatusUpdate_ByDepot),
 					MessageType = MessageHeaderInfoMessageType.New,
@@ -459,12 +472,9 @@ namespace otfSampleDataGenerator.sampleClasses
 					ConversationID = SampleData.MessageIdentifier_Container_PreNotification_ConversationID,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessee_ID,
-					ContactInfo = new MessageHeaderInfoContactInfo
+					ContactInfo = new ContactInfo
 					{
-						ContactInfo = new ContactInfo
-						{
-							Name = SampleData.Lessee_ContactName
-						}
+						Name = SampleData.Lessee_ContactName
 					},
 					SentDate = DateTime.Parse(SampleData.Orderflow_Container_PreNotification_StatusUpdate_ByDepot),
 					MessageType = MessageHeaderInfoMessageType.New,
@@ -507,12 +517,9 @@ namespace otfSampleDataGenerator.sampleClasses
 					OTFMessage = MessageHeaderInfoOTFMessage.Message_Container_StatusUpdate_Storage_Arrival,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessee_ID,
-					ContactInfo = new MessageHeaderInfoContactInfo
+					ContactInfo = new ContactInfo
 					{
-						ContactInfo = new ContactInfo
-						{
-							Name = SampleData.Lessee_ContactName
-						}
+						Name = SampleData.Lessee_ContactName
 					},
 					SentDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_GateIn_ByDepot),
 					MessageType = MessageHeaderInfoMessageType.New,
@@ -554,12 +561,9 @@ namespace otfSampleDataGenerator.sampleClasses
 					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_StatusUpdate_Storage_Arrival,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessee_ID,
-					ContactInfo = new MessageHeaderInfoContactInfo
+					ContactInfo = new ContactInfo
 					{
-						ContactInfo = new ContactInfo
-						{
-							Name = SampleData.Lessee_ContactName
-						}
+						Name = SampleData.Lessee_ContactName
 					},
 					SentDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_GateIn_ByDepot),
 					MessageType = MessageHeaderInfoMessageType.New,
@@ -767,12 +771,9 @@ namespace otfSampleDataGenerator.sampleClasses
 					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_StatusUpdate_Cleaning,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessee_ID,
-					ContactInfo = new MessageHeaderInfoContactInfo
+					ContactInfo = new ContactInfo
 					{
-						ContactInfo = new ContactInfo
-						{
-							Name = SampleData.Lessee_ContactName
-						}
+						Name = SampleData.Lessee_ContactName
 					},
 					SentDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Cleaning_ByDepot_Finished),
 					MessageType = MessageHeaderInfoMessageType.New,
@@ -829,12 +830,9 @@ namespace otfSampleDataGenerator.sampleClasses
 					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_StatusUpdate_Heating,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessee_ID,
-					ContactInfo = new MessageHeaderInfoContactInfo
+					ContactInfo = new ContactInfo
 					{
-						ContactInfo = new ContactInfo
-						{
-							Name = SampleData.Lessee_ContactName
-						}
+						Name = SampleData.Lessee_ContactName
 					},
 					SentDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Heating_ByDepot_Started),
 					MessageType = MessageHeaderInfoMessageType.New,
@@ -930,12 +928,9 @@ namespace otfSampleDataGenerator.sampleClasses
 					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_StatusUpdate_Transhipment,
 					SenderID = SampleData.Depot_ID,
 					RecipientID = SampleData.Lessee_ID,
-					ContactInfo = new MessageHeaderInfoContactInfo
+					ContactInfo = new ContactInfo
 					{
-						ContactInfo = new ContactInfo
-						{
-							Name = SampleData.Lessee_ContactName
-						}
+						Name = SampleData.Lessee_ContactName
 					},
 					SentDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Transhipment_ByDepot_Finished),
 					MessageType = MessageHeaderInfoMessageType.New,

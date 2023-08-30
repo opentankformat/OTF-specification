@@ -1,20 +1,18 @@
 {
   "MessageHeaderInfo": {
+    "OTFVersion": "OTF21",
+    "OTFMessage": "Message_TankContainer_StatusUpdate_Storage_Available",
     "MessageID": "DummyString",
     "ConversationID": "DummyString",
-    "OTFVersion": "OTF21",
-    "OTFMessage": "Message_Container_PreNotification",
     "SenderID": "DummyString",
     "RecipientID": "DummyString",
     "ContactInfo": {
-      "ContactInfo": {
-        "Name": "DummyString",
-        "ExternalID": "DummyString",
-        "Phone": "DummyString",
-        "Email": "DummyString"
-      }
+      "Name": "DummyString",
+      "ExternalID": "DummyString",
+      "Phone": "DummyString",
+      "Email": "DummyString"
     },
-    "SentDate": "2023-08-29T16:57:09.0316649+02:00",
+    "SentDate": "2023-08-30T12:29:32.1648636+02:00",
     "MessageType": "New"
   },
   "OrderInfo": {
@@ -63,7 +61,7 @@
       "Manufacturer": "DummyString",
       "ManufacturerCountry": "DummyString",
       "ManufacturerSerialNumber": "DummyString",
-      "BuildingYearMonth": "2023-08-29T16:57:09.0317098+02:00",
+      "BuildingYearMonth": "2023-08-30T12:29:32.164878+02:00",
       "ISO6346SizeTypeCode": "Empty",
       "ISO6346SizeTypeCodeDescription": "DummyString",
       "DimensionsXMillimeter": 1,
@@ -132,28 +130,28 @@
       "Material": "DummyString"
     },
     "InspectionDates": {
-      "LastInspectionDate": "2023-08-29T16:57:09.0317282+02:00",
+      "LastInspectionDate": "2023-08-30T12:29:32.1648966+02:00",
       "LastInspectionScope": "Empty",
       "LastInspectionScopeDescription": "DummyString",
-      "NextInspectionDate": "2023-08-29T16:57:09.031729+02:00",
-      "CSCValidityDate": "2023-08-29T16:57:09.0317294+02:00",
-      "ACEP": "2023-08-29T16:57:09.0317298+02:00"
+      "NextInspectionDate": "2023-08-30T12:29:32.1648974+02:00",
+      "CSCValidityDate": "2023-08-30T12:29:32.1648978+02:00",
+      "ACEP": "2023-08-30T12:29:32.1648981+02:00"
     }
   },
   "Container_StatusUpdate_Storage_Available": {
     "ClientPurchaseOrderReference": "DummyString",
-    "ContainerAvailableDate": "2023-08-29T16:57:09.0317313+02:00"
+    "ContainerAvailableDate": "2023-08-30T12:29:32.164901+02:00"
   },
   "Remarks": [
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-08-29T16:57:09.0317329+02:00",
+      "RemarkDate": "2023-08-30T12:29:32.1649027+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     },
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-08-29T16:57:09.0317346+02:00",
+      "RemarkDate": "2023-08-30T12:29:32.1649038+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     }

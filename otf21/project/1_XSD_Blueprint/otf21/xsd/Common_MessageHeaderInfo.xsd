@@ -21,13 +21,7 @@
 		</xs:element>
         <xs:element name="SenderID" type="xs:string" />
         <xs:element name="RecipientID" type="xs:string" />
-        <xs:element name="ContactInfo" >
-          <xs:complexType>
-            <xs:sequence>
-  				<xs:element ref="ContactInfo" minOccurs="0" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>		
+		<xs:element ref="ContactInfo" minOccurs="0" />
         <xs:element name="SentDate" type="xs:dateTime" />
 		<xs:element name="MessageType" default = "New">
 			<xs:simpleType>

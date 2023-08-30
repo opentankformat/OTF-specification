@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Message_TankContainer_StatusUpdate_Inspection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MessageHeaderInfo>
+    <OTFVersion>OTF21</OTFVersion>
+    <OTFMessage>Message_TankContainer_StatusUpdate_Inspection</OTFMessage>
     <MessageID>DummyString</MessageID>
     <ConversationID>DummyString</ConversationID>
-    <OTFVersion>OTF21</OTFVersion>
-    <OTFMessage>Message_Container_PreNotification</OTFMessage>
     <SenderID>DummyString</SenderID>
     <RecipientID>DummyString</RecipientID>
     <ContactInfo>
-      <ContactInfo>
-        <Name>DummyString</Name>
-        <ExternalID>DummyString</ExternalID>
-        <Phone>DummyString</Phone>
-        <Email>DummyString</Email>
-      </ContactInfo>
+      <Name>DummyString</Name>
+      <ExternalID>DummyString</ExternalID>
+      <Phone>DummyString</Phone>
+      <Email>DummyString</Email>
     </ContactInfo>
-    <SentDate>2023-08-29T16:57:09.773827+02:00</SentDate>
+    <SentDate>2023-08-30T12:29:32.9152597+02:00</SentDate>
     <MessageType>New</MessageType>
   </MessageHeaderInfo>
   <OrderInfo>
@@ -64,7 +62,7 @@
       <Manufacturer>DummyString</Manufacturer>
       <ManufacturerCountry>DummyString</ManufacturerCountry>
       <ManufacturerSerialNumber>DummyString</ManufacturerSerialNumber>
-      <BuildingYearMonth>2023-08-29T16:57:09.7738377+02:00</BuildingYearMonth>
+      <BuildingYearMonth>2023-08-30T12:29:32.9152731+02:00</BuildingYearMonth>
       <ISO6346SizeTypeCode>Empty</ISO6346SizeTypeCode>
       <ISO6346SizeTypeCodeDescription>DummyString</ISO6346SizeTypeCodeDescription>
       <DimensionsXMillimeter>1</DimensionsXMillimeter>
@@ -133,50 +131,50 @@
       <Material>DummyString</Material>
     </TankContainerLiningInfo>
     <InspectionDates>
-      <LastInspectionDate>2023-08-29T16:57:09.7738528+02:00</LastInspectionDate>
+      <LastInspectionDate>2023-08-30T12:29:32.9152896+02:00</LastInspectionDate>
       <LastInspectionScope>Empty</LastInspectionScope>
       <LastInspectionScopeDescription>DummyString</LastInspectionScopeDescription>
-      <NextInspectionDate>2023-08-29T16:57:09.7738536+02:00</NextInspectionDate>
-      <CSCValidityDate>2023-08-29T16:57:09.773854+02:00</CSCValidityDate>
-      <ACEP>2023-08-29T16:57:09.7738543+02:00</ACEP>
+      <NextInspectionDate>2023-08-30T12:29:32.9152904+02:00</NextInspectionDate>
+      <CSCValidityDate>2023-08-30T12:29:32.9152908+02:00</CSCValidityDate>
+      <ACEP>2023-08-30T12:29:32.9152911+02:00</ACEP>
     </InspectionDates>
   </TankContainerInfo>
   <Container_ServiceProgressInfo>
     <SupplierReference>DummyString</SupplierReference>
     <ClientPurchaseOrderReference>DummyString</ClientPurchaseOrderReference>
     <Container_ServiceProgress_AuthorizationInfo>
-      <Authorized>2023-08-29T16:57:09.7738565+02:00</Authorized>
+      <Authorized>2023-08-30T12:29:32.9152929+02:00</Authorized>
       <AuthorizedBy>DummyString</AuthorizedBy>
       <AuthorizationReference>DummyString</AuthorizationReference>
       <AuthorizationAmount>
         <LocalizationInfo>
           <CurrencyISO>DummyString</CurrencyISO>
           <ExchangeRate>1</ExchangeRate>
-          <ExchangeRateDate>2023-08-29T16:57:09.773858+02:00</ExchangeRateDate>
+          <ExchangeRateDate>2023-08-30T12:29:32.9152942+02:00</ExchangeRateDate>
           <RoundingPerLine>true</RoundingPerLine>
         </LocalizationInfo>
         <AuthorizationAmount>1</AuthorizationAmount>
       </AuthorizationAmount>
     </Container_ServiceProgress_AuthorizationInfo>
     <Container_ServiceProgress_DateInfo>
-      <Planned>2023-08-29T16:57:09.7738591+02:00</Planned>
+      <Planned>2023-08-30T12:29:32.9152953+02:00</Planned>
       <PlannedBy>DummyString</PlannedBy>
-      <PlannedToTakePlaceOn>2023-08-29T16:57:09.7738596+02:00</PlannedToTakePlaceOn>
-      <Started>2023-08-29T16:57:09.77386+02:00</Started>
-      <Finished>2023-08-29T16:57:09.7738604+02:00</Finished>
-      <Cancelled>2023-08-29T16:57:09.7738607+02:00</Cancelled>
+      <PlannedToTakePlaceOn>2023-08-30T12:29:32.9152958+02:00</PlannedToTakePlaceOn>
+      <Started>2023-08-30T12:29:32.9152962+02:00</Started>
+      <Finished>2023-08-30T12:29:32.9152965+02:00</Finished>
+      <Cancelled>2023-08-30T12:29:32.9152968+02:00</Cancelled>
     </Container_ServiceProgress_DateInfo>
   </Container_ServiceProgressInfo>
   <Remarks>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-08-29T16:57:09.7738623+02:00</RemarkDate>
+      <RemarkDate>2023-08-30T12:29:32.915305+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
     </Remark>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-08-29T16:57:09.7738633+02:00</RemarkDate>
+      <RemarkDate>2023-08-30T12:29:32.9153093+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
     </Remark>

@@ -1,9 +1,9 @@
 {
   "MessageHeaderInfo": {
-    "MessageID": "ad47590-acd7-4f7d-b8b1-9d422f00b994",
-    "ConversationID": "3e818a60-5941-4615-911e-e1f540d6f314",
     "OTFVersion": "OTF21",
     "OTFMessage": "Message_Container_StatusUpdate_Work",
+    "MessageID": "ad47590-acd7-4f7d-b8b1-9d422f00b994",
+    "ConversationID": "3e818a60-5941-4615-911e-e1f540d6f314",
     "SenderID": "Depot name or identifier",
     "RecipientID": "Lessor name or identifier",
     "ContactInfo": null,

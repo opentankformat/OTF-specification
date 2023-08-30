@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Message_TankContainer_PreNotification_StatusUpdate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MessageHeaderInfo>
+    <OTFVersion>OTF21</OTFVersion>
+    <OTFMessage>Message_TankContainer_PreNotification_StatusUpdate</OTFMessage>
     <MessageID>DummyString</MessageID>
     <ConversationID>DummyString</ConversationID>
-    <OTFVersion>OTF21</OTFVersion>
-    <OTFMessage>Message_Container_PreNotification</OTFMessage>
     <SenderID>DummyString</SenderID>
     <RecipientID>DummyString</RecipientID>
     <ContactInfo>
-      <ContactInfo>
-        <Name>DummyString</Name>
-        <ExternalID>DummyString</ExternalID>
-        <Phone>DummyString</Phone>
-        <Email>DummyString</Email>
-      </ContactInfo>
+      <Name>DummyString</Name>
+      <ExternalID>DummyString</ExternalID>
+      <Phone>DummyString</Phone>
+      <Email>DummyString</Email>
     </ContactInfo>
-    <SentDate>2023-08-29T16:57:08.5310995+02:00</SentDate>
+    <SentDate>2023-08-30T12:29:31.7413349+02:00</SentDate>
     <MessageType>New</MessageType>
   </MessageHeaderInfo>
   <OrderInfo>
@@ -64,7 +62,7 @@
       <Manufacturer>DummyString</Manufacturer>
       <ManufacturerCountry>DummyString</ManufacturerCountry>
       <ManufacturerSerialNumber>DummyString</ManufacturerSerialNumber>
-      <BuildingYearMonth>2023-08-29T16:57:08.5311163+02:00</BuildingYearMonth>
+      <BuildingYearMonth>2023-08-30T12:29:31.7413528+02:00</BuildingYearMonth>
       <ISO6346SizeTypeCode>Empty</ISO6346SizeTypeCode>
       <ISO6346SizeTypeCodeDescription>DummyString</ISO6346SizeTypeCodeDescription>
       <DimensionsXMillimeter>1</DimensionsXMillimeter>
@@ -133,12 +131,12 @@
       <Material>DummyString</Material>
     </TankContainerLiningInfo>
     <InspectionDates>
-      <LastInspectionDate>2023-08-29T16:57:08.5311376+02:00</LastInspectionDate>
+      <LastInspectionDate>2023-08-30T12:29:31.7413748+02:00</LastInspectionDate>
       <LastInspectionScope>Empty</LastInspectionScope>
       <LastInspectionScopeDescription>DummyString</LastInspectionScopeDescription>
-      <NextInspectionDate>2023-08-29T16:57:08.5311385+02:00</NextInspectionDate>
-      <CSCValidityDate>2023-08-29T16:57:08.5311388+02:00</CSCValidityDate>
-      <ACEP>2023-08-29T16:57:08.5311392+02:00</ACEP>
+      <NextInspectionDate>2023-08-30T12:29:31.7413756+02:00</NextInspectionDate>
+      <CSCValidityDate>2023-08-30T12:29:31.741376+02:00</CSCValidityDate>
+      <ACEP>2023-08-30T12:29:31.7413763+02:00</ACEP>
     </InspectionDates>
   </TankContainerInfo>
   <PreNotificationStatus>

@@ -94,7 +94,7 @@ namespace otf21 {
         
         private string recipientIDField;
         
-        private MessageHeaderInfoContactInfo contactInfoField;
+        private ContactInfo contactInfoField;
         
         private System.DateTime sentDateField;
         
@@ -166,7 +166,7 @@ namespace otf21 {
         }
         
         /// <remarks/>
-        public MessageHeaderInfoContactInfo ContactInfo {
+        public ContactInfo ContactInfo {
             get {
                 return this.contactInfoField;
             }
@@ -272,27 +272,6 @@ namespace otf21 {
         
         /// <remarks/>
         Message_TankContainer_Work_Estimate,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    public partial class MessageHeaderInfoContactInfo {
-        
-        private ContactInfo contactInfoField;
-        
-        /// <remarks/>
-        public ContactInfo ContactInfo {
-            get {
-                return this.contactInfoField;
-            }
-            set {
-                this.contactInfoField = value;
-            }
-        }
     }
     
     /// <remarks/>

@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Message_TankContainer_PreNotification_StatusUpdate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MessageHeaderInfo>
-    <MessageID>35fabb51-b415-46b9-8b24-51b4822cf740</MessageID>
-    <ConversationID>d372cada-f69a-49fd-b090-31ed032f5b1a</ConversationID>
     <OTFVersion>OTF21</OTFVersion>
     <OTFMessage>Message_TankContainer_PreNotification_StatusUpdate</OTFMessage>
+    <MessageID>35fabb51-b415-46b9-8b24-51b4822cf740</MessageID>
+    <ConversationID>d372cada-f69a-49fd-b090-31ed032f5b1a</ConversationID>
     <SenderID>Depot name or identifier</SenderID>
     <RecipientID>Lessee name or identifier</RecipientID>
     <ContactInfo>
-      <ContactInfo>
-        <Name>Arthur Fonzarelli</Name>
-      </ContactInfo>
+      <Name>Arthur Fonzarelli</Name>
     </ContactInfo>
     <SentDate>2000-01-01T06:54:00+01:00</SentDate>
     <MessageType>New</MessageType>

@@ -49,9 +49,9 @@
                     else if (fieldType.IsValueType)
                     {
                         var v = GetDefaultValue(field.FieldType);
-                        if (v != null) 
+                        if (v != null)
                         {
-                            field.SetValue(instance, v);
+                          field.SetValue(instance, v);
                         };
                     }
                 }

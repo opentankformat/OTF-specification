@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Message_Container_StatusUpdate_Storage_Departure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MessageHeaderInfo>
+    <OTFVersion>OTF21</OTFVersion>
+    <OTFMessage>Message_Container_StatusUpdate_Storage_Departure</OTFMessage>
     <MessageID>DummyString</MessageID>
     <ConversationID>DummyString</ConversationID>
-    <OTFVersion>OTF21</OTFVersion>
-    <OTFMessage>Message_Container_PreNotification</OTFMessage>
     <SenderID>DummyString</SenderID>
     <RecipientID>DummyString</RecipientID>
     <ContactInfo>
-      <ContactInfo>
-        <Name>DummyString</Name>
-        <ExternalID>DummyString</ExternalID>
-        <Phone>DummyString</Phone>
-        <Email>DummyString</Email>
-      </ContactInfo>
+      <Name>DummyString</Name>
+      <ExternalID>DummyString</ExternalID>
+      <Phone>DummyString</Phone>
+      <Email>DummyString</Email>
     </ContactInfo>
-    <SentDate>2023-08-29T16:57:09.1981822+02:00</SentDate>
+    <SentDate>2023-08-30T12:29:32.3086192+02:00</SentDate>
     <MessageType>New</MessageType>
   </MessageHeaderInfo>
   <OrderInfo>
@@ -36,7 +34,7 @@
   <Container_StatusUpdate_Storage_Departure>
     <ClientPurchaseOrderReference>DummyString</ClientPurchaseOrderReference>
     <ClientReleaseReference>DummyString</ClientReleaseReference>
-    <ContainerReleaseDate>2023-08-29T16:57:09.1981929+02:00</ContainerReleaseDate>
+    <ContainerReleaseDate>2023-08-30T12:29:32.3086285+02:00</ContainerReleaseDate>
     <Container_HaulierInfo>
       <HaulierName>DummyString</HaulierName>
       <TruckDriverName>DummyString</TruckDriverName>
@@ -47,13 +45,13 @@
   <Remarks>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-08-29T16:57:09.1981984+02:00</RemarkDate>
+      <RemarkDate>2023-08-30T12:29:32.308632+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
     </Remark>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-08-29T16:57:09.1982008+02:00</RemarkDate>
+      <RemarkDate>2023-08-30T12:29:32.3086337+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
     </Remark>
