@@ -1,0 +1,53 @@
+{
+  "MessageHeaderInfo": {
+    "OTFVersion": "OTF216",
+    "OTFMessage": "Message_TankContainer_StatusUpdate_Storage_Arrival",
+    "MessageID": "50bbfe89-751e-4a99-aa49-65ea265c2fb2",
+    "ConversationID": null,
+    "SenderID": "Depot name or identifier",
+    "RecipientID": "Lessee name or identifier",
+    "ContactInfo": {
+      "Name": "Arthur Fonzarelli",
+      "ExternalID": null,
+      "Phone": null,
+      "Email": null
+    },
+    "SentDate": "2000-01-01T11:04:00+01:00",
+    "MessageType": "New"
+  },
+  "OrderInfo": {
+    "SupplierID": "Depot name or identifier",
+    "SupplierFacilityID": "Depot location identifier",
+    "SupplierBICFacilityCode": null,
+    "SupplierProformaReference": null,
+    "SupplierOrderReference": "D230101.0001",
+    "OrderStatusInfo": {
+      "OrderStatusDescription": "EMPTY UNCLEAN"
+    },
+    "ClientID": "Lessor name or identifier",
+    "ClientFacilityID": null,
+    "ClientBICFacilityCode": null,
+    "ClientOrderReference": "XX2251"
+  },
+  "TankContainerInfo": {
+    "ContainerInfo": {
+      "ContainerNumber": "ABCD-123456-0",
+      "ContainerType": "20TC"
+    },
+    "OwnerID": null,
+    "TankContainerSuitabilityInfo": null,
+    "TankContainerCharacteristicsInfo": null,
+    "TankContainerTankInfo": null,
+    "TankContainerEquipmentInfo": null,
+    "TankContainerLiningInfo": null,
+    "InspectionDates": null
+  },
+  "Container_StatusUpdate_Storage_Arrival": {
+    "ClientPurchaseOrderReference": null,
+    "ClientDeliveryReference": "REL5556",
+    "ContainerDeliveryDate": "2000-01-01T11:04:00+01:00",
+    "Container_HaulierInfo": null
+  },
+  "Remarks": null,
+  "Attachments": null
+}

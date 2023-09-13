@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:simpleType name="Product_UN_PackingGroups">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="I">
+        <xs:annotation>
+          <xs:documentation>Substances presenting high danger</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="II" >
+        <xs:annotation>
+          <xs:documentation>Substances presenting medium danger</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="III" >
+        <xs:annotation>
+          <xs:documentation>Substances presenting low danger</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="Common_OrderStatusInfo.xsd"/>
+  <xs:element name="OrderInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SupplierID" type="xs:string" />
+        <xs:element name="SupplierFacilityID" type="xs:string" minOccurs="0" />
+        <xs:element name="SupplierBICFacilityCode" type="xs:string" />		
+        <xs:element name="SupplierProformaReference" type="xs:string" minOccurs="0"/>
+        <xs:element name="SupplierOrderReference" type="xs:string" minOccurs="0"/>	
+		<xs:element ref="OrderStatusInfo" minOccurs="0"/>
+        <xs:element name="ClientID" type="xs:string" />
+        <xs:element name="ClientFacilityID" type="xs:string" />		  
+        <xs:element name="ClientBICFacilityCode" type="xs:string" />		  
+        <xs:element name="ClientOrderReference" type="xs:string" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

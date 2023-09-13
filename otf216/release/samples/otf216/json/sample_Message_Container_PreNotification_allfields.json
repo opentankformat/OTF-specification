@@ -1,0 +1,154 @@
+{
+  "MessageHeaderInfo": {
+    "OTFVersion": "OTF216",
+    "OTFMessage": "Message_Container_PreNotification",
+    "MessageID": "DummyString",
+    "ConversationID": "DummyString",
+    "SenderID": "DummyString",
+    "RecipientID": "DummyString",
+    "ContactInfo": {
+      "Name": "DummyString",
+      "ExternalID": "DummyString",
+      "Phone": "DummyString",
+      "Email": "DummyString"
+    },
+    "SentDate": "2023-09-13T13:39:41.5988731+02:00",
+    "MessageType": "New"
+  },
+  "ContainerPreNotificationType": "Empty",
+  "OrderInfo": {
+    "SupplierID": "DummyString",
+    "SupplierFacilityID": "DummyString",
+    "SupplierBICFacilityCode": "DummyString",
+    "SupplierProformaReference": "DummyString",
+    "SupplierOrderReference": "DummyString",
+    "OrderStatusInfo": {
+      "OrderStatusDescription": "DummyString"
+    },
+    "ClientID": "DummyString",
+    "ClientFacilityID": "DummyString",
+    "ClientBICFacilityCode": "DummyString",
+    "ClientOrderReference": "DummyString"
+  },
+  "ContainerInfo": {
+    "ContainerNumber": "DummyString",
+    "ContainerType": "DummyString"
+  },
+  "ArrivalInfo": {
+    "ETA": "2023-09-13T13:39:41.5989285+02:00",
+    "RedeliveryReference": "DummyString",
+    "ContainerOrigin": "DummyString",
+    "Container_HaulierInfo": {
+      "HaulierName": "DummyString",
+      "TruckDriverName": "DummyString",
+      "TruckLicensePlate": "DummyString",
+      "ChassisLicensePlate": "DummyString"
+    }
+  },
+  "ServicesRequestInfo": {
+    "Container_ServiceRequest_Storage": {
+      "Container_ServiceRequestInfo": {
+        "IsRequested": true,
+        "ClientPurchaseOrderReference": "DummyString",
+        "ClientAuthorizationReference": "DummyString",
+        "Remarks": [
+          {
+            "RemarkID": "DummyString",
+            "RemarkDate": "2023-09-13T13:39:41.5989421+02:00",
+            "RemarkAuthor": "DummyString",
+            "RemarkText": "DummyString"
+          },
+          {
+            "RemarkID": "DummyString",
+            "RemarkDate": "2023-09-13T13:39:41.5989447+02:00",
+            "RemarkAuthor": "DummyString",
+            "RemarkText": "DummyString"
+          }
+        ]
+      }
+    },
+    "Container_ServiceRequest_Work_Modification": {
+      "Container_ServiceRequestInfo": {
+        "IsRequested": true,
+        "ClientPurchaseOrderReference": "DummyString",
+        "ClientAuthorizationReference": "DummyString",
+        "Remarks": [
+          {
+            "RemarkID": "DummyString",
+            "RemarkDate": "2023-09-13T13:39:41.5989841+02:00",
+            "RemarkAuthor": "DummyString",
+            "RemarkText": "DummyString"
+          },
+          {
+            "RemarkID": "DummyString",
+            "RemarkDate": "2023-09-13T13:39:41.5989856+02:00",
+            "RemarkAuthor": "DummyString",
+            "RemarkText": "DummyString"
+          }
+        ]
+      },
+      "SpecialInstructionID": "DummyString"
+    },
+    "Container_ServiceRequest_Work_Repair": {
+      "IsRequested": true,
+      "LessorID": "DummyString",
+      "LessorAuthorizationReference": "DummyString",
+      "LesseeID": "DummyString",
+      "LesseeAuthorizationReference": "DummyString",
+      "SpecialInstructionID": "DummyString"
+    }
+  },
+  "DepartureInfo": {
+    "ETD": "2023-09-13T13:39:41.5989928+02:00",
+    "ReleaseReference": "DummyString",
+    "ContainerDestination": "DummyString",
+    "Container_HaulierInfo": {
+      "HaulierName": "DummyString",
+      "TruckDriverName": "DummyString",
+      "TruckLicensePlate": "DummyString",
+      "ChassisLicensePlate": "DummyString"
+    }
+  },
+  "Remarks": [
+    {
+      "RemarkID": "DummyString",
+      "RemarkDate": "2023-09-13T13:39:41.5989958+02:00",
+      "RemarkAuthor": "DummyString",
+      "RemarkText": "DummyString"
+    },
+    {
+      "RemarkID": "DummyString",
+      "RemarkDate": "2023-09-13T13:39:41.598997+02:00",
+      "RemarkAuthor": "DummyString",
+      "RemarkText": "DummyString"
+    }
+  ],
+  "Attachments": [
+    {
+      "Name": "DummyString",
+      "URL": "DummyString",
+      "ExternalID": "DummyString",
+      "Tags": [
+        {
+          "Tag": "DummyString"
+        },
+        {
+          "Tag": "DummyString"
+        }
+      ]
+    },
+    {
+      "Name": "DummyString",
+      "URL": "DummyString",
+      "ExternalID": "DummyString",
+      "Tags": [
+        {
+          "Tag": "DummyString"
+        },
+        {
+          "Tag": "DummyString"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="TankContainer_Compartments.xsd"/>  
+  <xs:element name="TankContainer_StateInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="IsLoaded" type="xs:boolean" />
+	    <xs:element name="FullLoadedAmount" type="xs:double" minOccurs="0" />
+        <xs:element name="FullLoadedAmountUnit" type="xs:string" minOccurs="0" />
+        <xs:element name="IsClean" type="xs:boolean" />
+        <xs:element name="IsPressurized" type="xs:boolean" />
+        <xs:element name="IsNitrogen" type="xs:boolean" />
+		<xs:element name="Compartments" type="TankContainer_Compartments"/>
+		<xs:element name="Seals" maxOccurs="unbounded">
+			<xs:complexType>
+			  <xs:sequence>
+				<xs:element name="Seal" type="xs:string"/>
+			  </xs:sequence> 
+			</xs:complexType>
+		</xs:element>
+	  </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

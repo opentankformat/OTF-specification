@@ -1,0 +1,175 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "Newtonsoft.Json/13.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "otf20/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/otf20.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/otf20.dll": {}
+        }
+      },
+      "otf21/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/otf21.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/otf21.dll": {}
+        }
+      },
+      "otf216/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/otf216.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/otf216.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Newtonsoft.Json/13.0.2": {
+      "sha512": "R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "otf20/1.0.0": {
+      "type": "project",
+      "path": "../otf20/otf20.csproj",
+      "msbuildProject": "../otf20/otf20.csproj"
+    },
+    "otf21/1.0.0": {
+      "type": "project",
+      "path": "../otf21/otf21.csproj",
+      "msbuildProject": "../otf21/otf21.csproj"
+    },
+    "otf216/1.0.0": {
+      "type": "project",
+      "path": "../otf216/otf216.csproj",
+      "msbuildProject": "../otf216/otf216.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "Newtonsoft.Json >= 13.0.2",
+      "otf20 >= 1.0.0",
+      "otf21 >= 1.0.0",
+      "otf216 >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Gijsbert\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\repositories\\OTF-design\\otf216\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\otfSampleDataGenerator.csproj",
+      "projectName": "otfSampleDataGenerator",
+      "projectPath": "C:\\repositories\\OTF-design\\otf216\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\otfSampleDataGenerator.csproj",
+      "packagesPath": "C:\\Users\\Gijsbert\\.nuget\\packages\\",
+      "outputPath": "C:\\repositories\\OTF-design\\otf216\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Gijsbert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://nuget.lucrasoft.nl:8082/nuget/Default": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {
+            "C:\\repositories\\OTF-design\\otf216\\project\\2_Solution\\OTF\\otf20\\otf20.csproj": {
+              "projectPath": "C:\\repositories\\OTF-design\\otf216\\project\\2_Solution\\OTF\\otf20\\otf20.csproj"
+            },
+            "C:\\repositories\\OTF-design\\otf216\\project\\2_Solution\\OTF\\otf216\\otf216.csproj": {
+              "projectPath": "C:\\repositories\\OTF-design\\otf216\\project\\2_Solution\\OTF\\otf216\\otf216.csproj"
+            },
+            "C:\\repositories\\OTF-design\\otf216\\project\\2_Solution\\OTF\\otf21\\otf21.csproj": {
+              "projectPath": "C:\\repositories\\OTF-design\\otf216\\project\\2_Solution\\OTF\\otf21\\otf21.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

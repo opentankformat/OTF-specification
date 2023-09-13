@@ -1,0 +1,6 @@
+C:\repositories\OTF-design\otf216\project\2_Solution\OTF\otf216\bin\Debug\otf216.dll
+C:\repositories\OTF-design\otf216\project\2_Solution\OTF\otf216\bin\Debug\otf216.pdb
+C:\repositories\OTF-design\otf216\project\2_Solution\OTF\otf216\obj\Debug\otf216.csproj.AssemblyReference.cache
+C:\repositories\OTF-design\otf216\project\2_Solution\OTF\otf216\obj\Debug\otf216.csproj.CoreCompileInputs.cache
+C:\repositories\OTF-design\otf216\project\2_Solution\OTF\otf216\obj\Debug\otf216.dll
+C:\repositories\OTF-design\otf216\project\2_Solution\OTF\otf216\obj\Debug\otf216.pdb

@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:simpleType name="Product_GHS_HazardStatements">
+    <xs:restriction base="xs:string">
+     <xs:enumeration value="H200">
+        <xs:annotation>
+          <xs:documentation>Unstable explosive</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H201">
+        <xs:annotation>
+          <xs:documentation>Explosive: mass explosion hazard</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H202">
+        <xs:annotation>
+          <xs:documentation>Explosive: severe projection hazard</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H203">
+        <xs:annotation>
+          <xs:documentation>Explosive: fire, blast or projection hazard</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H204">
+        <xs:annotation>
+          <xs:documentation>Fire or projection hazard</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H205">
+        <xs:annotation>
+          <xs:documentation>May mass explode in fire</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H206">
+        <xs:annotation>
+          <xs:documentation>Fire, blast or projection hazard: increased risk of explosion if desensitizing agent is reduced</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H207">
+        <xs:annotation>
+          <xs:documentation>Fire or projection hazard; increased risk of explosion if desensitizing agent is reduced</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H208">
+        <xs:annotation>
+          <xs:documentation>Fire hazard; increased risk of explosion if desensitizing agent is reduced</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H209">
+        <xs:annotation>
+          <xs:documentation>Explosive</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H210">
+        <xs:annotation>
+          <xs:documentation>Very sensitive</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H211">
+        <xs:annotation>
+          <xs:documentation>May be sensitive</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H220">
+        <xs:annotation>
+          <xs:documentation>Extremely flammable gas</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H221">
+        <xs:annotation>
+          <xs:documentation>Flammable gas</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H222">
+        <xs:annotation>
+          <xs:documentation>Extremely flammable material</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H223">
+        <xs:annotation>
+          <xs:documentation>Flammable material</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H224">
+        <xs:annotation>
+          <xs:documentation>Extremely flammable liquid and vapour</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H225">
+        <xs:annotation>
+          <xs:documentation>Highly flammable liquid and vapour</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H226">
+        <xs:annotation>
+          <xs:documentation>Flammable liquid and vapour</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H227">
+        <xs:annotation>
+          <xs:documentation>Combustible liquid</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H228">
+        <xs:annotation>
+          <xs:documentation>Flammable solid</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H229">
+        <xs:annotation>
+          <xs:documentation>Pressurized container: may burst if heated</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H230">
+        <xs:annotation>
+          <xs:documentation>May react explosively even in the absence of air</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H231">
+        <xs:annotation>
+          <xs:documentation>May react explosively even in the absence of air at elevated pressure and/or temperature</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H240">
+        <xs:annotation>
+          <xs:documentation>Heating may cause an explosion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H241">
+        <xs:annotation>
+          <xs:documentation>Heating may cause a fire or explosion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H242">
+        <xs:annotation>
+          <xs:documentation>Heating may cause a fire</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H250">
+        <xs:annotation>
+          <xs:documentation>Catches fire spontaneously if exposed to air</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H251">
+        <xs:annotation>
+          <xs:documentation>Self-heating: may catch fire</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H252">
+        <xs:annotation>
+          <xs:documentation>Self-heating in large quantities: may catch fire</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H260">
+        <xs:annotation>
+          <xs:documentation>In contact with water releases flammable gases which may ignite spontaneously</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H261">
+        <xs:annotation>
+          <xs:documentation>In contact with water releases flammable gas</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H270">
+        <xs:annotation>
+          <xs:documentation>May cause or intensify fire: oxidizer</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H271">
+        <xs:annotation>
+          <xs:documentation>May cause fire or explosion: strong oxidizer</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H272">
+        <xs:annotation>
+          <xs:documentation>May intensify fire: oxidizer</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H280">
+        <xs:annotation>
+          <xs:documentation>Contains gas under pressure: may explode if heated</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H281">
+        <xs:annotation>
+          <xs:documentation>Contains refrigerated gas: may cause cryogenic burns or injury</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H282">
+        <xs:annotation>
+          <xs:documentation>Extremely flammable chemical under pressure: May explode if heated</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H283">
+        <xs:annotation>
+          <xs:documentation>Flammable chemical under pressure: May explode if heated</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H284">
+        <xs:annotation>
+          <xs:documentation>Chemical under pressure: May explode if heated</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H290">
+        <xs:annotation>
+          <xs:documentation>May be corrosive to metals</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H300">
+        <xs:annotation>
+          <xs:documentation>Fatal if swallowed</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H300+H310">
+        <xs:annotation>
+          <xs:documentation>Fatal if swallowed or in contact with skin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H300+H310+H330">
+        <xs:annotation>
+          <xs:documentation>Fatal if swallowed, in contact with skin or if inhaled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H300+H330">
+        <xs:annotation>
+          <xs:documentation>Fatal if swallowed or if inhaled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H301">
+        <xs:annotation>
+          <xs:documentation>Toxic if swallowed</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H301+H311">
+        <xs:annotation>
+          <xs:documentation>Toxic if swallowed or in contact with skin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H301+H311+H331">
+        <xs:annotation>
+          <xs:documentation>Toxic if swallowed, in contact with skin or if inhaled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H301+H331">
+        <xs:annotation>
+          <xs:documentation>Toxic if swallowed or if inhaled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H302">
+        <xs:annotation>
+          <xs:documentation>Harmful if swallowed</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H302+H312">
+        <xs:annotation>
+          <xs:documentation>Harmful if swallowed or in contact with skin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H302+H312+H332">
+        <xs:annotation>
+          <xs:documentation>Harmful if swallowed, in contact with skin or if inhaled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H302+H332">
+        <xs:annotation>
+          <xs:documentation>Harmful if swallowed or inhaled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H303">
+        <xs:annotation>
+          <xs:documentation>May be harmful if swallowed</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H303+H313">
+        <xs:annotation>
+          <xs:documentation>May be harmful if swallowed or in contact with skin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H303+H313+H333">
+        <xs:annotation>
+          <xs:documentation>May be harmful if swallowed, in contact with skin or if inhaled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H303+H333">
+        <xs:annotation>
+          <xs:documentation>May be harmful if swallowed or if inhaled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H304">
+        <xs:annotation>
+          <xs:documentation>May be fatal if swallowed and enters airways</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H305">
+        <xs:annotation>
+          <xs:documentation>May be harmful if swallowed and enters airways</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H310">
+        <xs:annotation>
+          <xs:documentation>Fatal in contact with skin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H310+H330">
+        <xs:annotation>
+          <xs:documentation>Fatal in contact with skin or if inhaled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H311">
+        <xs:annotation>
+          <xs:documentation>Toxic in contact with skin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H311+H331">
+        <xs:annotation>
+          <xs:documentation>Toxic in contact with skin or if inhaled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H312">
+        <xs:annotation>
+          <xs:documentation>Harmful in contact with skin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H312+H332">
+        <xs:annotation>
+          <xs:documentation>Harmful in contact with skin or if inhaled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H313">
+        <xs:annotation>
+          <xs:documentation>May be harmful in contact with skin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H313+H333">
+        <xs:annotation>
+          <xs:documentation>May be harmful in contact with skin or if inhaled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H314">
+        <xs:annotation>
+          <xs:documentation>Causes severe skin burns and eye damage</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H315">
+        <xs:annotation>
+          <xs:documentation>Causes skin irritation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H315+H320">
+        <xs:annotation>
+          <xs:documentation>Causes skin and eye irritation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H316">
+        <xs:annotation>
+          <xs:documentation>Causes mild skin irritation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H317">
+        <xs:annotation>
+          <xs:documentation>May cause an allergic skin reaction</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H318">
+        <xs:annotation>
+          <xs:documentation>Causes serious eye damage</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H319">
+        <xs:annotation>
+          <xs:documentation>Causes serious eye irritation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H320">
+        <xs:annotation>
+          <xs:documentation>Causes eye irritation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H330">
+        <xs:annotation>
+          <xs:documentation>Fatal if inhaled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H331">
+        <xs:annotation>
+          <xs:documentation>Toxic if inhaled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H332">
+        <xs:annotation>
+          <xs:documentation>Harmful if inhaled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H333">
+        <xs:annotation>
+          <xs:documentation>May be harmful if inhaled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H334">
+        <xs:annotation>
+          <xs:documentation>May cause allergy or asthma symptoms or breathing difficulties if inhaled</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H335">
+        <xs:annotation>
+          <xs:documentation>May cause respiratory irritation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H336">
+        <xs:annotation>
+          <xs:documentation>May cause drowsiness or dizziness</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H340">
+        <xs:annotation>
+          <xs:documentation>May cause genetic defects</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H341">
+        <xs:annotation>
+          <xs:documentation>Suspected of causing genetic defects</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H350">
+        <xs:annotation>
+          <xs:documentation>May cause cancer</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H350i">
+        <xs:annotation>
+          <xs:documentation>May cause cancer by inhalation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H351">
+        <xs:annotation>
+          <xs:documentation>Suspected of causing cancer</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H360">
+        <xs:annotation>
+          <xs:documentation>May damage fertility or the unborn child</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H360D">
+        <xs:annotation>
+          <xs:documentation>May damage the unborn child</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H360Df">
+        <xs:annotation>
+          <xs:documentation>May damage the unborn child. Suspected of damaging fertility.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H360F">
+        <xs:annotation>
+          <xs:documentation>May damage fertility</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H360FD">
+        <xs:annotation>
+          <xs:documentation>May damage fertility. May damage the unborn child.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H360Fd">
+        <xs:annotation>
+          <xs:documentation>May damage fertility. Suspected of damaging the unborn child.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H361">
+        <xs:annotation>
+          <xs:documentation>Suspected of damaging fertility or the unborn child</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H361d">
+        <xs:annotation>
+          <xs:documentation>Suspected of damaging the unborn child</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H361f">
+        <xs:annotation>
+          <xs:documentation>Suspected of damaging fertility</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H361fd">
+        <xs:annotation>
+          <xs:documentation>Suspected of damaging fertility. Suspected of damaging the unborn child.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H362">
+        <xs:annotation>
+          <xs:documentation>May cause harm to breast-fed children</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H370">
+        <xs:annotation>
+          <xs:documentation>Causes damage to organs</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H371">
+        <xs:annotation>
+          <xs:documentation>May cause damage to organs</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H372">
+        <xs:annotation>
+          <xs:documentation>Causes damage to organs through prolonged or repeated exposure</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H373">
+        <xs:annotation>
+          <xs:documentation>May cause damage to organs through prolonged or repeated exposure</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H400">
+        <xs:annotation>
+          <xs:documentation>Very toxic to aquatic life</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H401">
+        <xs:annotation>
+          <xs:documentation>Toxic to aquatic life</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H402">
+        <xs:annotation>
+          <xs:documentation>Harmful to aquatic life</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H410">
+        <xs:annotation>
+          <xs:documentation>Very toxic to aquatic life with long lasting effects</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H411">
+        <xs:annotation>
+          <xs:documentation>Toxic to aquatic life with long lasting effects</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H412">
+        <xs:annotation>
+          <xs:documentation>Harmful to aquatic life with long lasting effects</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H413">
+        <xs:annotation>
+          <xs:documentation>May cause long lasting harmful effects to aquatic life</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H420">
+        <xs:annotation>
+          <xs:documentation>Harms public health and the environment by destroying ozone in the upper atmosphere</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="H441">
+        <xs:annotation>
+          <xs:documentation>Very toxic to terrestrial invertebrates</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH006">
+        <xs:annotation>
+          <xs:documentation>Explosive with or without contact with air, deleted in the fourth adaptation to technical progress of CLP.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH014">
+        <xs:annotation>
+          <xs:documentation>Reacts violently with water</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH018">
+        <xs:annotation>
+          <xs:documentation>In use may form flammable/explosive vapour-air mixture</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH019">
+        <xs:annotation>
+          <xs:documentation>May form explosive peroxides</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH044">
+        <xs:annotation>
+          <xs:documentation>Risk of explosion if heated under confinement</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH029">
+        <xs:annotation>
+          <xs:documentation>Contact with water liberates toxic gas</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH031">
+        <xs:annotation>
+          <xs:documentation>Contact with acids liberates toxic gas</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH032">
+        <xs:annotation>
+          <xs:documentation>Contact with acids liberates very toxic gas</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH066">
+        <xs:annotation>
+          <xs:documentation>Repeated exposure may cause skin dryness or cracking</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH070">
+        <xs:annotation>
+          <xs:documentation>Toxic by eye contact</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH071">
+        <xs:annotation>
+          <xs:documentation>Corrosive to the respiratory tract</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH059">
+        <xs:annotation>
+          <xs:documentation>Hazardous to the ozone layer, superseded by GHS Class 5.1 in the second adaptation to technical progress of CLP.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH201">
+        <xs:annotation>
+          <xs:documentation>Contains lead. Should not be used on surfaces liable to be chewed or sucked by children.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH201A">
+        <xs:annotation>
+          <xs:documentation>Warning! Contains lead.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH202">
+        <xs:annotation>
+          <xs:documentation>Cyanoacrylate. Danger. Bonds skin and eyes in seconds. Keep out of the reach of children.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH203">
+        <xs:annotation>
+          <xs:documentation>Contains chromium(VI). May produce an allergic reaction.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH204">
+        <xs:annotation>
+          <xs:documentation>Contains isocyanates. May produce an allergic reaction.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH205">
+        <xs:annotation>
+          <xs:documentation>Contains epoxy constituents. May produce an allergic reaction.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH206">
+        <xs:annotation>
+          <xs:documentation>Warning! Do not use together with other products. May release dangerous gases (chlorine).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH207">
+        <xs:annotation>
+          <xs:documentation>Warning! Contains cadmium. Dangerous fumes are formed during use. See information supplied by the manufacturer. Comply with the safety instructions.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH208">
+        <xs:annotation>
+          <xs:documentation>Contains NAME OF SENSITISING SUBSTANCE. May produce an allergic reaction.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH209">
+        <xs:annotation>
+          <xs:documentation>Can become highly flammable in use.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH209A">
+        <xs:annotation>
+          <xs:documentation>Can become flammable in use.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH210">
+        <xs:annotation>
+          <xs:documentation>Safety data sheet available on request.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH211">
+        <xs:annotation>
+          <xs:documentation>Warning! Hazardous respirable droplets may be formed when sprayed. Do not breathe spray or mist.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="EUH401">
+        <xs:annotation>
+          <xs:documentation>To avoid risks to human health and the environment, comply with the instructions for use.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="AUH001">
+        <xs:annotation>
+          <xs:documentation>Explosive without moisture</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="AUH006">
+        <xs:annotation>
+          <xs:documentation>Explosive with or without contact with air</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="AUH014">
+        <xs:annotation>
+          <xs:documentation>Reacts violently with water</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="AUH018">
+        <xs:annotation>
+          <xs:documentation>In use, may form a flammable/explosive vapor-air mixture</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="AUH019">
+        <xs:annotation>
+          <xs:documentation>May form explosive peroxides</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="AUH044">
+        <xs:annotation>
+          <xs:documentation>Risk of explosion if heated under confinement</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="AUH029">
+        <xs:annotation>
+          <xs:documentation>Contact with water liberates toxic gas</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="AUH031">
+        <xs:annotation>
+          <xs:documentation>Contact with acids liberates toxic gas</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="AUH032">
+        <xs:annotation>
+          <xs:documentation>Contact with acids liberates very toxic gas</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="AUH066">
+        <xs:annotation>
+          <xs:documentation>Repeated exposure may cause skin dryness or cracking</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="AUH070">
+        <xs:annotation>
+          <xs:documentation>Toxic by eye contact</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="AUH071">
+        <xs:annotation>
+          <xs:documentation>Corrosive to the respiratory tract</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>	
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

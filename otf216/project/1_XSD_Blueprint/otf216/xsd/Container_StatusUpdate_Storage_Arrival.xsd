@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="Container_HaulierInfo.xsd"/>
+  <xs:element name="Container_StatusUpdate_Storage_Arrival">
+    <xs:complexType>
+      <xs:sequence>
+		<xs:element name="ClientPurchaseOrderReference" type="xs:string" minOccurs="0" />  
+		<xs:element name="ClientDeliveryReference" type="xs:string" minOccurs="0" />
+        <xs:element name="ContainerDeliveryDate" type="xs:dateTime" />
+		<xs:element ref="Container_HaulierInfo"  minOccurs="0" />			  
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

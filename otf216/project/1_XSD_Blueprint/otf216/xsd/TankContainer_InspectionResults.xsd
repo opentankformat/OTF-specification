@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:simpleType name="TankContainer_InspectionResults">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotApplicable" />
+      <xs:enumeration value="Satisfactory" />
+      <xs:enumeration value="SatisfactoryWithRemark" />
+      <xs:enumeration value="Remark" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hjrAI93BFKIlW5O/PEBu6gCNN6FrP10Z/kMuVG9kJ9HJvWI9FBKoEEtjl2ac16eYG0IPLCScYFULTAoDo1ot+A==",
+  "dgSpecHash": "gdY7J0kw6tXNSsvWiXDEAhS1wlwqfesXScASbVmyFzUXQjF99VLXh28coD71xiJMOleAAU4xUXXukw+gta7SyQ==",
   "success": true,
-  "projectFilePath": "C:\\repositories\\OTF-design\\otf21\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\otfSampleDataGenerator.csproj",
+  "projectFilePath": "C:\\repositories\\OTF-specification\\otf21\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\otfSampleDataGenerator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gijsbert\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
   ],

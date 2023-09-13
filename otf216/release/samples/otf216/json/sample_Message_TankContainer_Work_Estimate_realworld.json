@@ -1,0 +1,215 @@
+{
+  "MessageHeaderInfo": {
+    "OTFVersion": "OTF216",
+    "OTFMessage": "Message_TankContainer_Work_Estimate",
+    "MessageID": "3995e18b-73a7-46e0-b92b-381d2b5aa527",
+    "ConversationID": "3e818a60-5941-4615-911e-e1f540d6f314",
+    "SenderID": "Depot name or identifier",
+    "RecipientID": "Lessor name or identifier",
+    "ContactInfo": null,
+    "SentDate": "2000-01-02T16:23:00+01:00",
+    "MessageType": "New"
+  },
+  "OrderInfo": {
+    "SupplierID": "Depot name or identifier",
+    "SupplierFacilityID": "Depot location identifier",
+    "SupplierBICFacilityCode": null,
+    "SupplierProformaReference": null,
+    "SupplierOrderReference": "D230101.0001",
+    "OrderStatusInfo": {
+      "OrderStatusDescription": "AWAITING AUTHORIZATION"
+    },
+    "ClientID": "Lessor name or identifier",
+    "ClientFacilityID": null,
+    "ClientBICFacilityCode": null,
+    "ClientOrderReference": "XX2251"
+  },
+  "LocalizationInfo": {
+    "CurrencyISO": "EUR",
+    "ExchangeRate": 1.0,
+    "ExchangeRateDate": "0001-01-01T00:00:00",
+    "RoundingPerLine": false
+  },
+  "TankContainerInfo": {
+    "ContainerInfo": {
+      "ContainerNumber": "ABCD-123456-0",
+      "ContainerType": "20TC"
+    },
+    "OwnerID": "Lessor name or identifier",
+    "TankContainerSuitabilityInfo": null,
+    "TankContainerCharacteristicsInfo": {
+      "Manufacturer": "MillenniuM Tanks Inc.",
+      "ManufacturerCountry": null,
+      "ManufacturerSerialNumber": null,
+      "BuildingYearMonth": "1996-11-25T20:30:00+01:00",
+      "ISO6346SizeTypeCode": "Empty",
+      "ISO6346SizeTypeCodeDescription": null,
+      "DimensionsXMillimeter": 0,
+      "DimensionsYMillimeter": 0,
+      "DimensionsZMillimeter": 0,
+      "MaxGrossMass": 0.0,
+      "Payload": 0.0,
+      "PayloadUnit": "kg",
+      "Tare": 0.0,
+      "TareUnit": "kg",
+      "Capacity": 20080.0,
+      "CapacityUnit": "L"
+    },
+    "TankContainerTankInfo": null,
+    "TankContainerEquipmentInfo": null,
+    "TankContainerLiningInfo": null,
+    "InspectionDates": {
+      "LastInspectionDate": "1998-06-20T01:00:00+02:00",
+      "LastInspectionScope": "Empty",
+      "LastInspectionScopeDescription": "H",
+      "NextInspectionDate": "0001-01-01T00:00:00",
+      "CSCValidityDate": "1999-01-01T00:00:00+01:00",
+      "ACEP": "0001-01-01T00:00:00"
+    }
+  },
+  "Container_Work_EstimateStatusInfo": {
+    "Version": "V1",
+    "Container_ServiceProgress_DateInfo": {
+      "Planned": "0001-01-01T00:00:00",
+      "PlannedBy": null,
+      "PlannedToTakePlaceOn": "0001-01-01T00:00:00",
+      "Started": "0001-01-01T00:00:00",
+      "Finished": "2000-01-02T16:23:00+01:00",
+      "Cancelled": "0001-01-01T00:00:00"
+    },
+    "ContainerWorkAuthorizationInfo": {
+      "ContainerWorkLessorAuthorizationInfo": {
+        "LessorID": "Lessor name or identifier",
+        "Container_ServiceProgress_AuthorizationInfo": {
+          "Authorized": "2000-01-02T17:23:00+01:00",
+          "AuthorizedBy": null,
+          "AuthorizationReference": "REP5559",
+          "AuthorizationAmount": null
+        },
+        "AuthorizationAcceptedBySupplier": "0001-01-01T00:00:00"
+      },
+      "ContainerWorkLesseeAuthorizationInfo": null
+    }
+  },
+  "ContainerStorageArrivalInfo": {
+    "ContainerDeliveryDate": "2000-01-01T11:04:00+01:00"
+  },
+  "Category": null,
+  "LaborRate": 35.5,
+  "EstimateLines": [
+    {
+      "LineID": "162012ca-015b-4f4d-92f7-bcef9f8f438d",
+      "OriginID": "1855",
+      "SortOrder": 1,
+      "Description": "REMOVE AND REBUILD BUTTERFLY VALVE",
+      "CategoryCode": {
+        "Code": {
+          "Value": "GEN",
+          "Description": "GENERAL"
+        }
+      },
+      "GeneralCodes": {
+        "LocationCode": {
+          "Code": {
+            "Value": "BTM",
+            "Description": "BOTTOM"
+          }
+        },
+        "DamageCode": {
+          "Code": {
+            "Value": "",
+            "Description": ""
+          }
+        },
+        "RepairCode": {
+          "Code": {
+            "Value": "",
+            "Description": ""
+          }
+        },
+        "ComponentCode": null
+      },
+      "ComplexCodes": null,
+      "Proposal": {
+        "Container_Work_EstimateLineProposal": {
+          "LaborRate": 35.5,
+          "LaborHours": 2.0,
+          "LaborPrice": 71.0,
+          "MaterialPrice": 71.0,
+          "LumpSumPrice": 0.0,
+          "LineSubtotal": 142.0,
+          "Quantity": 1.0,
+          "DoAction": true,
+          "ThirdParty": false,
+          "LineTotal": 142.0,
+          "Remarks": null
+        }
+      },
+      "CounterProposal": null,
+      "ClientAuthorization": null,
+      "Attachments": null
+    },
+    {
+      "LineID": "642e95fa-9872-4013-ae44-3c2c7c1d3e4e",
+      "OriginID": "777",
+      "SortOrder": 2,
+      "Description": "REPLACE DOME GASKET",
+      "CategoryCode": {
+        "Code": {
+          "Value": "GEN",
+          "Description": "GENERAL"
+        }
+      },
+      "GeneralCodes": {
+        "LocationCode": {
+          "Code": {
+            "Value": "BTM",
+            "Description": "BOTTOM"
+          }
+        },
+        "DamageCode": {
+          "Code": {
+            "Value": "BR",
+            "Description": "BROKEN"
+          }
+        },
+        "RepairCode": {
+          "Code": {
+            "Value": "",
+            "Description": ""
+          }
+        },
+        "ComponentCode": null
+      },
+      "ComplexCodes": null,
+      "Proposal": {
+        "Container_Work_EstimateLineProposal": {
+          "LaborRate": 35.5,
+          "LaborHours": 3.0,
+          "LaborPrice": 106.5,
+          "MaterialPrice": 20.0,
+          "LumpSumPrice": 50.0,
+          "LineSubtotal": 50.0,
+          "Quantity": 2.0,
+          "DoAction": true,
+          "ThirdParty": false,
+          "LineTotal": 100.0,
+          "Remarks": null
+        }
+      },
+      "CounterProposal": null,
+      "ClientAuthorization": null,
+      "Attachments": null
+    }
+  ],
+  "EstimateLinesProposalTotal": 0.0,
+  "Remarks": [
+    {
+      "RemarkID": "121fdc2d-f169-4e39-b951-61a18a093ed3",
+      "RemarkDate": "2000-01-02T16:23:00+01:00",
+      "RemarkAuthor": "Frank Black",
+      "RemarkText": "The Time is Near"
+    }
+  ],
+  "Attachments": null
+}

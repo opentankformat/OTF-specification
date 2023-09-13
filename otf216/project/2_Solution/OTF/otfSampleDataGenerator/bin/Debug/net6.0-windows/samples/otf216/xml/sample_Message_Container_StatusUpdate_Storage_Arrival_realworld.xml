@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message_Container_StatusUpdate_Storage_Arrival xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MessageHeaderInfo>
+    <OTFVersion>OTF216</OTFVersion>
+    <OTFMessage>Message_Container_StatusUpdate_Storage_Arrival</OTFMessage>
+    <MessageID>50bbfe89-751e-4a99-aa49-65ea265c2fb2</MessageID>
+    <SenderID>Depot name or identifier</SenderID>
+    <RecipientID>Lessee name or identifier</RecipientID>
+    <ContactInfo>
+      <Name>Arthur Fonzarelli</Name>
+    </ContactInfo>
+    <SentDate>2000-01-01T11:04:00+01:00</SentDate>
+    <MessageType>New</MessageType>
+  </MessageHeaderInfo>
+  <OrderInfo>
+    <SupplierID>Depot name or identifier</SupplierID>
+    <SupplierFacilityID>Depot location identifier</SupplierFacilityID>
+    <SupplierOrderReference>D230101.0001</SupplierOrderReference>
+    <OrderStatusInfo>
+      <OrderStatusDescription>EMPTY UNCLEAN</OrderStatusDescription>
+    </OrderStatusInfo>
+    <ClientID>Lessor name or identifier</ClientID>
+    <ClientOrderReference>XX2251</ClientOrderReference>
+  </OrderInfo>
+  <ContainerInfo>
+    <ContainerNumber>ABCD-123456-0</ContainerNumber>
+    <ContainerType>20TC</ContainerType>
+  </ContainerInfo>
+  <Container_StatusUpdate_Storage_Arrival>
+    <ClientDeliveryReference>REL5556</ClientDeliveryReference>
+    <ContainerDeliveryDate>2000-01-01T11:04:00+01:00</ContainerDeliveryDate>
+  </Container_StatusUpdate_Storage_Arrival>
+</Message_Container_StatusUpdate_Storage_Arrival>

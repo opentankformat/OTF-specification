@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Message_Container_StatusUpdate_Work">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="MessageHeaderInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="1" name="MessageID" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="ConversationID" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="OTFVersion" type="MessageHeaderInfoOTFVersion" />
+              <xs:element minOccurs="1" maxOccurs="1" name="OTFMessage" type="MessageHeaderInfoOTFMessage" />
+              <xs:element minOccurs="0" maxOccurs="1" name="SenderID" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="RecipientID" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="ContactInfo">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Phone" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="1" maxOccurs="1" name="SentDate" type="xs:dateTime" />
+              <xs:element minOccurs="1" maxOccurs="1" name="MessageType" type="MessageHeaderInfoMessageType" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="OrderInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="1" name="SupplierID" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="SupplierFacilityID" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="SupplierBICFacilityCode" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="SupplierProformaReference" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="SupplierOrderReference" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="OrderStatusInfo">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="OrderStatusDescription" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" maxOccurs="1" name="ClientID" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="ClientFacilityID" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="ClientBICFacilityCode" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="ClientOrderReference" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="ContainerInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="1" name="ContainerNumber" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="ContainerType" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="SupplierReference" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ClientPurchaseOrderReference" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Container_Work_EstimateStatusInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="1" name="Version" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_DateInfo">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Planned" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="PlannedBy" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="PlannedToTakePlaceOn" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Started" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Finished" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Cancelled" type="xs:dateTime" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" maxOccurs="1" name="ContainerWorkAuthorizationInfo">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="ContainerWorkLessorAuthorizationInfo">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="1" name="LessorID" type="xs:string" />
+                          <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="1" maxOccurs="1" name="Authorized" type="xs:dateTime" />
+                                <xs:element minOccurs="0" maxOccurs="1" name="AuthorizedBy" type="xs:string" />
+                                <xs:element minOccurs="0" maxOccurs="1" name="AuthorizationReference" type="xs:string" />
+                                <xs:element minOccurs="0" maxOccurs="1" name="AuthorizationAmount">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" maxOccurs="1" name="LocalizationInfo">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" maxOccurs="1" name="CurrencyISO" type="xs:string" />
+                                            <xs:element minOccurs="1" maxOccurs="1" name="ExchangeRate" type="xs:double" />
+                                            <xs:element minOccurs="1" maxOccurs="1" name="ExchangeRateDate" type="xs:dateTime" />
+                                            <xs:element minOccurs="1" maxOccurs="1" name="RoundingPerLine" type="xs:boolean" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="1" maxOccurs="1" name="AuthorizationAmount" type="xs:double" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" maxOccurs="1" name="AuthorizationAcceptedBySupplier" type="xs:dateTime" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="ContainerWorkLesseeAuthorizationInfo">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="1" name="LesseeID" type="xs:string" />
+                          <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="1" maxOccurs="1" name="Authorized" type="xs:dateTime" />
+                                <xs:element minOccurs="0" maxOccurs="1" name="AuthorizedBy" type="xs:string" />
+                                <xs:element minOccurs="0" maxOccurs="1" name="AuthorizationReference" type="xs:string" />
+                                <xs:element minOccurs="0" maxOccurs="1" name="AuthorizationAmount">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" maxOccurs="1" name="LocalizationInfo">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" maxOccurs="1" name="CurrencyISO" type="xs:string" />
+                                            <xs:element minOccurs="1" maxOccurs="1" name="ExchangeRate" type="xs:double" />
+                                            <xs:element minOccurs="1" maxOccurs="1" name="ExchangeRateDate" type="xs:dateTime" />
+                                            <xs:element minOccurs="1" maxOccurs="1" name="RoundingPerLine" type="xs:boolean" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="1" maxOccurs="1" name="AuthorizationAmount" type="xs:double" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" maxOccurs="1" name="AuthorizationAcceptedBySupplier" type="xs:dateTime" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Container_Work_WorkStatusInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_DateInfo">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="Planned" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="PlannedBy" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="PlannedToTakePlaceOn" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Started" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Finished" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Cancelled" type="xs:dateTime" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Remarks" type="ArrayOfRemarksRemark" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Attachments" type="ArrayOfAttachmentsAttachment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="MessageHeaderInfoOTFVersion">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="OTF20" />
+      <xs:enumeration value="OTF21" />
+      <xs:enumeration value="OTF216" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="MessageHeaderInfoOTFMessage">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Message_Container_PreNotification" />
+      <xs:enumeration value="Message_Container_PreNotification_StatusUpdate" />
+      <xs:enumeration value="Message_Container_StatusUpdate_Storage_Arrival" />
+      <xs:enumeration value="Message_Container_StatusUpdate_Storage_Available" />
+      <xs:enumeration value="Message_Container_StatusUpdate_Storage_Departure" />
+      <xs:enumeration value="Message_Container_StatusUpdate_Work" />
+      <xs:enumeration value="Message_Container_Work_Estimate" />
+      <xs:enumeration value="Message_TankContainer_InspectionReport" />
+      <xs:enumeration value="Message_TankContainer_PreNotification" />
+      <xs:enumeration value="Message_TankContainer_PreNotification_StatusUpdate" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Cleaning" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Heating" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Inspection" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Storage_Arrival" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Storage_Available" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Storage_Departure" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Transhipment" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Work" />
+      <xs:enumeration value="Message_TankContainer_Work_Estimate" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="MessageHeaderInfoMessageType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="New" />
+      <xs:enumeration value="Update" />
+      <xs:enumeration value="Cancellation" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ArrayOfRemarksRemark">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Remark">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="RemarkID" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="RemarkDate" type="xs:dateTime" />
+            <xs:element minOccurs="0" maxOccurs="1" name="RemarkAuthor" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="RemarkText" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfAttachmentsAttachment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Attachment">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="URL" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="ExternalID" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="Tags">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element minOccurs="0" maxOccurs="1" name="Tag" type="xs:string" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
