@@ -1,0 +1,59 @@
+{
+  "MessageHeaderInfo": {
+    "OTFVersion": "OTF22",
+    "OTFMessage": "Message_TankContainer_StatusUpdate_Inspection",
+    "MessageID": "9dacc705-e77f-4c49-890d-d66bfbec04eb",
+    "ConversationID": null,
+    "SenderID": "Delta Depot Inc.",
+    "RecipientID": "Lima Leasing Inc.",
+    "ContactInfo": null,
+    "SentDate": "2000-01-04T14:21:00+01:00",
+    "MessageType": "New"
+  },
+  "OrderInfo": {
+    "SupplierID": "Delta Depot Inc.",
+    "SupplierFacilityID": "Houston",
+    "SupplierBICFacilityCode": null,
+    "SupplierProformaReference": null,
+    "SupplierOrderReference": "D230101.0001",
+    "OrderStatusInfo": {
+      "OrderStatus": "UNKNOWN",
+      "OrderStatusDescription": "IN Inspection"
+    },
+    "ClientID": "Lima Leasing Inc.",
+    "ClientFacilityID": null,
+    "ClientBICFacilityCode": null,
+    "ClientOrderReference": "XX2251"
+  },
+  "TankContainerInfo": {
+    "ContainerInfo": {
+      "ContainerNumber": "ABCD-123456-0",
+      "ContainerType": "20TC"
+    },
+    "OwnerID": null,
+    "TankContainerSuitabilityInfo": null,
+    "TankContainerCharacteristicsInfo": null,
+    "TankContainerTankInfo": null,
+    "TankContainerEquipmentInfo": null,
+    "TankContainerLiningInfo": null,
+    "InspectionDates": null
+  },
+  "Container_ServiceProgressInfo": {
+    "SupplierReference": "D230101.0001.A1",
+    "ClientPurchaseOrderReference": null,
+    "Container_ServiceProgress_AuthorizationInfo": null,
+    "Container_ServiceProgress_DateInfo": {
+      "Planned": "0001-01-01T00:00:00",
+      "PlannedBy": null,
+      "PlannedToTakePlaceOn": "0001-01-01T00:00:00",
+      "Started": "2000-01-04T14:21:00+01:00",
+      "StartedBy": null,
+      "Finished": "0001-01-01T00:00:00",
+      "FinishedBy": null,
+      "Cancelled": "0001-01-01T00:00:00",
+      "CancelledBy": null
+    }
+  },
+  "Remarks": null,
+  "Attachments": null
+}

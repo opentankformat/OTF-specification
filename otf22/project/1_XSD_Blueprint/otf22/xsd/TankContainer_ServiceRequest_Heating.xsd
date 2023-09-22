@@ -1,0 +1,34 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="Container_ServiceRequestInfo.xsd"/>
+  <xs:include schemaLocation="TankContainer_HeatingMethods.xsd"/>
+  <xs:include schemaLocation="TankContainer_HeatingTemperatureMeasurementMethods.xsd"/>
+  <xs:element name="TankContainer_ServiceRequest_Heating">
+    <xs:complexType>
+      <xs:sequence>
+		<xs:element ref="Container_ServiceRequestInfo" />
+		<xs:element name="RequestedHeatingMethod" minOccurs="0" >
+			<xs:simpleType>
+				<xs:restriction base="TankContainer_HeatingMethods" />
+			</xs:simpleType>
+		</xs:element>
+		<xs:element name="RequestedHeatingMethodDescription" type="xs:string" minOccurs="0" />
+		<xs:element name="RequiredHeatingTemperatureMeasurementMethod" minOccurs="0" >
+			<xs:simpleType>
+				<xs:restriction base="TankContainer_HeatingTemperatureMeasurementMethods" />
+			</xs:simpleType>
+		</xs:element>
+		<xs:element name="RequiredHeatingTemperatureMeasurementMethodDescription" type="xs:string" minOccurs="0" />
+		<xs:element name="TargetTemperature" type="xs:double" minOccurs="0" />
+		<xs:element name="TargetTemperatureUnit" type="xs:string" minOccurs="0" />
+		<xs:element name="MaximumPressure" type="xs:double" minOccurs="0" />			
+		<xs:element name="MaximumPressureUnit" type="xs:string" minOccurs="0" />
+		<xs:element name="MaximumContactTemperature" type="xs:double" minOccurs="0" />
+		<xs:element name="MaximumContactTemperatureUnit" type="xs:string" minOccurs="0" />
+		<xs:element name="MinimumTemperature" type="xs:double" minOccurs="0" />			
+		<xs:element name="MinimumTemperatureUnit" type="xs:string" minOccurs="0" />			
+		<xs:element name="MaximumTemperature" type="xs:double" minOccurs="0" />
+		<xs:element name="MaximumTemperatureUnit" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>								

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message_TankContainer_StatusUpdate_Cleaning xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MessageHeaderInfo>
+    <OTFVersion>OTF22</OTFVersion>
+    <OTFMessage>Message_TankContainer_StatusUpdate_Cleaning</OTFMessage>
+    <MessageID>31a40ee4-9f12-4411-8ac2-a70f22c530c2</MessageID>
+    <SenderID>Delta Depot Inc.</SenderID>
+    <RecipientID>Lima Leasing Inc.</RecipientID>
+    <ContactInfo>
+      <Name>Oscar Operator</Name>
+    </ContactInfo>
+    <SentDate>2000-01-01T12:23:00+01:00</SentDate>
+    <MessageType>New</MessageType>
+  </MessageHeaderInfo>
+  <OrderInfo>
+    <SupplierID>Delta Depot Inc.</SupplierID>
+    <SupplierFacilityID>Houston</SupplierFacilityID>
+    <SupplierOrderReference>D230101.0001</SupplierOrderReference>
+    <OrderStatusInfo>
+      <OrderStatus>IN_CLEAN_REPAIR_PENDING_UNAUTHORIZED</OrderStatus>
+      <OrderStatusDescription>IN_CLEAN_REPAIR_PENDING_UNAUTHORIZED</OrderStatusDescription>
+    </OrderStatusInfo>
+    <ClientID>Lima Leasing Inc.</ClientID>
+    <ClientOrderReference>XX2251</ClientOrderReference>
+  </OrderInfo>
+  <TankContainerInfo>
+    <ContainerInfo>
+      <ContainerNumber>ABCD-123456-0</ContainerNumber>
+      <ContainerType>20TC</ContainerType>
+    </ContainerInfo>
+  </TankContainerInfo>
+  <Container_ServiceProgressInfo>
+    <SupplierReference>D230101.0001.C1</SupplierReference>
+    <Container_ServiceProgress_AuthorizationInfo>
+      <Authorized>0001-01-01T00:00:00</Authorized>
+      <AuthorizationReference>AA23055-C</AuthorizationReference>
+    </Container_ServiceProgress_AuthorizationInfo>
+    <Container_ServiceProgress_DateInfo />
+  </Container_ServiceProgressInfo>
+  <TankContainerCleaningInfo>
+    <CleaningCertificateID>BE6000001</CleaningCertificateID>
+  </TankContainerCleaningInfo>
+</Message_TankContainer_StatusUpdate_Cleaning>

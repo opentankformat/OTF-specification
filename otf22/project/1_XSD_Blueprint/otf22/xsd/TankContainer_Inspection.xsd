@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:include schemaLocation="TankContainer_InspectionResults.xsd"/>  
+  <xs:element name="TankContainer_Inspection">
+    <xs:complexType>
+      <xs:sequence>
+		<xs:element name="InspectionResult" >
+			<xs:simpleType>
+				<xs:restriction base="TankContainer_InspectionResults" />
+			</xs:simpleType>
+		</xs:element>
+		<xs:element name="InspectionRemark" type="xs:string" minOccurs="0" />
+	      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

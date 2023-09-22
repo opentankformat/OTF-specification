@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message_TankContainer_PreNotification_StatusUpdate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MessageHeaderInfo>
+    <OTFVersion>OTF22</OTFVersion>
+    <OTFMessage>Message_TankContainer_PreNotification_StatusUpdate</OTFMessage>
+    <MessageID>35fabb51-b415-46b9-8b24-51b4822cf740</MessageID>
+    <ConversationID>d372cada-f69a-49fd-b090-31ed032f5b1a</ConversationID>
+    <SenderID>Delta Depot Inc.</SenderID>
+    <RecipientID>Lima Leasing Inc.</RecipientID>
+    <ContactInfo>
+      <Name>Oscar Operator</Name>
+    </ContactInfo>
+    <SentDate>2000-01-01T06:54:00+01:00</SentDate>
+    <MessageType>New</MessageType>
+  </MessageHeaderInfo>
+  <OrderInfo>
+    <SupplierID>Delta Depot Inc.</SupplierID>
+    <SupplierFacilityID>Houston</SupplierFacilityID>
+    <SupplierProformaReference>PF2301010003</SupplierProformaReference>
+    <ClientID>Lima Leasing Inc.</ClientID>
+    <ClientOrderReference>XX2251</ClientOrderReference>
+  </OrderInfo>
+  <TankContainerInfo>
+    <ContainerInfo>
+      <ContainerNumber>ABCD-123456-0</ContainerNumber>
+      <ContainerType>20TC</ContainerType>
+    </ContainerInfo>
+  </TankContainerInfo>
+  <PreNotificationStatus>
+    <Status>Approved</Status>
+  </PreNotificationStatus>
+</Message_TankContainer_PreNotification_StatusUpdate>

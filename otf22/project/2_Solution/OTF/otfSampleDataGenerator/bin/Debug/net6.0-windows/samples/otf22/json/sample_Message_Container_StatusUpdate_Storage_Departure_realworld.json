@@ -1,0 +1,40 @@
+{
+  "MessageHeaderInfo": {
+    "OTFVersion": "OTF22",
+    "OTFMessage": "Message_Container_StatusUpdate_Storage_Departure",
+    "MessageID": "25b1b798-308c-4ed8-92e4-60b3935a09e0",
+    "ConversationID": null,
+    "SenderID": "Delta Depot Inc.",
+    "RecipientID": "Lima Leasing Inc.",
+    "ContactInfo": null,
+    "SentDate": "2000-01-09T09:00:00+01:00",
+    "MessageType": "New"
+  },
+  "OrderInfo": {
+    "SupplierID": "Delta Depot Inc.",
+    "SupplierFacilityID": "Houston",
+    "SupplierBICFacilityCode": null,
+    "SupplierProformaReference": null,
+    "SupplierOrderReference": "D230101.0001",
+    "OrderStatusInfo": {
+      "OrderStatus": "OUT",
+      "OrderStatusDescription": "OUT"
+    },
+    "ClientID": "Lima Leasing Inc.",
+    "ClientFacilityID": null,
+    "ClientBICFacilityCode": null,
+    "ClientOrderReference": "XX2251"
+  },
+  "ContainerInfo": {
+    "ContainerNumber": "ABCD-123456-0",
+    "ContainerType": "20TC"
+  },
+  "Container_StatusUpdate_Storage_Departure": {
+    "ClientPurchaseOrderReference": null,
+    "ClientReleaseReference": "",
+    "ContainerReleaseDate": "2000-01-09T09:00:00+01:00",
+    "Container_HaulierInfo": null
+  },
+  "Remarks": null,
+  "Attachments": null
+}

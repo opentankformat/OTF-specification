@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:simpleType name="Container_PreNotificationTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Empty" />	
+      <xs:enumeration value="Redelivery" />
+      <xs:enumeration value="Release" />
+      <xs:enumeration value="OffHire" />
+      <xs:enumeration value="OnHire" />
+      <xs:enumeration value="Heating" />
+      <xs:enumeration value="AccompaniedCleaning" />
+      <xs:enumeration value="QuickRepair" />
+      <xs:enumeration value="Other" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

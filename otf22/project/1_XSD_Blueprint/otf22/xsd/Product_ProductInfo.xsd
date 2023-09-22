@@ -1,0 +1,242 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="CRM_ContactInfo.xsd"/>
+  <xs:include schemaLocation="Product_GHS_HazardPictograms.xsd"/>
+  <xs:include schemaLocation="Product_IMO_IMDG_Classes.xsd"/>
+  <xs:include schemaLocation="Product_IMO_IMDG_SegregationGroups.xsd"/>
+  <xs:include schemaLocation="Product_UN_ADR_Classes.xsd"/>
+  <xs:include schemaLocation="Product_UN_PackingGroups.xsd"/>
+  <xs:include schemaLocation="Product_GHS_HazardStatements.xsd"/>
+  <xs:include schemaLocation="Product_GHS_PrecautionaryStatements.xsd"/>  
+  <xs:include schemaLocation="Product_FlashPointTestMethods.xsd"/>  
+  <xs:element name="ProductInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="MainName" type="xs:string" />
+        <xs:element name="TradeName" type="xs:string" minOccurs="0" />
+        <xs:element name="ExternalID" type="xs:string" minOccurs="0" />
+  		<xs:element minOccurs="0" maxOccurs="1" name="ProductDetails">
+			<xs:complexType>
+				<xs:sequence>
+			        <xs:element name="Manufacturer" type="xs:string" minOccurs="0" />
+					<xs:element name="SDSURL" type="xs:string" minOccurs="0" />
+					<xs:element name="CommonProductGroupDescription" type="xs:string" minOccurs="0" />
+					<xs:element minOccurs="0" maxOccurs="1" name="PureProductDetails">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="PIN" type="xs:string" minOccurs="0" />
+								<xs:element name="CASNumber" type="xs:string" minOccurs="0" />
+								<xs:element name="AlternativeNames" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="AlternativeName" type="xs:string" minOccurs="0" />		
+										</xs:sequence> 
+									</xs:complexType>
+								</xs:element>				
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element minOccurs="0" maxOccurs="1" name="MixtureProductDetails">					
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="TradeNames" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="TradeName" type="xs:string" minOccurs="0" />		
+										</xs:sequence> 
+									</xs:complexType>
+								</xs:element>							
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element minOccurs="0" maxOccurs="1" name="HazardousProductSafetyClassifications">			
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element minOccurs="0" maxOccurs="1" name="UN_DangerousGoodsList">					
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="PSN" type="xs:string" minOccurs="0" />
+											<xs:element name="UNNumber" type="xs:string" minOccurs="0" />
+											<xs:element name="ADRClass" minOccurs="0" >
+												<xs:simpleType>
+													<xs:restriction base="Product_UN_ADR_Classes" />
+												</xs:simpleType>
+											</xs:element>										
+											<xs:element name="ADRClassDescription" type="xs:string" minOccurs="0" />
+											<xs:element name="UNPackingGroup" minOccurs="0" >
+												<xs:simpleType>
+													<xs:restriction base="Product_UN_PackingGroups" />
+												</xs:simpleType>
+											</xs:element>										
+											<xs:element name="UNPackingGroupDescription" type="xs:string" minOccurs="0" />
+											<xs:element name="KemlerCode" type="xs:string" minOccurs="0" />										
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element minOccurs="0" maxOccurs="1" name="UN_GHS">					
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="HazardStatements" maxOccurs="unbounded">
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name="HazardStatementCode" minOccurs="0" >
+															<xs:simpleType>
+																<xs:restriction base="Product_GHS_HazardStatements" />
+															</xs:simpleType>
+														</xs:element>													
+														<xs:element name="HazardStatementCodeDescription" type="xs:string" minOccurs="0" />		
+														<xs:element name="HazardStatementDescription" type="xs:string" minOccurs="0" />		
+													</xs:sequence> 
+												</xs:complexType>
+											</xs:element>
+											<xs:element name="PrecautionaryStatements" maxOccurs="unbounded">
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name="PrecautionaryStatementCode" minOccurs="0" >
+															<xs:simpleType>
+																<xs:restriction base="Product_GHS_PrecautionaryStatements" />
+															</xs:simpleType>
+														</xs:element>													
+														<xs:element name="PrecautionaryStatementCodeDescription" type="xs:string" minOccurs="0" />		
+														<xs:element name="PrecautionaryStatementDescription" type="xs:string" minOccurs="0" />		
+													</xs:sequence> 
+												</xs:complexType>
+											</xs:element>
+											<xs:element name="HazardPictograms" maxOccurs="unbounded">
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name="HazardPictogram" minOccurs="0" >
+															<xs:simpleType>
+																<xs:restriction base="Product_GHS_HazardPictograms" />
+															</xs:simpleType>
+														</xs:element>													
+														<xs:element name="HazardPictogramDescription" type="xs:string" minOccurs="0" />		
+													</xs:sequence> 
+												</xs:complexType>
+											</xs:element>							
+											<xs:element name="CustomizedStatements" maxOccurs="unbounded">
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name="Code" type="xs:string" minOccurs="0" />		
+														<xs:element name="Description" type="xs:string" minOccurs="0" />		
+														<xs:element name="Category" type="xs:string" minOccurs="0" />		
+													</xs:sequence> 
+												</xs:complexType>
+											</xs:element>
+											<xs:element name="CNCode" type="xs:string" minOccurs="0" />		
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>								
+								<xs:element minOccurs="0" maxOccurs="1" name="IMO_IMDG">					
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="IMDGClass" minOccurs="0" >
+												<xs:simpleType>
+													<xs:restriction base="Product_IMO_IMDG_Classes" />
+												</xs:simpleType>
+											</xs:element>											
+											<xs:element name="IMDGClassDescription" type="xs:string" minOccurs="0" />		
+											<xs:element name="SegregationGroup" minOccurs="0" >
+												<xs:simpleType>
+													<xs:restriction base="Product_IMO_IMDG_SegregationGroups" />
+												</xs:simpleType>
+											</xs:element>											
+											<xs:element name="SegregationGroupDescription" type="xs:string" minOccurs="0" />		
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element minOccurs="0" maxOccurs="1" name="EU_REACH">					
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="ECNumber" type="xs:string" minOccurs="0" />
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>					
+					<xs:element minOccurs="0" maxOccurs="1" name="PhysicalChemicalPropertiesInfo">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="ChemicalName" type="xs:string" minOccurs="0" />					
+								<xs:element name="ChemicalFamily" type="xs:string" minOccurs="0" />					
+								<xs:element name="ChemicalFormula" type="xs:string" minOccurs="0" />					
+								<xs:element name="PhysicalState" type="xs:string" minOccurs="0" />					
+								<xs:element name="Odor" type="xs:string" minOccurs="0" />					
+								<xs:element name="Appearance" type="xs:string" minOccurs="0" />					
+								<xs:element name="VaporPressure" type="xs:double" minOccurs="0" />					
+								<xs:element name="VaporPressureUnit" type="xs:string" minOccurs="0" />					
+								<xs:element name="VaporPressureAtTemperature" type="xs:double" minOccurs="0" />					
+								<xs:element name="VaporPressureAtTemperatureUnit" type="xs:string" minOccurs="0" />										
+								<xs:element name="VaporDensity" type="xs:double" minOccurs="0" />					
+								<xs:element name="VaporDensityUnit" type="xs:string" minOccurs="0" />					
+								<xs:element name="VaporDensityAtTemperature" type="xs:double" minOccurs="0" />					
+								<xs:element name="VaporDensityAtTemperatureUnit" type="xs:string" minOccurs="0" />										
+								<xs:element name="MeltingPointTemperature" type="xs:double" minOccurs="0" />					
+								<xs:element name="MeltingPointTemperatureUnit" type="xs:string" minOccurs="0" />					
+								<xs:element name="BoilingPointTemperature" type="xs:double" minOccurs="0" />					
+								<xs:element name="BoilingPointTemperatureUnit" type="xs:string" minOccurs="0" />					
+								<xs:element name="FreezingPointTemperature" type="xs:double" minOccurs="0" />					
+								<xs:element name="FreezingPointTemperatureUnit" type="xs:string" minOccurs="0" />					
+								<xs:element name="CriticalTemperature" type="xs:double" minOccurs="0" />					
+								<xs:element name="CriticalTemperatureUnit" type="xs:string" minOccurs="0" />					
+								<xs:element name="pH" type="xs:string" minOccurs="0" />					
+								<xs:element name="SpecificGravity" type="xs:string" minOccurs="0" />					
+								<xs:element name="SolubilityInWater" type="xs:string" minOccurs="0" />					
+								<xs:element name="Viscosity" type="xs:double" minOccurs="0" />					
+								<xs:element name="ViscosityUnit" type="xs:string" minOccurs="0" />					
+								<xs:element name="ViscosityAtTemperature" type="xs:double" minOccurs="0" />					
+								<xs:element name="ViscosityAtTemperatureUnit" type="xs:string" minOccurs="0" />										
+								<xs:element name="MolarMass" type="xs:double" minOccurs="0" />					
+								<xs:element name="MolarMassUnit" type="xs:string" minOccurs="0" />
+								<xs:element minOccurs="0" maxOccurs="1" name="PolymerInfo">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="IsPolymer" type="xs:boolean" minOccurs="0" />
+											<xs:element name="SelfAcceleratingPolymerizationTemperature" type="xs:double" minOccurs="0" />
+											<xs:element name="SelfAcceleratingPolymerizationTemperatureUnit" type="xs:string" minOccurs="0" />
+											<xs:element name="SelfAcceleratingDecompositionTemperature" type="xs:double" minOccurs="0" />
+											<xs:element name="SelfAcceleratingDecompositionTemperatureUnit" type="xs:string" minOccurs="0" />
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>	
+					<xs:element minOccurs="0" maxOccurs="1" name="FireAndExplosionDataInfo">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="FlashPointTestMethod" minOccurs="0" >
+									<xs:simpleType>
+										<xs:restriction base="Product_FlashPointTestMethods" />
+									</xs:simpleType>
+								</xs:element>
+								<xs:element name="FlashPointTestMethodDescription" type="xs:string" minOccurs="0" />										
+								<xs:element name="FlashPointTemperature" type="xs:double" minOccurs="0" />					
+								<xs:element name="FlashPointTemperatureUnit" type="xs:string" minOccurs="0" />										
+								<xs:element name="AutoIgnitionTemperature" type="xs:double" minOccurs="0" />					
+								<xs:element name="AutoIgnitionTemperatureUnit" type="xs:string" minOccurs="0" />					
+								<xs:element name="UELPercentage" type="xs:double" minOccurs="0" />					
+								<xs:element name="LELPercentage" type="xs:double" minOccurs="0" />		
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>	
+					<xs:element minOccurs="0" maxOccurs="1" name="EmergencyContactInfo">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="ContactInfo" >
+								  <xs:complexType>
+									<xs:sequence>
+										<xs:element ref="ContactInfo" minOccurs="0" />
+									</xs:sequence>
+								  </xs:complexType>
+								</xs:element>	
+							</xs:sequence>
+						</xs:complexType>							
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>		 
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,85 @@
+{
+  "MessageHeaderInfo": {
+    "OTFVersion": "OTF22",
+    "OTFMessage": "Message_Container_PreNotification",
+    "MessageID": "380d2c85-23cb-4ff6-8676-526910d504c9",
+    "ConversationID": "d372cada-f69a-49fd-b090-31ed032f5b1a",
+    "SenderID": "Lima Leasing Inc.",
+    "RecipientID": "Delta Depot Inc.",
+    "ContactInfo": {
+      "Name": "Oscar Operator",
+      "ExternalID": null,
+      "Phone": null,
+      "Email": null
+    },
+    "SentDate": "2000-01-01T06:52:00+01:00",
+    "MessageType": "New"
+  },
+  "ContainerPreNotificationType": "Redelivery",
+  "OrderInfo": {
+    "SupplierID": "Delta Depot Inc.",
+    "SupplierFacilityID": "Houston",
+    "SupplierBICFacilityCode": null,
+    "SupplierProformaReference": null,
+    "SupplierOrderReference": null,
+    "OrderStatusInfo": null,
+    "ClientID": "Lima Leasing Inc.",
+    "ClientFacilityID": null,
+    "ClientBICFacilityCode": null,
+    "ClientOrderReference": "XX2251"
+  },
+  "ContainerInfo": {
+    "ContainerNumber": "ABCD-123456-0",
+    "ContainerType": "20TC"
+  },
+  "ArrivalInfo": {
+    "ETA": "2000-01-01T11:00:00+01:00",
+    "RedeliveryReference": "REL5556",
+    "ContainerOrigin": null,
+    "Container_HaulierInfo": {
+      "HaulierName": "Tango Transport Inc.",
+      "TruckDriverName": "Tommy Truck Driver",
+      "TruckLicensePlate": "AAA-111",
+      "ChassisLicensePlate": null
+    }
+  },
+  "ServicesRequestInfo": {
+    "Container_ServiceRequest_Storage": {
+      "Container_ServiceRequestInfo": {
+        "IsRequested": true,
+        "ClientPurchaseOrderReference": null,
+        "ClientAuthorizationReference": null,
+        "Remarks": null
+      }
+    },
+    "Container_ServiceRequest_Work_Modification": null,
+    "Container_ServiceRequest_Work_Repair": {
+      "IsRequested": true,
+      "LessorID": "Lima Leasing Inc.",
+      "LessorAuthorizationReference": "REP5559",
+      "LesseeID": "Oscar Operator Inc.",
+      "LesseeAuthorizationReference": "",
+      "SpecialInstructionID": null
+    }
+  },
+  "DepartureInfo": {
+    "ETD": "0001-01-01T00:00:00",
+    "ReleaseReference": "",
+    "ContainerDestination": "935 Pennsylvania Avenue NW, Washington D.C.",
+    "Container_HaulierInfo": {
+      "HaulierName": "Tango Transport Inc.",
+      "TruckDriverName": "Tina Truck Driver",
+      "TruckLicensePlate": "BBB-111",
+      "ChassisLicensePlate": null
+    }
+  },
+  "Remarks": [
+    {
+      "RemarkID": "8ea3d430-06e8-4d42-a98f-1eb984f08ff2",
+      "RemarkDate": "2000-01-01T06:52:00+01:00",
+      "RemarkAuthor": "Oscar Operator",
+      "RemarkText": "This is a remark"
+    }
+  ],
+  "Attachments": null
+}

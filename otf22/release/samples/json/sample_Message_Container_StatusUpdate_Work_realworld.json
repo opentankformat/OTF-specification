@@ -1,0 +1,77 @@
+{
+  "MessageHeaderInfo": {
+    "OTFVersion": "OTF22",
+    "OTFMessage": "Message_Container_StatusUpdate_Work",
+    "MessageID": "ad47590-acd7-4f7d-b8b1-9d422f00b994",
+    "ConversationID": "3e818a60-5941-4615-911e-e1f540d6f314",
+    "SenderID": "Delta Depot Inc.",
+    "RecipientID": "Lima Leasing Inc.",
+    "ContactInfo": null,
+    "SentDate": "2000-01-03T08:55:00+01:00",
+    "MessageType": "New"
+  },
+  "OrderInfo": {
+    "SupplierID": "Delta Depot Inc.",
+    "SupplierFacilityID": "Houston",
+    "SupplierBICFacilityCode": null,
+    "SupplierProformaReference": null,
+    "SupplierOrderReference": "D230101.0001",
+    "OrderStatusInfo": {
+      "OrderStatus": "IN_CLEAN_REPAIR_IN_AUTHORIZED",
+      "OrderStatusDescription": "IN_CLEAN_REPAIR_IN_AUTHORIZED"
+    },
+    "ClientID": "Lima Leasing Inc.",
+    "ClientFacilityID": null,
+    "ClientBICFacilityCode": null,
+    "ClientOrderReference": "XX2251"
+  },
+  "ContainerInfo": {
+    "ContainerNumber": "ABCD-123456-0",
+    "ContainerType": "20TC"
+  },
+  "SupplierReference": "D230101.0001.R1",
+  "ClientPurchaseOrderReference": null,
+  "Container_Work_EstimateStatusInfo": {
+    "Version": "V1",
+    "EstimatorName": "Eddy Estimator",
+    "Container_ServiceProgress_DateInfo": {
+      "Planned": "0001-01-01T00:00:00",
+      "PlannedBy": null,
+      "PlannedToTakePlaceOn": "0001-01-01T00:00:00",
+      "Started": "0001-01-01T00:00:00",
+      "StartedBy": null,
+      "Finished": "2000-01-02T16:23:00+01:00",
+      "FinishedBy": null,
+      "Cancelled": "0001-01-01T00:00:00",
+      "CancelledBy": null
+    },
+    "ContainerWorkAuthorizationInfo": {
+      "ContainerWorkLessorAuthorizationInfo": {
+        "LessorID": "Lima Leasing Inc.",
+        "Container_ServiceProgress_AuthorizationInfo": {
+          "Authorized": "2000-01-02T17:23:00+01:00",
+          "AuthorizedBy": null,
+          "AuthorizationReference": "REP5559",
+          "AuthorizationAmount": null
+        },
+        "AuthorizationAcceptedBySupplier": "0001-01-01T00:00:00"
+      },
+      "ContainerWorkLesseeAuthorizationInfo": null
+    }
+  },
+  "Container_Work_WorkStatusInfo": {
+    "Container_ServiceProgress_DateInfo": {
+      "Planned": "0001-01-01T00:00:00",
+      "PlannedBy": null,
+      "PlannedToTakePlaceOn": "0001-01-01T00:00:00",
+      "Started": "2000-01-03T08:55:00+01:00",
+      "StartedBy": null,
+      "Finished": "0001-01-01T00:00:00",
+      "FinishedBy": null,
+      "Cancelled": "0001-01-01T00:00:00",
+      "CancelledBy": null
+    }
+  },
+  "Remarks": null,
+  "Attachments": null
+}

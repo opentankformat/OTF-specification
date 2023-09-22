@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message_TankContainer_InspectionReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MessageHeaderInfo>
+    <OTFVersion>OTF22</OTFVersion>
+    <OTFMessage>Message_TankContainer_InspectionReport</OTFMessage>
+    <MessageID>56c03e52-2436-4573-927a-641662d4124d</MessageID>
+    <SenderID>India Inspection Bureau Inc.</SenderID>
+    <RecipientID>Lima Leasing Inc.</RecipientID>
+    <SentDate>2000-01-04T14:21:00+01:00</SentDate>
+    <MessageType>New</MessageType>
+  </MessageHeaderInfo>
+  <HardCopyInfo>
+    <HardCopyURL>https://dummyInspectionBureay/credentials/order/inspectionreport.pdf</HardCopyURL>
+  </HardCopyInfo>
+  <InspectionOrderInfo>
+    <SupplierID>India Inspection Bureau Inc.</SupplierID>
+    <SupplierInspectionReference />
+    <SupplierInspectionRevision />
+    <SupplierInspectionRevisionRemarks />
+    <SupplierTermsAndConditions />
+    <ClientID>Lima Leasing Inc.</ClientID>
+    <ClientInspectionReference>XX2251</ClientInspectionReference>
+  </InspectionOrderInfo>
+  <InspectionResultsInfo>
+    <InspectionLocationID>Houston</InspectionLocationID>
+    <InspectionCenterID />
+    <InspectionDate>2000-01-04T14:21:00+01:00</InspectionDate>
+    <InspectorName />
+    <OperatorID>Lima Leasing Inc.</OperatorID>
+    <TankContainerMarkings />
+    <TankContainerRegulationsApplicableAccordingToMarkingsInfo>
+      <IMDG>GB/IMO/LR 10277</IMDG>
+      <RID_ADR>GB/TC/LR 10277</RID_ADR>
+      <CSC>GB/LR 10277-02/00</CSC>
+      <USDOT>IM 101</USDOT>
+    </TankContainerRegulationsApplicableAccordingToMarkingsInfo>
+    <TankContainerInfo>
+      <ContainerInfo>
+        <ContainerNumber>ABCD-123456-0</ContainerNumber>
+        <ContainerType>20TC</ContainerType>
+      </ContainerInfo>
+      <OwnerID>Lima Leasing Inc.</OwnerID>
+      <TankContainerSuitabilityInfo>
+        <RID_ADRCode>L4BN</RID_ADRCode>
+        <SubstancesSuitableForTransport>
+          <TankContainerInfo_SubstanceSuitableForTransport>
+            <UNNumber />
+          </TankContainerInfo_SubstanceSuitableForTransport>
+        </SubstancesSuitableForTransport>
+        <SpecialProvisions>
+          <TankContainerInfo_SpecialProvision>
+            <SpecialProvision />
+          </TankContainerInfo_SpecialProvision>
+        </SpecialProvisions>
+      </TankContainerSuitabilityInfo>
+      <TankContainerCharacteristicsInfo>
+        <Manufacturer>Mike Manufacturer NV</Manufacturer>
+        <ISO6346SizeTypeCodeDescription />
+      </TankContainerCharacteristicsInfo>
+      <TankContainerTankInfo>
+        <ShellMaterial />
+      </TankContainerTankInfo>
+      <TankContainerEquipmentInfo>
+        <TopDischarge />
+        <BottomDischarge />
+        <Heater />
+        <ReliefValves>
+          <TankContainerInfo_ReliefValve>
+            <Manufacturer>Perolo Superventix</Manufacturer>
+            <SerialNumber>015400</SerialNumber>
+          </TankContainerInfo_ReliefValve>
+        </ReliefValves>
+      </TankContainerEquipmentInfo>
+      <TankContainerLiningInfo>
+        <InternalCoating />
+        <Insulation />
+        <Material />
+      </TankContainerLiningInfo>
+      <InspectionDates>
+        <LastInspectionScopeDescription>H</LastInspectionScopeDescription>
+      </InspectionDates>
+    </TankContainerInfo>
+    <Inspections>
+      <InternalInspection>
+        <TankContainer_Inspection>
+          <InspectionResult>SatisfactoryWithRemark</InspectionResult>
+          <InspectionRemark>Inspection remark</InspectionRemark>
+        </TankContainer_Inspection>
+      </InternalInspection>
+      <ExternalInspection>
+        <TankContainer_Inspection>
+          <InspectionResult>Satisfactory</InspectionResult>
+        </TankContainer_Inspection>
+      </ExternalInspection>
+      <ThicknessMeasurements>
+        <TankContainer_Inspection>
+          <InspectionResult>Remark</InspectionResult>
+          <InspectionRemark>Another remark</InspectionRemark>
+        </TankContainer_Inspection>
+      </ThicknessMeasurements>
+      <HydraulicTest>
+        <TankContainer_Inspection>
+          <InspectionResult>NotApplicable</InspectionResult>
+        </TankContainer_Inspection>
+      </HydraulicTest>
+      <LeakproofnessTest>
+        <TankContainer_Inspection>
+          <InspectionResult>NotApplicable</InspectionResult>
+        </TankContainer_Inspection>
+      </LeakproofnessTest>
+      <VacuumMeasurement>
+        <TankContainer_Inspection>
+          <InspectionResult>NotApplicable</InspectionResult>
+        </TankContainer_Inspection>
+      </VacuumMeasurement>
+      <HeaterPressureTest>
+        <TankContainer_Inspection>
+          <InspectionResult>NotApplicable</InspectionResult>
+        </TankContainer_Inspection>
+      </HeaterPressureTest>
+      <ValveSettingsCheck>
+        <TankContainer_Inspection>
+          <InspectionResult>NotApplicable</InspectionResult>
+        </TankContainer_Inspection>
+      </ValveSettingsCheck>
+      <ServiceEquipmentCheck>
+        <TankContainer_Inspection>
+          <InspectionResult>NotApplicable</InspectionResult>
+        </TankContainer_Inspection>
+      </ServiceEquipmentCheck>
+      <FrameExamination>
+        <TankContainer_Inspection>
+          <InspectionResult>NotApplicable</InspectionResult>
+        </TankContainer_Inspection>
+      </FrameExamination>
+      <MarkingExamination>
+        <TankContainer_Inspection>
+          <InspectionResult>NotApplicable</InspectionResult>
+        </TankContainer_Inspection>
+      </MarkingExamination>
+      <RefOfMeasurementInstrumentsUsed />
+    </Inspections>
+  </InspectionResultsInfo>
+  <InspectionVerification>
+    <VerificationDate>2023-09-22T13:17:02.5397599+02:00</VerificationDate>
+    <VerificatorName>Guybrush Threepwood</VerificatorName>
+  </InspectionVerification>
+</Message_TankContainer_InspectionReport>

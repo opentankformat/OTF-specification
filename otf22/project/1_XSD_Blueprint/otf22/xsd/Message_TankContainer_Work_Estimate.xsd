@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="Common_MessageHeaderInfo.xsd"/>
+  <xs:include schemaLocation="Common_Remarks.xsd"/> 
+  <xs:include schemaLocation="Common_Attachments.xsd"/>   
+  <xs:include schemaLocation="Common_OrderInfo.xsd"/>
+  <xs:include schemaLocation="Common_LocalizationInfo.xsd"/>
+   <xs:include schemaLocation="TankContainerInfo.xsd"/> 
+  <xs:include schemaLocation="Container_Work_EstimateStatusInfo.xsd"/>
+  <xs:include schemaLocation="Container_Work_EstimateLines.xsd"/>
+  <xs:element name="Message_TankContainer_Work_Estimate">
+    <xs:complexType>
+      <xs:sequence>
+	    <xs:element ref="MessageHeaderInfo"/>
+	    <xs:element ref="OrderInfo"/>  		
+	    <xs:element ref="LocalizationInfo"/>
+	    <xs:element ref="TankContainerInfo" minOccurs="0" />	
+	    <xs:element ref="Container_Work_EstimateStatusInfo"/>
+        <xs:element name="ContainerStorageArrivalInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContainerDeliveryDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+	 	<xs:element name="Category" type="xs:string" minOccurs="0" />
+	 	<xs:element name="LaborRate" type="xs:double" />
+		<xs:element name="EstimateLines" type="Container_Work_EstimateLines" />	
+	 	<xs:element name="EstimateLinesProposalTotal" type="xs:double" />
+		<xs:element name="Remarks" type="Remarks" minOccurs="0" />
+		<xs:element name="Attachments" type="Attachments" minOccurs="0" />		
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

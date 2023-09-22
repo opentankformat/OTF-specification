@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:simpleType name="Product_GHS_PrecautionaryStatements">
+    <xs:restriction base="xs:string">
+     <xs:enumeration value="P101">
+        <xs:annotation>
+          <xs:documentation>If medical advice is needed, have product container or label at hand.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P102">
+        <xs:annotation>
+          <xs:documentation>Keep out of reach of children.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P103">
+        <xs:annotation>
+          <xs:documentation>Read label before use.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P201">
+        <xs:annotation>
+          <xs:documentation>Obtain special instructions before use.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P202">
+        <xs:annotation>
+          <xs:documentation>Do not handle until all safety precautions have been read and understood.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P210">
+        <xs:annotation>
+          <xs:documentation>Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P211">
+        <xs:annotation>
+          <xs:documentation>Do not spray on an open flame or other ignition source.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P220">
+        <xs:annotation>
+          <xs:documentation>Keep/Store away from clothing/.../combustible materials.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P221">
+        <xs:annotation>
+          <xs:documentation>Take any precaution to avoid mixing with combustibles.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P222">
+        <xs:annotation>
+          <xs:documentation>Do not allow contact with air.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P223">
+        <xs:annotation>
+          <xs:documentation>Do not allow contact with water.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P230">
+        <xs:annotation>
+          <xs:documentation>Keep wetted with ...</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P231">
+        <xs:annotation>
+          <xs:documentation>Handle and store contents under inert gas/...</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P231+P232">
+        <xs:annotation>
+          <xs:documentation>Handle and store contents under inert gas. Protect from moisture</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P232">
+        <xs:annotation>
+          <xs:documentation>Protect from moisture.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P233">
+        <xs:annotation>
+          <xs:documentation>Keep container tightly closed.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P234">
+        <xs:annotation>
+          <xs:documentation>Keep only in original container/packaging.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P235">
+        <xs:annotation>
+          <xs:documentation>Keep cool.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P235+P410">
+        <xs:annotation>
+          <xs:documentation>Keep cool. Protect from sunlight.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P240">
+        <xs:annotation>
+          <xs:documentation>Ground and bond container and receiving equipment.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P241">
+        <xs:annotation>
+          <xs:documentation>Use explosion-proof electrical/ventilating/light/.../equipment.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P242">
+        <xs:annotation>
+          <xs:documentation>Use only non-sparking tools.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P243">
+        <xs:annotation>
+          <xs:documentation>Take precautionary measures to prevent static discharges.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P244">
+        <xs:annotation>
+          <xs:documentation>Keep valves and fittings free from grease and oil</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P250">
+        <xs:annotation>
+          <xs:documentation>Do not subject to grinding/shock/.../friction.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P251">
+        <xs:annotation>
+          <xs:documentation>Pressurized container – Do not pierce or burn, even after use.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P260">
+        <xs:annotation>
+          <xs:documentation>Do not breathe dust/fume/gas/mist/vapours/spray.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P261">
+        <xs:annotation>
+          <xs:documentation>Avoid breathing dust/fume/gas/mist/vapours/spray.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P262">
+        <xs:annotation>
+          <xs:documentation>Do not get in eyes, on skin, or on clothing.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P263">
+        <xs:annotation>
+          <xs:documentation>Avoid contact during pregnancy and while nursing.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P264">
+        <xs:annotation>
+          <xs:documentation>Wash ... thoroughly after handling.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P270">
+        <xs:annotation>
+          <xs:documentation>Do not eat, drink or smoke when using this product.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P271">
+        <xs:annotation>
+          <xs:documentation>Use only outdoors or in a well-ventilated area.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P272">
+        <xs:annotation>
+          <xs:documentation>Contaminated work clothing should not be allowed out of the workplace.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P273">
+        <xs:annotation>
+          <xs:documentation>Avoid release to the environment.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P280">
+        <xs:annotation>
+          <xs:documentation>Wear protective gloves/protective clothing/eye protection/face protection.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P281">
+        <xs:annotation>
+          <xs:documentation>Use personal protective equipment as required.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P282">
+        <xs:annotation>
+          <xs:documentation>Wear cold insulating gloves and either face shield or eye protection.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P283">
+        <xs:annotation>
+          <xs:documentation>Wear fire resistant or flame retardant clothing.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P284">
+        <xs:annotation>
+          <xs:documentation>Wear respiratory protection.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P285">
+        <xs:annotation>
+          <xs:documentation>In case of inadequate ventilation wear respiratory protection.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P301">
+        <xs:annotation>
+          <xs:documentation>IF SWALLOWED:</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P301+P310">
+        <xs:annotation>
+          <xs:documentation>IF SWALLOWED: Immediately call a POISON CENTER or doctor/physician.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P301+P312">
+        <xs:annotation>
+          <xs:documentation>IF SWALLOWED: Call a POISON CENTER or doctor/physician if you feel unwell.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P301+P330+P331">
+        <xs:annotation>
+          <xs:documentation>IF SWALLOWED: Rinse mouth. Do NOT induce vomiting.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P302">
+        <xs:annotation>
+          <xs:documentation>IF ON SKIN:</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P302+P334">
+        <xs:annotation>
+          <xs:documentation>IF ON SKIN: Immerse in cool water or wrap in wet bandages.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P302+P350">
+        <xs:annotation>
+          <xs:documentation>IF ON SKIN: Gently wash with soap and water.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P302+P352">
+        <xs:annotation>
+          <xs:documentation>IF ON SKIN: Wash with soap and water.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P303">
+        <xs:annotation>
+          <xs:documentation>IF ON SKIN (or hair):</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P303+P361+P353">
+        <xs:annotation>
+          <xs:documentation>IF ON SKIN (or hair): Remove/Take off immediately all contaminated clothing. Rinse skin with water [or shower].</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P304">
+        <xs:annotation>
+          <xs:documentation>IF INHALED:</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P304+P312">
+        <xs:annotation>
+          <xs:documentation>IF INHALED: Call a POISON CENTER or doctor/physician if you feel unwell.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P304+P340">
+        <xs:annotation>
+          <xs:documentation>IF INHALED: Remove victim to fresh air and keep at rest in a position comfortable for breathing.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P304+P341">
+        <xs:annotation>
+          <xs:documentation>IF INHALED: If breathing is difficult, remove victim to fresh air and keep at rest in a position comfortable for breathing.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P305">
+        <xs:annotation>
+          <xs:documentation>IF IN EYES:</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P305+P351+P338">
+        <xs:annotation>
+          <xs:documentation>IF IN EYES: Rinse continuously with water for several minutes. Remove contact lenses if present and easy to do. Continue rinsing.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P306">
+        <xs:annotation>
+          <xs:documentation>IF ON CLOTHING:</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P306+P360">
+        <xs:annotation>
+          <xs:documentation>IF ON CLOTHING: Rinse immediately contaminated clothing and skin with plenty of water before removing clothes.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P307">
+        <xs:annotation>
+          <xs:documentation>IF exposed:</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P307+P311">
+        <xs:annotation>
+          <xs:documentation>IF exposed: Call a POISON CENTER or doctor/physician.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P308">
+        <xs:annotation>
+          <xs:documentation>IF exposed or concerned:</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P308+P311">
+        <xs:annotation>
+          <xs:documentation>IF exposed or concerned: Call a POISON CENTER or doctor/physician.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P308+P313">
+        <xs:annotation>
+          <xs:documentation>IF exposed or concerned: Get medical advice/attention.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P309">
+        <xs:annotation>
+          <xs:documentation>IF exposed or you feel unwell:</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P309+P311">
+        <xs:annotation>
+          <xs:documentation>IF exposed or you feel unwell: Call a POISON CENTER or doctor/physician.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P310">
+        <xs:annotation>
+          <xs:documentation>Immediately call a POISON CENTER or doctor/physician.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P311">
+        <xs:annotation>
+          <xs:documentation>Call a POISON CENTER or doctor/physician.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P312">
+        <xs:annotation>
+          <xs:documentation>Call a POISON CENTER or doctor/physician if you feel unwell.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P313">
+        <xs:annotation>
+          <xs:documentation>Get medical advice/attention.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P314">
+        <xs:annotation>
+          <xs:documentation>Get Medical advice/attention if you feel unwell.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P315">
+        <xs:annotation>
+          <xs:documentation>Get immediate medical advice/attention.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P320">
+        <xs:annotation>
+          <xs:documentation>Specific treatment is urgent (see ... on this label).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P321">
+        <xs:annotation>
+          <xs:documentation>Specific treatment (see ... on this label).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P322">
+        <xs:annotation>
+          <xs:documentation>Specific measures (see ... on this label).</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P330">
+        <xs:annotation>
+          <xs:documentation>Rinse mouth.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P331">
+        <xs:annotation>
+          <xs:documentation>Do NOT induce vomiting.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P332">
+        <xs:annotation>
+          <xs:documentation>If skin irritation occurs:</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P332+P313">
+        <xs:annotation>
+          <xs:documentation>If skin irritation occurs: Get medical advice/attention.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P333">
+        <xs:annotation>
+          <xs:documentation>If skin irritation or a rash occurs:</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P333+P313">
+        <xs:annotation>
+          <xs:documentation>If skin irritation or a rash occurs: Get medical advice/attention.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P334">
+        <xs:annotation>
+          <xs:documentation>Immerse in cool water [or wrap in wet bandages].</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P335">
+        <xs:annotation>
+          <xs:documentation>Brush off loose particles from skin.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P335+P334">
+        <xs:annotation>
+          <xs:documentation>Brush off loose particles from skin. Immerse in cool water/wrap in wet bandages.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P336">
+        <xs:annotation>
+          <xs:documentation>Thaw frosted parts with lukewarm water. Do not rub affected areas.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P337">
+        <xs:annotation>
+          <xs:documentation>If eye irritation persists:</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P337+P313">
+        <xs:annotation>
+          <xs:documentation>If eye irritation persists: Get medical advice/attention.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P338">
+        <xs:annotation>
+          <xs:documentation>Remove contact lenses if present and easy to do. Continue rinsing.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P340">
+        <xs:annotation>
+          <xs:documentation>Remove victim to fresh air and keep at rest in a position comfortable for breathing.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P341">
+        <xs:annotation>
+          <xs:documentation>If breathing is difficult, remove victim to fresh air and keep at rest in a position comfortable for breathing.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P342">
+        <xs:annotation>
+          <xs:documentation>If experiencing respiratory symptoms:</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P342+P311">
+        <xs:annotation>
+          <xs:documentation>If experiencing respiratory symptoms: Call a POISON CENTER or doctor/physician.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P350">
+        <xs:annotation>
+          <xs:documentation>Gently wash with soap and water.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P351">
+        <xs:annotation>
+          <xs:documentation>Rinse cautiously with water for several minutes.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P352">
+        <xs:annotation>
+          <xs:documentation>Wash with plenty of water.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P353">
+        <xs:annotation>
+          <xs:documentation>Rinse skin with water [or shower].</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P360">
+        <xs:annotation>
+          <xs:documentation>Rinse immediately contaminated clothing and skin with plenty of water before removing clothes.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P361">
+        <xs:annotation>
+          <xs:documentation>Remove/Take off immediately all contaminated clothing.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P361+P364">
+        <xs:annotation>
+          <xs:documentation>Take off immediately all contaminated clothing and wash it before reuse.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P362">
+        <xs:annotation>
+          <xs:documentation>Take off contaminated clothing.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P362+P364">
+        <xs:annotation>
+          <xs:documentation>Take off contaminated clothing and wash it before reuse.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P363">
+        <xs:annotation>
+          <xs:documentation>Wash contaminated clothing before reuse.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P364">
+        <xs:annotation>
+          <xs:documentation>And wash it before reuse.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P370">
+        <xs:annotation>
+          <xs:documentation>In case of fire:</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P370+P376">
+        <xs:annotation>
+          <xs:documentation>In case of fire: Stop leak if safe to do so.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P370+P378">
+        <xs:annotation>
+          <xs:documentation>In case of fire: Use ... to extinguish.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P370+P380">
+        <xs:annotation>
+          <xs:documentation>In case of fire: Evacuate area.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P370+P380+P375">
+        <xs:annotation>
+          <xs:documentation>In case of fire: Evacuate area. Fight fire remotely due to the risk of explosion.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P371">
+        <xs:annotation>
+          <xs:documentation>In case of major fire and large quantities:</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P371+P380+P375">
+        <xs:annotation>
+          <xs:documentation>In case of major fire and large quantities: Evacuate area. Fight fire remotely due to the risk of explosion.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P372">
+        <xs:annotation>
+          <xs:documentation>Explosion risk.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P373">
+        <xs:annotation>
+          <xs:documentation>DO NOT fight fire when fire reaches explosives.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P374">
+        <xs:annotation>
+          <xs:documentation>Fight fire with normal precautions from a reasonable distance.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P375">
+        <xs:annotation>
+          <xs:documentation>Fight fire remotely due to the risk of explosion.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P376">
+        <xs:annotation>
+          <xs:documentation>Stop leak if safe to do so.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P377">
+        <xs:annotation>
+          <xs:documentation>Leaking gas fire – do not extinguish unless leak can be stopped safely.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P378">
+        <xs:annotation>
+          <xs:documentation>Use ... to extinguish.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P380">
+        <xs:annotation>
+          <xs:documentation>Evacuate area.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P381">
+        <xs:annotation>
+          <xs:documentation>In case of leakage, eliminate all ignition sources.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P391">
+        <xs:annotation>
+          <xs:documentation>Collect spillage.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P401">
+        <xs:annotation>
+          <xs:documentation>Store in accordance with ...</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P402">
+        <xs:annotation>
+          <xs:documentation>Store in a dry place.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P402+P404">
+        <xs:annotation>
+          <xs:documentation>Store in a dry place. Store in a closed container.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P403">
+        <xs:annotation>
+          <xs:documentation>Store in a well ventilated place.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P403+P233">
+        <xs:annotation>
+          <xs:documentation>Store in a well ventilated place. Keep container tightly closed.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P403+P235">
+        <xs:annotation>
+          <xs:documentation>Store in a well ventilated place. Keep cool.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P404">
+        <xs:annotation>
+          <xs:documentation>Store in a closed container.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P405">
+        <xs:annotation>
+          <xs:documentation>Store locked up.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P406">
+        <xs:annotation>
+          <xs:documentation>Store in a corrosive resistant/... container with a resistant inner liner.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P407">
+        <xs:annotation>
+          <xs:documentation>Maintain air gap between stacks or pallets.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P410">
+        <xs:annotation>
+          <xs:documentation>Protect from sunlight.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P410+P403">
+        <xs:annotation>
+          <xs:documentation>Protect from sunlight. Store in a well ventilated place.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P410+P412">
+        <xs:annotation>
+          <xs:documentation>Protect from sunlight. Do not expose to temperatures exceeding 50 ºC/122 ºF.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P411">
+        <xs:annotation>
+          <xs:documentation>Store at temperatures not exceeding ... ºC/... ºF.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P411+P235">
+        <xs:annotation>
+          <xs:documentation>Store at temperatures not exceeding ... ºC/... ºF. Keep cool.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P412">
+        <xs:annotation>
+          <xs:documentation>Do not expose to temperatures exceeding 50 ºC/122 ºF.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P413">
+        <xs:annotation>
+          <xs:documentation>Store bulk masses greater than ... kg/... lbs at temperatures not exceeding ... °C/... °F.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P420">
+        <xs:annotation>
+          <xs:documentation>Store separately/away from other materials.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P422">
+        <xs:annotation>
+          <xs:documentation>Store contents under ...</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P501">
+        <xs:annotation>
+          <xs:documentation>Dispose of contents/container to ...</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="P502">
+        <xs:annotation>
+          <xs:documentation>Refer to manufacturer or supplier for information on recovery or recycling.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

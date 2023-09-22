@@ -1,0 +1,83 @@
+{
+  "MessageHeaderInfo": {
+    "OTFVersion": "OTF22",
+    "OTFMessage": "Message_Container_StatusUpdate_Storage_Available",
+    "MessageID": "DummyString",
+    "ConversationID": "DummyString",
+    "SenderID": "DummyString",
+    "RecipientID": "DummyString",
+    "ContactInfo": {
+      "Name": "DummyString",
+      "ExternalID": "DummyString",
+      "Phone": "DummyString",
+      "Email": "DummyString"
+    },
+    "SentDate": "2023-09-22T13:17:00.5832173+02:00",
+    "MessageType": "New"
+  },
+  "OrderInfo": {
+    "SupplierID": "DummyString",
+    "SupplierFacilityID": "DummyString",
+    "SupplierBICFacilityCode": "DummyString",
+    "SupplierProformaReference": "DummyString",
+    "SupplierOrderReference": "DummyString",
+    "OrderStatusInfo": {
+      "OrderStatus": "UNKNOWN",
+      "OrderStatusDescription": "DummyString"
+    },
+    "ClientID": "DummyString",
+    "ClientFacilityID": "DummyString",
+    "ClientBICFacilityCode": "DummyString",
+    "ClientOrderReference": "DummyString"
+  },
+  "ContainerInfo": {
+    "ContainerNumber": "DummyString",
+    "ContainerType": "DummyString"
+  },
+  "Container_StatusUpdate_Storage_Available": {
+    "ClientPurchaseOrderReference": "DummyString",
+    "ContainerAvailableDate": "2023-09-22T13:17:00.5832294+02:00"
+  },
+  "Remarks": [
+    {
+      "RemarkID": "DummyString",
+      "RemarkDate": "2023-09-22T13:17:00.5832325+02:00",
+      "RemarkAuthor": "DummyString",
+      "RemarkText": "DummyString"
+    },
+    {
+      "RemarkID": "DummyString",
+      "RemarkDate": "2023-09-22T13:17:00.5832344+02:00",
+      "RemarkAuthor": "DummyString",
+      "RemarkText": "DummyString"
+    }
+  ],
+  "Attachments": [
+    {
+      "Name": "DummyString",
+      "URL": "DummyString",
+      "ExternalID": "DummyString",
+      "Tags": [
+        {
+          "Tag": "DummyString"
+        },
+        {
+          "Tag": "DummyString"
+        }
+      ]
+    },
+    {
+      "Name": "DummyString",
+      "URL": "DummyString",
+      "ExternalID": "DummyString",
+      "Tags": [
+        {
+          "Tag": "DummyString"
+        },
+        {
+          "Tag": "DummyString"
+        }
+      ]
+    }
+  ]
+}

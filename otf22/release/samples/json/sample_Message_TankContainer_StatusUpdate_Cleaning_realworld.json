@@ -1,0 +1,72 @@
+{
+  "MessageHeaderInfo": {
+    "OTFVersion": "OTF22",
+    "OTFMessage": "Message_TankContainer_StatusUpdate_Cleaning",
+    "MessageID": "31a40ee4-9f12-4411-8ac2-a70f22c530c2",
+    "ConversationID": null,
+    "SenderID": "Delta Depot Inc.",
+    "RecipientID": "Lima Leasing Inc.",
+    "ContactInfo": {
+      "Name": "Oscar Operator",
+      "ExternalID": null,
+      "Phone": null,
+      "Email": null
+    },
+    "SentDate": "2000-01-01T12:23:00+01:00",
+    "MessageType": "New"
+  },
+  "OrderInfo": {
+    "SupplierID": "Delta Depot Inc.",
+    "SupplierFacilityID": "Houston",
+    "SupplierBICFacilityCode": null,
+    "SupplierProformaReference": null,
+    "SupplierOrderReference": "D230101.0001",
+    "OrderStatusInfo": {
+      "OrderStatus": "IN_CLEAN_REPAIR_PENDING_UNAUTHORIZED",
+      "OrderStatusDescription": "IN_CLEAN_REPAIR_PENDING_UNAUTHORIZED"
+    },
+    "ClientID": "Lima Leasing Inc.",
+    "ClientFacilityID": null,
+    "ClientBICFacilityCode": null,
+    "ClientOrderReference": "XX2251"
+  },
+  "TankContainerInfo": {
+    "ContainerInfo": {
+      "ContainerNumber": "ABCD-123456-0",
+      "ContainerType": "20TC"
+    },
+    "OwnerID": null,
+    "TankContainerSuitabilityInfo": null,
+    "TankContainerCharacteristicsInfo": null,
+    "TankContainerTankInfo": null,
+    "TankContainerEquipmentInfo": null,
+    "TankContainerLiningInfo": null,
+    "InspectionDates": null
+  },
+  "Container_ServiceProgressInfo": {
+    "SupplierReference": "D230101.0001.C1",
+    "ClientPurchaseOrderReference": null,
+    "Container_ServiceProgress_AuthorizationInfo": {
+      "Authorized": "0001-01-01T00:00:00",
+      "AuthorizedBy": null,
+      "AuthorizationReference": "AA23055-C",
+      "AuthorizationAmount": null
+    },
+    "Container_ServiceProgress_DateInfo": {
+      "Planned": "0001-01-01T00:00:00",
+      "PlannedBy": null,
+      "PlannedToTakePlaceOn": "0001-01-01T00:00:00",
+      "Started": "2000-01-01T12:01:00+01:00",
+      "StartedBy": null,
+      "Finished": "2000-01-01T12:23:00+01:00",
+      "FinishedBy": null,
+      "Cancelled": "0001-01-01T00:00:00",
+      "CancelledBy": null
+    }
+  },
+  "TankContainerCleaningInfo": {
+    "CleaningCertificateID": "BE6000001"
+  },
+  "Remarks": null,
+  "Attachments": null
+}

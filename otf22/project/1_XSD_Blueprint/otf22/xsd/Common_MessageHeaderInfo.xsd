@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:include schemaLocation="OTF_OTFVersions.xsd"/>
+  <xs:include schemaLocation="OTF_OTFMessages.xsd"/>
+  <xs:include schemaLocation="CRM_ContactInfo.xsd"/>
+  <xs:include schemaLocation="Common_MessageTypes.xsd"/>
+  <xs:element name="MessageHeaderInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="MessageID" type="xs:string" />
+        <xs:element name="ConversationID" type="xs:string" minOccurs="0" />
+		<xs:element name="OTFVersion" default = "OTF22">
+			<xs:simpleType>
+				<xs:restriction base="OTFVersions" />
+			</xs:simpleType>
+		</xs:element>
+		<xs:element name="OTFMessage" >
+			<xs:simpleType>
+				<xs:restriction base="OTFMessages" />
+			</xs:simpleType>
+		</xs:element>
+        <xs:element name="SenderID" type="xs:string" />
+        <xs:element name="RecipientID" type="xs:string" />
+		<xs:element ref="ContactInfo" minOccurs="0" />
+        <xs:element name="SentDate" type="xs:dateTime" />
+		<xs:element name="MessageType" default = "New">
+			<xs:simpleType>
+				<xs:restriction base="MessageTypes" />
+			</xs:simpleType>
+		</xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

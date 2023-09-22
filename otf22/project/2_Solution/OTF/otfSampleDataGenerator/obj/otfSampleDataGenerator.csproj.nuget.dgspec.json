@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\repositories\\OTF-design\\otf22\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\otfSampleDataGenerator.csproj": {}
+  },
+  "projects": {
+    "C:\\repositories\\OTF-design\\otf22\\project\\2_Solution\\OTF\\otf22\\otf22.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\repositories\\OTF-design\\otf22\\project\\2_Solution\\OTF\\otf22\\otf22.csproj",
+        "projectName": "otf22",
+        "projectPath": "C:\\repositories\\OTF-design\\otf22\\project\\2_Solution\\OTF\\otf22\\otf22.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\repositories\\OTF-design\\otf22\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\otfSampleDataGenerator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repositories\\OTF-design\\otf22\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\otfSampleDataGenerator.csproj",
+        "projectName": "otfSampleDataGenerator",
+        "projectPath": "C:\\repositories\\OTF-design\\otf22\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\otfSampleDataGenerator.csproj",
+        "packagesPath": "C:\\Users\\Gijsbert\\.nuget\\packages\\",
+        "outputPath": "C:\\repositories\\OTF-design\\otf22\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Gijsbert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.lucrasoft.nl:8082/nuget/Default": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\repositories\\OTF-design\\otf22\\project\\2_Solution\\OTF\\otf22\\otf22.csproj": {
+                "projectPath": "C:\\repositories\\OTF-design\\otf22\\project\\2_Solution\\OTF\\otf22\\otf22.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

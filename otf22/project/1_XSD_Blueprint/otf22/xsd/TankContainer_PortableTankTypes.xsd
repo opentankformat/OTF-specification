@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:simpleType name="TankContainer_PortableTankTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Empty" />	
+      <xs:enumeration value="T1" />
+      <xs:enumeration value="T2" />
+      <xs:enumeration value="T3" />
+      <xs:enumeration value="T4" />
+      <xs:enumeration value="T5" />
+      <xs:enumeration value="T6" />
+      <xs:enumeration value="T7" />
+      <xs:enumeration value="T8" />
+      <xs:enumeration value="T9" />
+      <xs:enumeration value="T10" />
+      <xs:enumeration value="T11" />
+      <xs:enumeration value="T12" />
+      <xs:enumeration value="T13" />
+      <xs:enumeration value="T14" />
+      <xs:enumeration value="T15" />
+      <xs:enumeration value="T16" />
+      <xs:enumeration value="T17" />
+      <xs:enumeration value="T18" />
+      <xs:enumeration value="T19" />
+      <xs:enumeration value="T20" />
+      <xs:enumeration value="T21" />
+      <xs:enumeration value="T22" />
+      <xs:enumeration value="T23" />
+      <xs:enumeration value="T50" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

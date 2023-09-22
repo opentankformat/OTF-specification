@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message_Container_StatusUpdate_Work xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MessageHeaderInfo>
+    <OTFVersion>OTF22</OTFVersion>
+    <OTFMessage>Message_Container_StatusUpdate_Work</OTFMessage>
+    <MessageID>ad47590-acd7-4f7d-b8b1-9d422f00b994</MessageID>
+    <ConversationID>3e818a60-5941-4615-911e-e1f540d6f314</ConversationID>
+    <SenderID>Delta Depot Inc.</SenderID>
+    <RecipientID>Lima Leasing Inc.</RecipientID>
+    <SentDate>2000-01-03T08:55:00+01:00</SentDate>
+    <MessageType>New</MessageType>
+  </MessageHeaderInfo>
+  <OrderInfo>
+    <SupplierID>Delta Depot Inc.</SupplierID>
+    <SupplierFacilityID>Houston</SupplierFacilityID>
+    <SupplierOrderReference>D230101.0001</SupplierOrderReference>
+    <OrderStatusInfo>
+      <OrderStatus>IN_CLEAN_REPAIR_IN_AUTHORIZED</OrderStatus>
+      <OrderStatusDescription>IN_CLEAN_REPAIR_IN_AUTHORIZED</OrderStatusDescription>
+    </OrderStatusInfo>
+    <ClientID>Lima Leasing Inc.</ClientID>
+    <ClientOrderReference>XX2251</ClientOrderReference>
+  </OrderInfo>
+  <ContainerInfo>
+    <ContainerNumber>ABCD-123456-0</ContainerNumber>
+    <ContainerType>20TC</ContainerType>
+  </ContainerInfo>
+  <SupplierReference>D230101.0001.R1</SupplierReference>
+  <Container_Work_EstimateStatusInfo>
+    <Version>V1</Version>
+    <EstimatorName>Eddy Estimator</EstimatorName>
+    <Container_ServiceProgress_DateInfo />
+    <ContainerWorkAuthorizationInfo>
+      <ContainerWorkLessorAuthorizationInfo>
+        <LessorID>Lima Leasing Inc.</LessorID>
+        <Container_ServiceProgress_AuthorizationInfo>
+          <Authorized>2000-01-02T17:23:00+01:00</Authorized>
+          <AuthorizationReference>REP5559</AuthorizationReference>
+        </Container_ServiceProgress_AuthorizationInfo>
+      </ContainerWorkLessorAuthorizationInfo>
+    </ContainerWorkAuthorizationInfo>
+  </Container_Work_EstimateStatusInfo>
+  <Container_Work_WorkStatusInfo>
+    <Container_ServiceProgress_DateInfo />
+  </Container_Work_WorkStatusInfo>
+</Message_Container_StatusUpdate_Work>

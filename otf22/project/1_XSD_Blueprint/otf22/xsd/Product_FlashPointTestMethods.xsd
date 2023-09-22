@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:simpleType name="Product_FlashPointTestMethods">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ClosedCup"/>
+      <xs:enumeration value="OpenCup"/>
+      <xs:enumeration value="ASTM_D56_Tag_ClosedCup"/>
+      <xs:enumeration value="ASTM_D92_Cleveland_OpenCup"/>
+      <xs:enumeration value="ASTM_D93_PenskyMartens_ClosedCup"/>
+      <xs:enumeration value="ASTM_D1310_D3143_Tag_OpenCup"/>
+      <xs:enumeration value="ASTM_D3278_D3828_D4206_Setaflash"/>
+      <xs:enumeration value="IP304_Tag_ClosedCup"/>
+      <xs:enumeration value="IP36_ISO2592_Cleveland_OpenCup"/>
+      <xs:enumeration value="IP34_ISO2719_PenskyMartens_ClosedCup"/>
+      <xs:enumeration value="IP170_ISO1523_Abel"/>
+      <xs:enumeration value="Other"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

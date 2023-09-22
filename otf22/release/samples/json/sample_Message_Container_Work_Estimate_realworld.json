@@ -1,0 +1,188 @@
+{
+  "MessageHeaderInfo": {
+    "OTFVersion": "OTF22",
+    "OTFMessage": "Message_Container_Work_Estimate",
+    "MessageID": "3995e18b-73a7-46e0-b92b-381d2b5aa527",
+    "ConversationID": "3e818a60-5941-4615-911e-e1f540d6f314",
+    "SenderID": "Delta Depot Inc.",
+    "RecipientID": "Lima Leasing Inc.",
+    "ContactInfo": null,
+    "SentDate": "2000-01-02T16:23:00+01:00",
+    "MessageType": "New"
+  },
+  "OrderInfo": {
+    "SupplierID": "Delta Depot Inc.",
+    "SupplierFacilityID": "Houston",
+    "SupplierBICFacilityCode": null,
+    "SupplierProformaReference": null,
+    "SupplierOrderReference": "D230101.0001",
+    "OrderStatusInfo": {
+      "OrderStatus": "IN_CLEAN_REPAIR_ESTIMATED_UNAUTHORIZED",
+      "OrderStatusDescription": "IN_CLEAN_REPAIR_ESTIMATED_UNAUTHORIZED"
+    },
+    "ClientID": "Lima Leasing Inc.",
+    "ClientFacilityID": null,
+    "ClientBICFacilityCode": null,
+    "ClientOrderReference": "XX2251"
+  },
+  "LocalizationInfo": {
+    "CurrencyISO": "EUR",
+    "ExchangeRate": 1.0,
+    "ExchangeRateDate": "0001-01-01T00:00:00",
+    "RoundingPerLine": false
+  },
+  "ContainerInfo": {
+    "ContainerNumber": "ABCD-123456-0",
+    "ContainerType": "20TC"
+  },
+  "Container_Work_EstimateStatusInfo": {
+    "Version": "V1",
+    "EstimatorName": "Eddy Estimator",
+    "Container_ServiceProgress_DateInfo": {
+      "Planned": "0001-01-01T00:00:00",
+      "PlannedBy": null,
+      "PlannedToTakePlaceOn": "0001-01-01T00:00:00",
+      "Started": "0001-01-01T00:00:00",
+      "StartedBy": null,
+      "Finished": "2000-01-02T16:23:00+01:00",
+      "FinishedBy": null,
+      "Cancelled": "0001-01-01T00:00:00",
+      "CancelledBy": null
+    },
+    "ContainerWorkAuthorizationInfo": {
+      "ContainerWorkLessorAuthorizationInfo": {
+        "LessorID": "Lima Leasing Inc.",
+        "Container_ServiceProgress_AuthorizationInfo": {
+          "Authorized": "2000-01-02T17:23:00+01:00",
+          "AuthorizedBy": null,
+          "AuthorizationReference": "REP5559",
+          "AuthorizationAmount": null
+        },
+        "AuthorizationAcceptedBySupplier": "0001-01-01T00:00:00"
+      },
+      "ContainerWorkLesseeAuthorizationInfo": null
+    }
+  },
+  "ContainerStorageArrivalInfo": {
+    "ContainerDeliveryDate": "2000-01-01T11:04:00+01:00"
+  },
+  "Category": null,
+  "LaborRate": 35.5,
+  "EstimateLines": [
+    {
+      "LineID": "162012ca-015b-4f4d-92f7-bcef9f8f438d",
+      "OriginID": "1855",
+      "SortOrder": 1,
+      "Description": "REMOVE AND REBUILD BUTTERFLY VALVE",
+      "CategoryCode": {
+        "Code": {
+          "Value": "GEN",
+          "Description": "GENERAL"
+        }
+      },
+      "GeneralCodes": {
+        "LocationCode": {
+          "Code": {
+            "Value": "BTM",
+            "Description": "BOTTOM"
+          }
+        },
+        "DamageCode": {
+          "Code": {
+            "Value": "",
+            "Description": ""
+          }
+        },
+        "RepairCode": {
+          "Code": {
+            "Value": "",
+            "Description": ""
+          }
+        },
+        "ComponentCode": null
+      },
+      "ComplexCodes": null,
+      "Proposal": {
+        "Container_Work_EstimateLineProposal": {
+          "LaborRate": 35.5,
+          "LaborHours": 2.0,
+          "LaborPrice": 71.0,
+          "MaterialPrice": 71.0,
+          "LumpSumPrice": 0.0,
+          "LineSubtotal": 142.0,
+          "Quantity": 1.0,
+          "DoAction": true,
+          "LessorPercentage": 0.0,
+          "LesseePercentage": 0.0,
+          "LineTotal": 142.0,
+          "Remarks": null
+        }
+      },
+      "CounterProposal": null,
+      "ClientAuthorization": null,
+      "Attachments": null
+    },
+    {
+      "LineID": "642e95fa-9872-4013-ae44-3c2c7c1d3e4e",
+      "OriginID": "777",
+      "SortOrder": 2,
+      "Description": "REPLACE DOME GASKET",
+      "CategoryCode": {
+        "Code": {
+          "Value": "GEN",
+          "Description": "GENERAL"
+        }
+      },
+      "GeneralCodes": {
+        "LocationCode": {
+          "Code": {
+            "Value": "BTM",
+            "Description": "BOTTOM"
+          }
+        },
+        "DamageCode": {
+          "Code": {
+            "Value": "BR",
+            "Description": "BROKEN"
+          }
+        },
+        "RepairCode": {
+          "Code": {
+            "Value": "",
+            "Description": ""
+          }
+        },
+        "ComponentCode": null
+      },
+      "ComplexCodes": null,
+      "Proposal": {
+        "Container_Work_EstimateLineProposal": {
+          "LaborRate": 35.5,
+          "LaborHours": 3.0,
+          "LaborPrice": 106.5,
+          "MaterialPrice": 20.0,
+          "LumpSumPrice": 50.0,
+          "LineSubtotal": 50.0,
+          "Quantity": 2.0,
+          "DoAction": true,
+          "LessorPercentage": 0.0,
+          "LesseePercentage": 0.0,
+          "LineTotal": 100.0,
+          "Remarks": null
+        }
+      },
+      "CounterProposal": null,
+      "ClientAuthorization": null,
+      "Attachments": null
+    }
+  ],
+  "Remarks": [
+    {
+      "RemarkID": "121fdc2d-f169-4e39-b951-61a18a093ed3",
+      "RemarkDate": "2000-01-02T16:23:00+01:00",
+      "RemarkAuthor": "Eddy Estimator",
+      "RemarkText": "This is a remark"
+    }
+  ],
+  "Attachments": null
+}
