@@ -60,12 +60,14 @@
     "TankContainerEquipmentInfo": null,
     "TankContainerLiningInfo": null,
     "InspectionDates": {
+      "InitialInspectionDate": "0001-01-01T00:00:00",
       "LastInspectionDate": "1998-06-20T01:00:00+02:00",
       "LastInspectionScope": "Empty",
       "LastInspectionScopeDescription": "H",
       "NextInspectionDate": "0001-01-01T00:00:00",
       "CSCValidityDate": "1999-01-01T00:00:00+01:00",
-      "ACEP": "0001-01-01T00:00:00"
+      "ACEP": "0001-01-01T00:00:00",
+      "ACEPDescription": null
     }
   },
   "Container_Work_EstimateStatusInfo": {
@@ -85,6 +87,7 @@
     "ContainerWorkAuthorizationInfo": {
       "ContainerWorkLessorAuthorizationInfo": {
         "LessorID": "Lima Leasing Inc.",
+        "Reference": null,
         "Container_ServiceProgress_AuthorizationInfo": {
           "Authorized": "2000-01-02T17:23:00+01:00",
           "AuthorizedBy": null,

@@ -1,0 +1,92 @@
+{
+  "MessageHeaderInfo": {
+    "OTFVersion": "OTF23",
+    "OTFMessage": "Message_Container_PreNotification_StatusUpdate",
+    "MessageID": "DummyString",
+    "SentDate": "2023-10-20T13:54:18.4899975+02:00",
+    "ConversationID": "DummyString",
+    "MessageType": "New",
+    "SenderInfo": {
+      "BusinessUnitInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString",
+        "Country": "DummyString"
+      },
+      "ContactInfo": {
+        "Name": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString"
+      }
+    },
+    "RecipientInfo": {
+      "BusinessUnitInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString",
+        "Country": "DummyString"
+      }
+    }
+  },
+  "OrderInfo": {
+    "SupplierInfo": {
+      "BusinessUnitInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString",
+        "Country": "DummyString"
+      },
+      "FacilityInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "BICFacilityCode": "DummyString"
+      },
+      "ProformaReference": "DummyString",
+      "OrderReference": "DummyString",
+      "OrderStatusInfo": {
+        "OrderStatus": "UNKNOWN",
+        "OrderStatusDescription": "DummyString"
+      }
+    },
+    "ClientInfo": {
+      "BusinessUnitInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString",
+        "Country": "DummyString"
+      },
+      "FacilityInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "BICFacilityCode": "DummyString"
+      },
+      "ContactInfo": {
+        "Name": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString"
+      },
+      "OrderReference": "DummyString"
+    }
+  },
+  "ContainerInfo": {
+    "ContainerNumber": "DummyString",
+    "ContainerType": "DummyString",
+    "LessorInfo": {
+      "BusinessUnitInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString",
+        "Country": "DummyString"
+      }
+    }
+  },
+  "PreNotificationStatus": {
+    "Status": "UNKNOWN",
+    "Remark": "DummyString"
+  }
+}

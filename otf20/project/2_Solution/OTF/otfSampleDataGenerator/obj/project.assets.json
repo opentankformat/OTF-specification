@@ -71,11 +71,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repositories\\OTF-specification\\Solution\\OTF\\otfSampleDataGenerator\\otfSampleDataGenerator.csproj",
+      "projectUniqueName": "C:\\repositories\\OTF-design\\otf20\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\otfSampleDataGenerator.csproj",
       "projectName": "otfSampleDataGenerator",
-      "projectPath": "C:\\repositories\\OTF-specification\\Solution\\OTF\\otfSampleDataGenerator\\otfSampleDataGenerator.csproj",
+      "projectPath": "C:\\repositories\\OTF-design\\otf20\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\otfSampleDataGenerator.csproj",
       "packagesPath": "C:\\Users\\Gijsbert\\.nuget\\packages\\",
-      "outputPath": "C:\\repositories\\OTF-specification\\Solution\\OTF\\otfSampleDataGenerator\\obj\\",
+      "outputPath": "C:\\repositories\\OTF-design\\otf20\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Gijsbert\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -93,8 +93,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\repositories\\OTF-specification\\Solution\\OTF\\otf20\\otf20.csproj": {
-              "projectPath": "C:\\repositories\\OTF-specification\\Solution\\OTF\\otf20\\otf20.csproj"
+            "C:\\repositories\\OTF-design\\otf20\\project\\2_Solution\\OTF\\otf20\\otf20.csproj": {
+              "projectPath": "C:\\repositories\\OTF-design\\otf20\\project\\2_Solution\\OTF\\otf20\\otf20.csproj"
             }
           }
         }

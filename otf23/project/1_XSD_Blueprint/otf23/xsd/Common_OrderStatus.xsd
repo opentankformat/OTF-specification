@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:simpleType name="OrderStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="UNKNOWN" />
+      <xs:enumeration value="EXPECTED" />
+      <xs:enumeration value="IN_LOADED_UNAVAILABLE" />
+      <xs:enumeration value="IN_LOADED_AVAILABLE" />
+      <xs:enumeration value="IN_LOADED_HEATING_PENDING" />
+      <xs:enumeration value="IN_LOADED_HEATING_PLANNED" />
+      <xs:enumeration value="IN_LOADED_HEATING_IN" />
+      <xs:enumeration value="IN_LOADED_TRANSLOADING_PENDING" />
+      <xs:enumeration value="IN_LOADED_TRANSLOADING_PLANNED" />
+      <xs:enumeration value="IN_CUSTOMS_UNAVAILABLE" />
+      <xs:enumeration value="IN_CUSTOMS_AVAILABLE" />
+      <xs:enumeration value="IN_CUSTOMS_HEATING_PENDING" />
+      <xs:enumeration value="IN_CUSTOMS_HEATING_PLANNED" />
+      <xs:enumeration value="IN_CUSTOMS_HEATING_IN" />
+      <xs:enumeration value="IN_CUSTOMS_TRANSLOADING_PENDING" />
+      <xs:enumeration value="IN_CUSTOMS_TRANSLOADING_PLANNED" />
+      <xs:enumeration value="IN_UNCLEAN_UNAVAILABLE" />
+      <xs:enumeration value="IN_UNCLEAN_AVAILABLE" />
+      <xs:enumeration value="IN_UNCLEAN_HEEL_PENDING_UNAUTHORIZED" />
+      <xs:enumeration value="IN_UNCLEAN_HEEL_PENDING_AUTHORIZED" />
+      <xs:enumeration value="IN_UNCLEAN_HEEL_ESTIMATED_UNAUTHORIZED" />
+      <xs:enumeration value="IN_UNCLEAN_HEEL_ESTIMATED_AUTHORIZED" />
+      <xs:enumeration value="IN_UNCLEAN_HEEL_PLANNED_UNAUTHORIZED" />
+      <xs:enumeration value="IN_UNCLEAN_HEEL_PLANNED_AUTHORIZED" />
+      <xs:enumeration value="IN_UNCLEAN_HEEL_IN_UNAUTHORIZED" />
+      <xs:enumeration value="IN_UNCLEAN_HEEL_IN_AUTHORIZED" />
+      <xs:enumeration value="IN_UNCLEAN_CLEANING_PENDING_UNAUTHORIZED" />
+      <xs:enumeration value="IN_UNCLEAN_CLEANING_PENDING_AUTHORIZED" />
+      <xs:enumeration value="IN_UNCLEAN_CLEANING_ESTIMATED_UNAUTHORIZED" />
+      <xs:enumeration value="IN_UNCLEAN_CLEANING_ESTIMATED_AUTHORIZED" />
+      <xs:enumeration value="IN_UNCLEAN_CLEANING_PLANNED_UNAUTHORIZED" />
+      <xs:enumeration value="IN_UNCLEAN_CLEANING_PLANNED_AUTHORIZED" />
+      <xs:enumeration value="IN_UNCLEAN_CLEANING_IN_UNAUTHORIZED" />
+      <xs:enumeration value="IN_UNCLEAN_CLEANING_IN_AUTHORIZED" />
+      <xs:enumeration value="IN_CLEAN_UNAVAILABLE" />
+      <xs:enumeration value="IN_CLEAN_AVAILABLE" />
+      <xs:enumeration value="IN_CLEAN_REPAIR_PENDING_UNAUTHORIZED" />
+      <xs:enumeration value="IN_CLEAN_REPAIR_PENDING_AUTHORIZED" />
+      <xs:enumeration value="IN_CLEAN_REPAIR_ESTIMATED_UNAUTHORIZED" />
+      <xs:enumeration value="IN_CLEAN_REPAIR_ESTIMATED_AUTHORIZED" />
+      <xs:enumeration value="IN_CLEAN_REPAIR_PLANNED_UNAUTHORIZED" />
+      <xs:enumeration value="IN_CLEAN_REPAIR_PLANNED_AUTHORIZED" />
+      <xs:enumeration value="IN_CLEAN_REPAIR_IN_UNAUTHORIZED" />
+      <xs:enumeration value="IN_CLEAN_REPAIR_IN_AUTHORIZED" />
+      <xs:enumeration value="IN_CLEAN_TRANSLOADING_PENDING" />
+      <xs:enumeration value="IN_CLEAN_TRANSLOADING_PLANNED" />
+      <xs:enumeration value="OUT" />
+      <xs:enumeration value="CANCELLED" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

@@ -111,6 +111,7 @@
 		<xs:element name="InspectionDates" minOccurs="0">
 			<xs:complexType>
 				<xs:sequence>
+					<xs:element name="InitialInspectionDate" type="xs:dateTime" minOccurs="0" />					
 					<xs:element name="LastInspectionDate" type="xs:dateTime" minOccurs="0" />		
 					<xs:element name="LastInspectionScope" minOccurs="0" >
 						<xs:simpleType>
@@ -121,6 +122,7 @@
 					<xs:element name="NextInspectionDate" type="xs:dateTime" minOccurs="0" />		
 					<xs:element name="CSCValidityDate" type="xs:dateTime" minOccurs="0" />
 					<xs:element name="ACEP" type="xs:dateTime" minOccurs="0" />
+					<xs:element name="ACEPDescription" type="xs:string" minOccurs="0" />					
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>

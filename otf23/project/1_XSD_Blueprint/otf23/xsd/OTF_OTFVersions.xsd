@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:simpleType name="OTFVersions">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="UNKNOWN" />
+      <xs:enumeration value="OTF20" />
+      <xs:enumeration value="OTF21" />
+      <xs:enumeration value="OTF22" />	  
+      <xs:enumeration value="OTF23" />	  
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

@@ -12,7 +12,7 @@
       "Phone": "DummyString",
       "Email": "DummyString"
     },
-    "SentDate": "2023-09-22T13:16:59.28017+02:00",
+    "SentDate": "2023-10-20T13:41:37.7753052+02:00",
     "MessageType": "New"
   },
   "ContainerPreNotificationType": "Empty",
@@ -36,7 +36,7 @@
     "ContainerType": "DummyString"
   },
   "ArrivalInfo": {
-    "ETA": "2023-09-22T13:16:59.280307+02:00",
+    "ETA": "2023-10-20T13:41:37.7754199+02:00",
     "RedeliveryReference": "DummyString",
     "ContainerOrigin": "DummyString",
     "Container_HaulierInfo": {
@@ -55,13 +55,13 @@
         "Remarks": [
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-09-22T13:16:59.2803519+02:00",
+            "RemarkDate": "2023-10-20T13:41:37.7754491+02:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString"
           },
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-09-22T13:16:59.280363+02:00",
+            "RemarkDate": "2023-10-20T13:41:37.7754602+02:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString"
           }
@@ -76,13 +76,13 @@
         "Remarks": [
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-09-22T13:16:59.2804512+02:00",
+            "RemarkDate": "2023-10-20T13:41:37.7755057+02:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString"
           },
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-09-22T13:16:59.2804528+02:00",
+            "RemarkDate": "2023-10-20T13:41:37.7755072+02:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString"
           }
@@ -93,14 +93,16 @@
     "Container_ServiceRequest_Work_Repair": {
       "IsRequested": true,
       "LessorID": "DummyString",
+      "LessorReference": "DummyString",
       "LessorAuthorizationReference": "DummyString",
       "LesseeID": "DummyString",
+      "LesseeReference": "DummyString",
       "LesseeAuthorizationReference": "DummyString",
       "SpecialInstructionID": "DummyString"
     }
   },
   "DepartureInfo": {
-    "ETD": "2023-09-22T13:16:59.2804618+02:00",
+    "ETD": "2023-10-20T13:41:37.775517+02:00",
     "ReleaseReference": "DummyString",
     "ContainerDestination": "DummyString",
     "Container_HaulierInfo": {
@@ -113,13 +115,13 @@
   "Remarks": [
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-09-22T13:16:59.2804648+02:00",
+      "RemarkDate": "2023-10-20T13:41:37.7755245+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     },
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-09-22T13:16:59.2804683+02:00",
+      "RemarkDate": "2023-10-20T13:41:37.7755256+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     }

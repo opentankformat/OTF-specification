@@ -95,6 +95,7 @@
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element minOccurs="0" maxOccurs="1" name="LessorID" type="xs:string" />
+                          <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
                           <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
                             <xs:complexType>
                               <xs:sequence>
@@ -129,6 +130,7 @@
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element minOccurs="0" maxOccurs="1" name="LesseeID" type="xs:string" />
+                          <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
                           <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
                             <xs:complexType>
                               <xs:sequence>

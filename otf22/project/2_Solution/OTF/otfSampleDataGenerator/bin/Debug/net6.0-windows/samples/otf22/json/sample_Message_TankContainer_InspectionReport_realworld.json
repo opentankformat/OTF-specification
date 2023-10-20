@@ -117,12 +117,14 @@
         "Material": ""
       },
       "InspectionDates": {
+        "InitialInspectionDate": "0001-01-01T00:00:00",
         "LastInspectionDate": "1998-06-20T01:00:00+02:00",
         "LastInspectionScope": "Empty",
         "LastInspectionScopeDescription": "H",
         "NextInspectionDate": "0001-01-01T00:00:00",
         "CSCValidityDate": "1999-01-01T00:00:00+01:00",
-        "ACEP": "0001-01-01T00:00:00"
+        "ACEP": "0001-01-01T00:00:00",
+        "ACEPDescription": null
       }
     },
     "Inspections": {
@@ -197,7 +199,8 @@
     "Remarks": null
   },
   "InspectionVerification": {
-    "VerificationDate": "2023-09-22T13:17:02.5397599+02:00",
+    "VerificationDate": "2023-10-20T13:41:41.3183761+02:00",
+    "VerificationPlace": null,
     "VerificatorName": "Guybrush Threepwood"
   },
   "Remarks": null,

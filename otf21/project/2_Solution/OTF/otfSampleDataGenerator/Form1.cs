@@ -16,7 +16,6 @@ namespace otfSampleDataGenerator
             string targetFolder = string.Format("{0}{1}", Application.StartupPath, "samples");
 
             //Generate versions
-            otf20SampleClassGenerator.GenerateSampleMessages(testFolder(string.Format("{0}\\{1}\\", targetFolder, "otf20")));
             otf21SampleClassGenerator.GenerateSampleMessages(testFolder(string.Format("{0}\\{1}\\", targetFolder, "otf21")));
 
             //Jump to explorer where generated files are shown

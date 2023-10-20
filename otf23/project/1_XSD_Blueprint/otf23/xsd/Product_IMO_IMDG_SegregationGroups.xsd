@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:simpleType name="Product_IMO_IMDG_SegregationGroups">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SGG1">
+        <xs:annotation>
+          <xs:documentation>Acids</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG1a">
+        <xs:annotation>
+          <xs:documentation>Strong acids</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG2">
+        <xs:annotation>
+          <xs:documentation>Ammonium compounds</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG3">
+        <xs:annotation>
+          <xs:documentation>Bromates</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG4">
+        <xs:annotation>
+          <xs:documentation>Chlorates</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG5">
+        <xs:annotation>
+          <xs:documentation>Chlorites</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG6">
+        <xs:annotation>
+          <xs:documentation>Cyanides</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG7">
+        <xs:annotation>
+          <xs:documentation>Heavy metals and their salts (including their organometallic compounds)</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG8">
+        <xs:annotation>
+          <xs:documentation>Hypochlorites</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG9">
+        <xs:annotation>
+          <xs:documentation>Lead and its compounds</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG10">
+        <xs:annotation>
+          <xs:documentation>Liquid halogenated hydrocarbons</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG11">
+        <xs:annotation>
+          <xs:documentation>Mercury and mercury compounds</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG12">
+        <xs:annotation>
+          <xs:documentation>Nitrites and their mixtures</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG13">
+        <xs:annotation>
+          <xs:documentation>Perchlorates</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG14">
+        <xs:annotation>
+          <xs:documentation>Permanganates</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG15">
+        <xs:annotation>
+          <xs:documentation>Powdered metals</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG16">
+        <xs:annotation>
+          <xs:documentation>Peroxides</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG17">
+        <xs:annotation>
+          <xs:documentation>Azides</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+      <xs:enumeration value="SGG18">
+        <xs:annotation>
+          <xs:documentation>Alkalis</xs:documentation>
+        </xs:annotation>
+	  </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

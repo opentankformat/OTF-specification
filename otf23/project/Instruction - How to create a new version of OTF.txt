@@ -1,0 +1,18 @@
+INSTRUCTION - HOW TO CREATE A NEW OTF VERSION
+
+1. Making a new version
+Duplicate the version subfolder in the XSD_BLUEPRINT that contains separate XSD files for each re-used element.
+After copying folder, re-versioning and modifying elements, and autogenerator can be used to first debug each file separately and then convert it into a single C# file.
+
+2. Preparing the new version for use
+The folder SOLUTION contains a C# solution.
+Each new version should be added as a separate project so that a .DLL file is built. (the project must be a C# Class Library .NET Framework project, otherwise later xsd.exe generation won't work!)
+The samplefile generator must be used to generate sample files for each version. It exports both XML and JSON
+
+3. Preparing the new version for release
+Use GENERATOR to generate a new, singular XSD based on the .DLL file that you built in the earlier step.
+Create a new folder in Release for this new version and gather the XSD, DLL and sample files there.
+A Message Implementation Guide (MIG) should be added in PDF format.
+
+4. Releasing the new version
+The whole project should be uploaded to the public repository.

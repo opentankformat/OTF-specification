@@ -12,7 +12,7 @@
       "Phone": "DummyString",
       "Email": "DummyString"
     },
-    "SentDate": "2023-09-22T13:17:00.933832+02:00",
+    "SentDate": "2023-10-20T13:41:39.6740005+02:00",
     "MessageType": "New"
   },
   "OrderInfo": {
@@ -65,7 +65,7 @@
       "Manufacturer": "DummyString",
       "ManufacturerCountry": "DummyString",
       "ManufacturerSerialNumber": "DummyString",
-      "BuildingYearMonth": "2023-09-22T13:17:00.9338471+02:00",
+      "BuildingYearMonth": "2023-10-20T13:41:39.6740137+02:00",
       "ISO6346SizeTypeCode": "Empty",
       "ISO6346SizeTypeCodeDescription": "DummyString",
       "DimensionsXMillimeter": 1,
@@ -134,18 +134,20 @@
       "Material": "DummyString"
     },
     "InspectionDates": {
-      "LastInspectionDate": "2023-09-22T13:17:00.9338653+02:00",
+      "InitialInspectionDate": "2023-10-20T13:41:39.6740319+02:00",
+      "LastInspectionDate": "2023-10-20T13:41:39.6740323+02:00",
       "LastInspectionScope": "Empty",
       "LastInspectionScopeDescription": "DummyString",
-      "NextInspectionDate": "2023-09-22T13:17:00.9338661+02:00",
-      "CSCValidityDate": "2023-09-22T13:17:00.9338665+02:00",
-      "ACEP": "2023-09-22T13:17:00.9338668+02:00"
+      "NextInspectionDate": "2023-10-20T13:41:39.6740331+02:00",
+      "CSCValidityDate": "2023-10-20T13:41:39.6740334+02:00",
+      "ACEP": "2023-10-20T13:41:39.6740338+02:00",
+      "ACEPDescription": "DummyString"
     }
   },
   "Container_StatusUpdate_Storage_Departure": {
     "ClientPurchaseOrderReference": "DummyString",
     "ClientReleaseReference": "DummyString",
-    "ContainerReleaseDate": "2023-09-22T13:17:00.9338686+02:00",
+    "ContainerReleaseDate": "2023-10-20T13:41:39.6740354+02:00",
     "Container_HaulierInfo": {
       "HaulierName": "DummyString",
       "TruckDriverName": "DummyString",
@@ -156,13 +158,13 @@
   "Remarks": [
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-09-22T13:17:00.9338714+02:00",
+      "RemarkDate": "2023-10-20T13:41:39.6740381+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     },
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-09-22T13:17:00.9338725+02:00",
+      "RemarkDate": "2023-10-20T13:41:39.6740392+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     }

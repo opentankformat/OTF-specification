@@ -168,8 +168,10 @@
     "Container_ServiceRequest_Work_Repair": {
       "IsRequested": true,
       "LessorID": "Lima Leasing Inc.",
+      "LessorReference": null,
       "LessorAuthorizationReference": "REP5559",
       "LesseeID": "Oscar Operator Inc.",
+      "LesseeReference": null,
       "LesseeAuthorizationReference": "",
       "SpecialInstructionID": null
     },

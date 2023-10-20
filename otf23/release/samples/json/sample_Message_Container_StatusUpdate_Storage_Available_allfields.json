@@ -1,0 +1,146 @@
+{
+  "MessageHeaderInfo": {
+    "OTFVersion": "OTF23",
+    "OTFMessage": "Message_Container_StatusUpdate_Storage_Available",
+    "MessageID": "DummyString",
+    "SentDate": "2023-10-20T13:54:19.0970952+02:00",
+    "ConversationID": "DummyString",
+    "MessageType": "New",
+    "SenderInfo": {
+      "BusinessUnitInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString",
+        "Country": "DummyString"
+      },
+      "ContactInfo": {
+        "Name": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString"
+      }
+    },
+    "RecipientInfo": {
+      "BusinessUnitInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString",
+        "Country": "DummyString"
+      }
+    }
+  },
+  "OrderInfo": {
+    "SupplierInfo": {
+      "BusinessUnitInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString",
+        "Country": "DummyString"
+      },
+      "FacilityInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "BICFacilityCode": "DummyString"
+      },
+      "ProformaReference": "DummyString",
+      "OrderReference": "DummyString",
+      "OrderStatusInfo": {
+        "OrderStatus": "UNKNOWN",
+        "OrderStatusDescription": "DummyString"
+      }
+    },
+    "ClientInfo": {
+      "BusinessUnitInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString",
+        "Country": "DummyString"
+      },
+      "FacilityInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "BICFacilityCode": "DummyString"
+      },
+      "ContactInfo": {
+        "Name": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString"
+      },
+      "OrderReference": "DummyString"
+    }
+  },
+  "ContainerInfo": {
+    "ContainerNumber": "DummyString",
+    "ContainerType": "DummyString",
+    "LessorInfo": {
+      "BusinessUnitInfo": {
+        "Name": "DummyString",
+        "ExternalID": "DummyString",
+        "Phone": "DummyString",
+        "Email": "DummyString",
+        "Country": "DummyString"
+      }
+    }
+  },
+  "Container_StatusUpdate_Storage_Available": {
+    "ClientPurchaseOrderReference": "DummyString",
+    "ContainerAvailableDate": "2023-10-20T13:54:19.0971141+02:00"
+  },
+  "Remarks": [
+    {
+      "ID": "DummyString",
+      "Date": "2023-10-20T13:54:19.0971175+02:00",
+      "AuthorInfo": {
+        "ContactInfo": {
+          "Name": "DummyString",
+          "Phone": "DummyString",
+          "Email": "DummyString"
+        }
+      },
+      "Remark": "DummyString"
+    },
+    {
+      "ID": "DummyString",
+      "Date": "2023-10-20T13:54:19.09712+02:00",
+      "AuthorInfo": {
+        "ContactInfo": {
+          "Name": "DummyString",
+          "Phone": "DummyString",
+          "Email": "DummyString"
+        }
+      },
+      "Remark": "DummyString"
+    }
+  ],
+  "Attachments": [
+    {
+      "Name": "DummyString",
+      "URL": "DummyString",
+      "ExternalID": "DummyString",
+      "Tags": [
+        {
+          "Tag": "DummyString"
+        },
+        {
+          "Tag": "DummyString"
+        }
+      ]
+    },
+    {
+      "Name": "DummyString",
+      "URL": "DummyString",
+      "ExternalID": "DummyString",
+      "Tags": [
+        {
+          "Tag": "DummyString"
+        },
+        {
+          "Tag": "DummyString"
+        }
+      ]
+    }
+  ]
+}

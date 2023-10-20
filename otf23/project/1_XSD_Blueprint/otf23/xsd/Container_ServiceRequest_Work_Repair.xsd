@@ -1,0 +1,27 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="Container_ServiceRequestInfo.xsd"/>
+  <xs:include schemaLocation="CRM_BusinessUnitInfo.xsd"/>    
+  <xs:element name="Container_ServiceRequest_Work_Repair">
+    <xs:complexType>
+      <xs:sequence>
+		<xs:element name="LessorInfo" minOccurs="0">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element ref="BusinessUnitInfo" />	 
+					<xs:element ref="Container_ServiceRequestInfo" minOccurs="0" />
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>			
+		<xs:element name="LesseeInfo" minOccurs="0">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element ref="BusinessUnitInfo" />	  
+					<xs:element ref="Container_ServiceRequestInfo" minOccurs="0" />
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>			
+		<xs:element name="SpecialInstructionID" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>								

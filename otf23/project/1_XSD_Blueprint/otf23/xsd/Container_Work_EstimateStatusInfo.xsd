@@ -1,0 +1,47 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="Container_ServiceProgress_AuthorizationInfo.xsd"/>
+  <xs:include schemaLocation="Container_ServiceProgress_DateInfo.xsd"/>
+  <xs:include schemaLocation="CRM_BusinessUnitInfo.xsd"/>   
+  <xs:include schemaLocation="CRM_ContactInfo.xsd"/>   
+  <xs:element name="Container_Work_EstimateStatusInfo">
+    <xs:complexType>
+      <xs:sequence>
+		<xs:element name="Version" type="xs:string" minOccurs="0" />
+		<xs:element name="SupplierInfo" minOccurs="0">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element ref="Container_ServiceProgress_DateInfo" />
+					<xs:element name="EstimatorInfo" minOccurs="0">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="ContactInfo" />	  
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>	
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>	
+		<xs:element name="LessorInfo" minOccurs="0">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element ref="BusinessUnitInfo" />	  
+					<xs:element name="Reference" type="xs:string" minOccurs="0" />
+					<xs:element ref="Container_ServiceProgress_AuthorizationInfo" minOccurs="0" />
+					<xs:element name="AuthorizationAcceptedBySupplier" type="xs:dateTime" minOccurs="0" />						
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>	
+		<xs:element name="LesseeInfo" minOccurs="0">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element ref="BusinessUnitInfo" />	  
+					<xs:element name="Reference" type="xs:string" minOccurs="0" />
+					<xs:element ref="Container_ServiceProgress_AuthorizationInfo" minOccurs="0" />
+					<xs:element name="AuthorizationAcceptedBySupplier" type="xs:dateTime" minOccurs="0" />						
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>	
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>								

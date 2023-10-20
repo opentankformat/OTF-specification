@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message_Container_Work_Estimate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MessageHeaderInfo>
+    <OTFVersion>OTF23</OTFVersion>
+    <OTFMessage>Message_Container_Work_Estimate</OTFMessage>
+    <MessageID>3995e18b-73a7-46e0-b92b-381d2b5aa527</MessageID>
+    <SentDate>2000-01-02T16:23:00+01:00</SentDate>
+    <ConversationID>3e818a60-5941-4615-911e-e1f540d6f314</ConversationID>
+    <MessageType>New</MessageType>
+    <SenderInfo>
+      <BusinessUnitInfo>
+        <Name>Delta Depot Inc.</Name>
+        <ExternalID>Delta Depot Inc.</ExternalID>
+      </BusinessUnitInfo>
+    </SenderInfo>
+    <RecipientInfo>
+      <BusinessUnitInfo>
+        <Name>Lima Leasing Inc.</Name>
+        <ExternalID>Lima Leasing Inc.</ExternalID>
+      </BusinessUnitInfo>
+    </RecipientInfo>
+  </MessageHeaderInfo>
+  <OrderInfo>
+    <SupplierInfo>
+      <BusinessUnitInfo>
+        <Name>Delta Depot Inc.</Name>
+        <ExternalID>Delta Depot Inc.</ExternalID>
+      </BusinessUnitInfo>
+      <FacilityInfo>
+        <Name>Houston</Name>
+      </FacilityInfo>
+      <OrderReference>D230101.0001</OrderReference>
+      <OrderStatusInfo>
+        <OrderStatus>IN_CLEAN_REPAIR_ESTIMATED_UNAUTHORIZED</OrderStatus>
+        <OrderStatusDescription>IN_CLEAN_REPAIR_ESTIMATED_UNAUTHORIZED</OrderStatusDescription>
+      </OrderStatusInfo>
+    </SupplierInfo>
+    <ClientInfo>
+      <BusinessUnitInfo>
+        <Name>Lima Leasing Inc.</Name>
+        <ExternalID>Lima Leasing Inc.</ExternalID>
+      </BusinessUnitInfo>
+      <OrderReference>XX2251</OrderReference>
+    </ClientInfo>
+  </OrderInfo>
+  <LocalizationInfo>
+    <CurrencyISO>EUR</CurrencyISO>
+    <ExchangeRate>1</ExchangeRate>
+    <ExchangeRateDate>0001-01-01T00:00:00</ExchangeRateDate>
+    <RoundingPerLine>false</RoundingPerLine>
+  </LocalizationInfo>
+  <ContainerInfo>
+    <ContainerNumber>ABCD-123456-0</ContainerNumber>
+    <ContainerType>20TC</ContainerType>
+  </ContainerInfo>
+  <Container_Work_EstimateStatusInfo>
+    <Version>V1</Version>
+    <SupplierInfo>
+      <Container_ServiceProgress_DateInfo />
+      <EstimatorInfo>
+        <ContactInfo>
+          <Name>Eddy Estimator</Name>
+        </ContactInfo>
+      </EstimatorInfo>
+    </SupplierInfo>
+    <LessorInfo>
+      <BusinessUnitInfo>
+        <Name>Lima Leasing Inc.</Name>
+        <ExternalID>Lima Leasing Inc.</ExternalID>
+      </BusinessUnitInfo>
+      <Container_ServiceProgress_AuthorizationInfo>
+        <Authorized>2000-01-02T17:23:00+01:00</Authorized>
+        <AuthorizationReference>REP5559</AuthorizationReference>
+      </Container_ServiceProgress_AuthorizationInfo>
+    </LessorInfo>
+  </Container_Work_EstimateStatusInfo>
+  <ContainerStorageArrivalInfo />
+  <LaborRate>35.5</LaborRate>
+  <EstimateLines>
+    <Container_Work_EstimateLine>
+      <LineID>162012ca-015b-4f4d-92f7-bcef9f8f438d</LineID>
+      <OriginID>1855</OriginID>
+      <Description>REMOVE AND REBUILD BUTTERFLY VALVE</Description>
+      <CategoryCode>
+        <Code>
+          <Value>GEN</Value>
+          <Description>GENERAL</Description>
+        </Code>
+      </CategoryCode>
+      <GeneralCodes>
+        <LocationCode>
+          <Code>
+            <Value>BTM</Value>
+            <Description>BOTTOM</Description>
+          </Code>
+        </LocationCode>
+        <DamageCode>
+          <Code>
+            <Value />
+            <Description />
+          </Code>
+        </DamageCode>
+        <RepairCode>
+          <Code>
+            <Value />
+            <Description />
+          </Code>
+        </RepairCode>
+      </GeneralCodes>
+      <Proposal>
+        <Container_Work_EstimateLineProposal>
+          <LaborRate>35.5</LaborRate>
+          <LaborHours>2</LaborHours>
+          <LaborPrice>71</LaborPrice>
+          <MaterialPrice>71</MaterialPrice>
+          <LumpSumPrice>0</LumpSumPrice>
+          <LineSubtotal>142</LineSubtotal>
+          <Quantity>1</Quantity>
+          <DoAction>true</DoAction>
+          <LineTotal>142</LineTotal>
+        </Container_Work_EstimateLineProposal>
+      </Proposal>
+    </Container_Work_EstimateLine>
+    <Container_Work_EstimateLine>
+      <LineID>642e95fa-9872-4013-ae44-3c2c7c1d3e4e</LineID>
+      <OriginID>777</OriginID>
+      <Description>REPLACE DOME GASKET</Description>
+      <CategoryCode>
+        <Code>
+          <Value>GEN</Value>
+          <Description>GENERAL</Description>
+        </Code>
+      </CategoryCode>
+      <GeneralCodes>
+        <LocationCode>
+          <Code>
+            <Value>BTM</Value>
+            <Description>BOTTOM</Description>
+          </Code>
+        </LocationCode>
+        <DamageCode>
+          <Code>
+            <Value>BR</Value>
+            <Description>BROKEN</Description>
+          </Code>
+        </DamageCode>
+        <RepairCode>
+          <Code>
+            <Value />
+            <Description />
+          </Code>
+        </RepairCode>
+      </GeneralCodes>
+      <Proposal>
+        <Container_Work_EstimateLineProposal>
+          <LaborRate>35.5</LaborRate>
+          <LaborHours>3</LaborHours>
+          <LaborPrice>106.5</LaborPrice>
+          <MaterialPrice>20</MaterialPrice>
+          <LumpSumPrice>50</LumpSumPrice>
+          <LineSubtotal>50</LineSubtotal>
+          <Quantity>2</Quantity>
+          <DoAction>true</DoAction>
+          <LineTotal>100</LineTotal>
+        </Container_Work_EstimateLineProposal>
+      </Proposal>
+    </Container_Work_EstimateLine>
+  </EstimateLines>
+  <Remarks>
+    <Remark>
+      <ID>121fdc2d-f169-4e39-b951-61a18a093ed3</ID>
+      <AuthorInfo>
+        <ContactInfo>
+          <Name>Eddy Estimator</Name>
+        </ContactInfo>
+      </AuthorInfo>
+      <Remark>This is a remark</Remark>
+    </Remark>
+  </Remarks>
+</Message_Container_Work_Estimate>

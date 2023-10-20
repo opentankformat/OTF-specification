@@ -1,0 +1,17 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="Container_ServiceRequestInfo.xsd"/>
+  <xs:element name="Container_ServiceRequest_Work_Repair">
+    <xs:complexType>
+      <xs:sequence>
+		<xs:element name="IsRequested" type="xs:boolean" />
+		<xs:element name="LessorID" type="xs:string" minOccurs="0" />
+		<xs:element name="LessorReference" type="xs:string" minOccurs="0" />
+		<xs:element name="LessorAuthorizationReference" type="xs:string" minOccurs="0" />
+		<xs:element name="LesseeID" type="xs:string" minOccurs="0" />
+		<xs:element name="LesseeReference" type="xs:string" minOccurs="0" />
+		<xs:element name="LesseeAuthorizationReference" type="xs:string" minOccurs="0" />
+		<xs:element name="SpecialInstructionID" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>								

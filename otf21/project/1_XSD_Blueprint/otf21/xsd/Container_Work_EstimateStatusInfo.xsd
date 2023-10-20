@@ -13,6 +13,7 @@
 						<xs:complexType>
 							<xs:sequence>
 								<xs:element name="LessorID" type="xs:string" minOccurs="0" />
+								<xs:element name="Reference" type="xs:string" minOccurs="0" />								
 								<xs:element ref="Container_ServiceProgress_AuthorizationInfo" minOccurs="0" />
 								<xs:element name="AuthorizationAcceptedBySupplier" type="xs:dateTime" minOccurs="0" />						
 							</xs:sequence> 
@@ -22,6 +23,7 @@
 						<xs:complexType>
 							<xs:sequence>
 								<xs:element name="LesseeID" type="xs:string" minOccurs="0" />
+								<xs:element name="Reference" type="xs:string" minOccurs="0" />								
 								<xs:element ref="Container_ServiceProgress_AuthorizationInfo" minOccurs="0" />	
 								<xs:element name="AuthorizationAcceptedBySupplier" type="xs:dateTime" minOccurs="0" />						
 							</xs:sequence>

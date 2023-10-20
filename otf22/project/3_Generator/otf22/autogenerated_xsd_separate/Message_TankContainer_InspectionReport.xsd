@@ -160,12 +160,14 @@
                     <xs:element minOccurs="0" maxOccurs="1" name="InspectionDates">
                       <xs:complexType>
                         <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
                           <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
                           <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
                           <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
                           <xs:element minOccurs="0" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
                           <xs:element minOccurs="0" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
                           <xs:element minOccurs="0" maxOccurs="1" name="ACEP" type="xs:dateTime" />
+                          <xs:element minOccurs="0" maxOccurs="1" name="ACEPDescription" type="xs:string" />
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
@@ -341,6 +343,7 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element minOccurs="1" maxOccurs="1" name="VerificationDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" maxOccurs="1" name="VerificationPlace" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="VerificatorName" type="xs:string" />
             </xs:sequence>
           </xs:complexType>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="CRM_BusinessUnitInfo.xsd"/> 
+  <xs:include schemaLocation="CRM_ContactInfo.xsd"/>   
+  <xs:element name="Container_HaulierInfo">
+    <xs:complexType>
+      <xs:sequence>
+		<xs:element ref="BusinessUnitInfo" />	  
+		<xs:element name="TruckDriverInfo" minOccurs="0">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element ref="ContactInfo" />	  
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>	
+        <xs:element name="TruckLicensePlate" type="xs:string" minOccurs="0" />
+        <xs:element name="ChassisLicensePlate" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

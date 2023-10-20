@@ -54,12 +54,14 @@
     "TankContainerEquipmentInfo": null,
     "TankContainerLiningInfo": null,
     "InspectionDates": {
+      "InitialInspectionDateSpecified": false,
       "LastInspectionDateSpecified": false,
       "LastInspectionScopeSpecified": false,
       "LastInspectionScopeDescription": "H",
       "NextInspectionDateSpecified": false,
       "CSCValidityDateSpecified": false,
-      "ACEPSpecified": false
+      "ACEPSpecified": false,
+      "ACEPDescription": null
     }
   },
   "Container_Work_EstimateStatusInfo": {
@@ -77,6 +79,7 @@
     "ContainerWorkAuthorizationInfo": {
       "ContainerWorkLessorAuthorizationInfo": {
         "LessorID": "Lessor name or identifier",
+        "Reference": null,
         "Container_ServiceProgress_AuthorizationInfo": {
           "Authorized": "2000-01-02T17:23:00+01:00",
           "AuthorizedBy": null,

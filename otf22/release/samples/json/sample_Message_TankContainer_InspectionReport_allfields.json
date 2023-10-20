@@ -12,7 +12,7 @@
       "Phone": "DummyString",
       "Email": "DummyString"
     },
-    "SentDate": "2023-09-22T13:17:02.5398422+02:00",
+    "SentDate": "2023-10-20T13:41:41.3184594+02:00",
     "MessageType": "New"
   },
   "HardCopyInfo": {
@@ -25,13 +25,13 @@
     "SupplierInspectionRevisionRemarks": [
       {
         "RemarkID": "DummyString",
-        "RemarkDate": "2023-09-22T13:17:02.5398527+02:00",
+        "RemarkDate": "2023-10-20T13:41:41.3184716+02:00",
         "RemarkAuthor": "DummyString",
         "RemarkText": "DummyString"
       },
       {
         "RemarkID": "DummyString",
-        "RemarkDate": "2023-09-22T13:17:02.5398545+02:00",
+        "RemarkDate": "2023-10-20T13:41:41.3184734+02:00",
         "RemarkAuthor": "DummyString",
         "RemarkText": "DummyString"
       }
@@ -45,19 +45,19 @@
   "InspectionResultsInfo": {
     "InspectionLocationID": "DummyString",
     "InspectionCenterID": "DummyString",
-    "InspectionDate": "2023-09-22T13:17:02.5398603+02:00",
+    "InspectionDate": "2023-10-20T13:41:41.3184804+02:00",
     "InspectorName": "DummyString",
     "OperatorID": "DummyString",
     "TankContainerMarkings": [
       {
         "RemarkID": "DummyString",
-        "RemarkDate": "2023-09-22T13:17:02.5398619+02:00",
+        "RemarkDate": "2023-10-20T13:41:41.318482+02:00",
         "RemarkAuthor": "DummyString",
         "RemarkText": "DummyString"
       },
       {
         "RemarkID": "DummyString",
-        "RemarkDate": "2023-09-22T13:17:02.539863+02:00",
+        "RemarkDate": "2023-10-20T13:41:41.3184833+02:00",
         "RemarkAuthor": "DummyString",
         "RemarkText": "DummyString"
       }
@@ -103,7 +103,7 @@
         "Manufacturer": "DummyString",
         "ManufacturerCountry": "DummyString",
         "ManufacturerSerialNumber": "DummyString",
-        "BuildingYearMonth": "2023-09-22T13:17:02.5398738+02:00",
+        "BuildingYearMonth": "2023-10-20T13:41:41.3184962+02:00",
         "ISO6346SizeTypeCode": "Empty",
         "ISO6346SizeTypeCodeDescription": "DummyString",
         "DimensionsXMillimeter": 1,
@@ -172,12 +172,14 @@
         "Material": "DummyString"
       },
       "InspectionDates": {
-        "LastInspectionDate": "2023-09-22T13:17:02.53989+02:00",
+        "InitialInspectionDate": "2023-10-20T13:41:41.318515+02:00",
+        "LastInspectionDate": "2023-10-20T13:41:41.3185154+02:00",
         "LastInspectionScope": "Empty",
         "LastInspectionScopeDescription": "DummyString",
-        "NextInspectionDate": "2023-09-22T13:17:02.5398909+02:00",
-        "CSCValidityDate": "2023-09-22T13:17:02.5398913+02:00",
-        "ACEP": "2023-09-22T13:17:02.5398916+02:00"
+        "NextInspectionDate": "2023-10-20T13:41:41.3185162+02:00",
+        "CSCValidityDate": "2023-10-20T13:41:41.3185166+02:00",
+        "ACEP": "2023-10-20T13:41:41.3185169+02:00",
+        "ACEPDescription": "DummyString"
       }
     },
     "Inspections": {
@@ -252,32 +254,33 @@
     "Remarks": [
       {
         "RemarkID": "DummyString",
-        "RemarkDate": "2023-09-22T13:17:02.5399171+02:00",
+        "RemarkDate": "2023-10-20T13:41:41.3185449+02:00",
         "RemarkAuthor": "DummyString",
         "RemarkText": "DummyString"
       },
       {
         "RemarkID": "DummyString",
-        "RemarkDate": "2023-09-22T13:17:02.5399182+02:00",
+        "RemarkDate": "2023-10-20T13:41:41.3185461+02:00",
         "RemarkAuthor": "DummyString",
         "RemarkText": "DummyString"
       }
     ]
   },
   "InspectionVerification": {
-    "VerificationDate": "2023-09-22T13:17:02.5399205+02:00",
+    "VerificationDate": "2023-10-20T13:41:41.3185486+02:00",
+    "VerificationPlace": "DummyString",
     "VerificatorName": "DummyString"
   },
   "Remarks": [
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-09-22T13:17:02.5399219+02:00",
+      "RemarkDate": "2023-10-20T13:41:41.3185502+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     },
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-09-22T13:17:02.5399229+02:00",
+      "RemarkDate": "2023-10-20T13:41:41.3185513+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     }

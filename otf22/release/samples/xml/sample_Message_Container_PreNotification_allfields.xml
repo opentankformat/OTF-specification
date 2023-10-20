@@ -13,7 +13,7 @@
       <Phone>DummyString</Phone>
       <Email>DummyString</Email>
     </ContactInfo>
-    <SentDate>2023-09-22T13:16:59.28017+02:00</SentDate>
+    <SentDate>2023-10-20T13:41:37.7753052+02:00</SentDate>
     <MessageType>New</MessageType>
   </MessageHeaderInfo>
   <ContainerPreNotificationType>Empty</ContainerPreNotificationType>
@@ -37,7 +37,7 @@
     <ContainerType>DummyString</ContainerType>
   </ContainerInfo>
   <ArrivalInfo>
-    <ETA>2023-09-22T13:16:59.280307+02:00</ETA>
+    <ETA>2023-10-20T13:41:37.7754199+02:00</ETA>
     <RedeliveryReference>DummyString</RedeliveryReference>
     <ContainerOrigin>DummyString</ContainerOrigin>
     <Container_HaulierInfo>
@@ -56,13 +56,13 @@
         <Remarks>
           <Remark>
             <RemarkID>DummyString</RemarkID>
-            <RemarkDate>2023-09-22T13:16:59.2803519+02:00</RemarkDate>
+            <RemarkDate>2023-10-20T13:41:37.7754491+02:00</RemarkDate>
             <RemarkAuthor>DummyString</RemarkAuthor>
             <RemarkText>DummyString</RemarkText>
           </Remark>
           <Remark>
             <RemarkID>DummyString</RemarkID>
-            <RemarkDate>2023-09-22T13:16:59.280363+02:00</RemarkDate>
+            <RemarkDate>2023-10-20T13:41:37.7754602+02:00</RemarkDate>
             <RemarkAuthor>DummyString</RemarkAuthor>
             <RemarkText>DummyString</RemarkText>
           </Remark>
@@ -77,13 +77,13 @@
         <Remarks>
           <Remark>
             <RemarkID>DummyString</RemarkID>
-            <RemarkDate>2023-09-22T13:16:59.2804512+02:00</RemarkDate>
+            <RemarkDate>2023-10-20T13:41:37.7755057+02:00</RemarkDate>
             <RemarkAuthor>DummyString</RemarkAuthor>
             <RemarkText>DummyString</RemarkText>
           </Remark>
           <Remark>
             <RemarkID>DummyString</RemarkID>
-            <RemarkDate>2023-09-22T13:16:59.2804528+02:00</RemarkDate>
+            <RemarkDate>2023-10-20T13:41:37.7755072+02:00</RemarkDate>
             <RemarkAuthor>DummyString</RemarkAuthor>
             <RemarkText>DummyString</RemarkText>
           </Remark>
@@ -94,14 +94,16 @@
     <Container_ServiceRequest_Work_Repair>
       <IsRequested>true</IsRequested>
       <LessorID>DummyString</LessorID>
+      <LessorReference>DummyString</LessorReference>
       <LessorAuthorizationReference>DummyString</LessorAuthorizationReference>
       <LesseeID>DummyString</LesseeID>
+      <LesseeReference>DummyString</LesseeReference>
       <LesseeAuthorizationReference>DummyString</LesseeAuthorizationReference>
       <SpecialInstructionID>DummyString</SpecialInstructionID>
     </Container_ServiceRequest_Work_Repair>
   </ServicesRequestInfo>
   <DepartureInfo>
-    <ETD>2023-09-22T13:16:59.2804618+02:00</ETD>
+    <ETD>2023-10-20T13:41:37.775517+02:00</ETD>
     <ReleaseReference>DummyString</ReleaseReference>
     <ContainerDestination>DummyString</ContainerDestination>
     <Container_HaulierInfo>
@@ -114,13 +116,13 @@
   <Remarks>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-09-22T13:16:59.2804648+02:00</RemarkDate>
+      <RemarkDate>2023-10-20T13:41:37.7755245+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
     </Remark>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-09-22T13:16:59.2804683+02:00</RemarkDate>
+      <RemarkDate>2023-10-20T13:41:37.7755256+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
     </Remark>

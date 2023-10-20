@@ -1,0 +1,51 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="Container_ServiceRequestInfo.xsd"/>
+  <xs:include schemaLocation="TankContainer_HeatingMethods.xsd"/>
+  <xs:include schemaLocation="TankContainer_HeatingTemperatureMeasurementMethods.xsd"/>
+  <xs:include schemaLocation="Common_TemperatureMeasures.xsd"/>  
+  <xs:element name="TankContainer_ServiceRequest_Heating">
+    <xs:complexType>
+      <xs:sequence>
+		<xs:element ref="Container_ServiceRequestInfo" />
+		<xs:element name="RequestedHeatingMethod" minOccurs="0" >
+			<xs:simpleType>
+				<xs:restriction base="TankContainer_HeatingMethods" />
+			</xs:simpleType>
+		</xs:element>
+		<xs:element name="RequestedHeatingMethodDescription" type="xs:string" minOccurs="0" />
+		<xs:element name="RequiredHeatingTemperatureMeasurementMethod" minOccurs="0" >
+			<xs:simpleType>
+				<xs:restriction base="TankContainer_HeatingTemperatureMeasurementMethods" />
+			</xs:simpleType>
+		</xs:element>
+		<xs:element name="RequiredHeatingTemperatureMeasurementMethodDescription" type="xs:string" minOccurs="0" />
+		<xs:element name="TargetTemperature" type="xs:double" minOccurs="0" />
+		<xs:element name="TargetTemperatureUnit" minOccurs="0" >
+			<xs:simpleType>
+				<xs:restriction base="TemperatureMeasures" />
+			</xs:simpleType>
+		</xs:element>		
+		<xs:element name="MaximumPressure" type="xs:double" minOccurs="0" />			
+		<xs:element name="MaximumPressureUnit" type="xs:string" minOccurs="0" />
+		<xs:element name="MaximumContactTemperature" type="xs:double" minOccurs="0" />	
+		<xs:element name="MaximumContactTemperatureUnit" minOccurs="0" >
+			<xs:simpleType>
+				<xs:restriction base="TemperatureMeasures" />
+			</xs:simpleType>
+		</xs:element>			
+		<xs:element name="MinimumTemperature" type="xs:double" minOccurs="0" />			
+		<xs:element name="MinimumTemperatureUnit" minOccurs="0" >
+			<xs:simpleType>
+				<xs:restriction base="TemperatureMeasures" />
+			</xs:simpleType>
+		</xs:element>				
+		<xs:element name="MaximumTemperature" type="xs:double" minOccurs="0" />
+		<xs:element name="MaximumTemperatureUnit" minOccurs="0" >
+			<xs:simpleType>
+				<xs:restriction base="TemperatureMeasures" />
+			</xs:simpleType>
+		</xs:element>			
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>								

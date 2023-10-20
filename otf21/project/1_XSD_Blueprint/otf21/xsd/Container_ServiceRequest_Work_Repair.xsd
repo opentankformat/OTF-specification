@@ -5,8 +5,10 @@
       <xs:sequence>
 		<xs:element name="IsRequested" type="xs:boolean" />
 		<xs:element name="LessorID" type="xs:string" minOccurs="0" />
+		<xs:element name="LessorReference" type="xs:string" minOccurs="0" />		
 		<xs:element name="LessorAuthorizationReference" type="xs:string" minOccurs="0" />
 		<xs:element name="LesseeID" type="xs:string" minOccurs="0" />
+		<xs:element name="LesseeReference" type="xs:string" minOccurs="0" />		
 		<xs:element name="LesseeAuthorizationReference" type="xs:string" minOccurs="0" />
 		<xs:element name="SpecialInstructionID" type="xs:string" minOccurs="0" />
       </xs:sequence>

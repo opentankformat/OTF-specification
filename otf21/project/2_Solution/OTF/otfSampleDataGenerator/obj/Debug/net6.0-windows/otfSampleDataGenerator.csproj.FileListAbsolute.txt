@@ -121,9 +121,7 @@ C:\repositories\OTF-design\otf21\project\2_Solution\OTF\otfSampleDataGenerator\b
 C:\repositories\OTF-design\otf21\project\2_Solution\OTF\otfSampleDataGenerator\bin\Debug\net6.0-windows\otfSampleDataGenerator.dll
 C:\repositories\OTF-design\otf21\project\2_Solution\OTF\otfSampleDataGenerator\bin\Debug\net6.0-windows\otfSampleDataGenerator.pdb
 C:\repositories\OTF-design\otf21\project\2_Solution\OTF\otfSampleDataGenerator\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
-C:\repositories\OTF-design\otf21\project\2_Solution\OTF\otfSampleDataGenerator\bin\Debug\net6.0-windows\otf20.dll
 C:\repositories\OTF-design\otf21\project\2_Solution\OTF\otfSampleDataGenerator\bin\Debug\net6.0-windows\otf21.dll
-C:\repositories\OTF-design\otf21\project\2_Solution\OTF\otfSampleDataGenerator\bin\Debug\net6.0-windows\otf20.pdb
 C:\repositories\OTF-design\otf21\project\2_Solution\OTF\otfSampleDataGenerator\bin\Debug\net6.0-windows\otf21.pdb
 C:\repositories\OTF-design\otf21\project\2_Solution\OTF\otfSampleDataGenerator\obj\Debug\net6.0-windows\otfSampleDataGenerator.csproj.CopyComplete
 C:\repositories\OTF-design\otf21\project\2_Solution\OTF\otfSampleDataGenerator\obj\Debug\net6.0-windows\otfSampleDataGenerator.genruntimeconfig.cache

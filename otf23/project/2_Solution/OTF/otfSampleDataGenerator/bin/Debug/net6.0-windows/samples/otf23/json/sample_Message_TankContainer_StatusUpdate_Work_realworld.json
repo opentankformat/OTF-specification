@@ -1,0 +1,136 @@
+{
+  "MessageHeaderInfo": {
+    "OTFVersion": "OTF23",
+    "OTFMessage": "Message_TankContainer_StatusUpdate_Work",
+    "MessageID": "ad47590-acd7-4f7d-b8b1-9d422f00b994",
+    "SentDate": "2000-01-03T08:55:00+01:00",
+    "ConversationID": "3e818a60-5941-4615-911e-e1f540d6f314",
+    "MessageType": "New",
+    "SenderInfo": {
+      "BusinessUnitInfo": {
+        "Name": "Delta Depot Inc.",
+        "ExternalID": "Delta Depot Inc.",
+        "Phone": null,
+        "Email": null,
+        "Country": null
+      },
+      "ContactInfo": null
+    },
+    "RecipientInfo": {
+      "BusinessUnitInfo": {
+        "Name": "Lima Leasing Inc.",
+        "ExternalID": "Lima Leasing Inc.",
+        "Phone": null,
+        "Email": null,
+        "Country": null
+      }
+    }
+  },
+  "OrderInfo": {
+    "SupplierInfo": {
+      "BusinessUnitInfo": {
+        "Name": "Delta Depot Inc.",
+        "ExternalID": "Delta Depot Inc.",
+        "Phone": null,
+        "Email": null,
+        "Country": null
+      },
+      "FacilityInfo": {
+        "Name": "Houston",
+        "ExternalID": null,
+        "BICFacilityCode": null
+      },
+      "ProformaReference": null,
+      "OrderReference": "D230101.0001",
+      "OrderStatusInfo": {
+        "OrderStatus": "IN_CLEAN_REPAIR_IN_AUTHORIZED",
+        "OrderStatusDescription": "IN_CLEAN_REPAIR_IN_AUTHORIZED"
+      }
+    },
+    "ClientInfo": {
+      "BusinessUnitInfo": {
+        "Name": "Lima Leasing Inc.",
+        "ExternalID": "Lima Leasing Inc.",
+        "Phone": null,
+        "Email": null,
+        "Country": null
+      },
+      "FacilityInfo": null,
+      "ContactInfo": null,
+      "OrderReference": "XX2251"
+    }
+  },
+  "LocalizationInfo": null,
+  "TankContainerInfo": {
+    "ContainerInfo": {
+      "ContainerNumber": "ABCD-123456-0",
+      "ContainerType": "20TC",
+      "LessorInfo": null
+    },
+    "TankContainerSuitabilityInfo": null,
+    "TankContainerCharacteristicsInfo": null,
+    "TankContainerTankInfo": null,
+    "TankContainerEquipmentInfo": null,
+    "TankContainerLiningInfo": null,
+    "InspectionDates": null
+  },
+  "SupplierReference": "D230101.0001.R1",
+  "ClientPurchaseOrderReference": null,
+  "Container_Work_EstimateStatusInfo": {
+    "Version": "V1",
+    "SupplierInfo": {
+      "Container_ServiceProgress_DateInfo": {
+        "Planned": "0001-01-01T00:00:00",
+        "PlannedByInfo": null,
+        "PlannedToTakePlaceOn": "0001-01-01T00:00:00",
+        "Started": "0001-01-01T00:00:00",
+        "StartedByInfo": null,
+        "Finished": "2000-01-02T16:23:00+01:00",
+        "FinishedByInfo": null,
+        "Cancelled": "0001-01-01T00:00:00",
+        "CancelledByInfo": null
+      },
+      "EstimatorInfo": {
+        "ContactInfo": {
+          "Name": "Eddy Estimator",
+          "Phone": null,
+          "Email": null
+        }
+      }
+    },
+    "LessorInfo": {
+      "BusinessUnitInfo": {
+        "Name": "Lima Leasing Inc.",
+        "ExternalID": "Lima Leasing Inc.",
+        "Phone": null,
+        "Email": null,
+        "Country": null
+      },
+      "Reference": null,
+      "Container_ServiceProgress_AuthorizationInfo": {
+        "Container_ServiceProgress_AuthorizationStatus": null,
+        "Authorized": "2000-01-02T17:23:00+01:00",
+        "AuthorizedByInfo": null,
+        "AuthorizationReference": "REP5559",
+        "AuthorizationAmount": null
+      },
+      "AuthorizationAcceptedBySupplier": "0001-01-01T00:00:00"
+    },
+    "LesseeInfo": null
+  },
+  "Container_Work_WorkStatusInfo": {
+    "Container_ServiceProgress_DateInfo": {
+      "Planned": "0001-01-01T00:00:00",
+      "PlannedByInfo": null,
+      "PlannedToTakePlaceOn": "0001-01-01T00:00:00",
+      "Started": "2000-01-03T08:55:00+01:00",
+      "StartedByInfo": null,
+      "Finished": "0001-01-01T00:00:00",
+      "FinishedByInfo": null,
+      "Cancelled": "0001-01-01T00:00:00",
+      "CancelledByInfo": null
+    }
+  },
+  "Remarks": null,
+  "Attachments": null
+}

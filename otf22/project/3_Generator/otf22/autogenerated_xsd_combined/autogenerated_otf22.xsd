@@ -249,8 +249,10 @@
       <xs:sequence>
         <xs:element minOccurs="1" maxOccurs="1" name="IsRequested" type="xs:boolean" />
         <xs:element minOccurs="0" maxOccurs="1" name="LessorID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="LessorReference" type="xs:string" />
         <xs:element minOccurs="0" maxOccurs="1" name="LessorAuthorizationReference" type="xs:string" />
         <xs:element minOccurs="0" maxOccurs="1" name="LesseeID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="LesseeReference" type="xs:string" />
         <xs:element minOccurs="0" maxOccurs="1" name="LesseeAuthorizationReference" type="xs:string" />
         <xs:element minOccurs="0" maxOccurs="1" name="SpecialInstructionID" type="xs:string" />
       </xs:sequence>
@@ -375,8 +377,10 @@
                   <xs:sequence>
                     <xs:element minOccurs="1" maxOccurs="1" name="IsRequested" type="xs:boolean" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LessorID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="LessorReference" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LessorAuthorizationReference" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LesseeID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="LesseeReference" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LesseeAuthorizationReference" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="SpecialInstructionID" type="xs:string" />
                   </xs:sequence>
@@ -503,8 +507,10 @@
             <xs:sequence>
               <xs:element minOccurs="1" maxOccurs="1" name="IsRequested" type="xs:boolean" />
               <xs:element minOccurs="0" maxOccurs="1" name="LessorID" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="LessorReference" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="LessorAuthorizationReference" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="LesseeID" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="LesseeReference" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="LesseeAuthorizationReference" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="SpecialInstructionID" type="xs:string" />
             </xs:sequence>
@@ -1020,6 +1026,7 @@
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element minOccurs="0" maxOccurs="1" name="LessorID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
                       <xs:complexType>
                         <xs:sequence>
@@ -1054,6 +1061,7 @@
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element minOccurs="0" maxOccurs="1" name="LesseeID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
                       <xs:complexType>
                         <xs:sequence>
@@ -1097,6 +1105,7 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element minOccurs="0" maxOccurs="1" name="LessorID" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
                 <xs:complexType>
                   <xs:sequence>
@@ -1131,6 +1140,7 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element minOccurs="0" maxOccurs="1" name="LesseeID" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
                 <xs:complexType>
                   <xs:sequence>
@@ -1168,6 +1178,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" maxOccurs="1" name="LessorID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
         <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
           <xs:complexType>
             <xs:sequence>
@@ -1202,6 +1213,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" maxOccurs="1" name="LesseeID" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
         <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
           <xs:complexType>
             <xs:sequence>
@@ -1319,6 +1331,7 @@
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element minOccurs="0" maxOccurs="1" name="LessorID" type="xs:string" />
+                          <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
                           <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
                             <xs:complexType>
                               <xs:sequence>
@@ -1353,6 +1366,7 @@
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element minOccurs="0" maxOccurs="1" name="LesseeID" type="xs:string" />
+                          <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
                           <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
                             <xs:complexType>
                               <xs:sequence>
@@ -1557,6 +1571,7 @@
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element minOccurs="0" maxOccurs="1" name="LessorID" type="xs:string" />
+                          <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
                           <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
                             <xs:complexType>
                               <xs:sequence>
@@ -1591,6 +1606,7 @@
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element minOccurs="0" maxOccurs="1" name="LesseeID" type="xs:string" />
+                          <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
                           <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
                             <xs:complexType>
                               <xs:sequence>
@@ -2315,12 +2331,14 @@
         <xs:element minOccurs="0" maxOccurs="1" name="InspectionDates">
           <xs:complexType>
             <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
               <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
               <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
               <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
               <xs:element minOccurs="0" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
               <xs:element minOccurs="0" maxOccurs="1" name="ACEP" type="xs:dateTime" />
+              <xs:element minOccurs="0" maxOccurs="1" name="ACEPDescription" type="xs:string" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -2649,12 +2667,14 @@
   <xs:element name="TankContainerInfoInspectionDates" nillable="true">
     <xs:complexType>
       <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
         <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
         <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
         <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
         <xs:element minOccurs="0" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
         <xs:element minOccurs="0" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
         <xs:element minOccurs="0" maxOccurs="1" name="ACEP" type="xs:dateTime" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ACEPDescription" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -2836,12 +2856,14 @@
                     <xs:element minOccurs="0" maxOccurs="1" name="InspectionDates">
                       <xs:complexType>
                         <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
                           <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
                           <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
                           <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
                           <xs:element minOccurs="0" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
                           <xs:element minOccurs="0" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
                           <xs:element minOccurs="0" maxOccurs="1" name="ACEP" type="xs:dateTime" />
+                          <xs:element minOccurs="0" maxOccurs="1" name="ACEPDescription" type="xs:string" />
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
@@ -3017,6 +3039,7 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element minOccurs="1" maxOccurs="1" name="VerificationDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" maxOccurs="1" name="VerificationPlace" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="VerificatorName" type="xs:string" />
             </xs:sequence>
           </xs:complexType>
@@ -3159,12 +3182,14 @@
               <xs:element minOccurs="0" maxOccurs="1" name="InspectionDates">
                 <xs:complexType>
                   <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ACEP" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ACEPDescription" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -3665,6 +3690,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="1" maxOccurs="1" name="VerificationDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" maxOccurs="1" name="VerificationPlace" type="xs:string" />
         <xs:element minOccurs="0" maxOccurs="1" name="VerificatorName" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
@@ -7558,12 +7584,14 @@
               <xs:element minOccurs="0" maxOccurs="1" name="InspectionDates">
                 <xs:complexType>
                   <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ACEP" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ACEPDescription" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -7699,8 +7727,10 @@
                   <xs:sequence>
                     <xs:element minOccurs="1" maxOccurs="1" name="IsRequested" type="xs:boolean" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LessorID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="LessorReference" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LessorAuthorizationReference" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LesseeID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="LesseeReference" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LesseeAuthorizationReference" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="SpecialInstructionID" type="xs:string" />
                   </xs:sequence>
@@ -7880,8 +7910,10 @@
             <xs:sequence>
               <xs:element minOccurs="1" maxOccurs="1" name="IsRequested" type="xs:boolean" />
               <xs:element minOccurs="0" maxOccurs="1" name="LessorID" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="LessorReference" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="LessorAuthorizationReference" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="LesseeID" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="LesseeReference" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="LesseeAuthorizationReference" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="SpecialInstructionID" type="xs:string" />
             </xs:sequence>
@@ -8069,12 +8101,14 @@
               <xs:element minOccurs="0" maxOccurs="1" name="InspectionDates">
                 <xs:complexType>
                   <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ACEP" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ACEPDescription" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -8291,12 +8325,14 @@
               <xs:element minOccurs="0" maxOccurs="1" name="InspectionDates">
                 <xs:complexType>
                   <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ACEP" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ACEPDescription" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -8513,12 +8549,14 @@
               <xs:element minOccurs="0" maxOccurs="1" name="InspectionDates">
                 <xs:complexType>
                   <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ACEP" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ACEPDescription" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -8735,12 +8773,14 @@
               <xs:element minOccurs="0" maxOccurs="1" name="InspectionDates">
                 <xs:complexType>
                   <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ACEP" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ACEPDescription" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -8943,12 +8983,14 @@
               <xs:element minOccurs="0" maxOccurs="1" name="InspectionDates">
                 <xs:complexType>
                   <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ACEP" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ACEPDescription" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -9121,12 +9163,14 @@
               <xs:element minOccurs="0" maxOccurs="1" name="InspectionDates">
                 <xs:complexType>
                   <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ACEP" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ACEPDescription" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -9288,12 +9332,14 @@
               <xs:element minOccurs="0" maxOccurs="1" name="InspectionDates">
                 <xs:complexType>
                   <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ACEP" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ACEPDescription" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -9466,12 +9512,14 @@
               <xs:element minOccurs="0" maxOccurs="1" name="InspectionDates">
                 <xs:complexType>
                   <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ACEP" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ACEPDescription" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -9674,12 +9722,14 @@
               <xs:element minOccurs="0" maxOccurs="1" name="InspectionDates">
                 <xs:complexType>
                   <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ACEP" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ACEPDescription" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -9715,6 +9765,7 @@
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element minOccurs="0" maxOccurs="1" name="LessorID" type="xs:string" />
+                          <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
                           <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
                             <xs:complexType>
                               <xs:sequence>
@@ -9749,6 +9800,7 @@
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element minOccurs="0" maxOccurs="1" name="LesseeID" type="xs:string" />
+                          <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
                           <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
                             <xs:complexType>
                               <xs:sequence>
@@ -9984,12 +10036,14 @@
               <xs:element minOccurs="0" maxOccurs="1" name="InspectionDates">
                 <xs:complexType>
                   <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ACEP" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ACEPDescription" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -10023,6 +10077,7 @@
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element minOccurs="0" maxOccurs="1" name="LessorID" type="xs:string" />
+                          <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
                           <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
                             <xs:complexType>
                               <xs:sequence>
@@ -10057,6 +10112,7 @@
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element minOccurs="0" maxOccurs="1" name="LesseeID" type="xs:string" />
+                          <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
                           <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_AuthorizationInfo">
                             <xs:complexType>
                               <xs:sequence>

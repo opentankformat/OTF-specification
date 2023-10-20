@@ -13,7 +13,7 @@
       <Phone>DummyString</Phone>
       <Email>DummyString</Email>
     </ContactInfo>
-    <SentDate>2023-09-22T13:17:00.5832173+02:00</SentDate>
+    <SentDate>2023-10-20T13:41:39.3003294+02:00</SentDate>
     <MessageType>New</MessageType>
   </MessageHeaderInfo>
   <OrderInfo>
@@ -37,18 +37,18 @@
   </ContainerInfo>
   <Container_StatusUpdate_Storage_Available>
     <ClientPurchaseOrderReference>DummyString</ClientPurchaseOrderReference>
-    <ContainerAvailableDate>2023-09-22T13:17:00.5832294+02:00</ContainerAvailableDate>
+    <ContainerAvailableDate>2023-10-20T13:41:39.3003414+02:00</ContainerAvailableDate>
   </Container_StatusUpdate_Storage_Available>
   <Remarks>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-09-22T13:17:00.5832325+02:00</RemarkDate>
+      <RemarkDate>2023-10-20T13:41:39.3003444+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
     </Remark>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-09-22T13:17:00.5832344+02:00</RemarkDate>
+      <RemarkDate>2023-10-20T13:41:39.3003463+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
     </Remark>

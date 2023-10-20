@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="CRM_BusinessUnitInfo.xsd"/> 
+  <xs:include schemaLocation="Logistics_FacilityInfo.xsd"/> 
+  <xs:include schemaLocation="CRM_ContactInfo.xsd"/>
+  <xs:include schemaLocation="Common_OrderStatusInfo.xsd"/>
+  <xs:element name="OrderInfo">
+    <xs:complexType>
+      <xs:sequence>
+		<xs:element name="SupplierInfo" minOccurs="0">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element ref="BusinessUnitInfo" />	  
+					<xs:element ref="FacilityInfo" />	  
+					<xs:element name="ProformaReference" type="xs:string" minOccurs="0"/>
+					<xs:element name="OrderReference" type="xs:string" minOccurs="0"/>	
+					<xs:element ref="OrderStatusInfo" minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>		
+		<xs:element name="ClientInfo" minOccurs="0">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element ref="BusinessUnitInfo" />	
+					<xs:element ref="FacilityInfo" />	  
+					<xs:element ref="ContactInfo" />
+					<xs:element name="OrderReference" type="xs:string" minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>		
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -981,9 +981,13 @@ namespace otf20 {
         
         private string lessorIDField;
         
+        private string lessorReferenceField;
+        
         private string lessorAuthorizationReferenceField;
         
         private string lesseeIDField;
+        
+        private string lesseeReferenceField;
         
         private string lesseeAuthorizationReferenceField;
         
@@ -1010,6 +1014,16 @@ namespace otf20 {
         }
         
         /// <remarks/>
+        public string LessorReference {
+            get {
+                return this.lessorReferenceField;
+            }
+            set {
+                this.lessorReferenceField = value;
+            }
+        }
+        
+        /// <remarks/>
         public string LessorAuthorizationReference {
             get {
                 return this.lessorAuthorizationReferenceField;
@@ -1026,6 +1040,16 @@ namespace otf20 {
             }
             set {
                 this.lesseeIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string LesseeReference {
+            get {
+                return this.lesseeReferenceField;
+            }
+            set {
+                this.lesseeReferenceField = value;
             }
         }
         
@@ -2364,6 +2388,8 @@ namespace otf20 {
         
         private string lessorIDField;
         
+        private string referenceField;
+        
         private Container_ServiceProgress_AuthorizationInfo container_ServiceProgress_AuthorizationInfoField;
         
         private System.DateTime authorizationAcceptedBySupplierField;
@@ -2377,6 +2403,16 @@ namespace otf20 {
             }
             set {
                 this.lessorIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Reference {
+            get {
+                return this.referenceField;
+            }
+            set {
+                this.referenceField = value;
             }
         }
         
@@ -2422,6 +2458,8 @@ namespace otf20 {
         
         private string lesseeIDField;
         
+        private string referenceField;
+        
         private Container_ServiceProgress_AuthorizationInfo container_ServiceProgress_AuthorizationInfoField;
         
         private System.DateTime authorizationAcceptedBySupplierField;
@@ -2435,6 +2473,16 @@ namespace otf20 {
             }
             set {
                 this.lesseeIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Reference {
+            get {
+                return this.referenceField;
+            }
+            set {
+                this.referenceField = value;
             }
         }
         
@@ -4303,6 +4351,10 @@ namespace otf20 {
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
     public partial class TankContainerInfoInspectionDates {
         
+        private System.DateTime initialInspectionDateField;
+        
+        private bool initialInspectionDateFieldSpecified;
+        
         private System.DateTime lastInspectionDateField;
         
         private bool lastInspectionDateFieldSpecified;
@@ -4324,6 +4376,29 @@ namespace otf20 {
         private System.DateTime aCEPField;
         
         private bool aCEPFieldSpecified;
+        
+        private string aCEPDescriptionField;
+        
+        /// <remarks/>
+        public System.DateTime InitialInspectionDate {
+            get {
+                return this.initialInspectionDateField;
+            }
+            set {
+                this.initialInspectionDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool InitialInspectionDateSpecified {
+            get {
+                return this.initialInspectionDateFieldSpecified;
+            }
+            set {
+                this.initialInspectionDateFieldSpecified = value;
+            }
+        }
         
         /// <remarks/>
         public System.DateTime LastInspectionDate {
@@ -4437,6 +4512,16 @@ namespace otf20 {
             }
             set {
                 this.aCEPFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ACEPDescription {
+            get {
+                return this.aCEPDescriptionField;
+            }
+            set {
+                this.aCEPDescriptionField = value;
             }
         }
     }
@@ -6092,6 +6177,8 @@ namespace otf20 {
         
         private System.DateTime verificationDateField;
         
+        private string verificationPlaceField;
+        
         private string verificatorNameField;
         
         /// <remarks/>
@@ -6101,6 +6188,16 @@ namespace otf20 {
             }
             set {
                 this.verificationDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string VerificationPlace {
+            get {
+                return this.verificationPlaceField;
+            }
+            set {
+                this.verificationPlaceField = value;
             }
         }
         

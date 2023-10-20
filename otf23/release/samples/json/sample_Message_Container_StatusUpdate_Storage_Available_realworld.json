@@ -1,0 +1,74 @@
+{
+  "MessageHeaderInfo": {
+    "OTFVersion": "OTF23",
+    "OTFMessage": "Message_Container_StatusUpdate_Storage_Available",
+    "MessageID": "83cabe25-bdaa-4bc0-aa52-24526edc4ac1",
+    "SentDate": "2000-01-05T16:00:00+01:00",
+    "ConversationID": null,
+    "MessageType": "New",
+    "SenderInfo": {
+      "BusinessUnitInfo": {
+        "Name": "Delta Depot Inc.",
+        "ExternalID": "Delta Depot Inc.",
+        "Phone": null,
+        "Email": null,
+        "Country": null
+      },
+      "ContactInfo": null
+    },
+    "RecipientInfo": {
+      "BusinessUnitInfo": {
+        "Name": "Lima Leasing Inc.",
+        "ExternalID": "Lima Leasing Inc.",
+        "Phone": null,
+        "Email": null,
+        "Country": null
+      }
+    }
+  },
+  "OrderInfo": {
+    "SupplierInfo": {
+      "BusinessUnitInfo": {
+        "Name": "Delta Depot Inc.",
+        "ExternalID": "Delta Depot Inc.",
+        "Phone": null,
+        "Email": null,
+        "Country": null
+      },
+      "FacilityInfo": {
+        "Name": "Houston",
+        "ExternalID": null,
+        "BICFacilityCode": null
+      },
+      "ProformaReference": null,
+      "OrderReference": "D230101.0001",
+      "OrderStatusInfo": {
+        "OrderStatus": "IN_CLEAN_AVAILABLE",
+        "OrderStatusDescription": "IN_CLEAN_AVAILABLE"
+      }
+    },
+    "ClientInfo": {
+      "BusinessUnitInfo": {
+        "Name": "Lima Leasing Inc.",
+        "ExternalID": "Lima Leasing Inc.",
+        "Phone": null,
+        "Email": null,
+        "Country": null
+      },
+      "FacilityInfo": null,
+      "ContactInfo": null,
+      "OrderReference": "XX2251"
+    }
+  },
+  "ContainerInfo": {
+    "ContainerNumber": "ABCD-123456-0",
+    "ContainerType": "20TC",
+    "LessorInfo": null
+  },
+  "Container_StatusUpdate_Storage_Available": {
+    "ClientPurchaseOrderReference": null,
+    "ContainerAvailableDate": "2000-01-05T16:00:00+01:00"
+  },
+  "Remarks": null,
+  "Attachments": null
+}

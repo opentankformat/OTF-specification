@@ -129,8 +129,10 @@
     "Container_ServiceRequest_Work_Repair": {
       "IsRequested": true,
       "LessorID": "Lessor name or identifier",
+      "LessorReference": null,
       "LessorAuthorizationReference": "REP5559",
       "LesseeID": "Lessee name or identifier",
+      "LesseeReference": null,
       "LesseeAuthorizationReference": "",
       "SpecialInstructionID": null
     },

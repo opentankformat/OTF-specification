@@ -12,7 +12,7 @@
       "Phone": "DummyString",
       "Email": "DummyString"
     },
-    "SentDate": "2023-09-22T13:17:01.8343039+02:00",
+    "SentDate": "2023-10-20T13:41:40.5267266+02:00",
     "MessageType": "New"
   },
   "OrderInfo": {
@@ -33,7 +33,7 @@
   "LocalizationInfo": {
     "CurrencyISO": "DummyString",
     "ExchangeRate": 1.0,
-    "ExchangeRateDate": "2023-09-22T13:17:01.8343147+02:00",
+    "ExchangeRateDate": "2023-10-20T13:41:40.5267354+02:00",
     "RoundingPerLine": true
   },
   "ContainerInfo": {
@@ -44,57 +44,59 @@
     "Version": "DummyString",
     "EstimatorName": "DummyString",
     "Container_ServiceProgress_DateInfo": {
-      "Planned": "2023-09-22T13:17:01.8343222+02:00",
+      "Planned": "2023-10-20T13:41:40.5267433+02:00",
       "PlannedBy": "DummyString",
-      "PlannedToTakePlaceOn": "2023-09-22T13:17:01.8343229+02:00",
-      "Started": "2023-09-22T13:17:01.8343234+02:00",
+      "PlannedToTakePlaceOn": "2023-10-20T13:41:40.5267439+02:00",
+      "Started": "2023-10-20T13:41:40.5267443+02:00",
       "StartedBy": "DummyString",
-      "Finished": "2023-09-22T13:17:01.8343239+02:00",
+      "Finished": "2023-10-20T13:41:40.5267449+02:00",
       "FinishedBy": "DummyString",
-      "Cancelled": "2023-09-22T13:17:01.8343244+02:00",
+      "Cancelled": "2023-10-20T13:41:40.5267454+02:00",
       "CancelledBy": "DummyString"
     },
     "ContainerWorkAuthorizationInfo": {
       "ContainerWorkLessorAuthorizationInfo": {
         "LessorID": "DummyString",
+        "Reference": "DummyString",
         "Container_ServiceProgress_AuthorizationInfo": {
-          "Authorized": "2023-09-22T13:17:01.834329+02:00",
+          "Authorized": "2023-10-20T13:41:40.5267517+02:00",
           "AuthorizedBy": "DummyString",
           "AuthorizationReference": "DummyString",
           "AuthorizationAmount": {
             "LocalizationInfo": {
               "CurrencyISO": "DummyString",
               "ExchangeRate": 1.0,
-              "ExchangeRateDate": "2023-09-22T13:17:01.8343308+02:00",
+              "ExchangeRateDate": "2023-10-20T13:41:40.5267539+02:00",
               "RoundingPerLine": true
             },
             "AuthorizationAmount": 1.0
           }
         },
-        "AuthorizationAcceptedBySupplier": "2023-09-22T13:17:01.8343321+02:00"
+        "AuthorizationAcceptedBySupplier": "2023-10-20T13:41:40.5267552+02:00"
       },
       "ContainerWorkLesseeAuthorizationInfo": {
         "LesseeID": "DummyString",
+        "Reference": "DummyString",
         "Container_ServiceProgress_AuthorizationInfo": {
-          "Authorized": "2023-09-22T13:17:01.8343839+02:00",
+          "Authorized": "2023-10-20T13:41:40.5268065+02:00",
           "AuthorizedBy": "DummyString",
           "AuthorizationReference": "DummyString",
           "AuthorizationAmount": {
             "LocalizationInfo": {
               "CurrencyISO": "DummyString",
               "ExchangeRate": 1.0,
-              "ExchangeRateDate": "2023-09-22T13:17:01.8343859+02:00",
+              "ExchangeRateDate": "2023-10-20T13:41:40.5268086+02:00",
               "RoundingPerLine": true
             },
             "AuthorizationAmount": 1.0
           }
         },
-        "AuthorizationAcceptedBySupplier": "2023-09-22T13:17:01.834387+02:00"
+        "AuthorizationAcceptedBySupplier": "2023-10-20T13:41:40.5268097+02:00"
       }
     }
   },
   "ContainerStorageArrivalInfo": {
-    "ContainerDeliveryDate": "2023-09-22T13:17:01.8343903+02:00"
+    "ContainerDeliveryDate": "2023-10-20T13:41:40.5268131+02:00"
   },
   "Category": "DummyString",
   "LaborRate": 1.0,
@@ -164,13 +166,13 @@
           "Remarks": [
             {
               "RemarkID": "DummyString",
-              "RemarkDate": "2023-09-22T13:17:01.8345068+02:00",
+              "RemarkDate": "2023-10-20T13:41:40.5269234+02:00",
               "RemarkAuthor": "DummyString",
               "RemarkText": "DummyString"
             },
             {
               "RemarkID": "DummyString",
-              "RemarkDate": "2023-09-22T13:17:01.8345084+02:00",
+              "RemarkDate": "2023-10-20T13:41:40.5269251+02:00",
               "RemarkAuthor": "DummyString",
               "RemarkText": "DummyString"
             }
@@ -193,13 +195,13 @@
           "Remarks": [
             {
               "RemarkID": "DummyString",
-              "RemarkDate": "2023-09-22T13:17:01.8345659+02:00",
+              "RemarkDate": "2023-10-20T13:41:40.5269604+02:00",
               "RemarkAuthor": "DummyString",
               "RemarkText": "DummyString"
             },
             {
               "RemarkID": "DummyString",
-              "RemarkDate": "2023-09-22T13:17:01.8345675+02:00",
+              "RemarkDate": "2023-10-20T13:41:40.5269618+02:00",
               "RemarkAuthor": "DummyString",
               "RemarkText": "DummyString"
             }
@@ -208,14 +210,14 @@
       },
       "ClientAuthorization": {
         "Container_ServiceProgress_AuthorizationInfo": {
-          "Authorized": "2023-09-22T13:17:01.8346027+02:00",
+          "Authorized": "2023-10-20T13:41:40.5270024+02:00",
           "AuthorizedBy": "DummyString",
           "AuthorizationReference": "DummyString",
           "AuthorizationAmount": {
             "LocalizationInfo": {
               "CurrencyISO": "DummyString",
               "ExchangeRate": 1.0,
-              "ExchangeRateDate": "2023-09-22T13:17:01.8346049+02:00",
+              "ExchangeRateDate": "2023-10-20T13:41:40.5270049+02:00",
               "RoundingPerLine": true
             },
             "AuthorizationAmount": 1.0
@@ -316,13 +318,13 @@
           "Remarks": [
             {
               "RemarkID": "DummyString",
-              "RemarkDate": "2023-09-22T13:17:01.8346207+02:00",
+              "RemarkDate": "2023-10-20T13:41:40.527021+02:00",
               "RemarkAuthor": "DummyString",
               "RemarkText": "DummyString"
             },
             {
               "RemarkID": "DummyString",
-              "RemarkDate": "2023-09-22T13:17:01.8346217+02:00",
+              "RemarkDate": "2023-10-20T13:41:40.527022+02:00",
               "RemarkAuthor": "DummyString",
               "RemarkText": "DummyString"
             }
@@ -345,13 +347,13 @@
           "Remarks": [
             {
               "RemarkID": "DummyString",
-              "RemarkDate": "2023-09-22T13:17:01.8346259+02:00",
+              "RemarkDate": "2023-10-20T13:41:40.5270262+02:00",
               "RemarkAuthor": "DummyString",
               "RemarkText": "DummyString"
             },
             {
               "RemarkID": "DummyString",
-              "RemarkDate": "2023-09-22T13:17:01.8346269+02:00",
+              "RemarkDate": "2023-10-20T13:41:40.5270273+02:00",
               "RemarkAuthor": "DummyString",
               "RemarkText": "DummyString"
             }
@@ -360,14 +362,14 @@
       },
       "ClientAuthorization": {
         "Container_ServiceProgress_AuthorizationInfo": {
-          "Authorized": "2023-09-22T13:17:01.8346282+02:00",
+          "Authorized": "2023-10-20T13:41:40.5270286+02:00",
           "AuthorizedBy": "DummyString",
           "AuthorizationReference": "DummyString",
           "AuthorizationAmount": {
             "LocalizationInfo": {
               "CurrencyISO": "DummyString",
               "ExchangeRate": 1.0,
-              "ExchangeRateDate": "2023-09-22T13:17:01.8346297+02:00",
+              "ExchangeRateDate": "2023-10-20T13:41:40.52703+02:00",
               "RoundingPerLine": true
             },
             "AuthorizationAmount": 1.0
@@ -407,13 +409,13 @@
   "Remarks": [
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-09-22T13:17:01.8346344+02:00",
+      "RemarkDate": "2023-10-20T13:41:40.5270352+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     },
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-09-22T13:17:01.8346354+02:00",
+      "RemarkDate": "2023-10-20T13:41:40.5270363+02:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString"
     }

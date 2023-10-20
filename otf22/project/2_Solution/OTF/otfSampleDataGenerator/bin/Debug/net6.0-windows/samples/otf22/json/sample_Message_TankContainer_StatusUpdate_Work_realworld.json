@@ -57,6 +57,7 @@
     "ContainerWorkAuthorizationInfo": {
       "ContainerWorkLessorAuthorizationInfo": {
         "LessorID": "Lima Leasing Inc.",
+        "Reference": null,
         "Container_ServiceProgress_AuthorizationInfo": {
           "Authorized": "2000-01-02T17:23:00+01:00",
           "AuthorizedBy": null,

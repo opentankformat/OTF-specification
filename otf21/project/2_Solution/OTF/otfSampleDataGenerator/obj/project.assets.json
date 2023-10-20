@@ -11,15 +11,6 @@
           "lib/net6.0/Newtonsoft.Json.dll": {}
         }
       },
-      "otf20/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/otf20.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/otf20.dll": {}
-        }
-      },
       "otf21/1.0.0": {
         "type": "project",
         "compile": {
@@ -62,11 +53,6 @@
         "packageIcon.png"
       ]
     },
-    "otf20/1.0.0": {
-      "type": "project",
-      "path": "../otf20/otf20.csproj",
-      "msbuildProject": "../otf20/otf20.csproj"
-    },
     "otf21/1.0.0": {
       "type": "project",
       "path": "../otf21/otf21.csproj",
@@ -76,7 +62,6 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "Newtonsoft.Json >= 13.0.2",
-      "otf20 >= 1.0.0",
       "otf21 >= 1.0.0"
     ]
   },
@@ -86,11 +71,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repositories\\OTF-specification\\otf21\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\otfSampleDataGenerator.csproj",
+      "projectUniqueName": "C:\\repositories\\OTF-design\\otf21\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\otfSampleDataGenerator.csproj",
       "projectName": "otfSampleDataGenerator",
-      "projectPath": "C:\\repositories\\OTF-specification\\otf21\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\otfSampleDataGenerator.csproj",
+      "projectPath": "C:\\repositories\\OTF-design\\otf21\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\otfSampleDataGenerator.csproj",
       "packagesPath": "C:\\Users\\Gijsbert\\.nuget\\packages\\",
-      "outputPath": "C:\\repositories\\OTF-specification\\otf21\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\obj\\",
+      "outputPath": "C:\\repositories\\OTF-design\\otf21\\project\\2_Solution\\OTF\\otfSampleDataGenerator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Gijsbert\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -108,11 +93,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\repositories\\OTF-specification\\otf21\\project\\2_Solution\\OTF\\otf20\\otf20.csproj": {
-              "projectPath": "C:\\repositories\\OTF-specification\\otf21\\project\\2_Solution\\OTF\\otf20\\otf20.csproj"
-            },
-            "C:\\repositories\\OTF-specification\\otf21\\project\\2_Solution\\OTF\\otf21\\otf21.csproj": {
-              "projectPath": "C:\\repositories\\OTF-specification\\otf21\\project\\2_Solution\\OTF\\otf21\\otf21.csproj"
+            "C:\\repositories\\OTF-design\\otf21\\project\\2_Solution\\OTF\\otf21\\otf21.csproj": {
+              "projectPath": "C:\\repositories\\OTF-design\\otf21\\project\\2_Solution\\OTF\\otf21\\otf21.csproj"
             }
           }
         }

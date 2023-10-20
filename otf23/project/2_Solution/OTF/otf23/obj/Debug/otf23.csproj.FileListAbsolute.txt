@@ -1,0 +1,6 @@
+C:\repositories\OTF-design\otf23\project\2_Solution\OTF\otf23\obj\Debug\otf23.csproj.AssemblyReference.cache
+C:\repositories\OTF-design\otf23\project\2_Solution\OTF\otf23\obj\Debug\otf23.csproj.CoreCompileInputs.cache
+C:\repositories\OTF-design\otf23\project\2_Solution\OTF\otf23\bin\Debug\otf23.dll
+C:\repositories\OTF-design\otf23\project\2_Solution\OTF\otf23\bin\Debug\otf23.pdb
+C:\repositories\OTF-design\otf23\project\2_Solution\OTF\otf23\obj\Debug\otf23.dll
+C:\repositories\OTF-design\otf23\project\2_Solution\OTF\otf23\obj\Debug\otf23.pdb

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:simpleType name="Container_ServiceProgress_AuthorizationStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="UNKNOWN" />	
+      <xs:enumeration value="Received" />
+      <xs:enumeration value="Authorized" />
+      <xs:enumeration value="Rejected" />
+      <xs:enumeration value="Cancelled" />
+	  <xs:enumeration value="Failed" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+

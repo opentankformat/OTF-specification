@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message_TankContainer_StatusUpdate_Storage_Departure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MessageHeaderInfo>
+    <OTFVersion>OTF23</OTFVersion>
+    <OTFMessage>Message_TankContainer_StatusUpdate_Storage_Departure</OTFMessage>
+    <MessageID>25b1b798-308c-4ed8-92e4-60b3935a09e0</MessageID>
+    <SentDate>2000-01-09T09:00:00+01:00</SentDate>
+    <MessageType>New</MessageType>
+    <SenderInfo>
+      <BusinessUnitInfo>
+        <Name>Delta Depot Inc.</Name>
+        <ExternalID>Delta Depot Inc.</ExternalID>
+      </BusinessUnitInfo>
+    </SenderInfo>
+    <RecipientInfo>
+      <BusinessUnitInfo>
+        <Name>Lima Leasing Inc.</Name>
+        <ExternalID>Lima Leasing Inc.</ExternalID>
+      </BusinessUnitInfo>
+    </RecipientInfo>
+  </MessageHeaderInfo>
+  <OrderInfo>
+    <SupplierInfo>
+      <BusinessUnitInfo>
+        <Name>Delta Depot Inc.</Name>
+        <ExternalID>Delta Depot Inc.</ExternalID>
+      </BusinessUnitInfo>
+      <FacilityInfo>
+        <Name>Houston</Name>
+      </FacilityInfo>
+      <OrderReference>D230101.0001</OrderReference>
+      <OrderStatusInfo>
+        <OrderStatus>OUT</OrderStatus>
+        <OrderStatusDescription>OUT</OrderStatusDescription>
+      </OrderStatusInfo>
+    </SupplierInfo>
+    <ClientInfo>
+      <BusinessUnitInfo>
+        <Name>Lima Leasing Inc.</Name>
+        <ExternalID>Lima Leasing Inc.</ExternalID>
+      </BusinessUnitInfo>
+      <OrderReference>XX2251</OrderReference>
+    </ClientInfo>
+  </OrderInfo>
+  <TankContainerInfo>
+    <ContainerInfo>
+      <ContainerNumber>ABCD-123456-0</ContainerNumber>
+      <ContainerType>20TC</ContainerType>
+    </ContainerInfo>
+  </TankContainerInfo>
+  <Container_StatusUpdate_Storage_Departure>
+    <ClientReleaseReference />
+    <ContainerReleaseDate>2000-01-09T09:00:00+01:00</ContainerReleaseDate>
+  </Container_StatusUpdate_Storage_Departure>
+</Message_TankContainer_StatusUpdate_Storage_Departure>

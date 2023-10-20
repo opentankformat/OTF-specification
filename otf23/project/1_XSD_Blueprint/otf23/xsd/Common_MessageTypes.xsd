@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:simpleType name="MessageTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="New" />
+      <xs:enumeration value="Update" />
+      <xs:enumeration value="Cancellation" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

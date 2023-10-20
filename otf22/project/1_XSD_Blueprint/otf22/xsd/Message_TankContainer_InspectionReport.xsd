@@ -148,6 +148,7 @@
 			<xs:complexType>
 				<xs:sequence>
 					<xs:element name="VerificationDate" type="xs:dateTime" />					
+					<xs:element name="VerificationPlace" type="xs:string" minOccurs="0" />
 					<xs:element name="VerificatorName" type="xs:string" minOccurs="0" />
 				</xs:sequence>
 			</xs:complexType>

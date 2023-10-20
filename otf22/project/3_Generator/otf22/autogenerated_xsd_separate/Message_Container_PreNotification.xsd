@@ -119,8 +119,10 @@
                   <xs:sequence>
                     <xs:element minOccurs="1" maxOccurs="1" name="IsRequested" type="xs:boolean" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LessorID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="LessorReference" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LessorAuthorizationReference" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LesseeID" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="LesseeReference" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LesseeAuthorizationReference" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="SpecialInstructionID" type="xs:string" />
                   </xs:sequence>

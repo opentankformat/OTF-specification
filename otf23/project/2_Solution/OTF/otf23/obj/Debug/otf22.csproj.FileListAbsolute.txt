@@ -1,0 +1,6 @@
+C:\repositories\OTF-design\otf22\project\2_Solution\OTF\otf22\bin\Debug\otf22.dll
+C:\repositories\OTF-design\otf22\project\2_Solution\OTF\otf22\bin\Debug\otf22.pdb
+C:\repositories\OTF-design\otf22\project\2_Solution\OTF\otf22\obj\Debug\otf22.csproj.AssemblyReference.cache
+C:\repositories\OTF-design\otf22\project\2_Solution\OTF\otf22\obj\Debug\otf22.csproj.CoreCompileInputs.cache
+C:\repositories\OTF-design\otf22\project\2_Solution\OTF\otf22\obj\Debug\otf22.dll
+C:\repositories\OTF-design\otf22\project\2_Solution\OTF\otf22\obj\Debug\otf22.pdb

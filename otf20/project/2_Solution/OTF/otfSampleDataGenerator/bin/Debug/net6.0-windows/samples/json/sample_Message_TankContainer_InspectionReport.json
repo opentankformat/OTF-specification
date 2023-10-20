@@ -116,12 +116,14 @@
         "Material": ""
       },
       "InspectionDates": {
+        "InitialInspectionDateSpecified": false,
         "LastInspectionDateSpecified": false,
         "LastInspectionScopeSpecified": false,
         "LastInspectionScopeDescription": "H",
         "NextInspectionDateSpecified": false,
         "CSCValidityDateSpecified": false,
-        "ACEPSpecified": false
+        "ACEPSpecified": false,
+        "ACEPDescription": null
       }
     },
     "Inspections": {
@@ -207,7 +209,8 @@
     "Remarks": null
   },
   "InspectionVerification": {
-    "VerificationDate": "2023-02-23T12:50:22.7043637+01:00",
+    "VerificationDate": "2023-10-20T13:37:18.7785439+02:00",
+    "VerificationPlace": null,
     "VerificatorName": "Guybrush Threepwood"
   }
 }
