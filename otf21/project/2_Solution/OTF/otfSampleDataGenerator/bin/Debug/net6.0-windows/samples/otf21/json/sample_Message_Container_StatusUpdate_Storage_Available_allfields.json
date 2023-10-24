@@ -12,7 +12,7 @@
       "Phone": "DummyString",
       "Email": "DummyString"
     },
-    "SentDate": "2023-10-20T13:39:25.6155636+02:00",
+    "SentDate": "2023-10-24T12:43:28.4808644+02:00",
     "MessageType": "New"
   },
   "OrderInfo": {
@@ -32,20 +32,28 @@
   },
   "Container_StatusUpdate_Storage_Available": {
     "ClientPurchaseOrderReference": "DummyString",
-    "ContainerAvailableDate": "2023-10-20T13:39:25.6155771+02:00"
+    "ContainerAvailableDate": "2023-10-24T12:43:28.4808732+02:00"
   },
   "Remarks": [
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-10-20T13:39:25.6155808+02:00",
+      "RemarkDate": "2023-10-24T12:43:28.4808753+02:00",
       "RemarkAuthor": "DummyString",
-      "RemarkText": "DummyString"
+      "RemarkText": "DummyString",
+      "Tags": [
+        "DummyString",
+        "DummyString"
+      ]
     },
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-10-20T13:39:25.615583+02:00",
+      "RemarkDate": "2023-10-24T12:43:28.480877+02:00",
       "RemarkAuthor": "DummyString",
-      "RemarkText": "DummyString"
+      "RemarkText": "DummyString",
+      "Tags": [
+        "DummyString",
+        "DummyString"
+      ]
     }
   ],
   "Attachments": [

@@ -54,13 +54,13 @@
     "TankContainerEquipmentInfo": null,
     "TankContainerLiningInfo": null,
     "InspectionDates": {
-      "InitialInspectionDateSpecified": false,
-      "LastInspectionDateSpecified": false,
+      "InitialInspectionDate": "0001-01-01T00:00:00",
+      "LastInspectionDate": "1998-06-20T01:00:00+02:00",
       "LastInspectionScopeSpecified": false,
       "LastInspectionScopeDescription": "H",
-      "NextInspectionDateSpecified": false,
-      "CSCValidityDateSpecified": false,
-      "ACEPSpecified": false,
+      "NextInspectionDate": "0001-01-01T00:00:00",
+      "CSCValidityDate": "1999-01-01T00:00:00+01:00",
+      "ACEP": "0001-01-01T00:00:00",
       "ACEPDescription": null
     }
   },
@@ -68,12 +68,12 @@
     "ContainerWorkEstimateStatusInfo": {
       "Version": "V1",
       "Container_ServiceProgress_DateInfo": {
-        "PlannedSpecified": false,
+        "Planned": "0001-01-01T00:00:00",
         "PlannedBy": null,
-        "PlannedToTakePlaceOnSpecified": false,
-        "StartedSpecified": false,
-        "FinishedSpecified": false,
-        "CancelledSpecified": false
+        "PlannedToTakePlaceOn": "0001-01-01T00:00:00",
+        "Started": "0001-01-01T00:00:00",
+        "Finished": "2000-01-02T16:23:00+01:00",
+        "Cancelled": "0001-01-01T00:00:00"
       }
     },
     "ContainerWorkAuthorizationInfo": {
@@ -86,13 +86,13 @@
           "AuthorizationReference": "REP5559",
           "AuthorizationAmount": null
         },
-        "AuthorizationAcceptedBySupplierSpecified": false
+        "AuthorizationAcceptedBySupplier": "0001-01-01T00:00:00"
       },
       "ContainerWorkLesseeAuthorizationInfo": null
     }
   },
   "ContainerStorageArrivalInfo": {
-    "ContainerDeliveryDateSpecified": false
+    "ContainerDeliveryDate": "2000-01-01T11:04:00+01:00"
   },
   "EstimateLines": [
     {
@@ -199,9 +199,10 @@
   "Remarks": [
     {
       "RemarkID": "121fdc2d-f169-4e39-b951-61a18a093ed3",
-      "RemarkDateSpecified": false,
+      "RemarkDate": "2000-01-02T16:23:00+01:00",
       "RemarkAuthor": "Frank Black",
-      "RemarkText": "The Time is Near"
+      "RemarkText": "The Time is Near",
+      "Tags": null
     }
   ]
 }

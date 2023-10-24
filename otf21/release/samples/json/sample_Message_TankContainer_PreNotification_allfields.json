@@ -12,7 +12,7 @@
       "Phone": "DummyString",
       "Email": "DummyString"
     },
-    "SentDate": "2023-10-20T13:39:24.6064427+02:00",
+    "SentDate": "2023-10-24T12:43:27.6371212+02:00",
     "MessageType": "New"
   },
   "ContainerPreNotificationType": "Empty",
@@ -62,7 +62,7 @@
       "Manufacturer": "DummyString",
       "ManufacturerCountry": "DummyString",
       "ManufacturerSerialNumber": "DummyString",
-      "BuildingYearMonth": "2023-10-20T13:39:24.6067392+02:00",
+      "BuildingYearMonth": "2023-10-24T12:43:27.6373852+02:00",
       "ISO6346SizeTypeCode": "Empty",
       "ISO6346SizeTypeCodeDescription": "DummyString",
       "DimensionsXMillimeter": 1,
@@ -131,18 +131,18 @@
       "Material": "DummyString"
     },
     "InspectionDates": {
-      "InitialInspectionDate": "2023-10-20T13:39:24.6075698+02:00",
-      "LastInspectionDate": "2023-10-20T13:39:24.6075735+02:00",
+      "InitialInspectionDate": "2023-10-24T12:43:27.6377127+02:00",
+      "LastInspectionDate": "2023-10-24T12:43:27.6377143+02:00",
       "LastInspectionScope": "Empty",
       "LastInspectionScopeDescription": "DummyString",
-      "NextInspectionDate": "2023-10-20T13:39:24.6075799+02:00",
-      "CSCValidityDate": "2023-10-20T13:39:24.6075807+02:00",
-      "ACEP": "2023-10-20T13:39:24.6075815+02:00",
+      "NextInspectionDate": "2023-10-24T12:43:27.6377193+02:00",
+      "CSCValidityDate": "2023-10-24T12:43:27.6377198+02:00",
+      "ACEP": "2023-10-24T12:43:27.6377202+02:00",
       "ACEPDescription": "DummyString"
     }
   },
   "ArrivalInfo": {
-    "ETA": "2023-10-20T13:39:24.6075861+02:00",
+    "ETA": "2023-10-24T12:43:27.6377236+02:00",
     "RedeliveryReference": "DummyString",
     "ContainerOrigin": "DummyString",
     "Container_HaulierInfo": {
@@ -1477,15 +1477,23 @@
         "Remarks": [
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-10-20T13:39:24.6087217+02:00",
+            "RemarkDate": "2023-10-24T12:43:27.6387106+02:00",
             "RemarkAuthor": "DummyString",
-            "RemarkText": "DummyString"
+            "RemarkText": "DummyString",
+            "Tags": [
+              "DummyString",
+              "DummyString"
+            ]
           },
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-10-20T13:39:24.6087238+02:00",
+            "RemarkDate": "2023-10-24T12:43:27.6387154+02:00",
             "RemarkAuthor": "DummyString",
-            "RemarkText": "DummyString"
+            "RemarkText": "DummyString",
+            "Tags": [
+              "DummyString",
+              "DummyString"
+            ]
           }
         ]
       }
@@ -1498,15 +1506,23 @@
         "Remarks": [
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-10-20T13:39:24.608808+02:00",
+            "RemarkDate": "2023-10-24T12:43:27.6387761+02:00",
             "RemarkAuthor": "DummyString",
-            "RemarkText": "DummyString"
+            "RemarkText": "DummyString",
+            "Tags": [
+              "DummyString",
+              "DummyString"
+            ]
           },
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-10-20T13:39:24.6088158+02:00",
+            "RemarkDate": "2023-10-24T12:43:27.6387777+02:00",
             "RemarkAuthor": "DummyString",
-            "RemarkText": "DummyString"
+            "RemarkText": "DummyString",
+            "Tags": [
+              "DummyString",
+              "DummyString"
+            ]
           }
         ]
       },
@@ -1533,15 +1549,23 @@
         "Remarks": [
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-10-20T13:39:24.6088408+02:00",
+            "RemarkDate": "2023-10-24T12:43:27.6387944+02:00",
             "RemarkAuthor": "DummyString",
-            "RemarkText": "DummyString"
+            "RemarkText": "DummyString",
+            "Tags": [
+              "DummyString",
+              "DummyString"
+            ]
           },
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-10-20T13:39:24.608842+02:00",
+            "RemarkDate": "2023-10-24T12:43:27.6387957+02:00",
             "RemarkAuthor": "DummyString",
-            "RemarkText": "DummyString"
+            "RemarkText": "DummyString",
+            "Tags": [
+              "DummyString",
+              "DummyString"
+            ]
           }
         ]
       },
@@ -1568,15 +1592,23 @@
         "Remarks": [
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-10-20T13:39:24.6088495+02:00",
+            "RemarkDate": "2023-10-24T12:43:27.6388055+02:00",
             "RemarkAuthor": "DummyString",
-            "RemarkText": "DummyString"
+            "RemarkText": "DummyString",
+            "Tags": [
+              "DummyString",
+              "DummyString"
+            ]
           },
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-10-20T13:39:24.6088506+02:00",
+            "RemarkDate": "2023-10-24T12:43:27.6388067+02:00",
             "RemarkAuthor": "DummyString",
-            "RemarkText": "DummyString"
+            "RemarkText": "DummyString",
+            "Tags": [
+              "DummyString",
+              "DummyString"
+            ]
           }
         ]
       },
@@ -1600,15 +1632,23 @@
         "Remarks": [
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-10-20T13:39:24.6088991+02:00",
+            "RemarkDate": "2023-10-24T12:43:27.6388443+02:00",
             "RemarkAuthor": "DummyString",
-            "RemarkText": "DummyString"
+            "RemarkText": "DummyString",
+            "Tags": [
+              "DummyString",
+              "DummyString"
+            ]
           },
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-10-20T13:39:24.6089007+02:00",
+            "RemarkDate": "2023-10-24T12:43:27.6388458+02:00",
             "RemarkAuthor": "DummyString",
-            "RemarkText": "DummyString"
+            "RemarkText": "DummyString",
+            "Tags": [
+              "DummyString",
+              "DummyString"
+            ]
           }
         ]
       },
@@ -1617,7 +1657,7 @@
     }
   },
   "DepartureInfo": {
-    "ETD": "2023-10-20T13:39:24.6089055+02:00",
+    "ETD": "2023-10-24T12:43:27.6388502+02:00",
     "ReleaseReference": "DummyString",
     "ContainerDestination": "DummyString",
     "Container_HaulierInfo": {
@@ -1630,15 +1670,23 @@
   "Remarks": [
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-10-20T13:39:24.6089088+02:00",
+      "RemarkDate": "2023-10-24T12:43:27.6388531+02:00",
       "RemarkAuthor": "DummyString",
-      "RemarkText": "DummyString"
+      "RemarkText": "DummyString",
+      "Tags": [
+        "DummyString",
+        "DummyString"
+      ]
     },
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-10-20T13:39:24.6089099+02:00",
+      "RemarkDate": "2023-10-24T12:43:27.6388544+02:00",
       "RemarkAuthor": "DummyString",
-      "RemarkText": "DummyString"
+      "RemarkText": "DummyString",
+      "Tags": [
+        "DummyString",
+        "DummyString"
+      ]
     }
   ],
   "Attachments": [

@@ -172,7 +172,8 @@
       "RemarkID": "121fdc2d-f169-4e39-b951-61a18a093ed3",
       "RemarkDate": "2000-01-02T16:23:00+01:00",
       "RemarkAuthor": "Frank Black",
-      "RemarkText": "The Time is Near"
+      "RemarkText": "The Time is Near",
+      "Tags": null
     }
   ],
   "Attachments": null

@@ -13,7 +13,7 @@
       <Phone>DummyString</Phone>
       <Email>DummyString</Email>
     </ContactInfo>
-    <SentDate>2023-10-20T13:39:25.4411038+02:00</SentDate>
+    <SentDate>2023-10-24T12:43:28.3354243+02:00</SentDate>
     <MessageType>New</MessageType>
   </MessageHeaderInfo>
   <OrderInfo>
@@ -62,7 +62,7 @@
       <Manufacturer>DummyString</Manufacturer>
       <ManufacturerCountry>DummyString</ManufacturerCountry>
       <ManufacturerSerialNumber>DummyString</ManufacturerSerialNumber>
-      <BuildingYearMonth>2023-10-20T13:39:25.4411171+02:00</BuildingYearMonth>
+      <BuildingYearMonth>2023-10-24T12:43:28.3354354+02:00</BuildingYearMonth>
       <ISO6346SizeTypeCode>Empty</ISO6346SizeTypeCode>
       <ISO6346SizeTypeCodeDescription>DummyString</ISO6346SizeTypeCodeDescription>
       <DimensionsXMillimeter>1</DimensionsXMillimeter>
@@ -131,20 +131,20 @@
       <Material>DummyString</Material>
     </TankContainerLiningInfo>
     <InspectionDates>
-      <InitialInspectionDate>2023-10-20T13:39:25.4411365+02:00</InitialInspectionDate>
-      <LastInspectionDate>2023-10-20T13:39:25.441137+02:00</LastInspectionDate>
+      <InitialInspectionDate>2023-10-24T12:43:28.335451+02:00</InitialInspectionDate>
+      <LastInspectionDate>2023-10-24T12:43:28.3354512+02:00</LastInspectionDate>
       <LastInspectionScope>Empty</LastInspectionScope>
       <LastInspectionScopeDescription>DummyString</LastInspectionScopeDescription>
-      <NextInspectionDate>2023-10-20T13:39:25.4411378+02:00</NextInspectionDate>
-      <CSCValidityDate>2023-10-20T13:39:25.4411382+02:00</CSCValidityDate>
-      <ACEP>2023-10-20T13:39:25.4411385+02:00</ACEP>
+      <NextInspectionDate>2023-10-24T12:43:28.3354525+02:00</NextInspectionDate>
+      <CSCValidityDate>2023-10-24T12:43:28.3354528+02:00</CSCValidityDate>
+      <ACEP>2023-10-24T12:43:28.335453+02:00</ACEP>
       <ACEPDescription>DummyString</ACEPDescription>
     </InspectionDates>
   </TankContainerInfo>
   <Container_StatusUpdate_Storage_Arrival>
     <ClientPurchaseOrderReference>DummyString</ClientPurchaseOrderReference>
     <ClientDeliveryReference>DummyString</ClientDeliveryReference>
-    <ContainerDeliveryDate>2023-10-20T13:39:25.4411404+02:00</ContainerDeliveryDate>
+    <ContainerDeliveryDate>2023-10-24T12:43:28.3354543+02:00</ContainerDeliveryDate>
     <Container_HaulierInfo>
       <HaulierName>DummyString</HaulierName>
       <TruckDriverName>DummyString</TruckDriverName>
@@ -155,15 +155,23 @@
   <Remarks>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-10-20T13:39:25.4411429+02:00</RemarkDate>
+      <RemarkDate>2023-10-24T12:43:28.3354562+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
+      <Tags>
+        <Tag>DummyString</Tag>
+        <Tag>DummyString</Tag>
+      </Tags>
     </Remark>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-10-20T13:39:25.441144+02:00</RemarkDate>
+      <RemarkDate>2023-10-24T12:43:28.3354573+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
+      <Tags>
+        <Tag>DummyString</Tag>
+        <Tag>DummyString</Tag>
+      </Tags>
     </Remark>
   </Remarks>
   <Attachments>

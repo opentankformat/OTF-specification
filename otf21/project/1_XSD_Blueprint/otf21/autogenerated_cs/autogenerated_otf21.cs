@@ -247,6 +247,9 @@ namespace otf21 {
         Message_TankContainer_PreNotification_StatusUpdate,
         
         /// <remarks/>
+        Message_TankContainer_StatusUpdate_HeelDisposal,
+        
+        /// <remarks/>
         Message_TankContainer_StatusUpdate_Cleaning,
         
         /// <remarks/>
@@ -572,11 +575,11 @@ namespace otf21 {
         
         private System.DateTime remarkDateField;
         
-        private bool remarkDateFieldSpecified;
-        
         private string remarkAuthorField;
         
         private string remarkTextField;
+        
+        private string[] tagsField;
         
         /// <remarks/>
         public string RemarkID {
@@ -599,17 +602,6 @@ namespace otf21 {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool RemarkDateSpecified {
-            get {
-                return this.remarkDateFieldSpecified;
-            }
-            set {
-                this.remarkDateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
         public string RemarkAuthor {
             get {
                 return this.remarkAuthorField;
@@ -626,6 +618,17 @@ namespace otf21 {
             }
             set {
                 this.remarkTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Tag", IsNullable=false)]
+        public string[] Tags {
+            get {
+                return this.tagsField;
+            }
+            set {
+                this.tagsField = value;
             }
         }
     }
@@ -955,8 +958,6 @@ namespace otf21 {
         
         private System.DateTime eTAField;
         
-        private bool eTAFieldSpecified;
-        
         private string redeliveryReferenceField;
         
         private string containerOriginField;
@@ -970,17 +971,6 @@ namespace otf21 {
             }
             set {
                 this.eTAField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ETASpecified {
-            get {
-                return this.eTAFieldSpecified;
-            }
-            set {
-                this.eTAFieldSpecified = value;
             }
         }
         
@@ -1070,8 +1060,6 @@ namespace otf21 {
         
         private System.DateTime eTDField;
         
-        private bool eTDFieldSpecified;
-        
         private string releaseReferenceField;
         
         private string containerDestinationField;
@@ -1085,17 +1073,6 @@ namespace otf21 {
             }
             set {
                 this.eTDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ETDSpecified {
-            get {
-                return this.eTDFieldSpecified;
-            }
-            set {
-                this.eTDFieldSpecified = value;
             }
         }
         
@@ -1893,25 +1870,15 @@ namespace otf21 {
         
         private System.DateTime plannedField;
         
-        private bool plannedFieldSpecified;
-        
         private string plannedByField;
         
         private System.DateTime plannedToTakePlaceOnField;
         
-        private bool plannedToTakePlaceOnFieldSpecified;
-        
         private System.DateTime startedField;
-        
-        private bool startedFieldSpecified;
         
         private System.DateTime finishedField;
         
-        private bool finishedFieldSpecified;
-        
         private System.DateTime cancelledField;
-        
-        private bool cancelledFieldSpecified;
         
         /// <remarks/>
         public System.DateTime Planned {
@@ -1920,17 +1887,6 @@ namespace otf21 {
             }
             set {
                 this.plannedField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool PlannedSpecified {
-            get {
-                return this.plannedFieldSpecified;
-            }
-            set {
-                this.plannedFieldSpecified = value;
             }
         }
         
@@ -1955,34 +1911,12 @@ namespace otf21 {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool PlannedToTakePlaceOnSpecified {
-            get {
-                return this.plannedToTakePlaceOnFieldSpecified;
-            }
-            set {
-                this.plannedToTakePlaceOnFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
         public System.DateTime Started {
             get {
                 return this.startedField;
             }
             set {
                 this.startedField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool StartedSpecified {
-            get {
-                return this.startedFieldSpecified;
-            }
-            set {
-                this.startedFieldSpecified = value;
             }
         }
         
@@ -1997,34 +1931,12 @@ namespace otf21 {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool FinishedSpecified {
-            get {
-                return this.finishedFieldSpecified;
-            }
-            set {
-                this.finishedFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
         public System.DateTime Cancelled {
             get {
                 return this.cancelledField;
             }
             set {
                 this.cancelledField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool CancelledSpecified {
-            get {
-                return this.cancelledFieldSpecified;
-            }
-            set {
-                this.cancelledFieldSpecified = value;
             }
         }
     }
@@ -2124,8 +2036,6 @@ namespace otf21 {
         
         private System.DateTime authorizationAcceptedBySupplierField;
         
-        private bool authorizationAcceptedBySupplierFieldSpecified;
-        
         /// <remarks/>
         public string LessorID {
             get {
@@ -2165,17 +2075,6 @@ namespace otf21 {
                 this.authorizationAcceptedBySupplierField = value;
             }
         }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool AuthorizationAcceptedBySupplierSpecified {
-            get {
-                return this.authorizationAcceptedBySupplierFieldSpecified;
-            }
-            set {
-                this.authorizationAcceptedBySupplierFieldSpecified = value;
-            }
-        }
     }
     
     /// <remarks/>
@@ -2193,8 +2092,6 @@ namespace otf21 {
         private Container_ServiceProgress_AuthorizationInfo container_ServiceProgress_AuthorizationInfoField;
         
         private System.DateTime authorizationAcceptedBySupplierField;
-        
-        private bool authorizationAcceptedBySupplierFieldSpecified;
         
         /// <remarks/>
         public string LesseeID {
@@ -2233,17 +2130,6 @@ namespace otf21 {
             }
             set {
                 this.authorizationAcceptedBySupplierField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool AuthorizationAcceptedBySupplierSpecified {
-            get {
-                return this.authorizationAcceptedBySupplierFieldSpecified;
-            }
-            set {
-                this.authorizationAcceptedBySupplierFieldSpecified = value;
             }
         }
     }
@@ -2728,8 +2614,6 @@ namespace otf21 {
         
         private System.DateTime containerDeliveryDateField;
         
-        private bool containerDeliveryDateFieldSpecified;
-        
         /// <remarks/>
         public System.DateTime ContainerDeliveryDate {
             get {
@@ -2737,17 +2621,6 @@ namespace otf21 {
             }
             set {
                 this.containerDeliveryDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ContainerDeliveryDateSpecified {
-            get {
-                return this.containerDeliveryDateFieldSpecified;
-            }
-            set {
-                this.containerDeliveryDateFieldSpecified = value;
             }
         }
     }
@@ -4910,11 +4783,7 @@ namespace otf21 {
         
         private System.DateTime initialInspectionDateField;
         
-        private bool initialInspectionDateFieldSpecified;
-        
         private System.DateTime lastInspectionDateField;
-        
-        private bool lastInspectionDateFieldSpecified;
         
         private TankContainerInfoInspectionDatesLastInspectionScope lastInspectionScopeField;
         
@@ -4924,15 +4793,9 @@ namespace otf21 {
         
         private System.DateTime nextInspectionDateField;
         
-        private bool nextInspectionDateFieldSpecified;
-        
         private System.DateTime cSCValidityDateField;
         
-        private bool cSCValidityDateFieldSpecified;
-        
         private System.DateTime aCEPField;
-        
-        private bool aCEPFieldSpecified;
         
         private string aCEPDescriptionField;
         
@@ -4947,34 +4810,12 @@ namespace otf21 {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool InitialInspectionDateSpecified {
-            get {
-                return this.initialInspectionDateFieldSpecified;
-            }
-            set {
-                this.initialInspectionDateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
         public System.DateTime LastInspectionDate {
             get {
                 return this.lastInspectionDateField;
             }
             set {
                 this.lastInspectionDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool LastInspectionDateSpecified {
-            get {
-                return this.lastInspectionDateFieldSpecified;
-            }
-            set {
-                this.lastInspectionDateFieldSpecified = value;
             }
         }
         
@@ -5020,17 +4861,6 @@ namespace otf21 {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool NextInspectionDateSpecified {
-            get {
-                return this.nextInspectionDateFieldSpecified;
-            }
-            set {
-                this.nextInspectionDateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
         public System.DateTime CSCValidityDate {
             get {
                 return this.cSCValidityDateField;
@@ -5041,34 +4871,12 @@ namespace otf21 {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool CSCValidityDateSpecified {
-            get {
-                return this.cSCValidityDateFieldSpecified;
-            }
-            set {
-                this.cSCValidityDateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
         public System.DateTime ACEP {
             get {
                 return this.aCEPField;
             }
             set {
                 this.aCEPField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ACEPSpecified {
-            get {
-                return this.aCEPFieldSpecified;
-            }
-            set {
-                this.aCEPFieldSpecified = value;
             }
         }
         
@@ -5151,8 +4959,6 @@ namespace otf21 {
         
         private System.DateTime inspectionDateField;
         
-        private bool inspectionDateFieldSpecified;
-        
         /// <remarks/>
         public TankContainer_InspectionInspectionResult InspectionResult {
             get {
@@ -5180,17 +4986,6 @@ namespace otf21 {
             }
             set {
                 this.inspectionDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool InspectionDateSpecified {
-            get {
-                return this.inspectionDateFieldSpecified;
-            }
-            set {
-                this.inspectionDateFieldSpecified = value;
             }
         }
     }
@@ -10102,8 +9897,6 @@ namespace otf21 {
         
         private System.DateTime eTAField;
         
-        private bool eTAFieldSpecified;
-        
         private string redeliveryReferenceField;
         
         private string containerOriginField;
@@ -10119,17 +9912,6 @@ namespace otf21 {
             }
             set {
                 this.eTAField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ETASpecified {
-            get {
-                return this.eTAFieldSpecified;
-            }
-            set {
-                this.eTAFieldSpecified = value;
             }
         }
         
@@ -10265,8 +10047,6 @@ namespace otf21 {
         
         private System.DateTime eTDField;
         
-        private bool eTDFieldSpecified;
-        
         private string releaseReferenceField;
         
         private string containerDestinationField;
@@ -10280,17 +10060,6 @@ namespace otf21 {
             }
             set {
                 this.eTDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ETDSpecified {
-            get {
-                return this.eTDFieldSpecified;
-            }
-            set {
-                this.eTDFieldSpecified = value;
             }
         }
         
@@ -10704,6 +10473,90 @@ namespace otf21 {
             }
             set {
                 this.temperatureReachedField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public partial class Message_TankContainer_StatusUpdate_HeelDisposal {
+        
+        private MessageHeaderInfo messageHeaderInfoField;
+        
+        private OrderInfo orderInfoField;
+        
+        private TankContainerInfo tankContainerInfoField;
+        
+        private Container_ServiceProgressInfo container_ServiceProgressInfoField;
+        
+        private RemarksRemark[] remarksField;
+        
+        private AttachmentsAttachment[] attachmentsField;
+        
+        /// <remarks/>
+        public MessageHeaderInfo MessageHeaderInfo {
+            get {
+                return this.messageHeaderInfoField;
+            }
+            set {
+                this.messageHeaderInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public OrderInfo OrderInfo {
+            get {
+                return this.orderInfoField;
+            }
+            set {
+                this.orderInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public TankContainerInfo TankContainerInfo {
+            get {
+                return this.tankContainerInfoField;
+            }
+            set {
+                this.tankContainerInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Container_ServiceProgressInfo Container_ServiceProgressInfo {
+            get {
+                return this.container_ServiceProgressInfoField;
+            }
+            set {
+                this.container_ServiceProgressInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Remark", IsNullable=false)]
+        public RemarksRemark[] Remarks {
+            get {
+                return this.remarksField;
+            }
+            set {
+                this.remarksField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Attachment", IsNullable=false)]
+        public AttachmentsAttachment[] Attachments {
+            get {
+                return this.attachmentsField;
+            }
+            set {
+                this.attachmentsField = value;
             }
         }
     }
@@ -11436,8 +11289,6 @@ namespace otf21 {
         
         private System.DateTime containerDeliveryDateField;
         
-        private bool containerDeliveryDateFieldSpecified;
-        
         /// <remarks/>
         public System.DateTime ContainerDeliveryDate {
             get {
@@ -11445,17 +11296,6 @@ namespace otf21 {
             }
             set {
                 this.containerDeliveryDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ContainerDeliveryDateSpecified {
-            get {
-                return this.containerDeliveryDateFieldSpecified;
-            }
-            set {
-                this.containerDeliveryDateFieldSpecified = value;
             }
         }
     }

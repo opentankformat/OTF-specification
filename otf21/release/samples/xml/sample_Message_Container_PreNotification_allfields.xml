@@ -13,7 +13,7 @@
       <Phone>DummyString</Phone>
       <Email>DummyString</Email>
     </ContactInfo>
-    <SentDate>2023-10-20T13:39:24.1702648+02:00</SentDate>
+    <SentDate>2023-10-24T12:43:27.2369014+02:00</SentDate>
     <MessageType>New</MessageType>
   </MessageHeaderInfo>
   <ContainerPreNotificationType>Empty</ContainerPreNotificationType>
@@ -33,7 +33,7 @@
     <ContainerType>DummyString</ContainerType>
   </ContainerInfo>
   <ArrivalInfo>
-    <ETA>2023-10-20T13:39:24.1703562+02:00</ETA>
+    <ETA>2023-10-24T12:43:27.237024+02:00</ETA>
     <RedeliveryReference>DummyString</RedeliveryReference>
     <ContainerOrigin>DummyString</ContainerOrigin>
     <Container_HaulierInfo>
@@ -52,15 +52,23 @@
         <Remarks>
           <Remark>
             <RemarkID>DummyString</RemarkID>
-            <RemarkDate>2023-10-20T13:39:24.1703777+02:00</RemarkDate>
+            <RemarkDate>2023-10-24T12:43:27.2370446+02:00</RemarkDate>
             <RemarkAuthor>DummyString</RemarkAuthor>
             <RemarkText>DummyString</RemarkText>
+            <Tags>
+              <Tag>DummyString</Tag>
+              <Tag>DummyString</Tag>
+            </Tags>
           </Remark>
           <Remark>
             <RemarkID>DummyString</RemarkID>
-            <RemarkDate>2023-10-20T13:39:24.1703883+02:00</RemarkDate>
+            <RemarkDate>2023-10-24T12:43:27.2370574+02:00</RemarkDate>
             <RemarkAuthor>DummyString</RemarkAuthor>
             <RemarkText>DummyString</RemarkText>
+            <Tags>
+              <Tag>DummyString</Tag>
+              <Tag>DummyString</Tag>
+            </Tags>
           </Remark>
         </Remarks>
       </Container_ServiceRequestInfo>
@@ -73,15 +81,23 @@
         <Remarks>
           <Remark>
             <RemarkID>DummyString</RemarkID>
-            <RemarkDate>2023-10-20T13:39:24.1704251+02:00</RemarkDate>
+            <RemarkDate>2023-10-24T12:43:27.2371006+02:00</RemarkDate>
             <RemarkAuthor>DummyString</RemarkAuthor>
             <RemarkText>DummyString</RemarkText>
+            <Tags>
+              <Tag>DummyString</Tag>
+              <Tag>DummyString</Tag>
+            </Tags>
           </Remark>
           <Remark>
             <RemarkID>DummyString</RemarkID>
-            <RemarkDate>2023-10-20T13:39:24.1704266+02:00</RemarkDate>
+            <RemarkDate>2023-10-24T12:43:27.2371023+02:00</RemarkDate>
             <RemarkAuthor>DummyString</RemarkAuthor>
             <RemarkText>DummyString</RemarkText>
+            <Tags>
+              <Tag>DummyString</Tag>
+              <Tag>DummyString</Tag>
+            </Tags>
           </Remark>
         </Remarks>
       </Container_ServiceRequestInfo>
@@ -99,7 +115,7 @@
     </Container_ServiceRequest_Work_Repair>
   </ServicesRequestInfo>
   <DepartureInfo>
-    <ETD>2023-10-20T13:39:24.1704351+02:00</ETD>
+    <ETD>2023-10-24T12:43:27.2371112+02:00</ETD>
     <ReleaseReference>DummyString</ReleaseReference>
     <ContainerDestination>DummyString</ContainerDestination>
     <Container_HaulierInfo>
@@ -112,15 +128,23 @@
   <Remarks>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-10-20T13:39:24.170438+02:00</RemarkDate>
+      <RemarkDate>2023-10-24T12:43:27.2371141+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
+      <Tags>
+        <Tag>DummyString</Tag>
+        <Tag>DummyString</Tag>
+      </Tags>
     </Remark>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-10-20T13:39:24.170439+02:00</RemarkDate>
+      <RemarkDate>2023-10-24T12:43:27.2371153+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
+      <Tags>
+        <Tag>DummyString</Tag>
+        <Tag>DummyString</Tag>
+      </Tags>
     </Remark>
   </Remarks>
   <Attachments>

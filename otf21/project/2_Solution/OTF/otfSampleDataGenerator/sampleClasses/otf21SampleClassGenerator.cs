@@ -27,6 +27,7 @@ namespace otfSampleDataGenerator.sampleClasses
 			GenerateSampleMessages<Message_Container_StatusUpdate_Storage_Departure>(targetFolder, typeof(Message_Container_StatusUpdate_Storage_Departure).Name, sample_Message_Container_StatusUpdate_Storage_Departure(), GenerateDummyData<Message_Container_StatusUpdate_Storage_Departure>());
 			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Storage_Departure>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Storage_Departure).Name, sample_Message_TankContainer_StatusUpdate_Storage_Departure(), GenerateDummyData<Message_TankContainer_StatusUpdate_Storage_Departure>());
 
+			GenerateSampleMessages<Message_TankContainer_StatusUpdate_HeelDisposal>(targetFolder, typeof(Message_TankContainer_StatusUpdate_HeelDisposal).Name, sample_Message_TankContainer_StatusUpdate_HeelDisposal(), GenerateDummyData<Message_TankContainer_StatusUpdate_HeelDisposal>());
 			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Cleaning>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Cleaning).Name, sample_Message_TankContainer_StatusUpdate_Cleaning(), GenerateDummyData<Message_TankContainer_StatusUpdate_Cleaning>());
 			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Heating>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Heating).Name, sample_Message_TankContainer_StatusUpdate_Heating(), GenerateDummyData<Message_TankContainer_StatusUpdate_Heating>());
 			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Inspection>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Inspection).Name, sample_Message_TankContainer_StatusUpdate_Inspection(), GenerateDummyData<Message_TankContainer_StatusUpdate_Inspection>());
@@ -759,6 +760,62 @@ namespace otfSampleDataGenerator.sampleClasses
 			};
 			return m;
 		}
+
+		static Message_TankContainer_StatusUpdate_HeelDisposal sample_Message_TankContainer_StatusUpdate_HeelDisposal()
+		{
+			Message_TankContainer_StatusUpdate_HeelDisposal m = new Message_TankContainer_StatusUpdate_HeelDisposal
+			{
+				MessageHeaderInfo = new MessageHeaderInfo
+				{
+					MessageID = SampleData.MessageIdentifier_TankContainer_HeelDisposalStatusUpdate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_StatusUpdate_HeelDisposal,
+					SenderID = SampleData.Depot_ID,
+					RecipientID = SampleData.Lessee_ID,
+					ContactInfo = new ContactInfo
+					{
+						Name = SampleData.Lessee_ContactName
+					},
+					SentDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_HeelDisposal_ByDepot_Finished),
+					MessageType = MessageHeaderInfoMessageType.New,
+				},
+				OrderInfo = new OrderInfo
+				{
+					SupplierID = SampleData.Depot_ID,
+					SupplierLocationID = SampleData.Depot_LocationID,
+					SupplierOrderReference = SampleData.Depot_OrderReference,
+					OrderStatusInfo = new OrderStatusInfo
+					{
+						OrderStatusDescription = SampleData.Orderflow_Container_StatusUpdate_HeelDisposal_ByDepot_Status_Description
+					},
+					ClientID = SampleData.Lessor_ID,
+					ClientOrderReference = SampleData.Lessor_OrderReference
+				},
+				TankContainerInfo = new TankContainerInfo
+				{
+					ContainerInfo = new ContainerInfo
+					{
+						ContainerNumber = SampleData.ContainerNumber,
+						ContainerType = SampleData.ContainerType
+					},
+				},
+				Container_ServiceProgressInfo = new Container_ServiceProgressInfo
+				{
+					SupplierReference = SampleData.Depot_OrderReference_Cleaning,
+					Container_ServiceProgress_AuthorizationInfo = new Container_ServiceProgress_AuthorizationInfo
+					{
+						AuthorizationReference = SampleData.Lessee_CleaningServiceRequest_AuthorizationReference
+					},
+					Container_ServiceProgress_DateInfo = new Container_ServiceProgress_DateInfo
+					{
+						Started = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Cleaning_ByDepot_Started),
+						Finished = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Cleaning_ByDepot_Finished)
+					}
+				},
+			};
+			return m;
+		}
+
 
 		static Message_TankContainer_StatusUpdate_Cleaning sample_Message_TankContainer_StatusUpdate_Cleaning()
 		{

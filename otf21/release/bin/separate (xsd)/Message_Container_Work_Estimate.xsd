@@ -71,12 +71,12 @@
               <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_DateInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="Planned" type="xs:dateTime" />
+                    <xs:element minOccurs="1" maxOccurs="1" name="Planned" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="PlannedBy" type="xs:string" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="PlannedToTakePlaceOn" type="xs:dateTime" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="Started" type="xs:dateTime" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="Finished" type="xs:dateTime" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="Cancelled" type="xs:dateTime" />
+                    <xs:element minOccurs="1" maxOccurs="1" name="PlannedToTakePlaceOn" type="xs:dateTime" />
+                    <xs:element minOccurs="1" maxOccurs="1" name="Started" type="xs:dateTime" />
+                    <xs:element minOccurs="1" maxOccurs="1" name="Finished" type="xs:dateTime" />
+                    <xs:element minOccurs="1" maxOccurs="1" name="Cancelled" type="xs:dateTime" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -114,7 +114,7 @@
                               </xs:sequence>
                             </xs:complexType>
                           </xs:element>
-                          <xs:element minOccurs="0" maxOccurs="1" name="AuthorizationAcceptedBySupplier" type="xs:dateTime" />
+                          <xs:element minOccurs="1" maxOccurs="1" name="AuthorizationAcceptedBySupplier" type="xs:dateTime" />
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
@@ -149,7 +149,7 @@
                               </xs:sequence>
                             </xs:complexType>
                           </xs:element>
-                          <xs:element minOccurs="0" maxOccurs="1" name="AuthorizationAcceptedBySupplier" type="xs:dateTime" />
+                          <xs:element minOccurs="1" maxOccurs="1" name="AuthorizationAcceptedBySupplier" type="xs:dateTime" />
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
@@ -162,7 +162,7 @@
         <xs:element minOccurs="0" maxOccurs="1" name="ContainerStorageArrivalInfo">
           <xs:complexType>
             <xs:sequence>
-              <xs:element minOccurs="0" maxOccurs="1" name="ContainerDeliveryDate" type="xs:dateTime" />
+              <xs:element minOccurs="1" maxOccurs="1" name="ContainerDeliveryDate" type="xs:dateTime" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -193,6 +193,7 @@
       <xs:enumeration value="Message_TankContainer_InspectionReport" />
       <xs:enumeration value="Message_TankContainer_PreNotification" />
       <xs:enumeration value="Message_TankContainer_PreNotification_StatusUpdate" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_HeelDisposal" />
       <xs:enumeration value="Message_TankContainer_StatusUpdate_Cleaning" />
       <xs:enumeration value="Message_TankContainer_StatusUpdate_Heating" />
       <xs:enumeration value="Message_TankContainer_StatusUpdate_Inspection" />
@@ -400,12 +401,18 @@
         <xs:complexType>
           <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" name="RemarkID" type="xs:string" />
-            <xs:element minOccurs="0" maxOccurs="1" name="RemarkDate" type="xs:dateTime" />
+            <xs:element minOccurs="1" maxOccurs="1" name="RemarkDate" type="xs:dateTime" />
             <xs:element minOccurs="0" maxOccurs="1" name="RemarkAuthor" type="xs:string" />
             <xs:element minOccurs="0" maxOccurs="1" name="RemarkText" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="Tags" type="ArrayOfString" />
           </xs:sequence>
         </xs:complexType>
       </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Tag" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="ArrayOfAttachmentsAttachment">

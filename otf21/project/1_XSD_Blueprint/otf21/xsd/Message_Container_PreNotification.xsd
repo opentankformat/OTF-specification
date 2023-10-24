@@ -24,7 +24,7 @@
 		<xs:element name="ArrivalInfo" minOccurs="0" >
 			<xs:complexType>
 				<xs:sequence>
-					<xs:element name="ETA" type="xs:dateTime" minOccurs="0" />
+					<xs:element name="ETA" type="xs:dateTime" />
 					<xs:element name="RedeliveryReference" type="xs:string" minOccurs="0" />
 					<xs:element name="ContainerOrigin" type="xs:string" minOccurs="0" />
 					<xs:element ref="Container_HaulierInfo"  minOccurs="0" />							
@@ -43,7 +43,7 @@
 		<xs:element name="DepartureInfo" minOccurs="0" >
 			<xs:complexType>
 				<xs:sequence>
-					<xs:element name="ETD" type="xs:dateTime" minOccurs="0" />
+					<xs:element name="ETD" type="xs:dateTime" />
 					<xs:element name="ReleaseReference" type="xs:string" minOccurs="0" />
 					<xs:element name="ContainerDestination" type="xs:string" minOccurs="0" />
 					<xs:element ref="Container_HaulierInfo" minOccurs="0" />

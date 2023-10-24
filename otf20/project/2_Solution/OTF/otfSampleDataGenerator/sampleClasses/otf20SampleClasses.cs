@@ -21,6 +21,7 @@ namespace otfSampleDataGenerator.sampleClasses
 			Utils.GenerateSamples(sample_Message_Container_StatusUpdate_Storage_Arrival(), targetFolder, "sample_Message_Container_StatusUpdate_Storage_Arrival");
 			Utils.GenerateSamples(sample_Message_Container_StatusUpdate_Storage_Available(), targetFolder, "sample_Message_Container_StatusUpdate_Storage_Available");
 			Utils.GenerateSamples(sample_Message_Container_StatusUpdate_Storage_Departure(), targetFolder, "sample_Message_Container_StatusUpdate_Storage_Departure");
+			Utils.GenerateSamples(sample_Message_TankContainer_StatusUpdate_HeelDisposal(), targetFolder, "sample_Message_TankContainer_StatusUpdate_HeelDisposal");
 			Utils.GenerateSamples(sample_Message_TankContainer_StatusUpdate_Cleaning(), targetFolder, "sample_Message_TankContainer_StatusUpdate_Cleaning");
 			Utils.GenerateSamples(sample_Message_TankContainer_StatusUpdate_Heating(), targetFolder, "sample_Message_TankContainer_StatusUpdate_Heating");
 			Utils.GenerateSamples(sample_Message_TankContainer_StatusUpdate_Inspection(), targetFolder, "sample_Message_TankContainer_StatusUpdate_Inspection");
@@ -378,7 +379,51 @@ namespace otfSampleDataGenerator.sampleClasses
 				}
 			};
 			return m;
-		} 
+		}
+
+		static Message_TankContainer_StatusUpdate_HeelDisposal sample_Message_TankContainer_StatusUpdate_HeelDisposal()
+		{
+			Message_TankContainer_StatusUpdate_HeelDisposal m = new Message_TankContainer_StatusUpdate_HeelDisposal
+			{
+				MessageHeaderInfo = new MessageHeaderInfo
+				{
+					MessageID = SampleData.MessageIdentifier_TankContainer_HeelDisposalStatusUpdate_MessageID,
+					SenderID = SampleData.Depot_ID,
+					RecipientID = SampleData.Lessee_ID,
+					ContactName = SampleData.Lessee_ContactName,
+					SentDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_HeelDisposal_ByDepot_Finished),
+					MessageType = MessageHeaderInfoMessageType.New,
+				},
+				OrderInfo = new OrderInfo
+				{
+					SupplierID = SampleData.Depot_ID,
+					SupplierLocationID = SampleData.Depot_LocationID,
+					SupplierOrderReference = SampleData.Depot_OrderReference,
+					OrderStatusInfo = new OrderStatusInfo
+					{
+						OrderStatusDescription = SampleData.Orderflow_Container_StatusUpdate_HeelDisposal_ByDepot_Status_Description
+					},
+					ClientID = SampleData.Lessor_ID,
+					ClientOrderReference = SampleData.Lessor_OrderReference
+				},
+				ContainerInfo = new ContainerInfo
+				{
+					ContainerNumber = SampleData.ContainerNumber,
+					ContainerType = SampleData.ContainerType
+				},
+				Container_ServiceProgressInfo = new Container_ServiceProgressInfo
+				{
+					SupplierReference = SampleData.Depot_OrderReference_HeelDisposal,
+					Container_ServiceProgress_DateInfo = new Container_ServiceProgress_DateInfo
+					{
+						Started = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_HeelDisposal_ByDepot_Started),
+						Finished = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_HeelDisposal_ByDepot_Finished)
+					}
+				}
+			};
+			return m;
+		}
+
 
 		static Message_TankContainer_StatusUpdate_Cleaning sample_Message_TankContainer_StatusUpdate_Cleaning()
 		{

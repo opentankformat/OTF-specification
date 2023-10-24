@@ -28,12 +28,12 @@
     "SupplierReference": "D230101.0001.H1",
     "Container_ServiceProgress_AuthorizationInfo": null,
     "Container_ServiceProgress_DateInfo": {
-      "PlannedSpecified": false,
+      "Planned": "0001-01-01T00:00:00",
       "PlannedBy": null,
-      "PlannedToTakePlaceOnSpecified": false,
-      "StartedSpecified": false,
-      "FinishedSpecified": false,
-      "CancelledSpecified": false
+      "PlannedToTakePlaceOn": "0001-01-01T00:00:00",
+      "Started": "2000-01-01T11:30:00+01:00",
+      "Finished": "0001-01-01T00:00:00",
+      "Cancelled": "0001-01-01T00:00:00"
     }
   },
   "TankContainerHeatingInfo": null

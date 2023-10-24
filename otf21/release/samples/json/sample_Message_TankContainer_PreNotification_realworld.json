@@ -190,7 +190,8 @@
       "RemarkID": "8ea3d430-06e8-4d42-a98f-1eb984f08ff2",
       "RemarkDate": "2000-01-01T06:52:00+01:00",
       "RemarkAuthor": "Arthur Fonzarelli",
-      "RemarkText": "Ayyyyyy!"
+      "RemarkText": "Ayyyyyy!",
+      "Tags": null
     }
   ],
   "Attachments": null

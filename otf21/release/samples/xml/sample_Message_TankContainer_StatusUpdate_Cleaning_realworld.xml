@@ -34,7 +34,13 @@
       <Authorized>0001-01-01T00:00:00</Authorized>
       <AuthorizationReference>AA23055-C</AuthorizationReference>
     </Container_ServiceProgress_AuthorizationInfo>
-    <Container_ServiceProgress_DateInfo />
+    <Container_ServiceProgress_DateInfo>
+      <Planned>0001-01-01T00:00:00</Planned>
+      <PlannedToTakePlaceOn>0001-01-01T00:00:00</PlannedToTakePlaceOn>
+      <Started>2000-01-01T12:01:00+01:00</Started>
+      <Finished>2000-01-01T12:23:00+01:00</Finished>
+      <Cancelled>0001-01-01T00:00:00</Cancelled>
+    </Container_ServiceProgress_DateInfo>
   </Container_ServiceProgressInfo>
   <TankContainerCleaningInfo>
     <CleaningCertificateID>BE6000001</CleaningCertificateID>

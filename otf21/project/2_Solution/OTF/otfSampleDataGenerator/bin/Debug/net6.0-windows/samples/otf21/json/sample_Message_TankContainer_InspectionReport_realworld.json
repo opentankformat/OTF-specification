@@ -132,7 +132,7 @@
         "TankContainer_Inspection": {
           "InspectionResult": "SatisfactoryWithRemark",
           "InspectionRemark": "Inspection remark",
-          "InspectionDate": "2023-10-20T13:39:27.4535334+02:00"
+          "InspectionDate": "2023-10-24T12:43:30.2669394+02:00"
         }
       },
       "ExternalInspection": {
@@ -210,7 +210,7 @@
     "Remarks": null
   },
   "InspectionVerification": {
-    "VerificationDate": "2023-10-20T13:39:27.4543451+02:00",
+    "VerificationDate": "2023-10-24T12:43:30.2675409+02:00",
     "VerificationPlace": null,
     "VerificatorName": "Guybrush Threepwood"
   },

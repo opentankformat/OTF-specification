@@ -123,6 +123,12 @@ namespace OTF.SampleGenerator
         public static string Orderflow_Container_StatusUpdate_Transhipment_ByDepot_Finished = "2000-01-01T21:14:00.0000000+01:00";
         public static string Orderflow_Container_StatusUpdate_Transhipment_ByDepot_StatusDescription = "EMPTY UNCLEAN";
 
+        public static string MessageIdentifier_TankContainer_HeelDisposalStatusUpdate_MessageID = "0604a73d-d440-49a1-8c23-f88e11b9fb8e";
+        public static string Depot_OrderReference_HeelDisposal = Depot_OrderReference + ".HE1";
+        public static string Orderflow_Container_StatusUpdate_HeelDisposal_ByDepot_Started = "2000-01-01T11:45:00.0000000+01:00";
+        public static string Orderflow_Container_StatusUpdate_HeelDisposal_ByDepot_Finished = "2000-01-01T11:55:00.0000000+01:00";
+        public static string Orderflow_Container_StatusUpdate_HeelDisposal_ByDepot_Status_Description = "IN_UNCLEAN_CLEANING_PENDING_UNAUTHORIZED";
+
         public static string MessageIdentifier_TankContainer_CleaningStatusUpdate_MessageID = "31a40ee4-9f12-4411-8ac2-a70f22c530c2";
         public static string Depot_OrderReference_Cleaning = Depot_OrderReference + ".C1";
         public static string Orderflow_Container_StatusUpdate_Cleaning_ByDepot_Started = "2000-01-01T12:01:00.0000000+01:00";

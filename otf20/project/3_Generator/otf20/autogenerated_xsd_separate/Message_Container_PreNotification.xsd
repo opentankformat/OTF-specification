@@ -48,7 +48,7 @@
         <xs:element minOccurs="0" maxOccurs="1" name="ArrivalInfo">
           <xs:complexType>
             <xs:sequence>
-              <xs:element minOccurs="0" maxOccurs="1" name="ETA" type="xs:dateTime" />
+              <xs:element minOccurs="1" maxOccurs="1" name="ETA" type="xs:dateTime" />
               <xs:element minOccurs="0" maxOccurs="1" name="RedeliveryReference" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="ContainerOrigin" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="Container_HaulierInfo">
@@ -178,7 +178,7 @@
         <xs:element minOccurs="0" maxOccurs="1" name="DepartureInfo">
           <xs:complexType>
             <xs:sequence>
-              <xs:element minOccurs="0" maxOccurs="1" name="ETD" type="xs:dateTime" />
+              <xs:element minOccurs="1" maxOccurs="1" name="ETD" type="xs:dateTime" />
               <xs:element minOccurs="0" maxOccurs="1" name="ReleaseReference" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="ContainerDestination" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="Container_HaulierInfo">
@@ -329,12 +329,18 @@
         <xs:complexType>
           <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" name="RemarkID" type="xs:string" />
-            <xs:element minOccurs="0" maxOccurs="1" name="RemarkDate" type="xs:dateTime" />
+            <xs:element minOccurs="1" maxOccurs="1" name="RemarkDate" type="xs:dateTime" />
             <xs:element minOccurs="0" maxOccurs="1" name="RemarkAuthor" type="xs:string" />
             <xs:element minOccurs="0" maxOccurs="1" name="RemarkText" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="Tags" type="ArrayOfString" />
           </xs:sequence>
         </xs:complexType>
       </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Tag" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
 </xs:schema>

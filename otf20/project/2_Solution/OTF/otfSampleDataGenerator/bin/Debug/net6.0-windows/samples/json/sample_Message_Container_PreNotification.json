@@ -24,7 +24,7 @@
     "ContainerType": "20TC"
   },
   "ArrivalInfo": {
-    "ETASpecified": false,
+    "ETA": "2000-01-01T11:00:00+01:00",
     "RedeliveryReference": "REL5556",
     "ContainerOrigin": null,
     "Container_HaulierInfo": {
@@ -139,7 +139,7 @@
     "TankContainer_ServiceRequest_Inspection": null
   },
   "DepartureInfo": {
-    "ETDSpecified": false,
+    "ETD": "0001-01-01T00:00:00",
     "ReleaseReference": "",
     "ContainerDestination": "935 Pennsylvania Avenue NW, Washington D.C.",
     "Container_HaulierInfo": {
@@ -152,9 +152,10 @@
   "Remarks": [
     {
       "RemarkID": "8ea3d430-06e8-4d42-a98f-1eb984f08ff2",
-      "RemarkDateSpecified": false,
+      "RemarkDate": "2000-01-01T06:52:00+01:00",
       "RemarkAuthor": "Arthur Fonzarelli",
-      "RemarkText": "Ayyyyyy!"
+      "RemarkText": "Ayyyyyy!",
+      "Tags": null
     }
   ]
 }

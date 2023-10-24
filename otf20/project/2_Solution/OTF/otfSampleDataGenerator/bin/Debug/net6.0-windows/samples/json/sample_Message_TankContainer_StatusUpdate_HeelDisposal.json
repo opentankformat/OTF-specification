@@ -1,0 +1,39 @@
+{
+  "MessageHeaderInfo": {
+    "MessageID": "0604a73d-d440-49a1-8c23-f88e11b9fb8e",
+    "ConversationID": null,
+    "OTFVersion": 1,
+    "SenderID": "Depot name or identifier",
+    "RecipientID": "Lessee name or identifier",
+    "ContactName": "Arthur Fonzarelli",
+    "SentDate": "2000-01-01T11:55:00+01:00",
+    "MessageType": 0
+  },
+  "OrderInfo": {
+    "SupplierID": "Depot name or identifier",
+    "SupplierLocationID": "Depot location identifier",
+    "SupplierProformaReference": null,
+    "SupplierOrderReference": "D230101.0001",
+    "OrderStatusInfo": {
+      "OrderStatusDescription": "IN_UNCLEAN_CLEANING_PENDING_UNAUTHORIZED"
+    },
+    "ClientID": "Lessor name or identifier",
+    "ClientOrderReference": "XX2251"
+  },
+  "ContainerInfo": {
+    "ContainerNumber": "ABCD-123456-0",
+    "ContainerType": "20TC"
+  },
+  "Container_ServiceProgressInfo": {
+    "SupplierReference": "D230101.0001.HE1",
+    "Container_ServiceProgress_AuthorizationInfo": null,
+    "Container_ServiceProgress_DateInfo": {
+      "Planned": "0001-01-01T00:00:00",
+      "PlannedBy": null,
+      "PlannedToTakePlaceOn": "0001-01-01T00:00:00",
+      "Started": "2000-01-01T11:45:00+01:00",
+      "Finished": "2000-01-01T11:55:00+01:00",
+      "Cancelled": "0001-01-01T00:00:00"
+    }
+  }
+}

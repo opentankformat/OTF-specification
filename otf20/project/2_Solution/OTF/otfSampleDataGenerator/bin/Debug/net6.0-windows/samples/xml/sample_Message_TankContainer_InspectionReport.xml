@@ -76,7 +76,12 @@
         <Material />
       </TankContainerLiningInfo>
       <InspectionDates>
+        <InitialInspectionDate>0001-01-01T00:00:00</InitialInspectionDate>
+        <LastInspectionDate>1998-06-20T01:00:00+02:00</LastInspectionDate>
         <LastInspectionScopeDescription>H</LastInspectionScopeDescription>
+        <NextInspectionDate>0001-01-01T00:00:00</NextInspectionDate>
+        <CSCValidityDate>1999-01-01T00:00:00+01:00</CSCValidityDate>
+        <ACEP>0001-01-01T00:00:00</ACEP>
       </InspectionDates>
     </TankContainerInfo>
     <Inspections>
@@ -84,64 +89,75 @@
         <TankContainer_Inspection>
           <InspectionResult>SatisfactoryWithRemark</InspectionResult>
           <InspectionRemark>Inspection remark</InspectionRemark>
+          <InspectionDate>2023-10-24T12:40:26.1266629+02:00</InspectionDate>
         </TankContainer_Inspection>
       </InternalInspection>
       <ExternalInspection>
         <TankContainer_Inspection>
           <InspectionResult>Satisfactory</InspectionResult>
+          <InspectionDate>0001-01-01T00:00:00</InspectionDate>
         </TankContainer_Inspection>
       </ExternalInspection>
       <ThicknessMeasurements>
         <TankContainer_Inspection>
           <InspectionResult>Remark</InspectionResult>
           <InspectionRemark>Another remark</InspectionRemark>
+          <InspectionDate>0001-01-01T00:00:00</InspectionDate>
         </TankContainer_Inspection>
       </ThicknessMeasurements>
       <HydraulicTest>
         <TankContainer_Inspection>
           <InspectionResult>NotApplicable</InspectionResult>
+          <InspectionDate>0001-01-01T00:00:00</InspectionDate>
         </TankContainer_Inspection>
       </HydraulicTest>
       <LeakproofnessTest>
         <TankContainer_Inspection>
           <InspectionResult>NotApplicable</InspectionResult>
+          <InspectionDate>0001-01-01T00:00:00</InspectionDate>
         </TankContainer_Inspection>
       </LeakproofnessTest>
       <VacuumMeasurement>
         <TankContainer_Inspection>
           <InspectionResult>NotApplicable</InspectionResult>
+          <InspectionDate>0001-01-01T00:00:00</InspectionDate>
         </TankContainer_Inspection>
       </VacuumMeasurement>
       <HeaterPressureTest>
         <TankContainer_Inspection>
           <InspectionResult>NotApplicable</InspectionResult>
+          <InspectionDate>0001-01-01T00:00:00</InspectionDate>
         </TankContainer_Inspection>
       </HeaterPressureTest>
       <ValveSettingsCheck>
         <TankContainer_Inspection>
           <InspectionResult>NotApplicable</InspectionResult>
+          <InspectionDate>0001-01-01T00:00:00</InspectionDate>
         </TankContainer_Inspection>
       </ValveSettingsCheck>
       <ServiceEquipmentCheck>
         <TankContainer_Inspection>
           <InspectionResult>NotApplicable</InspectionResult>
+          <InspectionDate>0001-01-01T00:00:00</InspectionDate>
         </TankContainer_Inspection>
       </ServiceEquipmentCheck>
       <FrameExamination>
         <TankContainer_Inspection>
           <InspectionResult>NotApplicable</InspectionResult>
+          <InspectionDate>0001-01-01T00:00:00</InspectionDate>
         </TankContainer_Inspection>
       </FrameExamination>
       <MarkingExamination>
         <TankContainer_Inspection>
           <InspectionResult>NotApplicable</InspectionResult>
+          <InspectionDate>0001-01-01T00:00:00</InspectionDate>
         </TankContainer_Inspection>
       </MarkingExamination>
       <RefOfMeasurementInstrumentsUsed />
     </Inspections>
   </InspectionResultsInfo>
   <InspectionVerification>
-    <VerificationDate>2023-10-20T13:37:18.7785439+02:00</VerificationDate>
+    <VerificationDate>2023-10-24T12:40:26.1274577+02:00</VerificationDate>
     <VerificatorName>Guybrush Threepwood</VerificatorName>
   </InspectionVerification>
 </Message_TankContainer_InspectionReport>

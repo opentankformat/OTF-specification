@@ -116,13 +116,13 @@
         "Material": ""
       },
       "InspectionDates": {
-        "InitialInspectionDateSpecified": false,
-        "LastInspectionDateSpecified": false,
+        "InitialInspectionDate": "0001-01-01T00:00:00",
+        "LastInspectionDate": "1998-06-20T01:00:00+02:00",
         "LastInspectionScopeSpecified": false,
         "LastInspectionScopeDescription": "H",
-        "NextInspectionDateSpecified": false,
-        "CSCValidityDateSpecified": false,
-        "ACEPSpecified": false,
+        "NextInspectionDate": "0001-01-01T00:00:00",
+        "CSCValidityDate": "1999-01-01T00:00:00+01:00",
+        "ACEP": "0001-01-01T00:00:00",
         "ACEPDescription": null
       }
     },
@@ -131,77 +131,77 @@
         "TankContainer_Inspection": {
           "InspectionResult": 2,
           "InspectionRemark": "Inspection remark",
-          "InspectionDateSpecified": false
+          "InspectionDate": "2023-10-24T12:40:26.1266629+02:00"
         }
       },
       "ExternalInspection": {
         "TankContainer_Inspection": {
           "InspectionResult": 1,
           "InspectionRemark": null,
-          "InspectionDateSpecified": false
+          "InspectionDate": "0001-01-01T00:00:00"
         }
       },
       "ThicknessMeasurements": {
         "TankContainer_Inspection": {
           "InspectionResult": 3,
           "InspectionRemark": "Another remark",
-          "InspectionDateSpecified": false
+          "InspectionDate": "0001-01-01T00:00:00"
         }
       },
       "HydraulicTest": {
         "TankContainer_Inspection": {
           "InspectionResult": 0,
           "InspectionRemark": null,
-          "InspectionDateSpecified": false
+          "InspectionDate": "0001-01-01T00:00:00"
         }
       },
       "LeakproofnessTest": {
         "TankContainer_Inspection": {
           "InspectionResult": 0,
           "InspectionRemark": null,
-          "InspectionDateSpecified": false
+          "InspectionDate": "0001-01-01T00:00:00"
         }
       },
       "VacuumMeasurement": {
         "TankContainer_Inspection": {
           "InspectionResult": 0,
           "InspectionRemark": null,
-          "InspectionDateSpecified": false
+          "InspectionDate": "0001-01-01T00:00:00"
         }
       },
       "HeaterPressureTest": {
         "TankContainer_Inspection": {
           "InspectionResult": 0,
           "InspectionRemark": null,
-          "InspectionDateSpecified": false
+          "InspectionDate": "0001-01-01T00:00:00"
         }
       },
       "ValveSettingsCheck": {
         "TankContainer_Inspection": {
           "InspectionResult": 0,
           "InspectionRemark": null,
-          "InspectionDateSpecified": false
+          "InspectionDate": "0001-01-01T00:00:00"
         }
       },
       "ServiceEquipmentCheck": {
         "TankContainer_Inspection": {
           "InspectionResult": 0,
           "InspectionRemark": null,
-          "InspectionDateSpecified": false
+          "InspectionDate": "0001-01-01T00:00:00"
         }
       },
       "FrameExamination": {
         "TankContainer_Inspection": {
           "InspectionResult": 0,
           "InspectionRemark": null,
-          "InspectionDateSpecified": false
+          "InspectionDate": "0001-01-01T00:00:00"
         }
       },
       "MarkingExamination": {
         "TankContainer_Inspection": {
           "InspectionResult": 0,
           "InspectionRemark": null,
-          "InspectionDateSpecified": false
+          "InspectionDate": "0001-01-01T00:00:00"
         }
       },
       "RefOfMeasurementInstrumentsUsed": ""
@@ -209,7 +209,7 @@
     "Remarks": null
   },
   "InspectionVerification": {
-    "VerificationDate": "2023-10-20T13:37:18.7785439+02:00",
+    "VerificationDate": "2023-10-24T12:40:26.1274577+02:00",
     "VerificationPlace": null,
     "VerificatorName": "Guybrush Threepwood"
   }

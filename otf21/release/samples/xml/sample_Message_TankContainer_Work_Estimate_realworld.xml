@@ -36,12 +36,23 @@
       <Manufacturer>MillenniuM Tanks Inc.</Manufacturer>
     </TankContainerCharacteristicsInfo>
     <InspectionDates>
+      <InitialInspectionDate>0001-01-01T00:00:00</InitialInspectionDate>
+      <LastInspectionDate>1998-06-20T01:00:00+02:00</LastInspectionDate>
       <LastInspectionScopeDescription>H</LastInspectionScopeDescription>
+      <NextInspectionDate>0001-01-01T00:00:00</NextInspectionDate>
+      <CSCValidityDate>1999-01-01T00:00:00+01:00</CSCValidityDate>
+      <ACEP>0001-01-01T00:00:00</ACEP>
     </InspectionDates>
   </TankContainerInfo>
   <Container_Work_EstimateStatusInfo>
     <Version>V1</Version>
-    <Container_ServiceProgress_DateInfo />
+    <Container_ServiceProgress_DateInfo>
+      <Planned>0001-01-01T00:00:00</Planned>
+      <PlannedToTakePlaceOn>0001-01-01T00:00:00</PlannedToTakePlaceOn>
+      <Started>0001-01-01T00:00:00</Started>
+      <Finished>2000-01-02T16:23:00+01:00</Finished>
+      <Cancelled>0001-01-01T00:00:00</Cancelled>
+    </Container_ServiceProgress_DateInfo>
     <ContainerWorkAuthorizationInfo>
       <ContainerWorkLessorAuthorizationInfo>
         <LessorID>Lessor name or identifier</LessorID>
@@ -49,10 +60,13 @@
           <Authorized>2000-01-02T17:23:00+01:00</Authorized>
           <AuthorizationReference>REP5559</AuthorizationReference>
         </Container_ServiceProgress_AuthorizationInfo>
+        <AuthorizationAcceptedBySupplier>0001-01-01T00:00:00</AuthorizationAcceptedBySupplier>
       </ContainerWorkLessorAuthorizationInfo>
     </ContainerWorkAuthorizationInfo>
   </Container_Work_EstimateStatusInfo>
-  <ContainerStorageArrivalInfo />
+  <ContainerStorageArrivalInfo>
+    <ContainerDeliveryDate>2000-01-01T11:04:00+01:00</ContainerDeliveryDate>
+  </ContainerStorageArrivalInfo>
   <LaborRate>35.5</LaborRate>
   <EstimateLines>
     <Container_Work_EstimateLine>
@@ -148,6 +162,7 @@
   <Remarks>
     <Remark>
       <RemarkID>121fdc2d-f169-4e39-b951-61a18a093ed3</RemarkID>
+      <RemarkDate>2000-01-02T16:23:00+01:00</RemarkDate>
       <RemarkAuthor>Frank Black</RemarkAuthor>
       <RemarkText>The Time is Near</RemarkText>
     </Remark>

@@ -27,7 +27,13 @@
   <Container_Work_EstimateStatusInfo>
     <ContainerWorkEstimateStatusInfo>
       <Version>V1</Version>
-      <Container_ServiceProgress_DateInfo />
+      <Container_ServiceProgress_DateInfo>
+        <Planned>0001-01-01T00:00:00</Planned>
+        <PlannedToTakePlaceOn>0001-01-01T00:00:00</PlannedToTakePlaceOn>
+        <Started>0001-01-01T00:00:00</Started>
+        <Finished>2000-01-02T16:23:00+01:00</Finished>
+        <Cancelled>0001-01-01T00:00:00</Cancelled>
+      </Container_ServiceProgress_DateInfo>
     </ContainerWorkEstimateStatusInfo>
     <ContainerWorkAuthorizationInfo>
       <ContainerWorkLessorAuthorizationInfo>
@@ -36,10 +42,17 @@
           <Authorized>2000-01-02T17:23:00+01:00</Authorized>
           <AuthorizationReference>REP5559</AuthorizationReference>
         </Container_ServiceProgress_AuthorizationInfo>
+        <AuthorizationAcceptedBySupplier>0001-01-01T00:00:00</AuthorizationAcceptedBySupplier>
       </ContainerWorkLessorAuthorizationInfo>
     </ContainerWorkAuthorizationInfo>
   </Container_Work_EstimateStatusInfo>
   <Container_Work_WorkStatusInfo>
-    <Container_ServiceProgress_DateInfo />
+    <Container_ServiceProgress_DateInfo>
+      <Planned>0001-01-01T00:00:00</Planned>
+      <PlannedToTakePlaceOn>0001-01-01T00:00:00</PlannedToTakePlaceOn>
+      <Started>2000-01-03T08:55:00+01:00</Started>
+      <Finished>0001-01-01T00:00:00</Finished>
+      <Cancelled>0001-01-01T00:00:00</Cancelled>
+    </Container_ServiceProgress_DateInfo>
   </Container_Work_WorkStatusInfo>
 </Message_Container_StatusUpdate_Work>

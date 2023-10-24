@@ -13,7 +13,7 @@
       <Phone>DummyString</Phone>
       <Email>DummyString</Email>
     </ContactInfo>
-    <SentDate>2023-10-20T13:39:27.1693074+02:00</SentDate>
+    <SentDate>2023-10-24T12:43:30.013009+02:00</SentDate>
     <MessageType>New</MessageType>
   </MessageHeaderInfo>
   <OrderInfo>
@@ -36,76 +36,84 @@
   <Container_Work_EstimateStatusInfo>
     <Version>DummyString</Version>
     <Container_ServiceProgress_DateInfo>
-      <Planned>2023-10-20T13:39:27.1693146+02:00</Planned>
+      <Planned>2023-10-24T12:43:30.0130201+02:00</Planned>
       <PlannedBy>DummyString</PlannedBy>
-      <PlannedToTakePlaceOn>2023-10-20T13:39:27.1693155+02:00</PlannedToTakePlaceOn>
-      <Started>2023-10-20T13:39:27.1693159+02:00</Started>
-      <Finished>2023-10-20T13:39:27.1693162+02:00</Finished>
-      <Cancelled>2023-10-20T13:39:27.1693166+02:00</Cancelled>
+      <PlannedToTakePlaceOn>2023-10-24T12:43:30.0130205+02:00</PlannedToTakePlaceOn>
+      <Started>2023-10-24T12:43:30.0130208+02:00</Started>
+      <Finished>2023-10-24T12:43:30.013021+02:00</Finished>
+      <Cancelled>2023-10-24T12:43:30.0130212+02:00</Cancelled>
     </Container_ServiceProgress_DateInfo>
     <ContainerWorkAuthorizationInfo>
       <ContainerWorkLessorAuthorizationInfo>
         <LessorID>DummyString</LessorID>
         <Reference>DummyString</Reference>
         <Container_ServiceProgress_AuthorizationInfo>
-          <Authorized>2023-10-20T13:39:27.1693188+02:00</Authorized>
+          <Authorized>2023-10-24T12:43:30.0130227+02:00</Authorized>
           <AuthorizedBy>DummyString</AuthorizedBy>
           <AuthorizationReference>DummyString</AuthorizationReference>
           <AuthorizationAmount>
             <LocalizationInfo>
               <CurrencyISO>DummyString</CurrencyISO>
               <ExchangeRate>1</ExchangeRate>
-              <ExchangeRateDate>2023-10-20T13:39:27.1693215+02:00</ExchangeRateDate>
+              <ExchangeRateDate>2023-10-24T12:43:30.013025+02:00</ExchangeRateDate>
               <RoundingPerLine>true</RoundingPerLine>
             </LocalizationInfo>
             <AuthorizationAmount>1</AuthorizationAmount>
           </AuthorizationAmount>
         </Container_ServiceProgress_AuthorizationInfo>
-        <AuthorizationAcceptedBySupplier>2023-10-20T13:39:27.1693225+02:00</AuthorizationAcceptedBySupplier>
+        <AuthorizationAcceptedBySupplier>2023-10-24T12:43:30.013026+02:00</AuthorizationAcceptedBySupplier>
       </ContainerWorkLessorAuthorizationInfo>
       <ContainerWorkLesseeAuthorizationInfo>
         <LesseeID>DummyString</LesseeID>
         <Reference>DummyString</Reference>
         <Container_ServiceProgress_AuthorizationInfo>
-          <Authorized>2023-10-20T13:39:27.1693238+02:00</Authorized>
+          <Authorized>2023-10-24T12:43:30.0130271+02:00</Authorized>
           <AuthorizedBy>DummyString</AuthorizedBy>
           <AuthorizationReference>DummyString</AuthorizationReference>
           <AuthorizationAmount>
             <LocalizationInfo>
               <CurrencyISO>DummyString</CurrencyISO>
               <ExchangeRate>1</ExchangeRate>
-              <ExchangeRateDate>2023-10-20T13:39:27.1693251+02:00</ExchangeRateDate>
+              <ExchangeRateDate>2023-10-24T12:43:30.0130283+02:00</ExchangeRateDate>
               <RoundingPerLine>true</RoundingPerLine>
             </LocalizationInfo>
             <AuthorizationAmount>1</AuthorizationAmount>
           </AuthorizationAmount>
         </Container_ServiceProgress_AuthorizationInfo>
-        <AuthorizationAcceptedBySupplier>2023-10-20T13:39:27.1693259+02:00</AuthorizationAcceptedBySupplier>
+        <AuthorizationAcceptedBySupplier>2023-10-24T12:43:30.0130291+02:00</AuthorizationAcceptedBySupplier>
       </ContainerWorkLesseeAuthorizationInfo>
     </ContainerWorkAuthorizationInfo>
   </Container_Work_EstimateStatusInfo>
   <Container_Work_WorkStatusInfo>
     <Container_ServiceProgress_DateInfo>
-      <Planned>2023-10-20T13:39:27.169331+02:00</Planned>
+      <Planned>2023-10-24T12:43:30.013033+02:00</Planned>
       <PlannedBy>DummyString</PlannedBy>
-      <PlannedToTakePlaceOn>2023-10-20T13:39:27.1693316+02:00</PlannedToTakePlaceOn>
-      <Started>2023-10-20T13:39:27.169332+02:00</Started>
-      <Finished>2023-10-20T13:39:27.1693323+02:00</Finished>
-      <Cancelled>2023-10-20T13:39:27.1693327+02:00</Cancelled>
+      <PlannedToTakePlaceOn>2023-10-24T12:43:30.0130334+02:00</PlannedToTakePlaceOn>
+      <Started>2023-10-24T12:43:30.0130337+02:00</Started>
+      <Finished>2023-10-24T12:43:30.0130339+02:00</Finished>
+      <Cancelled>2023-10-24T12:43:30.0130341+02:00</Cancelled>
     </Container_ServiceProgress_DateInfo>
   </Container_Work_WorkStatusInfo>
   <Remarks>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-10-20T13:39:27.1693349+02:00</RemarkDate>
+      <RemarkDate>2023-10-24T12:43:30.0130361+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
+      <Tags>
+        <Tag>DummyString</Tag>
+        <Tag>DummyString</Tag>
+      </Tags>
     </Remark>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-10-20T13:39:27.1693362+02:00</RemarkDate>
+      <RemarkDate>2023-10-24T12:43:30.0130376+02:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
+      <Tags>
+        <Tag>DummyString</Tag>
+        <Tag>DummyString</Tag>
+      </Tags>
     </Remark>
   </Remarks>
   <Attachments>
