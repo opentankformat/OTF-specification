@@ -4,7 +4,7 @@
     <OTFVersion>OTF23</OTFVersion>
     <OTFMessage>Message_TankContainer_InspectionReport</OTFMessage>
     <MessageID>DummyString</MessageID>
-    <SentDate>2023-10-20T13:54:21.2519491+02:00</SentDate>
+    <SentDate>2023-10-24T11:50:00.5372522+02:00</SentDate>
     <ConversationID>DummyString</ConversationID>
     <MessageType>New</MessageType>
     <SenderInfo>
@@ -46,7 +46,7 @@
     <SupplierInspectionRevisionRemarks>
       <Remark>
         <ID>DummyString</ID>
-        <Date>2023-10-20T13:54:21.2519639+02:00</Date>
+        <Date>2023-10-24T11:50:00.5372661+02:00</Date>
         <AuthorInfo>
           <ContactInfo>
             <Name>DummyString</Name>
@@ -55,10 +55,14 @@
           </ContactInfo>
         </AuthorInfo>
         <Remark>DummyString</Remark>
+        <Tags>
+          <Tag>DummyString</Tag>
+          <Tag>DummyString</Tag>
+        </Tags>
       </Remark>
       <Remark>
         <ID>DummyString</ID>
-        <Date>2023-10-20T13:54:21.2519667+02:00</Date>
+        <Date>2023-10-24T11:50:00.5372683+02:00</Date>
         <AuthorInfo>
           <ContactInfo>
             <Name>DummyString</Name>
@@ -67,6 +71,10 @@
           </ContactInfo>
         </AuthorInfo>
         <Remark>DummyString</Remark>
+        <Tags>
+          <Tag>DummyString</Tag>
+          <Tag>DummyString</Tag>
+        </Tags>
       </Remark>
     </SupplierInspectionRevisionRemarks>
     <SupplierTermsAndConditions>DummyString</SupplierTermsAndConditions>
@@ -92,7 +100,7 @@
       </FacilityInfo>
     </InspectionLocationInfo>
     <InspectionCenterID>DummyString</InspectionCenterID>
-    <InspectionDate>2023-10-20T13:54:21.2519778+02:00</InspectionDate>
+    <InspectionDate>2023-10-24T11:50:00.5372788+02:00</InspectionDate>
     <InspectorInfo>
       <ContactInfo>
         <Name>DummyString</Name>
@@ -112,7 +120,7 @@
     <TankContainerMarkings>
       <Remark>
         <ID>DummyString</ID>
-        <Date>2023-10-20T13:54:21.252024+02:00</Date>
+        <Date>2023-10-24T11:50:00.5373227+02:00</Date>
         <AuthorInfo>
           <ContactInfo>
             <Name>DummyString</Name>
@@ -121,10 +129,14 @@
           </ContactInfo>
         </AuthorInfo>
         <Remark>DummyString</Remark>
+        <Tags>
+          <Tag>DummyString</Tag>
+          <Tag>DummyString</Tag>
+        </Tags>
       </Remark>
       <Remark>
         <ID>DummyString</ID>
-        <Date>2023-10-20T13:54:21.2520263+02:00</Date>
+        <Date>2023-10-24T11:50:00.5373249+02:00</Date>
         <AuthorInfo>
           <ContactInfo>
             <Name>DummyString</Name>
@@ -133,6 +145,10 @@
           </ContactInfo>
         </AuthorInfo>
         <Remark>DummyString</Remark>
+        <Tags>
+          <Tag>DummyString</Tag>
+          <Tag>DummyString</Tag>
+        </Tags>
       </Remark>
     </TankContainerMarkings>
     <TankContainerRegulationsApplicableAccordingToMarkingsInfo>
@@ -192,7 +208,7 @@
           <ManufacturedInCountry>DummyString</ManufacturedInCountry>
           <ManufacturerSerialNumber>DummyString</ManufacturerSerialNumber>
         </ManufacturerInfo>
-        <BuildingYearMonth>2023-10-20T13:54:21.2520394+02:00</BuildingYearMonth>
+        <BuildingYearMonth>2023-10-24T11:50:00.5373387+02:00</BuildingYearMonth>
         <ISO6346SizeTypeCode>Empty</ISO6346SizeTypeCode>
         <ISO6346SizeTypeCodeDescription>DummyString</ISO6346SizeTypeCodeDescription>
         <DimensionsXMillimeter>1</DimensionsXMillimeter>
@@ -261,12 +277,12 @@
         <Material>DummyString</Material>
       </TankContainerLiningInfo>
       <InspectionDates>
-        <InitialInspectionDate>2023-10-20T13:54:21.2520561+02:00</InitialInspectionDate>
-        <LastInspectionDate>2023-10-20T13:54:21.2520565+02:00</LastInspectionDate>
+        <InitialInspectionDate>2023-10-24T11:50:00.5373543+02:00</InitialInspectionDate>
+        <LastInspectionDate>2023-10-24T11:50:00.5373546+02:00</LastInspectionDate>
         <LastInspectionScope>Empty</LastInspectionScope>
         <LastInspectionScopeDescription>DummyString</LastInspectionScopeDescription>
-        <NextInspectionDate>2023-10-20T13:54:21.2520573+02:00</NextInspectionDate>
-        <CSCValidityDate>2023-10-20T13:54:21.2520577+02:00</CSCValidityDate>
+        <NextInspectionDate>2023-10-24T11:50:00.5373552+02:00</NextInspectionDate>
+        <CSCValidityDate>2023-10-24T11:50:00.5373554+02:00</CSCValidityDate>
         <ACEPDescription>DummyString</ACEPDescription>
       </InspectionDates>
     </TankContainerInfo>
@@ -342,7 +358,7 @@
     <Remarks>
       <Remark>
         <ID>DummyString</ID>
-        <Date>2023-10-20T13:54:21.2520823+02:00</Date>
+        <Date>2023-10-24T11:50:00.5373779+02:00</Date>
         <AuthorInfo>
           <ContactInfo>
             <Name>DummyString</Name>
@@ -351,10 +367,14 @@
           </ContactInfo>
         </AuthorInfo>
         <Remark>DummyString</Remark>
+        <Tags>
+          <Tag>DummyString</Tag>
+          <Tag>DummyString</Tag>
+        </Tags>
       </Remark>
       <Remark>
         <ID>DummyString</ID>
-        <Date>2023-10-20T13:54:21.2520843+02:00</Date>
+        <Date>2023-10-24T11:50:00.5373797+02:00</Date>
         <AuthorInfo>
           <ContactInfo>
             <Name>DummyString</Name>
@@ -363,11 +383,15 @@
           </ContactInfo>
         </AuthorInfo>
         <Remark>DummyString</Remark>
+        <Tags>
+          <Tag>DummyString</Tag>
+          <Tag>DummyString</Tag>
+        </Tags>
       </Remark>
     </Remarks>
   </InspectionResultsInfo>
   <InspectionVerification>
-    <VerificationDate>2023-10-20T13:54:21.2520875+02:00</VerificationDate>
+    <VerificationDate>2023-10-24T11:50:00.537384+02:00</VerificationDate>
     <VerificationPlace>DummyString</VerificationPlace>
     <VerificatorInfo>
       <ContactInfo>
@@ -380,7 +404,7 @@
   <Remarks>
     <Remark>
       <ID>DummyString</ID>
-      <Date>2023-10-20T13:54:21.252091+02:00</Date>
+      <Date>2023-10-24T11:50:00.5373872+02:00</Date>
       <AuthorInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -389,10 +413,14 @@
         </ContactInfo>
       </AuthorInfo>
       <Remark>DummyString</Remark>
+      <Tags>
+        <Tag>DummyString</Tag>
+        <Tag>DummyString</Tag>
+      </Tags>
     </Remark>
     <Remark>
       <ID>DummyString</ID>
-      <Date>2023-10-20T13:54:21.2520928+02:00</Date>
+      <Date>2023-10-24T11:50:00.5373889+02:00</Date>
       <AuthorInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -401,6 +429,10 @@
         </ContactInfo>
       </AuthorInfo>
       <Remark>DummyString</Remark>
+      <Tags>
+        <Tag>DummyString</Tag>
+        <Tag>DummyString</Tag>
+      </Tags>
     </Remark>
   </Remarks>
   <Attachments>

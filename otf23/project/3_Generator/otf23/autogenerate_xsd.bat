@@ -32,6 +32,7 @@ call _gen.bat Message_Container_Work_Estimate, %CurrDirName%.dll, %targetXSD_sep
 call _gen.bat Message_TankContainer_InspectionReport, %CurrDirName%.dll, %targetXSD_separate%
 call _gen.bat Message_TankContainer_PreNotification, %CurrDirName%.dll, %targetXSD_separate%
 call _gen.bat Message_TankContainer_PreNotification_StatusUpdate, %CurrDirName%.dll, %targetXSD_separate%
+call _gen.bat Message_TankContainer_StatusUpdate_HeelDisposal, %CurrDirName%.dll, %targetXSD_separate%
 call _gen.bat Message_TankContainer_StatusUpdate_Cleaning, %CurrDirName%.dll, %targetXSD_separate%
 call _gen.bat Message_TankContainer_StatusUpdate_Heating, %CurrDirName%.dll, %targetXSD_separate%
 call _gen.bat Message_TankContainer_StatusUpdate_Inspection, %CurrDirName%.dll, %targetXSD_separate%

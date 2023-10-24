@@ -50,6 +50,12 @@
   </TankContainerInfo>
   <Container_ServiceProgressInfo>
     <SupplierReference>D230101.0001.A1</SupplierReference>
-    <Container_ServiceProgress_DateInfo />
+    <Container_ServiceProgress_DateInfo>
+      <Planned>0001-01-01T00:00:00</Planned>
+      <PlannedToTakePlaceOn>0001-01-01T00:00:00</PlannedToTakePlaceOn>
+      <Started>2000-01-04T14:21:00+01:00</Started>
+      <Finished>0001-01-01T00:00:00</Finished>
+      <Cancelled>0001-01-01T00:00:00</Cancelled>
+    </Container_ServiceProgress_DateInfo>
   </Container_ServiceProgressInfo>
 </Message_TankContainer_StatusUpdate_Inspection>

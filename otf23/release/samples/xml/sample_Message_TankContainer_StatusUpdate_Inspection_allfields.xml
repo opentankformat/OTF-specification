@@ -4,7 +4,7 @@
     <OTFVersion>OTF23</OTFVersion>
     <OTFMessage>Message_TankContainer_StatusUpdate_Inspection</OTFMessage>
     <MessageID>DummyString</MessageID>
-    <SentDate>2023-10-20T13:54:20.0486626+02:00</SentDate>
+    <SentDate>2023-10-24T11:49:59.285524+02:00</SentDate>
     <ConversationID>DummyString</ConversationID>
     <MessageType>New</MessageType>
     <SenderInfo>
@@ -124,7 +124,7 @@
         <ManufacturedInCountry>DummyString</ManufacturedInCountry>
         <ManufacturerSerialNumber>DummyString</ManufacturerSerialNumber>
       </ManufacturerInfo>
-      <BuildingYearMonth>2023-10-20T13:54:20.048681+02:00</BuildingYearMonth>
+      <BuildingYearMonth>2023-10-24T11:49:59.2855457+02:00</BuildingYearMonth>
       <ISO6346SizeTypeCode>Empty</ISO6346SizeTypeCode>
       <ISO6346SizeTypeCodeDescription>DummyString</ISO6346SizeTypeCodeDescription>
       <DimensionsXMillimeter>1</DimensionsXMillimeter>
@@ -193,24 +193,24 @@
       <Material>DummyString</Material>
     </TankContainerLiningInfo>
     <InspectionDates>
-      <InitialInspectionDate>2023-10-20T13:54:20.0486956+02:00</InitialInspectionDate>
-      <LastInspectionDate>2023-10-20T13:54:20.048696+02:00</LastInspectionDate>
+      <InitialInspectionDate>2023-10-24T11:49:59.285564+02:00</InitialInspectionDate>
+      <LastInspectionDate>2023-10-24T11:49:59.2855642+02:00</LastInspectionDate>
       <LastInspectionScope>Empty</LastInspectionScope>
       <LastInspectionScopeDescription>DummyString</LastInspectionScopeDescription>
-      <NextInspectionDate>2023-10-20T13:54:20.0486967+02:00</NextInspectionDate>
-      <CSCValidityDate>2023-10-20T13:54:20.048697+02:00</CSCValidityDate>
+      <NextInspectionDate>2023-10-24T11:49:59.2855648+02:00</NextInspectionDate>
+      <CSCValidityDate>2023-10-24T11:49:59.2855651+02:00</CSCValidityDate>
       <ACEPDescription>DummyString</ACEPDescription>
     </InspectionDates>
   </TankContainerInfo>
   <Container_ServiceProgressInfo>
     <SupplierReference>DummyString</SupplierReference>
-    <ClientPurchaseOrderReference>DummyString</ClientPurchaseOrderReference>
+    <ClientReference>DummyString</ClientReference>
     <Container_ServiceProgress_AuthorizationInfo>
       <Container_ServiceProgress_AuthorizationStatus>
         <Status>UNKNOWN</Status>
         <Remark>DummyString</Remark>
       </Container_ServiceProgress_AuthorizationStatus>
-      <Authorized>2023-10-20T13:54:20.0486993+02:00</Authorized>
+      <Authorized>2023-10-24T11:49:59.2855674+02:00</Authorized>
       <AuthorizedByInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -223,14 +223,14 @@
         <LocalizationInfo>
           <CurrencyISO>DummyString</CurrencyISO>
           <ExchangeRate>1</ExchangeRate>
-          <ExchangeRateDate>2023-10-20T13:54:20.0487014+02:00</ExchangeRateDate>
+          <ExchangeRateDate>2023-10-24T11:49:59.2855696+02:00</ExchangeRateDate>
           <RoundingPerLine>true</RoundingPerLine>
         </LocalizationInfo>
         <AuthorizationAmount>1</AuthorizationAmount>
       </AuthorizationAmount>
     </Container_ServiceProgress_AuthorizationInfo>
     <Container_ServiceProgress_DateInfo>
-      <Planned>2023-10-20T13:54:20.0487025+02:00</Planned>
+      <Planned>2023-10-24T11:49:59.2855708+02:00</Planned>
       <PlannedByInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -238,8 +238,8 @@
           <Email>DummyString</Email>
         </ContactInfo>
       </PlannedByInfo>
-      <PlannedToTakePlaceOn>2023-10-20T13:54:20.0487037+02:00</PlannedToTakePlaceOn>
-      <Started>2023-10-20T13:54:20.0487041+02:00</Started>
+      <PlannedToTakePlaceOn>2023-10-24T11:49:59.2855719+02:00</PlannedToTakePlaceOn>
+      <Started>2023-10-24T11:49:59.2855721+02:00</Started>
       <StartedByInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -247,7 +247,7 @@
           <Email>DummyString</Email>
         </ContactInfo>
       </StartedByInfo>
-      <Finished>2023-10-20T13:54:20.0487053+02:00</Finished>
+      <Finished>2023-10-24T11:49:59.2855732+02:00</Finished>
       <FinishedByInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -255,7 +255,7 @@
           <Email>DummyString</Email>
         </ContactInfo>
       </FinishedByInfo>
-      <Cancelled>2023-10-20T13:54:20.0487065+02:00</Cancelled>
+      <Cancelled>2023-10-24T11:49:59.2855743+02:00</Cancelled>
       <CancelledByInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -268,7 +268,7 @@
   <Remarks>
     <Remark>
       <ID>DummyString</ID>
-      <Date>2023-10-20T13:54:20.0487092+02:00</Date>
+      <Date>2023-10-24T11:49:59.2855769+02:00</Date>
       <AuthorInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -277,10 +277,14 @@
         </ContactInfo>
       </AuthorInfo>
       <Remark>DummyString</Remark>
+      <Tags>
+        <Tag>DummyString</Tag>
+        <Tag>DummyString</Tag>
+      </Tags>
     </Remark>
     <Remark>
       <ID>DummyString</ID>
-      <Date>2023-10-20T13:54:20.0487108+02:00</Date>
+      <Date>2023-10-24T11:49:59.2855788+02:00</Date>
       <AuthorInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -289,6 +293,10 @@
         </ContactInfo>
       </AuthorInfo>
       <Remark>DummyString</Remark>
+      <Tags>
+        <Tag>DummyString</Tag>
+        <Tag>DummyString</Tag>
+      </Tags>
     </Remark>
   </Remarks>
   <Attachments>

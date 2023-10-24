@@ -7,7 +7,7 @@
         <xs:complexType>
           <xs:sequence>
             <xs:element name="ID" type="xs:string" minOccurs="0" />
-            <xs:element name="Date" type="xs:dateTime" minOccurs="0" />
+            <xs:element name="Date" type="xs:dateTime" />
 			<xs:element name="AuthorInfo" minOccurs="0">
 				<xs:complexType>
 					<xs:sequence>
@@ -15,7 +15,14 @@
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>	
-            <xs:element name="Remark" type="xs:string" minOccurs="0" />		
+            <xs:element name="Remark" type="xs:string" minOccurs="0" />	
+			<xs:element name="Tags" minOccurs="0">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Tag" type="xs:string" maxOccurs="unbounded" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>			
           </xs:sequence> 
         </xs:complexType>
       </xs:element>

@@ -4,7 +4,7 @@
   <xs:element name="Container_ServiceProgress_DateInfo">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="Planned" type="xs:dateTime" minOccurs="0" />
+        <xs:element name="Planned" type="xs:dateTime"  />
 		<xs:element name="PlannedByInfo" minOccurs="0">
 			<xs:complexType>
 				<xs:sequence>
@@ -12,8 +12,8 @@
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>			
-        <xs:element name="PlannedToTakePlaceOn" type="xs:dateTime" minOccurs="0" />
-        <xs:element name="Started" type="xs:dateTime" minOccurs="0" />
+        <xs:element name="PlannedToTakePlaceOn" type="xs:dateTime" />
+        <xs:element name="Started" type="xs:dateTime" />
 		<xs:element name="StartedByInfo" minOccurs="0">
 			<xs:complexType>
 				<xs:sequence>
@@ -21,7 +21,7 @@
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>			
-        <xs:element name="Finished" type="xs:dateTime" minOccurs="0" />
+        <xs:element name="Finished" type="xs:dateTime" />
 		<xs:element name="FinishedByInfo" minOccurs="0">
 			<xs:complexType>
 				<xs:sequence>
@@ -29,7 +29,7 @@
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>			
-        <xs:element name="Cancelled" type="xs:dateTime" minOccurs="0" />
+        <xs:element name="Cancelled" type="xs:dateTime" />
 		<xs:element name="CancelledByInfo" minOccurs="0">
 			<xs:complexType>
 				<xs:sequence>

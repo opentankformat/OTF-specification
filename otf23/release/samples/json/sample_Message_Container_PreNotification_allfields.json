@@ -3,7 +3,7 @@
     "OTFVersion": "OTF23",
     "OTFMessage": "Message_Container_PreNotification",
     "MessageID": "DummyString",
-    "SentDate": "2023-10-20T13:54:17.6471388+02:00",
+    "SentDate": "2023-10-24T11:49:53.2880722+02:00",
     "ConversationID": "DummyString",
     "MessageType": "New",
     "SenderInfo": {
@@ -87,7 +87,7 @@
     }
   },
   "ArrivalInfo": {
-    "ETA": "2023-10-20T13:54:17.6473058+02:00",
+    "ETA": "2023-10-24T11:49:53.2882532+02:00",
     "RedeliveryReference": "DummyString",
     "ContainerOriginInfo": {
       "FacilityInfo": {
@@ -124,7 +124,7 @@
         "Remarks": [
           {
             "ID": "DummyString",
-            "Date": "2023-10-20T13:54:17.6473586+02:00",
+            "Date": "2023-10-24T11:49:53.2883054+02:00",
             "AuthorInfo": {
               "ContactInfo": {
                 "Name": "DummyString",
@@ -132,11 +132,15 @@
                 "Email": "DummyString"
               }
             },
-            "Remark": "DummyString"
+            "Remark": "DummyString",
+            "Tags": [
+              "DummyString",
+              "DummyString"
+            ]
           },
           {
             "ID": "DummyString",
-            "Date": "2023-10-20T13:54:17.6473712+02:00",
+            "Date": "2023-10-24T11:49:53.2883198+02:00",
             "AuthorInfo": {
               "ContactInfo": {
                 "Name": "DummyString",
@@ -144,7 +148,11 @@
                 "Email": "DummyString"
               }
             },
-            "Remark": "DummyString"
+            "Remark": "DummyString",
+            "Tags": [
+              "DummyString",
+              "DummyString"
+            ]
           }
         ]
       }
@@ -157,7 +165,7 @@
         "Remarks": [
           {
             "ID": "DummyString",
-            "Date": "2023-10-20T13:54:17.6474059+02:00",
+            "Date": "2023-10-24T11:49:53.2883568+02:00",
             "AuthorInfo": {
               "ContactInfo": {
                 "Name": "DummyString",
@@ -165,11 +173,15 @@
                 "Email": "DummyString"
               }
             },
-            "Remark": "DummyString"
+            "Remark": "DummyString",
+            "Tags": [
+              "DummyString",
+              "DummyString"
+            ]
           },
           {
             "ID": "DummyString",
-            "Date": "2023-10-20T13:54:17.6474081+02:00",
+            "Date": "2023-10-24T11:49:53.2883592+02:00",
             "AuthorInfo": {
               "ContactInfo": {
                 "Name": "DummyString",
@@ -177,7 +189,11 @@
                 "Email": "DummyString"
               }
             },
-            "Remark": "DummyString"
+            "Remark": "DummyString",
+            "Tags": [
+              "DummyString",
+              "DummyString"
+            ]
           }
         ]
       },
@@ -199,7 +215,7 @@
           "Remarks": [
             {
               "ID": "DummyString",
-              "Date": "2023-10-20T13:54:17.6474158+02:00",
+              "Date": "2023-10-24T11:49:53.2883672+02:00",
               "AuthorInfo": {
                 "ContactInfo": {
                   "Name": "DummyString",
@@ -207,11 +223,15 @@
                   "Email": "DummyString"
                 }
               },
-              "Remark": "DummyString"
+              "Remark": "DummyString",
+              "Tags": [
+                "DummyString",
+                "DummyString"
+              ]
             },
             {
               "ID": "DummyString",
-              "Date": "2023-10-20T13:54:17.6474176+02:00",
+              "Date": "2023-10-24T11:49:53.2883713+02:00",
               "AuthorInfo": {
                 "ContactInfo": {
                   "Name": "DummyString",
@@ -219,7 +239,11 @@
                   "Email": "DummyString"
                 }
               },
-              "Remark": "DummyString"
+              "Remark": "DummyString",
+              "Tags": [
+                "DummyString",
+                "DummyString"
+              ]
             }
           ]
         }
@@ -239,7 +263,7 @@
           "Remarks": [
             {
               "ID": "DummyString",
-              "Date": "2023-10-20T13:54:17.6474228+02:00",
+              "Date": "2023-10-24T11:49:53.2883781+02:00",
               "AuthorInfo": {
                 "ContactInfo": {
                   "Name": "DummyString",
@@ -247,11 +271,15 @@
                   "Email": "DummyString"
                 }
               },
-              "Remark": "DummyString"
+              "Remark": "DummyString",
+              "Tags": [
+                "DummyString",
+                "DummyString"
+              ]
             },
             {
               "ID": "DummyString",
-              "Date": "2023-10-20T13:54:17.6474246+02:00",
+              "Date": "2023-10-24T11:49:53.2883799+02:00",
               "AuthorInfo": {
                 "ContactInfo": {
                   "Name": "DummyString",
@@ -259,7 +287,11 @@
                   "Email": "DummyString"
                 }
               },
-              "Remark": "DummyString"
+              "Remark": "DummyString",
+              "Tags": [
+                "DummyString",
+                "DummyString"
+              ]
             }
           ]
         }
@@ -268,7 +300,7 @@
     }
   },
   "DepartureInfo": {
-    "ETD": "2023-10-20T13:54:17.6474314+02:00",
+    "ETD": "2023-10-24T11:49:53.2883839+02:00",
     "ReleaseReference": "DummyString",
     "ContainerDestinationInfo": {
       "FacilityInfo": {
@@ -299,7 +331,7 @@
   "Remarks": [
     {
       "ID": "DummyString",
-      "Date": "2023-10-20T13:54:17.6474378+02:00",
+      "Date": "2023-10-24T11:49:53.2883902+02:00",
       "AuthorInfo": {
         "ContactInfo": {
           "Name": "DummyString",
@@ -307,11 +339,15 @@
           "Email": "DummyString"
         }
       },
-      "Remark": "DummyString"
+      "Remark": "DummyString",
+      "Tags": [
+        "DummyString",
+        "DummyString"
+      ]
     },
     {
       "ID": "DummyString",
-      "Date": "2023-10-20T13:54:17.6474396+02:00",
+      "Date": "2023-10-24T11:49:53.2883921+02:00",
       "AuthorInfo": {
         "ContactInfo": {
           "Name": "DummyString",
@@ -319,7 +355,11 @@
           "Email": "DummyString"
         }
       },
-      "Remark": "DummyString"
+      "Remark": "DummyString",
+      "Tags": [
+        "DummyString",
+        "DummyString"
+      ]
     }
   ],
   "Attachments": [

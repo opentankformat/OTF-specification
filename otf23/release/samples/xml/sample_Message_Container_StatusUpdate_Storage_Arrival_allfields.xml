@@ -4,7 +4,7 @@
     <OTFVersion>OTF23</OTFVersion>
     <OTFMessage>Message_Container_StatusUpdate_Storage_Arrival</OTFMessage>
     <MessageID>DummyString</MessageID>
-    <SentDate>2023-10-20T13:54:18.7663829+02:00</SentDate>
+    <SentDate>2023-10-24T11:49:54.4669334+02:00</SentDate>
     <ConversationID>DummyString</ConversationID>
     <MessageType>New</MessageType>
     <SenderInfo>
@@ -89,7 +89,7 @@
   <Container_StatusUpdate_Storage_Arrival>
     <ClientPurchaseOrderReference>DummyString</ClientPurchaseOrderReference>
     <ClientDeliveryReference>DummyString</ClientDeliveryReference>
-    <ContainerDeliveryDate>2023-10-20T13:54:18.766403+02:00</ContainerDeliveryDate>
+    <ContainerDeliveryDate>2023-10-24T11:49:54.4669552+02:00</ContainerDeliveryDate>
     <Container_HaulierInfo>
       <BusinessUnitInfo>
         <Name>DummyString</Name>
@@ -112,7 +112,7 @@
   <Remarks>
     <Remark>
       <ID>DummyString</ID>
-      <Date>2023-10-20T13:54:18.76641+02:00</Date>
+      <Date>2023-10-24T11:49:54.466963+02:00</Date>
       <AuthorInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -121,10 +121,14 @@
         </ContactInfo>
       </AuthorInfo>
       <Remark>DummyString</Remark>
+      <Tags>
+        <Tag>DummyString</Tag>
+        <Tag>DummyString</Tag>
+      </Tags>
     </Remark>
     <Remark>
       <ID>DummyString</ID>
-      <Date>2023-10-20T13:54:18.7664127+02:00</Date>
+      <Date>2023-10-24T11:49:54.4669659+02:00</Date>
       <AuthorInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -133,6 +137,10 @@
         </ContactInfo>
       </AuthorInfo>
       <Remark>DummyString</Remark>
+      <Tags>
+        <Tag>DummyString</Tag>
+        <Tag>DummyString</Tag>
+      </Tags>
     </Remark>
   </Remarks>
   <Attachments>

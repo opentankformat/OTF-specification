@@ -56,7 +56,13 @@
   <Container_Work_EstimateStatusInfo>
     <Version>V1</Version>
     <SupplierInfo>
-      <Container_ServiceProgress_DateInfo />
+      <Container_ServiceProgress_DateInfo>
+        <Planned>0001-01-01T00:00:00</Planned>
+        <PlannedToTakePlaceOn>0001-01-01T00:00:00</PlannedToTakePlaceOn>
+        <Started>0001-01-01T00:00:00</Started>
+        <Finished>2000-01-02T16:23:00+01:00</Finished>
+        <Cancelled>0001-01-01T00:00:00</Cancelled>
+      </Container_ServiceProgress_DateInfo>
       <EstimatorInfo>
         <ContactInfo>
           <Name>Eddy Estimator</Name>
@@ -72,9 +78,12 @@
         <Authorized>2000-01-02T17:23:00+01:00</Authorized>
         <AuthorizationReference>REP5559</AuthorizationReference>
       </Container_ServiceProgress_AuthorizationInfo>
+      <AuthorizationAcceptedBySupplier>0001-01-01T00:00:00</AuthorizationAcceptedBySupplier>
     </LessorInfo>
   </Container_Work_EstimateStatusInfo>
-  <ContainerStorageArrivalInfo />
+  <ContainerStorageArrivalInfo>
+    <ContainerDeliveryDate>2000-01-01T11:04:00+01:00</ContainerDeliveryDate>
+  </ContainerStorageArrivalInfo>
   <LaborRate>35.5</LaborRate>
   <EstimateLines>
     <Container_Work_EstimateLine>
@@ -169,6 +178,7 @@
   <Remarks>
     <Remark>
       <ID>121fdc2d-f169-4e39-b951-61a18a093ed3</ID>
+      <Date>2000-01-02T16:23:00+01:00</Date>
       <AuthorInfo>
         <ContactInfo>
           <Name>Eddy Estimator</Name>

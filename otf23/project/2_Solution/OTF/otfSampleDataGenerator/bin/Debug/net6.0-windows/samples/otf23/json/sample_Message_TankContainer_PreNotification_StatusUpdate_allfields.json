@@ -3,7 +3,7 @@
     "OTFVersion": "OTF23",
     "OTFMessage": "Message_TankContainer_PreNotification_StatusUpdate",
     "MessageID": "DummyString",
-    "SentDate": "2023-10-20T13:54:18.5747009+02:00",
+    "SentDate": "2023-10-24T11:49:54.2936944+02:00",
     "ConversationID": "DummyString",
     "MessageType": "New",
     "SenderInfo": {
@@ -123,7 +123,7 @@
         "ManufacturedInCountry": "DummyString",
         "ManufacturerSerialNumber": "DummyString"
       },
-      "BuildingYearMonth": "2023-10-20T13:54:18.5747269+02:00",
+      "BuildingYearMonth": "2023-10-24T11:49:54.2937218+02:00",
       "ISO6346SizeTypeCode": "Empty",
       "ISO6346SizeTypeCodeDescription": "DummyString",
       "DimensionsXMillimeter": 1,
@@ -192,12 +192,12 @@
       "Material": "DummyString"
     },
     "InspectionDates": {
-      "InitialInspectionDate": "2023-10-20T13:54:18.574747+02:00",
-      "LastInspectionDate": "2023-10-20T13:54:18.5747475+02:00",
+      "InitialInspectionDate": "2023-10-24T11:49:54.2937407+02:00",
+      "LastInspectionDate": "2023-10-24T11:49:54.293741+02:00",
       "LastInspectionScope": "Empty",
       "LastInspectionScopeDescription": "DummyString",
-      "NextInspectionDate": "2023-10-20T13:54:18.5747482+02:00",
-      "CSCValidityDate": "2023-10-20T13:54:18.5747486+02:00",
+      "NextInspectionDate": "2023-10-24T11:49:54.2937417+02:00",
+      "CSCValidityDate": "2023-10-24T11:49:54.293742+02:00",
       "ACEPDescription": "DummyString"
     }
   },

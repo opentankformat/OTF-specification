@@ -237,7 +237,8 @@
           "Email": null
         }
       },
-      "Remark": "This is a remark"
+      "Remark": "This is a remark",
+      "Tags": null
     }
   ],
   "Attachments": null

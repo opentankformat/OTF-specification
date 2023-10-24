@@ -79,7 +79,7 @@
   },
   "Container_ServiceProgressInfo": {
     "SupplierReference": "D230101.0001.C1",
-    "ClientPurchaseOrderReference": null,
+    "ClientReference": null,
     "Container_ServiceProgress_AuthorizationInfo": {
       "Container_ServiceProgress_AuthorizationStatus": null,
       "Authorized": "0001-01-01T00:00:00",

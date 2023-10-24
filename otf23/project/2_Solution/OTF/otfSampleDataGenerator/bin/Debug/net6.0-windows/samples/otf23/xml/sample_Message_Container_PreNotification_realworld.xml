@@ -44,6 +44,7 @@
     <ContainerType>20TC</ContainerType>
   </ContainerInfo>
   <ArrivalInfo>
+    <ETA>2000-01-01T11:00:00+01:00</ETA>
     <RedeliveryReference>REL5556</RedeliveryReference>
     <Container_HaulierInfo>
       <BusinessUnitInfo>
@@ -88,6 +89,7 @@
     </Container_ServiceRequest_Work_Repair>
   </ServicesRequestInfo>
   <DepartureInfo>
+    <ETD>0001-01-01T00:00:00</ETD>
     <ReleaseReference />
     <ContainerDestinationInfo>
       <FacilityInfo>
@@ -110,6 +112,7 @@
   <Remarks>
     <Remark>
       <ID>8ea3d430-06e8-4d42-a98f-1eb984f08ff2</ID>
+      <Date>2000-01-01T06:52:00+01:00</Date>
       <AuthorInfo>
         <ContactInfo>
           <Name>Oscar Operator</Name>

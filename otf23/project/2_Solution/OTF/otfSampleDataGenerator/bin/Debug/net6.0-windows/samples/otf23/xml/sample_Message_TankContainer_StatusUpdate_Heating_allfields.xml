@@ -4,7 +4,7 @@
     <OTFVersion>OTF23</OTFVersion>
     <OTFMessage>Message_TankContainer_StatusUpdate_Heating</OTFMessage>
     <MessageID>DummyString</MessageID>
-    <SentDate>2023-10-20T13:54:19.8623736+02:00</SentDate>
+    <SentDate>2023-10-24T11:49:59.0930801+02:00</SentDate>
     <ConversationID>DummyString</ConversationID>
     <MessageType>New</MessageType>
     <SenderInfo>
@@ -124,7 +124,7 @@
         <ManufacturedInCountry>DummyString</ManufacturedInCountry>
         <ManufacturerSerialNumber>DummyString</ManufacturerSerialNumber>
       </ManufacturerInfo>
-      <BuildingYearMonth>2023-10-20T13:54:19.8623933+02:00</BuildingYearMonth>
+      <BuildingYearMonth>2023-10-24T11:49:59.0931019+02:00</BuildingYearMonth>
       <ISO6346SizeTypeCode>Empty</ISO6346SizeTypeCode>
       <ISO6346SizeTypeCodeDescription>DummyString</ISO6346SizeTypeCodeDescription>
       <DimensionsXMillimeter>1</DimensionsXMillimeter>
@@ -193,24 +193,24 @@
       <Material>DummyString</Material>
     </TankContainerLiningInfo>
     <InspectionDates>
-      <InitialInspectionDate>2023-10-20T13:54:19.8624078+02:00</InitialInspectionDate>
-      <LastInspectionDate>2023-10-20T13:54:19.8624082+02:00</LastInspectionDate>
+      <InitialInspectionDate>2023-10-24T11:49:59.0931183+02:00</InitialInspectionDate>
+      <LastInspectionDate>2023-10-24T11:49:59.0931186+02:00</LastInspectionDate>
       <LastInspectionScope>Empty</LastInspectionScope>
       <LastInspectionScopeDescription>DummyString</LastInspectionScopeDescription>
-      <NextInspectionDate>2023-10-20T13:54:19.8624089+02:00</NextInspectionDate>
-      <CSCValidityDate>2023-10-20T13:54:19.8624093+02:00</CSCValidityDate>
+      <NextInspectionDate>2023-10-24T11:49:59.0931192+02:00</NextInspectionDate>
+      <CSCValidityDate>2023-10-24T11:49:59.0931194+02:00</CSCValidityDate>
       <ACEPDescription>DummyString</ACEPDescription>
     </InspectionDates>
   </TankContainerInfo>
   <Container_ServiceProgressInfo>
     <SupplierReference>DummyString</SupplierReference>
-    <ClientPurchaseOrderReference>DummyString</ClientPurchaseOrderReference>
+    <ClientReference>DummyString</ClientReference>
     <Container_ServiceProgress_AuthorizationInfo>
       <Container_ServiceProgress_AuthorizationStatus>
         <Status>UNKNOWN</Status>
         <Remark>DummyString</Remark>
       </Container_ServiceProgress_AuthorizationStatus>
-      <Authorized>2023-10-20T13:54:19.8624116+02:00</Authorized>
+      <Authorized>2023-10-24T11:49:59.093122+02:00</Authorized>
       <AuthorizedByInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -223,14 +223,14 @@
         <LocalizationInfo>
           <CurrencyISO>DummyString</CurrencyISO>
           <ExchangeRate>1</ExchangeRate>
-          <ExchangeRateDate>2023-10-20T13:54:19.8624136+02:00</ExchangeRateDate>
+          <ExchangeRateDate>2023-10-24T11:49:59.0931243+02:00</ExchangeRateDate>
           <RoundingPerLine>true</RoundingPerLine>
         </LocalizationInfo>
         <AuthorizationAmount>1</AuthorizationAmount>
       </AuthorizationAmount>
     </Container_ServiceProgress_AuthorizationInfo>
     <Container_ServiceProgress_DateInfo>
-      <Planned>2023-10-20T13:54:19.8624148+02:00</Planned>
+      <Planned>2023-10-24T11:49:59.0931254+02:00</Planned>
       <PlannedByInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -238,8 +238,8 @@
           <Email>DummyString</Email>
         </ContactInfo>
       </PlannedByInfo>
-      <PlannedToTakePlaceOn>2023-10-20T13:54:19.8624161+02:00</PlannedToTakePlaceOn>
-      <Started>2023-10-20T13:54:19.8624165+02:00</Started>
+      <PlannedToTakePlaceOn>2023-10-24T11:49:59.0931266+02:00</PlannedToTakePlaceOn>
+      <Started>2023-10-24T11:49:59.0931268+02:00</Started>
       <StartedByInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -247,7 +247,7 @@
           <Email>DummyString</Email>
         </ContactInfo>
       </StartedByInfo>
-      <Finished>2023-10-20T13:54:19.8624176+02:00</Finished>
+      <Finished>2023-10-24T11:49:59.0931279+02:00</Finished>
       <FinishedByInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -255,7 +255,7 @@
           <Email>DummyString</Email>
         </ContactInfo>
       </FinishedByInfo>
-      <Cancelled>2023-10-20T13:54:19.8624188+02:00</Cancelled>
+      <Cancelled>2023-10-24T11:49:59.0931291+02:00</Cancelled>
       <CancelledByInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -266,12 +266,12 @@
     </Container_ServiceProgress_DateInfo>
   </Container_ServiceProgressInfo>
   <TankContainerHeatingInfo>
-    <TemperatureReached>2023-10-20T13:54:19.862473+02:00</TemperatureReached>
+    <TemperatureReached>2023-10-24T11:49:59.093188+02:00</TemperatureReached>
   </TankContainerHeatingInfo>
   <Remarks>
     <Remark>
       <ID>DummyString</ID>
-      <Date>2023-10-20T13:54:19.8624761+02:00</Date>
+      <Date>2023-10-24T11:49:59.0931908+02:00</Date>
       <AuthorInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -280,10 +280,14 @@
         </ContactInfo>
       </AuthorInfo>
       <Remark>DummyString</Remark>
+      <Tags>
+        <Tag>DummyString</Tag>
+        <Tag>DummyString</Tag>
+      </Tags>
     </Remark>
     <Remark>
       <ID>DummyString</ID>
-      <Date>2023-10-20T13:54:19.8624781+02:00</Date>
+      <Date>2023-10-24T11:49:59.0931931+02:00</Date>
       <AuthorInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -292,6 +296,10 @@
         </ContactInfo>
       </AuthorInfo>
       <Remark>DummyString</Remark>
+      <Tags>
+        <Tag>DummyString</Tag>
+        <Tag>DummyString</Tag>
+      </Tags>
     </Remark>
   </Remarks>
   <Attachments>

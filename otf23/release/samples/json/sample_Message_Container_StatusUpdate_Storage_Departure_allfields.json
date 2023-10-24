@@ -3,7 +3,7 @@
     "OTFVersion": "OTF23",
     "OTFMessage": "Message_Container_StatusUpdate_Storage_Departure",
     "MessageID": "DummyString",
-    "SentDate": "2023-10-20T13:54:19.3790474+02:00",
+    "SentDate": "2023-10-24T11:49:55.062155+02:00",
     "ConversationID": "DummyString",
     "MessageType": "New",
     "SenderInfo": {
@@ -88,7 +88,7 @@
   "Container_StatusUpdate_Storage_Departure": {
     "ClientPurchaseOrderReference": "DummyString",
     "ClientReleaseReference": "DummyString",
-    "ContainerReleaseDate": "2023-10-20T13:54:19.3790664+02:00",
+    "ContainerReleaseDate": "2023-10-24T11:49:55.0621792+02:00",
     "Container_HaulierInfo": {
       "BusinessUnitInfo": {
         "Name": "DummyString",
@@ -111,7 +111,7 @@
   "Remarks": [
     {
       "ID": "DummyString",
-      "Date": "2023-10-20T13:54:19.3790713+02:00",
+      "Date": "2023-10-24T11:49:55.0621873+02:00",
       "AuthorInfo": {
         "ContactInfo": {
           "Name": "DummyString",
@@ -119,11 +119,15 @@
           "Email": "DummyString"
         }
       },
-      "Remark": "DummyString"
+      "Remark": "DummyString",
+      "Tags": [
+        "DummyString",
+        "DummyString"
+      ]
     },
     {
       "ID": "DummyString",
-      "Date": "2023-10-20T13:54:19.3790738+02:00",
+      "Date": "2023-10-24T11:49:55.0621901+02:00",
       "AuthorInfo": {
         "ContactInfo": {
           "Name": "DummyString",
@@ -131,7 +135,11 @@
           "Email": "DummyString"
         }
       },
-      "Remark": "DummyString"
+      "Remark": "DummyString",
+      "Tags": [
+        "DummyString",
+        "DummyString"
+      ]
     }
   ],
   "Attachments": [

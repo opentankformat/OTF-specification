@@ -3,7 +3,7 @@
     "OTFVersion": "OTF23",
     "OTFMessage": "Message_TankContainer_InspectionReport",
     "MessageID": "DummyString",
-    "SentDate": "2023-10-20T13:54:21.2519491+02:00",
+    "SentDate": "2023-10-24T11:50:00.5372522+02:00",
     "ConversationID": "DummyString",
     "MessageType": "New",
     "SenderInfo": {
@@ -45,7 +45,7 @@
     "SupplierInspectionRevisionRemarks": [
       {
         "ID": "DummyString",
-        "Date": "2023-10-20T13:54:21.2519639+02:00",
+        "Date": "2023-10-24T11:50:00.5372661+02:00",
         "AuthorInfo": {
           "ContactInfo": {
             "Name": "DummyString",
@@ -53,11 +53,15 @@
             "Email": "DummyString"
           }
         },
-        "Remark": "DummyString"
+        "Remark": "DummyString",
+        "Tags": [
+          "DummyString",
+          "DummyString"
+        ]
       },
       {
         "ID": "DummyString",
-        "Date": "2023-10-20T13:54:21.2519667+02:00",
+        "Date": "2023-10-24T11:50:00.5372683+02:00",
         "AuthorInfo": {
           "ContactInfo": {
             "Name": "DummyString",
@@ -65,7 +69,11 @@
             "Email": "DummyString"
           }
         },
-        "Remark": "DummyString"
+        "Remark": "DummyString",
+        "Tags": [
+          "DummyString",
+          "DummyString"
+        ]
       }
     ],
     "SupplierTermsAndConditions": "DummyString",
@@ -91,7 +99,7 @@
       }
     },
     "InspectionCenterID": "DummyString",
-    "InspectionDate": "2023-10-20T13:54:21.2519778+02:00",
+    "InspectionDate": "2023-10-24T11:50:00.5372788+02:00",
     "InspectorInfo": {
       "ContactInfo": {
         "Name": "DummyString",
@@ -111,7 +119,7 @@
     "TankContainerMarkings": [
       {
         "ID": "DummyString",
-        "Date": "2023-10-20T13:54:21.252024+02:00",
+        "Date": "2023-10-24T11:50:00.5373227+02:00",
         "AuthorInfo": {
           "ContactInfo": {
             "Name": "DummyString",
@@ -119,11 +127,15 @@
             "Email": "DummyString"
           }
         },
-        "Remark": "DummyString"
+        "Remark": "DummyString",
+        "Tags": [
+          "DummyString",
+          "DummyString"
+        ]
       },
       {
         "ID": "DummyString",
-        "Date": "2023-10-20T13:54:21.2520263+02:00",
+        "Date": "2023-10-24T11:50:00.5373249+02:00",
         "AuthorInfo": {
           "ContactInfo": {
             "Name": "DummyString",
@@ -131,7 +143,11 @@
             "Email": "DummyString"
           }
         },
-        "Remark": "DummyString"
+        "Remark": "DummyString",
+        "Tags": [
+          "DummyString",
+          "DummyString"
+        ]
       }
     ],
     "TankContainerRegulationsApplicableAccordingToMarkingsInfo": {
@@ -191,7 +207,7 @@
           "ManufacturedInCountry": "DummyString",
           "ManufacturerSerialNumber": "DummyString"
         },
-        "BuildingYearMonth": "2023-10-20T13:54:21.2520394+02:00",
+        "BuildingYearMonth": "2023-10-24T11:50:00.5373387+02:00",
         "ISO6346SizeTypeCode": "Empty",
         "ISO6346SizeTypeCodeDescription": "DummyString",
         "DimensionsXMillimeter": 1,
@@ -260,12 +276,12 @@
         "Material": "DummyString"
       },
       "InspectionDates": {
-        "InitialInspectionDate": "2023-10-20T13:54:21.2520561+02:00",
-        "LastInspectionDate": "2023-10-20T13:54:21.2520565+02:00",
+        "InitialInspectionDate": "2023-10-24T11:50:00.5373543+02:00",
+        "LastInspectionDate": "2023-10-24T11:50:00.5373546+02:00",
         "LastInspectionScope": "Empty",
         "LastInspectionScopeDescription": "DummyString",
-        "NextInspectionDate": "2023-10-20T13:54:21.2520573+02:00",
-        "CSCValidityDate": "2023-10-20T13:54:21.2520577+02:00",
+        "NextInspectionDate": "2023-10-24T11:50:00.5373552+02:00",
+        "CSCValidityDate": "2023-10-24T11:50:00.5373554+02:00",
         "ACEPDescription": "DummyString"
       }
     },
@@ -341,7 +357,7 @@
     "Remarks": [
       {
         "ID": "DummyString",
-        "Date": "2023-10-20T13:54:21.2520823+02:00",
+        "Date": "2023-10-24T11:50:00.5373779+02:00",
         "AuthorInfo": {
           "ContactInfo": {
             "Name": "DummyString",
@@ -349,11 +365,15 @@
             "Email": "DummyString"
           }
         },
-        "Remark": "DummyString"
+        "Remark": "DummyString",
+        "Tags": [
+          "DummyString",
+          "DummyString"
+        ]
       },
       {
         "ID": "DummyString",
-        "Date": "2023-10-20T13:54:21.2520843+02:00",
+        "Date": "2023-10-24T11:50:00.5373797+02:00",
         "AuthorInfo": {
           "ContactInfo": {
             "Name": "DummyString",
@@ -361,12 +381,16 @@
             "Email": "DummyString"
           }
         },
-        "Remark": "DummyString"
+        "Remark": "DummyString",
+        "Tags": [
+          "DummyString",
+          "DummyString"
+        ]
       }
     ]
   },
   "InspectionVerification": {
-    "VerificationDate": "2023-10-20T13:54:21.2520875+02:00",
+    "VerificationDate": "2023-10-24T11:50:00.537384+02:00",
     "VerificationPlace": "DummyString",
     "VerificatorInfo": {
       "ContactInfo": {
@@ -379,7 +403,7 @@
   "Remarks": [
     {
       "ID": "DummyString",
-      "Date": "2023-10-20T13:54:21.252091+02:00",
+      "Date": "2023-10-24T11:50:00.5373872+02:00",
       "AuthorInfo": {
         "ContactInfo": {
           "Name": "DummyString",
@@ -387,11 +411,15 @@
           "Email": "DummyString"
         }
       },
-      "Remark": "DummyString"
+      "Remark": "DummyString",
+      "Tags": [
+        "DummyString",
+        "DummyString"
+      ]
     },
     {
       "ID": "DummyString",
-      "Date": "2023-10-20T13:54:21.2520928+02:00",
+      "Date": "2023-10-24T11:50:00.5373889+02:00",
       "AuthorInfo": {
         "ContactInfo": {
           "Name": "DummyString",
@@ -399,7 +427,11 @@
           "Email": "DummyString"
         }
       },
-      "Remark": "DummyString"
+      "Remark": "DummyString",
+      "Tags": [
+        "DummyString",
+        "DummyString"
+      ]
     }
   ],
   "Attachments": [

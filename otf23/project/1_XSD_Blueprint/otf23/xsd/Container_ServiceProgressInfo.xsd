@@ -6,7 +6,7 @@
     <xs:complexType>
       <xs:sequence>
 	    <xs:element name="SupplierReference" type="xs:string" minOccurs="0" />
-		<xs:element name="ClientPurchaseOrderReference" type="xs:string" minOccurs="0" /> 
+		<xs:element name="ClientReference" type="xs:string" minOccurs="0" /> 
 	    <xs:element ref="Container_ServiceProgress_AuthorizationInfo" minOccurs="0"/>
 	    <xs:element ref="Container_ServiceProgress_DateInfo" minOccurs="0"/>			  			  
 	  </xs:sequence>

@@ -183,7 +183,7 @@
                     <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_DateInfo">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Planned" type="xs:dateTime" />
+                          <xs:element minOccurs="1" maxOccurs="1" name="Planned" type="xs:dateTime" />
                           <xs:element minOccurs="0" maxOccurs="1" name="PlannedByInfo">
                             <xs:complexType>
                               <xs:sequence>
@@ -199,8 +199,8 @@
                               </xs:sequence>
                             </xs:complexType>
                           </xs:element>
-                          <xs:element minOccurs="0" maxOccurs="1" name="PlannedToTakePlaceOn" type="xs:dateTime" />
-                          <xs:element minOccurs="0" maxOccurs="1" name="Started" type="xs:dateTime" />
+                          <xs:element minOccurs="1" maxOccurs="1" name="PlannedToTakePlaceOn" type="xs:dateTime" />
+                          <xs:element minOccurs="1" maxOccurs="1" name="Started" type="xs:dateTime" />
                           <xs:element minOccurs="0" maxOccurs="1" name="StartedByInfo">
                             <xs:complexType>
                               <xs:sequence>
@@ -216,7 +216,7 @@
                               </xs:sequence>
                             </xs:complexType>
                           </xs:element>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Finished" type="xs:dateTime" />
+                          <xs:element minOccurs="1" maxOccurs="1" name="Finished" type="xs:dateTime" />
                           <xs:element minOccurs="0" maxOccurs="1" name="FinishedByInfo">
                             <xs:complexType>
                               <xs:sequence>
@@ -232,7 +232,7 @@
                               </xs:sequence>
                             </xs:complexType>
                           </xs:element>
-                          <xs:element minOccurs="0" maxOccurs="1" name="Cancelled" type="xs:dateTime" />
+                          <xs:element minOccurs="1" maxOccurs="1" name="Cancelled" type="xs:dateTime" />
                           <xs:element minOccurs="0" maxOccurs="1" name="CancelledByInfo">
                             <xs:complexType>
                               <xs:sequence>
@@ -332,7 +332,7 @@
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
-                    <xs:element minOccurs="0" maxOccurs="1" name="AuthorizationAcceptedBySupplier" type="xs:dateTime" />
+                    <xs:element minOccurs="1" maxOccurs="1" name="AuthorizationAcceptedBySupplier" type="xs:dateTime" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -399,7 +399,7 @@
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
-                    <xs:element minOccurs="0" maxOccurs="1" name="AuthorizationAcceptedBySupplier" type="xs:dateTime" />
+                    <xs:element minOccurs="1" maxOccurs="1" name="AuthorizationAcceptedBySupplier" type="xs:dateTime" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -412,7 +412,7 @@
               <xs:element minOccurs="0" maxOccurs="1" name="Container_ServiceProgress_DateInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="Planned" type="xs:dateTime" />
+                    <xs:element minOccurs="1" maxOccurs="1" name="Planned" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="PlannedByInfo">
                       <xs:complexType>
                         <xs:sequence>
@@ -428,8 +428,8 @@
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
-                    <xs:element minOccurs="0" maxOccurs="1" name="PlannedToTakePlaceOn" type="xs:dateTime" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="Started" type="xs:dateTime" />
+                    <xs:element minOccurs="1" maxOccurs="1" name="PlannedToTakePlaceOn" type="xs:dateTime" />
+                    <xs:element minOccurs="1" maxOccurs="1" name="Started" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="StartedByInfo">
                       <xs:complexType>
                         <xs:sequence>
@@ -445,7 +445,7 @@
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
-                    <xs:element minOccurs="0" maxOccurs="1" name="Finished" type="xs:dateTime" />
+                    <xs:element minOccurs="1" maxOccurs="1" name="Finished" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="FinishedByInfo">
                       <xs:complexType>
                         <xs:sequence>
@@ -461,7 +461,7 @@
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
-                    <xs:element minOccurs="0" maxOccurs="1" name="Cancelled" type="xs:dateTime" />
+                    <xs:element minOccurs="1" maxOccurs="1" name="Cancelled" type="xs:dateTime" />
                     <xs:element minOccurs="0" maxOccurs="1" name="CancelledByInfo">
                       <xs:complexType>
                         <xs:sequence>
@@ -509,6 +509,7 @@
       <xs:enumeration value="Message_TankContainer_InspectionReport" />
       <xs:enumeration value="Message_TankContainer_PreNotification" />
       <xs:enumeration value="Message_TankContainer_PreNotification_StatusUpdate" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_HeelDisposal" />
       <xs:enumeration value="Message_TankContainer_StatusUpdate_Cleaning" />
       <xs:enumeration value="Message_TankContainer_StatusUpdate_Heating" />
       <xs:enumeration value="Message_TankContainer_StatusUpdate_Inspection" />
@@ -595,7 +596,7 @@
         <xs:complexType>
           <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" name="ID" type="xs:string" />
-            <xs:element minOccurs="0" maxOccurs="1" name="Date" type="xs:dateTime" />
+            <xs:element minOccurs="1" maxOccurs="1" name="Date" type="xs:dateTime" />
             <xs:element minOccurs="0" maxOccurs="1" name="AuthorInfo">
               <xs:complexType>
                 <xs:sequence>
@@ -612,9 +613,15 @@
               </xs:complexType>
             </xs:element>
             <xs:element minOccurs="0" maxOccurs="1" name="Remark" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="Tags" type="ArrayOfString" />
           </xs:sequence>
         </xs:complexType>
       </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Tag" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="ArrayOfAttachmentsAttachment">

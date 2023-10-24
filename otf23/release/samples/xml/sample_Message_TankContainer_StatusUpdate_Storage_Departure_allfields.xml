@@ -4,7 +4,7 @@
     <OTFVersion>OTF23</OTFVersion>
     <OTFMessage>Message_TankContainer_StatusUpdate_Storage_Departure</OTFMessage>
     <MessageID>DummyString</MessageID>
-    <SentDate>2023-10-20T13:54:19.4978155+02:00</SentDate>
+    <SentDate>2023-10-24T11:49:55.1616163+02:00</SentDate>
     <ConversationID>DummyString</ConversationID>
     <MessageType>New</MessageType>
     <SenderInfo>
@@ -124,7 +124,7 @@
         <ManufacturedInCountry>DummyString</ManufacturedInCountry>
         <ManufacturerSerialNumber>DummyString</ManufacturerSerialNumber>
       </ManufacturerInfo>
-      <BuildingYearMonth>2023-10-20T13:54:19.4978409+02:00</BuildingYearMonth>
+      <BuildingYearMonth>2023-10-24T11:49:55.1616396+02:00</BuildingYearMonth>
       <ISO6346SizeTypeCode>Empty</ISO6346SizeTypeCode>
       <ISO6346SizeTypeCodeDescription>DummyString</ISO6346SizeTypeCodeDescription>
       <DimensionsXMillimeter>1</DimensionsXMillimeter>
@@ -193,19 +193,19 @@
       <Material>DummyString</Material>
     </TankContainerLiningInfo>
     <InspectionDates>
-      <InitialInspectionDate>2023-10-20T13:54:19.4978587+02:00</InitialInspectionDate>
-      <LastInspectionDate>2023-10-20T13:54:19.4978592+02:00</LastInspectionDate>
+      <InitialInspectionDate>2023-10-24T11:49:55.1616558+02:00</InitialInspectionDate>
+      <LastInspectionDate>2023-10-24T11:49:55.1616561+02:00</LastInspectionDate>
       <LastInspectionScope>Empty</LastInspectionScope>
       <LastInspectionScopeDescription>DummyString</LastInspectionScopeDescription>
-      <NextInspectionDate>2023-10-20T13:54:19.4978605+02:00</NextInspectionDate>
-      <CSCValidityDate>2023-10-20T13:54:19.4978608+02:00</CSCValidityDate>
+      <NextInspectionDate>2023-10-24T11:49:55.1616568+02:00</NextInspectionDate>
+      <CSCValidityDate>2023-10-24T11:49:55.161657+02:00</CSCValidityDate>
       <ACEPDescription>DummyString</ACEPDescription>
     </InspectionDates>
   </TankContainerInfo>
   <Container_StatusUpdate_Storage_Departure>
     <ClientPurchaseOrderReference>DummyString</ClientPurchaseOrderReference>
     <ClientReleaseReference>DummyString</ClientReleaseReference>
-    <ContainerReleaseDate>2023-10-20T13:54:19.4978642+02:00</ContainerReleaseDate>
+    <ContainerReleaseDate>2023-10-24T11:49:55.1616584+02:00</ContainerReleaseDate>
     <Container_HaulierInfo>
       <BusinessUnitInfo>
         <Name>DummyString</Name>
@@ -228,7 +228,7 @@
   <Remarks>
     <Remark>
       <ID>DummyString</ID>
-      <Date>2023-10-20T13:54:19.4978686+02:00</Date>
+      <Date>2023-10-24T11:49:55.161662+02:00</Date>
       <AuthorInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -237,10 +237,14 @@
         </ContactInfo>
       </AuthorInfo>
       <Remark>DummyString</Remark>
+      <Tags>
+        <Tag>DummyString</Tag>
+        <Tag>DummyString</Tag>
+      </Tags>
     </Remark>
     <Remark>
       <ID>DummyString</ID>
-      <Date>2023-10-20T13:54:19.4978705+02:00</Date>
+      <Date>2023-10-24T11:49:55.1616639+02:00</Date>
       <AuthorInfo>
         <ContactInfo>
           <Name>DummyString</Name>
@@ -249,6 +253,10 @@
         </ContactInfo>
       </AuthorInfo>
       <Remark>DummyString</Remark>
+      <Tags>
+        <Tag>DummyString</Tag>
+        <Tag>DummyString</Tag>
+      </Tags>
     </Remark>
   </Remarks>
   <Attachments>

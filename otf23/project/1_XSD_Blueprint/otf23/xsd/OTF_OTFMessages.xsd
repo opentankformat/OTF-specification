@@ -12,6 +12,7 @@
       <xs:enumeration value="Message_TankContainer_InspectionReport" />
       <xs:enumeration value="Message_TankContainer_PreNotification" />
       <xs:enumeration value="Message_TankContainer_PreNotification_StatusUpdate" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_HeelDisposal" />
       <xs:enumeration value="Message_TankContainer_StatusUpdate_Cleaning" />
       <xs:enumeration value="Message_TankContainer_StatusUpdate_Heating" />
       <xs:enumeration value="Message_TankContainer_StatusUpdate_Inspection" />

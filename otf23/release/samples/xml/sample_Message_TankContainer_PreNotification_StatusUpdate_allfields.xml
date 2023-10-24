@@ -4,7 +4,7 @@
     <OTFVersion>OTF23</OTFVersion>
     <OTFMessage>Message_TankContainer_PreNotification_StatusUpdate</OTFMessage>
     <MessageID>DummyString</MessageID>
-    <SentDate>2023-10-20T13:54:18.5747009+02:00</SentDate>
+    <SentDate>2023-10-24T11:49:54.2936944+02:00</SentDate>
     <ConversationID>DummyString</ConversationID>
     <MessageType>New</MessageType>
     <SenderInfo>
@@ -124,7 +124,7 @@
         <ManufacturedInCountry>DummyString</ManufacturedInCountry>
         <ManufacturerSerialNumber>DummyString</ManufacturerSerialNumber>
       </ManufacturerInfo>
-      <BuildingYearMonth>2023-10-20T13:54:18.5747269+02:00</BuildingYearMonth>
+      <BuildingYearMonth>2023-10-24T11:49:54.2937218+02:00</BuildingYearMonth>
       <ISO6346SizeTypeCode>Empty</ISO6346SizeTypeCode>
       <ISO6346SizeTypeCodeDescription>DummyString</ISO6346SizeTypeCodeDescription>
       <DimensionsXMillimeter>1</DimensionsXMillimeter>
@@ -193,12 +193,12 @@
       <Material>DummyString</Material>
     </TankContainerLiningInfo>
     <InspectionDates>
-      <InitialInspectionDate>2023-10-20T13:54:18.574747+02:00</InitialInspectionDate>
-      <LastInspectionDate>2023-10-20T13:54:18.5747475+02:00</LastInspectionDate>
+      <InitialInspectionDate>2023-10-24T11:49:54.2937407+02:00</InitialInspectionDate>
+      <LastInspectionDate>2023-10-24T11:49:54.293741+02:00</LastInspectionDate>
       <LastInspectionScope>Empty</LastInspectionScope>
       <LastInspectionScopeDescription>DummyString</LastInspectionScopeDescription>
-      <NextInspectionDate>2023-10-20T13:54:18.5747482+02:00</NextInspectionDate>
-      <CSCValidityDate>2023-10-20T13:54:18.5747486+02:00</CSCValidityDate>
+      <NextInspectionDate>2023-10-24T11:49:54.2937417+02:00</NextInspectionDate>
+      <CSCValidityDate>2023-10-24T11:49:54.293742+02:00</CSCValidityDate>
       <ACEPDescription>DummyString</ACEPDescription>
     </InspectionDates>
   </TankContainerInfo>

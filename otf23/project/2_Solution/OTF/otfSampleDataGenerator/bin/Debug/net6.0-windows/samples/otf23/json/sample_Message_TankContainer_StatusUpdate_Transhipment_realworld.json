@@ -47,8 +47,8 @@
       "ProformaReference": null,
       "OrderReference": "D230101.0001",
       "OrderStatusInfo": {
-        "OrderStatus": "IN_UNCLEAN_CLEANING_PENDING_UNAUTHORIZED",
-        "OrderStatusDescription": "IN_UNCLEAN_CLEANING_PENDING_UNAUTHORIZED"
+        "OrderStatus": "IN_UNCLEAN_HEEL_PENDING_UNAUTHORIZED",
+        "OrderStatusDescription": "IN_UNCLEAN_HEEL_PENDING_UNAUTHORIZED"
       }
     },
     "ClientInfo": {
@@ -79,7 +79,7 @@
   },
   "Container_ServiceProgressInfo": {
     "SupplierReference": "D230101.0001.T1",
-    "ClientPurchaseOrderReference": null,
+    "ClientReference": null,
     "Container_ServiceProgress_AuthorizationInfo": null,
     "Container_ServiceProgress_DateInfo": {
       "Planned": "2000-01-01T09:33:00+01:00",

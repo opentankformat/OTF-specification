@@ -48,7 +48,7 @@
 							</xs:sequence>
 						</xs:complexType>
 					</xs:element>				
-					<xs:element name="BuildingYearMonth" type="xs:dateTime" minOccurs="0"/>
+					<xs:element name="BuildingYearMonth" type="xs:dateTime" />
 					<xs:element name="ISO6346SizeTypeCode" minOccurs="0" >
 						<xs:simpleType>
 							<xs:restriction base="TankContainer_ISO6346SizeTypeCodes" />
@@ -117,16 +117,16 @@
 		<xs:element name="InspectionDates" minOccurs="0">
 			<xs:complexType>
 				<xs:sequence>
-					<xs:element name="InitialInspectionDate" type="xs:dateTime" minOccurs="0" />		
-					<xs:element name="LastInspectionDate" type="xs:dateTime" minOccurs="0" />		
+					<xs:element name="InitialInspectionDate" type="xs:dateTime" />		
+					<xs:element name="LastInspectionDate" type="xs:dateTime" />		
 					<xs:element name="LastInspectionScope" minOccurs="0" >
 						<xs:simpleType>
 							<xs:restriction base="TankContainer_InspectionScopes" />
 						</xs:simpleType>
 					</xs:element>
 					<xs:element name="LastInspectionScopeDescription" type="xs:string" minOccurs="0" />
-					<xs:element name="NextInspectionDate" type="xs:dateTime" minOccurs="0" />		
-					<xs:element name="CSCValidityDate" type="xs:dateTime" minOccurs="0" />
+					<xs:element name="NextInspectionDate" type="xs:dateTime" />		
+					<xs:element name="CSCValidityDate" type="xs:dateTime" />
 					<xs:element name="ACEPDescription" type="xs:string" minOccurs="0" />
 				</xs:sequence>
 			</xs:complexType>

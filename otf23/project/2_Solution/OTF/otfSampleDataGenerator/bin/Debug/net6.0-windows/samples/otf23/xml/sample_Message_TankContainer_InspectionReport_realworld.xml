@@ -90,6 +90,7 @@
             <ExternalID>Mike Manufacturer NV</ExternalID>
           </BusinessUnitInfo>
         </ManufacturerInfo>
+        <BuildingYearMonth>1996-11-25T20:30:00+01:00</BuildingYearMonth>
         <ISO6346SizeTypeCodeDescription />
       </TankContainerCharacteristicsInfo>
       <TankContainerTankInfo>
@@ -112,7 +113,11 @@
         <Material />
       </TankContainerLiningInfo>
       <InspectionDates>
+        <InitialInspectionDate>0001-01-01T00:00:00</InitialInspectionDate>
+        <LastInspectionDate>1998-06-20T01:00:00+02:00</LastInspectionDate>
         <LastInspectionScopeDescription>H</LastInspectionScopeDescription>
+        <NextInspectionDate>0001-01-01T00:00:00</NextInspectionDate>
+        <CSCValidityDate>1999-01-01T00:00:00+01:00</CSCValidityDate>
       </InspectionDates>
     </TankContainerInfo>
     <Inspections>
@@ -177,7 +182,7 @@
     </Inspections>
   </InspectionResultsInfo>
   <InspectionVerification>
-    <VerificationDate>2023-10-20T13:54:21.2518291+02:00</VerificationDate>
+    <VerificationDate>2023-10-24T11:50:00.5371426+02:00</VerificationDate>
     <VerificatorInfo>
       <ContactInfo>
         <Name>Simon Surveyor</Name>
