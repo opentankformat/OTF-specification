@@ -27,6 +27,8 @@ namespace otfSampleDataGenerator.sampleClasses
 			GenerateSampleMessages<Message_Container_StatusUpdate_Storage_Departure>(targetFolder, typeof(Message_Container_StatusUpdate_Storage_Departure).Name, sample_Message_Container_StatusUpdate_Storage_Departure(), GenerateDummyData<Message_Container_StatusUpdate_Storage_Departure>());
 			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Storage_Departure>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Storage_Departure).Name, sample_Message_TankContainer_StatusUpdate_Storage_Departure(), GenerateDummyData<Message_TankContainer_StatusUpdate_Storage_Departure>());
 
+			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Storage>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Storage).Name, sample_Message_TankContainer_StatusUpdate_Storage(), GenerateDummyData<Message_TankContainer_StatusUpdate_Storage>());
+
 			GenerateSampleMessages<Message_TankContainer_StatusUpdate_HeelDisposal>(targetFolder, typeof(Message_TankContainer_StatusUpdate_HeelDisposal).Name, sample_Message_TankContainer_StatusUpdate_HeelDisposal(), GenerateDummyData<Message_TankContainer_StatusUpdate_HeelDisposal>());
 			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Cleaning>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Cleaning).Name, sample_Message_TankContainer_StatusUpdate_Cleaning(), GenerateDummyData<Message_TankContainer_StatusUpdate_Cleaning>());
 			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Heating>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Heating).Name, sample_Message_TankContainer_StatusUpdate_Heating(), GenerateDummyData<Message_TankContainer_StatusUpdate_Heating>());
@@ -507,6 +509,56 @@ namespace otfSampleDataGenerator.sampleClasses
 		#endregion
 
 		#region "Status updates"
+
+		static Message_TankContainer_StatusUpdate_Storage sample_Message_TankContainer_StatusUpdate_Storage()
+		{
+			Message_TankContainer_StatusUpdate_Storage m = new Message_TankContainer_StatusUpdate_Storage
+			{
+				MessageHeaderInfo = new MessageHeaderInfo
+				{
+					MessageID = SampleData.MessageIdentifier_Container_StorageStatusUpdate_MessageID,
+					OTFVersion = OTFVersion,
+					OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_StatusUpdate_Storage,
+					SenderID = SampleData.Depot_ID,
+					RecipientID = SampleData.Lessee_ID,
+					ContactInfo = new ContactInfo
+					{
+						Name = SampleData.Lessee_ContactName
+					},
+					SentDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Storage_ByDepot),
+					MessageType = MessageHeaderInfoMessageType.New,
+				},
+				OrderInfo = new OrderInfo
+				{
+					SupplierID = SampleData.Depot_ID,
+					SupplierLocationID = SampleData.Depot_LocationID,
+					SupplierOrderReference = SampleData.Depot_OrderReference,
+					OrderStatusInfo = new OrderStatusInfo
+					{
+						OrderStatusDescription = SampleData.Orderflow_Container_StatusUpdate_StorageStatusUpdate_ByDepot
+					},
+					ClientID = SampleData.Lessor_ID,
+					ClientOrderReference = SampleData.Lessor_OrderReference
+				},
+				TankContainerInfo = new TankContainerInfo
+				{
+					ContainerInfo = new ContainerInfo
+					{
+						ContainerNumber = SampleData.ContainerNumber,
+						ContainerType = SampleData.ContainerType
+					},
+				},
+				Container_ServiceProgressInfo = new Container_ServiceProgressInfo
+				{
+					Container_ServiceProgress_DateInfo = new Container_ServiceProgress_DateInfo
+					{
+						Started = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Storage_ByDepot),
+					}
+				},
+			};
+			return m;
+		}
+
 		static Message_Container_StatusUpdate_Storage_Arrival sample_Message_Container_StatusUpdate_Storage_Arrival()
 		{
 			Message_Container_StatusUpdate_Storage_Arrival m = new Message_Container_StatusUpdate_Storage_Arrival
@@ -815,6 +867,7 @@ namespace otfSampleDataGenerator.sampleClasses
 			};
 			return m;
 		}
+
 
 
 		static Message_TankContainer_StatusUpdate_Cleaning sample_Message_TankContainer_StatusUpdate_Cleaning()

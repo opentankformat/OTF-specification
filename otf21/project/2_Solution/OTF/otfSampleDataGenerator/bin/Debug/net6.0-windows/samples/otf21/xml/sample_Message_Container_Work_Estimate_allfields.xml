@@ -13,7 +13,7 @@
       <Phone>DummyString</Phone>
       <Email>DummyString</Email>
     </ContactInfo>
-    <SentDate>2023-10-24T12:43:29.6324043+02:00</SentDate>
+    <SentDate>2023-11-01T13:59:03.4093284+01:00</SentDate>
     <MessageType>New</MessageType>
   </MessageHeaderInfo>
   <OrderInfo>
@@ -30,7 +30,7 @@
   <LocalizationInfo>
     <CurrencyISO>DummyString</CurrencyISO>
     <ExchangeRate>1</ExchangeRate>
-    <ExchangeRateDate>2023-10-24T12:43:29.6324095+02:00</ExchangeRateDate>
+    <ExchangeRateDate>2023-11-01T13:59:03.4093344+01:00</ExchangeRateDate>
     <RoundingPerLine>true</RoundingPerLine>
   </LocalizationInfo>
   <ContainerInfo>
@@ -40,56 +40,56 @@
   <Container_Work_EstimateStatusInfo>
     <Version>DummyString</Version>
     <Container_ServiceProgress_DateInfo>
-      <Planned>2023-10-24T12:43:29.6324146+02:00</Planned>
+      <Planned>2023-11-01T13:59:03.4093403+01:00</Planned>
       <PlannedBy>DummyString</PlannedBy>
-      <PlannedToTakePlaceOn>2023-10-24T12:43:29.632415+02:00</PlannedToTakePlaceOn>
-      <Started>2023-10-24T12:43:29.6324153+02:00</Started>
-      <Finished>2023-10-24T12:43:29.6324155+02:00</Finished>
-      <Cancelled>2023-10-24T12:43:29.6324157+02:00</Cancelled>
+      <PlannedToTakePlaceOn>2023-11-01T13:59:03.4093408+01:00</PlannedToTakePlaceOn>
+      <Started>2023-11-01T13:59:03.409341+01:00</Started>
+      <Finished>2023-11-01T13:59:03.4093412+01:00</Finished>
+      <Cancelled>2023-11-01T13:59:03.4093414+01:00</Cancelled>
     </Container_ServiceProgress_DateInfo>
     <ContainerWorkAuthorizationInfo>
       <ContainerWorkLessorAuthorizationInfo>
         <LessorID>DummyString</LessorID>
         <Reference>DummyString</Reference>
         <Container_ServiceProgress_AuthorizationInfo>
-          <Authorized>2023-10-24T12:43:29.6324203+02:00</Authorized>
+          <Authorized>2023-11-01T13:59:03.4093464+01:00</Authorized>
           <AuthorizedBy>DummyString</AuthorizedBy>
           <AuthorizationReference>DummyString</AuthorizationReference>
           <AuthorizationAmount>
             <LocalizationInfo>
               <CurrencyISO>DummyString</CurrencyISO>
               <ExchangeRate>1</ExchangeRate>
-              <ExchangeRateDate>2023-10-24T12:43:29.6324218+02:00</ExchangeRateDate>
+              <ExchangeRateDate>2023-11-01T13:59:03.4093483+01:00</ExchangeRateDate>
               <RoundingPerLine>true</RoundingPerLine>
             </LocalizationInfo>
             <AuthorizationAmount>1</AuthorizationAmount>
           </AuthorizationAmount>
         </Container_ServiceProgress_AuthorizationInfo>
-        <AuthorizationAcceptedBySupplier>2023-10-24T12:43:29.632423+02:00</AuthorizationAcceptedBySupplier>
+        <AuthorizationAcceptedBySupplier>2023-11-01T13:59:03.4093494+01:00</AuthorizationAcceptedBySupplier>
       </ContainerWorkLessorAuthorizationInfo>
       <ContainerWorkLesseeAuthorizationInfo>
         <LesseeID>DummyString</LesseeID>
         <Reference>DummyString</Reference>
         <Container_ServiceProgress_AuthorizationInfo>
-          <Authorized>2023-10-24T12:43:29.6324654+02:00</Authorized>
+          <Authorized>2023-11-01T13:59:03.409393+01:00</Authorized>
           <AuthorizedBy>DummyString</AuthorizedBy>
           <AuthorizationReference>DummyString</AuthorizationReference>
           <AuthorizationAmount>
             <LocalizationInfo>
               <CurrencyISO>DummyString</CurrencyISO>
               <ExchangeRate>1</ExchangeRate>
-              <ExchangeRateDate>2023-10-24T12:43:29.6324672+02:00</ExchangeRateDate>
+              <ExchangeRateDate>2023-11-01T13:59:03.4093949+01:00</ExchangeRateDate>
               <RoundingPerLine>true</RoundingPerLine>
             </LocalizationInfo>
             <AuthorizationAmount>1</AuthorizationAmount>
           </AuthorizationAmount>
         </Container_ServiceProgress_AuthorizationInfo>
-        <AuthorizationAcceptedBySupplier>2023-10-24T12:43:29.6324681+02:00</AuthorizationAcceptedBySupplier>
+        <AuthorizationAcceptedBySupplier>2023-11-01T13:59:03.4093961+01:00</AuthorizationAcceptedBySupplier>
       </ContainerWorkLesseeAuthorizationInfo>
     </ContainerWorkAuthorizationInfo>
   </Container_Work_EstimateStatusInfo>
   <ContainerStorageArrivalInfo>
-    <ContainerDeliveryDate>2023-10-24T12:43:29.6324705+02:00</ContainerDeliveryDate>
+    <ContainerDeliveryDate>2023-11-01T13:59:03.4093987+01:00</ContainerDeliveryDate>
   </ContainerStorageArrivalInfo>
   <Category>DummyString</Category>
   <LaborRate>1</LaborRate>
@@ -158,7 +158,7 @@
           <Remarks>
             <Remark>
               <RemarkID>DummyString</RemarkID>
-              <RemarkDate>2023-10-24T12:43:29.6325601+02:00</RemarkDate>
+              <RemarkDate>2023-11-01T13:59:03.40949+01:00</RemarkDate>
               <RemarkAuthor>DummyString</RemarkAuthor>
               <RemarkText>DummyString</RemarkText>
               <Tags>
@@ -168,7 +168,7 @@
             </Remark>
             <Remark>
               <RemarkID>DummyString</RemarkID>
-              <RemarkDate>2023-10-24T12:43:29.6325618+02:00</RemarkDate>
+              <RemarkDate>2023-11-01T13:59:03.4094918+01:00</RemarkDate>
               <RemarkAuthor>DummyString</RemarkAuthor>
               <RemarkText>DummyString</RemarkText>
               <Tags>
@@ -194,7 +194,7 @@
           <Remarks>
             <Remark>
               <RemarkID>DummyString</RemarkID>
-              <RemarkDate>2023-10-24T12:43:29.6325959+02:00</RemarkDate>
+              <RemarkDate>2023-11-01T13:59:03.4095239+01:00</RemarkDate>
               <RemarkAuthor>DummyString</RemarkAuthor>
               <RemarkText>DummyString</RemarkText>
               <Tags>
@@ -204,7 +204,7 @@
             </Remark>
             <Remark>
               <RemarkID>DummyString</RemarkID>
-              <RemarkDate>2023-10-24T12:43:29.6325974+02:00</RemarkDate>
+              <RemarkDate>2023-11-01T13:59:03.4095253+01:00</RemarkDate>
               <RemarkAuthor>DummyString</RemarkAuthor>
               <RemarkText>DummyString</RemarkText>
               <Tags>
@@ -217,14 +217,14 @@
       </CounterProposal>
       <ClientAuthorization>
         <Container_ServiceProgress_AuthorizationInfo>
-          <Authorized>2023-10-24T12:43:29.6326276+02:00</Authorized>
+          <Authorized>2023-11-01T13:59:03.4095539+01:00</Authorized>
           <AuthorizedBy>DummyString</AuthorizedBy>
           <AuthorizationReference>DummyString</AuthorizationReference>
           <AuthorizationAmount>
             <LocalizationInfo>
               <CurrencyISO>DummyString</CurrencyISO>
               <ExchangeRate>1</ExchangeRate>
-              <ExchangeRateDate>2023-10-24T12:43:29.6326295+02:00</ExchangeRateDate>
+              <ExchangeRateDate>2023-11-01T13:59:03.4095561+01:00</ExchangeRateDate>
               <RoundingPerLine>true</RoundingPerLine>
             </LocalizationInfo>
             <AuthorizationAmount>1</AuthorizationAmount>
@@ -320,7 +320,7 @@
           <Remarks>
             <Remark>
               <RemarkID>DummyString</RemarkID>
-              <RemarkDate>2023-10-24T12:43:29.632643+02:00</RemarkDate>
+              <RemarkDate>2023-11-01T13:59:03.4095697+01:00</RemarkDate>
               <RemarkAuthor>DummyString</RemarkAuthor>
               <RemarkText>DummyString</RemarkText>
               <Tags>
@@ -330,7 +330,7 @@
             </Remark>
             <Remark>
               <RemarkID>DummyString</RemarkID>
-              <RemarkDate>2023-10-24T12:43:29.632644+02:00</RemarkDate>
+              <RemarkDate>2023-11-01T13:59:03.4095709+01:00</RemarkDate>
               <RemarkAuthor>DummyString</RemarkAuthor>
               <RemarkText>DummyString</RemarkText>
               <Tags>
@@ -356,7 +356,7 @@
           <Remarks>
             <Remark>
               <RemarkID>DummyString</RemarkID>
-              <RemarkDate>2023-10-24T12:43:29.6326476+02:00</RemarkDate>
+              <RemarkDate>2023-11-01T13:59:03.4095745+01:00</RemarkDate>
               <RemarkAuthor>DummyString</RemarkAuthor>
               <RemarkText>DummyString</RemarkText>
               <Tags>
@@ -366,7 +366,7 @@
             </Remark>
             <Remark>
               <RemarkID>DummyString</RemarkID>
-              <RemarkDate>2023-10-24T12:43:29.6326486+02:00</RemarkDate>
+              <RemarkDate>2023-11-01T13:59:03.4095756+01:00</RemarkDate>
               <RemarkAuthor>DummyString</RemarkAuthor>
               <RemarkText>DummyString</RemarkText>
               <Tags>
@@ -379,14 +379,14 @@
       </CounterProposal>
       <ClientAuthorization>
         <Container_ServiceProgress_AuthorizationInfo>
-          <Authorized>2023-10-24T12:43:29.6326498+02:00</Authorized>
+          <Authorized>2023-11-01T13:59:03.4095769+01:00</Authorized>
           <AuthorizedBy>DummyString</AuthorizedBy>
           <AuthorizationReference>DummyString</AuthorizationReference>
           <AuthorizationAmount>
             <LocalizationInfo>
               <CurrencyISO>DummyString</CurrencyISO>
               <ExchangeRate>1</ExchangeRate>
-              <ExchangeRateDate>2023-10-24T12:43:29.632651+02:00</ExchangeRateDate>
+              <ExchangeRateDate>2023-11-01T13:59:03.4095783+01:00</ExchangeRateDate>
               <RoundingPerLine>true</RoundingPerLine>
             </LocalizationInfo>
             <AuthorizationAmount>1</AuthorizationAmount>
@@ -422,7 +422,7 @@
   <Remarks>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-10-24T12:43:29.6326551+02:00</RemarkDate>
+      <RemarkDate>2023-11-01T13:59:03.4095825+01:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
       <Tags>
@@ -432,7 +432,7 @@
     </Remark>
     <Remark>
       <RemarkID>DummyString</RemarkID>
-      <RemarkDate>2023-10-24T12:43:29.6326561+02:00</RemarkDate>
+      <RemarkDate>2023-11-01T13:59:03.4095836+01:00</RemarkDate>
       <RemarkAuthor>DummyString</RemarkAuthor>
       <RemarkText>DummyString</RemarkText>
       <Tags>

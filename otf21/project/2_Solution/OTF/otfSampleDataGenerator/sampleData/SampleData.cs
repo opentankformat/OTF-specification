@@ -112,6 +112,10 @@ namespace OTF.SampleGenerator
         public static string Orderflow_Container_StatusUpdate_GateIn_ByDepot = "2000-01-01T11:04:00.0000000+01:00";
         public static string Orderflow_Container_StatusUpdate_GateInStatusUpdate_ByDepot = "EMPTY UNCLEAN";
 
+        public static string MessageIdentifier_Container_StorageStatusUpdate_MessageID = "c9ed4253-314f-42e9-802d-a55c0b1fcb59";
+        public static string Orderflow_Container_StatusUpdate_Storage_ByDepot = "2000-01-05T16:00:00.0000000+01:00";
+        public static string Orderflow_Container_StatusUpdate_StorageStatusUpdate_ByDepot = "EMPTY UNCLEAN";
+
         public static string MessageIdentifier_TankContainer_HeatingStatusUpdate_MessageID = "1e72f620-9fb9-4cf0-a330-cee6150fbbc7";
         public static string Depot_OrderReference_Heating = Depot_OrderReference + ".H1";
         public static string Orderflow_Container_StatusUpdate_Heating_ByDepot_Started = "2000-01-01T11:30:00.0000000+01:00";

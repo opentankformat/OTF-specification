@@ -259,6 +259,9 @@ namespace otf21 {
         Message_TankContainer_StatusUpdate_Inspection,
         
         /// <remarks/>
+        Message_TankContainer_StatusUpdate_Storage,
+        
+        /// <remarks/>
         Message_TankContainer_StatusUpdate_Storage_Arrival,
         
         /// <remarks/>
@@ -10569,6 +10572,90 @@ namespace otf21 {
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
     public partial class Message_TankContainer_StatusUpdate_Inspection {
+        
+        private MessageHeaderInfo messageHeaderInfoField;
+        
+        private OrderInfo orderInfoField;
+        
+        private TankContainerInfo tankContainerInfoField;
+        
+        private Container_ServiceProgressInfo container_ServiceProgressInfoField;
+        
+        private RemarksRemark[] remarksField;
+        
+        private AttachmentsAttachment[] attachmentsField;
+        
+        /// <remarks/>
+        public MessageHeaderInfo MessageHeaderInfo {
+            get {
+                return this.messageHeaderInfoField;
+            }
+            set {
+                this.messageHeaderInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public OrderInfo OrderInfo {
+            get {
+                return this.orderInfoField;
+            }
+            set {
+                this.orderInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public TankContainerInfo TankContainerInfo {
+            get {
+                return this.tankContainerInfoField;
+            }
+            set {
+                this.tankContainerInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Container_ServiceProgressInfo Container_ServiceProgressInfo {
+            get {
+                return this.container_ServiceProgressInfoField;
+            }
+            set {
+                this.container_ServiceProgressInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Remark", IsNullable=false)]
+        public RemarksRemark[] Remarks {
+            get {
+                return this.remarksField;
+            }
+            set {
+                this.remarksField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Attachment", IsNullable=false)]
+        public AttachmentsAttachment[] Attachments {
+            get {
+                return this.attachmentsField;
+            }
+            set {
+                this.attachmentsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public partial class Message_TankContainer_StatusUpdate_Storage {
         
         private MessageHeaderInfo messageHeaderInfoField;
         

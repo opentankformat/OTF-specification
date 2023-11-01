@@ -12,7 +12,7 @@
       "Phone": "DummyString",
       "Email": "DummyString"
     },
-    "SentDate": "2023-10-24T12:43:28.4808644+02:00",
+    "SentDate": "2023-11-01T13:59:01.9231816+01:00",
     "MessageType": "New"
   },
   "OrderInfo": {
@@ -32,12 +32,12 @@
   },
   "Container_StatusUpdate_Storage_Available": {
     "ClientPurchaseOrderReference": "DummyString",
-    "ContainerAvailableDate": "2023-10-24T12:43:28.4808732+02:00"
+    "ContainerAvailableDate": "2023-11-01T13:59:01.9231933+01:00"
   },
   "Remarks": [
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-10-24T12:43:28.4808753+02:00",
+      "RemarkDate": "2023-11-01T13:59:01.923197+01:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString",
       "Tags": [
@@ -47,7 +47,7 @@
     },
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-10-24T12:43:28.480877+02:00",
+      "RemarkDate": "2023-11-01T13:59:01.9232002+01:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString",
       "Tags": [

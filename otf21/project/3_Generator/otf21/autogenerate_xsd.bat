@@ -36,6 +36,7 @@ call _gen.bat Message_TankContainer_StatusUpdate_HeelDisposal, %CurrDirName%.dll
 call _gen.bat Message_TankContainer_StatusUpdate_Cleaning, %CurrDirName%.dll, %targetXSD_separate%
 call _gen.bat Message_TankContainer_StatusUpdate_Heating, %CurrDirName%.dll, %targetXSD_separate%
 call _gen.bat Message_TankContainer_StatusUpdate_Inspection, %CurrDirName%.dll, %targetXSD_separate%
+call _gen.bat Message_TankContainer_StatusUpdate_Storage, %CurrDirName%.dll, %targetXSD_separate%
 call _gen.bat Message_TankContainer_StatusUpdate_Storage_Arrival, %CurrDirName%.dll, %targetXSD_separate%
 call _gen.bat Message_TankContainer_StatusUpdate_Storage_Available, %CurrDirName%.dll, %targetXSD_separate%
 call _gen.bat Message_TankContainer_StatusUpdate_Storage_Departure, %CurrDirName%.dll, %targetXSD_separate%

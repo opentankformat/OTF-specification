@@ -12,7 +12,7 @@
       "Phone": "DummyString",
       "Email": "DummyString"
     },
-    "SentDate": "2023-10-24T12:43:28.2608229+02:00",
+    "SentDate": "2023-11-01T13:59:01.6736747+01:00",
     "MessageType": "New"
   },
   "OrderInfo": {
@@ -33,7 +33,7 @@
   "Container_StatusUpdate_Storage_Arrival": {
     "ClientPurchaseOrderReference": "DummyString",
     "ClientDeliveryReference": "DummyString",
-    "ContainerDeliveryDate": "2023-10-24T12:43:28.2608375+02:00",
+    "ContainerDeliveryDate": "2023-11-01T13:59:01.6736844+01:00",
     "Container_HaulierInfo": {
       "HaulierName": "DummyString",
       "TruckDriverName": "DummyString",
@@ -44,7 +44,7 @@
   "Remarks": [
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-10-24T12:43:28.2608434+02:00",
+      "RemarkDate": "2023-11-01T13:59:01.6736887+01:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString",
       "Tags": [
@@ -54,7 +54,7 @@
     },
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-10-24T12:43:28.2608456+02:00",
+      "RemarkDate": "2023-11-01T13:59:01.6736905+01:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString",
       "Tags": [

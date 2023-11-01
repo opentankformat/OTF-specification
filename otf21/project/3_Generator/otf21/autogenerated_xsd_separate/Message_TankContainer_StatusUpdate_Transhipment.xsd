@@ -226,6 +226,7 @@
       <xs:enumeration value="Message_TankContainer_StatusUpdate_Cleaning" />
       <xs:enumeration value="Message_TankContainer_StatusUpdate_Heating" />
       <xs:enumeration value="Message_TankContainer_StatusUpdate_Inspection" />
+      <xs:enumeration value="Message_TankContainer_StatusUpdate_Storage" />
       <xs:enumeration value="Message_TankContainer_StatusUpdate_Storage_Arrival" />
       <xs:enumeration value="Message_TankContainer_StatusUpdate_Storage_Available" />
       <xs:enumeration value="Message_TankContainer_StatusUpdate_Storage_Departure" />

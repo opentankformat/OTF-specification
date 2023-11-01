@@ -90,7 +90,7 @@
         <TankContainer_Inspection>
           <InspectionResult>SatisfactoryWithRemark</InspectionResult>
           <InspectionRemark>Inspection remark</InspectionRemark>
-          <InspectionDate>2023-10-24T12:43:30.2669394+02:00</InspectionDate>
+          <InspectionDate>2023-11-01T13:59:04.1016491+01:00</InspectionDate>
         </TankContainer_Inspection>
       </InternalInspection>
       <ExternalInspection>
@@ -158,7 +158,7 @@
     </Inspections>
   </InspectionResultsInfo>
   <InspectionVerification>
-    <VerificationDate>2023-10-24T12:43:30.2675409+02:00</VerificationDate>
+    <VerificationDate>2023-11-01T13:59:04.1022342+01:00</VerificationDate>
     <VerificatorName>Guybrush Threepwood</VerificatorName>
   </InspectionVerification>
 </Message_TankContainer_InspectionReport>

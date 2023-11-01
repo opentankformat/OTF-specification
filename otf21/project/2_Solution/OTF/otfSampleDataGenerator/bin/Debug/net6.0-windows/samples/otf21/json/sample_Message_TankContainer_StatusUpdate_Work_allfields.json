@@ -12,7 +12,7 @@
       "Phone": "DummyString",
       "Email": "DummyString"
     },
-    "SentDate": "2023-10-24T12:43:30.1101204+02:00",
+    "SentDate": "2023-11-01T13:59:03.9068282+01:00",
     "MessageType": "New"
   },
   "OrderInfo": {
@@ -61,7 +61,7 @@
       "Manufacturer": "DummyString",
       "ManufacturerCountry": "DummyString",
       "ManufacturerSerialNumber": "DummyString",
-      "BuildingYearMonth": "2023-10-24T12:43:30.1101322+02:00",
+      "BuildingYearMonth": "2023-11-01T13:59:03.9068405+01:00",
       "ISO6346SizeTypeCode": "Empty",
       "ISO6346SizeTypeCodeDescription": "DummyString",
       "DimensionsXMillimeter": 1,
@@ -130,13 +130,13 @@
       "Material": "DummyString"
     },
     "InspectionDates": {
-      "InitialInspectionDate": "2023-10-24T12:43:30.1101475+02:00",
-      "LastInspectionDate": "2023-10-24T12:43:30.1101478+02:00",
+      "InitialInspectionDate": "2023-11-01T13:59:03.9068583+01:00",
+      "LastInspectionDate": "2023-11-01T13:59:03.9068586+01:00",
       "LastInspectionScope": "Empty",
       "LastInspectionScopeDescription": "DummyString",
-      "NextInspectionDate": "2023-10-24T12:43:30.1101484+02:00",
-      "CSCValidityDate": "2023-10-24T12:43:30.1101486+02:00",
-      "ACEP": "2023-10-24T12:43:30.1101488+02:00",
+      "NextInspectionDate": "2023-11-01T13:59:03.9068594+01:00",
+      "CSCValidityDate": "2023-11-01T13:59:03.9068596+01:00",
+      "ACEP": "2023-11-01T13:59:03.9068598+01:00",
       "ACEPDescription": "DummyString"
     }
   },
@@ -145,68 +145,68 @@
   "Container_Work_EstimateStatusInfo": {
     "Version": "DummyString",
     "Container_ServiceProgress_DateInfo": {
-      "Planned": "2023-10-24T12:43:30.1101508+02:00",
+      "Planned": "2023-11-01T13:59:03.9068623+01:00",
       "PlannedBy": "DummyString",
-      "PlannedToTakePlaceOn": "2023-10-24T12:43:30.1101512+02:00",
-      "Started": "2023-10-24T12:43:30.1101514+02:00",
-      "Finished": "2023-10-24T12:43:30.1101516+02:00",
-      "Cancelled": "2023-10-24T12:43:30.1101518+02:00"
+      "PlannedToTakePlaceOn": "2023-11-01T13:59:03.9068627+01:00",
+      "Started": "2023-11-01T13:59:03.9068629+01:00",
+      "Finished": "2023-11-01T13:59:03.9068631+01:00",
+      "Cancelled": "2023-11-01T13:59:03.9068633+01:00"
     },
     "ContainerWorkAuthorizationInfo": {
       "ContainerWorkLessorAuthorizationInfo": {
         "LessorID": "DummyString",
         "Reference": "DummyString",
         "Container_ServiceProgress_AuthorizationInfo": {
-          "Authorized": "2023-10-24T12:43:30.110153+02:00",
+          "Authorized": "2023-11-01T13:59:03.9068648+01:00",
           "AuthorizedBy": "DummyString",
           "AuthorizationReference": "DummyString",
           "AuthorizationAmount": {
             "LocalizationInfo": {
               "CurrencyISO": "DummyString",
               "ExchangeRate": 1.0,
-              "ExchangeRateDate": "2023-10-24T12:43:30.1101544+02:00",
+              "ExchangeRateDate": "2023-11-01T13:59:03.9068666+01:00",
               "RoundingPerLine": true
             },
             "AuthorizationAmount": 1.0
           }
         },
-        "AuthorizationAcceptedBySupplier": "2023-10-24T12:43:30.1101552+02:00"
+        "AuthorizationAcceptedBySupplier": "2023-11-01T13:59:03.9068675+01:00"
       },
       "ContainerWorkLesseeAuthorizationInfo": {
         "LesseeID": "DummyString",
         "Reference": "DummyString",
         "Container_ServiceProgress_AuthorizationInfo": {
-          "Authorized": "2023-10-24T12:43:30.1101561+02:00",
+          "Authorized": "2023-11-01T13:59:03.9068688+01:00",
           "AuthorizedBy": "DummyString",
           "AuthorizationReference": "DummyString",
           "AuthorizationAmount": {
             "LocalizationInfo": {
               "CurrencyISO": "DummyString",
               "ExchangeRate": 1.0,
-              "ExchangeRateDate": "2023-10-24T12:43:30.1101573+02:00",
+              "ExchangeRateDate": "2023-11-01T13:59:03.9068701+01:00",
               "RoundingPerLine": true
             },
             "AuthorizationAmount": 1.0
           }
         },
-        "AuthorizationAcceptedBySupplier": "2023-10-24T12:43:30.110158+02:00"
+        "AuthorizationAcceptedBySupplier": "2023-11-01T13:59:03.9068708+01:00"
       }
     }
   },
   "Container_Work_WorkStatusInfo": {
     "Container_ServiceProgress_DateInfo": {
-      "Planned": "2023-10-24T12:43:30.1101614+02:00",
+      "Planned": "2023-11-01T13:59:03.9068753+01:00",
       "PlannedBy": "DummyString",
-      "PlannedToTakePlaceOn": "2023-10-24T12:43:30.1101618+02:00",
-      "Started": "2023-10-24T12:43:30.110162+02:00",
-      "Finished": "2023-10-24T12:43:30.1101622+02:00",
-      "Cancelled": "2023-10-24T12:43:30.1101624+02:00"
+      "PlannedToTakePlaceOn": "2023-11-01T13:59:03.9068757+01:00",
+      "Started": "2023-11-01T13:59:03.906876+01:00",
+      "Finished": "2023-11-01T13:59:03.9068762+01:00",
+      "Cancelled": "2023-11-01T13:59:03.9068764+01:00"
     }
   },
   "Remarks": [
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-10-24T12:43:30.1101637+02:00",
+      "RemarkDate": "2023-11-01T13:59:03.9068781+01:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString",
       "Tags": [
@@ -216,7 +216,7 @@
     },
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-10-24T12:43:30.1101649+02:00",
+      "RemarkDate": "2023-11-01T13:59:03.9068793+01:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString",
       "Tags": [

@@ -12,7 +12,7 @@
       "Phone": "DummyString",
       "Email": "DummyString"
     },
-    "SentDate": "2023-10-24T12:43:28.1042014+02:00",
+    "SentDate": "2023-11-01T13:59:01.5337594+01:00",
     "MessageType": "New"
   },
   "OrderInfo": {
@@ -61,7 +61,7 @@
       "Manufacturer": "DummyString",
       "ManufacturerCountry": "DummyString",
       "ManufacturerSerialNumber": "DummyString",
-      "BuildingYearMonth": "2023-10-24T12:43:28.1042133+02:00",
+      "BuildingYearMonth": "2023-11-01T13:59:01.5337755+01:00",
       "ISO6346SizeTypeCode": "Empty",
       "ISO6346SizeTypeCodeDescription": "DummyString",
       "DimensionsXMillimeter": 1,
@@ -130,13 +130,13 @@
       "Material": "DummyString"
     },
     "InspectionDates": {
-      "InitialInspectionDate": "2023-10-24T12:43:28.1042309+02:00",
-      "LastInspectionDate": "2023-10-24T12:43:28.1042311+02:00",
+      "InitialInspectionDate": "2023-11-01T13:59:01.5337944+01:00",
+      "LastInspectionDate": "2023-11-01T13:59:01.5337947+01:00",
       "LastInspectionScope": "Empty",
       "LastInspectionScopeDescription": "DummyString",
-      "NextInspectionDate": "2023-10-24T12:43:28.1042322+02:00",
-      "CSCValidityDate": "2023-10-24T12:43:28.1042325+02:00",
-      "ACEP": "2023-10-24T12:43:28.1042327+02:00",
+      "NextInspectionDate": "2023-11-01T13:59:01.5337954+01:00",
+      "CSCValidityDate": "2023-11-01T13:59:01.5337956+01:00",
+      "ACEP": "2023-11-01T13:59:01.5337958+01:00",
       "ACEPDescription": "DummyString"
     }
   },

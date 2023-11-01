@@ -12,7 +12,7 @@
       "Phone": "DummyString",
       "Email": "DummyString"
     },
-    "SentDate": "2023-10-24T12:43:27.2369014+02:00",
+    "SentDate": "2023-11-01T13:59:00.4227565+01:00",
     "MessageType": "New"
   },
   "ContainerPreNotificationType": "Empty",
@@ -32,7 +32,7 @@
     "ContainerType": "DummyString"
   },
   "ArrivalInfo": {
-    "ETA": "2023-10-24T12:43:27.237024+02:00",
+    "ETA": "2023-11-01T13:59:00.4228737+01:00",
     "RedeliveryReference": "DummyString",
     "ContainerOrigin": "DummyString",
     "Container_HaulierInfo": {
@@ -51,7 +51,7 @@
         "Remarks": [
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-10-24T12:43:27.2370446+02:00",
+            "RemarkDate": "2023-11-01T13:59:00.4228942+01:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString",
             "Tags": [
@@ -61,7 +61,7 @@
           },
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-10-24T12:43:27.2370574+02:00",
+            "RemarkDate": "2023-11-01T13:59:00.4229056+01:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString",
             "Tags": [
@@ -80,7 +80,7 @@
         "Remarks": [
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-10-24T12:43:27.2371006+02:00",
+            "RemarkDate": "2023-11-01T13:59:00.4229429+01:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString",
             "Tags": [
@@ -90,7 +90,7 @@
           },
           {
             "RemarkID": "DummyString",
-            "RemarkDate": "2023-10-24T12:43:27.2371023+02:00",
+            "RemarkDate": "2023-11-01T13:59:00.4229446+01:00",
             "RemarkAuthor": "DummyString",
             "RemarkText": "DummyString",
             "Tags": [
@@ -114,7 +114,7 @@
     }
   },
   "DepartureInfo": {
-    "ETD": "2023-10-24T12:43:27.2371112+02:00",
+    "ETD": "2023-11-01T13:59:00.4229535+01:00",
     "ReleaseReference": "DummyString",
     "ContainerDestination": "DummyString",
     "Container_HaulierInfo": {
@@ -127,7 +127,7 @@
   "Remarks": [
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-10-24T12:43:27.2371141+02:00",
+      "RemarkDate": "2023-11-01T13:59:00.4229564+01:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString",
       "Tags": [
@@ -137,7 +137,7 @@
     },
     {
       "RemarkID": "DummyString",
-      "RemarkDate": "2023-10-24T12:43:27.2371153+02:00",
+      "RemarkDate": "2023-11-01T13:59:00.4229576+01:00",
       "RemarkAuthor": "DummyString",
       "RemarkText": "DummyString",
       "Tags": [
