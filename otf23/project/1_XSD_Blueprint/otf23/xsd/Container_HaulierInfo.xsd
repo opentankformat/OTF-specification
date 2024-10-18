@@ -6,15 +6,15 @@
     <xs:complexType>
       <xs:sequence>
 		<xs:element ref="BusinessUnitInfo" />	  
-		<xs:element name="TruckDriverInfo" minOccurs="0">
+		<xs:element name="TruckDriverInfo" >
 			<xs:complexType>
 				<xs:sequence>
 					<xs:element ref="ContactInfo" />	  
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>	
-        <xs:element name="TruckLicensePlate" type="xs:string" minOccurs="0" />
-        <xs:element name="ChassisLicensePlate" type="xs:string" minOccurs="0" />
+        <xs:element name="TruckLicensePlate" type="xs:string"  />
+        <xs:element name="ChassisLicensePlate" type="xs:string"  />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

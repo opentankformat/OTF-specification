@@ -10,42 +10,42 @@
       <xs:element name="Container_Work_EstimateLine" maxOccurs="unbounded">
         <xs:complexType>
           <xs:sequence>
-			<xs:element name="LineID" type="xs:string"  minOccurs="0" />
-			<xs:element name="OriginID" type="xs:string"  minOccurs="0" />
-			<xs:element name="SortOrder" type="xs:int"  minOccurs="0"/>
+			<xs:element name="LineID" type="xs:string"   />
+			<xs:element name="OriginID" type="xs:string"   />
+			<xs:element name="SortOrder" type="xs:int"  />
 			<xs:element name="Description" type="xs:string" />
-			<xs:element name="CategoryCode" minOccurs="0" >
+			<xs:element name="CategoryCode"  >
 				<xs:complexType> 
 					<xs:sequence>
 						<xs:element ref="Code"/>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="GeneralCodes" minOccurs="0" >
+			<xs:element name="GeneralCodes"  >
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="LocationCode" minOccurs="0" >
+						<xs:element name="LocationCode"  >
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element ref="Code"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="DamageCode"  minOccurs="0" >
+						<xs:element name="DamageCode"   >
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element ref="Code"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="RepairCode" minOccurs="0" >
+						<xs:element name="RepairCode"  >
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element ref="Code"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="ComponentCode" minOccurs="0" >
+						<xs:element name="ComponentCode"  >
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element ref="Code"/>
@@ -55,29 +55,29 @@
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>								
-			<xs:element name="ComplexCodes" type="ComplexCodes"  minOccurs="0" />
-			<xs:element name="Proposal" minOccurs="0" >
+			<xs:element name="ComplexCodes" type="ComplexCodes"   />
+			<xs:element name="Proposal"  >
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element ref="Container_Work_EstimateLineProposal"/>					
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>			
-			<xs:element name="CounterProposal" minOccurs="0" >
+			<xs:element name="CounterProposal"  >
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element ref="Container_Work_EstimateLineProposal"/>					
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>					
-			<xs:element name="ClientAuthorization" minOccurs="0" >
+			<xs:element name="ClientAuthorization"  >
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element ref="Container_ServiceProgress_AuthorizationInfo"/>					
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>	
-			<xs:element name="Attachments" type="Attachments" minOccurs="0" />		          
+			<xs:element name="Attachments" type="Attachments"  />		          
 		  </xs:sequence>
         </xs:complexType>
       </xs:element>

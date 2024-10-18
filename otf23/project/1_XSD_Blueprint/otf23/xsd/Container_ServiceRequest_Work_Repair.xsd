@@ -4,23 +4,23 @@
   <xs:element name="Container_ServiceRequest_Work_Repair">
     <xs:complexType>
       <xs:sequence>
-		<xs:element name="LessorInfo" minOccurs="0">
+		<xs:element name="LessorInfo" >
 			<xs:complexType>
 				<xs:sequence>
 					<xs:element ref="BusinessUnitInfo" />	 
-					<xs:element ref="Container_ServiceRequestInfo" minOccurs="0" />
+					<xs:element ref="Container_ServiceRequestInfo"  />
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>			
-		<xs:element name="LesseeInfo" minOccurs="0">
+		<xs:element name="LesseeInfo" >
 			<xs:complexType>
 				<xs:sequence>
 					<xs:element ref="BusinessUnitInfo" />	  
-					<xs:element ref="Container_ServiceRequestInfo" minOccurs="0" />
+					<xs:element ref="Container_ServiceRequestInfo"  />
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>			
-		<xs:element name="SpecialInstructionID" type="xs:string" minOccurs="0" />
+		<xs:element name="SpecialInstructionID" type="xs:string"  />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

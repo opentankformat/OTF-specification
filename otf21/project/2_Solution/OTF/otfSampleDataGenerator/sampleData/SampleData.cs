@@ -148,6 +148,7 @@ namespace OTF.SampleGenerator
         public static string Depot_OrderReference_Work = Depot_OrderReference + ".R1";
         public static string Orderflow_Container_StatusUpdate_Work_Estimate_ByDepot_StatusDescription = "AWAITING AUTHORIZATION";
         public static string Orderflow_Container_StatusUpdate_Work_ByDepot_Estimate_Finished = "2000-01-02T16:23:00.0000000+01:00";
+        public static string Orderflow_Container_StatusUpdate_Work_Estimate_ByDepot_AuthorizedStatusDescription = "AUTHORIZED";
         public static string Orderflow_Container_StatusUpdate_Work_Repair_ByDepot_LessorAuthorizationDate = "2000-01-02T17:23:00.0000000+01:00";
         public static string Orderflow_Container_StatusUpdate_Work_Repair_ByDepot_Work_Started = "2000-01-03T08:55:00.0000000+01:00";
         public static string Orderflow_Container_StatusUpdate_Work_Repair_ByDepot_StatusDescription = "IN REPAIR";

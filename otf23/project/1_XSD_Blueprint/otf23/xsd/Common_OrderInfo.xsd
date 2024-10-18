@@ -7,24 +7,24 @@
   <xs:element name="OrderInfo">
     <xs:complexType>
       <xs:sequence>
-		<xs:element name="SupplierInfo" minOccurs="0">
+		<xs:element name="SupplierInfo" >
 			<xs:complexType>
 				<xs:sequence>
 					<xs:element ref="BusinessUnitInfo" />	  
 					<xs:element ref="FacilityInfo" />	  
-					<xs:element name="ProformaReference" type="xs:string" minOccurs="0"/>
-					<xs:element name="OrderReference" type="xs:string" minOccurs="0"/>	
-					<xs:element ref="OrderStatusInfo" minOccurs="0"/>
+					<xs:element name="ProformaReference" type="xs:string" />
+					<xs:element name="OrderReference" type="xs:string" />	
+					<xs:element ref="OrderStatusInfo" />
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>		
-		<xs:element name="ClientInfo" minOccurs="0">
+		<xs:element name="ClientInfo" >
 			<xs:complexType>
 				<xs:sequence>
 					<xs:element ref="BusinessUnitInfo" />	
 					<xs:element ref="FacilityInfo" />	  
 					<xs:element ref="ContactInfo" />
-					<xs:element name="OrderReference" type="xs:string" minOccurs="0"/>
+					<xs:element name="OrderReference" type="xs:string" />
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>		

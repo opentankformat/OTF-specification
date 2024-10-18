@@ -26,53 +26,53 @@
 		</xs:element>		
 	    <xs:element ref="OrderInfo"/>
 	    <xs:element ref="TankContainerInfo"/>
-		<xs:element name="ArrivalInfo" minOccurs="0" >
+		<xs:element name="ArrivalInfo"  >
 			<xs:complexType>
 				<xs:sequence>
 					<xs:element name="ETA" type="xs:dateTime" />
-					<xs:element name="RedeliveryReference" type="xs:string" minOccurs="0" />
-					<xs:element name="ContainerOriginInfo" minOccurs="0" >
+					<xs:element name="RedeliveryReference" type="xs:string"  />
+					<xs:element name="ContainerOriginInfo"  >
 						<xs:complexType>
 							<xs:sequence>
 								<xs:element ref="FacilityInfo" />	
 							</xs:sequence>
 						</xs:complexType>
 					</xs:element>
-					<xs:element ref="Container_HaulierInfo"  minOccurs="0" />
-					<xs:element ref="TankContainer_StateInfo" minOccurs="0" />					
+					<xs:element ref="Container_HaulierInfo"   />
+					<xs:element ref="TankContainer_StateInfo"  />					
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>
         <xs:element name="ServicesRequestInfo" >
           <xs:complexType>
             <xs:sequence>
-  				<xs:element ref="Container_ServiceRequest_Storage" minOccurs="0" />
-  				<xs:element ref="TankContainer_ServiceRequest_Heating" minOccurs="0" />
-  				<xs:element ref="TankContainer_ServiceRequest_Cleaning" minOccurs="0" />
-  				<xs:element ref="Container_ServiceRequest_Work_Modification" minOccurs="0" />
-  				<xs:element ref="Container_ServiceRequest_Work_Repair" minOccurs="0" />
-  				<xs:element ref="TankContainer_ServiceRequest_Inspection" minOccurs="0" />
+  				<xs:element ref="Container_ServiceRequest_Storage"  />
+  				<xs:element ref="TankContainer_ServiceRequest_Heating"  />
+  				<xs:element ref="TankContainer_ServiceRequest_Cleaning"  />
+  				<xs:element ref="Container_ServiceRequest_Work_Modification"  />
+  				<xs:element ref="Container_ServiceRequest_Work_Repair"  />
+  				<xs:element ref="TankContainer_ServiceRequest_Inspection"  />
             </xs:sequence>
           </xs:complexType>
         </xs:element>		
-		<xs:element name="DepartureInfo" minOccurs="0" >
+		<xs:element name="DepartureInfo"  >
 			<xs:complexType>
 				<xs:sequence>
 					<xs:element name="ETD" type="xs:dateTime" />
-					<xs:element name="ReleaseReference" type="xs:string" minOccurs="0" />
-					<xs:element name="ContainerDestinationInfo" minOccurs="0" >
+					<xs:element name="ReleaseReference" type="xs:string"  />
+					<xs:element name="ContainerDestinationInfo"  >
 						<xs:complexType>
 							<xs:sequence>
 								<xs:element ref="FacilityInfo" />	
 							</xs:sequence>
 						</xs:complexType>
 					</xs:element>
-					<xs:element ref="Container_HaulierInfo" minOccurs="0" />
+					<xs:element ref="Container_HaulierInfo"  />
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>
-		<xs:element name="Remarks" type="Remarks" minOccurs="0" />
-		<xs:element name="Attachments" type="Attachments" minOccurs="0" />			
+		<xs:element name="Remarks" type="Remarks"  />
+		<xs:element name="Attachments" type="Attachments"  />			
       </xs:sequence>
     </xs:complexType>
   </xs:element>

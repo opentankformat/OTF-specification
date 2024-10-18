@@ -9,8 +9,9 @@
 				<xs:restriction base="TankContainer_InspectionResults" />
 			</xs:simpleType>
 		</xs:element>
-		<xs:element name="InspectionRemark" type="xs:string" minOccurs="0" />
-	      </xs:sequence>
+		<xs:element name="InspectionRemark" type="xs:string"  />
+		<xs:element name="InspectionDate" type="xs:dateTime" />
+	  </xs:sequence>
     </xs:complexType>
   </xs:element>
 </xs:schema>

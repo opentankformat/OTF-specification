@@ -6,17 +6,17 @@
       <xs:element name="Remark" maxOccurs="unbounded">
         <xs:complexType>
           <xs:sequence>
-            <xs:element name="ID" type="xs:string" minOccurs="0" />
+            <xs:element name="ID" type="xs:string"  />
             <xs:element name="Date" type="xs:dateTime" />
-			<xs:element name="AuthorInfo" minOccurs="0">
+			<xs:element name="AuthorInfo" >
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element ref="ContactInfo" />	  
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>	
-            <xs:element name="Remark" type="xs:string" minOccurs="0" />	
-			<xs:element name="Tags" minOccurs="0">
+            <xs:element name="Remark" type="xs:string"  />	
+			<xs:element name="Tags" >
               <xs:complexType>
                 <xs:sequence>
                   <xs:element name="Tag" type="xs:string" maxOccurs="unbounded" />

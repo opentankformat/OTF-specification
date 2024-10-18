@@ -4,9 +4,9 @@
     <xs:complexType>
       <xs:sequence>
 		<xs:element name="IsRequested" type="xs:boolean" default = "true" />
-		<xs:element name="Reference" type="xs:string" minOccurs="0" />
-		<xs:element name="AuthorizationReference" type="xs:string" minOccurs="0" />
-		<xs:element name="Remarks" type="Remarks" minOccurs="0" />
+		<xs:element name="Reference" type="xs:string"  />
+		<xs:element name="AuthorizationReference" type="xs:string"  />
+		<xs:element name="Remarks" type="Remarks"  />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

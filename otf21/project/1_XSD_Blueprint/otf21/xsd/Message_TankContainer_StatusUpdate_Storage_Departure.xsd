@@ -13,8 +13,8 @@
 	    <xs:element ref="OrderInfo"/> 
 	    <xs:element ref="TankContainerInfo"/>
 	    <xs:element ref="Container_StatusUpdate_Storage_Departure"/>
-		<xs:element name="Remarks" type="Remarks" minOccurs="0" />
-		<xs:element name="Attachments" type="Attachments" minOccurs="0" />
+		<xs:element name="Remarks" type="Remarks"  />
+		<xs:element name="Attachments" type="Attachments"  />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

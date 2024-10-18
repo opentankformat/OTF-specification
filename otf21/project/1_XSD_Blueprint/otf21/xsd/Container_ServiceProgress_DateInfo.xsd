@@ -4,7 +4,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element name="Planned" type="xs:dateTime" />
-        <xs:element name="PlannedBy" type="xs:string" minOccurs="0" />
+        <xs:element name="PlannedBy" type="xs:string"  />
         <xs:element name="PlannedToTakePlaceOn" type="xs:dateTime" />
         <xs:element name="Started" type="xs:dateTime" />
         <xs:element name="Finished" type="xs:dateTime" />

@@ -14,7 +14,7 @@
 	    <xs:element ref="MessageHeaderInfo"/>
 	    <xs:element ref="OrderInfo"/>  		
 	    <xs:element ref="LocalizationInfo"/>
-	    <xs:element ref="TankContainerInfo" minOccurs="0" />	
+	    <xs:element ref="TankContainerInfo"  />	
 	    <xs:element ref="Container_Work_EstimateStatusInfo"/>
         <xs:element name="ContainerStorageArrivalInfo">
           <xs:complexType>
@@ -23,12 +23,12 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-	 	<xs:element name="Category" type="xs:string" minOccurs="0" />
+	 	<xs:element name="Category" type="xs:string"  />
 	 	<xs:element name="LaborRate" type="xs:double" />
 		<xs:element name="EstimateLines" type="Container_Work_EstimateLines" />	
 	 	<xs:element name="EstimateLinesProposalTotal" type="xs:double" />
-		<xs:element name="Remarks" type="Remarks" minOccurs="0" />
-		<xs:element name="Attachments" type="Attachments" minOccurs="0" />		
+		<xs:element name="Remarks" type="Remarks"  />
+		<xs:element name="Attachments" type="Attachments"  />		
       </xs:sequence>
     </xs:complexType>
   </xs:element>

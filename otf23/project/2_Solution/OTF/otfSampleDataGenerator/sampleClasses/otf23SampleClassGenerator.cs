@@ -34,10 +34,14 @@ namespace otfSampleDataGenerator.sampleClasses
 			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Transhipment>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Transhipment).Name, sample_Message_TankContainer_StatusUpdate_Transhipment(), GenerateDummyData<Message_TankContainer_StatusUpdate_Transhipment>());
 
 			//Workflow
-			GenerateSampleMessages<Message_Container_Work_Estimate>(targetFolder, typeof(Message_Container_Work_Estimate).Name, sample_Message_Container_Work_Estimate(), GenerateDummyData<Message_Container_Work_Estimate>());
-			GenerateSampleMessages<Message_TankContainer_Work_Estimate>(targetFolder, typeof(Message_TankContainer_Work_Estimate).Name, sample_Message_TankContainer_Work_Estimate(), GenerateDummyData<Message_TankContainer_Work_Estimate>());
+			GenerateSampleMessages<Message_Container_Work_Estimate>(targetFolder, typeof(Message_Container_Work_Estimate).Name + "_Estimate", sample_Message_Container_Work_Estimate(), GenerateDummyData<Message_Container_Work_Estimate>());
+			GenerateSampleMessages<Message_TankContainer_Work_Estimate>(targetFolder, typeof(Message_TankContainer_Work_Estimate).Name + "_Estimate", sample_Message_TankContainer_Work_Estimate(), GenerateDummyData<Message_TankContainer_Work_Estimate>());
 
-			GenerateSampleMessages<Message_Container_StatusUpdate_Work>(targetFolder, typeof(Message_Container_StatusUpdate_Work).Name, sample_Message_Container_StatusUpdate_Work(), GenerateDummyData<Message_Container_StatusUpdate_Work>());
+
+            GenerateSampleMessages<Message_Container_Work_Estimate>(targetFolder, typeof(Message_Container_Work_Estimate).Name + "_Authorization", sample_Message_Container_Work_Estimate_Authorization(), GenerateDummyData<Message_Container_Work_Estimate>());
+            GenerateSampleMessages<Message_TankContainer_Work_Estimate>(targetFolder, typeof(Message_TankContainer_Work_Estimate).Name + "_Authorization", sample_Message_TankContainer_Work_Estimate_Authorization(), GenerateDummyData<Message_TankContainer_Work_Estimate>());
+
+            GenerateSampleMessages<Message_Container_StatusUpdate_Work>(targetFolder, typeof(Message_Container_StatusUpdate_Work).Name, sample_Message_Container_StatusUpdate_Work(), GenerateDummyData<Message_Container_StatusUpdate_Work>());
 			GenerateSampleMessages<Message_TankContainer_StatusUpdate_Work>(targetFolder, typeof(Message_TankContainer_StatusUpdate_Work).Name, sample_Message_TankContainer_StatusUpdate_Work(), GenerateDummyData<Message_TankContainer_StatusUpdate_Work>());
 
 			//Inspections
@@ -1679,7 +1683,7 @@ namespace otfSampleDataGenerator.sampleClasses
 
 				Container_Work_EstimateStatusInfo = new Container_Work_EstimateStatusInfo
 				{
-
+					ContainerWorkStatus = Container_Work_EstimateStatusInfoContainerWorkStatus.Estimate,
 					Version = SampleData.Orderflow_Container_Work_Repair_ByDepot_Version,
 					SupplierInfo = new Container_Work_EstimateStatusInfoSupplierInfo
                     {
@@ -1701,11 +1705,6 @@ namespace otfSampleDataGenerator.sampleClasses
 						{
 							ExternalID = SampleData.Lessor_ID,
 							Name = SampleData.Lessor_ID,
-						},
-						Container_ServiceProgress_AuthorizationInfo = new Container_ServiceProgress_AuthorizationInfo
-						{
-							AuthorizationReference = SampleData.Lessor_Work_RepairServiceRequest_AuthorizationReference,
-							Authorized = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Work_Repair_ByDepot_LessorAuthorizationDate)
 						}
 					},
 				},
@@ -1957,6 +1956,7 @@ namespace otfSampleDataGenerator.sampleClasses
 				},
 				Container_Work_EstimateStatusInfo = new Container_Work_EstimateStatusInfo
 				{
+					ContainerWorkStatus = Container_Work_EstimateStatusInfoContainerWorkStatus.Estimate,
 					Version = SampleData.Orderflow_Container_Work_Repair_ByDepot_Version,
 					SupplierInfo = new Container_Work_EstimateStatusInfoSupplierInfo
                     {
@@ -1979,11 +1979,6 @@ namespace otfSampleDataGenerator.sampleClasses
 							ExternalID = SampleData.Lessor_ID,
 							Name = SampleData.Lessor_ID,
 						},
-						Container_ServiceProgress_AuthorizationInfo = new Container_ServiceProgress_AuthorizationInfo
-						{
-							AuthorizationReference = SampleData.Lessor_Work_RepairServiceRequest_AuthorizationReference,
-							Authorized = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Work_Repair_ByDepot_LessorAuthorizationDate)
-						}
 					},
 				},
 				ContainerStorageArrivalInfo = new Message_TankContainer_Work_EstimateContainerStorageArrivalInfo
@@ -2131,7 +2126,538 @@ namespace otfSampleDataGenerator.sampleClasses
 			};
 			return m;
 		}
-		static Message_Container_StatusUpdate_Work sample_Message_Container_StatusUpdate_Work()
+
+
+        static Message_Container_Work_Estimate sample_Message_Container_Work_Estimate_Authorization()
+        {
+            Message_Container_Work_Estimate m = new Message_Container_Work_Estimate
+            {
+                MessageHeaderInfo = new MessageHeaderInfo
+                {
+                    MessageID = SampleData.MessageIdentifier_Container_Work_Repair_Estimate_MessageID,
+                    ConversationID = SampleData.MessageIdentifier_Container_Work_Repair_ConversationID,
+                    SentDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Work_Repair_ByDepot_LessorAuthorizationDate),
+                    OTFVersion = OTFVersion,
+                    OTFMessage = MessageHeaderInfoOTFMessage.Message_Container_Work_Estimate,
+                    MessageType = MessageHeaderInfoMessageType.New,
+
+                    SenderInfo = new MessageHeaderInfoSenderInfo
+                    {
+                        BusinessUnitInfo = new BusinessUnitInfo
+                        {
+                            ExternalID = SampleData.Lessor_ID,
+                            Name = SampleData.Lessor_ID
+                        }
+                    },
+                    RecipientInfo = new MessageHeaderInfoRecipientInfo
+                    {
+                        BusinessUnitInfo = new BusinessUnitInfo
+                        {
+                            ExternalID = SampleData.Depot_ID,
+                            Name = SampleData.Depot_ID
+                        }
+                    },
+                },
+                OrderInfo = new OrderInfo
+                {
+                    SupplierInfo = new OrderInfoSupplierInfo
+                    {
+                        BusinessUnitInfo = new BusinessUnitInfo
+                        {
+                            ExternalID = SampleData.Depot_ID,
+                            Name = SampleData.Depot_ID
+                        },
+                        FacilityInfo = new FacilityInfo
+                        {
+                            Name = SampleData.Depot_LocationID,
+                        },
+                        OrderReference = SampleData.Depot_OrderReference,
+                        OrderStatusInfo = new OrderStatusInfo
+                        {
+                            OrderStatus = SampleData.Orderflow_Container_StatusUpdate_Work_Estimate_ByDepot_Status,
+                            OrderStatusDescription = SampleData.Orderflow_Container_StatusUpdate_Work_Estimate_ByDepot_Status_Description
+                        },
+                    },
+                    ClientInfo = new OrderInfoClientInfo
+                    {
+                        BusinessUnitInfo = new BusinessUnitInfo
+                        {
+                            ExternalID = SampleData.Lessor_ID,
+                            Name = SampleData.Lessor_ID
+                        },
+                        OrderReference = SampleData.Lessor_OrderReference
+                    },
+                },
+                LocalizationInfo = new LocalizationInfo()
+                {
+                    CurrencyISO = SampleData.Depot_Localization_CurrencyISO,
+                    ExchangeRate = SampleData.Depot_Localization_CurrencyExchangeRate,
+                },
+
+                ContainerInfo = new ContainerInfo
+                {
+                    ContainerNumber = SampleData.ContainerNumber,
+                    ContainerType = SampleData.ContainerType
+                },
+
+                Container_Work_EstimateStatusInfo = new Container_Work_EstimateStatusInfo
+                {
+					ContainerWorkStatus = Container_Work_EstimateStatusInfoContainerWorkStatus.Authorization,
+                    Version = SampleData.Orderflow_Container_Work_Repair_ByDepot_Version,
+                    SupplierInfo = new Container_Work_EstimateStatusInfoSupplierInfo
+                    {
+                        EstimatorInfo = new Container_Work_EstimateStatusInfoSupplierInfoEstimatorInfo
+                        {
+                            ContactInfo = new ContactInfo
+                            {
+                                Name = SampleData.Orderflow_Container_Work_Repair_ByDepot_EstimatorName,
+                            }
+                        },
+                        Container_ServiceProgress_DateInfo = new Container_ServiceProgress_DateInfo
+                        {
+                            Finished = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Work_ByDepot_Estimate_Finished)
+                        },
+                    },
+                    LessorInfo = new Container_Work_EstimateStatusInfoLessorInfo
+                    {
+                        BusinessUnitInfo = new BusinessUnitInfo
+                        {
+                            ExternalID = SampleData.Lessor_ID,
+                            Name = SampleData.Lessor_ID,
+                        },
+                        Container_ServiceProgress_AuthorizationInfo = new Container_ServiceProgress_AuthorizationInfo
+                        {
+                            AuthorizationReference = SampleData.Lessor_Work_RepairServiceRequest_AuthorizationReference,
+                            Authorized = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Work_Repair_ByDepot_LessorAuthorizationDate)
+                        }
+                    },
+                },
+                ContainerStorageArrivalInfo = new Message_Container_Work_EstimateContainerStorageArrivalInfo
+                {
+                    ContainerDeliveryDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_GateIn_ByDepot)
+                },
+                LaborRate = SampleData.Depot_Pricing_MandR_LaborRate,
+                EstimateLines = new Container_Work_EstimateLinesContainer_Work_EstimateLine[]
+                {
+                     new Container_Work_EstimateLinesContainer_Work_EstimateLine
+                     {
+                         LineID = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MandREstimateLineID,
+                         OriginID = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MandREstimateLineOriginID,
+                         SortOrder = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_SortOrder,
+                         Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_Description,
+                         CategoryCode = new Container_Work_EstimateLinesContainer_Work_EstimateLineCategoryCode
+                         {
+                              Code = new Code
+                              {
+                                  Value = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_CategoryCode,
+                                  Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_CategoryCodeDescription
+                              }
+                         },
+                         GeneralCodes = new Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodes
+                         {
+                              DamageCode =  new Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesDamageCode
+                              {
+                                  Code = new Code
+                                  {
+                                    Value =  SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_DamageCode,
+                                    Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_DamageCodeDescription
+                                  }
+                              },
+                              LocationCode = new Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesLocationCode
+                              {
+                                  Code = new Code
+                                  {
+                                    Value =  SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LocationCode,
+                                    Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LocationCodeDescription
+                                  }
+
+                              },
+                              RepairCode = new Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesRepairCode
+                              {
+                                  Code = new Code
+                                  {
+                                    Value =  SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_RepairCode,
+                                    Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_RepairCodeDescription
+                                  }
+
+                              }
+                         },
+                         Proposal = new Container_Work_EstimateLinesContainer_Work_EstimateLineProposal
+                         {
+
+                              Container_Work_EstimateLineProposal = new Container_Work_EstimateLineProposal
+                              {
+                                  LaborRate = SampleData.Depot_Pricing_MandR_LaborRate,
+                                  LaborHours = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours,
+                                  LaborPrice = (SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours),
+                                  MaterialPrice = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MaterialPrice,
+                                  LineSubtotal = ((SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours)+SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MaterialPrice),
+                                  Quantity = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_Quantity,
+                                  LineTotal = ((SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours)+SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MaterialPrice)*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_Quantity,
+                                  DoAction = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_DoAction,
+                              }
+                         }
+                     },
+                     new Container_Work_EstimateLinesContainer_Work_EstimateLine
+                     {
+                         LineID = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_MandREstimateLineID,
+                         OriginID = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_MandREstimateLineOriginID,
+                         SortOrder = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_SortOrder,
+                         Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_Description,
+                         CategoryCode = new Container_Work_EstimateLinesContainer_Work_EstimateLineCategoryCode
+                         {
+                              Code = new Code
+                              {
+                                  Value = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_CategoryCode,
+                                  Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_CategoryCodeDescription
+                              }
+                         },
+                         GeneralCodes = new Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodes
+                         {
+                              DamageCode =  new Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesDamageCode
+                              {
+                                  Code = new Code
+                                  {
+                                    Value =  SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_DamageCode,
+                                    Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_DamageCodeDescription
+                                  }
+                              },
+                              LocationCode = new Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesLocationCode
+                              {
+                                  Code = new Code
+                                  {
+                                    Value =  SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LocationCode,
+                                    Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LocationCodeDescription
+                                  }
+
+                              },
+                              RepairCode = new Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesRepairCode
+                              {
+                                  Code = new Code
+                                  {
+                                    Value =  SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_RepairCode,
+                                    Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_RepairCodeDescription
+                                  }
+
+                              }
+                         },
+                         Proposal = new Container_Work_EstimateLinesContainer_Work_EstimateLineProposal
+                         {
+                              Container_Work_EstimateLineProposal = new Container_Work_EstimateLineProposal
+                              {
+                                  LaborRate = SampleData.Depot_Pricing_MandR_LaborRate,
+                                  LaborHours = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LaborHours,
+                                  LaborPrice = (SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LaborHours),
+                                  MaterialPrice = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_MaterialPrice,
+                                  LumpSumPrice = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LumpSumPrice,
+                                  LineSubtotal = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LumpSumPrice,
+                                  Quantity = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_Quantity,
+                                  LineTotal = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LumpSumPrice*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_Quantity,
+                                  DoAction = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_DoAction,
+                              }
+                         }
+                    }
+                },
+                Remarks = new RemarksRemark[]
+                {
+                    new RemarksRemark
+                    {
+                        ID = SampleData.Remark_Work_Repair_ID,
+                        Date = DateTime.Parse(SampleData.Remark_Work_Repair_Date),
+                        AuthorInfo = new RemarksRemarkAuthorInfo
+                        {
+                             ContactInfo = new ContactInfo
+                             {
+                                 Name = SampleData.Remark_Work_Repair_Author,
+                             }
+                        },
+                        Remark = SampleData.Remark_Work_Repair
+                    }
+                }
+
+            };
+            return m;
+        }
+        static Message_TankContainer_Work_Estimate sample_Message_TankContainer_Work_Estimate_Authorization()
+        {
+            Message_TankContainer_Work_Estimate m = new Message_TankContainer_Work_Estimate
+            {
+                MessageHeaderInfo = new MessageHeaderInfo
+                {
+                    MessageID = SampleData.MessageIdentifier_Container_Work_Repair_Estimate_MessageID,
+                    ConversationID = SampleData.MessageIdentifier_Container_Work_Repair_ConversationID,
+                    SentDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Work_Repair_ByDepot_LessorAuthorizationDate),
+                    OTFVersion = OTFVersion,
+                    OTFMessage = MessageHeaderInfoOTFMessage.Message_TankContainer_Work_Estimate,
+                    MessageType = MessageHeaderInfoMessageType.New,
+
+                    SenderInfo = new MessageHeaderInfoSenderInfo
+                    {
+                        BusinessUnitInfo = new BusinessUnitInfo
+                        {
+                            ExternalID = SampleData.Lessor_ID,
+                            Name = SampleData.Lessor_ID
+                        }
+                    },
+                    RecipientInfo = new MessageHeaderInfoRecipientInfo
+                    {
+                        BusinessUnitInfo = new BusinessUnitInfo
+                        {
+                            ExternalID = SampleData.Depot_ID,
+                            Name = SampleData.Depot_ID
+                        }
+                    },
+                },
+                OrderInfo = new OrderInfo
+                {
+                    SupplierInfo = new OrderInfoSupplierInfo
+                    {
+                        BusinessUnitInfo = new BusinessUnitInfo
+                        {
+                            ExternalID = SampleData.Depot_ID,
+                            Name = SampleData.Depot_ID
+                        },
+                        FacilityInfo = new FacilityInfo
+                        {
+                            Name = SampleData.Depot_LocationID,
+                        },
+                        OrderReference = SampleData.Depot_OrderReference,
+                        OrderStatusInfo = new OrderStatusInfo
+                        {
+                            OrderStatus = SampleData.Orderflow_Container_StatusUpdate_Work_Estimate_ByDepot_Status,
+                            OrderStatusDescription = SampleData.Orderflow_Container_StatusUpdate_Work_Estimate_ByDepot_Status_Description
+                        },
+                    },
+                    ClientInfo = new OrderInfoClientInfo
+                    {
+                        BusinessUnitInfo = new BusinessUnitInfo
+                        {
+                            ExternalID = SampleData.Lessor_ID,
+                            Name = SampleData.Lessor_ID
+                        },
+                        OrderReference = SampleData.Lessor_OrderReference
+                    },
+                },
+                LocalizationInfo = new LocalizationInfo()
+                {
+                    CurrencyISO = SampleData.Depot_Localization_CurrencyISO,
+                    ExchangeRate = SampleData.Depot_Localization_CurrencyExchangeRate,
+                },
+                TankContainerInfo = new TankContainerInfo
+                {
+                    ContainerInfo = new ContainerInfo
+                    {
+                        ContainerNumber = SampleData.ContainerNumber,
+                        ContainerType = SampleData.ContainerType,
+                        LessorInfo = new ContainerInfoLessorInfo
+                        {
+                            BusinessUnitInfo = new BusinessUnitInfo
+                            {
+                                ExternalID = SampleData.Lessor_ID,
+                                Name = SampleData.Lessor_ID,
+                            }
+                        }
+                    },
+                    TankContainerCharacteristicsInfo = new TankContainerInfoTankContainerCharacteristicsInfo
+                    {
+                        ManufacturerInfo = new TankContainerInfoTankContainerCharacteristicsInfoManufacturerInfo
+                        {
+                            BusinessUnitInfo = new BusinessUnitInfo
+                            {
+                                ExternalID = SampleData.ContainerManufacturer,
+                                Name = SampleData.ContainerManufacturer,
+                            },
+                        },
+                        BuildingYearMonth = DateTime.Parse(SampleData.ContainerBuildingYear),
+                        Capacity = SampleData.ContainerCapacity,
+                    },
+                    InspectionDates = new TankContainerInfoInspectionDates
+                    {
+                        LastInspectionDate = DateTime.Parse(SampleData.LastTestDate),
+                        LastInspectionScopeDescription = SampleData.LastTestType,
+                        CSCValidityDate = DateTime.Parse(SampleData.CSCDate)
+                    }
+                },
+                Container_Work_EstimateStatusInfo = new Container_Work_EstimateStatusInfo
+                {
+					ContainerWorkStatus = Container_Work_EstimateStatusInfoContainerWorkStatus.Authorization,
+                    Version = SampleData.Orderflow_Container_Work_Repair_ByDepot_Version,
+                    SupplierInfo = new Container_Work_EstimateStatusInfoSupplierInfo
+                    {
+                        EstimatorInfo = new Container_Work_EstimateStatusInfoSupplierInfoEstimatorInfo
+                        {
+                            ContactInfo = new ContactInfo
+                            {
+                                Name = SampleData.Orderflow_Container_Work_Repair_ByDepot_EstimatorName,
+                            }
+                        },
+                        Container_ServiceProgress_DateInfo = new Container_ServiceProgress_DateInfo
+                        {
+                            Finished = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Work_ByDepot_Estimate_Finished)
+                        },
+                    },
+                    LessorInfo = new Container_Work_EstimateStatusInfoLessorInfo
+                    {
+                        BusinessUnitInfo = new BusinessUnitInfo
+                        {
+                            ExternalID = SampleData.Lessor_ID,
+                            Name = SampleData.Lessor_ID,
+                        },
+                        Container_ServiceProgress_AuthorizationInfo = new Container_ServiceProgress_AuthorizationInfo
+                        {
+                            AuthorizationReference = SampleData.Lessor_Work_RepairServiceRequest_AuthorizationReference,
+                            Authorized = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_Work_Repair_ByDepot_LessorAuthorizationDate)
+                        }
+                    },
+                },
+                ContainerStorageArrivalInfo = new Message_TankContainer_Work_EstimateContainerStorageArrivalInfo
+                {
+                    ContainerDeliveryDate = DateTime.Parse(SampleData.Orderflow_Container_StatusUpdate_GateIn_ByDepot)
+                },
+                LaborRate = SampleData.Depot_Pricing_MandR_LaborRate,
+                EstimateLines = new Container_Work_EstimateLinesContainer_Work_EstimateLine[]
+                {
+                     new Container_Work_EstimateLinesContainer_Work_EstimateLine
+                     {
+                         LineID = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MandREstimateLineID,
+                         OriginID = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MandREstimateLineOriginID,
+                         SortOrder = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_SortOrder,
+                         Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_Description,
+                         CategoryCode = new Container_Work_EstimateLinesContainer_Work_EstimateLineCategoryCode
+                         {
+                              Code = new Code
+                              {
+                                  Value = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_CategoryCode,
+                                  Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_CategoryCodeDescription
+                              }
+                         },
+                         GeneralCodes = new Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodes
+                         {
+                              DamageCode =  new Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesDamageCode
+                              {
+                                  Code = new Code
+                                  {
+                                    Value =  SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_DamageCode,
+                                    Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_DamageCodeDescription
+                                  }
+                              },
+                              LocationCode = new Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesLocationCode
+                              {
+                                  Code = new Code
+                                  {
+                                    Value =  SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LocationCode,
+                                    Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LocationCodeDescription
+                                  }
+
+                              },
+                              RepairCode = new Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesRepairCode
+                              {
+                                  Code = new Code
+                                  {
+                                    Value =  SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_RepairCode,
+                                    Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_RepairCodeDescription
+                                  }
+
+                              }
+                         },
+                         Proposal = new Container_Work_EstimateLinesContainer_Work_EstimateLineProposal
+                         {
+                              Container_Work_EstimateLineProposal = new Container_Work_EstimateLineProposal
+                              {
+                                  LaborRate = SampleData.Depot_Pricing_MandR_LaborRate,
+                                  LaborHours = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours,
+                                  LaborPrice = (SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours),
+                                  MaterialPrice = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MaterialPrice,
+                                  LineSubtotal = ((SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours)+SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MaterialPrice),
+                                  Quantity = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_Quantity,
+                                  LineTotal = ((SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_LaborHours)+SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_MaterialPrice)*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_Quantity,
+                                  DoAction = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_DoAction,
+                              }
+                         }
+                     },
+                     new Container_Work_EstimateLinesContainer_Work_EstimateLine
+                     {
+                         LineID = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_MandREstimateLineID,
+                         OriginID = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_MandREstimateLineOriginID,
+                         SortOrder = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_SortOrder,
+                         Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_Description,
+                         CategoryCode = new Container_Work_EstimateLinesContainer_Work_EstimateLineCategoryCode
+                         {
+                              Code = new Code
+                              {
+                                  Value = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_CategoryCode,
+                                  Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_CategoryCodeDescription
+                              }
+                         },
+                         GeneralCodes = new Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodes
+                         {
+                              DamageCode =  new Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesDamageCode
+                              {
+                                  Code = new Code
+                                  {
+                                    Value =  SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_DamageCode,
+                                    Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_DamageCodeDescription
+                                  }
+                              },
+                              LocationCode = new Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesLocationCode
+                              {
+                                  Code = new Code
+                                  {
+                                    Value =  SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LocationCode,
+                                    Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LocationCodeDescription
+                                  }
+
+                              },
+                              RepairCode = new Container_Work_EstimateLinesContainer_Work_EstimateLineGeneralCodesRepairCode
+                              {
+                                  Code = new Code
+                                  {
+                                    Value =  SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_RepairCode,
+                                    Description = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_RepairCodeDescription
+                                  }
+
+                              }
+                         },
+                         Proposal = new Container_Work_EstimateLinesContainer_Work_EstimateLineProposal
+                         {
+                              Container_Work_EstimateLineProposal = new Container_Work_EstimateLineProposal
+                              {
+                                  LaborRate = SampleData.Depot_Pricing_MandR_LaborRate,
+                                  LaborHours = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LaborHours,
+                                  LaborPrice = (SampleData.Depot_Pricing_MandR_LaborRate*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LaborHours),
+                                  MaterialPrice = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_MaterialPrice,
+                                  LumpSumPrice = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LumpSumPrice,
+                                  LineSubtotal = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LumpSumPrice,
+                                  Quantity = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_Quantity,
+                                  LineTotal = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_LumpSumPrice*SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo2_Quantity,
+                                  DoAction = SampleData.Orderflow_Container_Work_Repair_EstimateLineInfo1_DoAction,
+                              }
+                         }
+                    }
+                },
+                Remarks = new RemarksRemark[]
+                {
+                    new RemarksRemark
+                    {
+                        ID = SampleData.Remark_Work_Repair_ID,
+                        Date = DateTime.Parse(SampleData.Remark_Work_Repair_Date),
+                        AuthorInfo = new RemarksRemarkAuthorInfo
+                        {
+                             ContactInfo = new ContactInfo
+                             {
+                                 Name = SampleData.Remark_Work_Repair_Author,
+                             }
+                        },
+                        Remark = SampleData.Remark_Work_Repair
+                    }
+                }
+
+            };
+            return m;
+        }
+
+
+        static Message_Container_StatusUpdate_Work sample_Message_Container_StatusUpdate_Work()
 		{
 			Message_Container_StatusUpdate_Work m = new Message_Container_StatusUpdate_Work
 			{
@@ -2199,6 +2725,7 @@ namespace otfSampleDataGenerator.sampleClasses
 				SupplierReference = SampleData.Depot_OrderReference_Work,
 				Container_Work_EstimateStatusInfo = new Container_Work_EstimateStatusInfo
 				{
+					ContainerWorkStatus = Container_Work_EstimateStatusInfoContainerWorkStatus.Accept,
 					Version = SampleData.Orderflow_Container_Work_Repair_ByDepot_Version,
 					SupplierInfo = new Container_Work_EstimateStatusInfoSupplierInfo
                     {
@@ -2238,7 +2765,6 @@ namespace otfSampleDataGenerator.sampleClasses
 			};
 			return m;
 		}
-
 		static Message_TankContainer_StatusUpdate_Work sample_Message_TankContainer_StatusUpdate_Work()
 		{
 			Message_TankContainer_StatusUpdate_Work m = new Message_TankContainer_StatusUpdate_Work
@@ -2310,7 +2836,8 @@ namespace otfSampleDataGenerator.sampleClasses
 				SupplierReference = SampleData.Depot_OrderReference_Work,
 				Container_Work_EstimateStatusInfo = new Container_Work_EstimateStatusInfo
 				{
-					Version = SampleData.Orderflow_Container_Work_Repair_ByDepot_Version,
+                    ContainerWorkStatus = Container_Work_EstimateStatusInfoContainerWorkStatus.Accept,
+                    Version = SampleData.Orderflow_Container_Work_Repair_ByDepot_Version,
 					SupplierInfo = new Container_Work_EstimateStatusInfoSupplierInfo
                     {
 						EstimatorInfo = new Container_Work_EstimateStatusInfoSupplierInfoEstimatorInfo

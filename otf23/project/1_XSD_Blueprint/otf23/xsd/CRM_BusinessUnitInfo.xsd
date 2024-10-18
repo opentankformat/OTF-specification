@@ -4,10 +4,10 @@
     <xs:complexType>
       <xs:sequence>
 		<xs:element name="Name" type="xs:string" />
-		<xs:element name="ExternalID" type="xs:string" minOccurs="0" />		
-		<xs:element name="Phone" type="xs:string" minOccurs="0" />	
-		<xs:element name="Email" type="xs:string" minOccurs="0" />	
-		<xs:element name="Country" type="xs:string" minOccurs="0" />	
+		<xs:element name="ExternalID" type="xs:string"  />		
+		<xs:element name="Phone" type="xs:string"  />	
+		<xs:element name="Email" type="xs:string"  />	
+		<xs:element name="Country" type="xs:string"  />	
       </xs:sequence>
     </xs:complexType>
   </xs:element>

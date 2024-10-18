@@ -12,9 +12,9 @@
 		<xs:element name="LineSubtotal" type="xs:double" />
 		<xs:element name="Quantity" type="xs:double" default="1" />
 		<xs:element name="DoAction" type="xs:boolean" default = "true" />
-		<xs:element name="ThirdParty" type="xs:boolean" default = "false" minOccurs="0" />
+		<xs:element name="ThirdParty" type="xs:boolean" default = "false"  />
 		<xs:element name="LineTotal" type="xs:double" />
-		<xs:element name="Remarks" type="Remarks" minOccurs="0" />
+		<xs:element name="Remarks" type="Remarks"  />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

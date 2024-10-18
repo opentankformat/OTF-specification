@@ -7,7 +7,7 @@
           <xs:sequence>
 			<xs:element name="CompartmentNumber" type="xs:int" />
 			<xs:element name="ActionID" type="xs:string" />
-			<xs:element name="Quantity" type="xs:int" default="1" minOccurs="0" />
+			<xs:element name="Quantity" type="xs:int" default="1"  />
           </xs:sequence>
         </xs:complexType>
       </xs:element>

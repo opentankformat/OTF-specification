@@ -3,7 +3,7 @@
   <xs:element name="Container_ServiceRequest_Storage">
     <xs:complexType>
       <xs:sequence>
-		<xs:element ref="Container_ServiceRequestInfo" minOccurs="0" />
+		<xs:element ref="Container_ServiceRequestInfo"  />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

@@ -5,11 +5,11 @@
       <xs:element name="Remark" maxOccurs="unbounded">
         <xs:complexType>
           <xs:sequence>
-            <xs:element name="RemarkID" type="xs:string" minOccurs="0" />
+            <xs:element name="RemarkID" type="xs:string"  />
             <xs:element name="RemarkDate" type="xs:dateTime" />
-            <xs:element name="RemarkAuthor" type="xs:string" minOccurs="0" />
-            <xs:element name="RemarkText" type="xs:string" minOccurs="0" />		
-			<xs:element name="Tags" minOccurs="0">
+            <xs:element name="RemarkAuthor" type="xs:string"  />
+            <xs:element name="RemarkText" type="xs:string"  />		
+			<xs:element name="Tags" >
               <xs:complexType>
                 <xs:sequence>
                   <xs:element name="Tag" type="xs:string" maxOccurs="unbounded" />

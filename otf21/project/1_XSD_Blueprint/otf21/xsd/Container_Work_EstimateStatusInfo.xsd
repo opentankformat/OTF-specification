@@ -1,30 +1,36 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="Container_Work_EstimateStatuses.xsd"/>
   <xs:include schemaLocation="Container_ServiceProgress_AuthorizationInfo.xsd"/>
   <xs:include schemaLocation="Container_ServiceProgress_DateInfo.xsd"/>
   <xs:element name="Container_Work_EstimateStatusInfo">
     <xs:complexType>
       <xs:sequence>
-		<xs:element name="Version" type="xs:string" minOccurs="0" />			
+		<xs:element name="ContainerWorkStatus" >
+			<xs:simpleType>
+				<xs:restriction base="Container_Work_EstimateStatuses" />
+			</xs:simpleType>
+		</xs:element>		
+		<xs:element name="Version" type="xs:string"  />			
 		<xs:element ref="Container_ServiceProgress_DateInfo" />		
-		<xs:element name="ContainerWorkAuthorizationInfo" minOccurs="0" >
+		<xs:element name="ContainerWorkAuthorizationInfo"  >
 			<xs:complexType>
 				<xs:sequence>
-					<xs:element name="ContainerWorkLessorAuthorizationInfo" minOccurs="0">
+					<xs:element name="ContainerWorkLessorAuthorizationInfo" >
 						<xs:complexType>
 							<xs:sequence>
-								<xs:element name="LessorID" type="xs:string" minOccurs="0" />
-								<xs:element name="Reference" type="xs:string" minOccurs="0" />								
-								<xs:element ref="Container_ServiceProgress_AuthorizationInfo" minOccurs="0" />
+								<xs:element name="LessorID" type="xs:string"  />
+								<xs:element name="Reference" type="xs:string"  />								
+								<xs:element ref="Container_ServiceProgress_AuthorizationInfo"  />
 								<xs:element name="AuthorizationAcceptedBySupplier" type="xs:dateTime" />						
 							</xs:sequence> 
 						</xs:complexType>
 					</xs:element>
-					<xs:element name="ContainerWorkLesseeAuthorizationInfo" minOccurs="0" >
+					<xs:element name="ContainerWorkLesseeAuthorizationInfo"  >
 						<xs:complexType>
 							<xs:sequence>
-								<xs:element name="LesseeID" type="xs:string" minOccurs="0" />
-								<xs:element name="Reference" type="xs:string" minOccurs="0" />								
-								<xs:element ref="Container_ServiceProgress_AuthorizationInfo" minOccurs="0" />	
+								<xs:element name="LesseeID" type="xs:string"  />
+								<xs:element name="Reference" type="xs:string"  />								
+								<xs:element ref="Container_ServiceProgress_AuthorizationInfo"  />	
 								<xs:element name="AuthorizationAcceptedBySupplier" type="xs:dateTime" />						
 							</xs:sequence>
 						</xs:complexType>

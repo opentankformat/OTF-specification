@@ -6,8 +6,8 @@
         <xs:complexType>
           <xs:sequence>
 			<xs:element name="Name" type="xs:string" />	
-			<xs:element name="URL" type="xs:string" minOccurs="0" />
-			<xs:element name="ExternalID" type="xs:string" minOccurs="0" />
+			<xs:element name="URL" type="xs:string"  />
+			<xs:element name="ExternalID" type="xs:string"  />
 			<xs:element name="Tags" maxOccurs="unbounded">
 				<xs:complexType>
 				  <xs:sequence>
