@@ -2667,8 +2667,6 @@ namespace otf23 {
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
     public partial class Container_Work_EstimateStatusInfo {
         
-        private Container_Work_EstimateStatusInfoContainerWorkStatus containerWorkStatusField;
-        
         private string versionField;
         
         private Container_Work_EstimateStatusInfoSupplierInfo supplierInfoField;
@@ -2676,16 +2674,6 @@ namespace otf23 {
         private Container_Work_EstimateStatusInfoLessorInfo lessorInfoField;
         
         private Container_Work_EstimateStatusInfoLesseeInfo lesseeInfoField;
-        
-        /// <remarks/>
-        public Container_Work_EstimateStatusInfoContainerWorkStatus ContainerWorkStatus {
-            get {
-                return this.containerWorkStatusField;
-            }
-            set {
-                this.containerWorkStatusField = value;
-            }
-        }
         
         /// <remarks/>
         public string Version {
@@ -2726,30 +2714,6 @@ namespace otf23 {
                 this.lesseeInfoField = value;
             }
         }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    public enum Container_Work_EstimateStatusInfoContainerWorkStatus {
-        
-        /// <remarks/>
-        Estimate,
-        
-        /// <remarks/>
-        Annotation,
-        
-        /// <remarks/>
-        CounterProposal,
-        
-        /// <remarks/>
-        Authorization,
-        
-        /// <remarks/>
-        Accept,
-        
-        /// <remarks/>
-        Reject,
     }
     
     /// <remarks/>
@@ -3134,7 +3098,11 @@ namespace otf23 {
         
         private double lessorPercentageField;
         
+        private bool lessorPercentageFieldSpecified;
+        
         private double lesseePercentageField;
+        
+        private bool lesseePercentageFieldSpecified;
         
         private double lineTotalField;
         
@@ -3236,12 +3204,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool LessorPercentageSpecified {
+            get {
+                return this.lessorPercentageFieldSpecified;
+            }
+            set {
+                this.lessorPercentageFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public double LesseePercentage {
             get {
                 return this.lesseePercentageField;
             }
             set {
                 this.lesseePercentageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool LesseePercentageSpecified {
+            get {
+                return this.lesseePercentageFieldSpecified;
+            }
+            set {
+                this.lesseePercentageFieldSpecified = value;
             }
         }
         
@@ -3447,6 +3437,8 @@ namespace otf23 {
         
         private int sortOrderField;
         
+        private bool sortOrderFieldSpecified;
+        
         private string descriptionField;
         
         private Container_Work_EstimateLinesContainer_Work_EstimateLineCategoryCode categoryCodeField;
@@ -3490,6 +3482,17 @@ namespace otf23 {
             }
             set {
                 this.sortOrderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool SortOrderSpecified {
+            get {
+                return this.sortOrderFieldSpecified;
+            }
+            set {
+                this.sortOrderFieldSpecified = value;
             }
         }
         
@@ -3950,9 +3953,13 @@ namespace otf23 {
         
         private TankContainerInfoTankContainerSuitabilityInfoPortableTankType portableTankTypeField;
         
+        private bool portableTankTypeFieldSpecified;
+        
         private string portableTankTypeDescriptionField;
         
         private TankContainerInfoTankContainerSuitabilityInfoIMOType_Deprecated iMOType_DeprecatedField;
+        
+        private bool iMOType_DeprecatedFieldSpecified;
         
         private string iMOTypeDescription_DeprecatedField;
         
@@ -3973,6 +3980,17 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool PortableTankTypeSpecified {
+            get {
+                return this.portableTankTypeFieldSpecified;
+            }
+            set {
+                this.portableTankTypeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public string PortableTankTypeDescription {
             get {
                 return this.portableTankTypeDescriptionField;
@@ -3989,6 +4007,17 @@ namespace otf23 {
             }
             set {
                 this.iMOType_DeprecatedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool IMOType_DeprecatedSpecified {
+            get {
+                return this.iMOType_DeprecatedFieldSpecified;
+            }
+            set {
+                this.iMOType_DeprecatedFieldSpecified = value;
             }
         }
         
@@ -4218,25 +4247,41 @@ namespace otf23 {
         
         private TankContainerInfoTankContainerCharacteristicsInfoISO6346SizeTypeCode iSO6346SizeTypeCodeField;
         
+        private bool iSO6346SizeTypeCodeFieldSpecified;
+        
         private string iSO6346SizeTypeCodeDescriptionField;
         
         private int dimensionsXMillimeterField;
         
+        private bool dimensionsXMillimeterFieldSpecified;
+        
         private int dimensionsYMillimeterField;
+        
+        private bool dimensionsYMillimeterFieldSpecified;
         
         private int dimensionsZMillimeterField;
         
+        private bool dimensionsZMillimeterFieldSpecified;
+        
         private double maxGrossMassField;
         
+        private bool maxGrossMassFieldSpecified;
+        
         private double payloadField;
+        
+        private bool payloadFieldSpecified;
         
         private string payloadUnitField;
         
         private double tareField;
         
+        private bool tareFieldSpecified;
+        
         private string tareUnitField;
         
         private double capacityField;
+        
+        private bool capacityFieldSpecified;
         
         private string capacityUnitField;
         
@@ -4277,6 +4322,17 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ISO6346SizeTypeCodeSpecified {
+            get {
+                return this.iSO6346SizeTypeCodeFieldSpecified;
+            }
+            set {
+                this.iSO6346SizeTypeCodeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public string ISO6346SizeTypeCodeDescription {
             get {
                 return this.iSO6346SizeTypeCodeDescriptionField;
@@ -4297,12 +4353,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DimensionsXMillimeterSpecified {
+            get {
+                return this.dimensionsXMillimeterFieldSpecified;
+            }
+            set {
+                this.dimensionsXMillimeterFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public int DimensionsYMillimeter {
             get {
                 return this.dimensionsYMillimeterField;
             }
             set {
                 this.dimensionsYMillimeterField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DimensionsYMillimeterSpecified {
+            get {
+                return this.dimensionsYMillimeterFieldSpecified;
+            }
+            set {
+                this.dimensionsYMillimeterFieldSpecified = value;
             }
         }
         
@@ -4317,12 +4395,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DimensionsZMillimeterSpecified {
+            get {
+                return this.dimensionsZMillimeterFieldSpecified;
+            }
+            set {
+                this.dimensionsZMillimeterFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public double MaxGrossMass {
             get {
                 return this.maxGrossMassField;
             }
             set {
                 this.maxGrossMassField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MaxGrossMassSpecified {
+            get {
+                return this.maxGrossMassFieldSpecified;
+            }
+            set {
+                this.maxGrossMassFieldSpecified = value;
             }
         }
         
@@ -4337,6 +4437,18 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool PayloadSpecified {
+            get {
+                return this.payloadFieldSpecified;
+            }
+            set {
+                this.payloadFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.ComponentModel.DefaultValueAttribute("kg")]
         public string PayloadUnit {
             get {
                 return this.payloadUnitField;
@@ -4357,6 +4469,18 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TareSpecified {
+            get {
+                return this.tareFieldSpecified;
+            }
+            set {
+                this.tareFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.ComponentModel.DefaultValueAttribute("kg")]
         public string TareUnit {
             get {
                 return this.tareUnitField;
@@ -4377,6 +4501,18 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CapacitySpecified {
+            get {
+                return this.capacityFieldSpecified;
+            }
+            set {
+                this.capacityFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.ComponentModel.DefaultValueAttribute("L")]
         public string CapacityUnit {
             get {
                 return this.capacityUnitField;
@@ -4776,25 +4912,45 @@ namespace otf23 {
         
         private int compartmentQuantityField;
         
+        private bool compartmentQuantityFieldSpecified;
+        
         private string shellMaterialField;
         
         private double shellEquivalentThicknessRefSteelMillimeterField;
         
+        private bool shellEquivalentThicknessRefSteelMillimeterFieldSpecified;
+        
         private bool surgePlatesField;
+        
+        private bool surgePlatesFieldSpecified;
         
         private bool surgePlatesCapacityBetweenIsLowerThan7500LField;
         
+        private bool surgePlatesCapacityBetweenIsLowerThan7500LFieldSpecified;
+        
         private double workPressureMaximumBarField;
+        
+        private bool workPressureMaximumBarFieldSpecified;
         
         private double designPressureExternalBarField;
         
+        private bool designPressureExternalBarFieldSpecified;
+        
         private double testPressureHydraulicBarField;
+        
+        private bool testPressureHydraulicBarFieldSpecified;
         
         private double designTemperatureMinimumField;
         
+        private bool designTemperatureMinimumFieldSpecified;
+        
         private double designTemperatureMaximumField;
         
+        private bool designTemperatureMaximumFieldSpecified;
+        
         private TankContainerInfoTankContainerTankInfoDesignTemperatureUnit designTemperatureUnitField;
+        
+        private bool designTemperatureUnitFieldSpecified;
         
         /// <remarks/>
         public int CompartmentQuantity {
@@ -4803,6 +4959,17 @@ namespace otf23 {
             }
             set {
                 this.compartmentQuantityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CompartmentQuantitySpecified {
+            get {
+                return this.compartmentQuantityFieldSpecified;
+            }
+            set {
+                this.compartmentQuantityFieldSpecified = value;
             }
         }
         
@@ -4827,12 +4994,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ShellEquivalentThicknessRefSteelMillimeterSpecified {
+            get {
+                return this.shellEquivalentThicknessRefSteelMillimeterFieldSpecified;
+            }
+            set {
+                this.shellEquivalentThicknessRefSteelMillimeterFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public bool SurgePlates {
             get {
                 return this.surgePlatesField;
             }
             set {
                 this.surgePlatesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool SurgePlatesSpecified {
+            get {
+                return this.surgePlatesFieldSpecified;
+            }
+            set {
+                this.surgePlatesFieldSpecified = value;
             }
         }
         
@@ -4847,12 +5036,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool SurgePlatesCapacityBetweenIsLowerThan7500LSpecified {
+            get {
+                return this.surgePlatesCapacityBetweenIsLowerThan7500LFieldSpecified;
+            }
+            set {
+                this.surgePlatesCapacityBetweenIsLowerThan7500LFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public double WorkPressureMaximumBar {
             get {
                 return this.workPressureMaximumBarField;
             }
             set {
                 this.workPressureMaximumBarField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool WorkPressureMaximumBarSpecified {
+            get {
+                return this.workPressureMaximumBarFieldSpecified;
+            }
+            set {
+                this.workPressureMaximumBarFieldSpecified = value;
             }
         }
         
@@ -4867,12 +5078,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DesignPressureExternalBarSpecified {
+            get {
+                return this.designPressureExternalBarFieldSpecified;
+            }
+            set {
+                this.designPressureExternalBarFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public double TestPressureHydraulicBar {
             get {
                 return this.testPressureHydraulicBarField;
             }
             set {
                 this.testPressureHydraulicBarField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TestPressureHydraulicBarSpecified {
+            get {
+                return this.testPressureHydraulicBarFieldSpecified;
+            }
+            set {
+                this.testPressureHydraulicBarFieldSpecified = value;
             }
         }
         
@@ -4887,6 +5120,17 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DesignTemperatureMinimumSpecified {
+            get {
+                return this.designTemperatureMinimumFieldSpecified;
+            }
+            set {
+                this.designTemperatureMinimumFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public double DesignTemperatureMaximum {
             get {
                 return this.designTemperatureMaximumField;
@@ -4897,12 +5141,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DesignTemperatureMaximumSpecified {
+            get {
+                return this.designTemperatureMaximumFieldSpecified;
+            }
+            set {
+                this.designTemperatureMaximumFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public TankContainerInfoTankContainerTankInfoDesignTemperatureUnit DesignTemperatureUnit {
             get {
                 return this.designTemperatureUnitField;
             }
             set {
                 this.designTemperatureUnitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DesignTemperatureUnitSpecified {
+            get {
+                return this.designTemperatureUnitFieldSpecified;
+            }
+            set {
+                this.designTemperatureUnitFieldSpecified = value;
             }
         }
     }
@@ -4934,19 +5200,29 @@ namespace otf23 {
         
         private int topQuantityOfEnclosuresInSeriesField;
         
+        private bool topQuantityOfEnclosuresInSeriesFieldSpecified;
+        
         private string bottomDischargeField;
         
         private int bottomQuantityOfEnclosuresInSeriesField;
+        
+        private bool bottomQuantityOfEnclosuresInSeriesFieldSpecified;
         
         private string heaterField;
         
         private double heaterWorkingPressureBarField;
         
+        private bool heaterWorkingPressureBarFieldSpecified;
+        
         private int reliefValveQuantityField;
+        
+        private bool reliefValveQuantityFieldSpecified;
         
         private TankContainerInfo_ReliefValvesTankContainerInfo_ReliefValve[] reliefValvesField;
         
         private int ruptureDiscQuantityField;
+        
+        private bool ruptureDiscQuantityFieldSpecified;
         
         private TankContainerInfo_RuptureDiscsTankContainerInfo_RuptureDisc[] ruptureDiscsField;
         
@@ -4971,6 +5247,17 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TopQuantityOfEnclosuresInSeriesSpecified {
+            get {
+                return this.topQuantityOfEnclosuresInSeriesFieldSpecified;
+            }
+            set {
+                this.topQuantityOfEnclosuresInSeriesFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public string BottomDischarge {
             get {
                 return this.bottomDischargeField;
@@ -4987,6 +5274,17 @@ namespace otf23 {
             }
             set {
                 this.bottomQuantityOfEnclosuresInSeriesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool BottomQuantityOfEnclosuresInSeriesSpecified {
+            get {
+                return this.bottomQuantityOfEnclosuresInSeriesFieldSpecified;
+            }
+            set {
+                this.bottomQuantityOfEnclosuresInSeriesFieldSpecified = value;
             }
         }
         
@@ -5011,12 +5309,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool HeaterWorkingPressureBarSpecified {
+            get {
+                return this.heaterWorkingPressureBarFieldSpecified;
+            }
+            set {
+                this.heaterWorkingPressureBarFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public int ReliefValveQuantity {
             get {
                 return this.reliefValveQuantityField;
             }
             set {
                 this.reliefValveQuantityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ReliefValveQuantitySpecified {
+            get {
+                return this.reliefValveQuantityFieldSpecified;
+            }
+            set {
+                this.reliefValveQuantityFieldSpecified = value;
             }
         }
         
@@ -5038,6 +5358,17 @@ namespace otf23 {
             }
             set {
                 this.ruptureDiscQuantityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool RuptureDiscQuantitySpecified {
+            get {
+                return this.ruptureDiscQuantityFieldSpecified;
+            }
+            set {
+                this.ruptureDiscQuantityFieldSpecified = value;
             }
         }
         
@@ -5067,7 +5398,11 @@ namespace otf23 {
         
         private double settingMinusField;
         
+        private bool settingMinusFieldSpecified;
+        
         private double settingPlusField;
+        
+        private bool settingPlusFieldSpecified;
         
         /// <remarks/>
         public string Manufacturer {
@@ -5100,12 +5435,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool SettingMinusSpecified {
+            get {
+                return this.settingMinusFieldSpecified;
+            }
+            set {
+                this.settingMinusFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public double SettingPlus {
             get {
                 return this.settingPlusField;
             }
             set {
                 this.settingPlusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool SettingPlusSpecified {
+            get {
+                return this.settingPlusFieldSpecified;
+            }
+            set {
+                this.settingPlusFieldSpecified = value;
             }
         }
     }
@@ -5123,6 +5480,8 @@ namespace otf23 {
         private string serialNumberField;
         
         private double settingField;
+        
+        private bool settingFieldSpecified;
         
         /// <remarks/>
         public string Manufacturer {
@@ -5151,6 +5510,17 @@ namespace otf23 {
             }
             set {
                 this.settingField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool SettingSpecified {
+            get {
+                return this.settingFieldSpecified;
+            }
+            set {
+                this.settingFieldSpecified = value;
             }
         }
     }
@@ -5214,6 +5584,8 @@ namespace otf23 {
         
         private TankContainerInfoInspectionDatesLastInspectionScope lastInspectionScopeField;
         
+        private bool lastInspectionScopeFieldSpecified;
+        
         private string lastInspectionScopeDescriptionField;
         
         private System.DateTime nextInspectionDateField;
@@ -5249,6 +5621,17 @@ namespace otf23 {
             }
             set {
                 this.lastInspectionScopeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool LastInspectionScopeSpecified {
+            get {
+                return this.lastInspectionScopeFieldSpecified;
+            }
+            set {
+                this.lastInspectionScopeFieldSpecified = value;
             }
         }
         
@@ -5359,8 +5742,6 @@ namespace otf23 {
         
         private string inspectionRemarkField;
         
-        private System.DateTime inspectionDateField;
-        
         /// <remarks/>
         public TankContainer_InspectionInspectionResult InspectionResult {
             get {
@@ -5378,16 +5759,6 @@ namespace otf23 {
             }
             set {
                 this.inspectionRemarkField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime InspectionDate {
-            get {
-                return this.inspectionDateField;
-            }
-            set {
-                this.inspectionDateField = value;
             }
         }
     }
@@ -5514,6 +5885,8 @@ namespace otf23 {
         
         private TankContainerInfoInspectionDatesLastInspectionScope inspectionScopeField;
         
+        private bool inspectionScopeFieldSpecified;
+        
         private string inspectionScopeDescriptionField;
         
         private Message_TankContainer_InspectionReportInspectionOrderInfoClientInfo clientInfoField;
@@ -5578,6 +5951,17 @@ namespace otf23 {
             }
             set {
                 this.inspectionScopeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool InspectionScopeSpecified {
+            get {
+                return this.inspectionScopeFieldSpecified;
+            }
+            set {
+                this.inspectionScopeFieldSpecified = value;
             }
         }
         
@@ -6723,9 +7107,13 @@ namespace otf23 {
         
         private ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListADRClass aDRClassField;
         
+        private bool aDRClassFieldSpecified;
+        
         private string aDRClassDescriptionField;
         
         private ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListUNPackingGroup uNPackingGroupField;
+        
+        private bool uNPackingGroupFieldSpecified;
         
         private string uNPackingGroupDescriptionField;
         
@@ -6762,6 +7150,17 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ADRClassSpecified {
+            get {
+                return this.aDRClassFieldSpecified;
+            }
+            set {
+                this.aDRClassFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public string ADRClassDescription {
             get {
                 return this.aDRClassDescriptionField;
@@ -6778,6 +7177,17 @@ namespace otf23 {
             }
             set {
                 this.uNPackingGroupField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool UNPackingGroupSpecified {
+            get {
+                return this.uNPackingGroupFieldSpecified;
+            }
+            set {
+                this.uNPackingGroupFieldSpecified = value;
             }
         }
         
@@ -7006,6 +7416,8 @@ namespace otf23 {
         
         private ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardStatementsHazardStatementCode hazardStatementCodeField;
         
+        private bool hazardStatementCodeFieldSpecified;
+        
         private string hazardStatementCodeDescriptionField;
         
         private string hazardStatementDescriptionField;
@@ -7017,6 +7429,17 @@ namespace otf23 {
             }
             set {
                 this.hazardStatementCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool HazardStatementCodeSpecified {
+            get {
+                return this.hazardStatementCodeFieldSpecified;
+            }
+            set {
+                this.hazardStatementCodeFieldSpecified = value;
             }
         }
         
@@ -7521,6 +7944,8 @@ namespace otf23 {
         
         private ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSPrecautionaryStatementsPrecautionaryStatementCode precautionaryStatementCodeField;
         
+        private bool precautionaryStatementCodeFieldSpecified;
+        
         private string precautionaryStatementCodeDescriptionField;
         
         private string precautionaryStatementDescriptionField;
@@ -7532,6 +7957,17 @@ namespace otf23 {
             }
             set {
                 this.precautionaryStatementCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool PrecautionaryStatementCodeSpecified {
+            get {
+                return this.precautionaryStatementCodeFieldSpecified;
+            }
+            set {
+                this.precautionaryStatementCodeFieldSpecified = value;
             }
         }
         
@@ -8031,6 +8467,8 @@ namespace otf23 {
         
         private ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardPictogramsHazardPictogram hazardPictogramField;
         
+        private bool hazardPictogramFieldSpecified;
+        
         private string hazardPictogramDescriptionField;
         
         /// <remarks/>
@@ -8040,6 +8478,17 @@ namespace otf23 {
             }
             set {
                 this.hazardPictogramField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool HazardPictogramSpecified {
+            get {
+                return this.hazardPictogramFieldSpecified;
+            }
+            set {
+                this.hazardPictogramFieldSpecified = value;
             }
         }
         
@@ -8235,9 +8684,13 @@ namespace otf23 {
         
         private ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGIMDGClass iMDGClassField;
         
+        private bool iMDGClassFieldSpecified;
+        
         private string iMDGClassDescriptionField;
         
         private ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGSegregationGroup segregationGroupField;
+        
+        private bool segregationGroupFieldSpecified;
         
         private string segregationGroupDescriptionField;
         
@@ -8248,6 +8701,17 @@ namespace otf23 {
             }
             set {
                 this.iMDGClassField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool IMDGClassSpecified {
+            get {
+                return this.iMDGClassFieldSpecified;
+            }
+            set {
+                this.iMDGClassFieldSpecified = value;
             }
         }
         
@@ -8268,6 +8732,17 @@ namespace otf23 {
             }
             set {
                 this.segregationGroupField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool SegregationGroupSpecified {
+            get {
+                return this.segregationGroupFieldSpecified;
+            }
+            set {
+                this.segregationGroupFieldSpecified = value;
             }
         }
         
@@ -8494,35 +8969,63 @@ namespace otf23 {
         
         private double vaporPressureField;
         
+        private bool vaporPressureFieldSpecified;
+        
         private string vaporPressureUnitField;
         
         private double vaporPressureAtTemperatureField;
         
+        private bool vaporPressureAtTemperatureFieldSpecified;
+        
         private TankContainerInfoTankContainerTankInfoDesignTemperatureUnit vaporPressureAtTemperatureUnitField;
         
+        private bool vaporPressureAtTemperatureUnitFieldSpecified;
+        
         private double vaporDensityField;
+        
+        private bool vaporDensityFieldSpecified;
         
         private string vaporDensityUnitField;
         
         private double vaporDensityAtTemperatureField;
         
+        private bool vaporDensityAtTemperatureFieldSpecified;
+        
         private TankContainerInfoTankContainerTankInfoDesignTemperatureUnit vaporDensityAtTemperatureUnitField;
+        
+        private bool vaporDensityAtTemperatureUnitFieldSpecified;
         
         private double meltingPointTemperatureField;
         
+        private bool meltingPointTemperatureFieldSpecified;
+        
         private TankContainerInfoTankContainerTankInfoDesignTemperatureUnit meltingPointTemperatureUnitField;
+        
+        private bool meltingPointTemperatureUnitFieldSpecified;
         
         private double boilingPointTemperatureField;
         
+        private bool boilingPointTemperatureFieldSpecified;
+        
         private TankContainerInfoTankContainerTankInfoDesignTemperatureUnit boilingPointTemperatureUnitField;
+        
+        private bool boilingPointTemperatureUnitFieldSpecified;
         
         private double freezingPointTemperatureField;
         
+        private bool freezingPointTemperatureFieldSpecified;
+        
         private TankContainerInfoTankContainerTankInfoDesignTemperatureUnit freezingPointTemperatureUnitField;
+        
+        private bool freezingPointTemperatureUnitFieldSpecified;
         
         private double criticalTemperatureField;
         
+        private bool criticalTemperatureFieldSpecified;
+        
         private TankContainerInfoTankContainerTankInfoDesignTemperatureUnit criticalTemperatureUnitField;
+        
+        private bool criticalTemperatureUnitFieldSpecified;
         
         private string phField;
         
@@ -8532,13 +9035,21 @@ namespace otf23 {
         
         private double viscosityField;
         
+        private bool viscosityFieldSpecified;
+        
         private string viscosityUnitField;
         
         private double viscosityAtTemperatureField;
         
+        private bool viscosityAtTemperatureFieldSpecified;
+        
         private TankContainerInfoTankContainerTankInfoDesignTemperatureUnit viscosityAtTemperatureUnitField;
         
+        private bool viscosityAtTemperatureUnitFieldSpecified;
+        
         private double molarMassField;
+        
+        private bool molarMassFieldSpecified;
         
         private string molarMassUnitField;
         
@@ -8615,6 +9126,17 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool VaporPressureSpecified {
+            get {
+                return this.vaporPressureFieldSpecified;
+            }
+            set {
+                this.vaporPressureFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public string VaporPressureUnit {
             get {
                 return this.vaporPressureUnitField;
@@ -8635,6 +9157,17 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool VaporPressureAtTemperatureSpecified {
+            get {
+                return this.vaporPressureAtTemperatureFieldSpecified;
+            }
+            set {
+                this.vaporPressureAtTemperatureFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public TankContainerInfoTankContainerTankInfoDesignTemperatureUnit VaporPressureAtTemperatureUnit {
             get {
                 return this.vaporPressureAtTemperatureUnitField;
@@ -8645,12 +9178,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool VaporPressureAtTemperatureUnitSpecified {
+            get {
+                return this.vaporPressureAtTemperatureUnitFieldSpecified;
+            }
+            set {
+                this.vaporPressureAtTemperatureUnitFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public double VaporDensity {
             get {
                 return this.vaporDensityField;
             }
             set {
                 this.vaporDensityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool VaporDensitySpecified {
+            get {
+                return this.vaporDensityFieldSpecified;
+            }
+            set {
+                this.vaporDensityFieldSpecified = value;
             }
         }
         
@@ -8675,12 +9230,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool VaporDensityAtTemperatureSpecified {
+            get {
+                return this.vaporDensityAtTemperatureFieldSpecified;
+            }
+            set {
+                this.vaporDensityAtTemperatureFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public TankContainerInfoTankContainerTankInfoDesignTemperatureUnit VaporDensityAtTemperatureUnit {
             get {
                 return this.vaporDensityAtTemperatureUnitField;
             }
             set {
                 this.vaporDensityAtTemperatureUnitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool VaporDensityAtTemperatureUnitSpecified {
+            get {
+                return this.vaporDensityAtTemperatureUnitFieldSpecified;
+            }
+            set {
+                this.vaporDensityAtTemperatureUnitFieldSpecified = value;
             }
         }
         
@@ -8695,12 +9272,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MeltingPointTemperatureSpecified {
+            get {
+                return this.meltingPointTemperatureFieldSpecified;
+            }
+            set {
+                this.meltingPointTemperatureFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public TankContainerInfoTankContainerTankInfoDesignTemperatureUnit MeltingPointTemperatureUnit {
             get {
                 return this.meltingPointTemperatureUnitField;
             }
             set {
                 this.meltingPointTemperatureUnitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MeltingPointTemperatureUnitSpecified {
+            get {
+                return this.meltingPointTemperatureUnitFieldSpecified;
+            }
+            set {
+                this.meltingPointTemperatureUnitFieldSpecified = value;
             }
         }
         
@@ -8715,12 +9314,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool BoilingPointTemperatureSpecified {
+            get {
+                return this.boilingPointTemperatureFieldSpecified;
+            }
+            set {
+                this.boilingPointTemperatureFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public TankContainerInfoTankContainerTankInfoDesignTemperatureUnit BoilingPointTemperatureUnit {
             get {
                 return this.boilingPointTemperatureUnitField;
             }
             set {
                 this.boilingPointTemperatureUnitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool BoilingPointTemperatureUnitSpecified {
+            get {
+                return this.boilingPointTemperatureUnitFieldSpecified;
+            }
+            set {
+                this.boilingPointTemperatureUnitFieldSpecified = value;
             }
         }
         
@@ -8735,12 +9356,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool FreezingPointTemperatureSpecified {
+            get {
+                return this.freezingPointTemperatureFieldSpecified;
+            }
+            set {
+                this.freezingPointTemperatureFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public TankContainerInfoTankContainerTankInfoDesignTemperatureUnit FreezingPointTemperatureUnit {
             get {
                 return this.freezingPointTemperatureUnitField;
             }
             set {
                 this.freezingPointTemperatureUnitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool FreezingPointTemperatureUnitSpecified {
+            get {
+                return this.freezingPointTemperatureUnitFieldSpecified;
+            }
+            set {
+                this.freezingPointTemperatureUnitFieldSpecified = value;
             }
         }
         
@@ -8755,12 +9398,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CriticalTemperatureSpecified {
+            get {
+                return this.criticalTemperatureFieldSpecified;
+            }
+            set {
+                this.criticalTemperatureFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public TankContainerInfoTankContainerTankInfoDesignTemperatureUnit CriticalTemperatureUnit {
             get {
                 return this.criticalTemperatureUnitField;
             }
             set {
                 this.criticalTemperatureUnitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CriticalTemperatureUnitSpecified {
+            get {
+                return this.criticalTemperatureUnitFieldSpecified;
+            }
+            set {
+                this.criticalTemperatureUnitFieldSpecified = value;
             }
         }
         
@@ -8805,6 +9470,17 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ViscositySpecified {
+            get {
+                return this.viscosityFieldSpecified;
+            }
+            set {
+                this.viscosityFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public string ViscosityUnit {
             get {
                 return this.viscosityUnitField;
@@ -8825,6 +9501,17 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ViscosityAtTemperatureSpecified {
+            get {
+                return this.viscosityAtTemperatureFieldSpecified;
+            }
+            set {
+                this.viscosityAtTemperatureFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public TankContainerInfoTankContainerTankInfoDesignTemperatureUnit ViscosityAtTemperatureUnit {
             get {
                 return this.viscosityAtTemperatureUnitField;
@@ -8835,12 +9522,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ViscosityAtTemperatureUnitSpecified {
+            get {
+                return this.viscosityAtTemperatureUnitFieldSpecified;
+            }
+            set {
+                this.viscosityAtTemperatureUnitFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public double MolarMass {
             get {
                 return this.molarMassField;
             }
             set {
                 this.molarMassField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MolarMassSpecified {
+            get {
+                return this.molarMassFieldSpecified;
+            }
+            set {
+                this.molarMassFieldSpecified = value;
             }
         }
         
@@ -8875,11 +9584,17 @@ namespace otf23 {
         
         private bool isPolymerField;
         
+        private bool isPolymerFieldSpecified;
+        
         private double selfAcceleratingPolymerizationTemperatureField;
+        
+        private bool selfAcceleratingPolymerizationTemperatureFieldSpecified;
         
         private string selfAcceleratingPolymerizationTemperatureUnitField;
         
         private double selfAcceleratingDecompositionTemperatureField;
+        
+        private bool selfAcceleratingDecompositionTemperatureFieldSpecified;
         
         private string selfAcceleratingDecompositionTemperatureUnitField;
         
@@ -8894,12 +9609,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool IsPolymerSpecified {
+            get {
+                return this.isPolymerFieldSpecified;
+            }
+            set {
+                this.isPolymerFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public double SelfAcceleratingPolymerizationTemperature {
             get {
                 return this.selfAcceleratingPolymerizationTemperatureField;
             }
             set {
                 this.selfAcceleratingPolymerizationTemperatureField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool SelfAcceleratingPolymerizationTemperatureSpecified {
+            get {
+                return this.selfAcceleratingPolymerizationTemperatureFieldSpecified;
+            }
+            set {
+                this.selfAcceleratingPolymerizationTemperatureFieldSpecified = value;
             }
         }
         
@@ -8924,6 +9661,17 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool SelfAcceleratingDecompositionTemperatureSpecified {
+            get {
+                return this.selfAcceleratingDecompositionTemperatureFieldSpecified;
+            }
+            set {
+                this.selfAcceleratingDecompositionTemperatureFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public string SelfAcceleratingDecompositionTemperatureUnit {
             get {
                 return this.selfAcceleratingDecompositionTemperatureUnitField;
@@ -8944,19 +9692,33 @@ namespace otf23 {
         
         private ProductInfoProductDetailsFireAndExplosionDataInfoFlashPointTestMethod flashPointTestMethodField;
         
+        private bool flashPointTestMethodFieldSpecified;
+        
         private string flashPointTestMethodDescriptionField;
         
         private double flashPointTemperatureField;
         
+        private bool flashPointTemperatureFieldSpecified;
+        
         private TankContainerInfoTankContainerTankInfoDesignTemperatureUnit flashPointTemperatureUnitField;
+        
+        private bool flashPointTemperatureUnitFieldSpecified;
         
         private double autoIgnitionTemperatureField;
         
+        private bool autoIgnitionTemperatureFieldSpecified;
+        
         private TankContainerInfoTankContainerTankInfoDesignTemperatureUnit autoIgnitionTemperatureUnitField;
+        
+        private bool autoIgnitionTemperatureUnitFieldSpecified;
         
         private double uELPercentageField;
         
+        private bool uELPercentageFieldSpecified;
+        
         private double lELPercentageField;
+        
+        private bool lELPercentageFieldSpecified;
         
         /// <remarks/>
         public ProductInfoProductDetailsFireAndExplosionDataInfoFlashPointTestMethod FlashPointTestMethod {
@@ -8965,6 +9727,17 @@ namespace otf23 {
             }
             set {
                 this.flashPointTestMethodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool FlashPointTestMethodSpecified {
+            get {
+                return this.flashPointTestMethodFieldSpecified;
+            }
+            set {
+                this.flashPointTestMethodFieldSpecified = value;
             }
         }
         
@@ -8989,12 +9762,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool FlashPointTemperatureSpecified {
+            get {
+                return this.flashPointTemperatureFieldSpecified;
+            }
+            set {
+                this.flashPointTemperatureFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public TankContainerInfoTankContainerTankInfoDesignTemperatureUnit FlashPointTemperatureUnit {
             get {
                 return this.flashPointTemperatureUnitField;
             }
             set {
                 this.flashPointTemperatureUnitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool FlashPointTemperatureUnitSpecified {
+            get {
+                return this.flashPointTemperatureUnitFieldSpecified;
+            }
+            set {
+                this.flashPointTemperatureUnitFieldSpecified = value;
             }
         }
         
@@ -9009,12 +9804,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool AutoIgnitionTemperatureSpecified {
+            get {
+                return this.autoIgnitionTemperatureFieldSpecified;
+            }
+            set {
+                this.autoIgnitionTemperatureFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public TankContainerInfoTankContainerTankInfoDesignTemperatureUnit AutoIgnitionTemperatureUnit {
             get {
                 return this.autoIgnitionTemperatureUnitField;
             }
             set {
                 this.autoIgnitionTemperatureUnitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool AutoIgnitionTemperatureUnitSpecified {
+            get {
+                return this.autoIgnitionTemperatureUnitFieldSpecified;
+            }
+            set {
+                this.autoIgnitionTemperatureUnitFieldSpecified = value;
             }
         }
         
@@ -9029,12 +9846,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool UELPercentageSpecified {
+            get {
+                return this.uELPercentageFieldSpecified;
+            }
+            set {
+                this.uELPercentageFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public double LELPercentage {
             get {
                 return this.lELPercentageField;
             }
             set {
                 this.lELPercentageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool LELPercentageSpecified {
+            get {
+                return this.lELPercentageFieldSpecified;
+            }
+            set {
+                this.lELPercentageFieldSpecified = value;
             }
         }
     }
@@ -9115,6 +9954,8 @@ namespace otf23 {
         
         private double fullLoadedAmountField;
         
+        private bool fullLoadedAmountFieldSpecified;
+        
         private string fullLoadedAmountUnitField;
         
         private bool isCleanField;
@@ -9144,6 +9985,17 @@ namespace otf23 {
             }
             set {
                 this.fullLoadedAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool FullLoadedAmountSpecified {
+            get {
+                return this.fullLoadedAmountFieldSpecified;
+            }
+            set {
+                this.fullLoadedAmountFieldSpecified = value;
             }
         }
         
@@ -9291,6 +10143,8 @@ namespace otf23 {
         
         private double loadedAmountField;
         
+        private bool loadedAmountFieldSpecified;
+        
         private string loadedAmountUnitField;
         
         /// <remarks/>
@@ -9310,6 +10164,17 @@ namespace otf23 {
             }
             set {
                 this.loadedAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool LoadedAmountSpecified {
+            get {
+                return this.loadedAmountFieldSpecified;
+            }
+            set {
+                this.loadedAmountFieldSpecified = value;
             }
         }
         
@@ -9421,31 +10286,53 @@ namespace otf23 {
         
         private TankContainer_ServiceRequest_HeatingRequestedHeatingMethod requestedHeatingMethodField;
         
+        private bool requestedHeatingMethodFieldSpecified;
+        
         private string requestedHeatingMethodDescriptionField;
         
         private TankContainer_ServiceRequest_HeatingRequiredHeatingTemperatureMeasurementMethod requiredHeatingTemperatureMeasurementMethodField;
+        
+        private bool requiredHeatingTemperatureMeasurementMethodFieldSpecified;
         
         private string requiredHeatingTemperatureMeasurementMethodDescriptionField;
         
         private double targetTemperatureField;
         
+        private bool targetTemperatureFieldSpecified;
+        
         private TankContainerInfoTankContainerTankInfoDesignTemperatureUnit targetTemperatureUnitField;
         
+        private bool targetTemperatureUnitFieldSpecified;
+        
         private double maximumPressureField;
+        
+        private bool maximumPressureFieldSpecified;
         
         private string maximumPressureUnitField;
         
         private double maximumContactTemperatureField;
         
+        private bool maximumContactTemperatureFieldSpecified;
+        
         private TankContainerInfoTankContainerTankInfoDesignTemperatureUnit maximumContactTemperatureUnitField;
+        
+        private bool maximumContactTemperatureUnitFieldSpecified;
         
         private double minimumTemperatureField;
         
+        private bool minimumTemperatureFieldSpecified;
+        
         private TankContainerInfoTankContainerTankInfoDesignTemperatureUnit minimumTemperatureUnitField;
+        
+        private bool minimumTemperatureUnitFieldSpecified;
         
         private double maximumTemperatureField;
         
+        private bool maximumTemperatureFieldSpecified;
+        
         private TankContainerInfoTankContainerTankInfoDesignTemperatureUnit maximumTemperatureUnitField;
+        
+        private bool maximumTemperatureUnitFieldSpecified;
         
         /// <remarks/>
         public Container_ServiceRequestInfo Container_ServiceRequestInfo {
@@ -9464,6 +10351,17 @@ namespace otf23 {
             }
             set {
                 this.requestedHeatingMethodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool RequestedHeatingMethodSpecified {
+            get {
+                return this.requestedHeatingMethodFieldSpecified;
+            }
+            set {
+                this.requestedHeatingMethodFieldSpecified = value;
             }
         }
         
@@ -9488,6 +10386,17 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool RequiredHeatingTemperatureMeasurementMethodSpecified {
+            get {
+                return this.requiredHeatingTemperatureMeasurementMethodFieldSpecified;
+            }
+            set {
+                this.requiredHeatingTemperatureMeasurementMethodFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public string RequiredHeatingTemperatureMeasurementMethodDescription {
             get {
                 return this.requiredHeatingTemperatureMeasurementMethodDescriptionField;
@@ -9508,6 +10417,17 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TargetTemperatureSpecified {
+            get {
+                return this.targetTemperatureFieldSpecified;
+            }
+            set {
+                this.targetTemperatureFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public TankContainerInfoTankContainerTankInfoDesignTemperatureUnit TargetTemperatureUnit {
             get {
                 return this.targetTemperatureUnitField;
@@ -9518,12 +10438,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TargetTemperatureUnitSpecified {
+            get {
+                return this.targetTemperatureUnitFieldSpecified;
+            }
+            set {
+                this.targetTemperatureUnitFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public double MaximumPressure {
             get {
                 return this.maximumPressureField;
             }
             set {
                 this.maximumPressureField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MaximumPressureSpecified {
+            get {
+                return this.maximumPressureFieldSpecified;
+            }
+            set {
+                this.maximumPressureFieldSpecified = value;
             }
         }
         
@@ -9548,12 +10490,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MaximumContactTemperatureSpecified {
+            get {
+                return this.maximumContactTemperatureFieldSpecified;
+            }
+            set {
+                this.maximumContactTemperatureFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public TankContainerInfoTankContainerTankInfoDesignTemperatureUnit MaximumContactTemperatureUnit {
             get {
                 return this.maximumContactTemperatureUnitField;
             }
             set {
                 this.maximumContactTemperatureUnitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MaximumContactTemperatureUnitSpecified {
+            get {
+                return this.maximumContactTemperatureUnitFieldSpecified;
+            }
+            set {
+                this.maximumContactTemperatureUnitFieldSpecified = value;
             }
         }
         
@@ -9568,12 +10532,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MinimumTemperatureSpecified {
+            get {
+                return this.minimumTemperatureFieldSpecified;
+            }
+            set {
+                this.minimumTemperatureFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public TankContainerInfoTankContainerTankInfoDesignTemperatureUnit MinimumTemperatureUnit {
             get {
                 return this.minimumTemperatureUnitField;
             }
             set {
                 this.minimumTemperatureUnitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MinimumTemperatureUnitSpecified {
+            get {
+                return this.minimumTemperatureUnitFieldSpecified;
+            }
+            set {
+                this.minimumTemperatureUnitFieldSpecified = value;
             }
         }
         
@@ -9588,12 +10574,34 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MaximumTemperatureSpecified {
+            get {
+                return this.maximumTemperatureFieldSpecified;
+            }
+            set {
+                this.maximumTemperatureFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         public TankContainerInfoTankContainerTankInfoDesignTemperatureUnit MaximumTemperatureUnit {
             get {
                 return this.maximumTemperatureUnitField;
             }
             set {
                 this.maximumTemperatureUnitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MaximumTemperatureUnitSpecified {
+            get {
+                return this.maximumTemperatureUnitFieldSpecified;
+            }
+            set {
+                this.maximumTemperatureUnitFieldSpecified = value;
             }
         }
     }
@@ -9638,6 +10646,8 @@ namespace otf23 {
         
         private bool requestPolymerCleaningField;
         
+        private bool requestPolymerCleaningFieldSpecified;
+        
         private string specialInstructionIDField;
         
         private TankContainer_CleaningActionsTankContainer_CleaningAction[] additionalCleaningActionsField;
@@ -9659,6 +10669,17 @@ namespace otf23 {
             }
             set {
                 this.requestPolymerCleaningField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool RequestPolymerCleaningSpecified {
+            get {
+                return this.requestPolymerCleaningFieldSpecified;
+            }
+            set {
+                this.requestPolymerCleaningFieldSpecified = value;
             }
         }
         
@@ -9723,6 +10744,7 @@ namespace otf23 {
         }
         
         /// <remarks/>
+        [System.ComponentModel.DefaultValueAttribute(1)]
         public int Quantity {
             get {
                 return this.quantityField;
@@ -9746,6 +10768,8 @@ namespace otf23 {
         
         private TankContainerInfoInspectionDatesLastInspectionScope inspectionScopeField;
         
+        private bool inspectionScopeFieldSpecified;
+        
         private string inspectionScopeDescriptionField;
         
         /// <remarks/>
@@ -9765,6 +10789,17 @@ namespace otf23 {
             }
             set {
                 this.inspectionScopeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool InspectionScopeSpecified {
+            get {
+                return this.inspectionScopeFieldSpecified;
+            }
+            set {
+                this.inspectionScopeFieldSpecified = value;
             }
         }
         

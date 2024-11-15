@@ -14,20 +14,20 @@
 					<xs:restriction base="Container_ServiceProgress_AuthorizationStatus" />
 				</xs:simpleType>
 			  </xs:element>			  
-			  <xs:element name="Remark" type="xs:string"  />
+			  <xs:element name="Remark" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="Authorized" type="xs:dateTime" />
-		<xs:element name="AuthorizedByInfo" >
+		<xs:element name="AuthorizedByInfo" minOccurs="0">
 			<xs:complexType>
 				<xs:sequence>
 					<xs:element ref="ContactInfo" />	  
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>	
-		<xs:element name="AuthorizationReference" type="xs:string"  />
-		<xs:element name="AuthorizationAmount" >
+		<xs:element name="AuthorizationReference" type="xs:string" minOccurs="0" />
+		<xs:element name="AuthorizationAmount" minOccurs="0">
 			<xs:complexType>
 				<xs:sequence>
 					<xs:element ref="LocalizationInfo" />	  

@@ -12,10 +12,10 @@
 		<xs:element name="LineSubtotal" type="xs:double" />
 		<xs:element name="Quantity" type="xs:double" default="1" />
 		<xs:element name="DoAction" type="xs:boolean" default = "true" />
-		<xs:element name="LessorPercentage" type="xs:double"  />
-		<xs:element name="LesseePercentage" type="xs:double"  />
+		<xs:element name="LessorPercentage" type="xs:double" minOccurs="0" />
+		<xs:element name="LesseePercentage" type="xs:double" minOccurs="0" />
 		<xs:element name="LineTotal" type="xs:double" />	
-		<xs:element name="Remarks" type="Remarks"  />
+		<xs:element name="Remarks" type="Remarks" minOccurs="0" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

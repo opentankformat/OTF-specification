@@ -8,7 +8,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element name="MessageID" type="xs:string" />
-        <xs:element name="ConversationID" type="xs:string"  />
+        <xs:element name="ConversationID" type="xs:string" minOccurs="0" />
 		<xs:element name="OTFVersion" default = "OTF21">
 			<xs:simpleType>
 				<xs:restriction base="OTFVersions" />
@@ -21,7 +21,7 @@
 		</xs:element>
         <xs:element name="SenderID" type="xs:string" />
         <xs:element name="RecipientID" type="xs:string" />
-		<xs:element ref="ContactInfo"  />
+		<xs:element ref="ContactInfo" minOccurs="0" />
         <xs:element name="SentDate" type="xs:dateTime" />
 		<xs:element name="MessageType" default = "New">
 			<xs:simpleType>

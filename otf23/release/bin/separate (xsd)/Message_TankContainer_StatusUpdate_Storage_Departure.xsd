@@ -167,9 +167,9 @@
               <xs:element minOccurs="0" maxOccurs="1" name="TankContainerSuitabilityInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="1" maxOccurs="1" name="PortableTankType" type="TankContainerInfoTankContainerSuitabilityInfoPortableTankType" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="PortableTankType" type="TankContainerInfoTankContainerSuitabilityInfoPortableTankType" />
                     <xs:element minOccurs="0" maxOccurs="1" name="PortableTankTypeDescription" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="IMOType_Deprecated" type="TankContainerInfoTankContainerSuitabilityInfoIMOType_Deprecated" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="IMOType_Deprecated" type="TankContainerInfoTankContainerSuitabilityInfoIMOType_Deprecated" />
                     <xs:element minOccurs="0" maxOccurs="1" name="IMOTypeDescription_Deprecated" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="RID_ADRCode" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="SubstancesSuitableForTransport" type="ArrayOfTankContainerInfo_SubstancesSuitableForTransportTankContainerInfo_SubstanceSuitableForTransport" />
@@ -200,35 +200,35 @@
                       </xs:complexType>
                     </xs:element>
                     <xs:element minOccurs="1" maxOccurs="1" name="BuildingYearMonth" type="xs:dateTime" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="ISO6346SizeTypeCode" type="TankContainerInfoTankContainerCharacteristicsInfoISO6346SizeTypeCode" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ISO6346SizeTypeCode" type="TankContainerInfoTankContainerCharacteristicsInfoISO6346SizeTypeCode" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ISO6346SizeTypeCodeDescription" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="DimensionsXMillimeter" type="xs:int" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="DimensionsYMillimeter" type="xs:int" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="DimensionsZMillimeter" type="xs:int" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="MaxGrossMass" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="Payload" type="xs:double" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="PayloadUnit" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="Tare" type="xs:double" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="TareUnit" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="Capacity" type="xs:double" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="CapacityUnit" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="DimensionsXMillimeter" type="xs:int" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="DimensionsYMillimeter" type="xs:int" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="DimensionsZMillimeter" type="xs:int" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="MaxGrossMass" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Payload" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" default="kg" name="PayloadUnit" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Tare" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" default="kg" name="TareUnit" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Capacity" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" default="L" name="CapacityUnit" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
               <xs:element minOccurs="0" maxOccurs="1" name="TankContainerTankInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="1" maxOccurs="1" name="CompartmentQuantity" type="xs:int" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="CompartmentQuantity" type="xs:int" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ShellMaterial" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="ShellEquivalentThicknessRefSteelMillimeter" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="SurgePlates" type="xs:boolean" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="SurgePlatesCapacityBetweenIsLowerThan7500L" type="xs:boolean" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="WorkPressureMaximumBar" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="DesignPressureExternalBar" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="TestPressureHydraulicBar" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="DesignTemperatureMinimum" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="DesignTemperatureMaximum" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="DesignTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ShellEquivalentThicknessRefSteelMillimeter" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="SurgePlates" type="xs:boolean" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="SurgePlatesCapacityBetweenIsLowerThan7500L" type="xs:boolean" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="WorkPressureMaximumBar" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="DesignPressureExternalBar" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="TestPressureHydraulicBar" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="DesignTemperatureMinimum" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="DesignTemperatureMaximum" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="DesignTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -236,14 +236,14 @@
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element minOccurs="0" maxOccurs="1" name="TopDischarge" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="TopQuantityOfEnclosuresInSeries" type="xs:int" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="TopQuantityOfEnclosuresInSeries" type="xs:int" />
                     <xs:element minOccurs="0" maxOccurs="1" name="BottomDischarge" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="BottomQuantityOfEnclosuresInSeries" type="xs:int" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="BottomQuantityOfEnclosuresInSeries" type="xs:int" />
                     <xs:element minOccurs="0" maxOccurs="1" name="Heater" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="HeaterWorkingPressureBar" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="ReliefValveQuantity" type="xs:int" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="HeaterWorkingPressureBar" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ReliefValveQuantity" type="xs:int" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ReliefValves" type="ArrayOfTankContainerInfo_ReliefValvesTankContainerInfo_ReliefValve" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="RuptureDiscQuantity" type="xs:int" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="RuptureDiscQuantity" type="xs:int" />
                     <xs:element minOccurs="0" maxOccurs="1" name="RuptureDiscs" type="ArrayOfTankContainerInfo_RuptureDiscsTankContainerInfo_RuptureDisc" />
                   </xs:sequence>
                 </xs:complexType>
@@ -262,7 +262,7 @@
                   <xs:sequence>
                     <xs:element minOccurs="1" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="1" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
                     <xs:element minOccurs="1" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="1" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
@@ -579,8 +579,8 @@
           <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" name="Manufacturer" type="xs:string" />
             <xs:element minOccurs="0" maxOccurs="1" name="SerialNumber" type="xs:string" />
-            <xs:element minOccurs="1" maxOccurs="1" name="SettingMinus" type="xs:double" />
-            <xs:element minOccurs="1" maxOccurs="1" name="SettingPlus" type="xs:double" />
+            <xs:element minOccurs="0" maxOccurs="1" name="SettingMinus" type="xs:double" />
+            <xs:element minOccurs="0" maxOccurs="1" name="SettingPlus" type="xs:double" />
           </xs:sequence>
         </xs:complexType>
       </xs:element>
@@ -593,7 +593,7 @@
           <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" name="Manufacturer" type="xs:string" />
             <xs:element minOccurs="0" maxOccurs="1" name="SerialNumber" type="xs:string" />
-            <xs:element minOccurs="1" maxOccurs="1" name="Setting" type="xs:double" />
+            <xs:element minOccurs="0" maxOccurs="1" name="Setting" type="xs:double" />
           </xs:sequence>
         </xs:complexType>
       </xs:element>

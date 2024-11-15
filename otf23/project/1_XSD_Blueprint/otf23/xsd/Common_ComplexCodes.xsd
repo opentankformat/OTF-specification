@@ -7,7 +7,7 @@
           <xs:sequence>
 			<xs:element name="ParentCodeCatalogName" type="xs:string" />
 			<xs:element name="Value" type="xs:string" />
-			<xs:element name="Description" type="xs:string"  />	
+			<xs:element name="Description" type="xs:string" minOccurs="0" />	
           </xs:sequence>
         </xs:complexType>
       </xs:element>

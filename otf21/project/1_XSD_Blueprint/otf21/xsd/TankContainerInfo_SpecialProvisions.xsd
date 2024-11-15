@@ -5,7 +5,7 @@
       <xs:element name="TankContainerInfo_SpecialProvision" maxOccurs="unbounded">
         <xs:complexType>
           <xs:sequence>
-			<xs:element name="SortOrder" type="xs:integer" />
+			<xs:element name="SortOrder" type="xs:integer" minOccurs="0"/>
 			<xs:element name="SpecialProvision" type="xs:string" />		
           </xs:sequence>
         </xs:complexType>

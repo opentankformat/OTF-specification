@@ -168,9 +168,9 @@
               <xs:element minOccurs="0" maxOccurs="1" name="TankContainerSuitabilityInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="1" maxOccurs="1" name="PortableTankType" type="TankContainerInfoTankContainerSuitabilityInfoPortableTankType" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="PortableTankType" type="TankContainerInfoTankContainerSuitabilityInfoPortableTankType" />
                     <xs:element minOccurs="0" maxOccurs="1" name="PortableTankTypeDescription" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="IMOType_Deprecated" type="TankContainerInfoTankContainerSuitabilityInfoIMOType_Deprecated" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="IMOType_Deprecated" type="TankContainerInfoTankContainerSuitabilityInfoIMOType_Deprecated" />
                     <xs:element minOccurs="0" maxOccurs="1" name="IMOTypeDescription_Deprecated" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="RID_ADRCode" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="SubstancesSuitableForTransport" type="ArrayOfTankContainerInfo_SubstancesSuitableForTransportTankContainerInfo_SubstanceSuitableForTransport" />
@@ -201,35 +201,35 @@
                       </xs:complexType>
                     </xs:element>
                     <xs:element minOccurs="1" maxOccurs="1" name="BuildingYearMonth" type="xs:dateTime" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="ISO6346SizeTypeCode" type="TankContainerInfoTankContainerCharacteristicsInfoISO6346SizeTypeCode" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ISO6346SizeTypeCode" type="TankContainerInfoTankContainerCharacteristicsInfoISO6346SizeTypeCode" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ISO6346SizeTypeCodeDescription" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="DimensionsXMillimeter" type="xs:int" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="DimensionsYMillimeter" type="xs:int" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="DimensionsZMillimeter" type="xs:int" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="MaxGrossMass" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="Payload" type="xs:double" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="PayloadUnit" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="Tare" type="xs:double" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="TareUnit" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="Capacity" type="xs:double" />
-                    <xs:element minOccurs="0" maxOccurs="1" name="CapacityUnit" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="DimensionsXMillimeter" type="xs:int" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="DimensionsYMillimeter" type="xs:int" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="DimensionsZMillimeter" type="xs:int" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="MaxGrossMass" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Payload" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" default="kg" name="PayloadUnit" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Tare" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" default="kg" name="TareUnit" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Capacity" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" default="L" name="CapacityUnit" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
               <xs:element minOccurs="0" maxOccurs="1" name="TankContainerTankInfo">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element minOccurs="1" maxOccurs="1" name="CompartmentQuantity" type="xs:int" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="CompartmentQuantity" type="xs:int" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ShellMaterial" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="ShellEquivalentThicknessRefSteelMillimeter" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="SurgePlates" type="xs:boolean" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="SurgePlatesCapacityBetweenIsLowerThan7500L" type="xs:boolean" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="WorkPressureMaximumBar" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="DesignPressureExternalBar" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="TestPressureHydraulicBar" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="DesignTemperatureMinimum" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="DesignTemperatureMaximum" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="DesignTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ShellEquivalentThicknessRefSteelMillimeter" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="SurgePlates" type="xs:boolean" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="SurgePlatesCapacityBetweenIsLowerThan7500L" type="xs:boolean" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="WorkPressureMaximumBar" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="DesignPressureExternalBar" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="TestPressureHydraulicBar" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="DesignTemperatureMinimum" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="DesignTemperatureMaximum" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="DesignTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -237,14 +237,14 @@
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element minOccurs="0" maxOccurs="1" name="TopDischarge" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="TopQuantityOfEnclosuresInSeries" type="xs:int" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="TopQuantityOfEnclosuresInSeries" type="xs:int" />
                     <xs:element minOccurs="0" maxOccurs="1" name="BottomDischarge" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="BottomQuantityOfEnclosuresInSeries" type="xs:int" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="BottomQuantityOfEnclosuresInSeries" type="xs:int" />
                     <xs:element minOccurs="0" maxOccurs="1" name="Heater" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="HeaterWorkingPressureBar" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="ReliefValveQuantity" type="xs:int" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="HeaterWorkingPressureBar" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="ReliefValveQuantity" type="xs:int" />
                     <xs:element minOccurs="0" maxOccurs="1" name="ReliefValves" type="ArrayOfTankContainerInfo_ReliefValvesTankContainerInfo_ReliefValve" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="RuptureDiscQuantity" type="xs:int" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="RuptureDiscQuantity" type="xs:int" />
                     <xs:element minOccurs="0" maxOccurs="1" name="RuptureDiscs" type="ArrayOfTankContainerInfo_RuptureDiscsTankContainerInfo_RuptureDisc" />
                   </xs:sequence>
                 </xs:complexType>
@@ -263,7 +263,7 @@
                   <xs:sequence>
                     <xs:element minOccurs="1" maxOccurs="1" name="InitialInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="1" maxOccurs="1" name="LastInspectionDate" type="xs:dateTime" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
                     <xs:element minOccurs="0" maxOccurs="1" name="LastInspectionScopeDescription" type="xs:string" />
                     <xs:element minOccurs="1" maxOccurs="1" name="NextInspectionDate" type="xs:dateTime" />
                     <xs:element minOccurs="1" maxOccurs="1" name="CSCValidityDate" type="xs:dateTime" />
@@ -332,7 +332,7 @@
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element minOccurs="1" maxOccurs="1" name="IsLoaded" type="xs:boolean" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="FullLoadedAmount" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="FullLoadedAmount" type="xs:double" />
                     <xs:element minOccurs="0" maxOccurs="1" name="FullLoadedAmountUnit" type="xs:string" />
                     <xs:element minOccurs="1" maxOccurs="1" name="IsClean" type="xs:boolean" />
                     <xs:element minOccurs="1" maxOccurs="1" name="IsPressurized" type="xs:boolean" />
@@ -383,20 +383,20 @@
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
-                    <xs:element minOccurs="1" maxOccurs="1" name="RequestedHeatingMethod" type="TankContainer_ServiceRequest_HeatingRequestedHeatingMethod" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="RequestedHeatingMethod" type="TankContainer_ServiceRequest_HeatingRequestedHeatingMethod" />
                     <xs:element minOccurs="0" maxOccurs="1" name="RequestedHeatingMethodDescription" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="RequiredHeatingTemperatureMeasurementMethod" type="TankContainer_ServiceRequest_HeatingRequiredHeatingTemperatureMeasurementMethod" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="RequiredHeatingTemperatureMeasurementMethod" type="TankContainer_ServiceRequest_HeatingRequiredHeatingTemperatureMeasurementMethod" />
                     <xs:element minOccurs="0" maxOccurs="1" name="RequiredHeatingTemperatureMeasurementMethodDescription" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="TargetTemperature" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="TargetTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="MaximumPressure" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="TargetTemperature" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="TargetTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="MaximumPressure" type="xs:double" />
                     <xs:element minOccurs="0" maxOccurs="1" name="MaximumPressureUnit" type="xs:string" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="MaximumContactTemperature" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="MaximumContactTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="MinimumTemperature" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="MinimumTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="MaximumTemperature" type="xs:double" />
-                    <xs:element minOccurs="1" maxOccurs="1" name="MaximumTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="MaximumContactTemperature" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="MaximumContactTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="MinimumTemperature" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="MinimumTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="MaximumTemperature" type="xs:double" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="MaximumTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -413,7 +413,7 @@
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
-                    <xs:element minOccurs="1" maxOccurs="1" name="RequestPolymerCleaning" type="xs:boolean" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="RequestPolymerCleaning" type="xs:boolean" />
                     <xs:element minOccurs="0" maxOccurs="1" name="SpecialInstructionID" type="xs:string" />
                     <xs:element minOccurs="0" maxOccurs="1" name="AdditionalCleaningActions" type="ArrayOfTankContainer_CleaningActionsTankContainer_CleaningAction" />
                   </xs:sequence>
@@ -510,7 +510,7 @@
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
-                    <xs:element minOccurs="1" maxOccurs="1" name="InspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="InspectionScope" type="TankContainerInfoInspectionDatesLastInspectionScope" />
                     <xs:element minOccurs="0" maxOccurs="1" name="InspectionScopeDescription" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
@@ -851,8 +851,8 @@
           <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" name="Manufacturer" type="xs:string" />
             <xs:element minOccurs="0" maxOccurs="1" name="SerialNumber" type="xs:string" />
-            <xs:element minOccurs="1" maxOccurs="1" name="SettingMinus" type="xs:double" />
-            <xs:element minOccurs="1" maxOccurs="1" name="SettingPlus" type="xs:double" />
+            <xs:element minOccurs="0" maxOccurs="1" name="SettingMinus" type="xs:double" />
+            <xs:element minOccurs="0" maxOccurs="1" name="SettingPlus" type="xs:double" />
           </xs:sequence>
         </xs:complexType>
       </xs:element>
@@ -865,7 +865,7 @@
           <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" name="Manufacturer" type="xs:string" />
             <xs:element minOccurs="0" maxOccurs="1" name="SerialNumber" type="xs:string" />
-            <xs:element minOccurs="1" maxOccurs="1" name="Setting" type="xs:double" />
+            <xs:element minOccurs="0" maxOccurs="1" name="Setting" type="xs:double" />
           </xs:sequence>
         </xs:complexType>
       </xs:element>
@@ -952,9 +952,9 @@
                                         <xs:sequence>
                                           <xs:element minOccurs="0" maxOccurs="1" name="PSN" type="xs:string" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="UNNumber" type="xs:string" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="ADRClass" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListADRClass" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="ADRClass" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListADRClass" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="ADRClassDescription" type="xs:string" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="UNPackingGroup" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListUNPackingGroup" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="UNPackingGroup" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListUNPackingGroup" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="UNPackingGroupDescription" type="xs:string" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="KemlerCode" type="xs:string" />
                                         </xs:sequence>
@@ -966,7 +966,7 @@
                                           <xs:element minOccurs="0" maxOccurs="unbounded" name="HazardStatements">
                                             <xs:complexType>
                                               <xs:sequence>
-                                                <xs:element minOccurs="1" maxOccurs="1" name="HazardStatementCode" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardStatementsHazardStatementCode" />
+                                                <xs:element minOccurs="0" maxOccurs="1" name="HazardStatementCode" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardStatementsHazardStatementCode" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="HazardStatementCodeDescription" type="xs:string" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="HazardStatementDescription" type="xs:string" />
                                               </xs:sequence>
@@ -975,7 +975,7 @@
                                           <xs:element minOccurs="0" maxOccurs="unbounded" name="PrecautionaryStatements">
                                             <xs:complexType>
                                               <xs:sequence>
-                                                <xs:element minOccurs="1" maxOccurs="1" name="PrecautionaryStatementCode" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSPrecautionaryStatementsPrecautionaryStatementCode" />
+                                                <xs:element minOccurs="0" maxOccurs="1" name="PrecautionaryStatementCode" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSPrecautionaryStatementsPrecautionaryStatementCode" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="PrecautionaryStatementCodeDescription" type="xs:string" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="PrecautionaryStatementDescription" type="xs:string" />
                                               </xs:sequence>
@@ -984,7 +984,7 @@
                                           <xs:element minOccurs="0" maxOccurs="unbounded" name="HazardPictograms">
                                             <xs:complexType>
                                               <xs:sequence>
-                                                <xs:element minOccurs="1" maxOccurs="1" name="HazardPictogram" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardPictogramsHazardPictogram" />
+                                                <xs:element minOccurs="0" maxOccurs="1" name="HazardPictogram" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardPictogramsHazardPictogram" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="HazardPictogramDescription" type="xs:string" />
                                               </xs:sequence>
                                             </xs:complexType>
@@ -1005,9 +1005,9 @@
                                     <xs:element minOccurs="0" maxOccurs="1" name="IMO_IMDG">
                                       <xs:complexType>
                                         <xs:sequence>
-                                          <xs:element minOccurs="1" maxOccurs="1" name="IMDGClass" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGIMDGClass" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="IMDGClass" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGIMDGClass" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="IMDGClassDescription" type="xs:string" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="SegregationGroup" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGSegregationGroup" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="SegregationGroup" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGSegregationGroup" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="SegregationGroupDescription" type="xs:string" />
                                         </xs:sequence>
                                       </xs:complexType>
@@ -1031,38 +1031,38 @@
                                     <xs:element minOccurs="0" maxOccurs="1" name="PhysicalState" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="Odor" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="Appearance" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporPressure" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporPressure" type="xs:double" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="VaporPressureUnit" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporPressureAtTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporPressureAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporDensity" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporPressureAtTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporPressureAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporDensity" type="xs:double" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="VaporDensityUnit" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporDensityAtTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporDensityAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="MeltingPointTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="MeltingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="BoilingPointTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="BoilingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FreezingPointTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FreezingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="CriticalTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="CriticalTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporDensityAtTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporDensityAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="MeltingPointTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="MeltingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="BoilingPointTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="BoilingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FreezingPointTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FreezingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="CriticalTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="CriticalTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="pH" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="SpecificGravity" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="SolubilityInWater" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="Viscosity" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="Viscosity" type="xs:double" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="ViscosityUnit" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="ViscosityAtTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="ViscosityAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="MolarMass" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="ViscosityAtTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="ViscosityAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="MolarMass" type="xs:double" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="MolarMassUnit" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="PolymerInfo">
                                       <xs:complexType>
                                         <xs:sequence>
-                                          <xs:element minOccurs="1" maxOccurs="1" name="IsPolymer" type="xs:boolean" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="SelfAcceleratingPolymerizationTemperature" type="xs:double" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="IsPolymer" type="xs:boolean" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="SelfAcceleratingPolymerizationTemperature" type="xs:double" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="SelfAcceleratingPolymerizationTemperatureUnit" type="xs:string" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="SelfAcceleratingDecompositionTemperature" type="xs:double" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="SelfAcceleratingDecompositionTemperature" type="xs:double" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="SelfAcceleratingDecompositionTemperatureUnit" type="xs:string" />
                                         </xs:sequence>
                                       </xs:complexType>
@@ -1073,14 +1073,14 @@
                               <xs:element minOccurs="0" maxOccurs="1" name="FireAndExplosionDataInfo">
                                 <xs:complexType>
                                   <xs:sequence>
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FlashPointTestMethod" type="ProductInfoProductDetailsFireAndExplosionDataInfoFlashPointTestMethod" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FlashPointTestMethod" type="ProductInfoProductDetailsFireAndExplosionDataInfoFlashPointTestMethod" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="FlashPointTestMethodDescription" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FlashPointTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FlashPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="AutoIgnitionTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="AutoIgnitionTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="UELPercentage" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="LELPercentage" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FlashPointTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FlashPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="AutoIgnitionTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="AutoIgnitionTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="UELPercentage" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="LELPercentage" type="xs:double" />
                                   </xs:sequence>
                                 </xs:complexType>
                               </xs:element>
@@ -1105,7 +1105,7 @@
                       </xs:sequence>
                     </xs:complexType>
                   </xs:element>
-                  <xs:element minOccurs="1" maxOccurs="1" name="LoadedAmount" type="xs:double" />
+                  <xs:element minOccurs="0" maxOccurs="1" name="LoadedAmount" type="xs:double" />
                   <xs:element minOccurs="0" maxOccurs="1" name="LoadedAmountUnit" type="xs:string" />
                 </xs:sequence>
               </xs:complexType>
@@ -1166,9 +1166,9 @@
                                         <xs:sequence>
                                           <xs:element minOccurs="0" maxOccurs="1" name="PSN" type="xs:string" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="UNNumber" type="xs:string" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="ADRClass" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListADRClass" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="ADRClass" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListADRClass" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="ADRClassDescription" type="xs:string" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="UNPackingGroup" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListUNPackingGroup" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="UNPackingGroup" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListUNPackingGroup" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="UNPackingGroupDescription" type="xs:string" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="KemlerCode" type="xs:string" />
                                         </xs:sequence>
@@ -1180,7 +1180,7 @@
                                           <xs:element minOccurs="0" maxOccurs="unbounded" name="HazardStatements">
                                             <xs:complexType>
                                               <xs:sequence>
-                                                <xs:element minOccurs="1" maxOccurs="1" name="HazardStatementCode" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardStatementsHazardStatementCode" />
+                                                <xs:element minOccurs="0" maxOccurs="1" name="HazardStatementCode" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardStatementsHazardStatementCode" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="HazardStatementCodeDescription" type="xs:string" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="HazardStatementDescription" type="xs:string" />
                                               </xs:sequence>
@@ -1189,7 +1189,7 @@
                                           <xs:element minOccurs="0" maxOccurs="unbounded" name="PrecautionaryStatements">
                                             <xs:complexType>
                                               <xs:sequence>
-                                                <xs:element minOccurs="1" maxOccurs="1" name="PrecautionaryStatementCode" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSPrecautionaryStatementsPrecautionaryStatementCode" />
+                                                <xs:element minOccurs="0" maxOccurs="1" name="PrecautionaryStatementCode" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSPrecautionaryStatementsPrecautionaryStatementCode" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="PrecautionaryStatementCodeDescription" type="xs:string" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="PrecautionaryStatementDescription" type="xs:string" />
                                               </xs:sequence>
@@ -1198,7 +1198,7 @@
                                           <xs:element minOccurs="0" maxOccurs="unbounded" name="HazardPictograms">
                                             <xs:complexType>
                                               <xs:sequence>
-                                                <xs:element minOccurs="1" maxOccurs="1" name="HazardPictogram" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardPictogramsHazardPictogram" />
+                                                <xs:element minOccurs="0" maxOccurs="1" name="HazardPictogram" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardPictogramsHazardPictogram" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="HazardPictogramDescription" type="xs:string" />
                                               </xs:sequence>
                                             </xs:complexType>
@@ -1219,9 +1219,9 @@
                                     <xs:element minOccurs="0" maxOccurs="1" name="IMO_IMDG">
                                       <xs:complexType>
                                         <xs:sequence>
-                                          <xs:element minOccurs="1" maxOccurs="1" name="IMDGClass" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGIMDGClass" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="IMDGClass" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGIMDGClass" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="IMDGClassDescription" type="xs:string" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="SegregationGroup" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGSegregationGroup" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="SegregationGroup" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGSegregationGroup" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="SegregationGroupDescription" type="xs:string" />
                                         </xs:sequence>
                                       </xs:complexType>
@@ -1245,38 +1245,38 @@
                                     <xs:element minOccurs="0" maxOccurs="1" name="PhysicalState" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="Odor" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="Appearance" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporPressure" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporPressure" type="xs:double" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="VaporPressureUnit" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporPressureAtTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporPressureAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporDensity" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporPressureAtTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporPressureAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporDensity" type="xs:double" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="VaporDensityUnit" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporDensityAtTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporDensityAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="MeltingPointTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="MeltingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="BoilingPointTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="BoilingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FreezingPointTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FreezingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="CriticalTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="CriticalTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporDensityAtTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporDensityAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="MeltingPointTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="MeltingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="BoilingPointTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="BoilingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FreezingPointTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FreezingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="CriticalTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="CriticalTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="pH" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="SpecificGravity" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="SolubilityInWater" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="Viscosity" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="Viscosity" type="xs:double" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="ViscosityUnit" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="ViscosityAtTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="ViscosityAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="MolarMass" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="ViscosityAtTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="ViscosityAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="MolarMass" type="xs:double" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="MolarMassUnit" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="PolymerInfo">
                                       <xs:complexType>
                                         <xs:sequence>
-                                          <xs:element minOccurs="1" maxOccurs="1" name="IsPolymer" type="xs:boolean" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="SelfAcceleratingPolymerizationTemperature" type="xs:double" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="IsPolymer" type="xs:boolean" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="SelfAcceleratingPolymerizationTemperature" type="xs:double" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="SelfAcceleratingPolymerizationTemperatureUnit" type="xs:string" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="SelfAcceleratingDecompositionTemperature" type="xs:double" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="SelfAcceleratingDecompositionTemperature" type="xs:double" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="SelfAcceleratingDecompositionTemperatureUnit" type="xs:string" />
                                         </xs:sequence>
                                       </xs:complexType>
@@ -1287,14 +1287,14 @@
                               <xs:element minOccurs="0" maxOccurs="1" name="FireAndExplosionDataInfo">
                                 <xs:complexType>
                                   <xs:sequence>
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FlashPointTestMethod" type="ProductInfoProductDetailsFireAndExplosionDataInfoFlashPointTestMethod" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FlashPointTestMethod" type="ProductInfoProductDetailsFireAndExplosionDataInfoFlashPointTestMethod" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="FlashPointTestMethodDescription" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FlashPointTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FlashPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="AutoIgnitionTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="AutoIgnitionTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="UELPercentage" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="LELPercentage" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FlashPointTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FlashPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="AutoIgnitionTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="AutoIgnitionTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="UELPercentage" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="LELPercentage" type="xs:double" />
                                   </xs:sequence>
                                 </xs:complexType>
                               </xs:element>
@@ -1378,9 +1378,9 @@
                                         <xs:sequence>
                                           <xs:element minOccurs="0" maxOccurs="1" name="PSN" type="xs:string" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="UNNumber" type="xs:string" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="ADRClass" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListADRClass" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="ADRClass" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListADRClass" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="ADRClassDescription" type="xs:string" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="UNPackingGroup" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListUNPackingGroup" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="UNPackingGroup" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListUNPackingGroup" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="UNPackingGroupDescription" type="xs:string" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="KemlerCode" type="xs:string" />
                                         </xs:sequence>
@@ -1392,7 +1392,7 @@
                                           <xs:element minOccurs="0" maxOccurs="unbounded" name="HazardStatements">
                                             <xs:complexType>
                                               <xs:sequence>
-                                                <xs:element minOccurs="1" maxOccurs="1" name="HazardStatementCode" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardStatementsHazardStatementCode" />
+                                                <xs:element minOccurs="0" maxOccurs="1" name="HazardStatementCode" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardStatementsHazardStatementCode" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="HazardStatementCodeDescription" type="xs:string" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="HazardStatementDescription" type="xs:string" />
                                               </xs:sequence>
@@ -1401,7 +1401,7 @@
                                           <xs:element minOccurs="0" maxOccurs="unbounded" name="PrecautionaryStatements">
                                             <xs:complexType>
                                               <xs:sequence>
-                                                <xs:element minOccurs="1" maxOccurs="1" name="PrecautionaryStatementCode" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSPrecautionaryStatementsPrecautionaryStatementCode" />
+                                                <xs:element minOccurs="0" maxOccurs="1" name="PrecautionaryStatementCode" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSPrecautionaryStatementsPrecautionaryStatementCode" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="PrecautionaryStatementCodeDescription" type="xs:string" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="PrecautionaryStatementDescription" type="xs:string" />
                                               </xs:sequence>
@@ -1410,7 +1410,7 @@
                                           <xs:element minOccurs="0" maxOccurs="unbounded" name="HazardPictograms">
                                             <xs:complexType>
                                               <xs:sequence>
-                                                <xs:element minOccurs="1" maxOccurs="1" name="HazardPictogram" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardPictogramsHazardPictogram" />
+                                                <xs:element minOccurs="0" maxOccurs="1" name="HazardPictogram" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardPictogramsHazardPictogram" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="HazardPictogramDescription" type="xs:string" />
                                               </xs:sequence>
                                             </xs:complexType>
@@ -1431,9 +1431,9 @@
                                     <xs:element minOccurs="0" maxOccurs="1" name="IMO_IMDG">
                                       <xs:complexType>
                                         <xs:sequence>
-                                          <xs:element minOccurs="1" maxOccurs="1" name="IMDGClass" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGIMDGClass" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="IMDGClass" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGIMDGClass" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="IMDGClassDescription" type="xs:string" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="SegregationGroup" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGSegregationGroup" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="SegregationGroup" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGSegregationGroup" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="SegregationGroupDescription" type="xs:string" />
                                         </xs:sequence>
                                       </xs:complexType>
@@ -1457,38 +1457,38 @@
                                     <xs:element minOccurs="0" maxOccurs="1" name="PhysicalState" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="Odor" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="Appearance" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporPressure" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporPressure" type="xs:double" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="VaporPressureUnit" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporPressureAtTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporPressureAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporDensity" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporPressureAtTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporPressureAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporDensity" type="xs:double" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="VaporDensityUnit" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporDensityAtTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporDensityAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="MeltingPointTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="MeltingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="BoilingPointTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="BoilingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FreezingPointTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FreezingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="CriticalTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="CriticalTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporDensityAtTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporDensityAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="MeltingPointTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="MeltingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="BoilingPointTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="BoilingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FreezingPointTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FreezingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="CriticalTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="CriticalTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="pH" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="SpecificGravity" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="SolubilityInWater" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="Viscosity" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="Viscosity" type="xs:double" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="ViscosityUnit" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="ViscosityAtTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="ViscosityAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="MolarMass" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="ViscosityAtTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="ViscosityAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="MolarMass" type="xs:double" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="MolarMassUnit" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="PolymerInfo">
                                       <xs:complexType>
                                         <xs:sequence>
-                                          <xs:element minOccurs="1" maxOccurs="1" name="IsPolymer" type="xs:boolean" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="SelfAcceleratingPolymerizationTemperature" type="xs:double" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="IsPolymer" type="xs:boolean" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="SelfAcceleratingPolymerizationTemperature" type="xs:double" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="SelfAcceleratingPolymerizationTemperatureUnit" type="xs:string" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="SelfAcceleratingDecompositionTemperature" type="xs:double" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="SelfAcceleratingDecompositionTemperature" type="xs:double" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="SelfAcceleratingDecompositionTemperatureUnit" type="xs:string" />
                                         </xs:sequence>
                                       </xs:complexType>
@@ -1499,14 +1499,14 @@
                               <xs:element minOccurs="0" maxOccurs="1" name="FireAndExplosionDataInfo">
                                 <xs:complexType>
                                   <xs:sequence>
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FlashPointTestMethod" type="ProductInfoProductDetailsFireAndExplosionDataInfoFlashPointTestMethod" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FlashPointTestMethod" type="ProductInfoProductDetailsFireAndExplosionDataInfoFlashPointTestMethod" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="FlashPointTestMethodDescription" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FlashPointTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FlashPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="AutoIgnitionTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="AutoIgnitionTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="UELPercentage" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="LELPercentage" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FlashPointTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FlashPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="AutoIgnitionTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="AutoIgnitionTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="UELPercentage" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="LELPercentage" type="xs:double" />
                                   </xs:sequence>
                                 </xs:complexType>
                               </xs:element>
@@ -1590,9 +1590,9 @@
                                         <xs:sequence>
                                           <xs:element minOccurs="0" maxOccurs="1" name="PSN" type="xs:string" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="UNNumber" type="xs:string" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="ADRClass" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListADRClass" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="ADRClass" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListADRClass" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="ADRClassDescription" type="xs:string" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="UNPackingGroup" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListUNPackingGroup" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="UNPackingGroup" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_DangerousGoodsListUNPackingGroup" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="UNPackingGroupDescription" type="xs:string" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="KemlerCode" type="xs:string" />
                                         </xs:sequence>
@@ -1604,7 +1604,7 @@
                                           <xs:element minOccurs="0" maxOccurs="unbounded" name="HazardStatements">
                                             <xs:complexType>
                                               <xs:sequence>
-                                                <xs:element minOccurs="1" maxOccurs="1" name="HazardStatementCode" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardStatementsHazardStatementCode" />
+                                                <xs:element minOccurs="0" maxOccurs="1" name="HazardStatementCode" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardStatementsHazardStatementCode" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="HazardStatementCodeDescription" type="xs:string" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="HazardStatementDescription" type="xs:string" />
                                               </xs:sequence>
@@ -1613,7 +1613,7 @@
                                           <xs:element minOccurs="0" maxOccurs="unbounded" name="PrecautionaryStatements">
                                             <xs:complexType>
                                               <xs:sequence>
-                                                <xs:element minOccurs="1" maxOccurs="1" name="PrecautionaryStatementCode" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSPrecautionaryStatementsPrecautionaryStatementCode" />
+                                                <xs:element minOccurs="0" maxOccurs="1" name="PrecautionaryStatementCode" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSPrecautionaryStatementsPrecautionaryStatementCode" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="PrecautionaryStatementCodeDescription" type="xs:string" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="PrecautionaryStatementDescription" type="xs:string" />
                                               </xs:sequence>
@@ -1622,7 +1622,7 @@
                                           <xs:element minOccurs="0" maxOccurs="unbounded" name="HazardPictograms">
                                             <xs:complexType>
                                               <xs:sequence>
-                                                <xs:element minOccurs="1" maxOccurs="1" name="HazardPictogram" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardPictogramsHazardPictogram" />
+                                                <xs:element minOccurs="0" maxOccurs="1" name="HazardPictogram" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsUN_GHSHazardPictogramsHazardPictogram" />
                                                 <xs:element minOccurs="0" maxOccurs="1" name="HazardPictogramDescription" type="xs:string" />
                                               </xs:sequence>
                                             </xs:complexType>
@@ -1643,9 +1643,9 @@
                                     <xs:element minOccurs="0" maxOccurs="1" name="IMO_IMDG">
                                       <xs:complexType>
                                         <xs:sequence>
-                                          <xs:element minOccurs="1" maxOccurs="1" name="IMDGClass" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGIMDGClass" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="IMDGClass" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGIMDGClass" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="IMDGClassDescription" type="xs:string" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="SegregationGroup" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGSegregationGroup" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="SegregationGroup" type="ProductInfoProductDetailsHazardousProductSafetyClassificationsIMO_IMDGSegregationGroup" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="SegregationGroupDescription" type="xs:string" />
                                         </xs:sequence>
                                       </xs:complexType>
@@ -1669,38 +1669,38 @@
                                     <xs:element minOccurs="0" maxOccurs="1" name="PhysicalState" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="Odor" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="Appearance" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporPressure" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporPressure" type="xs:double" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="VaporPressureUnit" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporPressureAtTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporPressureAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporDensity" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporPressureAtTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporPressureAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporDensity" type="xs:double" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="VaporDensityUnit" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporDensityAtTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="VaporDensityAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="MeltingPointTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="MeltingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="BoilingPointTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="BoilingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FreezingPointTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FreezingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="CriticalTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="CriticalTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporDensityAtTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="VaporDensityAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="MeltingPointTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="MeltingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="BoilingPointTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="BoilingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FreezingPointTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FreezingPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="CriticalTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="CriticalTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="pH" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="SpecificGravity" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="SolubilityInWater" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="Viscosity" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="Viscosity" type="xs:double" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="ViscosityUnit" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="ViscosityAtTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="ViscosityAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="MolarMass" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="ViscosityAtTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="ViscosityAtTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="MolarMass" type="xs:double" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="MolarMassUnit" type="xs:string" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="PolymerInfo">
                                       <xs:complexType>
                                         <xs:sequence>
-                                          <xs:element minOccurs="1" maxOccurs="1" name="IsPolymer" type="xs:boolean" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="SelfAcceleratingPolymerizationTemperature" type="xs:double" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="IsPolymer" type="xs:boolean" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="SelfAcceleratingPolymerizationTemperature" type="xs:double" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="SelfAcceleratingPolymerizationTemperatureUnit" type="xs:string" />
-                                          <xs:element minOccurs="1" maxOccurs="1" name="SelfAcceleratingDecompositionTemperature" type="xs:double" />
+                                          <xs:element minOccurs="0" maxOccurs="1" name="SelfAcceleratingDecompositionTemperature" type="xs:double" />
                                           <xs:element minOccurs="0" maxOccurs="1" name="SelfAcceleratingDecompositionTemperatureUnit" type="xs:string" />
                                         </xs:sequence>
                                       </xs:complexType>
@@ -1711,14 +1711,14 @@
                               <xs:element minOccurs="0" maxOccurs="1" name="FireAndExplosionDataInfo">
                                 <xs:complexType>
                                   <xs:sequence>
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FlashPointTestMethod" type="ProductInfoProductDetailsFireAndExplosionDataInfoFlashPointTestMethod" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FlashPointTestMethod" type="ProductInfoProductDetailsFireAndExplosionDataInfoFlashPointTestMethod" />
                                     <xs:element minOccurs="0" maxOccurs="1" name="FlashPointTestMethodDescription" type="xs:string" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FlashPointTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="FlashPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="AutoIgnitionTemperature" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="AutoIgnitionTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="UELPercentage" type="xs:double" />
-                                    <xs:element minOccurs="1" maxOccurs="1" name="LELPercentage" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FlashPointTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="FlashPointTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="AutoIgnitionTemperature" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="AutoIgnitionTemperatureUnit" type="TankContainerInfoTankContainerTankInfoDesignTemperatureUnit" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="UELPercentage" type="xs:double" />
+                                    <xs:element minOccurs="0" maxOccurs="1" name="LELPercentage" type="xs:double" />
                                   </xs:sequence>
                                 </xs:complexType>
                               </xs:element>
@@ -2256,7 +2256,7 @@
           <xs:sequence>
             <xs:element minOccurs="1" maxOccurs="1" name="CompartmentNumber" type="xs:int" />
             <xs:element minOccurs="0" maxOccurs="1" name="ActionID" type="xs:string" />
-            <xs:element minOccurs="1" maxOccurs="1" name="Quantity" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="1" default="1" name="Quantity" type="xs:int" />
           </xs:sequence>
         </xs:complexType>
       </xs:element>

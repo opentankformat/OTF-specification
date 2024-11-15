@@ -4,10 +4,10 @@
   <xs:element name="Container_StatusUpdate_Storage_Arrival">
     <xs:complexType>
       <xs:sequence>
-		<xs:element name="ClientPurchaseOrderReference" type="xs:string"  />  
-		<xs:element name="ClientDeliveryReference" type="xs:string"  />
+		<xs:element name="ClientPurchaseOrderReference" type="xs:string" minOccurs="0" />  
+		<xs:element name="ClientDeliveryReference" type="xs:string" minOccurs="0" />
         <xs:element name="ContainerDeliveryDate" type="xs:dateTime" />
-		<xs:element ref="Container_HaulierInfo"   />			  
+		<xs:element ref="Container_HaulierInfo"  minOccurs="0" />			  
       </xs:sequence>
     </xs:complexType>
   </xs:element>

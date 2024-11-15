@@ -5,9 +5,9 @@
       <xs:element name="TankContainerInfo_RuptureDisc" maxOccurs="unbounded">
         <xs:complexType>
           <xs:sequence>
-			<xs:element name="Manufacturer" type="xs:string" />
-			<xs:element name="SerialNumber" type="xs:string" />
-			<xs:element name="Setting" type="xs:double" />
+			<xs:element name="Manufacturer" type="xs:string" minOccurs="0"/>
+			<xs:element name="SerialNumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="Setting" type="xs:double" minOccurs="0"/>
           </xs:sequence>
         </xs:complexType>
       </xs:element>

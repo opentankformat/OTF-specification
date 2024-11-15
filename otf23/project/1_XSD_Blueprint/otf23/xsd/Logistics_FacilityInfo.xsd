@@ -3,9 +3,9 @@
   <xs:element name="FacilityInfo">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="Name" type="xs:string"  />
-        <xs:element name="ExternalID" type="xs:string"  />
-        <xs:element name="BICFacilityCode" type="xs:string"  />	
+        <xs:element name="Name" type="xs:string" minOccurs="0" />
+        <xs:element name="ExternalID" type="xs:string" minOccurs="0" />
+        <xs:element name="BICFacilityCode" type="xs:string" minOccurs="0" />	
       </xs:sequence>
     </xs:complexType>
   </xs:element>

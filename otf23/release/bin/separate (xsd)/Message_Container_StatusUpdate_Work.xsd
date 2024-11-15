@@ -176,7 +176,6 @@
         <xs:element minOccurs="0" maxOccurs="1" name="Container_Work_EstimateStatusInfo">
           <xs:complexType>
             <xs:sequence>
-              <xs:element minOccurs="1" maxOccurs="1" name="ContainerWorkStatus" type="Container_Work_EstimateStatusInfoContainerWorkStatus" />
               <xs:element minOccurs="0" maxOccurs="1" name="Version" type="xs:string" />
               <xs:element minOccurs="0" maxOccurs="1" name="SupplierInfo">
                 <xs:complexType>
@@ -579,16 +578,6 @@
       <xs:enumeration value="IN_CLEAN_TRANSLOADING_PLANNED" />
       <xs:enumeration value="OUT" />
       <xs:enumeration value="CANCELLED" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="Container_Work_EstimateStatusInfoContainerWorkStatus">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="Estimate" />
-      <xs:enumeration value="Annotation" />
-      <xs:enumeration value="CounterProposal" />
-      <xs:enumeration value="Authorization" />
-      <xs:enumeration value="Accept" />
-      <xs:enumeration value="Reject" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="Container_ServiceProgress_AuthorizationInfoContainer_ServiceProgress_AuthorizationStatusStatus">

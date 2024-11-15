@@ -5,10 +5,10 @@
   <xs:element name="Container_ServiceProgressInfo">
     <xs:complexType>
       <xs:sequence>
-	    <xs:element name="SupplierReference" type="xs:string"  />
-		<xs:element name="ClientPurchaseOrderReference" type="xs:string"  /> 
-	    <xs:element ref="Container_ServiceProgress_AuthorizationInfo" />
-	    <xs:element ref="Container_ServiceProgress_DateInfo" />			  			  
+	    <xs:element name="SupplierReference" type="xs:string" minOccurs="0" />
+		<xs:element name="ClientPurchaseOrderReference" type="xs:string" minOccurs="0" /> 
+	    <xs:element ref="Container_ServiceProgress_AuthorizationInfo" minOccurs="0"/>
+	    <xs:element ref="Container_ServiceProgress_DateInfo" minOccurs="0"/>			  			  
 	  </xs:sequence>
     </xs:complexType>
   </xs:element>

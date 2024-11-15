@@ -5,8 +5,8 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element name="IsLoaded" type="xs:boolean" />
-	    <xs:element name="FullLoadedAmount" type="xs:double"  />
-        <xs:element name="FullLoadedAmountUnit" type="xs:string"  />
+	    <xs:element name="FullLoadedAmount" type="xs:double" minOccurs="0" />
+        <xs:element name="FullLoadedAmountUnit" type="xs:string" minOccurs="0" />
         <xs:element name="IsClean" type="xs:boolean" />
         <xs:element name="IsPressurized" type="xs:boolean" />
         <xs:element name="IsNitrogen" type="xs:boolean" />

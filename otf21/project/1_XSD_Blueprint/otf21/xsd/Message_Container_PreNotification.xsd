@@ -21,37 +21,37 @@
 		</xs:element>		
 	    <xs:element ref="OrderInfo"/>
 	    <xs:element ref="ContainerInfo"/>
-		<xs:element name="ArrivalInfo"  >
+		<xs:element name="ArrivalInfo" minOccurs="0" >
 			<xs:complexType>
 				<xs:sequence>
 					<xs:element name="ETA" type="xs:dateTime" />
-					<xs:element name="RedeliveryReference" type="xs:string"  />
-					<xs:element name="ContainerOrigin" type="xs:string"  />
-					<xs:element ref="Container_HaulierInfo"   />							
+					<xs:element name="RedeliveryReference" type="xs:string" minOccurs="0" />
+					<xs:element name="ContainerOrigin" type="xs:string" minOccurs="0" />
+					<xs:element ref="Container_HaulierInfo"  minOccurs="0" />							
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>
         <xs:element name="ServicesRequestInfo" >
           <xs:complexType>
             <xs:sequence>
-  				<xs:element ref="Container_ServiceRequest_Storage"  />
-  				<xs:element ref="Container_ServiceRequest_Work_Modification"  />
-  				<xs:element ref="Container_ServiceRequest_Work_Repair"  />
+  				<xs:element ref="Container_ServiceRequest_Storage" minOccurs="0" />
+  				<xs:element ref="Container_ServiceRequest_Work_Modification" minOccurs="0" />
+  				<xs:element ref="Container_ServiceRequest_Work_Repair" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>		
-		<xs:element name="DepartureInfo"  >
+		<xs:element name="DepartureInfo" minOccurs="0" >
 			<xs:complexType>
 				<xs:sequence>
 					<xs:element name="ETD" type="xs:dateTime" />
-					<xs:element name="ReleaseReference" type="xs:string"  />
-					<xs:element name="ContainerDestination" type="xs:string"  />
-					<xs:element ref="Container_HaulierInfo"  />
+					<xs:element name="ReleaseReference" type="xs:string" minOccurs="0" />
+					<xs:element name="ContainerDestination" type="xs:string" minOccurs="0" />
+					<xs:element ref="Container_HaulierInfo" minOccurs="0" />
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>
-		<xs:element name="Remarks" type="Remarks"  />
-		<xs:element name="Attachments" type="Attachments"  />
+		<xs:element name="Remarks" type="Remarks" minOccurs="0" />
+		<xs:element name="Attachments" type="Attachments" minOccurs="0" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

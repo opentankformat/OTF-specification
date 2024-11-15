@@ -15,73 +15,73 @@
     <xs:complexType>
       <xs:sequence>
 	    <xs:element ref="ContainerInfo"/>
-		<xs:element name="TankContainerSuitabilityInfo"  >
+		<xs:element name="TankContainerSuitabilityInfo" minOccurs="0" >
 			<xs:complexType>
 				<xs:sequence>
-					<xs:element name="PortableTankType"  >
+					<xs:element name="PortableTankType" minOccurs="0" >
 						<xs:simpleType>
 							<xs:restriction base="TankContainer_PortableTankTypes" />
 						</xs:simpleType>
 					</xs:element>
-					<xs:element name="PortableTankTypeDescription" type="xs:string"  />
-					<xs:element name="IMOType_Deprecated"  >
+					<xs:element name="PortableTankTypeDescription" type="xs:string" minOccurs="0" />
+					<xs:element name="IMOType_Deprecated" minOccurs="0" >
 						<xs:simpleType>
 							<xs:restriction base="TankContainer_IMOTypes" />
 						</xs:simpleType>
 					</xs:element>
-					<xs:element name="IMOTypeDescription_Deprecated" type="xs:string"  />
-					<xs:element name="RID_ADRCode" type="xs:string"  />
-					<xs:element name="SubstancesSuitableForTransport" type="TankContainerInfo_SubstancesSuitableForTransport" />					
-					<xs:element name="SpecialProvisions" type="TankContainerInfo_SpecialProvisions" />										
+					<xs:element name="IMOTypeDescription_Deprecated" type="xs:string" minOccurs="0" />
+					<xs:element name="RID_ADRCode" type="xs:string" minOccurs="0" />
+					<xs:element name="SubstancesSuitableForTransport" type="TankContainerInfo_SubstancesSuitableForTransport" minOccurs="0"/>					
+					<xs:element name="SpecialProvisions" type="TankContainerInfo_SpecialProvisions" minOccurs="0"/>										
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>
-		<xs:element name="TankContainerCharacteristicsInfo" >
+		<xs:element name="TankContainerCharacteristicsInfo" minOccurs="0">
 			<xs:complexType>
 				<xs:sequence>
-					<xs:element name="ManufacturerInfo" >
+					<xs:element name="ManufacturerInfo" minOccurs="0">
 						<xs:complexType>
 							<xs:sequence>
 								<xs:element ref="BusinessUnitInfo" />	  
-								<xs:element name="ManufacturedInCountry" type="xs:string"  />
-								<xs:element name="ManufacturerSerialNumber" type="xs:string" />							
+								<xs:element name="ManufacturedInCountry" type="xs:string" minOccurs="0" />
+								<xs:element name="ManufacturerSerialNumber" type="xs:string" minOccurs="0"/>							
 							</xs:sequence>
 						</xs:complexType>
 					</xs:element>				
 					<xs:element name="BuildingYearMonth" type="xs:dateTime" />
-					<xs:element name="ISO6346SizeTypeCode"  >
+					<xs:element name="ISO6346SizeTypeCode" minOccurs="0" >
 						<xs:simpleType>
 							<xs:restriction base="TankContainer_ISO6346SizeTypeCodes" />
 						</xs:simpleType>
 					</xs:element>
-					<xs:element name="ISO6346SizeTypeCodeDescription" type="xs:string"  />
-					<xs:element name="DimensionsXMillimeter" type="xs:int"  />
-					<xs:element name="DimensionsYMillimeter" type="xs:int"  />
-					<xs:element name="DimensionsZMillimeter" type="xs:int" />
-					<xs:element name="MaxGrossMass" type="xs:double" />
-					<xs:element name="Payload" type="xs:double" />
-					<xs:element name="PayloadUnit" type="xs:string" default = "kg" />					
-					<xs:element name="Tare" type="xs:double" />
-					<xs:element name="TareUnit" type="xs:string" default = "kg" />
-					<xs:element name="Capacity" type="xs:double" /> 
-					<xs:element name="CapacityUnit" type="xs:string" default = "L" />					
+					<xs:element name="ISO6346SizeTypeCodeDescription" type="xs:string" minOccurs="0" />
+					<xs:element name="DimensionsXMillimeter" type="xs:int" minOccurs="0" />
+					<xs:element name="DimensionsYMillimeter" type="xs:int" minOccurs="0" />
+					<xs:element name="DimensionsZMillimeter" type="xs:int" minOccurs="0"/>
+					<xs:element name="MaxGrossMass" type="xs:double" minOccurs="0"/>
+					<xs:element name="Payload" type="xs:double" minOccurs="0"/>
+					<xs:element name="PayloadUnit" type="xs:string" default = "kg" minOccurs="0"/>					
+					<xs:element name="Tare" type="xs:double" minOccurs="0"/>
+					<xs:element name="TareUnit" type="xs:string" default = "kg" minOccurs="0"/>
+					<xs:element name="Capacity" type="xs:double" minOccurs="0"/> 
+					<xs:element name="CapacityUnit" type="xs:string" default = "L" minOccurs="0"/>					
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>
-		<xs:element name="TankContainerTankInfo" >
+		<xs:element name="TankContainerTankInfo" minOccurs="0">
 			<xs:complexType>
 				<xs:sequence>
-					<xs:element name="CompartmentQuantity" type="xs:int" /> 		
-					<xs:element name="ShellMaterial" type="xs:string" /> 
-					<xs:element name="ShellEquivalentThicknessRefSteelMillimeter" type="xs:double"  /> 
-					<xs:element name="SurgePlates" type="xs:boolean" /> 
-					<xs:element name="SurgePlatesCapacityBetweenIsLowerThan7500L" type="xs:boolean" /> 
-					<xs:element name="WorkPressureMaximumBar" type="xs:double" /> 
-					<xs:element name="DesignPressureExternalBar" type="xs:double" /> 
-					<xs:element name="TestPressureHydraulicBar" type="xs:double" />
-					<xs:element name="DesignTemperatureMinimum" type="xs:double" /> 
-					<xs:element name="DesignTemperatureMaximum" type="xs:double" /> 
-					<xs:element name="DesignTemperatureUnit"  >
+					<xs:element name="CompartmentQuantity" type="xs:int" minOccurs="0"/> 		
+					<xs:element name="ShellMaterial" type="xs:string" minOccurs="0"/> 
+					<xs:element name="ShellEquivalentThicknessRefSteelMillimeter" type="xs:double" minOccurs="0" /> 
+					<xs:element name="SurgePlates" type="xs:boolean" minOccurs="0"/> 
+					<xs:element name="SurgePlatesCapacityBetweenIsLowerThan7500L" type="xs:boolean" minOccurs="0"/> 
+					<xs:element name="WorkPressureMaximumBar" type="xs:double" minOccurs="0"/> 
+					<xs:element name="DesignPressureExternalBar" type="xs:double" minOccurs="0"/> 
+					<xs:element name="TestPressureHydraulicBar" type="xs:double" minOccurs="0"/>
+					<xs:element name="DesignTemperatureMinimum" type="xs:double" minOccurs="0"/> 
+					<xs:element name="DesignTemperatureMaximum" type="xs:double" minOccurs="0"/> 
+					<xs:element name="DesignTemperatureUnit" minOccurs="0" >
 						<xs:simpleType>
 							<xs:restriction base="TemperatureMeasures" />
 						</xs:simpleType>
@@ -89,45 +89,45 @@
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>
-		 <xs:element name="TankContainerEquipmentInfo" >
+		 <xs:element name="TankContainerEquipmentInfo" minOccurs="0">
 			<xs:complexType>
 				<xs:sequence>
-					<xs:element name="TopDischarge" type="xs:string"  /> 
-					<xs:element name="TopQuantityOfEnclosuresInSeries" type="xs:int"  /> 			
-					<xs:element name="BottomDischarge" type="xs:string"  /> 
-					<xs:element name="BottomQuantityOfEnclosuresInSeries" type="xs:int"  /> 
-					<xs:element name="Heater" type="xs:string"  /> 
-					<xs:element name="HeaterWorkingPressureBar" type="xs:double"  /> 
-					<xs:element name="ReliefValveQuantity" type="xs:int"  /> 
-					<xs:element name="ReliefValves" type="TankContainerInfo_ReliefValves"  />
-					<xs:element name="RuptureDiscQuantity" type="xs:int"  /> 
-					<xs:element name="RuptureDiscs" type="TankContainerInfo_RuptureDiscs"  />													
+					<xs:element name="TopDischarge" type="xs:string" minOccurs="0" /> 
+					<xs:element name="TopQuantityOfEnclosuresInSeries" type="xs:int" minOccurs="0" /> 			
+					<xs:element name="BottomDischarge" type="xs:string" minOccurs="0" /> 
+					<xs:element name="BottomQuantityOfEnclosuresInSeries" type="xs:int" minOccurs="0" /> 
+					<xs:element name="Heater" type="xs:string" minOccurs="0" /> 
+					<xs:element name="HeaterWorkingPressureBar" type="xs:double" minOccurs="0" /> 
+					<xs:element name="ReliefValveQuantity" type="xs:int" minOccurs="0" /> 
+					<xs:element name="ReliefValves" type="TankContainerInfo_ReliefValves" minOccurs="0" />
+					<xs:element name="RuptureDiscQuantity" type="xs:int" minOccurs="0" /> 
+					<xs:element name="RuptureDiscs" type="TankContainerInfo_RuptureDiscs" minOccurs="0" />													
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>
-		<xs:element name="TankContainerLiningInfo"  >
+		<xs:element name="TankContainerLiningInfo" minOccurs="0" >
 			<xs:complexType>
 				<xs:sequence>
-					<xs:element name="InternalCoating" type="xs:string"  /> 
-					<xs:element name="Insulation" type="xs:string"  /> 
-					<xs:element name="Material" type="xs:string"  /> 
+					<xs:element name="InternalCoating" type="xs:string" minOccurs="0" /> 
+					<xs:element name="Insulation" type="xs:string" minOccurs="0" /> 
+					<xs:element name="Material" type="xs:string"  minOccurs="0"/> 
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>
-		<xs:element name="InspectionDates" >
+		<xs:element name="InspectionDates" minOccurs="0">
 			<xs:complexType>
 				<xs:sequence>
 					<xs:element name="InitialInspectionDate" type="xs:dateTime" />		
 					<xs:element name="LastInspectionDate" type="xs:dateTime" />		
-					<xs:element name="LastInspectionScope"  >
+					<xs:element name="LastInspectionScope" minOccurs="0" >
 						<xs:simpleType>
 							<xs:restriction base="TankContainer_InspectionScopes" />
 						</xs:simpleType>
 					</xs:element>
-					<xs:element name="LastInspectionScopeDescription" type="xs:string"  />
+					<xs:element name="LastInspectionScopeDescription" type="xs:string" minOccurs="0" />
 					<xs:element name="NextInspectionDate" type="xs:dateTime" />		
 					<xs:element name="CSCValidityDate" type="xs:dateTime" />
-					<xs:element name="ACEPDescription" type="xs:string"  />
+					<xs:element name="ACEPDescription" type="xs:string" minOccurs="0" />
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>

@@ -3,7 +3,7 @@
   <xs:element name="Container_StatusUpdate_Storage_Available">
     <xs:complexType>
       <xs:sequence> 
-		<xs:element name="ClientPurchaseOrderReference" type="xs:string"  />  
+		<xs:element name="ClientPurchaseOrderReference" type="xs:string" minOccurs="0" />  
 		<xs:element name="ContainerAvailableDate" type="xs:dateTime" />
       </xs:sequence>
     </xs:complexType>

@@ -7,30 +7,30 @@
         <xs:complexType>
           <xs:sequence>
 			<xs:element name="CompartmentNumber" type="xs:int" />
-			<xs:element name="CurrentProduct"  >
+			<xs:element name="CurrentProduct" minOccurs="0" >
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element ref="ProductInfo"/>
-						<xs:element name="LoadedAmount" type="xs:double"  />
-						<xs:element name="LoadedAmountUnit" type="xs:string"  />
+						<xs:element name="LoadedAmount" type="xs:double" minOccurs="0" />
+						<xs:element name="LoadedAmountUnit" type="xs:string" minOccurs="0" />
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="PreviousProduct1" >
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element ref="ProductInfo"/>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="PreviousProduct2"  >
+			<xs:element name="PreviousProduct1" minOccurs="0">
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element ref="ProductInfo"/>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="PreviousProduct3"  >
+			<xs:element name="PreviousProduct2" minOccurs="0" >
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="ProductInfo"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PreviousProduct3" minOccurs="0" >
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element ref="ProductInfo"/>
